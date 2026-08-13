@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: ITA ARANDU MS
+version: V32
+message: Cite this software using the metadata below.
+authors:
+  - family-names: Busón Buesa
+    given-names: Carlos
+  - family-names: Gabas
+    given-names: Sandra G.

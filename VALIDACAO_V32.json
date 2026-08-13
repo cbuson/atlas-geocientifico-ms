@@ -1,0 +1,92 @@
+{
+  "catalog_layers": 183,
+  "reference_registry": 116,
+  "duplicate_layer_ids": [],
+  "broken_reference_ids": [],
+  "imc_configs": {
+    "imc_250": {
+      "status": "incorporada",
+      "derive_type": "imc_snapshot_v32",
+      "count": 1554,
+      "mapping_source_present": false
+    },
+    "imc_500": {
+      "status": "incorporada",
+      "derive_type": "imc_snapshot_v32",
+      "count": 793,
+      "mapping_source_present": false
+    },
+    "imc_1000": {
+      "status": "incorporada",
+      "derive_type": "imc_snapshot_v32",
+      "count": 412,
+      "mapping_source_present": false
+    }
+  },
+  "coverage_features": 13,
+  "imc_stats": {
+    "250": {
+      "grid_id": "malha_r5_250km2",
+      "n_cells": 1554,
+      "n_valid": 1554,
+      "min": 10.0,
+      "max": 100.0,
+      "mean": 18.629,
+      "unique_rounded_1dp": 103,
+      "classes": {
+        "muito baixo": 1275,
+        "baixo": 77,
+        "médio": 112,
+        "muito alto": 85,
+        "alto": 5
+      }
+    },
+    "500": {
+      "grid_id": "malha_500km2",
+      "n_cells": 793,
+      "n_valid": 793,
+      "min": 10.0,
+      "max": 100.0,
+      "mean": 18.811,
+      "unique_rounded_1dp": 68,
+      "classes": {
+        "muito baixo": 648,
+        "baixo": 41,
+        "alto": 13,
+        "médio": 50,
+        "muito alto": 41
+      }
+    },
+    "1000": {
+      "grid_id": "malha_1000km2",
+      "n_cells": 412,
+      "n_valid": 412,
+      "min": 10.0,
+      "max": 100.0,
+      "mean": 18.916,
+      "unique_rounded_1dp": 52,
+      "classes": {
+        "muito baixo": 332,
+        "baixo": 31,
+        "médio": 24,
+        "muito alto": 23,
+        "alto": 2
+      }
+    }
+  },
+  "html_title": "ITA ARANDU MS · Atlas Geocientífico de Mato Grosso do Sul · V32",
+  "has_v32_snapshot": true,
+  "has_v32_builder": true,
+  "has_exact_area_text": true,
+  "javascript_syntax": {
+    "ok": true,
+    "stderr": ""
+  },
+  "sha256": {
+    "docs/index.html": "d36c4f1b032039ae7fbdf853df0ece7409e7fa86b2f4d0fe2e6e8d1eea2d09d8",
+    "data/imc_v32_snapshot.json": "30c4f9765416d2ecc78284b5e35a09c6f22027b4146aea4397c9b193a3a940cc",
+    "data/cobertura_cartografica_v32.geojson": "00bed6cc74b8359a1b465484dea34c131340d82957c68d084200b0e177791980"
+  },
+  "pass": true,
+  "standalone_sha256": "d36c4f1b032039ae7fbdf853df0ece7409e7fa86b2f4d0fe2e6e8d1eea2d09d8"
+}

@@ -1,0 +1,70 @@
+{
+  "version": "V35-beta-camadas-separadas-20260813",
+  "local_valid_layer_count": 26,
+  "pending_integrity_layer_count": 2,
+  "pending_integrity_layers": [
+    {
+      "id": "estradas_vicinais_ms",
+      "arquivo_auditoria": "./camadas/pendentes/estradas_vicinais_ms.gzip.base64.txt",
+      "sha256": "05245af61a63f69ff15b29cab067349dab0447f3fb16d145cd489c080f50bb81",
+      "bytes_comprimidos": 4408656,
+      "integridade": "falha",
+      "erro": "BadGzipFile: CRC check failed",
+      "decisao_v35": "não expor como camada incorporada até reconstrução verificável"
+    },
+    {
+      "id": "contatos_geologicos_ms",
+      "arquivo_auditoria": "./camadas/pendentes/contatos_geologicos_ms.gzip.base64.txt",
+      "sha256": "75636e4195f08141f1feb96543ff671626407bcd0f8dc3f6603131404833eb5f",
+      "bytes_comprimidos": 1326629,
+      "integridade": "falha",
+      "erro": "BadGzipFile: CRC check failed",
+      "decisao_v35": "não expor como camada incorporada até reconstrução verificável"
+    }
+  ],
+  "index_bytes": 70442,
+  "index_contains_ATLAS_DATA": false,
+  "atlas_data_bundle_exists": false,
+  "compressed_layers_bundle_exists": false,
+  "all_geojson_valid": true,
+  "all_javascript_ok": true,
+  "missing_files": [],
+  "javascript_checks": {
+    "docs/assets/js/map-fallback.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/assets/js/bootstrap.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/dados/meta.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/dados/registros.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/referencias/referencias.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/indices/imc-v32.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/camadas/catalogo-local.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/service-worker.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  }
+}

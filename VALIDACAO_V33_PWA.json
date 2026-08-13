@@ -1,0 +1,20 @@
+{
+  "version": "V33-BETA-PWA",
+  "base_scientific_version": "V32",
+  "date": "2026-08-13",
+  "index_exists": true,
+  "manifest_exists": true,
+  "service_worker_exists": true,
+  "icon_192_exists": true,
+  "icon_512_exists": true,
+  "icon_maskable_exists": true,
+  "pwa_button_present": true,
+  "pwa_modal_present": true,
+  "beforeinstallprompt_present": true,
+  "service_worker_registration_present": true,
+  "twa_guide_present": true,
+  "fake_assetlinks_present": false,
+  "index.html_sha256": "1ff48644ca3b4b6b56967f4ec571b1288e12c71ed8f8bfc519f9e961508f7634",
+  "manifest.webmanifest_sha256": "a5b21d43f17687047f42a8938c3e0fe3ec0c11d6dd3039a379bf358960aef8d9",
+  "service-worker.js_sha256": "b15a1c33fc9d66a72c4945892207170da29a7822375a70b62a9705fbe0df7771"
+}

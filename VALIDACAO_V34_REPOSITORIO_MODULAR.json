@@ -1,0 +1,44 @@
+{
+  "index_bytes": 70487,
+  "atlas_data_bytes": 20358768,
+  "compressed_layers_bytes": 7647227,
+  "app_js_bytes": 298100,
+  "references_bytes": 50339,
+  "index_contains_ATLAS_DATA": false,
+  "index_contains_COMPRESSED_LAYERS": false,
+  "javascript_syntax": {
+    "docs/assets/js/map-fallback.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/dados/meta.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/dados/registros.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/dados/atlas-data.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/referencias/referencias.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/indices/imc-v32.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/camadas/camadas-compactadas.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "all_js_ok": true
+}
