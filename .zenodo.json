@@ -1,0 +1,29 @@
+{
+  "creators": [
+    {
+      "name": "Busón Buesa, Carlos",
+      "orcid": "0000-0002-1446-2252",
+      "affiliation": "Universidade Federal de Mato Grosso do Sul (UFMS)"
+    },
+    {
+      "name": "Gabas, Sandra Garcia",
+      "orcid": "0000-0002-1027-0288",
+      "affiliation": "Universidade Federal de Mato Grosso do Sul (UFMS)"
+    }
+  ],
+  "title": "ITA ARANDU MS. Atlas Geocientífico de Mato Grosso do Sul",
+  "description": "ITA ARANDU MS é um atlas geocientífico educativo, científico e digital de Mato Grosso do Sul, concebido para apoiar alfabetização geocientífica, ensino, pesquisa e leitura crítica e multiescalar do território. A aplicação integra cartografia, evidências, observações de campo, bibliografia e índices analíticos, com atenção à procedência dos dados, limitações de interpretação, lacunas de conhecimento e reconhecimento respeitoso dos conhecimentos locais e ancestrais.",
+  "access_right": "open",
+  "keywords": [
+    "geociências",
+    "educação geocientífica",
+    "Mato Grosso do Sul",
+    "atlas geocientífico",
+    "análise multiescalar",
+    "SIG",
+    "dados geoespaciais",
+    "software científico"
+  ],
+  "upload_type": "software",
+  "language": "por"
+}
