@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-ms-v35-patch03-dados-estatisticos-20260813';
+const ITA_CACHE = 'ita-arandu-ms-v35-patch06-identidade-visual-20260813';
 const ITA_CORE = [
   "./",
   "./index.html",
@@ -29,7 +29,9 @@ const ITA_CORE = [
   "./referencias/bibliografia-camadas-indices.json",
   "./referencias/README.md",
   "./assets/css/dados-dashboard.css",
-  "./analytics/config.js"];
+  "./analytics/config.js",
+  "./assets/css/pesquisa-motor.css",
+  "./icons/favicon-32.png"];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(ITA_CACHE).then(cache=>cache.addAll(ITA_CORE)).then(()=>self.skipWaiting()));
 });

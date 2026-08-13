@@ -1,3 +1,35 @@
+# PATCH 06 · identidade visual reforçada e reconhecimento institucional · 2026-08-13
+
+- patch cumulativo que preserva o novo ícone da aplicação
+- cabeçalho atualizado com o ícone oficial da PWA
+- selo visual de reconhecimento aos povos originários
+- subtítulo institucional com ênfase no conhecimento local e ancestral do território
+- faixa científica superior atualizada com esse reconhecimento
+- ajustes responsivos do cabeçalho e da PWA
+- cache da PWA atualizado
+
+# PATCH 05 · ícone da aplicação e reconhecimento aos povos originários · 2026-08-13
+
+- novo ícone geocientífico da aplicação com hexágono e símbolo de informação
+- atualização dos arquivos icon-192, icon-512 e icon-maskable-512
+- favicon adicionado
+- manifest atualizado
+- texto de Ajuda reforçado com a importância do conhecimento local e ancestral
+- descrição do Projeto ampliada com reconhecimento aos povos originários
+- seção Nome do projeto refinada para explicitar esse reconhecimento com cautela metodológica
+- cache da PWA atualizado
+
+# PATCH 04 · motor analítico multiescalar completo · 2026-08-13
+
+- painel Pesquisa reorganizado como motor analítico multiescalar
+- 12 famílias de índices exibidas em cartões visuais
+- 36 camadas analíticas explicitadas em 250, 500 e 1000 km²
+- estado de cada índice lido dinamicamente do catálogo
+- distinção visual entre incorporado, parcial e planejado
+- acesso direto à bibliografia específica de cada índice
+- manutenção das fórmulas completas e regras científicas existentes
+- cache da PWA atualizado
+
 # PATCH 03 · Dados estatísticos completos e visuais · 2026-08-13
 
 - painel Dados redesenhado como dashboard visual
