@@ -1,3 +1,30 @@
+# PATCH 09 · Modo Aprender · 2026-08-13
+
+- nova entrada `Aprender` no menu principal desktop e móvel
+- modal educativo próprio integrado ao sistema
+- `Onde estou?` conectado à geolocalização do dispositivo e ao mapa
+- três missões pedagógicas iniciais incorporadas como estrutura piloto
+- acesso direto ao módulo ITA ARANDU Campo
+- `Meu caderno` conectado provisoriamente aos registros locais de Campo
+- bloco `Como ler o Atlas` com seis operações de alfabetização geocientífica
+- Ajuda passa a oferecer acesso direto ao Modo Aprender
+- funções incompletas são identificadas como piloto ou parcial, sem simular funcionalidades
+- cache PWA atualizado
+
+# PATCH 08 · identidade educativa do projeto · 2026-08-13
+
+- a proposta educativa passa a ser apresentada como missão central do Atlas
+- cabeçalho reformulado como Atlas geocientífico educativo e científico
+- faixa superior reformulada para explicar que o objetivo é aprender a ler geocientificamente o território
+- Ajuda passa a abrir com uma apresentação explícita da proposta educativa
+- Projeto passa a definir alfabetização geocientífica e leitura crítica multiescalar como missão central
+- seis usos pedagógicos apresentados visualmente em Ajuda
+- novo princípio estrutural de educação geocientífica
+- novo documento público `docs/documentos/proposta-educativa.html`
+- README e manifesto PWA atualizados
+- reconhecimento aos povos originários e aos conhecimentos locais e ancestrais mantido integrado à missão educativa
+- cache da PWA atualizado
+
 # PATCH 07 · correção de tela e responsividade móvel · 2026-08-13
 
 - cabeçalho ajustado para evitar excesso de altura e distorção visual do ícone

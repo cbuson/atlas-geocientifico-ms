@@ -1,0 +1,31 @@
+{
+  "patch": "PATCH 09 · Modo Aprender",
+  "date": "2026-08-13",
+  "menu_desktop": true,
+  "menu_mobile": true,
+  "modal_integrated": true,
+  "location_controls": true,
+  "missions": true,
+  "campo_integration": true,
+  "notebook_integration": true,
+  "css_cached": true,
+  "javascript_ok": true,
+  "javascript_checks": {
+    "docs/assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/service-worker.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/dados/meta.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/assets/js/bootstrap.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  }
+}

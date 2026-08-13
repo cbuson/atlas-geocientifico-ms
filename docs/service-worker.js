@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-ms-v35-patch07-correcao-tela-mobile-20260813';
+const ITA_CACHE = 'ita-arandu-ms-v35-patch09-modo-aprender-20260813';
 const ITA_CORE = [
   "./",
   "./index.html",
@@ -6,6 +6,7 @@ const ITA_CORE = [
   "./assets/css/atlas.css",
   "./assets/css/ajustes-v32.css",
   "./assets/css/pwa.css",
+  "./assets/css/aprender.css",
   "./assets/js/map-fallback.js",
   "./assets/js/bootstrap.js",
   "./assets/js/app.js",
@@ -31,7 +32,8 @@ const ITA_CORE = [
   "./assets/css/dados-dashboard.css",
   "./analytics/config.js",
   "./assets/css/pesquisa-motor.css",
-  "./icons/favicon-32.png"];
+  "./icons/favicon-32.png",
+  "./documentos/proposta-educativa.html"];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(ITA_CACHE).then(cache=>cache.addAll(ITA_CORE)).then(()=>self.skipWaiting()));
 });

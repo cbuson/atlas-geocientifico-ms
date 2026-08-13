@@ -1,5 +1,20 @@
 # ITA ARANDU MS
 
+## Atlas geocientífico educativo e científico de Mato Grosso do Sul
+
+ITA ARANDU MS é uma ferramenta educativa, científica e digital concebida para apoiar a alfabetização geocientífica, o ensino, a pesquisa e a leitura crítica e multiescalar do território.
+
+A proposta não é apenas mostrar mapas. O Atlas procura ensinar a observar evidências, verificar fontes, comparar escalas, reconhecer incertezas, identificar vazios de conhecimento e formular novas perguntas.
+
+O projeto reconhece também a importância dos povos originários e dos conhecimentos locais e ancestrais na compreensão do território, mantendo como princípios o respeito, a validação cultural adequada e a distinção entre fontes científicas, conhecimentos tradicionais e produtos derivados.
+
+
+
+## Modo Aprender
+
+A navegação principal inclui uma entrada educativa própria. O Modo Aprender organiza o Atlas para uso estudantil por meio de localização, missões, trabalho de campo, caderno local e princípios de leitura crítica dos dados. Nesta versão inicial, `Onde estou?` e a integração com `Campo` são funcionais. As missões são piloto e `Meu caderno` reutiliza provisoriamente os registros locais do módulo de campo.
+
+
 ## Beta V35 com repositório modular e camadas separadas
 
 O `index.html` não contém mais as camadas do Atlas.

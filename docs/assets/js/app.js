@@ -569,6 +569,20 @@ itaSetNow();itaRenderFieldRecords();
 
 
 // PATCH 03 · Dados estatísticos completos e visuais
+const ITA_INDEX_META={
+  IMC:{name:'Maturidade Cartográfica',purpose:'Qualidade e detalhamento espacial da cartografia geológica disponível.',color:'#d57a27'},
+  IOD:{name:'Observação Direta',purpose:'Densidade, cobertura e equilíbrio espacial das observações geológicas diretas.',color:'#367fab'},
+  ICP:{name:'Caracterização Petrográfica',purpose:'Cobertura e qualidade da caracterização petrográfica local das unidades.',color:'#73549b'},
+  IGC:{name:'Controle Geocronológico',purpose:'Densidade, cobertura e qualidade dos dados de idade geológica direta.',color:'#28766c'},
+  IGQ:{name:'Conhecimento Geoquímico',purpose:'Cobertura geoquímica por meio amostral e sua expressão territorial.',color:'#4b8a4b'},
+  IGF:{name:'Conhecimento Geofísico',purpose:'Cobertura e resolução dos levantamentos geofísicos disponíveis.',color:'#b5534c'},
+  ICS:{name:'Conhecimento do Subsolo',purpose:'Informação de subsuperfície derivada de poços, perfurações e registros utilizáveis.',color:'#8a694e'},
+  IDE:{name:'Diversidade de Evidências',purpose:'Diversidade efetiva entre famílias independentes de evidência geocientífica.',color:'#378d91'},
+  ICG:{name:'Índice de Conhecimento Geocientífico',purpose:'Síntese do conhecimento com penalização de desequilíbrios entre dimensões.',color:'#5264a2'},
+  VCG:{name:'Vazios de Conhecimento Geocientífico',purpose:'Intensidade e natureza das principais lacunas de conhecimento por célula.',color:'#93455d'},
+  PIG:{name:'Prioridade de Investigação Geocientífica',purpose:'Priorização relativa de investigação a partir de vazios e complexidade geológica.',color:'#624281'},
+  IPG:{name:'Potencial Geocientífico Territorial Documentado',purpose:'Diversidade temática, riqueza documental e continuidade da evidência disponível.',color:'#694f91'}
+};
 const ITA_INDEX_FAMILIES=[
   ['IMC',['imc_250','imc_500','imc_1000']],
   ['IOD',['iod_250','iod_500','iod_1000']],
@@ -674,6 +688,37 @@ async function itaRenderUsageStats(){
     console.warn('ITA ARANDU MS · contador',err)
   }
 }
+function itaRenderMotorMultiescalar(){
+  const host=document.getElementById('motorIndexGrid');
+  if(!host)return;
+  const fams=ITA_INDEX_FAMILIES||[];
+  let full=0;
+  host.innerHTML=fams.map(([code,ids])=>{
+    const meta=ITA_INDEX_META[code]||{name:code,purpose:'',color:'#607d8b'};
+    const layers=ids.map(id=>CATALOG.layers.find(x=>x.id===id)).filter(Boolean);
+    const incorporated=layers.filter(x=>x.status==='incorporada').length;
+    const connected=layers.filter(x=>x.status==='conectada').length;
+    const active=incorporated+connected;
+    let cls='planejado',label='planejado';
+    if(layers.length===3&&incorporated===3){cls='operacional';label='incorporado · 3/3';full++}
+    else if(active>0){cls='parcial';label=`parcial · ${active}/3`}
+    const scales=[250,500,1000].map((scale,i)=>{
+      const l=layers[i],ok=l&&l.status==='incorporada',partial=l&&l.status==='conectada';
+      return `<span class="motor-scale-chip ${ok?'ok':partial?'partial':''}">${scale} km² · ${ok?'local':partial?'conectada':'planejada'}</span>`
+    }).join('');
+    return `<article class="motor-index-card" style="--motor-color:${meta.color}">
+      <div class="motor-index-head"><div class="motor-index-code">${esc(code)}</div><span class="motor-index-status ${cls}">${esc(label)}</span></div>
+      <div class="motor-index-name">${esc(meta.name)}</div>
+      <div class="motor-index-purpose">${esc(meta.purpose)}</div>
+      <div class="motor-scale-row">${scales}</div>
+      <div class="motor-index-actions"><span>${layers.length}/3 camadas catalogadas</span><a href="./referencias/index.html#index-${code.toLowerCase()}" target="_blank" rel="noopener">bibliografia</a></div>
+    </article>`
+  }).join('');
+  const a=document.getElementById('motorIndexFamilies');if(a)a.textContent=fams.length;
+  const b=document.getElementById('motorIndexLayers');if(b)b.textContent=fams.reduce((n,x)=>n+x[1].length,0);
+  const c=document.getElementById('motorIndexOperational');if(c)c.textContent=full;
+}
+
 function itaRenderDadosCatalog(){
   const total=CATALOG.layers.length;
   const statusNames=['incorporada','conectada','disponivel_para_captura','em_avaliacao','planejada'];
@@ -751,7 +796,7 @@ document.querySelectorAll('[data-modal="dadosModal"],[data-modal="diagnosticoMod
 document.querySelectorAll('.modal').forEach(m=>{m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');if(!m.hasAttribute('aria-label')&&!m.hasAttribute('aria-labelledby')){const title=m.querySelector('h2')?.textContent?.trim();if(title)m.setAttribute('aria-label',title)}m.addEventListener('mousedown',e=>{if(e.target===m)closeModal(m.id)})});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){const opens=[...document.querySelectorAll('.modal.open')];if(opens.length){e.preventDefault();closeModal(opens[opens.length-1].id)}else if(!document.getElementById('leftPanel').classList.contains('hiddenpanel'))closeLeft();else if(!document.getElementById('rightPanel').classList.contains('hiddenpanel'))closeRight();}});
 document.querySelectorAll('.close-modal,.close-panel').forEach(b=>{if(!b.getAttribute('aria-label'))b.setAttribute('aria-label','Fechar')});
-itaStartAnalytics();itaRenderDadosCatalog();itaSetPrimaryNav('mapa');
+itaStartAnalytics();itaRenderDadosCatalog();itaRenderMotorMultiescalar();itaSetPrimaryNav('mapa');
 
 // V28 · Tempo profundo e paleoposição · GPlates Web Service
 const ITA_PAL_MODELS={ZAHIROVIC2022:{max:410,label:'ZAHIROVIC2022'},MULLER2022:{max:1000,label:'MULLER2022'},MERDITH2021:{max:1000,label:'MERDITH2021'},CAO2024:{max:1800,label:'CAO2024'}};
@@ -850,3 +895,59 @@ if('serviceWorker' in navigator && location.protocol!=='file:'){
 }else{
   itaPwaRefreshState();
 }
+
+// PATCH 09 · Modo Aprender
+window.ITA_APRENDER_POSITION=window.ITA_APRENDER_POSITION||null;
+function itaAprenderInsideMs(lat,lon){
+ return lat>=MS_BOUNDS.minLat&&lat<=MS_BOUNDS.maxLat&&lon>=MS_BOUNDS.minLon&&lon<=MS_BOUNDS.maxLon
+}
+function itaAprenderLocate(){
+ const status=document.getElementById('aprenderLocationStatus'),view=document.getElementById('aprenderViewMap');
+ if(!status)return;
+ if(!navigator.geolocation){
+  status.textContent='Este navegador não disponibiliza geolocalização.';
+  return;
+ }
+ status.textContent='Solicitando posição ao dispositivo. O navegador poderá pedir permissão.';
+ if(view)view.disabled=true;
+ navigator.geolocation.getCurrentPosition(pos=>{
+  const lat=pos.coords.latitude,lon=pos.coords.longitude,acc=Math.max(1,Math.round(pos.coords.accuracy||0));
+  window.ITA_APRENDER_POSITION={lat,lon,accuracy:acc,capturedAt:new Date().toISOString()};
+  const area=itaAprenderInsideMs(lat,lon)?'posição dentro do recorte de Mato Grosso do Sul':'posição fora do recorte estadual do Atlas';
+  status.innerHTML=`<b>Posição capturada</b> · ${lat.toFixed(6)}, ${lon.toFixed(6)} · precisão aproximada ${acc} m · ${area}.`;
+  if(view)view.disabled=false;
+ },err=>{
+  status.textContent='Não foi possível obter a localização. Verifique a permissão do navegador e tente novamente.';
+ },{enableHighAccuracy:true,timeout:15000,maximumAge:60000});
+}
+function itaAprenderShowPositionOnMap(){
+ const p=window.ITA_APRENDER_POSITION;
+ if(!p)return;
+ if(gpsMarker)leafletMap.removeLayer(gpsMarker);
+ if(gpsCircle)leafletMap.removeLayer(gpsCircle);
+ gpsCircle=L.circle([p.lat,p.lon],{radius:p.accuracy||20,color:'#0b67a3',weight:1,fillColor:'#56b6ff',fillOpacity:.14}).addTo(leafletMap);
+ gpsMarker=L.circleMarker([p.lat,p.lon],{radius:6,color:'#ffffff',weight:2,fillColor:'#0b67a3',fillOpacity:1}).addTo(leafletMap);
+ leafletMap.setView([p.lat,p.lon],Math.max(leafletMap.getZoom(),12),{animate:true});
+ statusEl.textContent=`modo Aprender · localização ativa · precisão aproximada ${p.accuracy||0} m`;
+ closeModal('aprenderModal');
+ itaSetPrimaryNav('mapa');
+}
+function itaAprenderOpenCampo(showNotebook=false){
+ closeModal('aprenderModal');
+ openModal('campoModal');
+ itaSetPrimaryNav('campo');
+ itaSetNow();
+ itaRenderFieldRecords();
+ if(showNotebook)setTimeout(()=>document.getElementById('campoRegistros')?.scrollIntoView({behavior:'smooth',block:'start'}),180);
+}
+document.getElementById('aprenderLocate')?.addEventListener('click',itaAprenderLocate);
+document.getElementById('aprenderViewMap')?.addEventListener('click',itaAprenderShowPositionOnMap);
+document.getElementById('aprenderOpenCampo')?.addEventListener('click',()=>itaAprenderOpenCampo(false));
+document.getElementById('aprenderOpenCaderno')?.addEventListener('click',()=>itaAprenderOpenCampo(true));
+document.querySelectorAll('[data-modal="aprenderModal"]').forEach(b=>b.addEventListener('click',()=>itaSetPrimaryNav('aprender')));
+document.getElementById('openAprenderFromAjuda')?.addEventListener('click',()=>{
+ closeModal('ajudaModal');
+ openModal('aprenderModal');
+ itaSetPrimaryNav('aprender');
+});
+
