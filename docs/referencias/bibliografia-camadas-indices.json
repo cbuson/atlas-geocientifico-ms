@@ -2,7 +2,7 @@
   "generated_on": "2026-08-13",
   "citation_standard": "APA 7",
   "project": "ITA ARANDU MS · Atlas Geocientífico de Mato Grosso do Sul",
-  "total_references": 118,
+  "total_references": 128,
   "total_catalog_layers": 183,
   "total_index_layers": 36,
   "entries": [
@@ -6981,5 +6981,18 @@
         }
       ]
     }
-  }
+  },
+  "education_methodology_reference_ids": [
+    "REF-119",
+    "REF-120",
+    "REF-121",
+    "REF-122",
+    "REF-123",
+    "REF-124",
+    "REF-125",
+    "REF-126",
+    "REF-127",
+    "REF-128"
+  ],
+  "education_methodology_note": "Referências metodológicas do Modo Aprender. Não são atribuídas a uma camada geoespacial específica."
 }

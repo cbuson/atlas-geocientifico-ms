@@ -1,3 +1,16 @@
+# PATCH 10 · fundamentação em educação geocientífica · 2026-08-13
+
+- Modo Aprender fundamentado explicitamente em literatura de educação geocientífica
+- Ajuda recebe seção detalhada com oito eixos pedagógicos
+- Metodologia recebe seção extensa sobre alfabetização geocientífica, investigação, campo, lugar, raciocínio espacial, perguntas profundas e uso do celular
+- ciclo educativo próprio declarado como síntese operacional do projeto, ainda sujeito a validação com usuários
+- separação didática entre observação, evidência, hipótese, interpretação, produto derivado e vazio de conhecimento
+- dez referências metodológicas verificadas adicionadas ao registro mestre, REF-119 a REF-128
+- registro mestre passa de 118 para 128 referências
+- página pública de bibliografia recebe bloco específico de educação geocientífica
+- novo documento público `docs/documentos/metodologia-educativa.html`
+- PWA atualizada para incluir a nova documentação e CSS
+
 # PATCH 09 · Modo Aprender · 2026-08-13
 
 - nova entrada `Aprender` no menu principal desktop e móvel

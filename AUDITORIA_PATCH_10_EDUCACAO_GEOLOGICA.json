@@ -1,0 +1,47 @@
+{
+  "patch": "PATCH 10 · educação geocientífica",
+  "date": "2026-08-13",
+  "references_total": 128,
+  "new_reference_ids": [
+    "REF-119",
+    "REF-120",
+    "REF-121",
+    "REF-122",
+    "REF-123",
+    "REF-124",
+    "REF-125",
+    "REF-126",
+    "REF-127",
+    "REF-128"
+  ],
+  "duplicate_reference_ids": 0,
+  "help_methodology_present": true,
+  "methodology_detail_present": true,
+  "public_methodology_document": true,
+  "bibliography_education_section": true,
+  "all_new_refs_primary_verified": true,
+  "javascript_ok": true,
+  "javascript_checks": {
+    "docs/assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/assets/js/bootstrap.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/service-worker.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/dados/meta.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/referencias/referencias.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "scientific_caution": "O ciclo educativo do ITA ARANDU MS é apresentado como síntese operacional própria, ainda sujeita a validação com estudantes e professores."
+}
