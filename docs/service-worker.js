@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-ms-v35-patch06-identidade-visual-20260813';
+const ITA_CACHE = 'ita-arandu-ms-v35-patch07-correcao-tela-mobile-20260813';
 const ITA_CORE = [
   "./",
   "./index.html",

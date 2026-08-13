@@ -1,3 +1,13 @@
+# PATCH 07 · correção de tela e responsividade móvel · 2026-08-13
+
+- cabeçalho ajustado para evitar excesso de altura e distorção visual do ícone
+- faixa científica encurtada e truncada em uma linha para não invadir o mapa
+- descrição institucional compactada em resoluções menores
+- correções de largura e overflow horizontal no modal Dados
+- painel Dados reorganizado em telas pequenas para não ultrapassar a largura do celular
+- linhas de grupos agora quebram corretamente em mobile
+- cache da PWA atualizado
+
 # PATCH 06 · identidade visual reforçada e reconhecimento institucional · 2026-08-13
 
 - patch cumulativo que preserva o novo ícone da aplicação

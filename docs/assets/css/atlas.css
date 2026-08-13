@@ -62,3 +62,9 @@
 
 @media(max-width:980px){header{align-items:flex-start;flex-direction:column}.head-actions{width:100%;overflow:auto;padding-bottom:2px}.brand{width:100%}}
 @media(max-width:760px){.brand-icon{width:48px;height:48px;border-radius:14px}.brand-main{font-size:18px}.brand-badge{font-size:7px}.brand-subdesc{font-size:8px}.brand-desc{font-size:10px}.app{height:calc(100% - 126px)}}
+
+
+/* PATCH 07 · correções de tela e responsividade */
+html,body{overflow-x:hidden}
+header{min-height:78px;padding:8px 12px}
+.brand{flex:1;min-width:0}.brand-copy{min-width:0;flex:1}.brand-icon{width:48px!important;height:48px!important;object-fit:cover;object-position:center center;border-radius:14px;flex:0 0 48px}.brand-main{font-size:19px}.brand-badge{font-size:7.5px;padding:3px 7px}.brand-desc{max-width:none}.brand-subdesc{max-width:none}.science-ribbon{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:8px;min-height:32px;padding:4px 12px}.science-ribbon span{display:block;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.app{height:calc(100% - 110px)}.modal-box{max-width:100%;overflow-x:hidden}.modal-body{overflow-x:hidden}.modal-body>*{max-width:100%}.data-summary-table,.dados-table-wrap table{table-layout:auto} @media(max-width:1200px){.brand-subdesc{display:none}.brand-badge{display:none}} @media(max-width:980px){header{min-height:74px}.brand-main{font-size:18px}.brand-desc{font-size:10px}.science-ribbon{font-size:9px}} @media(max-width:760px){header{min-height:64px;padding:7px 9px}.brand{gap:9px}.brand-icon{width:40px!important;height:40px!important;flex-basis:40px;border-radius:12px}.brand-main{font-size:15px}.brand-desc{font-size:8px;max-width:100%}.brand-subdesc,.brand-badge,.brand-kicker{display:none}.science-ribbon{min-height:30px;padding:3px 8px;font-size:8px}.science-ribbon b{white-space:nowrap}.app{height:calc(100% - 94px)}.panel.left,.panel.right{top:94px}}

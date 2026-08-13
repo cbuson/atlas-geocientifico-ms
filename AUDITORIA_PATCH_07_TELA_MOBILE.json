@@ -1,0 +1,30 @@
+{
+  "patch": "PATCH 07 · correção de tela e mobile",
+  "date": "2026-08-13",
+  "header_compacted": true,
+  "ribbon_single_line": true,
+  "dados_mobile_overflow_fix": true,
+  "javascript_ok": true,
+  "javascript_checks": {
+    "docs/dados/meta.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/service-worker.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/analytics/config.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/referencias/referencias.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  }
+}

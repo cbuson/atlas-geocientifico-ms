@@ -80,3 +80,7 @@
   .dados-donut:after{width:66px;height:66px}
   .dados-group-row{grid-template-columns:110px 1fr 28px}
 }
+
+
+/* PATCH 07 · correções mobile do painel Dados */
+.dados-dashboard,.dados-hero,.dados-panel,.dados-usage,.dados-overview{max-width:100%;overflow-x:hidden}.dados-group-name{min-width:0} @media(max-width:760px){.dados-metric-grid,.dados-usage-grid,.dados-trace-grid,.dados-index-grid{grid-template-columns:1fr 1fr}.dados-panel{padding:10px}.dados-overview{padding:11px}.dados-usage-head{display:grid;grid-template-columns:1fr;gap:6px}.dados-usage-status{justify-self:start}.dados-donut-wrap{grid-template-columns:1fr;justify-items:center}.dados-group-row{grid-template-columns:1fr;gap:4px;align-items:start}.dados-group-name{white-space:normal;overflow:visible;text-overflow:clip;font-size:8.5px}.dados-group-total{text-align:left}.dados-table-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}} @media(max-width:520px){.dados-metric-grid,.dados-usage-grid,.dados-trace-grid,.dados-index-grid{grid-template-columns:1fr}.dados-donut{width:98px;height:98px}.dados-donut:after{width:60px;height:60px}.dados-donut-center b{font-size:20px}.dados-group-row{padding-bottom:4px;border-bottom:1px solid #eef3f6}.dados-scale strong{font-size:18px}}
