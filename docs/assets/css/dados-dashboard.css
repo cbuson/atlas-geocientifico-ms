@@ -1,0 +1,82 @@
+.dados-dashboard{display:grid;gap:14px}
+.dados-hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(250px,.65fr);gap:12px;align-items:stretch}
+.dados-overview{border:1px solid #cfdee7;background:linear-gradient(135deg,#f7fbfd,#edf6fa);border-radius:14px;padding:14px}
+.dados-overview h3{margin:0 0 4px;font-size:16px;color:#123f5d}
+.dados-overview p{margin:0;color:#607785;font-size:9px;line-height:1.5}
+.dados-version{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.dados-tag{display:inline-flex;align-items:center;gap:5px;border:1px solid #cedce4;background:#fff;border-radius:999px;padding:4px 7px;font-size:8px;font-weight:850;color:#466477}
+.dados-tag.ok:before{content:"";width:7px;height:7px;border-radius:50%;background:#2f8a5e}
+.dados-tag.warn:before{content:"";width:7px;height:7px;border-radius:50%;background:#d49a2e}
+.dados-metric-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.dados-metric{border:1px solid #d3e0e8;background:#fff;border-radius:12px;padding:10px;min-height:76px}
+.dados-metric b{display:block;color:#073b63;font-size:20px;line-height:1.05}
+.dados-metric span{display:block;color:#647b88;font-size:8px;margin-top:4px;line-height:1.3}
+.dados-metric small{display:block;color:#8a9aa4;font-size:7px;margin-top:5px}
+.dados-panel{border:1px solid #d6e2e9;background:#fff;border-radius:13px;padding:12px}
+.dados-panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:9px}
+.dados-panel-head h3{margin:0;font-size:13px;color:#174664}
+.dados-panel-head p{margin:2px 0 0;font-size:8.5px;color:#6a7f8b;line-height:1.4}
+.dados-layout-2{display:grid;grid-template-columns:minmax(260px,.75fr) minmax(0,1.25fr);gap:12px}
+.dados-donut-wrap{display:grid;grid-template-columns:130px 1fr;gap:12px;align-items:center}
+.dados-donut{width:126px;height:126px;border-radius:50%;display:grid;place-items:center;position:relative;background:#e7edf1}
+.dados-donut:after{content:"";width:78px;height:78px;border-radius:50%;background:#fff;position:absolute}
+.dados-donut-center{z-index:1;text-align:center}
+.dados-donut-center b{display:block;color:#073b63;font-size:22px}
+.dados-donut-center span{display:block;color:#71838e;font-size:7.5px}
+.dados-legend-list{display:grid;gap:6px}
+.dados-legend-item{display:grid;grid-template-columns:9px 1fr auto;gap:7px;align-items:center;font-size:8.5px;color:#506978}
+.dados-legend-dot{width:9px;height:9px;border-radius:50%}
+.dados-legend-item b{font-size:9px;color:#294b61}
+.dados-group-list{display:grid;gap:9px}
+.dados-group-row{display:grid;grid-template-columns:minmax(145px,.7fr) minmax(180px,1.3fr) 36px;gap:8px;align-items:center}
+.dados-group-name{font-size:8.5px;color:#36586d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dados-stack{height:11px;background:#eef2f4;border-radius:999px;overflow:hidden;display:flex}
+.dados-stack span{height:100%;min-width:0}
+.dados-group-total{text-align:right;font-size:8px;color:#6a7d89}
+.dados-scale-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.dados-scale{border:1px solid #d6e3ea;border-radius:11px;background:#f9fcfd;padding:10px}
+.dados-scale b{display:block;color:#0b4b76;font-size:15px}
+.dados-scale strong{display:block;font-size:20px;color:#203f54;margin:4px 0}
+.dados-scale span{font-size:8px;color:#6b7f8b}
+.dados-index-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+.dados-index{border:1px solid #d7e1e7;border-radius:9px;padding:8px;background:#fbfdfe}
+.dados-index b{font-size:10px;color:#183f59}
+.dados-index span{display:block;margin-top:3px;font-size:7.5px;color:#6d808b}
+.dados-index.operacional{border-left:4px solid #2d8c5d}
+.dados-index.parcial{border-left:4px solid #d49a2e}
+.dados-index.planejado{border-left:4px solid #8a7db1}
+.dados-trace-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.dados-trace{padding:9px;border-radius:10px;background:#f4f8fa;border:1px solid #dbe5eb}
+.dados-trace b{display:block;font-size:17px;color:#143f5a}
+.dados-trace span{font-size:7.8px;color:#687d89}
+.dados-usage{border:1px solid #cddfe8;background:linear-gradient(135deg,#eef7fb,#f9fcfd);border-radius:13px;padding:12px}
+.dados-usage-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.dados-usage-title h3{margin:0;font-size:13px;color:#124360}
+.dados-usage-title p{margin:3px 0 0;color:#657d8a;font-size:8.5px;line-height:1.45}
+.dados-usage-status{font-size:7.5px;font-weight:900;border-radius:999px;padding:5px 8px;background:#fff;border:1px solid #cbdbe4;color:#5c7380;white-space:nowrap}
+.dados-usage-status.live{color:#286a49;border-color:#a8ceb9;background:#f0faf4}
+.dados-usage-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:10px}
+.dados-use-card{background:#fff;border:1px solid #d7e3e9;border-radius:10px;padding:9px}
+.dados-use-card b{display:block;font-size:19px;color:#073b63}
+.dados-use-card span{font-size:7.8px;color:#6e818c}
+.dados-use-note{margin-top:9px;font-size:8px;color:#667d89;line-height:1.45}
+.dados-use-note a{color:#0c527f;font-weight:800}
+.dados-empty-analytics{border:1px dashed #b9cbd6;background:#fff;border-radius:10px;padding:10px;margin-top:9px;font-size:8.5px;color:#607886;line-height:1.5}
+.dados-table-wrap{overflow:auto;max-height:340px;border:1px solid #dbe4ea;border-radius:10px}
+.dados-table-wrap table{margin:0}
+.dados-table-wrap th{top:0}
+.dados-footnote{font-size:8px;color:#738590;line-height:1.5;margin-top:7px}
+@media(max-width:900px){
+  .dados-hero,.dados-layout-2{grid-template-columns:1fr}
+  .dados-metric-grid{grid-template-columns:repeat(3,1fr)}
+  .dados-index-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:620px){
+  .dados-metric-grid,.dados-usage-grid,.dados-trace-grid{grid-template-columns:repeat(2,1fr)}
+  .dados-index-grid{grid-template-columns:repeat(2,1fr)}
+  .dados-scale-grid{grid-template-columns:1fr}
+  .dados-donut-wrap{grid-template-columns:110px 1fr}
+  .dados-donut{width:106px;height:106px}
+  .dados-donut:after{width:66px;height:66px}
+  .dados-group-row{grid-template-columns:110px 1fr 28px}
+}

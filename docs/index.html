@@ -8,6 +8,7 @@
 <meta name="apple-mobile-web-app-title" content="ITA ARANDU MS">
 <link rel="apple-touch-icon" href="./icons/icon-192.png">
 <link rel="stylesheet" href="./assets/css/pwa.css">
+<link rel="stylesheet" href="./assets/css/dados-dashboard.css">
 </head><body>
 <header><div class="brand"><div class="mark">MS</div><div><div class="brand-kicker">Infraestrutura científica e docente · versão em desenvolvimento</div><div class="brand-main">ITA ARANDU MS</div><div class="brand-desc">Atlas Geocientífico de Mato Grosso do Sul · escalas analíticas 250 · 500 · 1000 km²</div></div></div><div class="head-actions" aria-label="Navegação principal"><button type="button" class="nav-btn active" id="navMapa" data-section="mapa">⌖ Mapa</button><button type="button" class="nav-btn" id="navLayers" data-section="camadas">▦ Camadas</button><button type="button" class="nav-btn" data-modal="campoModal" data-section="campo">⌖ Campo</button><button type="button" class="nav-btn" data-modal="dadosModal" data-section="dados">▥ Dados</button><button type="button" class="nav-btn" id="navFicha" data-section="ficha">▤ Ficha</button><button type="button" class="nav-btn" data-modal="pesquisaModal" data-section="pesquisa">⌕ Pesquisa</button><button type="button" class="nav-btn help" data-modal="ajudaModal" data-section="ajuda">? Ajuda</button></div></header>
 <div class="science-ribbon"><b>ITA ARANDU MS</b><span>Versão de desenvolvimento · IMC multiescalar materializado, índices documentados, estabilidade do visor e Tempo profundo · IMC V32 por interseção areal exata · PWA instalável V35 Beta · primeiro corte científico previsto para setembro de 2026.</span></div>
@@ -15,7 +16,84 @@
 <section class="map-shell" id="mapShell"><div id="leafletMap" aria-label="Mapa base"></div><div class="engine-notice" id="engineNotice"><b>Modo cartográfico local</b> · o mecanismo externo do mapa base não respondeu. O catálogo e as camadas locais continuam disponíveis. Camadas conectadas ainda dependem de internet.</div><canvas id="mapCanvas" aria-label="Camadas geocientíficas"></canvas><div class="mobile-map-tools"><button id="mobileBaseBtn" type="button">Base</button><button id="mobileLegendBtn" type="button">Legenda</button></div><div class="basemap-panel" id="basemapPanel"><div class="basemap-title" style="display:flex;justify-content:space-between;align-items:center"><span>Mapa base</span><button id="closeBasePanel" type="button" style="border:0;background:transparent;color:#486576;font-weight:900">×</button></div><label class="basemap-option"><input type="radio" name="basemap" value="Ruas OpenStreetMap"> <span>Ruas OpenStreetMap</span></label><label class="basemap-option"><input type="radio" name="basemap" value="Satélite Esri"> <span>Satélite Esri</span></label><label class="basemap-option"><input type="radio" name="basemap" value="Satélite com nomes"> <span>Satélite com nomes</span></label><label class="basemap-option"><input type="radio" name="basemap" value="Topográfico Esri" checked> <span>Topográfico Esri</span></label><label class="basemap-option"><input type="radio" name="basemap" value="Ruas Esri"> <span>Ruas Esri</span></label><label class="basemap-option"><input type="radio" name="basemap" value="Mapa claro Esri"> <span>Mapa claro Esri</span></label><label class="basemap-option"><input type="radio" name="basemap" value="Relevo sombreado Esri"> <span>Relevo sombreado Esri</span></label></div><div class="map-toolbar"><button type="button" id="resetView" title="Enquadrar Mato Grosso do Sul" aria-label="Enquadrar Mato Grosso do Sul">MS</button><button type="button" id="zoomIn" aria-label="Aproximar mapa">+</button><button type="button" id="zoomOut" aria-label="Afastar mapa">−</button><button type="button" id="clearLayers" title="Limpar camadas temáticas" aria-label="Limpar camadas temáticas">×</button><button type="button" id="locateMe" title="Mostrar minha localização" aria-label="Mostrar minha localização">◎</button><button type="button" id="openTempoMap" title="Tempo geológico e coluna de Mato Grosso do Sul" aria-label="Abrir tempo geológico">◷</button></div><div class="map-status"><span class="pill" id="mapStatusText" aria-live="polite">0 camadas ativas</span><span class="pill" id="zoomText">zoom 0</span></div><div class="quick-legend hidden" id="quickLegend"></div><div class="map-legend-panel" id="mapLegend"><div class="kicker" style="display:flex;justify-content:space-between;align-items:center"><span>Legenda</span><button id="closeLegendPanel" type="button" style="border:0;background:transparent;color:#486576;font-weight:900">×</button></div><div class="empty">Ative uma camada temática para ver sua legenda.</div></div></section>
 <aside class="panel right hiddenpanel" id="rightPanel"><div class="panel-inner"><div class="workspace-head"><div><div class="kicker">Ficha</div><h2>Informação geocientífica</h2></div><button type="button" class="close-panel" id="closeRight" aria-label="Fechar Ficha">×</button></div><div id="featureInfo" aria-live="polite"></div></div></aside></main>
 
-<div class="modal" id="dadosModal" role="dialog" aria-modal="true" aria-labelledby="dadosTitle"><div class="modal-box"><div class="modal-head"><div><div class="kicker">Dados</div><h2 id="dadosTitle">Catálogo e cobertura</h2></div><button type="button" class="close-modal" data-close="dadosModal" aria-label="Fechar dados">×</button></div><div class="modal-body"><div class="metrics"><div class="metric"><b id="dadosTotalLayers">—</b><span>camadas no catálogo</span></div><div class="metric"><b id="dadosIncorporadas">—</b><span>incorporadas localmente</span></div><div class="metric"><b id="dadosConectadas">—</b><span>conectadas a serviços</span></div><div class="metric"><b id="dadosGroups">14</b><span>grupos geocientíficos</span></div></div><h3>Leitura do catálogo</h3><p class="docs-note">Camadas é a lista operacional completa. Dados apresenta apenas uma síntese por grupo para evitar duplicação e números desatualizados. Os valores abaixo são calculados diretamente do catálogo da versão aberta.</p><div id="dadosCatalogTable"></div><h3>Malhas analíticas permanentes</h3><p>250 km² com 1.554 células, 500 km² com 793 células e 1000 km² com 412 células. As três escalas são calculadas de forma independente e preservam a área efetiva dentro de Mato Grosso do Sul nas células de borda.</p></div></div></div>
+<div class="modal" id="dadosModal" role="dialog" aria-modal="true" aria-labelledby="dadosTitle"><div class="modal-box"><div class="modal-head"><div><div class="kicker">Dados estatísticos</div><h2 id="dadosTitle">Atlas, cobertura, rastreabilidade e uso</h2></div><button type="button" class="close-modal" data-close="dadosModal" aria-label="Fechar dados">×</button></div><div class="modal-body">
+<div class="dados-dashboard">
+  <section class="dados-hero">
+    <div class="dados-overview">
+      <h3>Visão geral da versão aberta</h3>
+      <p>Os indicadores abaixo são calculados diretamente do catálogo, do registro bibliográfico e dos arquivos locais carregados pela aplicação. Nenhum total operacional é digitado manualmente.</p>
+      <div class="dados-version">
+        <span class="dados-tag ok" id="dadosBuildVersion">versão —</span>
+        <span class="dados-tag" id="dadosBuildDate">corte —</span>
+        <span class="dados-tag" id="dadosCutStatus">estado —</span>
+      </div>
+    </div>
+    <div class="dados-panel">
+      <div class="dados-panel-head"><div><h3>Rastreabilidade</h3><p>Vínculos entre catálogo, bibliografia e dados locais.</p></div></div>
+      <div class="dados-trace-grid">
+        <div class="dados-trace"><b id="dadosRefs">—</b><span>referências</span></div>
+        <div class="dados-trace"><b id="dadosRefsVerified">—</b><span>fontes conferidas</span></div>
+        <div class="dados-trace"><b id="dadosLocalFiles">—</b><span>camadas locais</span></div>
+        <div class="dados-trace"><b id="dadosLinked">—</b><span>camadas com bibliografia</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dados-metric-grid" aria-label="Indicadores principais do catálogo">
+    <div class="dados-metric"><b id="dadosTotalLayers">—</b><span>camadas no catálogo</span><small>estrutura total disponível</small></div>
+    <div class="dados-metric"><b id="dadosIncorporadas">—</b><span>incorporadas localmente</span><small>snapshot ou dado materializado</small></div>
+    <div class="dados-metric"><b id="dadosConectadas">—</b><span>conectadas a serviços</span><small>dependem de fonte externa</small></div>
+    <div class="dados-metric"><b id="dadosCaptura">—</b><span>disponíveis para captura</span><small>fonte localizada</small></div>
+    <div class="dados-metric"><b id="dadosPendentes">—</b><span>em avaliação ou planejadas</span><small>não tratadas como incorporadas</small></div>
+    <div class="dados-metric"><b id="dadosGroups">—</b><span>grupos geocientíficos</span><small>organização temática</small></div>
+  </section>
+
+  <section class="dados-layout-2">
+    <div class="dados-panel">
+      <div class="dados-panel-head"><div><h3>Estado do catálogo</h3><p>Distribuição das camadas segundo o estado operacional.</p></div></div>
+      <div class="dados-donut-wrap">
+        <div class="dados-donut" id="dadosCatalogDonut"><div class="dados-donut-center"><b id="dadosCatalogPercent">—</b><span>incorporada ou conectada</span></div></div>
+        <div class="dados-legend-list" id="dadosCatalogLegend"></div>
+      </div>
+    </div>
+    <div class="dados-panel">
+      <div class="dados-panel-head"><div><h3>Camadas por grupo</h3><p>Composição visual de cada conjunto temático.</p></div></div>
+      <div class="dados-group-list" id="dadosGroupBars"></div>
+    </div>
+  </section>
+
+  <section class="dados-panel">
+    <div class="dados-panel-head"><div><h3>Infraestrutura analítica multiescalar</h3><p>As três malhas são permanentes e os índices são recalculados de forma independente em cada escala.</p></div></div>
+    <div class="dados-scale-grid">
+      <div class="dados-scale"><b>250 km²</b><strong>1.554</strong><span>células na malha recortada de Mato Grosso do Sul</span></div>
+      <div class="dados-scale"><b>500 km²</b><strong>793</strong><span>células na malha analítica independente</span></div>
+      <div class="dados-scale"><b>1000 km²</b><strong>412</strong><span>células na malha analítica independente</span></div>
+    </div>
+    <div class="dados-index-grid" id="dadosIndexGrid" style="margin-top:10px"></div>
+  </section>
+
+  <section class="dados-usage" id="dadosUsageSection">
+    <div class="dados-usage-head">
+      <div class="dados-usage-title"><h3>Uso público do Atlas</h3><p>Contagem agregada de visitas ao sítio público. Não representa pessoas identificadas.</p></div>
+      <span class="dados-usage-status" id="dadosUsageStatus">monitoramento não configurado</span>
+    </div>
+    <div class="dados-usage-grid">
+      <div class="dados-use-card"><b id="dadosVisitsTotal">—</b><span>visitas acumuladas</span></div>
+      <div class="dados-use-card"><b id="dadosVisitsToday">—</b><span>visitas hoje</span></div>
+      <div class="dados-use-card"><b id="dadosVisits7d">—</b><span>últimos 7 dias</span></div>
+      <div class="dados-use-card"><b id="dadosVisitsMonth">—</b><span>mês atual</span></div>
+    </div>
+    <div class="dados-empty-analytics" id="dadosAnalyticsMessage">O contador global ainda não foi ativado. O Atlas não apresenta números simulados. Quando o serviço estatístico for configurado, estes quatro indicadores serão preenchidos automaticamente.</div>
+    <div class="dados-use-note" id="dadosAnalyticsPrivacy">A camada estatística foi preparada para um serviço sem cookies e com contagens agregadas. A configuração do provedor permanece separada do código científico do Atlas.</div>
+  </section>
+
+  <section class="dados-panel">
+    <div class="dados-panel-head"><div><h3>Quadro completo do catálogo</h3><p>Totais por grupo e estado. Esta tabela permanece como registro operacional detalhado.</p></div></div>
+    <div id="dadosCatalogTable"></div>
+    <div class="dados-footnote">Camada conectada não equivale a snapshot local. Camada em avaliação ou planejada não é contabilizada como incorporada.</div>
+  </section>
+</div>
+</div></div></div>
 <div class="modal" id="pesquisaModal"><div class="modal-box"><div class="modal-head"><div><div class="kicker">Pesquisa</div><h2>Motor analítico multiescalar</h2></div><button type="button" class="close-modal" data-close="pesquisaModal">×</button></div><div class="modal-body">
 <div class="name-explain"><b>Regra metodológica central</b><br>As malhas de 250, 500 e 1000 km² são unidades independentes para cálculo de indicadores e índices. Cada escala será calculada diretamente a partir das evidências originais. Resultados de 500 km² não serão obtidos somando resultados de 250 km² e resultados de 1000 km² não serão obtidos agregando índices de escalas menores.</div>
 <h3>Três escalas permanentes</h3><div class="metrics"><div class="scale-card"><b>250 km²</b><span>1.554 células · leitura territorial detalhada</span></div><div class="scale-card"><b>500 km²</b><span>793 células · leitura intermediária</span></div><div class="scale-card"><b>1000 km²</b><span>412 células · leitura regional</span></div><div class="scale-card"><b>3 escalas</b><span>comparação de sensibilidade espacial</span></div></div>
@@ -95,7 +173,7 @@
 <div class="reference-tools"><input id="refSearch" type="search" placeholder="Buscar autor, instituição, tema ou título"><select id="refStatus"><option value="">Todos os estados</option><option value="incorporada">Incorporada</option><option value="consultada">Consultada</option><option value="em_avaliacao">Em avaliação</option><option value="metodologica">Metodológica</option></select></div>
 <div class="field-actions"><button class="action-btn" type="button" id="exportRefsCsv">Exportar referências CSV</button><a class="action-btn" href="./referencias/index.html" target="_blank" rel="noopener">Bibliografia por camada e índice</a></div><div class="reference-count" id="refCount"></div><div id="referenceList"></div>
 </div></div></div>
-<div class="modal" id="diagnosticoModal" role="dialog" aria-modal="true" aria-labelledby="diagTitle"><div class="modal-box"><div class="modal-head"><div><div class="kicker">Diagnóstico e auditoria</div><h2 id="diagTitle">Estado da infraestrutura</h2></div><button type="button" class="close-modal" data-close="diagnosticoModal" aria-label="Fechar diagnóstico">×</button></div><div class="modal-body"><div class="metrics"><div class="metric"><b id="diagTotal">—</b><span>camadas catalogadas</span></div><div class="metric"><b>14</b><span>grupos</span></div><div class="metric"><b>3</b><span>escalas analíticas</span></div><div class="metric"><b>set/2026</b><span>primeiro corte previsto</span></div></div><h3>Auditoria V32</h3><div class="diagnostic-list"><div class="diagnostic-row"><b>Navegação</b><span>Mapa, Camadas, Campo, Dados, Ficha, Pesquisa e Ajuda usam a mesma ordem no desktop e no celular. Tempo geológico, Tempo profundo e Autoria permanecem na documentação para reduzir a sobrecarga da barra principal.</span></div><div class="diagnostic-row"><b>Estabilidade do visor</b><span>Leaflet usa duas origens externas em sequência. Se ambas falharem, o Atlas entra em modo cartográfico local de emergência para manter catálogo, navegação e camadas locais disponíveis.</span></div><div class="diagnostic-row"><b>Camadas</b><span>Os 14 grupos iniciam fechados. As camadas só aparecem quando o usuário abre um grupo ou realiza uma busca.</span></div><div class="diagnostic-row"><b>Legendas</b><span>Camadas temáticas utilizáveis devem ter legenda. Simbologia oficial e classificação criada pelo Atlas são identificadas de forma distinta.</span></div><div class="diagnostic-row"><b>Dados</b><span>Os contadores e o resumo por grupo são gerados diretamente do catálogo para evitar números fixos desatualizados.</span></div><div class="diagnostic-row"><b>Referências</b><span>O registro bibliográfico mantém IDs únicos, vínculos explícitos para todas as camadas catalogadas e bibliografia metodológica específica para os índices multiescalares.</span></div><div class="diagnostic-row"><b>Estrutura HTML</b><span>Não foram encontrados IDs HTML duplicados. A sintaxe JavaScript é verificada antes da entrega do pacote.</span></div><div class="diagnostic-row"><b>Campo</b><span>Os registros permanecem locais por padrão. Spot, Tags, código de amostra e IGSN não entram automaticamente na base científica.</span></div><div class="diagnostic-row"><b>Limites</b><span>Serviços externos podem falhar ou mudar. Uma camada conectada não é tratada como snapshot local e deve ser congelada para o corte científico quando necessário.</span></div></div><h3>Critério para fechar o corte</h3><p>Catálogo, referências, arquivos, metadados, geometrias, legendas, licenças conhecidas e validações devem ser coerentes entre si. Pendências permanecem visíveis e não são convertidas em dado incorporado apenas para completar o menu.</p></div></div></div>
+<div class="modal" id="diagnosticoModal" role="dialog" aria-modal="true" aria-labelledby="diagTitle"><div class="modal-box"><div class="modal-head"><div><div class="kicker">Diagnóstico e auditoria</div><h2 id="diagTitle">Estado da infraestrutura</h2></div><button type="button" class="close-modal" data-close="diagnosticoModal" aria-label="Fechar diagnóstico">×</button></div><div class="modal-body"><div class="metrics"><div class="metric"><b id="diagTotal">—</b><span>camadas catalogadas</span></div><div class="metric"><b>14</b><span>grupos</span></div><div class="metric"><b>3</b><span>escalas analíticas</span></div><div class="metric"><b>set/2026</b><span>primeiro corte previsto</span></div></div><h3>Auditoria V32</h3><div class="diagnostic-list"><div class="diagnostic-row"><b>Navegação</b><span>Mapa, Camadas, Campo, Dados, Ficha, Pesquisa e Ajuda usam a mesma ordem no desktop e no celular. Tempo geológico, Tempo profundo e Autoria permanecem na documentação para reduzir a sobrecarga da barra principal.</span></div><div class="diagnostic-row"><b>Estabilidade do visor</b><span>Leaflet usa duas origens externas em sequência. Se ambas falharem, o Atlas entra em modo cartográfico local de emergência para manter catálogo, navegação e camadas locais disponíveis.</span></div><div class="diagnostic-row"><b>Camadas</b><span>Os 14 grupos iniciam fechados. As camadas só aparecem quando o usuário abre um grupo ou realiza uma busca.</span></div><div class="diagnostic-row"><b>Legendas</b><span>Camadas temáticas utilizáveis devem ter legenda. Simbologia oficial e classificação criada pelo Atlas são identificadas de forma distinta.</span></div><div class="diagnostic-row"><b>Dados</b><span>O painel estatístico combina estado do catálogo, grupos, malhas, índices, rastreabilidade bibliográfica e monitoramento público de uso. Os totais científicos são derivados dos registros internos e o contador de visitas permanece desativado enquanto não houver provedor configurado.</span></div><div class="diagnostic-row"><b>Referências</b><span>O registro bibliográfico mantém IDs únicos, vínculos explícitos para todas as camadas catalogadas e bibliografia metodológica específica para os índices multiescalares.</span></div><div class="diagnostic-row"><b>Estrutura HTML</b><span>Não foram encontrados IDs HTML duplicados. A sintaxe JavaScript é verificada antes da entrega do pacote.</span></div><div class="diagnostic-row"><b>Campo</b><span>Os registros permanecem locais por padrão. Spot, Tags, código de amostra e IGSN não entram automaticamente na base científica.</span></div><div class="diagnostic-row"><b>Limites</b><span>Serviços externos podem falhar ou mudar. Uma camada conectada não é tratada como snapshot local e deve ser congelada para o corte científico quando necessário.</span></div></div><h3>Critério para fechar o corte</h3><p>Catálogo, referências, arquivos, metadados, geometrias, legendas, licenças conhecidas e validações devem ser coerentes entre si. Pendências permanecem visíveis e não são convertidas em dado incorporado apenas para completar o menu.</p></div></div></div>
 <div class="modal" id="campoModal"><div class="modal-box"><div class="modal-head"><div><div class="kicker">ITA ARANDU Campo · protótipo local</div><h2>Ficha geológica de campo</h2></div><button type="button" class="close-modal" data-close="campoModal">×</button></div><div class="modal-body">
 <div class="field-status"><span class="local-badge">armazenamento local</span> Os registros desta versão permanecem neste navegador. Não são enviados para a base científica. Cada ficha funciona como um Spot pontual com identificador próprio, relações opcionais e Tags. A geolocalização automática depende das permissões e do contexto de segurança do navegador.</div>
 <form id="campoForm" autocomplete="off">
@@ -125,4 +203,5 @@
 <script src="./dados/registros.js"></script>
 <script src="./indices/imc-v32.js"></script>
 <script src="./camadas/catalogo-local.js"></script>
+<script src="./analytics/config.js"></script>
 <script src="./assets/js/bootstrap.js"></script></body></html>

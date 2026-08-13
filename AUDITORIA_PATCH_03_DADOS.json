@@ -1,0 +1,38 @@
+{
+  "patch": "PATCH 03 · Dados estatísticos completos e visuais",
+  "date": "2026-08-13",
+  "javascript_ok": true,
+  "javascript_checks": {
+    "docs/assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/service-worker.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/dados/meta.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/analytics/config.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/referencias/referencias.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/dados/registros.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "dados_dashboard_css": true,
+  "analytics_config": true,
+  "analytics_enabled_by_default": false,
+  "visitor_numbers_simulated": false,
+  "modal_dados_present": true,
+  "usage_cards_present": true,
+  "pwa_cache_updated": true
+}

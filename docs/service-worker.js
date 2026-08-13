@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-ms-v35-patch01-ptbr-20260813';
+const ITA_CACHE = 'ita-arandu-ms-v35-patch03-dados-estatisticos-20260813';
 const ITA_CORE = [
   "./",
   "./index.html",
@@ -24,8 +24,12 @@ const ITA_CORE = [
   "./camadas/arquivos/malha_r5_250km2.geojson",
   "./camadas/arquivos/malha_500km2.geojson",
   "./camadas/arquivos/malha_1000km2.geojson",
-  "./camadas/arquivos/mapa_geologico_ms.geojson"
-];
+  "./camadas/arquivos/mapa_geologico_ms.geojson",
+  "./referencias/index.html",
+  "./referencias/bibliografia-camadas-indices.json",
+  "./referencias/README.md",
+  "./assets/css/dados-dashboard.css",
+  "./analytics/config.js"];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(ITA_CACHE).then(cache=>cache.addAll(ITA_CORE)).then(()=>self.skipWaiting()));
 });

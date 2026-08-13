@@ -1,3 +1,33 @@
+# PATCH 03 · Dados estatísticos completos e visuais · 2026-08-13
+
+- painel Dados redesenhado como dashboard visual
+- métricas dinâmicas de catálogo, estados, grupos, arquivos locais e bibliografia
+- gráfico circular do estado do catálogo
+- barras empilhadas por grupo geocientífico
+- cartões das três malhas analíticas
+- painel visual dos 12 índices multiescalares
+- bloco de rastreabilidade científica
+- estrutura para estatísticas públicas de uso e visitas
+- integração opcional e separada com GoatCounter
+- nenhum número de visitantes é simulado quando o serviço não está configurado
+- cache da PWA atualizado
+
+# PATCH 02 · bibliografia acadêmica por camada e índice · 2026-08-13
+
+- registro mestre normalizado em APA 7 com metadados de qualidade e verificação
+- correção da referência do mapa geológico estadual de 2006 segundo o RIGeo
+- correção da referência do Mapa do Conhecimento Geológico de Corumbá de 2026 segundo o RIGeo
+- correção do PlanGeo 2025–2034 para a autoria e o ano bibliográfico de 2024 registrados pelo SGB
+- incorporação da referência científica atual da International Chronostratigraphic Chart, Cohen et al. 2025
+- incorporação da fonte oficial ANAC para aeródromos
+- vínculo bibliográfico explícito em todas as camadas do catálogo
+- bibliografia metodológica e de fontes estruturantes reforçada nos 12 índices multiescalares
+- página pública `docs/referencias/index.html` com bibliografia por camada e por índice
+- matriz auditável `docs/referencias/bibliografia-camadas-indices.json`
+- cada cartão de camada passa a oferecer acesso direto à sua bibliografia
+- exportação CSV ampliada com DOI, classe de qualidade e nível de verificação
+- cache da PWA atualizado para distribuir a revisão bibliográfica
+
 # PATCH 01 · unificação pt-BR · 2026-08-13
 
 - interface e textos operacionais revisados para português do Brasil
