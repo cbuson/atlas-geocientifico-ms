@@ -1,3 +1,10 @@
+# PATCH 01 · unificação pt-BR · 2026-08-13
+
+- interface e textos operacionais revisados para português do Brasil
+- corrigido trecho misto espanhol-português em Tectônica e estruturas
+- cache da PWA atualizado para propagar a correção aos dispositivos instalados
+- metadado de versão atualizado para `V35-beta-camadas-separadas-patch01-ptbr`
+
 # V35 Beta · repositório modular e camadas separadas · 2026-08-13
 
 - 26 camadas válidas convertidas em arquivos GeoJSON independentes

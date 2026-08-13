@@ -1,0 +1,220 @@
+{
+  "patch": "PATCH 02 · bibliografia acadêmica",
+  "date": "2026-08-13",
+  "citation_standard": "APA 7",
+  "references_total": 118,
+  "references_primary_verified": 14,
+  "catalog_layers_total": 183,
+  "layers_without_reference_link": [],
+  "broken_reference_ids": [],
+  "duplicate_reference_ids": [],
+  "catalog_reference_id_mismatches": [],
+  "index_layers_total": 36,
+  "index_families": {
+    "IMC": {
+      "layers": [
+        "imc_250",
+        "imc_500",
+        "imc_1000"
+      ],
+      "all_have_references": true,
+      "unique_references": [
+        "REF-002",
+        "REF-053",
+        "REF-087",
+        "REF-104",
+        "REF-105",
+        "REF-114",
+        "REF-115"
+      ]
+    },
+    "IOD": {
+      "layers": [
+        "iod_250",
+        "iod_500",
+        "iod_1000"
+      ],
+      "all_have_references": true,
+      "unique_references": [
+        "REF-055",
+        "REF-070",
+        "REF-083",
+        "REF-105",
+        "REF-106",
+        "REF-115"
+      ]
+    },
+    "ICP": {
+      "layers": [
+        "icp_250",
+        "icp_500",
+        "icp_1000"
+      ],
+      "all_have_references": true,
+      "unique_references": [
+        "REF-059",
+        "REF-084",
+        "REF-105",
+        "REF-106",
+        "REF-114",
+        "REF-115"
+      ]
+    },
+    "IGC": {
+      "layers": [
+        "igc_250",
+        "igc_500",
+        "igc_1000"
+      ],
+      "all_have_references": true,
+      "unique_references": [
+        "REF-085",
+        "REF-105",
+        "REF-108",
+        "REF-115"
+      ]
+    },
+    "IGQ": {
+      "layers": [
+        "igq_250",
+        "igq_500",
+        "igq_1000"
+      ],
+      "all_have_references": true,
+      "unique_references": [
+        "REF-099",
+        "REF-105",
+        "REF-107",
+        "REF-115"
+      ]
+    },
+    "IGF": {
+      "layers": [
+        "igf_250",
+        "igf_500",
+        "igf_1000"
+      ],
+      "all_have_references": true,
+      "unique_references": [
+        "REF-100",
+        "REF-101",
+        "REF-102",
+        "REF-105",
+        "REF-109",
+        "REF-115"
+      ]
+    },
+    "ICS": {
+      "layers": [
+        "ics_250",
+        "ics_500",
+        "ics_1000"
+      ],
+      "all_have_references": true,
+      "unique_references": [
+        "REF-059",
+        "REF-093",
+        "REF-094",
+        "REF-105",
+        "REF-106",
+        "REF-110",
+        "REF-115"
+      ]
+    },
+    "IDE": {
+      "layers": [
+        "ide_250",
+        "ide_500",
+        "ide_1000"
+      ],
+      "all_have_references": true,
+      "unique_references": [
+        "REF-105",
+        "REF-111",
+        "REF-112",
+        "REF-113",
+        "REF-115"
+      ]
+    },
+    "ICG": {
+      "layers": [
+        "icg_250",
+        "icg_500",
+        "icg_1000"
+      ],
+      "all_have_references": true,
+      "unique_references": [
+        "REF-104",
+        "REF-105",
+        "REF-114",
+        "REF-115"
+      ]
+    },
+    "VCG": {
+      "layers": [
+        "vazios_250",
+        "vazios_500",
+        "vazios_1000"
+      ],
+      "all_have_references": true,
+      "unique_references": [
+        "REF-105",
+        "REF-114",
+        "REF-115"
+      ]
+    },
+    "PIG": {
+      "layers": [
+        "pig_250",
+        "pig_500",
+        "pig_1000"
+      ],
+      "all_have_references": true,
+      "unique_references": [
+        "REF-105",
+        "REF-114",
+        "REF-115",
+        "REF-116"
+      ]
+    },
+    "IPG": {
+      "layers": [
+        "ipg_r5_250km2",
+        "ipg_500km2",
+        "ipg_1000km2"
+      ],
+      "all_have_references": true,
+      "unique_references": [
+        "REF-002",
+        "REF-013",
+        "REF-014",
+        "REF-055",
+        "REF-067",
+        "REF-068",
+        "REF-069",
+        "REF-105",
+        "REF-115"
+      ]
+    }
+  },
+  "all_js_ok": true,
+  "javascript_checks": {
+    "docs/referencias/referencias.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/dados/registros.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "docs/service-worker.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "bibliography_json_sha256": "7a1f0b0e62ab253325c7ed3245e4eaefce0d377f8de778de0121b220f82b721e"
+}

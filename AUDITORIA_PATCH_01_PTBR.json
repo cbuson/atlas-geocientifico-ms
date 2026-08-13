@@ -1,0 +1,20 @@
+{
+  "patch": "PATCH 01 pt-BR",
+  "trecho_corrigido": "A classificação pode combinar cisalhamento com falha e regimes transpressionais, transtracionais, extensionais ou compressionais, conforme a fonte.",
+  "marcadores_espanhois_alta_confianca_restantes": {},
+  "javascript": {
+    "app.js": {
+      "ok": true,
+      "error": ""
+    },
+    "service-worker.js": {
+      "ok": true,
+      "error": ""
+    },
+    "meta.js": {
+      "ok": true,
+      "error": ""
+    }
+  },
+  "javascript_ok": true
+}

@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-ms-v35-beta-camadas-separadas-20260813';
+const ITA_CACHE = 'ita-arandu-ms-v35-patch01-ptbr-20260813';
 const ITA_CORE = [
   "./",
   "./index.html",
