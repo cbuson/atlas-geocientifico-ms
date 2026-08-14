@@ -2,7 +2,7 @@
   "generated_on": "2026-08-14",
   "citation_standard": "APA 7",
   "project": "ITA ARANDU MS · Atlas Geocientífico de Mato Grosso do Sul",
-  "total_references": 171,
+  "total_references": 175,
   "total_catalog_layers": 214,
   "total_index_layers": 36,
   "entries": [
@@ -442,9 +442,9 @@
       "id": "afloramentos_geosgb_ms",
       "name": "Afloramentos e pontos geológicos GeoSGB",
       "group": "Geologia e estratigrafia",
-      "status": "conectada",
+      "status": "incorporada",
       "kind": "camada",
-      "source": "SGB · Geoportal · Afloramentos geológicos",
+      "source": "SGB · GeoSGB · Afloramentos geológicos · snapshot local V38.4.8",
       "reference_ids": [
         "REF-083"
       ],
@@ -4136,71 +4136,74 @@
       "id": "iod_250",
       "name": "IOD · Observação Direta · 250 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
-      "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
+      "source": "ITA ARANDU MS · IOD V38.4.8 · SGB GeoSGB AFLO materializado",
       "reference_ids": [
-        "REF-105",
-        "REF-106",
-        "REF-115",
         "REF-055",
         "REF-070",
-        "REF-083"
+        "REF-083",
+        "REF-105",
+        "REF-106",
+        "REF-111",
+        "REF-112",
+        "REF-113",
+        "REF-115"
       ],
       "references": [
-        {
-          "id": "REF-105",
-          "apa7": "Saisana, M., Saltelli, A., & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society. Series A, 168(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x",
-          "type": "artigo científico",
-          "quality_class": "artigo científico revisado por pares",
-          "verification_level": "fonte_primaria_conferida",
-          "url": "https://doi.org/10.1111/j.1467-985X.2005.00350.x",
-          "doi": "10.1111/j.1467-985X.2005.00350.x"
-        },
-        {
-          "id": "REF-106",
-          "apa7": "Stevens, D. L., Jr., & Olsen, A. R. (2004). Spatially balanced sampling of natural resources. Journal of the American Statistical Association, 99(465), 262–278. https://doi.org/10.1198/016214504000000250",
-          "type": "artigo científico",
-          "quality_class": "artigo científico revisado por pares",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://doi.org/10.1198/016214504000000250",
-          "doi": "10.1198/016214504000000250"
-        },
-        {
-          "id": "REF-115",
-          "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.",
-          "type": "documento do projeto",
-          "quality_class": "documentação metodológica do projeto",
-          "verification_level": "registro_mestre_revisado",
-          "url": "",
-          "doi": null
-        },
         {
           "id": "REF-055",
           "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). ITA ARANDU MS. Atlas Geocientífico de Mato Grosso do Sul. Arquitetura científica e metodológica, versão 0.24 [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.",
           "type": "documento do projeto",
-          "quality_class": "documentação metodológica do projeto",
-          "verification_level": "registro_mestre_revisado",
-          "url": "",
-          "doi": null
+          "url": ""
         },
         {
           "id": "REF-070",
           "apa7": "Walker, J. D., Tikoff, B., Newman, J., Clark, R., Ash, J., Good, J., Bunse, E. G., Möller, A., Kahn, M., Williams, R. T., Michels, Z., Andrew, J. E., & Rufledt, C. (2019). StraboSpot data system for structural geology. Geosphere, 15(2), 533–547. https://doi.org/10.1130/GES02039.1",
           "type": "artigo científico",
-          "quality_class": "artigo científico revisado por pares",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://doi.org/10.1130/GES02039.1",
-          "doi": "10.1130/GES02039.1"
+          "url": "https://doi.org/10.1130/GES02039.1"
         },
         {
           "id": "REF-083",
           "apa7": "Serviço Geológico do Brasil. (s.d.). Afloramentos geológicos [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0",
           "type": "serviço geoespacial",
-          "quality_class": "fonte primária institucional",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0",
-          "doi": null
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0"
+        },
+        {
+          "id": "REF-105",
+          "apa7": "Saisana, M., Saltelli, A., & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society. Series A, 168(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.1111/j.1467-985X.2005.00350.x"
+        },
+        {
+          "id": "REF-106",
+          "apa7": "Stevens, D. L., Jr., & Olsen, A. R. (2004). Spatially balanced sampling of natural resources. Journal of the American Statistical Association, 99(465), 262–278. https://doi.org/10.1198/016214504000000250",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.1198/016214504000000250"
+        },
+        {
+          "id": "REF-111",
+          "apa7": "Hill, M. O. (1973). Diversity and evenness. A unifying notation and its consequences. Ecology, 54(2), 427–432. https://doi.org/10.2307/1934352",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.2307/1934352"
+        },
+        {
+          "id": "REF-112",
+          "apa7": "Jost, L. (2006). Entropy and diversity. Oikos, 113(2), 363–375. https://doi.org/10.1111/j.2006.0030-1299.14714.x",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.1111/j.2006.0030-1299.14714.x"
+        },
+        {
+          "id": "REF-113",
+          "apa7": "Shannon, C. E. (1948). A mathematical theory of communication. Bell System Technical Journal, 27(3), 379–423. https://doi.org/10.1002/j.1538-7305.1948.tb01338.x",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.1002/j.1538-7305.1948.tb01338.x"
+        },
+        {
+          "id": "REF-115",
+          "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.",
+          "type": "documento do projeto",
+          "url": ""
         }
       ]
     },
@@ -4208,71 +4211,74 @@
       "id": "iod_500",
       "name": "IOD · Observação Direta · 500 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
-      "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
+      "source": "ITA ARANDU MS · IOD V38.4.8 · SGB GeoSGB AFLO materializado",
       "reference_ids": [
-        "REF-105",
-        "REF-106",
-        "REF-115",
         "REF-055",
         "REF-070",
-        "REF-083"
+        "REF-083",
+        "REF-105",
+        "REF-106",
+        "REF-111",
+        "REF-112",
+        "REF-113",
+        "REF-115"
       ],
       "references": [
-        {
-          "id": "REF-105",
-          "apa7": "Saisana, M., Saltelli, A., & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society. Series A, 168(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x",
-          "type": "artigo científico",
-          "quality_class": "artigo científico revisado por pares",
-          "verification_level": "fonte_primaria_conferida",
-          "url": "https://doi.org/10.1111/j.1467-985X.2005.00350.x",
-          "doi": "10.1111/j.1467-985X.2005.00350.x"
-        },
-        {
-          "id": "REF-106",
-          "apa7": "Stevens, D. L., Jr., & Olsen, A. R. (2004). Spatially balanced sampling of natural resources. Journal of the American Statistical Association, 99(465), 262–278. https://doi.org/10.1198/016214504000000250",
-          "type": "artigo científico",
-          "quality_class": "artigo científico revisado por pares",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://doi.org/10.1198/016214504000000250",
-          "doi": "10.1198/016214504000000250"
-        },
-        {
-          "id": "REF-115",
-          "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.",
-          "type": "documento do projeto",
-          "quality_class": "documentação metodológica do projeto",
-          "verification_level": "registro_mestre_revisado",
-          "url": "",
-          "doi": null
-        },
         {
           "id": "REF-055",
           "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). ITA ARANDU MS. Atlas Geocientífico de Mato Grosso do Sul. Arquitetura científica e metodológica, versão 0.24 [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.",
           "type": "documento do projeto",
-          "quality_class": "documentação metodológica do projeto",
-          "verification_level": "registro_mestre_revisado",
-          "url": "",
-          "doi": null
+          "url": ""
         },
         {
           "id": "REF-070",
           "apa7": "Walker, J. D., Tikoff, B., Newman, J., Clark, R., Ash, J., Good, J., Bunse, E. G., Möller, A., Kahn, M., Williams, R. T., Michels, Z., Andrew, J. E., & Rufledt, C. (2019). StraboSpot data system for structural geology. Geosphere, 15(2), 533–547. https://doi.org/10.1130/GES02039.1",
           "type": "artigo científico",
-          "quality_class": "artigo científico revisado por pares",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://doi.org/10.1130/GES02039.1",
-          "doi": "10.1130/GES02039.1"
+          "url": "https://doi.org/10.1130/GES02039.1"
         },
         {
           "id": "REF-083",
           "apa7": "Serviço Geológico do Brasil. (s.d.). Afloramentos geológicos [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0",
           "type": "serviço geoespacial",
-          "quality_class": "fonte primária institucional",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0",
-          "doi": null
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0"
+        },
+        {
+          "id": "REF-105",
+          "apa7": "Saisana, M., Saltelli, A., & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society. Series A, 168(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.1111/j.1467-985X.2005.00350.x"
+        },
+        {
+          "id": "REF-106",
+          "apa7": "Stevens, D. L., Jr., & Olsen, A. R. (2004). Spatially balanced sampling of natural resources. Journal of the American Statistical Association, 99(465), 262–278. https://doi.org/10.1198/016214504000000250",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.1198/016214504000000250"
+        },
+        {
+          "id": "REF-111",
+          "apa7": "Hill, M. O. (1973). Diversity and evenness. A unifying notation and its consequences. Ecology, 54(2), 427–432. https://doi.org/10.2307/1934352",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.2307/1934352"
+        },
+        {
+          "id": "REF-112",
+          "apa7": "Jost, L. (2006). Entropy and diversity. Oikos, 113(2), 363–375. https://doi.org/10.1111/j.2006.0030-1299.14714.x",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.1111/j.2006.0030-1299.14714.x"
+        },
+        {
+          "id": "REF-113",
+          "apa7": "Shannon, C. E. (1948). A mathematical theory of communication. Bell System Technical Journal, 27(3), 379–423. https://doi.org/10.1002/j.1538-7305.1948.tb01338.x",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.1002/j.1538-7305.1948.tb01338.x"
+        },
+        {
+          "id": "REF-115",
+          "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.",
+          "type": "documento do projeto",
+          "url": ""
         }
       ]
     },
@@ -4280,71 +4286,74 @@
       "id": "iod_1000",
       "name": "IOD · Observação Direta · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
-      "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
+      "source": "ITA ARANDU MS · IOD V38.4.8 · SGB GeoSGB AFLO materializado",
       "reference_ids": [
-        "REF-105",
-        "REF-106",
-        "REF-115",
         "REF-055",
         "REF-070",
-        "REF-083"
+        "REF-083",
+        "REF-105",
+        "REF-106",
+        "REF-111",
+        "REF-112",
+        "REF-113",
+        "REF-115"
       ],
       "references": [
-        {
-          "id": "REF-105",
-          "apa7": "Saisana, M., Saltelli, A., & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society. Series A, 168(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x",
-          "type": "artigo científico",
-          "quality_class": "artigo científico revisado por pares",
-          "verification_level": "fonte_primaria_conferida",
-          "url": "https://doi.org/10.1111/j.1467-985X.2005.00350.x",
-          "doi": "10.1111/j.1467-985X.2005.00350.x"
-        },
-        {
-          "id": "REF-106",
-          "apa7": "Stevens, D. L., Jr., & Olsen, A. R. (2004). Spatially balanced sampling of natural resources. Journal of the American Statistical Association, 99(465), 262–278. https://doi.org/10.1198/016214504000000250",
-          "type": "artigo científico",
-          "quality_class": "artigo científico revisado por pares",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://doi.org/10.1198/016214504000000250",
-          "doi": "10.1198/016214504000000250"
-        },
-        {
-          "id": "REF-115",
-          "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.",
-          "type": "documento do projeto",
-          "quality_class": "documentação metodológica do projeto",
-          "verification_level": "registro_mestre_revisado",
-          "url": "",
-          "doi": null
-        },
         {
           "id": "REF-055",
           "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). ITA ARANDU MS. Atlas Geocientífico de Mato Grosso do Sul. Arquitetura científica e metodológica, versão 0.24 [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.",
           "type": "documento do projeto",
-          "quality_class": "documentação metodológica do projeto",
-          "verification_level": "registro_mestre_revisado",
-          "url": "",
-          "doi": null
+          "url": ""
         },
         {
           "id": "REF-070",
           "apa7": "Walker, J. D., Tikoff, B., Newman, J., Clark, R., Ash, J., Good, J., Bunse, E. G., Möller, A., Kahn, M., Williams, R. T., Michels, Z., Andrew, J. E., & Rufledt, C. (2019). StraboSpot data system for structural geology. Geosphere, 15(2), 533–547. https://doi.org/10.1130/GES02039.1",
           "type": "artigo científico",
-          "quality_class": "artigo científico revisado por pares",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://doi.org/10.1130/GES02039.1",
-          "doi": "10.1130/GES02039.1"
+          "url": "https://doi.org/10.1130/GES02039.1"
         },
         {
           "id": "REF-083",
           "apa7": "Serviço Geológico do Brasil. (s.d.). Afloramentos geológicos [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0",
           "type": "serviço geoespacial",
-          "quality_class": "fonte primária institucional",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0",
-          "doi": null
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0"
+        },
+        {
+          "id": "REF-105",
+          "apa7": "Saisana, M., Saltelli, A., & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society. Series A, 168(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.1111/j.1467-985X.2005.00350.x"
+        },
+        {
+          "id": "REF-106",
+          "apa7": "Stevens, D. L., Jr., & Olsen, A. R. (2004). Spatially balanced sampling of natural resources. Journal of the American Statistical Association, 99(465), 262–278. https://doi.org/10.1198/016214504000000250",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.1198/016214504000000250"
+        },
+        {
+          "id": "REF-111",
+          "apa7": "Hill, M. O. (1973). Diversity and evenness. A unifying notation and its consequences. Ecology, 54(2), 427–432. https://doi.org/10.2307/1934352",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.2307/1934352"
+        },
+        {
+          "id": "REF-112",
+          "apa7": "Jost, L. (2006). Entropy and diversity. Oikos, 113(2), 363–375. https://doi.org/10.1111/j.2006.0030-1299.14714.x",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.1111/j.2006.0030-1299.14714.x"
+        },
+        {
+          "id": "REF-113",
+          "apa7": "Shannon, C. E. (1948). A mathematical theory of communication. Bell System Technical Journal, 27(3), 379–423. https://doi.org/10.1002/j.1538-7305.1948.tb01338.x",
+          "type": "artigo científico",
+          "url": "https://doi.org/10.1002/j.1538-7305.1948.tb01338.x"
+        },
+        {
+          "id": "REF-115",
+          "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.",
+          "type": "documento do projeto",
+          "url": ""
         }
       ]
     },
@@ -8274,5 +8283,15 @@
     "REF-104",
     "REF-105"
   ],
-  "critical_literacy_note": "Fundamentos transversais do Modo Aprender para fonte, escala, evidência, incerteza, geoética e interpretação. A bibliografia permanece concentrada no registro mestre."
+  "critical_literacy_note": "Fundamentos transversais do Modo Aprender para fonte, escala, evidência, incerteza, geoética e interpretação. A bibliografia permanece concentrada no registro mestre.",
+  "methodological_positioning_reference_ids": [
+    "REF-104",
+    "REF-114",
+    "REF-151",
+    "REF-174",
+    "REF-175",
+    "REF-176",
+    "REF-177"
+  ],
+  "methodological_positioning_note": "Antecedentes comparativos para integração de evidências, disponibilidade de dados, planejamento do conhecimento geológico e índices compostos. São referências de posicionamento e não fórmulas ou pesos transferidos automaticamente aos índices do Atlas."
 }

@@ -1,3 +1,35 @@
+## V38.4.8 · 2026-08-14 · IOD Observação Direta
+
+- materializa AFLO SGB para Mato Grosso do Sul
+- calcula IOD em 250, 500 e 1000 km² diretamente da fonte
+- congela micromalha basal de 5 km e normalização D* P95
+- usa ocupação espacial O e equilíbrio de Shannon E
+- mantém hexágonos sem observação com valor nulo e preenchimento transparente
+- executa sensibilidade 2,5 km, 5 km e 10 km com P90, P95 e P99
+- registra SHA-256 da resposta SGB e auditoria runtime
+- não incorpora automaticamente registros da caderneta de campo
+
+# V38.4.7 · METODOLOGIA-ANTECEDENTES-APA7 · 2026-08-14
+
+- acrescenta posicionamento explícito dos índices perante antecedentes metodológicos nacionais e internacionais
+- adiciona REF-174 a REF-177 com metadados conferidos em fontes primárias ou editoriais
+- diferencia corretamente Ford et al. 2023a e 2023b no sistema autor-data da APA 7
+- distingue PlanGeo 2025–2034 de mapeamento geológico básico e PlanGeo 2026–2035 de pesquisa de recursos minerais
+- registra o Caderno 1 do Plano Nacional de Mineração 2050 como antecedente de diagnóstico do conhecimento geológico
+- explicita que antecedentes não transferem pesos, fórmulas ou finalidade aos índices do Atlas
+- registra PIG e ICG como produtos ainda planejados na versão atual
+- não altera dados, geometrias, sensores, GPS, navegação, PAG ETR, fórmulas ou resultados de índices
+
+# V38.4.6 · UX-CAMPO-03 · 2026-08-14
+
+- Corrige mistura de HTML novo com CSS e JavaScript antigos causada por cache do PWA.
+- Adiciona versionamento `?v=38.4.6` aos recursos críticos do aplicativo.
+- Service Worker passa a usar rede primeiro para código e estilos, preservando fallback offline.
+- Registro do Service Worker usa `updateViaCache: none`.
+- Navegação da caderneta em celular passa a usar etapas horizontais roláveis com alvos táteis maiores.
+- Melhora legibilidade dos instrumentos em telas pequenas.
+- Reduz discretamente o marcador permanente de localização sem perder a convenção vermelho-amarelo-vermelho.
+
 ## V38.4.5 · UX-CAMPO-02 · instrumentos do dispositivo · 2026-08-14
 - adiciona ativação explícita de orientação e movimento no módulo Campo;
 - integra bússola, clinômetro, nível, aceleração e rotação em painel ao vivo;

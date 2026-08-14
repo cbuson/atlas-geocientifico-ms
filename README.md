@@ -1,3 +1,7 @@
+## V38.4.8 · IOD · Observação Direta
+
+Materialização reproduzível do IOD em 250, 500 e 1000 km² a partir de Afloramentos geológicos do SGB. O instalador captura a fonte oficial, deduplica as observações, calcula D*, O e E de forma independente em cada escala, executa análise de sensibilidade e só conclui a atualização se a auditoria runtime passar.
+
 # ITA ARANDU MS
 
 ## Atlas geocientífico educativo e científico de Mato Grosso do Sul
@@ -143,3 +147,12 @@ A V38.4.3 adiciona geometria computacional topologicamente válida sem substitui
 ## UX-CAMPO-01 · Caderneta Geológica Digital · 14/08/2026
 
 A V38.4.4 transforma Campo em uma caderneta por estações, com navegação por etapas, modo rápido/completo/aprender, medidas estruturais repetíveis, amostras com código local automático, etiquetas, fotos classificadas, rascunho local, revisão e exportações JSON/GeoJSON/CSV. Nenhuma estação entra automaticamente no IOD.
+
+
+## Atualização V38.4.6
+A V38.4.6 introduz invalidação explícita de cache para impedir que GitHub Pages/PWA combinem arquivos de versões diferentes. Recursos críticos usam identificador de versão e estratégia network-first com fallback offline.
+
+
+## Atualização V38.4.7
+
+A V38.4.7 fecha o bloco documental de posicionamento metodológico dos índices. Acrescenta antecedentes nacionais e internacionais com referências APA 7 verificadas, separa explicitamente comparação de transferência metodológica e registra como planejados os produtos ainda não materializados. Nenhum cálculo, geometria, sensor, GPS ou comportamento cartográfico é alterado.

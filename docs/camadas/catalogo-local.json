@@ -1,5 +1,16 @@
 [
   {
+    "id": "afloramentos_geosgb_ms",
+    "arquivo": "./camadas/arquivos/afloramentos_geosgb_ms.geojson",
+    "nome": "Afloramentos e pontos geológicos GeoSGB",
+    "grupo": "Geologia e estratigrafia",
+    "status": "incorporada",
+    "fonte": "SGB · GeoSGB · Afloramentos geológicos · snapshot local V38.4.8",
+    "validacao": "recorte MS · deduplicação por identificador institucional · fonte do IOD",
+    "feicoes": 7189,
+    "bytes": 8854836
+  },
+  {
     "id": "cavernas_canie",
     "arquivo": "./camadas/arquivos/cavernas_canie.geojson",
     "nome": "Cavidades naturais subterrâneas · CANIE/CECAV",

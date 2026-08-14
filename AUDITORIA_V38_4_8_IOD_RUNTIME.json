@@ -1,0 +1,187 @@
+{
+  "audit": "IOD V38.4.8 runtime",
+  "status": "PASS",
+  "generated_at": "2026-08-14T22:17:59Z",
+  "version": "V38.4.8-IOD-OBSERVACAO-DIRETA-20260814",
+  "source": {
+    "method": "WFS SGB Dados Abertos",
+    "url": "https://opendata.sgb.gov.br/geoserver/p3m/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=p3m%3Avw_cprm_ms_aflor&outputFormat=application%2Fjson&srsName=EPSG%3A4326&maxFeatures=300000",
+    "sha256": "0639887bce486e951d56dc1226b6698d2d30c203b68b51089f2ddc41c8f7db29",
+    "features": 7189,
+    "duplicates_removed": 145,
+    "invalid_removed": 0,
+    "non_ms_removed": 0
+  },
+  "scales": {
+    "250": {
+      "cells": 1554,
+      "cells_with_observations": 437,
+      "cells_without_observations": 1117,
+      "iod_min": 9.1,
+      "iod_median": 20.65,
+      "iod_mean": 30.71,
+      "iod_max": 98.63,
+      "observations_sum": 7189,
+      "max_observations_cell": 214,
+      "density_p95": 0.40879909,
+      "edge_fallback_cells": 0,
+      "ambiguous_boundary_resolved": 0
+    },
+    "500": {
+      "cells": 793,
+      "cells_with_observations": 265,
+      "cells_without_observations": 528,
+      "iod_min": 6.15,
+      "iod_median": 16.74,
+      "iod_mean": 27.31,
+      "iod_max": 98.78,
+      "observations_sum": 7189,
+      "max_observations_cell": 329,
+      "density_p95": 0.39031037,
+      "edge_fallback_cells": 0,
+      "ambiguous_boundary_resolved": 0
+    },
+    "1000": {
+      "cells": 412,
+      "cells_with_observations": 156,
+      "cells_without_observations": 256,
+      "iod_min": 4.05,
+      "iod_median": 16.02,
+      "iod_mean": 26.15,
+      "iod_max": 98.39,
+      "observations_sum": 7189,
+      "max_observations_cell": 604,
+      "density_p95": 0.35736966,
+      "edge_fallback_cells": 0,
+      "ambiguous_boundary_resolved": 0
+    }
+  },
+  "sensitivity": {
+    "250": {
+      "micro_2.5km_P90": {
+        "n_common": 437,
+        "rho": 0.980109
+      },
+      "micro_2.5km_P95": {
+        "n_common": 437,
+        "rho": 0.980252
+      },
+      "micro_2.5km_P99": {
+        "n_common": 437,
+        "rho": 0.980165
+      },
+      "micro_5km_P90": {
+        "n_common": 437,
+        "rho": 0.999399
+      },
+      "micro_5km_P95": {
+        "n_common": 437,
+        "rho": 1.0
+      },
+      "micro_5km_P99": {
+        "n_common": 437,
+        "rho": 0.9999
+      },
+      "micro_10km_P90": {
+        "n_common": 437,
+        "rho": 0.968847
+      },
+      "micro_10km_P95": {
+        "n_common": 437,
+        "rho": 0.969864
+      },
+      "micro_10km_P99": {
+        "n_common": 437,
+        "rho": 0.969944
+      }
+    },
+    "500": {
+      "micro_2.5km_P90": {
+        "n_common": 265,
+        "rho": 0.99043
+      },
+      "micro_2.5km_P95": {
+        "n_common": 265,
+        "rho": 0.990498
+      },
+      "micro_2.5km_P99": {
+        "n_common": 265,
+        "rho": 0.990455
+      },
+      "micro_5km_P90": {
+        "n_common": 265,
+        "rho": 0.99978
+      },
+      "micro_5km_P95": {
+        "n_common": 265,
+        "rho": 1.0
+      },
+      "micro_5km_P99": {
+        "n_common": 265,
+        "rho": 0.999859
+      },
+      "micro_10km_P90": {
+        "n_common": 265,
+        "rho": 0.983353
+      },
+      "micro_10km_P95": {
+        "n_common": 265,
+        "rho": 0.983793
+      },
+      "micro_10km_P99": {
+        "n_common": 265,
+        "rho": 0.983817
+      }
+    },
+    "1000": {
+      "micro_2.5km_P90": {
+        "n_common": 156,
+        "rho": 0.995736
+      },
+      "micro_2.5km_P95": {
+        "n_common": 156,
+        "rho": 0.995786
+      },
+      "micro_2.5km_P99": {
+        "n_common": 156,
+        "rho": 0.995682
+      },
+      "micro_5km_P90": {
+        "n_common": 156,
+        "rho": 0.999806
+      },
+      "micro_5km_P95": {
+        "n_common": 156,
+        "rho": 1.0
+      },
+      "micro_5km_P99": {
+        "n_common": 156,
+        "rho": 0.999893
+      },
+      "micro_10km_P90": {
+        "n_common": 156,
+        "rho": 0.99105
+      },
+      "micro_10km_P95": {
+        "n_common": 156,
+        "rho": 0.99133
+      },
+      "micro_10km_P99": {
+        "n_common": 156,
+        "rho": 0.991332
+      }
+    }
+  },
+  "checks": {
+    "source_features_positive": true,
+    "all_source_points_assigned_each_scale": true,
+    "grid_counts": {
+      "250": 1554,
+      "500": 793,
+      "1000": 412
+    },
+    "score_range_valid": true,
+    "zero_observation_is_null": true,
+    "independent_scale_calculation": true
+  }
+}

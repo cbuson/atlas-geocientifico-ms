@@ -1,0 +1,33 @@
+{
+  "versao": "V38.4.6",
+  "data": "2026-08-14",
+  "base_recebida": "V38.4.5-UX-CAMPO-02-instrumentos-sensores-20260814",
+  "diagnostico_principal": "mistura de recursos por cache PWA no navegador online",
+  "evidencias": [
+    "O ZIP recebido contém .campo-stepper, .campo-mode e .gps-hud-marker com o desenho novo.",
+    "A captura online mostra HTML novo de Campo e sensores, mas botões sem os estilos presentes em atlas.css.",
+    "A captura online mostra ponto azul enquanto o app.js e atlas.css recebidos definem o marcador vermelho-amarelo-vermelho.",
+    "Os recursos críticos eram referenciados sem identificador de versão e o Service Worker usava cache-first para scripts e styles."
+  ],
+  "correcoes": [
+    "cache busting 38.4.6 nos CSS e JS críticos",
+    "bootstrap carrega app.js e campo-sensores.js versionados",
+    "Service Worker network-first para código e estilos e exclusão de caches antigos",
+    "registro Service Worker updateViaCache none",
+    "stepper móvel horizontal e alvos táteis maiores",
+    "melhoria de legibilidade do painel de sensores",
+    "GPS HUD reduzido para 14-20 px conforme zoom"
+  ],
+  "seguranca_dados": "nenhuma estação local é migrada ou apagada pelo patch",
+  "arquivos_principais_alterados": [
+    "VERSION",
+    "CHANGELOG.md",
+    "README.md",
+    "docs/index.html",
+    "docs/service-worker.js",
+    "docs/assets/css/atlas.css",
+    "docs/assets/css/campo-sensores.css",
+    "docs/assets/js/bootstrap.js",
+    "docs/assets/js/app.js"
+  ]
+}

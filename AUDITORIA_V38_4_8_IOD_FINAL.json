@@ -1,0 +1,148 @@
+{
+  "audit": "V38.4.8 IOD final",
+  "status": "PASS",
+  "checks_total": 35,
+  "checks_passed": 35,
+  "checks": [
+    {
+      "check": "VERSION V38.4.8 correta",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/indices/iod_v3848_snapshot.json",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/indices/iod-v3848.js",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/camadas/arquivos/afloramentos_geosgb_ms.geojson",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/documentos/metodologia-iod.html",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · AUDITORIA_V38_4_8_IOD_RUNTIME.json",
+      "pass": true
+    },
+    {
+      "check": "snapshot identifica IOD",
+      "pass": true
+    },
+    {
+      "check": "fórmula congelada",
+      "pass": true
+    },
+    {
+      "check": "micromalha basal 5 km",
+      "pass": true
+    },
+    {
+      "check": "normalização D* por P95",
+      "pass": true
+    },
+    {
+      "check": "snapshot AFLO contém observações",
+      "pass": true
+    },
+    {
+      "check": "ID_AFLORAMENTO sem duplicação após materialização",
+      "pass": true
+    },
+    {
+      "check": "IOD 250 · 1554 células",
+      "pass": true
+    },
+    {
+      "check": "IOD 250 · estrutura e faixa 0–100 válidas",
+      "pass": true
+    },
+    {
+      "check": "IOD 250 · ausência de observação permanece null",
+      "pass": true
+    },
+    {
+      "check": "IOD 500 · 793 células",
+      "pass": true
+    },
+    {
+      "check": "IOD 500 · estrutura e faixa 0–100 válidas",
+      "pass": true
+    },
+    {
+      "check": "IOD 500 · ausência de observação permanece null",
+      "pass": true
+    },
+    {
+      "check": "IOD 1000 · 412 células",
+      "pass": true
+    },
+    {
+      "check": "IOD 1000 · estrutura e faixa 0–100 válidas",
+      "pass": true
+    },
+    {
+      "check": "IOD 1000 · ausência de observação permanece null",
+      "pass": true
+    },
+    {
+      "check": "renderer IOD ativo",
+      "pass": true
+    },
+    {
+      "check": "builder IOD ativo",
+      "pass": true
+    },
+    {
+      "check": "exclusividade entre escalas IOD",
+      "pass": true
+    },
+    {
+      "check": "snapshot IOD carregado pelo index",
+      "pass": true
+    },
+    {
+      "check": "metodologia IOD vinculada na interface",
+      "pass": true
+    },
+    {
+      "check": "PWA inclui snapshot IOD",
+      "pass": true
+    },
+    {
+      "check": "AFLO registrado como camada local",
+      "pass": true
+    },
+    {
+      "check": "referência disponível · REF-083",
+      "pass": true
+    },
+    {
+      "check": "referência disponível · REF-105",
+      "pass": true
+    },
+    {
+      "check": "referência disponível · REF-106",
+      "pass": true
+    },
+    {
+      "check": "referência disponível · REF-111",
+      "pass": true
+    },
+    {
+      "check": "referência disponível · REF-112",
+      "pass": true
+    },
+    {
+      "check": "referência disponível · REF-113",
+      "pass": true
+    },
+    {
+      "check": "auditoria runtime PASS",
+      "pass": true
+    }
+  ]
+}

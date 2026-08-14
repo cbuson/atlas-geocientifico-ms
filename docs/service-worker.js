@@ -1,45 +1,48 @@
-const ITA_CACHE = 'ita-arandu-v38-4-5-ux-campo02-sensores';
+const ITA_CACHE = 'ita-arandu-v38-4-8-iod-observacao-direta';
 const ITA_CORE = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
-  "./assets/css/atlas.css",
-  "./assets/css/ajustes-v32.css",
-  "./assets/css/pwa.css",
-  "./assets/css/aprender.css",
-  "./assets/css/educacao-metodologia.css",
-  "./assets/css/campo-sensores.css",
-  "./assets/js/map-fallback.js",
-  "./assets/js/bootstrap.js",
-  "./assets/js/app.js",
-  "./assets/js/campo-sensores.js",
-  "./dados/meta.js",
-  "./dados/geometria-computacional/registry.js",
-  "./referencias/referencias.js",
-  "./dados/registros.js",
-  "./indices/imc-v32.js",
-  "./camadas/catalogo-local.js",
+  "./assets/css/atlas.css?v=38.4.8",
+  "./assets/css/ajustes-v32.css?v=38.4.8",
+  "./assets/css/pwa.css?v=38.4.8",
+  "./assets/css/aprender.css?v=38.4.8",
+  "./assets/css/educacao-metodologia.css?v=38.4.8",
+  "./assets/css/campo-sensores.css?v=38.4.8",
+  "./assets/css/dados-dashboard.css?v=38.4.8",
+  "./assets/js/map-fallback.js?v=38.4.8",
+  "./assets/js/bootstrap.js?v=38.4.8",
+  "./assets/js/app.js?v=38.4.8",
+  "./assets/js/campo-sensores.js?v=38.4.8",
+  "./dados/meta.js?v=38.4.8",
+  "./dados/geometria-computacional/registry.js?v=38.4.8",
+  "./referencias/referencias.js?v=38.4.8",
+  "./dados/registros.js?v=38.4.8",
+  "./indices/imc-v32.js?v=38.4.8",
+  "./indices/iod-v3848.js?v=38.4.8",
+  "./camadas/catalogo-local.js?v=38.4.8",
+  "./analytics/config.js?v=38.4.8",
   "./camadas/catalogo-local.json",
   "./camadas/index.html",
   "./documentos/index.html",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./icons/icon-maskable-512.png",
+  "./icons/favicon-32.png",
   "./camadas/arquivos/limite_ms_ibge_2025.geojson",
   "./camadas/arquivos/malha_r5_250km2.geojson",
   "./camadas/arquivos/malha_500km2.geojson",
   "./camadas/arquivos/malha_1000km2.geojson",
   "./camadas/arquivos/mapa_geologico_ms.geojson",
+  "./camadas/arquivos/afloramentos_geosgb_ms.geojson",
   "./referencias/index.html",
   "./referencias/bibliografia-camadas-indices.json",
   "./referencias/README.md",
-  "./assets/css/dados-dashboard.css",
-  "./analytics/config.js",
-  "./icons/favicon-32.png",
   "./documentos/metodologia-educativa.html",
   "./documentos/fundamentos-evidencias-rastreabilidade.html",
   "./documentos/fundamentos-incerteza-inferencia.html",
   "./documentos/fundamentos-indices-produtos-derivados.html",
+  "./documentos/metodologia-iod.html",
   "./documentos/metodologia-pag-etr.html",
   "./documentos/geoetica-governanca-dados.html",
   "./camadas/arquivos/localidades_indigenas_ibge.geojson",
@@ -55,31 +58,92 @@ const ITA_CORE = [
   "./documentos/metodologia-caderneta-campo.html",
   "./documentos/fontes.html",
   "./documentos/auditoria.html",
-  "./documentos/changelog.html"];
-self.addEventListener('install',event=>{
-  event.waitUntil(caches.open(ITA_CACHE).then(cache=>cache.addAll(ITA_CORE)).then(()=>self.skipWaiting()));
+  "./documentos/changelog.html"
+];
+
+self.addEventListener('install', event => {
+  event.waitUntil((async()=>{
+    const cache=await caches.open(ITA_CACHE);
+    await Promise.all(ITA_CORE.map(async url=>{
+      const req=new Request(url,{cache:'reload'});
+      const res=await fetch(req);
+      if(!res.ok)throw new Error(`Falha no precache ${url} · HTTP ${res.status}`);
+      await cache.put(req,res.clone());
+    }));
+    await self.skipWaiting();
+  })());
 });
-self.addEventListener('activate',event=>{
-  event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('ita-arandu-')&&key!==ITA_CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));
+
+self.addEventListener('activate', event => {
+  event.waitUntil((async()=>{
+    const keys=await caches.keys();
+    await Promise.all(keys.filter(key=>key.startsWith('ita-arandu-')&&key!==ITA_CACHE).map(key=>caches.delete(key)));
+    await self.clients.claim();
+  })());
 });
-self.addEventListener('fetch',event=>{
+
+function isCritical(url){
+  return url.pathname.endsWith('/index.html') ||
+    url.pathname.endsWith('/manifest.webmanifest') ||
+    url.pathname.includes('/assets/css/') ||
+    url.pathname.includes('/assets/js/') ||
+    url.pathname.endsWith('/dados/meta.js') ||
+    url.pathname.endsWith('/dados/registros.js') ||
+    url.pathname.includes('/dados/geometria-computacional/') ||
+    url.pathname.includes('/referencias/referencias.js') ||
+    url.pathname.includes('/indices/') ||
+    url.pathname.endsWith('/camadas/catalogo-local.js') ||
+    url.pathname.endsWith('/analytics/config.js');
+}
+
+async function networkFirst(req){
+  const cache=await caches.open(ITA_CACHE);
+  try{
+    const res=await fetch(req,{cache:'no-store'});
+    if(res.ok)await cache.put(req,res.clone());
+    return res;
+  }catch(err){
+    const hit=await cache.match(req);
+    if(hit)return hit;
+    throw err;
+  }
+}
+
+self.addEventListener('fetch', event => {
   const req=event.request;
   if(req.method!=='GET')return;
   const url=new URL(req.url);
   if(url.origin!==self.location.origin)return;
+
   if(req.mode==='navigate'){
-    const scopePath=new URL(self.registration.scope).pathname.replace(/\/?$/,'/');
-    const isAppShell=url.pathname===scopePath||url.pathname===scopePath+'index.html';
-    event.respondWith(fetch(req).then(res=>{
-      if(res.ok){const copy=res.clone();caches.open(ITA_CACHE).then(cache=>cache.put(req,copy));}
-      return res;
-    }).catch(async()=>{
-      const hit=await caches.match(req);
-      if(hit)return hit;
-      if(isAppShell)return caches.match('./index.html');
-      return new Response('Documento indisponível offline.',{status:503,headers:{'Content-Type':'text/plain; charset=utf-8'}});
-    }));
+    event.respondWith((async()=>{
+      try{
+        const res=await fetch(req,{cache:'no-store'});
+        if(res.ok){const cache=await caches.open(ITA_CACHE);await cache.put(req,res.clone());}
+        return res;
+      }catch(_){
+        const hit=await caches.match(req);
+        if(hit)return hit;
+        const shell=await caches.match('./index.html');
+        if(shell)return shell;
+        return new Response('Documento indisponível offline.',{status:503,headers:{'Content-Type':'text/plain; charset=utf-8'}});
+      }
+    })());
     return;
   }
-  event.respondWith(caches.match(req).then(hit=>hit||fetch(req).then(res=>{if(res.ok&&(['script','style','image','font'].includes(req.destination)||url.pathname.includes('/camadas/arquivos/')||url.pathname.includes('/indices/')||url.pathname.includes('/dados/geometria-computacional/'))){const copy=res.clone();caches.open(ITA_CACHE).then(cache=>cache.put(req,copy))}return res})));
+
+  if(isCritical(url)){
+    event.respondWith(networkFirst(req));
+    return;
+  }
+
+  event.respondWith((async()=>{
+    const hit=await caches.match(req);
+    if(hit)return hit;
+    const res=await fetch(req);
+    if(res.ok&&(req.destination==='image'||req.destination==='font'||url.pathname.includes('/camadas/arquivos/'))){
+      const cache=await caches.open(ITA_CACHE);await cache.put(req,res.clone());
+    }
+    return res;
+  })());
 });

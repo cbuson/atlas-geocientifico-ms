@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IOD · metodologia · ITA ARANDU MS</title><style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:980px;margin:0 auto;padding:28px;color:#20313d;line-height:1.55}h1,h2,h3{color:#073b63}code{background:#eef3f6;padding:2px 5px;border-radius:4px}.box{background:#f5f9fb;border:1px solid #d6e2ea;border-radius:10px;padding:16px;margin:18px 0}a{color:#0c527f}</style></head><body>
+<p><a href="../index.html">← ITA ARANDU MS</a> · <a href="./index.html">Documentos</a> · <a href="../referencias/index.html#index-iod">Bibliografia do IOD</a></p>
+<h1>IOD · Índice de Observação Direta</h1>
+<p><b>Versão metodológica</b> V38.4.8 · corte 14 de agosto de 2026.</p>
+<div class="box"><b>Finalidade</b><p>O IOD mede a presença e a distribuição espacial de observações geológicas diretas documentadas dentro das malhas analíticas do Atlas. Nesta versão, a fonte materializada é a camada Afloramentos geológicos do Serviço Geológico do Brasil, GeoSGB, REF-083. O índice não mede favorabilidade mineral, recurso, reserva, valor econômico nem qualidade intrínseca da geologia.</p></div>
+<h2>Fonte e unidade observacional</h2>
+<p>São utilizadas feições pontuais da camada oficial Afloramentos geológicos do SGB. A deduplicação prioriza <code>ID_AFLORAMENTO</code>, utiliza <code>OBJECTID</code> quando o identificador principal não está disponível e somente em último caso usa coordenadas combinadas com número de campo e projeto. A lógica preserva a natureza de observação de campo da fonte e dialoga com sistemas de registro estruturado como StraboSpot, sem transformar registros do Atlas em dados SGB (Walker et al., 2019, REF-070).</p>
+<p>Registros produzidos pela caderneta de campo do ITA ARANDU MS não entram automaticamente no IOD. Uma futura incorporação exige validação explícita, procedência identificável e deduplicação contra bases institucionais.</p>
+<h2>Fórmula</h2>
+<div class="box"><code>IOD_h = 100 × (D* × O × E)^(1/3)</code></div>
+<h3>D* · densidade normalizada</h3>
+<p>Para cada hexágono h calcula-se a densidade de observações únicas por quilômetro quadrado utilizando a área efetiva do hexágono dentro de Mato Grosso do Sul. Em cada escala, D* corresponde à densidade dividida pelo percentil 95 das densidades positivas daquela própria escala, com truncamento em 1. O percentil é recalculado separadamente para 250, 500 e 1000 km². A escolha é submetida a análise de sensibilidade com P90, P95 e P99, conforme a recomendação de avaliar a robustez de indicadores compostos (Saisana et al., 2005, REF-105).</p>
+<h3>O · ocupação espacial</h3>
+<p>O território de cada hexágono é avaliado sobre uma micromalha espacial fixa de 5 km por 5 km em projeção equivalente. O é a proporção das microcélulas de suporte que contêm ao menos uma observação. A dimensão procura distinguir concentração de pontos em um setor de distribuição territorial mais ampla, em diálogo com o princípio de balanceamento espacial discutido por Stevens e Olsen (2004, REF-106).</p>
+<h3>E · equilíbrio espacial</h3>
+<p>E utiliza a entropia de Shannon normalizada entre as microcélulas ocupadas. Quando existe mais de uma microcélula ocupada, <code>E = H / ln(K)</code>, onde K é o número de microcélulas ocupadas e H é a entropia calculada a partir da proporção de observações em cada uma. Quando K é igual a 1, E recebe valor 1 porque a baixa dispersão já é penalizada por O. A formulação de diversidade e equilíbrio se apoia em Shannon (1948, REF-113), Hill (1973, REF-111) e Jost (2006, REF-112).</p>
+<h2>Regra multiescalar</h2>
+<p>As malhas de 250, 500 e 1000 km² são calculadas diretamente a partir das observações-fonte. O resultado de 500 km² não é obtido agregando valores de 250 km² e o resultado de 1000 km² não é obtido agregando valores das outras escalas. D*, O, E e o percentil de saturação são recalculados em cada escala.</p>
+<h2>Ausência de observação</h2>
+<p>Um hexágono sem observação direta materializada recebe <code>IOD = null</code>. Na cartografia permanece transparente com borda cinza escuro. A ausência de registro não é convertida em zero e não demonstra ausência de geologia, ausência de afloramentos reais ou falta de interesse científico.</p>
+<h2>Células de borda</h2>
+<p>A densidade utiliza a área efetiva do hexágono recortada ao limite estadual. A micromalha usa suporte espacial fixo e inclui as microcélulas ocupadas por observações válidas mesmo quando o centro geométrico da microcélula cai muito próximo de uma borda recortada. Casos de fronteira são registrados na auditoria.</p>
+<h2>Análise de sensibilidade</h2>
+<p>O materializador calcula cenários com microcélulas de 2,5 km, 5 km e 10 km combinadas com saturação P90, P95 e P99. A auditoria registra a correlação de postos de Spearman entre cada cenário e a configuração basal de 5 km com P95. A análise não escolhe automaticamente uma nova fórmula. Serve para mostrar o quanto a ordenação espacial depende das decisões operacionais.</p>
+<h2>Rastreabilidade</h2>
+<p>O patch armazena a resposta original do SGB em arquivo compactado, registra SHA-256, data de materialização, contagem de observações, duplicatas removidas e estatísticas por escala. O snapshot utilizado pelo navegador é local e reproduzível a partir da fonte registrada.</p>
+<h2>Referências</h2>
+<p>As referências completas em APA 7 estão no <a href="../referencias/index.html#index-iod">registro bibliográfico do IOD</a>. Referências centrais REF-083, REF-105, REF-106, REF-111, REF-112, REF-113, REF-070, REF-055 e REF-115.</p>
+</body></html>

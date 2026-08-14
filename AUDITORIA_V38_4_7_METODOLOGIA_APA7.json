@@ -1,0 +1,106 @@
+{
+  "project": "ITA ARANDU MS",
+  "version": "V38.4.7-METODOLOGIA-ANTECEDENTES-APA7-20260814",
+  "base_required": "V38.4.6-UX-CAMPO-03-cache-mobile-sensores-20260814",
+  "date": "2026-08-14",
+  "scope": "posicionamento metodologico, citacao autor-data e referencias APA 7",
+  "scientific_changes": [
+    "Adiciona posicionamento explícito perante antecedentes nacionais e internacionais sem transferir pesos ou fórmulas.",
+    "Adiciona REF-174 PlanGeo 2026–2035 de pesquisa de recursos minerais.",
+    "Adiciona REF-175 Caderno 1 Conhecimento geológico para o Plano Nacional de Mineração 2050.",
+    "Adiciona REF-176 artigo de Ford et al. sobre avaliação nacional de potencial mineral de ETR em carbonatitos.",
+    "Adiciona REF-177 Mazziotta e Pareto sobre índice composto não compensatório.",
+    "Desambigua Ford et al. 2023a para o artigo e 2023b para o conjunto de dados conforme o sistema autor-data da APA 7.",
+    "Explicita que PIG e ICG permanecem planejados e não materializados na versão atual."
+  ],
+  "verification_sources": [
+    {
+      "ref": "REF-114",
+      "url": "https://rigeo.sgb.gov.br/handle/doc/24990",
+      "checked": "2026-08-14"
+    },
+    {
+      "ref": "REF-151",
+      "url": "https://doi.org/10.26186/147865",
+      "checked": "2026-08-14"
+    },
+    {
+      "ref": "REF-174",
+      "url": "https://rigeo.sgb.gov.br/handle/doc/25649",
+      "checked": "2026-08-14"
+    },
+    {
+      "ref": "REF-175",
+      "url": "https://rigeo.sgb.gov.br/handle/doc/24503",
+      "checked": "2026-08-14"
+    },
+    {
+      "ref": "REF-176",
+      "url": "https://doi.org/10.1016/j.oregeorev.2023.105658",
+      "checked": "2026-08-14"
+    },
+    {
+      "ref": "REF-177",
+      "url": "https://doi.org/10.1007/s11205-015-0998-2",
+      "checked": "2026-08-14"
+    }
+  ],
+  "registry": {
+    "before": 171,
+    "after": 175,
+    "new_ids": [
+      "REF-174",
+      "REF-175",
+      "REF-176",
+      "REF-177"
+    ],
+    "citation_standard": "APA 7"
+  },
+  "tests": {
+    "javascript_syntax_referencias": "PASS",
+    "javascript_syntax_service_worker": "PASS",
+    "javascript_syntax_meta": "PASS",
+    "reference_ids_unique": "PASS",
+    "reference_total_175": "PASS",
+    "new_reference_anchors": "PASS",
+    "methodology_reference_links": "PASS",
+    "bibliography_matrix_total": "PASS",
+    "ford_2023a_2023b_disambiguation": "PASS",
+    "service_worker_core_files_exist": "PASS",
+    "html_ids_unique_references_index": "PASS",
+    "app_js_unchanged": "PASS",
+    "bootstrap_js_unchanged": "PASS",
+    "campo_sensores_js_unchanged": "PASS",
+    "atlas_css_unchanged": "PASS",
+    "campo_sensores_css_unchanged": "PASS",
+    "catalog_layers_unchanged": "PASS",
+    "all_local_geojson_unchanged": "PASS"
+  },
+  "not_changed": [
+    "fórmulas e valores de índices",
+    "PAG ETR",
+    "geometrias",
+    "camadas",
+    "sensores",
+    "GPS",
+    "caderneta de campo",
+    "navegação",
+    "simbologia científica"
+  ],
+  "changed_files": [
+    "CHANGELOG.md",
+    "README.md",
+    "VERSION",
+    "docs/dados/meta.js",
+    "docs/documentos/changelog.html",
+    "docs/documentos/fundamentos-indices-produtos-derivados.html",
+    "docs/documentos/metodologia-pag-etr.html",
+    "docs/index.html",
+    "docs/referencias/README.md",
+    "docs/referencias/bibliografia-camadas-indices.json",
+    "docs/referencias/index.html",
+    "docs/referencias/referencias.js",
+    "docs/service-worker.js",
+    "AUDITORIA_V38_4_7_METODOLOGIA_APA7.json"
+  ]
+}
