@@ -1,0 +1,48 @@
+{
+  "patch": "UX-CAMPO-02",
+  "version": "V38.4.5-UX-CAMPO-02-instrumentos-sensores-20260814",
+  "date": "2026-08-14",
+  "base": "V38.4.4-UX-CAMPO-01",
+  "scope": [
+    "device_orientation",
+    "device_motion",
+    "clinometer",
+    "plane_measurement",
+    "lineation_measurement",
+    "azimuth_capture",
+    "sensor_provenance",
+    "sensor_hud"
+  ],
+  "scientific_guardrails": [
+    "no geographic azimuth from relative orientation",
+    "manual geological compass measurements remain available",
+    "sensor source and captured values are preserved",
+    "device readings are auxiliary and require field verification when precision demands it"
+  ],
+  "field_schema_version": "0.4",
+  "status": "implemented",
+  "validation": {
+    "javascript_syntax": "PASS",
+    "sensor_math": "PASS",
+    "html_unique_ids": "PASS",
+    "pwa_core_assets": "PASS",
+    "local_http_delivery": "PASS",
+    "real_device_sensor_validation": "PENDING_REAL_ANDROID_IOS_HARDWARE"
+  },
+  "math_cases": [
+    "horizontal_plane",
+    "plane_30_deg",
+    "vertical_plane",
+    "horizontal_lineation_north",
+    "horizontal_lineation_west",
+    "lineation_plunge_30_deg",
+    "gravity_flat",
+    "gravity_dip_30_deg"
+  ],
+  "technical_sources": [
+    "https://www.w3.org/TR/orientation-event/",
+    "https://www.w3.org/TR/accelerometer/",
+    "https://www.w3.org/TR/orientation-sensor/",
+    "https://www.w3.org/TR/generic-sensor/"
+  ]
+}

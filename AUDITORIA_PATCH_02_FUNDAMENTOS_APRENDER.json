@@ -1,0 +1,45 @@
+{
+  "patch": "PATCH_02_FUNDAMENTOS_APRENDER",
+  "version": "V38.3",
+  "date": "2026-08-14",
+  "status": "FAIL",
+  "checks": {
+    "new_docs_exist": true,
+    "five_foundations_in_learn": true,
+    "map_questions": true,
+    "mission_links": true,
+    "tempo_campo_observe": true,
+    "critical_band_every_feature": true,
+    "new_handlers": true,
+    "ref_registry_171": true,
+    "bibliography_count": true,
+    "education_no_duplicate_full_refs": true,
+    "service_worker_new_docs": true,
+    "pag_etr_preserved": true,
+    "gps_preserved": true,
+    "internal_links": false,
+    "js_syntax": true
+  },
+  "broken_links": [
+    [
+      "docs/index.html",
+      "./assets/css/pesquisa-motor.css"
+    ]
+  ],
+  "js_error": "",
+  "references": {
+    "before": 168,
+    "after": 171,
+    "new": [
+      "REF-171",
+      "REF-172",
+      "REF-173"
+    ]
+  },
+  "new_documents": [
+    "fundamentos-evidencias-rastreabilidade.html",
+    "fundamentos-incerteza-inferencia.html",
+    "fundamentos-indices-produtos-derivados.html"
+  ],
+  "principle": "Fonte -> Escala -> Evidencia -> Incerteza -> Responsabilidade -> Interpretacao"
+}

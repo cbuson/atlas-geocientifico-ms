@@ -1,9 +1,9 @@
 {
-  "generated_on": "2026-08-13",
+  "generated_on": "2026-08-14",
   "citation_standard": "APA 7",
   "project": "ITA ARANDU MS · Atlas Geocientífico de Mato Grosso do Sul",
-  "total_references": 128,
-  "total_catalog_layers": 183,
+  "total_references": 171,
+  "total_catalog_layers": 214,
   "total_index_layers": 36,
   "entries": [
     {
@@ -66,7 +66,7 @@
       "group": "Base geográfica",
       "status": "incorporada",
       "kind": "camada",
-      "source": "PIN MS / base materializada do JOAJU a partir da malha oficial",
+      "source": "IBGE · malha territorial municipal · snapshot local do Atlas",
       "reference_ids": [
         "REF-001"
       ],
@@ -164,7 +164,7 @@
       "group": "Base geográfica",
       "status": "em_avaliacao",
       "kind": "camada",
-      "source": "PIN MS / AGRAER · Estradas Vicinais MS · snapshot JOAJU 2026-08-10",
+      "source": "PIN MS / AGRAER · Estradas Vicinais MS · captura de 10/08/2026",
       "reference_ids": [
         "REF-075"
       ],
@@ -3138,11 +3138,12 @@
       "id": "mapa_geodiversidade_ms",
       "name": "Mapa de Geodiversidade de Mato Grosso do Sul",
       "group": "Geodiversidade e geoconservação",
-      "status": "disponivel_para_captura",
+      "status": "conectada",
       "kind": "camada",
-      "source": "Serviço Geológico do Brasil",
+      "source": "Serviço Geológico do Brasil · Mapa Geodiversidade do Estado do Mato Grosso do Sul · 2009",
       "reference_ids": [
-        "REF-012"
+        "REF-012",
+        "REF-104"
       ],
       "references": [
         {
@@ -3152,6 +3153,15 @@
           "quality_class": "fonte primária institucional",
           "verification_level": "registro_mestre_revisado",
           "url": "https://rigeo.sgb.gov.br/handle/doc/14703",
+          "doi": null
+        },
+        {
+          "id": "REF-104",
+          "apa7": "Mazziotta, M., & Pareto, A. (2013). Methods for constructing composite indices. One for all or all for one? Rivista Italiana di Economia Demografia e Statistica, 67(2), 67–80. https://www.istat.it/it/files/2013/12/Rivista2013_Mazziotta_Pareto.pdf",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://www.istat.it/it/files/2013/12/Rivista2013_Mazziotta_Pareto.pdf",
           "doi": null
         }
       ]
@@ -3204,9 +3214,9 @@
       "id": "terrenos_carbonaticos_ms",
       "name": "Terrenos carbonáticos e unidades com potencial cárstico, evidência geológica",
       "group": "Espeleologia e carste",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
-      "source": "Derivação controlada da cartografia geológica SGB",
+      "source": "Derivação ITA ARANDU do mapa geológico SGB 1:1.000.000",
       "reference_ids": [
         "REF-002",
         "REF-015"
@@ -3278,13 +3288,14 @@
     },
     {
       "id": "desastres_s2id_ms",
-      "name": "S2ID, histórico oficial de desastres em MS",
+      "name": "Atlas Digital / S2ID · histórico oficial de desastres em MS · 1991–2025",
       "group": "Clima e eventos extremos",
       "status": "disponivel_para_captura",
       "kind": "camada",
-      "source": "Ministério da Integração e do Desenvolvimento Regional, S2ID",
+      "source": "SEDEC / MIDR · Atlas Digital de Desastres · dados S2ID",
       "reference_ids": [
-        "REF-026"
+        "REF-026",
+        "REF-110"
       ],
       "references": [
         {
@@ -3295,6 +3306,15 @@
           "verification_level": "registro_mestre_revisado",
           "url": "https://s2id.mi.gov.br/",
           "doi": null
+        },
+        {
+          "id": "REF-110",
+          "apa7": "Yin, Z., Strebelle, S., & Caers, J. (2020). Automated Monte Carlo-based quantification and updating of geological uncertainty with borehole data (AutoBEL v1.0). Geoscientific Model Development, 13, 651–672. https://doi.org/10.5194/gmd-13-651-2020",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.5194/gmd-13-651-2020",
+          "doi": "10.5194/gmd-13-651-2020"
         }
       ]
     },
@@ -3482,13 +3502,14 @@
     },
     {
       "id": "cemaden_hidrologia_ms",
-      "name": "CEMADEN, estações hidrológicas e alertas",
+      "name": "CEMADEN · estações hidrológicas em Mato Grosso do Sul",
       "group": "Clima e eventos extremos",
       "status": "disponivel_para_captura",
       "kind": "camada",
-      "source": "Centro Nacional de Monitoramento e Alertas de Desastres Naturais",
+      "source": "CEMADEN · Rede Observacional",
       "reference_ids": [
-        "REF-027"
+        "REF-027",
+        "REF-109"
       ],
       "references": [
         {
@@ -3499,18 +3520,28 @@
           "verification_level": "registro_mestre_revisado",
           "url": "https://mapainterativo.cemaden.gov.br/",
           "doi": null
+        },
+        {
+          "id": "REF-109",
+          "apa7": "Minsley, B. J., Rigby, J. R., James, S. R., Burton, B. L., Knierim, K. J., Pace, M. D. M., Bedrosian, P. A., & Kress, W. H. (2021). Airborne geophysical surveys of the lower Mississippi Valley demonstrate system-scale mapping of subsurface architecture. Communications Earth & Environment, 2, 131. https://doi.org/10.1038/s43247-021-00200-z",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.1038/s43247-021-00200-z",
+          "doi": "10.1038/s43247-021-00200-z"
         }
       ]
     },
     {
       "id": "cemaden_pluviometros_ms",
-      "name": "CEMADEN, pluviômetros e monitoramento",
+      "name": "CEMADEN · pluviômetros automáticos em Mato Grosso do Sul",
       "group": "Clima e eventos extremos",
       "status": "disponivel_para_captura",
       "kind": "camada",
-      "source": "Centro Nacional de Monitoramento e Alertas de Desastres Naturais",
+      "source": "CEMADEN · Rede Observacional",
       "reference_ids": [
-        "REF-027"
+        "REF-027",
+        "REF-109"
       ],
       "references": [
         {
@@ -3521,18 +3552,29 @@
           "verification_level": "registro_mestre_revisado",
           "url": "https://mapainterativo.cemaden.gov.br/",
           "doi": null
+        },
+        {
+          "id": "REF-109",
+          "apa7": "Minsley, B. J., Rigby, J. R., James, S. R., Burton, B. L., Knierim, K. J., Pace, M. D. M., Bedrosian, P. A., & Kress, W. H. (2021). Airborne geophysical surveys of the lower Mississippi Valley demonstrate system-scale mapping of subsurface architecture. Communications Earth & Environment, 2, 131. https://doi.org/10.1038/s43247-021-00200-z",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.1038/s43247-021-00200-z",
+          "doi": "10.1038/s43247-021-00200-z"
         }
       ]
     },
     {
       "id": "cemtec_estacoes_ms",
-      "name": "CEMTEC MS, estações meteorológicas",
+      "name": "Estações estaduais SEMADESC-MS · consulta via catálogo INMET",
       "group": "Clima e eventos extremos",
-      "status": "disponivel_para_captura",
+      "status": "conectada",
       "kind": "camada",
-      "source": "Centro de Monitoramento do Tempo e do Clima de Mato Grosso do Sul",
+      "source": "SEMADESC-MS / CEMTEC · catálogo operacional disponibilizado pelo INMET",
       "reference_ids": [
-        "REF-025"
+        "REF-025",
+        "REF-105",
+        "REF-106"
       ],
       "references": [
         {
@@ -3543,18 +3585,37 @@
           "verification_level": "registro_mestre_revisado",
           "url": "https://www.cemtec.ms.gov.br/bancodedados/",
           "doi": null
+        },
+        {
+          "id": "REF-105",
+          "apa7": "Saisana, M., Saltelli, A., & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society. Series A, 168(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.1111/j.1467-985X.2005.00350.x",
+          "doi": "10.1111/j.1467-985X.2005.00350.x"
+        },
+        {
+          "id": "REF-106",
+          "apa7": "Stevens, D. L., Jr., & Olsen, A. R. (2004). Spatially balanced sampling of natural resources. Journal of the American Statistical Association, 99(465), 262–278. https://doi.org/10.1198/016214504000000250",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://doi.org/10.1198/016214504000000250",
+          "doi": "10.1198/016214504000000250"
         }
       ]
     },
     {
       "id": "cemtec_precipitacao_ms",
-      "name": "CEMTEC MS, precipitação e séries meteorológicas",
+      "name": "CEMTEC MS · arquivo meteorológico estadual 2008–2025",
       "group": "Clima e eventos extremos",
       "status": "disponivel_para_captura",
       "kind": "camada",
-      "source": "Centro de Monitoramento do Tempo e do Clima de Mato Grosso do Sul",
+      "source": "CEMTEC MS · Banco de dados meteorológicos",
       "reference_ids": [
-        "REF-025"
+        "REF-025",
+        "REF-105"
       ],
       "references": [
         {
@@ -3565,6 +3626,15 @@
           "verification_level": "registro_mestre_revisado",
           "url": "https://www.cemtec.ms.gov.br/bancodedados/",
           "doi": null
+        },
+        {
+          "id": "REF-105",
+          "apa7": "Saisana, M., Saltelli, A., & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society. Series A, 168(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.1111/j.1467-985X.2005.00350.x",
+          "doi": "10.1111/j.1467-985X.2005.00350.x"
         }
       ]
     },
@@ -3821,7 +3891,7 @@
       "name": "IMC · Maturidade Cartográfica · 250 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "incorporada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · snapshot V32 · mapa estadual SGB/CPRM 1:1.000.000 + folhas detalhadas SGB/CPRM com código cartográfico verificado",
       "reference_ids": [
         "REF-104",
@@ -3903,7 +3973,7 @@
       "name": "IMC · Maturidade Cartográfica · 500 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "incorporada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · snapshot V32 · mapa estadual SGB/CPRM 1:1.000.000 + folhas detalhadas SGB/CPRM com código cartográfico verificado",
       "reference_ids": [
         "REF-104",
@@ -3985,7 +4055,7 @@
       "name": "IMC · Maturidade Cartográfica · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "incorporada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · snapshot V32 · mapa estadual SGB/CPRM 1:1.000.000 + folhas detalhadas SGB/CPRM com código cartográfico verificado",
       "reference_ids": [
         "REF-104",
@@ -4067,7 +4137,7 @@
       "name": "IOD · Observação Direta · 250 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4139,7 +4209,7 @@
       "name": "IOD · Observação Direta · 500 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4211,7 +4281,7 @@
       "name": "IOD · Observação Direta · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4283,7 +4353,7 @@
       "name": "ICP · Caracterização Petrográfica · 250 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4355,7 +4425,7 @@
       "name": "ICP · Caracterização Petrográfica · 500 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4427,7 +4497,7 @@
       "name": "ICP · Caracterização Petrográfica · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4499,7 +4569,7 @@
       "name": "IGC · Controle Geocronológico · 250 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4551,7 +4621,7 @@
       "name": "IGC · Controle Geocronológico · 500 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4603,7 +4673,7 @@
       "name": "IGC · Controle Geocronológico · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4655,7 +4725,7 @@
       "name": "IGQ · Conhecimento Geoquímico · 250 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4707,7 +4777,7 @@
       "name": "IGQ · Conhecimento Geoquímico · 500 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4759,7 +4829,7 @@
       "name": "IGQ · Conhecimento Geoquímico · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4811,7 +4881,7 @@
       "name": "IGF · Conhecimento Geofísico · 250 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4883,7 +4953,7 @@
       "name": "IGF · Conhecimento Geofísico · 500 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -4955,7 +5025,7 @@
       "name": "IGF · Conhecimento Geofísico · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -5027,7 +5097,7 @@
       "name": "ICS · Conhecimento do Subsolo · 250 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -5109,7 +5179,7 @@
       "name": "ICS · Conhecimento do Subsolo · 500 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -5191,7 +5261,7 @@
       "name": "ICS · Conhecimento do Subsolo · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -5273,7 +5343,7 @@
       "name": "IDE · Diversidade de Evidências · 250 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-111",
@@ -5335,7 +5405,7 @@
       "name": "IDE · Diversidade de Evidências · 500 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-111",
@@ -5397,7 +5467,7 @@
       "name": "IDE · Diversidade de Evidências · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-111",
@@ -5459,7 +5529,7 @@
       "name": "PIG · Prioridade de Investigação Geocientífica · 250 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -5511,7 +5581,7 @@
       "name": "PIG · Prioridade de Investigação Geocientífica · 500 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -5563,7 +5633,7 @@
       "name": "PIG · Prioridade de Investigação Geocientífica · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
@@ -5783,7 +5853,7 @@
       "name": "VCG · Vazios de Conhecimento Geocientífico · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS",
       "reference_ids": [
         "REF-105",
@@ -5825,7 +5895,7 @@
       "name": "VCG · Vazios de Conhecimento Geocientífico · 250 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS",
       "reference_ids": [
         "REF-105",
@@ -5867,7 +5937,7 @@
       "name": "VCG · Vazios de Conhecimento Geocientífico · 500 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS",
       "reference_ids": [
         "REF-105",
@@ -5909,7 +5979,7 @@
       "name": "ICG · Índice de Conhecimento Geocientífico · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS",
       "reference_ids": [
         "REF-104",
@@ -5961,7 +6031,7 @@
       "name": "ICG · Índice de Conhecimento Geocientífico · 250 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS",
       "reference_ids": [
         "REF-104",
@@ -6013,7 +6083,7 @@
       "name": "ICG · Índice de Conhecimento Geocientífico · 500 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "planejada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS",
       "reference_ids": [
         "REF-104",
@@ -6065,7 +6135,7 @@
       "name": "IPG · Potencial Geocientífico Territorial Documentado · 250 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "incorporada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · inventário geocientífico Fase 3.2 · cálculo direto na malha R5",
       "reference_ids": [
         "REF-002",
@@ -6167,7 +6237,7 @@
       "name": "IPG · Potencial Geocientífico Territorial Documentado · 500 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "incorporada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · inventário geocientífico Fase 3.2 · cálculo independente na malha 500 km²",
       "reference_ids": [
         "REF-002",
@@ -6269,7 +6339,7 @@
       "name": "IPG · Potencial Geocientífico Territorial Documentado · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
       "status": "incorporada",
-      "kind": "indice_multiescalar",
+      "kind": "camada",
       "source": "ITA ARANDU MS · inventário geocientífico Fase 3.2 · cálculo independente na malha 1000 km²",
       "reference_ids": [
         "REF-002",
@@ -6458,6 +6528,1158 @@
           "quality_class": "documentação metodológica do projeto",
           "verification_level": "registro_mestre_revisado",
           "url": "",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "geossit_risco_degradacao_ms",
+      "name": "GEOSSIT · risco de degradação dos registros de MS",
+      "group": "Geodiversidade e geoconservação",
+      "status": "incorporada",
+      "kind": "camada",
+      "source": "Derivação do campo classe_risco dos registros GEOSSIT incorporados",
+      "reference_ids": [
+        "REF-013"
+      ],
+      "references": [
+        {
+          "id": "REF-013",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). GEOSSIT. Sistema de cadastro e quantificação de geossítios e sítios da geodiversidade. Recuperado em 12 de agosto de 2026. https://www.sgb.gov.br/geossit/",
+          "type": "sistema de cadastro",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://www.sgb.gov.br/geossit/",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "canie_validacao_ms",
+      "name": "CANIE · níveis de validação espacial das cavidades",
+      "group": "Espeleologia e carste",
+      "status": "incorporada",
+      "kind": "camada",
+      "source": "Derivação do campo nvl_valida do snapshot CANIE/CECAV",
+      "reference_ids": [
+        "REF-015"
+      ],
+      "references": [
+        {
+          "id": "REF-015",
+          "apa7": "Instituto Chico Mendes de Conservação da Biodiversidade. (s.d.). Cadastro Nacional de Informações Espeleológicas, CANIE. Centro Nacional de Pesquisa e Conservação de Cavernas. Recuperado em 12 de agosto de 2026. https://www.gov.br/icmbio/pt-br/assuntos/centros-de-pesquisa/cavernas/cadastro-nacional-de-informacoes-espeleologicas/canie",
+          "type": "cadastro nacional",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://www.gov.br/icmbio/pt-br/assuntos/centros-de-pesquisa/cavernas/cadastro-nacional-de-informacoes-espeleologicas/canie",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "hidrogeologia_carstica_ms",
+      "name": "Unidades hidrogeológicas cársticas · contexto",
+      "group": "Espeleologia e carste",
+      "status": "incorporada",
+      "kind": "camada",
+      "source": "Derivação do recorte Hidrogeologia Atlas do Brasil",
+      "reference_ids": [
+        "REF-007",
+        "REF-015"
+      ],
+      "references": [
+        {
+          "id": "REF-007",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Hidrogeologia Atlas do Brasil [Conjunto de dados geoespaciais]. GeoSGB. Recuperado em 12 de agosto de 2026. https://geosgb.sgb.gov.br/geosgb/downloads.html",
+          "type": "dataset",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://geosgb.sgb.gov.br/geosgb/downloads.html",
+          "doi": null
+        },
+        {
+          "id": "REF-015",
+          "apa7": "Instituto Chico Mendes de Conservação da Biodiversidade. (s.d.). Cadastro Nacional de Informações Espeleológicas, CANIE. Centro Nacional de Pesquisa e Conservação de Cavernas. Recuperado em 12 de agosto de 2026. https://www.gov.br/icmbio/pt-br/assuntos/centros-de-pesquisa/cavernas/cadastro-nacional-de-informacoes-espeleologicas/canie",
+          "type": "cadastro nacional",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://www.gov.br/icmbio/pt-br/assuntos/centros-de-pesquisa/cavernas/cadastro-nacional-de-informacoes-espeleologicas/canie",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "inmet_estacoes_automaticas_ms",
+      "name": "INMET · estações meteorológicas automáticas em Mato Grosso do Sul",
+      "group": "Clima e eventos extremos",
+      "status": "conectada",
+      "kind": "camada",
+      "source": "Instituto Nacional de Meteorologia · catálogo de estações automáticas",
+      "reference_ids": [
+        "REF-106",
+        "REF-111"
+      ],
+      "references": [
+        {
+          "id": "REF-106",
+          "apa7": "Stevens, D. L., Jr., & Olsen, A. R. (2004). Spatially balanced sampling of natural resources. Journal of the American Statistical Association, 99(465), 262–278. https://doi.org/10.1198/016214504000000250",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://doi.org/10.1198/016214504000000250",
+          "doi": "10.1198/016214504000000250"
+        },
+        {
+          "id": "REF-111",
+          "apa7": "Hill, M. O. (1973). Diversity and evenness. A unifying notation and its consequences. Ecology, 54(2), 427–432. https://doi.org/10.2307/1934352",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.2307/1934352",
+          "doi": "10.2307/1934352"
+        }
+      ]
+    },
+    {
+      "id": "inmet_dados_historicos_ms",
+      "name": "INMET · séries históricas meteorológicas · recorte MS",
+      "group": "Clima e eventos extremos",
+      "status": "disponivel_para_captura",
+      "kind": "camada",
+      "source": "INMET · BDMEP e Dados Históricos",
+      "reference_ids": [
+        "REF-107",
+        "REF-111"
+      ],
+      "references": [
+        {
+          "id": "REF-107",
+          "apa7": "Lins, C. A. C. (2003). Manual técnico da área de geoquímica (Versão 5.0). CPRM–Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/bitstream/doc/14647/1/rli_1151.pdf",
+          "type": "manual técnico",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://rigeo.sgb.gov.br/bitstream/doc/14647/1/rli_1151.pdf",
+          "doi": null
+        },
+        {
+          "id": "REF-111",
+          "apa7": "Hill, M. O. (1973). Diversity and evenness. A unifying notation and its consequences. Ecology, 54(2), 427–432. https://doi.org/10.2307/1934352",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.2307/1934352",
+          "doi": "10.2307/1934352"
+        }
+      ]
+    },
+    {
+      "id": "inmet_normais_1991_2020_ms",
+      "name": "INMET · Normais Climatológicas 1991–2020 · estações de MS",
+      "group": "Clima e eventos extremos",
+      "status": "disponivel_para_captura",
+      "kind": "camada",
+      "source": "INMET · Normais Climatológicas do Brasil 1991–2020",
+      "reference_ids": [
+        "REF-108"
+      ],
+      "references": [
+        {
+          "id": "REF-108",
+          "apa7": "Horstwood, M. S. A., Košler, J., Gehrels, G., Jackson, S. E., McLean, N. M., Paton, C., Pearson, N. J., Sircombe, K., Sylvester, P., Vermeesch, P., Bowring, J. F., Condon, D. J., & Schoene, B. (2016). Community-derived standards for LA-ICP-MS U-(Th-)Pb geochronology. Uncertainty propagation, age interpretation and data reporting. Geostandards and Geoanalytical Research, 40(3), 311–332. https://doi.org/10.1111/j.1751-908X.2016.00379.x",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.1111/j.1751-908X.2016.00379.x",
+          "doi": "10.1111/j.1751-908X.2016.00379.x"
+        }
+      ]
+    },
+    {
+      "id": "inmet_alertas_meteorologicos_ms",
+      "name": "INMET · avisos meteorológicos vigentes · consulta operacional",
+      "group": "Clima e eventos extremos",
+      "status": "em_avaliacao",
+      "kind": "camada",
+      "source": "INMET · Avisos Meteorológicos",
+      "reference_ids": [
+        "REF-111"
+      ],
+      "references": [
+        {
+          "id": "REF-111",
+          "apa7": "Hill, M. O. (1973). Diversity and evenness. A unifying notation and its consequences. Ecology, 54(2), 427–432. https://doi.org/10.2307/1934352",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.2307/1934352",
+          "doi": "10.2307/1934352"
+        }
+      ]
+    },
+    {
+      "id": "inmet_precipitacao_anomalias_ms",
+      "name": "INMET · precipitação acumulada e anomalias · contexto climático",
+      "group": "Clima e eventos extremos",
+      "status": "disponivel_para_captura",
+      "kind": "camada",
+      "source": "INMET · monitoramento climático",
+      "reference_ids": [
+        "REF-111"
+      ],
+      "references": [
+        {
+          "id": "REF-111",
+          "apa7": "Hill, M. O. (1973). Diversity and evenness. A unifying notation and its consequences. Ecology, 54(2), 427–432. https://doi.org/10.2307/1934352",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.2307/1934352",
+          "doi": "10.2307/1934352"
+        }
+      ]
+    },
+    {
+      "id": "s2id_seca_estiagem_ms",
+      "name": "S2ID · seca e estiagem · síntese municipal futura",
+      "group": "Clima e eventos extremos",
+      "status": "planejada",
+      "kind": "camada",
+      "source": "Derivação ITA ARANDU do futuro snapshot Atlas Digital / S2ID",
+      "reference_ids": [
+        "REF-026",
+        "REF-110"
+      ],
+      "references": [
+        {
+          "id": "REF-026",
+          "apa7": "Ministério da Integração e do Desenvolvimento Regional. (s.d.). Sistema Integrado de Informações sobre Desastres, S2ID. Recuperado em 12 de agosto de 2026. https://s2id.mi.gov.br/",
+          "type": "sistema de desastres",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://s2id.mi.gov.br/",
+          "doi": null
+        },
+        {
+          "id": "REF-110",
+          "apa7": "Yin, Z., Strebelle, S., & Caers, J. (2020). Automated Monte Carlo-based quantification and updating of geological uncertainty with borehole data (AutoBEL v1.0). Geoscientific Model Development, 13, 651–672. https://doi.org/10.5194/gmd-13-651-2020",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.5194/gmd-13-651-2020",
+          "doi": "10.5194/gmd-13-651-2020"
+        }
+      ]
+    },
+    {
+      "id": "s2id_inundacoes_alagamentos_ms",
+      "name": "S2ID · inundações, enxurradas e alagamentos · síntese municipal futura",
+      "group": "Clima e eventos extremos",
+      "status": "planejada",
+      "kind": "camada",
+      "source": "Derivação ITA ARANDU do futuro snapshot Atlas Digital / S2ID",
+      "reference_ids": [
+        "REF-026",
+        "REF-110"
+      ],
+      "references": [
+        {
+          "id": "REF-026",
+          "apa7": "Ministério da Integração e do Desenvolvimento Regional. (s.d.). Sistema Integrado de Informações sobre Desastres, S2ID. Recuperado em 12 de agosto de 2026. https://s2id.mi.gov.br/",
+          "type": "sistema de desastres",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://s2id.mi.gov.br/",
+          "doi": null
+        },
+        {
+          "id": "REF-110",
+          "apa7": "Yin, Z., Strebelle, S., & Caers, J. (2020). Automated Monte Carlo-based quantification and updating of geological uncertainty with borehole data (AutoBEL v1.0). Geoscientific Model Development, 13, 651–672. https://doi.org/10.5194/gmd-13-651-2020",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.5194/gmd-13-651-2020",
+          "doi": "10.5194/gmd-13-651-2020"
+        }
+      ]
+    },
+    {
+      "id": "s2id_tempestades_ms",
+      "name": "S2ID · tempestades, vendavais e granizo · síntese municipal futura",
+      "group": "Clima e eventos extremos",
+      "status": "planejada",
+      "kind": "camada",
+      "source": "Derivação ITA ARANDU do futuro snapshot Atlas Digital / S2ID",
+      "reference_ids": [
+        "REF-026",
+        "REF-110"
+      ],
+      "references": [
+        {
+          "id": "REF-026",
+          "apa7": "Ministério da Integração e do Desenvolvimento Regional. (s.d.). Sistema Integrado de Informações sobre Desastres, S2ID. Recuperado em 12 de agosto de 2026. https://s2id.mi.gov.br/",
+          "type": "sistema de desastres",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://s2id.mi.gov.br/",
+          "doi": null
+        },
+        {
+          "id": "REF-110",
+          "apa7": "Yin, Z., Strebelle, S., & Caers, J. (2020). Automated Monte Carlo-based quantification and updating of geological uncertainty with borehole data (AutoBEL v1.0). Geoscientific Model Development, 13, 651–672. https://doi.org/10.5194/gmd-13-651-2020",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.5194/gmd-13-651-2020",
+          "doi": "10.5194/gmd-13-651-2020"
+        }
+      ]
+    },
+    {
+      "id": "s2id_incendios_florestais_ms",
+      "name": "S2ID · incêndios florestais · síntese municipal futura",
+      "group": "Clima e eventos extremos",
+      "status": "planejada",
+      "kind": "camada",
+      "source": "Derivação ITA ARANDU do futuro snapshot Atlas Digital / S2ID",
+      "reference_ids": [
+        "REF-026",
+        "REF-110"
+      ],
+      "references": [
+        {
+          "id": "REF-026",
+          "apa7": "Ministério da Integração e do Desenvolvimento Regional. (s.d.). Sistema Integrado de Informações sobre Desastres, S2ID. Recuperado em 12 de agosto de 2026. https://s2id.mi.gov.br/",
+          "type": "sistema de desastres",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://s2id.mi.gov.br/",
+          "doi": null
+        },
+        {
+          "id": "REF-110",
+          "apa7": "Yin, Z., Strebelle, S., & Caers, J. (2020). Automated Monte Carlo-based quantification and updating of geological uncertainty with borehole data (AutoBEL v1.0). Geoscientific Model Development, 13, 651–672. https://doi.org/10.5194/gmd-13-651-2020",
+          "type": "artigo científico",
+          "quality_class": "artigo científico revisado por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.5194/gmd-13-651-2020",
+          "doi": "10.5194/gmd-13-651-2020"
+        }
+      ]
+    },
+    {
+      "id": "localidades_indigenas_ibge",
+      "name": "Aldeias e localidades indígenas",
+      "group": "Geografia e território",
+      "status": "incorporada",
+      "kind": "camada",
+      "source": "IBGE · Censo Demográfico 2022 · Localidades Indígenas · snapshot local do Atlas",
+      "reference_ids": [
+        "REF-129"
+      ],
+      "references": [
+        {
+          "id": "REF-129",
+          "apa7": "Instituto Brasileiro de Geografia e Estatística. (2025). Localidades do Brasil e produtos geoespaciais do Censo Demográfico 2022 [Conjunto de dados geoespaciais]. IBGE. https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/27385-localidades.html",
+          "type": "dataset geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/27385-localidades.html",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "localidades_quilombolas_ibge",
+      "name": "Comunidades e localidades quilombolas",
+      "group": "Geografia e território",
+      "status": "incorporada",
+      "kind": "camada",
+      "source": "IBGE · Censo Demográfico 2022 · Localidades Quilombolas · snapshot local do Atlas",
+      "reference_ids": [
+        "REF-129"
+      ],
+      "references": [
+        {
+          "id": "REF-129",
+          "apa7": "Instituto Brasileiro de Geografia e Estatística. (2025). Localidades do Brasil e produtos geoespaciais do Censo Demográfico 2022 [Conjunto de dados geoespaciais]. IBGE. https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/27385-localidades.html",
+          "type": "dataset geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/27385-localidades.html",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "terras_indigenas_poligonos",
+      "name": "Terras indígenas e fases administrativas",
+      "group": "Geografia e território",
+      "status": "conectada",
+      "kind": "camada",
+      "source": "FUNAI · polígonos oficiais · serviço sincronizado PAMGIA IBAMA",
+      "reference_ids": [
+        "REF-130",
+        "REF-133"
+      ],
+      "references": [
+        {
+          "id": "REF-130",
+          "apa7": "Fundação Nacional dos Povos Indígenas. (2026). Terras Indígenas: dados geoespaciais e mapas [Conjunto de dados geoespaciais]. FUNAI. https://www.gov.br/funai/pt-br/atuacao/terras-indigenas/geoprocessamento-e-mapas",
+          "type": "dataset geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://www.gov.br/funai/pt-br/atuacao/terras-indigenas/geoprocessamento-e-mapas",
+          "doi": null
+        },
+        {
+          "id": "REF-133",
+          "apa7": "IBAMA & Fundação Nacional dos Povos Indígenas. (2026). Terra Indígena - FUNAI [Feature Service geoespacial]. PAMGIA. https://pamgia.ibama.gov.br/server/rest/services/01_Publicacoes_Bases/lim_terra_indigena_a/FeatureServer/12",
+          "type": "serviço geoespacial",
+          "quality_class": "serviço institucional sincronizado",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://pamgia.ibama.gov.br/server/rest/services/01_Publicacoes_Bases/lim_terra_indigena_a/FeatureServer/12",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "territorios_quilombolas_poligonos",
+      "name": "Territórios quilombolas delimitados e titulados",
+      "group": "Geografia e território",
+      "status": "conectada",
+      "kind": "camada",
+      "source": "INCRA · camada sincronizada pelo PAMGIA IBAMA",
+      "reference_ids": [
+        "REF-131",
+        "REF-134"
+      ],
+      "references": [
+        {
+          "id": "REF-131",
+          "apa7": "Instituto Nacional de Colonização e Reforma Agrária. (2026). Quilombolas [Página institucional]. INCRA. https://www.gov.br/incra/pt-br/assuntos/governanca-fundiaria/quilombolas",
+          "type": "página institucional",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://www.gov.br/incra/pt-br/assuntos/governanca-fundiaria/quilombolas",
+          "doi": null
+        },
+        {
+          "id": "REF-134",
+          "apa7": "IBAMA & Instituto Nacional de Colonização e Reforma Agrária. (2026). Territórios quilombolas [Feature Service geoespacial]. PAMGIA. https://pamgia.ibama.gov.br/server/rest/services/BasesSincronizadas/lim_quilombos_incra_a/FeatureServer/0",
+          "type": "serviço geoespacial",
+          "quality_class": "serviço institucional sincronizado",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://pamgia.ibama.gov.br/server/rest/services/BasesSincronizadas/lim_quilombos_incra_a/FeatureServer/0",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "assentamentos_rurais_incra",
+      "name": "Assentamentos rurais da reforma agrária",
+      "group": "Geografia e território",
+      "status": "conectada",
+      "kind": "camada",
+      "source": "INCRA · projetos de assentamento · serviço sincronizado PAMGIA IBAMA",
+      "reference_ids": [
+        "REF-132",
+        "REF-135"
+      ],
+      "references": [
+        {
+          "id": "REF-132",
+          "apa7": "Instituto Nacional de Colonização e Reforma Agrária. (2026). Assentamentos: relação de projetos criados e reconhecidos [Conjunto de dados]. INCRA. https://www.gov.br/incra/pt-br/assuntos/reforma-agraria/assentamentos-relacao-de-projetos",
+          "type": "dataset administrativo",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://www.gov.br/incra/pt-br/assuntos/reforma-agraria/assentamentos-relacao-de-projetos",
+          "doi": null
+        },
+        {
+          "id": "REF-135",
+          "apa7": "IBAMA & Instituto Nacional de Colonização e Reforma Agrária. (2026). Assentamentos - INCRA [Feature Service geoespacial]. PAMGIA. https://pamgia.ibama.gov.br/server/rest/services/01_Publicacoes_Bases/assentamentos_incra/FeatureServer/1",
+          "type": "serviço geoespacial",
+          "quality_class": "serviço institucional sincronizado",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://pamgia.ibama.gov.br/server/rest/services/01_Publicacoes_Bases/assentamentos_incra/FeatureServer/1",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "unidades_conservacao_ms",
+      "name": "Unidades de conservação · mosaico estadual",
+      "group": "Geografia e território",
+      "status": "conectada",
+      "kind": "camada",
+      "source": "IMASUL / PIN MS · Mosaico_UCs_MS",
+      "reference_ids": [
+        "REF-136"
+      ],
+      "references": [
+        {
+          "id": "REF-136",
+          "apa7": "Instituto de Meio Ambiente de Mato Grosso do Sul. (2026). CAMADAS_API_SISGEO v1 [Serviço geoespacial]. IMASUL / PIN MS. https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/CAMADAS_API_SISGEO_v1/FeatureServer",
+          "type": "serviço geoespacial",
+          "quality_class": "fonte primária institucional estadual",
+          "verification_level": "servico_oficial_preservado",
+          "url": "https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/CAMADAS_API_SISGEO_v1/FeatureServer",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "zonas_amortecimento_ms",
+      "name": "Zonas de amortecimento de unidades de conservação",
+      "group": "Geografia e território",
+      "status": "conectada",
+      "kind": "camada",
+      "source": "IMASUL / PIN MS · ZA_MS",
+      "reference_ids": [
+        "REF-136"
+      ],
+      "references": [
+        {
+          "id": "REF-136",
+          "apa7": "Instituto de Meio Ambiente de Mato Grosso do Sul. (2026). CAMADAS_API_SISGEO v1 [Serviço geoespacial]. IMASUL / PIN MS. https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/CAMADAS_API_SISGEO_v1/FeatureServer",
+          "type": "serviço geoespacial",
+          "quality_class": "fonte primária institucional estadual",
+          "verification_level": "servico_oficial_preservado",
+          "url": "https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/CAMADAS_API_SISGEO_v1/FeatureServer",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "corredores_ecologicos_ms",
+      "name": "Corredores ecológicos",
+      "group": "Geografia e território",
+      "status": "conectada",
+      "kind": "camada",
+      "source": "IMASUL / PIN MS · corredores_ecologicos",
+      "reference_ids": [
+        "REF-136"
+      ],
+      "references": [
+        {
+          "id": "REF-136",
+          "apa7": "Instituto de Meio Ambiente de Mato Grosso do Sul. (2026). CAMADAS_API_SISGEO v1 [Serviço geoespacial]. IMASUL / PIN MS. https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/CAMADAS_API_SISGEO_v1/FeatureServer",
+          "type": "serviço geoespacial",
+          "quality_class": "fonte primária institucional estadual",
+          "verification_level": "servico_oficial_preservado",
+          "url": "https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/CAMADAS_API_SISGEO_v1/FeatureServer",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "areas_uso_restrito_ms",
+      "name": "Áreas de uso restrito",
+      "group": "Geografia e território",
+      "status": "conectada",
+      "kind": "camada",
+      "source": "IMASUL / PIN MS · Areas_Uso_Restrito_Decreto_Normativo_15661",
+      "reference_ids": [
+        "REF-136"
+      ],
+      "references": [
+        {
+          "id": "REF-136",
+          "apa7": "Instituto de Meio Ambiente de Mato Grosso do Sul. (2026). CAMADAS_API_SISGEO v1 [Serviço geoespacial]. IMASUL / PIN MS. https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/CAMADAS_API_SISGEO_v1/FeatureServer",
+          "type": "serviço geoespacial",
+          "quality_class": "fonte primária institucional estadual",
+          "verification_level": "servico_oficial_preservado",
+          "url": "https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/CAMADAS_API_SISGEO_v1/FeatureServer",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "aur_pantanal_ms",
+      "name": "Área de uso restrito do Pantanal",
+      "group": "Geografia e território",
+      "status": "conectada",
+      "kind": "camada",
+      "source": "IMASUL / PIN MS · AUR_Pantanal_LEI_6160_DE_18122023",
+      "reference_ids": [
+        "REF-136"
+      ],
+      "references": [
+        {
+          "id": "REF-136",
+          "apa7": "Instituto de Meio Ambiente de Mato Grosso do Sul. (2026). CAMADAS_API_SISGEO v1 [Serviço geoespacial]. IMASUL / PIN MS. https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/CAMADAS_API_SISGEO_v1/FeatureServer",
+          "type": "serviço geoespacial",
+          "quality_class": "fonte primária institucional estadual",
+          "verification_level": "servico_oficial_preservado",
+          "url": "https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/CAMADAS_API_SISGEO_v1/FeatureServer",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "conflitos_disputas_territoriais_ms",
+      "name": "Conflitos e disputas territoriais",
+      "group": "Geografia e território",
+      "status": "em_avaliacao",
+      "kind": "camada",
+      "source": "Fonte única e modelo de evidência ainda não consolidados",
+      "reference_ids": [
+        "REF-138",
+        "REF-143"
+      ],
+      "references": [
+        {
+          "id": "REF-138",
+          "apa7": "International Association for Promoting Geoethics. (2016). Cape Town statement on geoethics. https://www.geoethics.org/ctsg",
+          "type": "declaração profissional",
+          "quality_class": "fonte primária institucional internacional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://www.geoethics.org/ctsg",
+          "doi": null
+        },
+        {
+          "id": "REF-143",
+          "apa7": "UNESCO. (2021). UNESCO recommendation on open science. https://unesdoc.unesco.org/ark:/48223/pf0000379949",
+          "type": "recomendação internacional",
+          "quality_class": "fonte primária normativa internacional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000379949",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "pag_etr_250km2",
+      "name": "ETR · Prioridade de Prospecção Geoquímica · PAG ETR · 250 km²",
+      "group": "Metalogenia e prospecção mineral",
+      "status": "incorporada",
+      "kind": "camada",
+      "source": "ITA ARANDU MS · PAG ETR · piloto espacial V35 restaurado no PATCH 00",
+      "reference_ids": [
+        "REF-146",
+        "REF-148",
+        "REF-156",
+        "REF-157",
+        "REF-158",
+        "REF-159",
+        "REF-160"
+      ],
+      "references": [
+        {
+          "id": "REF-146",
+          "apa7": "Verplanck, P. L., Van Gosen, B. S., Seal, R. R., & McCafferty, A. E. (2014). A deposit model for carbonatite and peralkaline intrusion-related rare earth element deposits. U.S. Geological Survey Scientific Investigations Report 2010–5070–J. https://doi.org/10.3133/sir20105070J",
+          "type": "relatório científico institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.3133/sir20105070J",
+          "doi": "10.3133/sir20105070J"
+        },
+        {
+          "id": "REF-148",
+          "apa7": "Emsbo, P., McLaughlin, P. I., Breit, G. N., du Bray, E. A., & Koenig, A. E. (2015). Rare earth elements in sedimentary phosphate deposits: Solution to the global REE crisis? Gondwana Research, 27(2), 776–785. https://doi.org/10.1016/j.gr.2014.10.008",
+          "type": "artigo científico revisado por pares",
+          "quality_class": "publicação científica revisada por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.1016/j.gr.2014.10.008",
+          "doi": "10.1016/j.gr.2014.10.008"
+        },
+        {
+          "id": "REF-156",
+          "apa7": "Remédio, M. J., & Faleiros, F. M. (Orgs.). (2014). Geologia e recursos minerais da folha Fazenda Margarida – SF.21-X-C-IV, estado de Mato Grosso do Sul. CPRM. Escala 1:100.000. https://rigeo.sgb.gov.br/handle/doc/21801",
+          "type": "relatório geológico institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/21801",
+          "doi": null
+        },
+        {
+          "id": "REF-157",
+          "apa7": "Justo, L. J. E. Q. (2000). Fosfato da Serra da Bodoquena, Mato Grosso do Sul. CPRM. Informe de Recursos Minerais, Série Insumos Minerais para Agricultura, 2. https://rigeo.sgb.gov.br/handle/doc/1567",
+          "type": "relatório de recursos minerais institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/1567",
+          "doi": null
+        },
+        {
+          "id": "REF-158",
+          "apa7": "Godoi, H. O. (Org.). (2001). Aquidauana, folha SF.21-X-A, estado de Mato Grosso do Sul. CPRM. Escala 1:250.000. Programa Levantamentos Geológicos Básicos do Brasil. https://rigeo.sgb.gov.br/bitstream/doc/10190/1/projeto_aquidauana.pdf",
+          "type": "relatório geológico institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/bitstream/doc/10190/1/projeto_aquidauana.pdf",
+          "doi": null
+        },
+        {
+          "id": "REF-159",
+          "apa7": "Godoi, H. O., Martins, E. G., Mello, J. C. R. de, & Scislewski, G. (Orgs.). (2001). Corumbá, folha SE.21-Y-D, Aldeia Tomázia, folha SF.21-V-B, Porto Murtinho, folha SF.21-V-D, estado de Mato Grosso do Sul. CPRM. Escala 1:250.000. Programa Levantamentos Geológicos Básicos do Brasil. https://rigeo.sgb.gov.br/handle/doc/5658",
+          "type": "relatório geológico e metalogenético institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/5658",
+          "doi": null
+        },
+        {
+          "id": "REF-160",
+          "apa7": "Lacerda Filho, J. V. (2015). Bloco Rio Apa: origem e evolução tectônica [Tese]. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/bitstream/doc/15295/1/TD_LACERDA_FILHO.pdf",
+          "type": "tese técnica em repositório institucional",
+          "quality_class": "fonte institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/bitstream/doc/15295/1/TD_LACERDA_FILHO.pdf",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "pag_etr_500km2",
+      "name": "ETR · Prioridade de Prospecção Geoquímica · PAG ETR · 500 km²",
+      "group": "Metalogenia e prospecção mineral",
+      "status": "incorporada",
+      "kind": "camada",
+      "source": "ITA ARANDU MS · PAG ETR · piloto espacial V35 restaurado no PATCH 00",
+      "reference_ids": [
+        "REF-146",
+        "REF-148",
+        "REF-156",
+        "REF-157",
+        "REF-158",
+        "REF-159",
+        "REF-160"
+      ],
+      "references": [
+        {
+          "id": "REF-146",
+          "apa7": "Verplanck, P. L., Van Gosen, B. S., Seal, R. R., & McCafferty, A. E. (2014). A deposit model for carbonatite and peralkaline intrusion-related rare earth element deposits. U.S. Geological Survey Scientific Investigations Report 2010–5070–J. https://doi.org/10.3133/sir20105070J",
+          "type": "relatório científico institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.3133/sir20105070J",
+          "doi": "10.3133/sir20105070J"
+        },
+        {
+          "id": "REF-148",
+          "apa7": "Emsbo, P., McLaughlin, P. I., Breit, G. N., du Bray, E. A., & Koenig, A. E. (2015). Rare earth elements in sedimentary phosphate deposits: Solution to the global REE crisis? Gondwana Research, 27(2), 776–785. https://doi.org/10.1016/j.gr.2014.10.008",
+          "type": "artigo científico revisado por pares",
+          "quality_class": "publicação científica revisada por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.1016/j.gr.2014.10.008",
+          "doi": "10.1016/j.gr.2014.10.008"
+        },
+        {
+          "id": "REF-156",
+          "apa7": "Remédio, M. J., & Faleiros, F. M. (Orgs.). (2014). Geologia e recursos minerais da folha Fazenda Margarida – SF.21-X-C-IV, estado de Mato Grosso do Sul. CPRM. Escala 1:100.000. https://rigeo.sgb.gov.br/handle/doc/21801",
+          "type": "relatório geológico institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/21801",
+          "doi": null
+        },
+        {
+          "id": "REF-157",
+          "apa7": "Justo, L. J. E. Q. (2000). Fosfato da Serra da Bodoquena, Mato Grosso do Sul. CPRM. Informe de Recursos Minerais, Série Insumos Minerais para Agricultura, 2. https://rigeo.sgb.gov.br/handle/doc/1567",
+          "type": "relatório de recursos minerais institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/1567",
+          "doi": null
+        },
+        {
+          "id": "REF-158",
+          "apa7": "Godoi, H. O. (Org.). (2001). Aquidauana, folha SF.21-X-A, estado de Mato Grosso do Sul. CPRM. Escala 1:250.000. Programa Levantamentos Geológicos Básicos do Brasil. https://rigeo.sgb.gov.br/bitstream/doc/10190/1/projeto_aquidauana.pdf",
+          "type": "relatório geológico institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/bitstream/doc/10190/1/projeto_aquidauana.pdf",
+          "doi": null
+        },
+        {
+          "id": "REF-159",
+          "apa7": "Godoi, H. O., Martins, E. G., Mello, J. C. R. de, & Scislewski, G. (Orgs.). (2001). Corumbá, folha SE.21-Y-D, Aldeia Tomázia, folha SF.21-V-B, Porto Murtinho, folha SF.21-V-D, estado de Mato Grosso do Sul. CPRM. Escala 1:250.000. Programa Levantamentos Geológicos Básicos do Brasil. https://rigeo.sgb.gov.br/handle/doc/5658",
+          "type": "relatório geológico e metalogenético institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/5658",
+          "doi": null
+        },
+        {
+          "id": "REF-160",
+          "apa7": "Lacerda Filho, J. V. (2015). Bloco Rio Apa: origem e evolução tectônica [Tese]. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/bitstream/doc/15295/1/TD_LACERDA_FILHO.pdf",
+          "type": "tese técnica em repositório institucional",
+          "quality_class": "fonte institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/bitstream/doc/15295/1/TD_LACERDA_FILHO.pdf",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "pag_etr_1000km2",
+      "name": "ETR · Prioridade de Prospecção Geoquímica · PAG ETR · 1000 km²",
+      "group": "Metalogenia e prospecção mineral",
+      "status": "incorporada",
+      "kind": "camada",
+      "source": "ITA ARANDU MS · PAG ETR · piloto espacial V35 restaurado no PATCH 00",
+      "reference_ids": [
+        "REF-146",
+        "REF-148",
+        "REF-156",
+        "REF-157",
+        "REF-158",
+        "REF-159",
+        "REF-160"
+      ],
+      "references": [
+        {
+          "id": "REF-146",
+          "apa7": "Verplanck, P. L., Van Gosen, B. S., Seal, R. R., & McCafferty, A. E. (2014). A deposit model for carbonatite and peralkaline intrusion-related rare earth element deposits. U.S. Geological Survey Scientific Investigations Report 2010–5070–J. https://doi.org/10.3133/sir20105070J",
+          "type": "relatório científico institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.3133/sir20105070J",
+          "doi": "10.3133/sir20105070J"
+        },
+        {
+          "id": "REF-148",
+          "apa7": "Emsbo, P., McLaughlin, P. I., Breit, G. N., du Bray, E. A., & Koenig, A. E. (2015). Rare earth elements in sedimentary phosphate deposits: Solution to the global REE crisis? Gondwana Research, 27(2), 776–785. https://doi.org/10.1016/j.gr.2014.10.008",
+          "type": "artigo científico revisado por pares",
+          "quality_class": "publicação científica revisada por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.1016/j.gr.2014.10.008",
+          "doi": "10.1016/j.gr.2014.10.008"
+        },
+        {
+          "id": "REF-156",
+          "apa7": "Remédio, M. J., & Faleiros, F. M. (Orgs.). (2014). Geologia e recursos minerais da folha Fazenda Margarida – SF.21-X-C-IV, estado de Mato Grosso do Sul. CPRM. Escala 1:100.000. https://rigeo.sgb.gov.br/handle/doc/21801",
+          "type": "relatório geológico institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/21801",
+          "doi": null
+        },
+        {
+          "id": "REF-157",
+          "apa7": "Justo, L. J. E. Q. (2000). Fosfato da Serra da Bodoquena, Mato Grosso do Sul. CPRM. Informe de Recursos Minerais, Série Insumos Minerais para Agricultura, 2. https://rigeo.sgb.gov.br/handle/doc/1567",
+          "type": "relatório de recursos minerais institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/1567",
+          "doi": null
+        },
+        {
+          "id": "REF-158",
+          "apa7": "Godoi, H. O. (Org.). (2001). Aquidauana, folha SF.21-X-A, estado de Mato Grosso do Sul. CPRM. Escala 1:250.000. Programa Levantamentos Geológicos Básicos do Brasil. https://rigeo.sgb.gov.br/bitstream/doc/10190/1/projeto_aquidauana.pdf",
+          "type": "relatório geológico institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/bitstream/doc/10190/1/projeto_aquidauana.pdf",
+          "doi": null
+        },
+        {
+          "id": "REF-159",
+          "apa7": "Godoi, H. O., Martins, E. G., Mello, J. C. R. de, & Scislewski, G. (Orgs.). (2001). Corumbá, folha SE.21-Y-D, Aldeia Tomázia, folha SF.21-V-B, Porto Murtinho, folha SF.21-V-D, estado de Mato Grosso do Sul. CPRM. Escala 1:250.000. Programa Levantamentos Geológicos Básicos do Brasil. https://rigeo.sgb.gov.br/handle/doc/5658",
+          "type": "relatório geológico e metalogenético institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/5658",
+          "doi": null
+        },
+        {
+          "id": "REF-160",
+          "apa7": "Lacerda Filho, J. V. (2015). Bloco Rio Apa: origem e evolução tectônica [Tese]. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/bitstream/doc/15295/1/TD_LACERDA_FILHO.pdf",
+          "type": "tese técnica em repositório institucional",
+          "quality_class": "fonte institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/bitstream/doc/15295/1/TD_LACERDA_FILHO.pdf",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "pag_etr_evidencia_m2_feixe_morros",
+      "name": "PAG ETR · Evidência M2 · Corpo Feixe dos Morros",
+      "group": "Metalogenia e prospecção mineral",
+      "status": "incorporada",
+      "kind": "camada",
+      "source": "SGB · Mapa geológico de Mato Grosso do Sul 1:1.000.000 · Corpo Feixe dos Morros",
+      "reference_ids": [
+        "REF-002",
+        "REF-159"
+      ],
+      "references": [
+        {
+          "id": "REF-002",
+          "apa7": "Lacerda Filho, J. V., Brito, R. S. C., Silva, M. G., Oliveira, C. C., Moreton, L. C., Martins, E. G., Lopes, R. C., Lima, T. M., Larizzatt, J. H., & Valente, C. R. (2006). Geologia e recursos minerais do estado de Mato Grosso do Sul: Texto explicativo dos mapas geológico e de recursos minerais do estado de Mato Grosso do Sul. CPRM. Escala 1:1.000.000. https://rigeo.sgb.gov.br/handle/doc/10217",
+          "type": "mapa e relatório",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/10217",
+          "doi": null
+        },
+        {
+          "id": "REF-159",
+          "apa7": "Godoi, H. O., Martins, E. G., Mello, J. C. R. de, & Scislewski, G. (Orgs.). (2001). Corumbá, folha SE.21-Y-D, Aldeia Tomázia, folha SF.21-V-B, Porto Murtinho, folha SF.21-V-D, estado de Mato Grosso do Sul. CPRM. Escala 1:250.000. Programa Levantamentos Geológicos Básicos do Brasil. https://rigeo.sgb.gov.br/handle/doc/5658",
+          "type": "relatório geológico e metalogenético institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/5658",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "pag_etr_evidencia_m4_fosforitos",
+      "name": "PAG ETR · Evidência M4 · unidades com níveis fosforíticos",
+      "group": "Metalogenia e prospecção mineral",
+      "status": "incorporada",
+      "kind": "camada",
+      "source": "SGB · Mapa geológico estadual · Formações Bocaina e Tamengo com contexto fosforítico explícito",
+      "reference_ids": [
+        "REF-002",
+        "REF-157",
+        "REF-158"
+      ],
+      "references": [
+        {
+          "id": "REF-002",
+          "apa7": "Lacerda Filho, J. V., Brito, R. S. C., Silva, M. G., Oliveira, C. C., Moreton, L. C., Martins, E. G., Lopes, R. C., Lima, T. M., Larizzatt, J. H., & Valente, C. R. (2006). Geologia e recursos minerais do estado de Mato Grosso do Sul: Texto explicativo dos mapas geológico e de recursos minerais do estado de Mato Grosso do Sul. CPRM. Escala 1:1.000.000. https://rigeo.sgb.gov.br/handle/doc/10217",
+          "type": "mapa e relatório",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/10217",
+          "doi": null
+        },
+        {
+          "id": "REF-157",
+          "apa7": "Justo, L. J. E. Q. (2000). Fosfato da Serra da Bodoquena, Mato Grosso do Sul. CPRM. Informe de Recursos Minerais, Série Insumos Minerais para Agricultura, 2. https://rigeo.sgb.gov.br/handle/doc/1567",
+          "type": "relatório de recursos minerais institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/1567",
+          "doi": null
+        },
+        {
+          "id": "REF-158",
+          "apa7": "Godoi, H. O. (Org.). (2001). Aquidauana, folha SF.21-X-A, estado de Mato Grosso do Sul. CPRM. Escala 1:250.000. Programa Levantamentos Geológicos Básicos do Brasil. https://rigeo.sgb.gov.br/bitstream/doc/10190/1/projeto_aquidauana.pdf",
+          "type": "relatório geológico institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/bitstream/doc/10190/1/projeto_aquidauana.pdf",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "pag_etr_pontos_fosforo",
+      "name": "PAG ETR · ocorrências e registros pontuais de fósforo",
+      "group": "Metalogenia e prospecção mineral",
+      "status": "incorporada",
+      "kind": "camada",
+      "source": "SGB / GeoSGB · registros de campo e recursos minerais com substância Fósforo no snapshot de trabalho",
+      "reference_ids": [
+        "REF-003",
+        "REF-157",
+        "REF-158"
+      ],
+      "references": [
+        {
+          "id": "REF-003",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). GeoSGB. Banco de dados de geociências do Serviço Geológico do Brasil. Recuperado em 12 de agosto de 2026. https://geosgb.sgb.gov.br/",
+          "type": "serviço de dados",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://geosgb.sgb.gov.br/",
+          "doi": null
+        },
+        {
+          "id": "REF-157",
+          "apa7": "Justo, L. J. E. Q. (2000). Fosfato da Serra da Bodoquena, Mato Grosso do Sul. CPRM. Informe de Recursos Minerais, Série Insumos Minerais para Agricultura, 2. https://rigeo.sgb.gov.br/handle/doc/1567",
+          "type": "relatório de recursos minerais institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/1567",
+          "doi": null
+        },
+        {
+          "id": "REF-158",
+          "apa7": "Godoi, H. O. (Org.). (2001). Aquidauana, folha SF.21-X-A, estado de Mato Grosso do Sul. CPRM. Escala 1:250.000. Programa Levantamentos Geológicos Básicos do Brasil. https://rigeo.sgb.gov.br/bitstream/doc/10190/1/projeto_aquidauana.pdf",
+          "type": "relatório geológico institucional",
+          "quality_class": "fonte primária institucional científica",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/bitstream/doc/10190/1/projeto_aquidauana.pdf",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "unidades_conservacao_cnuc_ms",
+      "name": "Unidades de conservação · CNUC/MMA · recorte MS",
+      "group": "Geografia e território",
+      "status": "conectada",
+      "kind": "camada",
+      "source": "MMA · Cadastro Nacional de Unidades de Conservação · camada sincronizada PAMGIA IBAMA",
+      "reference_ids": [
+        "REF-169",
+        "REF-170"
+      ],
+      "references": [
+        {
+          "id": "REF-169",
+          "apa7": "Ministério do Meio Ambiente e Mudança do Clima. (s.d.). Plataforma CNUC: Cadastro Nacional de Unidades de Conservação. Recuperado em 14 de agosto de 2026.",
+          "type": "fonte institucional geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://www.gov.br/mma/pt-br/assuntos/biodiversidade-e-biomas/areas-protegidas/plataforma-cnuc-1",
+          "doi": null
+        },
+        {
+          "id": "REF-170",
+          "apa7": "Instituto Chico Mendes de Conservação da Biodiversidade. (2026). Dados abertos: limites oficiais das Unidades de Conservação Federais.",
+          "type": "fonte institucional geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://www.gov.br/icmbio/pt-br/acesso-a-informacao/dados-abertos",
+          "doi": null
+        }
+      ]
+    },
+    {
+      "id": "contexto_geoetico_250km2",
+      "name": "Salvaguardas territoriais e geoéticas · 250 km²",
+      "group": "Geografia e território",
+      "status": "derivada",
+      "kind": "camada",
+      "source": "ITA ARANDU MS · interseção em sessão com geometrias oficiais conectadas e localidades públicas incorporadas",
+      "reference_ids": [
+        "REF-129",
+        "REF-130",
+        "REF-131",
+        "REF-132",
+        "REF-133",
+        "REF-134",
+        "REF-135",
+        "REF-136",
+        "REF-138",
+        "REF-140",
+        "REF-142",
+        "REF-169",
+        "REF-170"
+      ],
+      "references": [
+        {
+          "id": "REF-129",
+          "apa7": "Instituto Brasileiro de Geografia e Estatística. (2025). Localidades do Brasil e produtos geoespaciais do Censo Demográfico 2022 [Conjunto de dados geoespaciais]. IBGE.",
+          "type": "dataset geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/27385-localidades.html",
+          "doi": null
+        },
+        {
+          "id": "REF-130",
+          "apa7": "Fundação Nacional dos Povos Indígenas. (2026). Terras Indígenas: dados geoespaciais e mapas [Conjunto de dados geoespaciais]. FUNAI.",
+          "type": "dataset geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://www.gov.br/funai/pt-br/atuacao/terras-indigenas/geoprocessamento-e-mapas",
+          "doi": null
+        },
+        {
+          "id": "REF-131",
+          "apa7": "Instituto Nacional de Colonização e Reforma Agrária. (2026). Quilombolas [Página institucional]. INCRA.",
+          "type": "página institucional",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://www.gov.br/incra/pt-br/assuntos/governanca-fundiaria/quilombolas",
+          "doi": null
+        },
+        {
+          "id": "REF-132",
+          "apa7": "Instituto Nacional de Colonização e Reforma Agrária. (2026). Assentamentos: relação de projetos criados e reconhecidos [Conjunto de dados]. INCRA.",
+          "type": "dataset administrativo",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://www.gov.br/incra/pt-br/assuntos/reforma-agraria/assentamentos-relacao-de-projetos",
+          "doi": null
+        },
+        {
+          "id": "REF-133",
+          "apa7": "IBAMA & Fundação Nacional dos Povos Indígenas. (2026). Terra Indígena - FUNAI [Feature Service geoespacial]. PAMGIA.",
+          "type": "serviço geoespacial",
+          "quality_class": "serviço institucional sincronizado",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://pamgia.ibama.gov.br/server/rest/services/01_Publicacoes_Bases/lim_terra_indigena_a/FeatureServer/12",
+          "doi": null
+        },
+        {
+          "id": "REF-134",
+          "apa7": "IBAMA & Instituto Nacional de Colonização e Reforma Agrária. (2026). Territórios quilombolas [Feature Service geoespacial]. PAMGIA.",
+          "type": "serviço geoespacial",
+          "quality_class": "serviço institucional sincronizado",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://pamgia.ibama.gov.br/server/rest/services/BasesSincronizadas/lim_quilombos_incra_a/FeatureServer/0",
+          "doi": null
+        },
+        {
+          "id": "REF-135",
+          "apa7": "IBAMA & Instituto Nacional de Colonização e Reforma Agrária. (2026). Assentamentos - INCRA [Feature Service geoespacial]. PAMGIA.",
+          "type": "serviço geoespacial",
+          "quality_class": "serviço institucional sincronizado",
+          "verification_level": "fonte_oficial_conferida",
+          "url": "https://pamgia.ibama.gov.br/server/rest/services/01_Publicacoes_Bases/assentamentos_incra/FeatureServer/1",
+          "doi": null
+        },
+        {
+          "id": "REF-136",
+          "apa7": "Instituto de Meio Ambiente de Mato Grosso do Sul. (2026). CAMADAS_API_SISGEO v1 [Serviço geoespacial]. IMASUL / PIN MS.",
+          "type": "serviço geoespacial",
+          "quality_class": "fonte primária institucional estadual",
+          "verification_level": "servico_oficial_preservado",
+          "url": "https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/CAMADAS_API_SISGEO_v1/FeatureServer",
+          "doi": null
+        },
+        {
+          "id": "REF-138",
+          "apa7": "International Association for Promoting Geoethics. (2016). Cape Town statement on geoethics.",
+          "type": "declaração profissional",
+          "quality_class": "fonte primária institucional internacional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://www.geoethics.org/ctsg",
+          "doi": null
+        },
+        {
+          "id": "REF-140",
+          "apa7": "Carroll, S. R., Garba, I., Figueroa-Rodríguez, O. L., Holbrook, J., Lovett, R., Materechera, S., Parsons, M., Raseroka, K., Rodriguez-Lonebear, D., Rowe, R., Sara, R., Walker, J. D., Anderson, J., & Hudson, M. (2020). The CARE Principles for Indigenous Data Governance. Data Science Journal, 19, 43. https://doi.org/10.5334/dsj-2020-043",
+          "type": "artigo científico revisado por pares",
+          "quality_class": "publicação científica revisada por pares",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://doi.org/10.5334/dsj-2020-043",
+          "doi": "10.5334/dsj-2020-043"
+        },
+        {
+          "id": "REF-142",
+          "apa7": "United Nations. (2007). United Nations Declaration on the Rights of Indigenous Peoples.",
+          "type": "declaração internacional",
+          "quality_class": "fonte primária normativa internacional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://www.un.org/development/desa/indigenouspeoples/declaration-on-the-rights-of-indigenous-peoples.html",
+          "doi": null
+        },
+        {
+          "id": "REF-169",
+          "apa7": "Ministério do Meio Ambiente e Mudança do Clima. (s.d.). Plataforma CNUC: Cadastro Nacional de Unidades de Conservação. Recuperado em 14 de agosto de 2026.",
+          "type": "fonte institucional geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://www.gov.br/mma/pt-br/assuntos/biodiversidade-e-biomas/areas-protegidas/plataforma-cnuc-1",
+          "doi": null
+        },
+        {
+          "id": "REF-170",
+          "apa7": "Instituto Chico Mendes de Conservação da Biodiversidade. (2026). Dados abertos: limites oficiais das Unidades de Conservação Federais.",
+          "type": "fonte institucional geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://www.gov.br/icmbio/pt-br/acesso-a-informacao/dados-abertos",
           "doi": null
         }
       ]
@@ -6994,5 +8216,63 @@
     "REF-127",
     "REF-128"
   ],
-  "education_methodology_note": "Referências metodológicas do Modo Aprender. Não são atribuídas a uma camada geoespacial específica."
+  "education_methodology_note": "Referências metodológicas do Modo Aprender. Não são atribuídas a uma camada geoespacial específica.",
+  "geoethics_reference_ids": [
+    "REF-138",
+    "REF-139",
+    "REF-140",
+    "REF-141",
+    "REF-142",
+    "REF-143",
+    "REF-144"
+  ],
+  "geoethics_note": "Bibliografia transversal para geoética, governança de dados, direitos coletivos, ciência aberta responsável e proteção de dados. Não constitui pontuação e não substitui a fonte temática de cada camada.",
+  "pag_etr_reference_ids": [
+    "REF-146",
+    "REF-147",
+    "REF-148",
+    "REF-149",
+    "REF-150",
+    "REF-151",
+    "REF-152",
+    "REF-153",
+    "REF-154",
+    "REF-155",
+    "REF-156",
+    "REF-157",
+    "REF-158",
+    "REF-159",
+    "REF-160",
+    "REF-002",
+    "REF-003",
+    "REF-054"
+  ],
+  "pag_etr_note": "Bibliografia específica do PAG ETR. Reúne modelos de depósitos, trabalhos metodológicos internacionais e fontes geocientíficas primárias de Mato Grosso do Sul. Nenhum modelo mundial é tratado como prova de equivalência local.",
+  "cartography_reference_ids": [
+    "REF-161",
+    "REF-162",
+    "REF-163",
+    "REF-164",
+    "REF-165",
+    "REF-166",
+    "REF-167",
+    "REF-168"
+  ],
+  "cartography_note": "Referências concentradas para princípios de escala, generalização, programas sistemáticos de cartografia geológica e comparação internacional. Escala nominal não equivale automaticamente a precisão ou densidade de conhecimento.",
+  "protected_areas_reference_ids": [
+    "REF-169",
+    "REF-170"
+  ],
+  "critical_literacy_reference_ids": [
+    "REF-124",
+    "REF-126",
+    "REF-138",
+    "REF-143",
+    "REF-171",
+    "REF-172",
+    "REF-173",
+    "REF-104",
+    "REF-105"
+  ],
+  "critical_literacy_note": "Fundamentos transversais do Modo Aprender para fonte, escala, evidência, incerteza, geoética e interpretação. A bibliografia permanece concentrada no registro mestre."
 }

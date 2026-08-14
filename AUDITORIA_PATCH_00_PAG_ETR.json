@@ -1,0 +1,63 @@
+{
+  "project": "ITA ARANDU MS",
+  "version": "V38.1-patch00-pag-etr-restaurado-20260814",
+  "patch": "PATCH_00_PAG_ETR",
+  "generated_at": "2026-08-14",
+  "checks": {
+    "six_pag_layers_catalogued": true,
+    "group_order_present": true,
+    "renderer_present": true,
+    "ficha_present": true,
+    "methodology_present": true,
+    "n2_n3_not_invented": true,
+    "service_worker_core_complete": true,
+    "javascript_syntax_checked": true,
+    "bibliography_layer_anchors_added": true
+  },
+  "files": {
+    "docs/camadas/arquivos/pag_etr_250km2.geojson": {
+      "bytes": 7349722,
+      "sha256": "bfb0363fc5d28769933034c426224908671e03bb96a289a98244b795f3f2a19b"
+    },
+    "docs/camadas/arquivos/pag_etr_500km2.geojson": {
+      "bytes": 4400311,
+      "sha256": "900b85f6044876b6cb5b648bae3ade9c2c10191894bbf251de164fec24854108"
+    },
+    "docs/camadas/arquivos/pag_etr_1000km2.geojson": {
+      "bytes": 2629085,
+      "sha256": "09a678f9b6e8d1b8317aa87857d3ef6abff8742c08091adf18f39412ec149dd5"
+    },
+    "docs/camadas/arquivos/pag_etr_evidencia_m2_feixe_morros.geojson": {
+      "bytes": 5084,
+      "sha256": "196072bc26c0088ced8d8b2fda0fb6582659e691287cfa66535c86a1db8700e0"
+    },
+    "docs/camadas/arquivos/pag_etr_evidencia_m4_fosforitos.geojson": {
+      "bytes": 53498,
+      "sha256": "615b59e300e9793d7b20b34d9eb26ee93b1b33da9bcb378c182ab9ddfbb64650"
+    },
+    "docs/camadas/arquivos/pag_etr_pontos_fosforo.geojson": {
+      "bytes": 36397,
+      "sha256": "de0100549d1acb1059a1735289dc6d6f55e5d37d8a8bc6f852ec6348a179cb55"
+    }
+  },
+  "counts": {
+    "250": {
+      "cells": 1554,
+      "model_open": 49
+    },
+    "500": {
+      "cells": 793,
+      "model_open": 37
+    },
+    "1000": {
+      "cells": 412,
+      "model_open": 24
+    }
+  },
+  "evidence_counts": {
+    "feixe": 6,
+    "fosf": 48,
+    "pontos": 29
+  },
+  "pass": true
+}

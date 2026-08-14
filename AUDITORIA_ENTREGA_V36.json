@@ -1,0 +1,32 @@
+{
+  "version": "V36-geografia-territorio-pag-etr-20260814",
+  "checks": "PASS",
+  "runtime_catalog_layers": 206,
+  "references": 137,
+  "bibliography_entries": 206,
+  "new_group_layers": 11,
+  "files": {
+    "docs/camadas/arquivos/localidades_indigenas_ibge.geojson": {
+      "bytes": 468433,
+      "sha256": "e60657da81cb104bb30a7fd8c0f6832a7b138a4d725ca83f0016a6c24822dedc",
+      "features": 518
+    },
+    "docs/camadas/arquivos/localidades_quilombolas_ibge.geojson": {
+      "bytes": 19143,
+      "sha256": "928787e2355744732acd4279d2dc3ddfc234e0d07eafe6bba301c52be250e7c6",
+      "features": 27
+    },
+    "docs/documentos/metodologia-geografia-territorio.html": {
+      "bytes": 7999,
+      "sha256": "af4381e420a67363501bd1ed1a35bfe37c120bb5704ba47c0901574029e07dc4"
+    },
+    "docs/assets/js/app.js": {
+      "bytes": 329147,
+      "sha256": "ab1d097c801063a50b5f13d142986239261f089e3b2918bd7fdb042120c57f4b"
+    },
+    "docs/referencias/referencias.js": {
+      "bytes": 134378,
+      "sha256": "de2aababff171ad46dd4dc9485302c074aae76424cb8cfa1bbaf9f840adc9437"
+    }
+  }
+}

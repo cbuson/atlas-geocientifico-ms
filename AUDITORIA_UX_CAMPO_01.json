@@ -1,0 +1,46 @@
+{
+  "patch": "UX-CAMPO-01",
+  "version": "V38.4.4-UX-CAMPO-01-caderneta-geologica-20260814",
+  "schema_version": "0.3",
+  "date": "2026-08-14",
+  "features": {
+    "station_code": "ITA-CAMPO-AAAAMMDD-NNN",
+    "sample_code": "<station_code>-A01",
+    "measure_code": "<station_code>-M01",
+    "photo_code": "<station_code>-P01",
+    "steps": 8,
+    "modes": [
+      "completo",
+      "rapido",
+      "aprender"
+    ],
+    "repeatable_measurements": true,
+    "repeatable_samples": true,
+    "sample_label_print": true,
+    "draft_autosave": true,
+    "json_export": true,
+    "geojson_export": true,
+    "csv_export": true,
+    "iod_auto_ingestion": false
+  },
+  "validation_states": [
+    "RASCUNHO",
+    "VALIDADA_PELO_AUTOR",
+    "REVISADA",
+    "APROVADA_PARA_ANALISE"
+  ],
+  "references_reused": [
+    "REF-070",
+    "REF-071",
+    "REF-072",
+    "REF-073"
+  ],
+  "new_bibliographic_references": 0,
+  "rules": [
+    "OBSERVACAO != INTERPRETACAO",
+    "CONTEXTO_DO_ATLAS != OBSERVACAO_DE_CAMPO",
+    "OBSERVAR != COLETAR",
+    "APROVADA_PARA_ANALISE != ENTRADA_AUTOMATICA_NO_IOD",
+    "IGSN só é registrado quando existir identificador real"
+  ]
+}

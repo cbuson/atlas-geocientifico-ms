@@ -1,3 +1,107 @@
+## V38.4.5 · UX-CAMPO-02 · instrumentos do dispositivo · 2026-08-14
+- adiciona ativação explícita de orientação e movimento no módulo Campo;
+- integra bússola, clinômetro, nível, aceleração e rotação em painel ao vivo;
+- adiciona captura de plano, lineação e azimute com procedência instrumental;
+- calcula planos com matriz de orientação Z X' Y'' quando a orientação absoluta está disponível;
+- não preenche azimute quando o navegador fornece apenas referência relativa;
+- preserva snapshot de sensores, horário, correção angular manual e estabilidade em cada medida;
+- acrescenta HUD discreto de orientação no mapa enquanto os instrumentos estão ativos;
+- mantém medidas manuais com bússola geológica e registra claramente o método;
+- atualiza o esquema de campo para 0.4 e amplia o CSV de medidas com metadados dos sensores.
+
+## V38.4.4 · UX-CAMPO-01 · 2026-08-14
+- transforma Campo em Caderneta Geológica Digital por estações;
+- adiciona navegação em 8 etapas e modos Completo, Rápido e Aprender;
+- separa observação, litologia, medidas estruturais, amostras, fotos e interpretação;
+- gera códigos automáticos de estação, medida, foto e amostra coletada;
+- adiciona etiqueta imprimível da amostra e IGSN opcional, nunca inferido;
+- adiciona rascunho local automático, revisão e estados de validação;
+- exporta JSON, GeoJSON e CSV de amostras/medidas;
+- mantém registros fora do IOD até validação científica posterior.
+
+## V38.4.3 · C02 · 2026-08-14
+- adiciona geometria computacional validada para limite estadual, malhas 500/1000 e uma feição hidrogeológica;
+- preserva snapshots e IDs originais;
+- documenta diferença de linhagem da malha 250 e micro-sobreposições sem regenerá-la;
+- define resolução por `hex_id` para IPG/PAG ETR em cálculos futuros.
+
+## V38.4.2 · C01 · integridade de versão e navegação residual · 2026-08-14
+
+- Sincroniza `VERSION`, `meta.js`, `<title>` e nome do cache PWA.
+- Completa o registro bibliográfico de `contexto_geoetico_250km2` e `unidades_conservacao_cnuc_ms` no HTML e JSON mestre.
+- Remove abertura em nova aba de links documentais internos residuais; fontes externas continuam externas.
+- Atualiza a identificação de versão no protocolo transversal de geoética.
+- Não altera dados, geometrias, fórmulas, índices, PAG ETR, GPS ou simbologia científica.
+
+## V38.4.1 · PATCH 03 rev.2 · navegação interna + GPS discreto · 2026-08-14
+
+- Mantém a navegação documental segura da V38.4.
+- Reduz o marcador HUD de localização e adapta seu tamanho ao zoom: 18 px em visão regional, 20 px em zoom intermediário, 22 px em detalhe e máximo de 24 px em grande aproximação.
+- Preserva o padrão vermelho–amarelo–vermelho e o marcador continua acima de todas as camadas temáticas.
+- Não altera precisão GPS, círculo de precisão, dados, índices, PAG ETR ou bibliografia.
+
+## V38.4 · PATCH 03 · navegação interna segura · 2026-08-14
+
+- Remove `history.back()` do iframe documental.
+- Adota pilha própria de documentos do ITA ARANDU MS.
+- A seta interna volta apenas entre documentos do Atlas; sem histórico interno, fecha o visor.
+- O botão Voltar do navegador fecha primeiro o visor documental por estado sentinela no mesmo URL/origem.
+- `Esc`, `×` e clique no fundo fecham o visor sem saltar para páginas externas.
+- Navegações internas do iframe usam substituição de localização para não contaminar o histórico conjunto do navegador.
+- Corrige o service worker: documentos navegados não sobrescrevem mais o cache de `index.html`.
+- Nenhuma camada, índice, PAG ETR, GPS, geoética ou bibliografia foi alterada.
+
+## V38.3 · PATCH 02 · fundamentos de leitura geocientífica · 2026-08-14
+
+- Integra no Modo Aprender cinco fundamentos transversais: Fonte, Escala, Evidência, Incerteza e Geoética.
+- Adiciona três páginas internas: evidências/rastreabilidade, incerteza/inferência e leitura de índices/produtos derivados.
+- Insere a regra “Pare e verifique” nas fichas cartográficas.
+- Acrescenta perguntas que todo mapa deve responder e links contextuais nas missões.
+- Integra Tempo profundo, Campo e roteiro “Observe antes de interpretar” como segundo nível pedagógico.
+- Centraliza a bibliografia educativa e adiciona REF-171 a REF-173 ao registro mestre.
+- Atualiza a PWA para cachear os novos documentos.
+
+
+## V38.1 · PATCH 00 · restauração operacional PAG ETR · 2026-08-14
+- Restaura o grupo **Metalogenia e prospecção mineral** no catálogo executável.
+- Materializa PAG ETR nas malhas independentes de 250, 500 e 1000 km².
+- Restaura as geometrias de evidência M2 Feixe dos Morros, M4 Bocaina/Tamengo e pontos de fósforo.
+- Mantém o piloto conservador: somente N0/N1 no snapshot espacial restaurado. Nenhum N2/N3 foi criado por este patch.
+- Implementa legenda vermelha N0–N4 e ficha PAG ETR com salvaguardas de interpretação.
+- M9 Granito Scardine continua não espacializado enquanto a geometria detalhada primária não estiver materializada.
+- Este patch não altera IMC, IPG nem os demais índices geocientíficos.
+# V38 · 14 de agosto de 2026
+
+- Criada página transversal sobre escala, generalização e princípios de cartografia geológica.
+- Bibliografia cartográfica concentrada na página mestre, com referências SGB, IGME, ICGC, BGS, BRGM e USGS.
+- Implementada camada derivada `contexto_geoetico_250km2` para salvaguardas territoriais por hexágono em sessão.
+- Adicionada conexão nacional CNUC/MMA para unidades de conservação, preservando esfera e órgão gestor e mantendo ICMBio como referência para limites federais.
+- O motor diferencia polígonos territoriais de localidades pontuais e nunca infere Terra Indígena a partir de aldeia.
+- Estados de cobertura incompleta impedem transformar falha de fonte remota em ausência territorial.
+- Modo Aprender passa a incluir missão funcional `Detetive das lacunas`, conectando IMC e IPG sem tratá-los como o mesmo indicador.
+- Fichas de camadas com escala declarada passam a remeter à metodologia cartográfica e alertar que zoom não altera a escala científica da fonte.
+
+# V37 · 14 de agosto de 2026
+
+- Criado protocolo transversal de geoética, governança dos dados e uso responsável.
+- Implementados estados qualitativos de publicação sem pontuação geoética.
+- Fichas de feição passam a exibir salvaguardas geoéticas.
+- Bibliografia científica concentrada em uma única página mestre com seções específicas de Geoética e PAG ETR.
+- Removida a referência JOAJU da metodologia científica de Geografia e território.
+- Fontes territoriais passam a ser atribuídas diretamente a IBGE, FUNAI, INCRA, IMASUL e serviços institucionais correspondentes.
+- Metodologia PAG ETR passa a remeter à bibliografia central e incorpora salvaguardas geoéticas.
+- Corrigida a referência do Projeto Aquidauana para 2001 e a referência Watts e Mercer para Geochimica et Cosmochimica Acta 272, 54–77.
+
+# V36 · 2026-08-14 · Geografia e território
+
+- recupera e migra do JOAJU MS as localidades indígenas e quilombolas do IBGE
+- conecta Terras Indígenas FUNAI, Territórios Quilombolas INCRA e assentamentos rurais INCRA
+- incorpora o bloco ambiental territorial do IMASUL e PIN MS
+- cria grupo Geografia e território no catálogo
+- documenta a separação entre contexto territorial e resultados geocientíficos ou PAG ETR
+- registra conflitos e disputas territoriais como lacuna em avaliação, sem inventar geometria
+- adiciona metodologia própria e referências APA 7
+
 # PATCH 10 · fundamentação em educação geocientífica · 2026-08-13
 
 - Modo Aprender fundamentado explicitamente em literatura de educação geocientífica

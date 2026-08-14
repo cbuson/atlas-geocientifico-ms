@@ -132,6 +132,28 @@
     "bytes": 170372
   },
   {
+    "id": "localidades_indigenas_ibge",
+    "arquivo": "./camadas/arquivos/localidades_indigenas_ibge.geojson",
+    "nome": "Aldeias e localidades indígenas",
+    "grupo": "Geografia e território",
+    "status": "incorporada",
+    "fonte": "IBGE · Censo Demográfico 2022 · Localidades Indígenas",
+    "validacao": "snapshot local do Atlas · arquivo atualizado pelo IBGE em 19/09/2025",
+    "feicoes": 518,
+    "bytes": 468433
+  },
+  {
+    "id": "localidades_quilombolas_ibge",
+    "arquivo": "./camadas/arquivos/localidades_quilombolas_ibge.geojson",
+    "nome": "Comunidades e localidades quilombolas",
+    "grupo": "Geografia e território",
+    "status": "incorporada",
+    "fonte": "IBGE · Censo Demográfico 2022 · Localidades Quilombolas",
+    "validacao": "snapshot local do Atlas · publicação geoespacial IBGE 2024",
+    "feicoes": 27,
+    "bytes": 19143
+  },
+  {
     "id": "lugares_interesse_geologico_propostos",
     "arquivo": "./camadas/arquivos/lugares_interesse_geologico_propostos.geojson",
     "nome": "Lugares de interesse geológico propostos ou indicados",
@@ -225,7 +247,7 @@
     "nome": "Limites municipais",
     "grupo": "Base geográfica",
     "status": "incorporada",
-    "fonte": "PIN MS / base materializada do JOAJU a partir da malha oficial",
+    "fonte": "IBGE · malha territorial municipal · snapshot local do Atlas",
     "validacao": "snapshot local",
     "feicoes": 79,
     "bytes": 272636
@@ -240,6 +262,72 @@
     "validacao": "snapshot local",
     "feicoes": 79,
     "bytes": 72531
+  },
+  {
+    "id": "pag_etr_1000km2",
+    "arquivo": "./camadas/arquivos/pag_etr_1000km2.geojson",
+    "nome": "ETR · Prioridade de Prospecção Geoquímica · PAG ETR · 1000 km²",
+    "grupo": "Metalogenia e prospecção mineral",
+    "status": "incorporada",
+    "fonte": "ITA ARANDU MS · PAG ETR · piloto espacial V35 restaurado no PATCH 00",
+    "validacao": "piloto científico conservador · 24 células MODELO_ABERTO e 388 NÃO AVALIÁVEL · cálculo direto das evidências originais",
+    "feicoes": 412,
+    "bytes": 2629085
+  },
+  {
+    "id": "pag_etr_250km2",
+    "arquivo": "./camadas/arquivos/pag_etr_250km2.geojson",
+    "nome": "ETR · Prioridade de Prospecção Geoquímica · PAG ETR · 250 km²",
+    "grupo": "Metalogenia e prospecção mineral",
+    "status": "incorporada",
+    "fonte": "ITA ARANDU MS · PAG ETR · piloto espacial V35 restaurado no PATCH 00",
+    "validacao": "piloto científico conservador · 49 células MODELO_ABERTO e 1.505 NÃO AVALIÁVEL · nenhum N2/N3 atribuído automaticamente",
+    "feicoes": 1554,
+    "bytes": 7349722
+  },
+  {
+    "id": "pag_etr_500km2",
+    "arquivo": "./camadas/arquivos/pag_etr_500km2.geojson",
+    "nome": "ETR · Prioridade de Prospecção Geoquímica · PAG ETR · 500 km²",
+    "grupo": "Metalogenia e prospecção mineral",
+    "status": "incorporada",
+    "fonte": "ITA ARANDU MS · PAG ETR · piloto espacial V35 restaurado no PATCH 00",
+    "validacao": "piloto científico conservador · 37 células MODELO_ABERTO e 756 NÃO AVALIÁVEL · cálculo direto das evidências originais",
+    "feicoes": 793,
+    "bytes": 4400311
+  },
+  {
+    "id": "pag_etr_evidencia_m2_feixe_morros",
+    "arquivo": "./camadas/arquivos/pag_etr_evidencia_m2_feixe_morros.geojson",
+    "nome": "PAG ETR · Evidência M2 · Corpo Feixe dos Morros",
+    "grupo": "Metalogenia e prospecção mineral",
+    "status": "incorporada",
+    "fonte": "SGB · Mapa geológico de Mato Grosso do Sul 1:1.000.000 · Corpo Feixe dos Morros",
+    "validacao": "geometria-fonte preservada · contexto alcalino documentado · não demonstra especialização ETR",
+    "feicoes": 6,
+    "bytes": 5084
+  },
+  {
+    "id": "pag_etr_evidencia_m4_fosforitos",
+    "arquivo": "./camadas/arquivos/pag_etr_evidencia_m4_fosforitos.geojson",
+    "nome": "PAG ETR · Evidência M4 · unidades com níveis fosforíticos",
+    "grupo": "Metalogenia e prospecção mineral",
+    "status": "incorporada",
+    "fonte": "SGB · Mapa geológico estadual · Formações Bocaina e Tamengo com contexto fosforítico explícito",
+    "validacao": "geometria-fonte preservada · contexto M4 aberto · REE/REY na fase fosfática ainda não espacializado neste piloto",
+    "feicoes": 48,
+    "bytes": 53498
+  },
+  {
+    "id": "pag_etr_pontos_fosforo",
+    "arquivo": "./camadas/arquivos/pag_etr_pontos_fosforo.geojson",
+    "nome": "PAG ETR · ocorrências e registros pontuais de fósforo",
+    "grupo": "Metalogenia e prospecção mineral",
+    "status": "incorporada",
+    "fonte": "SGB / GeoSGB · registros de campo e recursos minerais com substância Fósforo no snapshot de trabalho",
+    "validacao": "29 pontos preservados como pontos · 27 situados dentro da malha recortada de MS no piloto",
+    "feicoes": 29,
+    "bytes": 36397
   },
   {
     "id": "rodovias_estaduais_base",

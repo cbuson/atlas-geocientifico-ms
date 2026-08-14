@@ -1,15 +1,15 @@
-# Bibliografia do ITA ARANDU MS
+# Bibliografia central do ITA ARANDU MS
 
-O registro mestre usa APA 7.
+O registro mestre usa APA 7 e concentra as referências científicas, institucionais, metodológicas e cartográficas utilizadas pelo Atlas.
 
-Cada camada catalogada possui vínculo explícito com uma ou mais referências.
+`index.html` é a página pública única da bibliografia. Ela contém seções específicas para Geoética, governança e salvaguardas transversais, PAG ETR, Educação geocientífica, índices multiescalares e camadas, além do registro mestre complementar necessário para garantir uma âncora pública para cada identificador `REF`.
 
-Os índices multiescalares mantêm referências metodológicas e, quando aplicável, referências das principais bases que os alimentam.
+`referencias.js` é o registro mestre estruturado usado pela aplicação.
 
-`referencias.js` é o registro usado pela aplicação.
+`bibliografia-camadas-indices.json` é a matriz auditável que relaciona referências, camadas e índices.
 
-`bibliografia-camadas-indices.json` é a matriz auditável de vínculos.
+As páginas metodológicas não mantêm listas bibliográficas autônomas. Elas remetem à página central e aos identificadores `REF` correspondentes.
 
-`index.html` é a versão pública navegável por camada e índice.
+Cada camada catalogada possui vínculo explícito com uma ou mais referências. Os índices multiescalares mantêm referências metodológicas e, quando aplicável, referências das principais bases que os alimentam.
 
-O nível `fonte_primaria_conferida` é reservado às entradas que tiveram metadados conferidos diretamente em fonte institucional ou editorial primária no corte de 13 de agosto de 2026. As demais permanecem identificadas como registro mestre revisado, sem fingir verificação externa que não foi realizada.
+O nível `fonte_primaria_conferida` é reservado às entradas cujos metadados foram conferidos diretamente em fonte institucional, editorial ou repositório primário no respectivo corte de verificação. As demais permanecem identificadas conforme o nível real de conferência, sem simular validação externa.

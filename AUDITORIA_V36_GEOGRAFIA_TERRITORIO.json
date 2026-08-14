@@ -1,0 +1,33 @@
+{
+  "version": "V36-geografia-territorio-pag-etr-20260814",
+  "date": "2026-08-14",
+  "local_migrated": {
+    "localidades_indigenas_ibge": 518,
+    "localidades_quilombolas_ibge": 27
+  },
+  "connected_layers": [
+    "terras_indigenas_poligonos",
+    "territorios_quilombolas_poligonos",
+    "assentamentos_rurais_incra",
+    "unidades_conservacao_ms",
+    "zonas_amortecimento_ms",
+    "corredores_ecologicos_ms",
+    "areas_uso_restrito_ms",
+    "aur_pantanal_ms"
+  ],
+  "evaluation_layers": [
+    "conflitos_disputas_territoriais_ms"
+  ],
+  "new_reference_ids": [
+    "REF-129",
+    "REF-130",
+    "REF-131",
+    "REF-132",
+    "REF-133",
+    "REF-134",
+    "REF-135",
+    "REF-136",
+    "REF-137"
+  ],
+  "principle": "Contexto territorial permanece independente da classificação geocientífica e metalogenética."
+}

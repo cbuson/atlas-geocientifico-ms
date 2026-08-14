@@ -1,0 +1,23 @@
+{
+  "version": "V37-geoetica-bibliografia-central-pag-etr-20260814",
+  "date": "2026-08-14",
+  "references": 158,
+  "catalog_layers": 206,
+  "index_layers": 36,
+  "geoethics_references": 7,
+  "pag_etr_references": 18,
+  "education_references": 10,
+  "bibliography_ref_anchors": 158,
+  "all_bibliography_links_resolve": true,
+  "all_catalog_layers_have_references": true,
+  "geoethics_numeric_score": false,
+  "joaju_hits_in_science_facing_files": {},
+  "methodologies_use_central_bibliography": true,
+  "service_worker_includes_geoethics": true,
+  "issues": [],
+  "status": "PASS",
+  "internal_links_checked": 66,
+  "internal_links_status": "PASS",
+  "javascript_syntax_status": "PASS",
+  "stale_missing_document_reference_removed": "documentos/proposta-educativa.html"
+}

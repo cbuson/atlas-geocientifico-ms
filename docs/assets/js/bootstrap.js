@@ -10,11 +10,18 @@
   }
   const ids=window.ITA_LOCAL_LAYER_PRELOAD||[];
   await Promise.all(ids.map(id=>window.ATLAS_DATA[id]?Promise.resolve(window.ATLAS_DATA[id]):loadLayer(id)));
-  const script=document.createElement("script");
-  script.src="./assets/js/app.js";
-  script.async=false;
-  script.onerror=()=>console.error("ITA ARANDU MS · falha ao carregar app.js");
-  document.body.appendChild(script);
+  async function loadScript(src,label){
+    await new Promise((resolve,reject)=>{
+      const script=document.createElement("script");
+      script.src=src;
+      script.async=false;
+      script.onload=resolve;
+      script.onerror=()=>reject(new Error(`Falha ao carregar ${label}`));
+      document.body.appendChild(script);
+    });
+  }
+  await loadScript("./assets/js/app.js","app.js");
+  await loadScript("./assets/js/campo-sensores.js","campo-sensores.js");
 })().catch(error=>{
   console.error("ITA ARANDU MS · falha no bootstrap",error);
   const host=document.getElementById("map");
