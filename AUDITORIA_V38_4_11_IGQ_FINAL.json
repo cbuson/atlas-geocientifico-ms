@@ -1,0 +1,324 @@
+{
+  "audit": "V38.4.11 IGQ final",
+  "status": "PASS",
+  "checks_total": 63,
+  "checks_pass": 63,
+  "checks_fail": 0,
+  "checks": [
+    {
+      "name": "version_file",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "version_exact",
+      "pass": true,
+      "detail": "V38.4.11-IGQ-CONHECIMENTO-GEOQUIMICO-20260814"
+    },
+    {
+      "name": "exists_docs/indices/igq_v38411_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/indices/igq-v38411.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/camadas/arquivos/geoquimica_amostras_sgb_ms.geojson",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/documentos/metodologia-igq.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_AUDITORIA_V38_4_11_IGQ_RUNTIME.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/indices/iod_v3848_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/indices/icp_v3849_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/indices/igc_v38410_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "index_IGQ",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "formula_max",
+      "pass": true,
+      "detail": "IGQ_h = max(IGQ_SC, IGQ_CB, IGQ_solo, IGQ_rocha, IGQ_agua)"
+    },
+    {
+      "name": "medium_formula",
+      "pass": true,
+      "detail": "IGQ_m = 100 × (G_m × A_m × Q_m)^(1/3)"
+    },
+    {
+      "name": "five_media",
+      "pass": true,
+      "detail": "['SC', 'CB', 'solo', 'rocha', 'agua']"
+    },
+    {
+      "name": "null_rule",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "censoring_no_imputation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "interpretation_not_anomaly",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_250_count",
+      "pass": true,
+      "detail": "1554"
+    },
+    {
+      "name": "grid_250_values_valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_250_has_nulls",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_250_summary_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_500_count",
+      "pass": true,
+      "detail": "793"
+    },
+    {
+      "name": "grid_500_values_valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_500_has_nulls",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_500_summary_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_1000_count",
+      "pass": true,
+      "detail": "412"
+    },
+    {
+      "name": "grid_1000_values_valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_1000_has_nulls",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_1000_summary_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sensitivity_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_ITA_IGQ_COLORS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_buildIgqSnapshotV38411",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_igq_snapshot_v38411",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_IGQ_SCALE_LAYERS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_renderer==='index_igq'",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "index_script",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_cache_version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_igq_script",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_source",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source_featurecollection",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source_has_features",
+      "pass": true,
+      "detail": "1117"
+    },
+    {
+      "name": "source_medium_tagged",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "source_no_declared_duplicate_as_independent",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "bibliography_total_refs_176",
+      "pass": true,
+      "detail": "176"
+    },
+    {
+      "name": "bibliography_igq_250",
+      "pass": true,
+      "detail": "incorporada"
+    },
+    {
+      "name": "bibliography_ref178_igq_250",
+      "pass": true,
+      "detail": "['REF-105', 'REF-107', 'REF-115', 'REF-099', 'REF-178']"
+    },
+    {
+      "name": "bibliography_igq_500",
+      "pass": true,
+      "detail": "incorporada"
+    },
+    {
+      "name": "bibliography_ref178_igq_500",
+      "pass": true,
+      "detail": "['REF-105', 'REF-107', 'REF-115', 'REF-099', 'REF-178']"
+    },
+    {
+      "name": "bibliography_igq_1000",
+      "pass": true,
+      "detail": "incorporada"
+    },
+    {
+      "name": "bibliography_ref178_igq_1000",
+      "pass": true,
+      "detail": "['REF-105', 'REF-107', 'REF-115', 'REF-099', 'REF-178']"
+    },
+    {
+      "name": "bibliography_geoquimica_amostras_sgb_ms",
+      "pass": true,
+      "detail": "incorporada"
+    },
+    {
+      "name": "bibliography_ref178_geoquimica_amostras_sgb_ms",
+      "pass": true,
+      "detail": "['REF-003', 'REF-054', 'REF-064', 'REF-099', 'REF-178']"
+    },
+    {
+      "name": "bibliography_geoquimica_resultados_sgb_ms",
+      "pass": true,
+      "detail": "incorporada"
+    },
+    {
+      "name": "bibliography_ref178_geoquimica_resultados_sgb_ms",
+      "pass": true,
+      "detail": "['REF-003', 'REF-054', 'REF-064', 'REF-099', 'REF-178']"
+    },
+    {
+      "name": "ref178_master",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ref178_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "registros_ref178",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bibliography_html_ref178",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bibliography_html_176",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ref178",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "runtime_pass",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

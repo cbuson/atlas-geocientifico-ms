@@ -1,0 +1,212 @@
+{
+  "audit": "V38.4.9 ICP final",
+  "status": "PASS",
+  "checks_total": 51,
+  "checks_passed": 51,
+  "checks": [
+    {
+      "check": "VERSION V38.4.9 correta",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/indices/icp_v3849_snapshot.json",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/indices/icp-v3849.js",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/camadas/arquivos/petrografia_geosgb_ms.geojson",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/documentos/metodologia-icp.html",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · AUDITORIA_V38_4_9_ICP_RUNTIME.json",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/indices/iod-v3848.js",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/indices/iod_v3848_snapshot.json",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/camadas/arquivos/afloramentos_geosgb_ms.geojson",
+      "pass": true
+    },
+    {
+      "check": "snapshot identifica ICP",
+      "pass": true
+    },
+    {
+      "check": "fórmula ICP congelada",
+      "pass": true
+    },
+    {
+      "check": "fórmula P congelada",
+      "pass": true
+    },
+    {
+      "check": "micromalha P basal 5 km",
+      "pass": true
+    },
+    {
+      "check": "normalização D* por P95",
+      "pass": true
+    },
+    {
+      "check": "suporte U basal 9 × 9 documentado",
+      "pass": true
+    },
+    {
+      "check": "Q explicitamente não é qualidade laboratorial",
+      "pass": true
+    },
+    {
+      "check": "snapshot Petrografia contém registros",
+      "pass": true
+    },
+    {
+      "check": "todos os registros têm chave de agrupamento independente",
+      "pass": true
+    },
+    {
+      "check": "todos os registros têm Q de grupo documentado",
+      "pass": true
+    },
+    {
+      "check": "ICP 250 · 1554 células",
+      "pass": true
+    },
+    {
+      "check": "ICP 250 · estrutura e faixa 0–100 válidas",
+      "pass": true
+    },
+    {
+      "check": "ICP 250 · ausência de petrografia permanece null",
+      "pass": true
+    },
+    {
+      "check": "ICP 250 · componentes P U Q D O em 0–1",
+      "pass": true
+    },
+    {
+      "check": "ICP 500 · 793 células",
+      "pass": true
+    },
+    {
+      "check": "ICP 500 · estrutura e faixa 0–100 válidas",
+      "pass": true
+    },
+    {
+      "check": "ICP 500 · ausência de petrografia permanece null",
+      "pass": true
+    },
+    {
+      "check": "ICP 500 · componentes P U Q D O em 0–1",
+      "pass": true
+    },
+    {
+      "check": "ICP 1000 · 412 células",
+      "pass": true
+    },
+    {
+      "check": "ICP 1000 · estrutura e faixa 0–100 válidas",
+      "pass": true
+    },
+    {
+      "check": "ICP 1000 · ausência de petrografia permanece null",
+      "pass": true
+    },
+    {
+      "check": "ICP 1000 · componentes P U Q D O em 0–1",
+      "pass": true
+    },
+    {
+      "check": "renderer ICP ativo",
+      "pass": true
+    },
+    {
+      "check": "builder ICP ativo",
+      "pass": true
+    },
+    {
+      "check": "exclusividade entre escalas ICP",
+      "pass": true
+    },
+    {
+      "check": "derive ICP ativo",
+      "pass": true
+    },
+    {
+      "check": "snapshot ICP carregado pelo index",
+      "pass": true
+    },
+    {
+      "check": "metodologia ICP vinculada na interface",
+      "pass": true
+    },
+    {
+      "check": "PWA inclui snapshot ICP",
+      "pass": true
+    },
+    {
+      "check": "PWA inclui snapshot petrográfico",
+      "pass": true
+    },
+    {
+      "check": "Petrografia registrada como camada local",
+      "pass": true
+    },
+    {
+      "check": "referência ICP disponível e citada · REF-002",
+      "pass": true
+    },
+    {
+      "check": "referência ICP disponível e citada · REF-059",
+      "pass": true
+    },
+    {
+      "check": "referência ICP disponível e citada · REF-082",
+      "pass": true
+    },
+    {
+      "check": "referência ICP disponível e citada · REF-084",
+      "pass": true
+    },
+    {
+      "check": "referência ICP disponível e citada · REF-105",
+      "pass": true
+    },
+    {
+      "check": "referência ICP disponível e citada · REF-106",
+      "pass": true
+    },
+    {
+      "check": "referência ICP disponível e citada · REF-115",
+      "pass": true
+    },
+    {
+      "check": "referência ICP disponível e citada · REF-174",
+      "pass": true
+    },
+    {
+      "check": "auditoria runtime PASS",
+      "pass": true
+    },
+    {
+      "check": "runtime confirma cálculo independente por escala",
+      "pass": true
+    },
+    {
+      "check": "runtime confirma significado de Q",
+      "pass": true
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "generated_on": "2026-08-14",
   "citation_standard": "APA 7",
   "project": "ITA ARANDU MS · Atlas Geocientífico de Mato Grosso do Sul",
-  "total_references": 175,
+  "total_references": 176,
   "total_catalog_layers": 214,
   "total_index_layers": 36,
   "entries": [
@@ -496,7 +496,7 @@
       "id": "geocronologia_geosgb_ms",
       "name": "Dados geocronológicos",
       "group": "Geologia e estratigrafia",
-      "status": "conectada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "SGB · Geoportal · Datações geocronológicas",
       "reference_ids": [
@@ -692,11 +692,12 @@
       "id": "petrografia_geosgb_ms",
       "name": "Registros petrográficos e lâminas descritas",
       "group": "Geologia e estratigrafia",
-      "status": "conectada",
+      "status": "incorporada",
       "kind": "camada",
-      "source": "SGB · Geoportal · Petrografia",
+      "source": "SGB · GeoSGB · Petrografia · snapshot local V38.4.9",
       "reference_ids": [
-        "REF-084"
+        "REF-084",
+        "REF-059"
       ],
       "references": [
         {
@@ -706,6 +707,15 @@
           "quality_class": "fonte primária institucional",
           "verification_level": "registro_mestre_revisado",
           "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
+          "doi": null
+        },
+        {
+          "id": "REF-059",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Rede de Litotecas. SGB. Recuperado em 12 de agosto de 2026. https://www.sgb.gov.br/rede-de-litotecas",
+          "type": "acervo geocientífico",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://www.sgb.gov.br/rede-de-litotecas",
           "doi": null
         }
       ]
@@ -1632,7 +1642,7 @@
       "id": "rimas_pocos_monitoramento_ms",
       "name": "RIMAS, poços de monitoramento",
       "group": "Hidrologia e hidrogeologia",
-      "status": "conectada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "Serviço Geológico do Brasil · RIMAS · Geoportal SGB",
       "reference_ids": [
@@ -1748,7 +1758,7 @@
       "id": "siagas_pocos_ms",
       "name": "SIAGAS, poços e pontos d’água",
       "group": "Hidrologia e hidrogeologia",
-      "status": "conectada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "Serviço Geológico do Brasil · Poços SIAGAS · Geoportal SGB",
       "reference_ids": [
@@ -1846,14 +1856,15 @@
       "id": "geoquimica_amostras_sgb_ms",
       "name": "Geoquímica SGB · amostras integradas em Mato Grosso do Sul",
       "group": "Geoquímica, geofísica e geotermia",
-      "status": "conectada",
+      "status": "incorporada",
       "kind": "camada",
-      "source": "Serviço Geológico do Brasil · Geoquímica Integrada · Geoportal SGB",
+      "source": "Serviço Geológico do Brasil · Geoportal SGB · amostras analisadas e resultados analíticos",
       "reference_ids": [
         "REF-003",
         "REF-054",
         "REF-064",
-        "REF-099"
+        "REF-099",
+        "REF-178"
       ],
       "references": [
         {
@@ -1890,6 +1901,15 @@
           "quality_class": "fonte primária institucional",
           "verification_level": "registro_mestre_revisado",
           "url": "https://geoportal.sgb.gov.br/server/rest/services/geoquimica/geoquimica_integrada/MapServer",
+          "doi": null
+        },
+        {
+          "id": "REF-178",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Geoquímica – amostras analisadas e resultados analíticos [Serviço geoespacial]. Geoportal SGB. Recuperado em 14 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/geoq_externa/MapServer",
+          "type": "serviço geoespacial geoquímico",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/geoq_externa/MapServer",
           "doi": null
         }
       ]
@@ -2096,14 +2116,15 @@
       "id": "geoquimica_resultados_sgb_ms",
       "name": "Resultados geoquímicos multielementares SGB",
       "group": "Geoquímica, geofísica e geotermia",
-      "status": "disponivel_para_captura",
+      "status": "incorporada",
       "kind": "camada",
-      "source": "Serviço Geológico do Brasil · Geoquímica Integrada · Geoportal SGB",
+      "source": "Serviço Geológico do Brasil · Geoportal SGB · amostras analisadas e resultados analíticos",
       "reference_ids": [
         "REF-003",
         "REF-054",
         "REF-064",
-        "REF-099"
+        "REF-099",
+        "REF-178"
       ],
       "references": [
         {
@@ -2140,6 +2161,15 @@
           "quality_class": "fonte primária institucional",
           "verification_level": "registro_mestre_revisado",
           "url": "https://geoportal.sgb.gov.br/server/rest/services/geoquimica/geoquimica_integrada/MapServer",
+          "doi": null
+        },
+        {
+          "id": "REF-178",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Geoquímica – amostras analisadas e resultados analíticos [Serviço geoespacial]. Geoportal SGB. Recuperado em 14 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/geoq_externa/MapServer",
+          "type": "serviço geoespacial geoquímico",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/geoq_externa/MapServer",
           "doi": null
         }
       ]
@@ -2320,7 +2350,7 @@
       "id": "levantamentos_geofisicos_cobertura_ms",
       "name": "Cobertura integrada de levantamentos aerogeofísicos em MS",
       "group": "Geoquímica, geofísica e geotermia",
-      "status": "conectada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "Serviço Geológico do Brasil · Base AERO",
       "reference_ids": [
@@ -2352,7 +2382,7 @@
       "id": "gravimetria_sgb_ms",
       "name": "Estações gravimétricas SGB em Mato Grosso do Sul",
       "group": "Geoquímica, geofísica e geotermia",
-      "status": "conectada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "Serviço Geológico do Brasil · Gravimetria",
       "reference_ids": [
@@ -2384,7 +2414,7 @@
       "id": "magnetotelurico_sgb_ms",
       "name": "Estações magnetotelúricas SGB em Mato Grosso do Sul",
       "group": "Geoquímica, geofísica e geotermia",
-      "status": "conectada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "Serviço Geológico do Brasil · Geofísica terrestre",
       "reference_ids": [
@@ -4361,18 +4391,56 @@
       "id": "icp_250",
       "name": "ICP · Caracterização Petrográfica · 250 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
-      "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
+      "source": "ITA ARANDU MS · ICP V38.4.9 · SGB GeoSGB Petrografia + mapa geológico estadual",
       "reference_ids": [
+        "REF-002",
+        "REF-059",
+        "REF-082",
+        "REF-084",
         "REF-105",
         "REF-106",
-        "REF-114",
         "REF-115",
-        "REF-059",
-        "REF-084"
+        "REF-174"
       ],
       "references": [
+        {
+          "id": "REF-002",
+          "apa7": "Lacerda Filho, J. V., Brito, R. S. C., Silva, M. G., Oliveira, C. C., Moreton, L. C., Martins, E. G., Lopes, R. C., Lima, T. M., Larizzatt, J. H., & Valente, C. R. (2006). Geologia e recursos minerais do estado de Mato Grosso do Sul: Texto explicativo dos mapas geológico e de recursos minerais do estado de Mato Grosso do Sul. CPRM. Escala 1:1.000.000. https://rigeo.sgb.gov.br/handle/doc/10217",
+          "type": "mapa e relatório",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/10217",
+          "doi": null
+        },
+        {
+          "id": "REF-059",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Rede de Litotecas. SGB. Recuperado em 12 de agosto de 2026. https://www.sgb.gov.br/rede-de-litotecas",
+          "type": "acervo geocientífico",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://www.sgb.gov.br/rede-de-litotecas",
+          "doi": null
+        },
+        {
+          "id": "REF-082",
+          "apa7": "Serviço Geológico do Brasil. (2006). Mato Grosso do Sul - 1:1.000.000 [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/litoestratigrafia_estados/MapServer/7",
+          "type": "serviço geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/litoestratigrafia_estados/MapServer/7",
+          "doi": null
+        },
+        {
+          "id": "REF-084",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Petrografia [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
+          "type": "serviço geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
+          "doi": null
+        },
         {
           "id": "REF-105",
           "apa7": "Saisana, M., Saltelli, A., & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society. Series A, 168(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x",
@@ -4392,15 +4460,6 @@
           "doi": "10.1198/016214504000000250"
         },
         {
-          "id": "REF-114",
-          "apa7": "Rosa-Costa, L. T., Ferreira, M. V., Almeida, M. E., Santos, P. A., & Medeiros, V. C. (Coords.). (2024). Plano decenal de mapeamento geológico básico: PlanGeo 2025–2034. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/handle/doc/24990",
-          "type": "relatório técnico institucional",
-          "quality_class": "fonte primária institucional",
-          "verification_level": "fonte_primaria_conferida",
-          "url": "https://rigeo.sgb.gov.br/handle/doc/24990",
-          "doi": null
-        },
-        {
           "id": "REF-115",
           "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.",
           "type": "documento do projeto",
@@ -4410,21 +4469,12 @@
           "doi": null
         },
         {
-          "id": "REF-059",
-          "apa7": "Serviço Geológico do Brasil. (s.d.). Rede de Litotecas. SGB. Recuperado em 12 de agosto de 2026. https://www.sgb.gov.br/rede-de-litotecas",
-          "type": "acervo geocientífico",
+          "id": "REF-174",
+          "apa7": "Abram, M. B., Cabral Neto, I., Almeida, R. C. de, & Ferreira, M. V. (2025). PlanGeo 2026–2035: Plano decenal de pesquisa de recursos minerais. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/handle/doc/25649",
+          "type": "relatório técnico institucional",
           "quality_class": "fonte primária institucional",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://www.sgb.gov.br/rede-de-litotecas",
-          "doi": null
-        },
-        {
-          "id": "REF-084",
-          "apa7": "Serviço Geológico do Brasil. (s.d.). Petrografia [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
-          "type": "serviço geoespacial",
-          "quality_class": "fonte primária institucional",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/25649",
           "doi": null
         }
       ]
@@ -4433,18 +4483,56 @@
       "id": "icp_500",
       "name": "ICP · Caracterização Petrográfica · 500 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
-      "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
+      "source": "ITA ARANDU MS · ICP V38.4.9 · SGB GeoSGB Petrografia + mapa geológico estadual",
       "reference_ids": [
+        "REF-002",
+        "REF-059",
+        "REF-082",
+        "REF-084",
         "REF-105",
         "REF-106",
-        "REF-114",
         "REF-115",
-        "REF-059",
-        "REF-084"
+        "REF-174"
       ],
       "references": [
+        {
+          "id": "REF-002",
+          "apa7": "Lacerda Filho, J. V., Brito, R. S. C., Silva, M. G., Oliveira, C. C., Moreton, L. C., Martins, E. G., Lopes, R. C., Lima, T. M., Larizzatt, J. H., & Valente, C. R. (2006). Geologia e recursos minerais do estado de Mato Grosso do Sul: Texto explicativo dos mapas geológico e de recursos minerais do estado de Mato Grosso do Sul. CPRM. Escala 1:1.000.000. https://rigeo.sgb.gov.br/handle/doc/10217",
+          "type": "mapa e relatório",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/10217",
+          "doi": null
+        },
+        {
+          "id": "REF-059",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Rede de Litotecas. SGB. Recuperado em 12 de agosto de 2026. https://www.sgb.gov.br/rede-de-litotecas",
+          "type": "acervo geocientífico",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://www.sgb.gov.br/rede-de-litotecas",
+          "doi": null
+        },
+        {
+          "id": "REF-082",
+          "apa7": "Serviço Geológico do Brasil. (2006). Mato Grosso do Sul - 1:1.000.000 [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/litoestratigrafia_estados/MapServer/7",
+          "type": "serviço geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/litoestratigrafia_estados/MapServer/7",
+          "doi": null
+        },
+        {
+          "id": "REF-084",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Petrografia [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
+          "type": "serviço geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
+          "doi": null
+        },
         {
           "id": "REF-105",
           "apa7": "Saisana, M., Saltelli, A., & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society. Series A, 168(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x",
@@ -4464,15 +4552,6 @@
           "doi": "10.1198/016214504000000250"
         },
         {
-          "id": "REF-114",
-          "apa7": "Rosa-Costa, L. T., Ferreira, M. V., Almeida, M. E., Santos, P. A., & Medeiros, V. C. (Coords.). (2024). Plano decenal de mapeamento geológico básico: PlanGeo 2025–2034. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/handle/doc/24990",
-          "type": "relatório técnico institucional",
-          "quality_class": "fonte primária institucional",
-          "verification_level": "fonte_primaria_conferida",
-          "url": "https://rigeo.sgb.gov.br/handle/doc/24990",
-          "doi": null
-        },
-        {
           "id": "REF-115",
           "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.",
           "type": "documento do projeto",
@@ -4482,21 +4561,12 @@
           "doi": null
         },
         {
-          "id": "REF-059",
-          "apa7": "Serviço Geológico do Brasil. (s.d.). Rede de Litotecas. SGB. Recuperado em 12 de agosto de 2026. https://www.sgb.gov.br/rede-de-litotecas",
-          "type": "acervo geocientífico",
+          "id": "REF-174",
+          "apa7": "Abram, M. B., Cabral Neto, I., Almeida, R. C. de, & Ferreira, M. V. (2025). PlanGeo 2026–2035: Plano decenal de pesquisa de recursos minerais. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/handle/doc/25649",
+          "type": "relatório técnico institucional",
           "quality_class": "fonte primária institucional",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://www.sgb.gov.br/rede-de-litotecas",
-          "doi": null
-        },
-        {
-          "id": "REF-084",
-          "apa7": "Serviço Geológico do Brasil. (s.d.). Petrografia [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
-          "type": "serviço geoespacial",
-          "quality_class": "fonte primária institucional",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/25649",
           "doi": null
         }
       ]
@@ -4505,18 +4575,56 @@
       "id": "icp_1000",
       "name": "ICP · Caracterização Petrográfica · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
-      "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
+      "source": "ITA ARANDU MS · ICP V38.4.9 · SGB GeoSGB Petrografia + mapa geológico estadual",
       "reference_ids": [
+        "REF-002",
+        "REF-059",
+        "REF-082",
+        "REF-084",
         "REF-105",
         "REF-106",
-        "REF-114",
         "REF-115",
-        "REF-059",
-        "REF-084"
+        "REF-174"
       ],
       "references": [
+        {
+          "id": "REF-002",
+          "apa7": "Lacerda Filho, J. V., Brito, R. S. C., Silva, M. G., Oliveira, C. C., Moreton, L. C., Martins, E. G., Lopes, R. C., Lima, T. M., Larizzatt, J. H., & Valente, C. R. (2006). Geologia e recursos minerais do estado de Mato Grosso do Sul: Texto explicativo dos mapas geológico e de recursos minerais do estado de Mato Grosso do Sul. CPRM. Escala 1:1.000.000. https://rigeo.sgb.gov.br/handle/doc/10217",
+          "type": "mapa e relatório",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/10217",
+          "doi": null
+        },
+        {
+          "id": "REF-059",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Rede de Litotecas. SGB. Recuperado em 12 de agosto de 2026. https://www.sgb.gov.br/rede-de-litotecas",
+          "type": "acervo geocientífico",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://www.sgb.gov.br/rede-de-litotecas",
+          "doi": null
+        },
+        {
+          "id": "REF-082",
+          "apa7": "Serviço Geológico do Brasil. (2006). Mato Grosso do Sul - 1:1.000.000 [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/litoestratigrafia_estados/MapServer/7",
+          "type": "serviço geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/litoestratigrafia_estados/MapServer/7",
+          "doi": null
+        },
+        {
+          "id": "REF-084",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Petrografia [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
+          "type": "serviço geoespacial",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "registro_mestre_revisado",
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
+          "doi": null
+        },
         {
           "id": "REF-105",
           "apa7": "Saisana, M., Saltelli, A., & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society. Series A, 168(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x",
@@ -4536,15 +4644,6 @@
           "doi": "10.1198/016214504000000250"
         },
         {
-          "id": "REF-114",
-          "apa7": "Rosa-Costa, L. T., Ferreira, M. V., Almeida, M. E., Santos, P. A., & Medeiros, V. C. (Coords.). (2024). Plano decenal de mapeamento geológico básico: PlanGeo 2025–2034. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/handle/doc/24990",
-          "type": "relatório técnico institucional",
-          "quality_class": "fonte primária institucional",
-          "verification_level": "fonte_primaria_conferida",
-          "url": "https://rigeo.sgb.gov.br/handle/doc/24990",
-          "doi": null
-        },
-        {
           "id": "REF-115",
           "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.",
           "type": "documento do projeto",
@@ -4554,21 +4653,12 @@
           "doi": null
         },
         {
-          "id": "REF-059",
-          "apa7": "Serviço Geológico do Brasil. (s.d.). Rede de Litotecas. SGB. Recuperado em 12 de agosto de 2026. https://www.sgb.gov.br/rede-de-litotecas",
-          "type": "acervo geocientífico",
+          "id": "REF-174",
+          "apa7": "Abram, M. B., Cabral Neto, I., Almeida, R. C. de, & Ferreira, M. V. (2025). PlanGeo 2026–2035: Plano decenal de pesquisa de recursos minerais. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/handle/doc/25649",
+          "type": "relatório técnico institucional",
           "quality_class": "fonte primária institucional",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://www.sgb.gov.br/rede-de-litotecas",
-          "doi": null
-        },
-        {
-          "id": "REF-084",
-          "apa7": "Serviço Geológico do Brasil. (s.d.). Petrografia [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
-          "type": "serviço geoespacial",
-          "quality_class": "fonte primária institucional",
-          "verification_level": "registro_mestre_revisado",
-          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://rigeo.sgb.gov.br/handle/doc/25649",
           "doi": null
         }
       ]
@@ -4577,7 +4667,7 @@
       "id": "igc_250",
       "name": "IGC · Controle Geocronológico · 250 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
@@ -4629,7 +4719,7 @@
       "id": "igc_500",
       "name": "IGC · Controle Geocronológico · 500 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
@@ -4681,7 +4771,7 @@
       "id": "igc_1000",
       "name": "IGC · Controle Geocronológico · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
@@ -4733,14 +4823,15 @@
       "id": "igq_250",
       "name": "IGQ · Conhecimento Geoquímico · 250 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
         "REF-107",
         "REF-115",
-        "REF-099"
+        "REF-099",
+        "REF-178"
       ],
       "references": [
         {
@@ -4777,6 +4868,15 @@
           "quality_class": "fonte primária institucional",
           "verification_level": "registro_mestre_revisado",
           "url": "https://geoportal.sgb.gov.br/server/rest/services/geoquimica/geoquimica_integrada/MapServer",
+          "doi": null
+        },
+        {
+          "id": "REF-178",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Geoquímica – amostras analisadas e resultados analíticos [Serviço geoespacial]. Geoportal SGB. Recuperado em 14 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/geoq_externa/MapServer",
+          "type": "serviço geoespacial geoquímico",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/geoq_externa/MapServer",
           "doi": null
         }
       ]
@@ -4785,14 +4885,15 @@
       "id": "igq_500",
       "name": "IGQ · Conhecimento Geoquímico · 500 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
         "REF-107",
         "REF-115",
-        "REF-099"
+        "REF-099",
+        "REF-178"
       ],
       "references": [
         {
@@ -4829,6 +4930,15 @@
           "quality_class": "fonte primária institucional",
           "verification_level": "registro_mestre_revisado",
           "url": "https://geoportal.sgb.gov.br/server/rest/services/geoquimica/geoquimica_integrada/MapServer",
+          "doi": null
+        },
+        {
+          "id": "REF-178",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Geoquímica – amostras analisadas e resultados analíticos [Serviço geoespacial]. Geoportal SGB. Recuperado em 14 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/geoq_externa/MapServer",
+          "type": "serviço geoespacial geoquímico",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/geoq_externa/MapServer",
           "doi": null
         }
       ]
@@ -4837,14 +4947,15 @@
       "id": "igq_1000",
       "name": "IGQ · Conhecimento Geoquímico · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
         "REF-105",
         "REF-107",
         "REF-115",
-        "REF-099"
+        "REF-099",
+        "REF-178"
       ],
       "references": [
         {
@@ -4882,6 +4993,15 @@
           "verification_level": "registro_mestre_revisado",
           "url": "https://geoportal.sgb.gov.br/server/rest/services/geoquimica/geoquimica_integrada/MapServer",
           "doi": null
+        },
+        {
+          "id": "REF-178",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Geoquímica – amostras analisadas e resultados analíticos [Serviço geoespacial]. Geoportal SGB. Recuperado em 14 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/geoq_externa/MapServer",
+          "type": "serviço geoespacial geoquímico",
+          "quality_class": "fonte primária institucional",
+          "verification_level": "fonte_primaria_conferida",
+          "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/geoq_externa/MapServer",
+          "doi": null
         }
       ]
     },
@@ -4889,7 +5009,7 @@
       "id": "igf_250",
       "name": "IGF · Conhecimento Geofísico · 250 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
@@ -4961,7 +5081,7 @@
       "id": "igf_500",
       "name": "IGF · Conhecimento Geofísico · 500 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
@@ -5033,7 +5153,7 @@
       "id": "igf_1000",
       "name": "IGF · Conhecimento Geofísico · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
@@ -5105,7 +5225,7 @@
       "id": "ics_250",
       "name": "ICS · Conhecimento do Subsolo · 250 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
@@ -5187,7 +5307,7 @@
       "id": "ics_500",
       "name": "ICS · Conhecimento do Subsolo · 500 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
@@ -5269,7 +5389,7 @@
       "id": "ics_1000",
       "name": "ICS · Conhecimento do Subsolo · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
@@ -7804,14 +7924,32 @@
         "ICP · Caracterização Petrográfica · 1000 km²"
       ],
       "reference_ids": [
+        "REF-002",
+        "REF-059",
+        "REF-082",
+        "REF-084",
         "REF-105",
         "REF-106",
-        "REF-114",
         "REF-115",
-        "REF-059",
-        "REF-084"
+        "REF-174"
       ],
       "references": [
+        {
+          "id": "REF-002",
+          "apa7": "Lacerda Filho, J. V., Brito, R. S. C., Silva, M. G., Oliveira, C. C., Moreton, L. C., Martins, E. G., Lopes, R. C., Lima, T. M., Larizzatt, J. H., & Valente, C. R. (2006). Geologia e recursos minerais do estado de Mato Grosso do Sul: Texto explicativo dos mapas geológico e de recursos minerais do estado de Mato Grosso do Sul. CPRM. Escala 1:1.000.000. https://rigeo.sgb.gov.br/handle/doc/10217"
+        },
+        {
+          "id": "REF-059",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Rede de Litotecas. SGB. Recuperado em 12 de agosto de 2026. https://www.sgb.gov.br/rede-de-litotecas"
+        },
+        {
+          "id": "REF-082",
+          "apa7": "Serviço Geológico do Brasil. (2006). Mato Grosso do Sul - 1:1.000.000 [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/litoestratigrafia_estados/MapServer/7"
+        },
+        {
+          "id": "REF-084",
+          "apa7": "Serviço Geológico do Brasil. (s.d.). Petrografia [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0"
+        },
         {
           "id": "REF-105",
           "apa7": "Saisana, M., Saltelli, A., & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society. Series A, 168(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x"
@@ -7821,20 +7959,12 @@
           "apa7": "Stevens, D. L., Jr., & Olsen, A. R. (2004). Spatially balanced sampling of natural resources. Journal of the American Statistical Association, 99(465), 262–278. https://doi.org/10.1198/016214504000000250"
         },
         {
-          "id": "REF-114",
-          "apa7": "Rosa-Costa, L. T., Ferreira, M. V., Almeida, M. E., Santos, P. A., & Medeiros, V. C. (Coords.). (2024). Plano decenal de mapeamento geológico básico: PlanGeo 2025–2034. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/handle/doc/24990"
-        },
-        {
           "id": "REF-115",
           "apa7": "Busón Buesa, C., & Gabas, S. G. (2026). Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul."
         },
         {
-          "id": "REF-059",
-          "apa7": "Serviço Geológico do Brasil. (s.d.). Rede de Litotecas. SGB. Recuperado em 12 de agosto de 2026. https://www.sgb.gov.br/rede-de-litotecas"
-        },
-        {
-          "id": "REF-084",
-          "apa7": "Serviço Geológico do Brasil. (s.d.). Petrografia [Camada geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0"
+          "id": "REF-174",
+          "apa7": "Abram, M. B., Cabral Neto, I., Almeida, R. C. de, & Ferreira, M. V. (2025). PlanGeo 2026–2035: Plano decenal de pesquisa de recursos minerais. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/handle/doc/25649"
         }
       ]
     },

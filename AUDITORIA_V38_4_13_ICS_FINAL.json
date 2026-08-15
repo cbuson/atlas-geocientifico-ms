@@ -1,0 +1,304 @@
+{
+  "audit": "V38.4.13 ICS final",
+  "status": "PASS",
+  "checks_total": 59,
+  "checks_pass": 59,
+  "checks_fail": 0,
+  "checks": [
+    {
+      "name": "version_file",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "version_exact",
+      "pass": true,
+      "detail": "V38.4.13-ICS-CONHECIMENTO-SUBSOLO-20260814"
+    },
+    {
+      "name": "exists_docs/indices/ics_v38413_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/indices/ics-v38413.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/camadas/arquivos/siagas_pocos_ms.geojson",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/camadas/arquivos/rimas_pocos_monitoramento_ms.geojson",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/documentos/metodologia-ics.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_AUDITORIA_V38_4_13_ICS_RUNTIME.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/indices/iod_v3848_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/indices/icp_v3849_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/indices/igc_v38410_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/indices/igq_v38411_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exists_docs/indices/igf_v38412_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "index_ICS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "formula",
+      "pass": true,
+      "detail": "ICS_h = 100 × (M* × B × Q_log)^(1/3)"
+    },
+    {
+      "name": "null_rule",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "qlog_guardrail",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "not_productivity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_250_count",
+      "pass": true,
+      "detail": "1554"
+    },
+    {
+      "name": "grid_250_values_valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_250_summary_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_250_normalization_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_500_count",
+      "pass": true,
+      "detail": "793"
+    },
+    {
+      "name": "grid_500_values_valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_500_summary_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_500_normalization_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_1000_count",
+      "pass": true,
+      "detail": "412"
+    },
+    {
+      "name": "grid_1000_values_valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_1000_summary_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grid_1000_normalization_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sensitivity_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_ITA_ICS_COLORS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_buildIcsSnapshotV38413",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_ics_snapshot_v38413",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_ICS_SCALE_LAYERS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_renderer==='index_ics'",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "index_script",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_cache",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_script",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_siagas",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_rimas",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "siagas_fc",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "siagas_nonempty",
+      "pass": true,
+      "detail": "3877"
+    },
+    {
+      "name": "rimas_fc",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "rimas_zero_allowed",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "local_siagas",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "local_rimas",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_siagas",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_rimas",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_yin",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_guardrail",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_rimas_not_log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_litoteca_guardrail",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "runtime_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "runtime_qlog_guardrail",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "runtime_rimas_not_log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "runtime_previous",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

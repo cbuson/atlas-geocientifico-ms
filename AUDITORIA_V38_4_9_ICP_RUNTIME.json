@@ -1,0 +1,135 @@
+{
+  "audit": "ICP V38.4.9 runtime",
+  "status": "PASS",
+  "generated_at": "2026-08-15T11:21:18Z",
+  "version": "V38.4.9-ICP-CARACTERIZACAO-PETROGRAFICA-20260814",
+  "source": {
+    "method": "ArcGIS REST GeoSGB · consulta por IDs em lotes",
+    "url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
+    "sha256": "875e26612f451658c8716584bf9a5d05afd8b8760ecd0168004ba1947b4b1f78",
+    "records": 339,
+    "independent_units": 303,
+    "invalid_geometry_removed": 0,
+    "outside_ms_removed": 1
+  },
+  "quality_summary": {
+    "q_min": 0.625,
+    "q_mean": 0.8387,
+    "q_median": 0.875,
+    "q_max": 0.875
+  },
+  "geology_assignment": {
+    "independent_units_without_mapped_unit": 4
+  },
+  "scales": {
+    "250": {
+      "cells": 1554,
+      "cells_with_petrografia": 37,
+      "cells_without_petrografia": 1517,
+      "icp_min": 0.0,
+      "icp_median": 55.81,
+      "icp_mean": 55.36,
+      "icp_max": 93.22,
+      "independent_units_sum": 303,
+      "max_units_cell": 31,
+      "density_p95": 0.08559997,
+      "ambiguous_boundary_resolved": 0
+    },
+    "500": {
+      "cells": 793,
+      "cells_with_petrografia": 25,
+      "cells_without_petrografia": 768,
+      "icp_min": 0.0,
+      "icp_median": 50.42,
+      "icp_mean": 51.45,
+      "icp_max": 87.59,
+      "independent_units_sum": 303,
+      "max_units_cell": 40,
+      "density_p95": 0.0696,
+      "ambiguous_boundary_resolved": 0
+    },
+    "1000": {
+      "cells": 412,
+      "cells_with_petrografia": 18,
+      "cells_without_petrografia": 394,
+      "icp_min": 0.0,
+      "icp_median": 45.62,
+      "icp_mean": 46.39,
+      "icp_max": 80.92,
+      "independent_units_sum": 303,
+      "max_units_cell": 53,
+      "density_p95": 0.04365,
+      "ambiguous_boundary_resolved": 0
+    }
+  },
+  "sensitivity": {
+    "250": {
+      "micro_2.5km_P95_U9x9": {
+        "n_common": 37,
+        "rho": 0.994309
+      },
+      "micro_5km_P90_U9x9": {
+        "n_common": 37,
+        "rho": 0.99834
+      },
+      "micro_5km_P99_U9x9": {
+        "n_common": 37,
+        "rho": 1.0
+      },
+      "micro_10km_P95_U9x9": {
+        "n_common": 37,
+        "rho": 0.991049
+      }
+    },
+    "500": {
+      "micro_2.5km_P95_U9x9": {
+        "n_common": 25,
+        "rho": 0.992308
+      },
+      "micro_5km_P90_U9x9": {
+        "n_common": 25,
+        "rho": 0.997692
+      },
+      "micro_5km_P99_U9x9": {
+        "n_common": 25,
+        "rho": 1.0
+      },
+      "micro_10km_P95_U9x9": {
+        "n_common": 25,
+        "rho": 0.991538
+      }
+    },
+    "1000": {
+      "micro_2.5km_P95_U9x9": {
+        "n_common": 18,
+        "rho": 0.995872
+      },
+      "micro_5km_P90_U9x9": {
+        "n_common": 18,
+        "rho": 0.997936
+      },
+      "micro_5km_P99_U9x9": {
+        "n_common": 18,
+        "rho": 1.0
+      },
+      "micro_10km_P95_U9x9": {
+        "n_common": 18,
+        "rho": 0.98968
+      }
+    }
+  },
+  "checks": {
+    "source_records_positive": true,
+    "independent_units_positive": true,
+    "all_units_assigned_each_scale": true,
+    "grid_counts": {
+      "250": 1554,
+      "500": 793,
+      "1000": 412
+    },
+    "score_range_valid": true,
+    "zero_record_is_null": true,
+    "independent_scale_calculation": true,
+    "q_is_metadata_completeness_not_lab_quality": true
+  }
+}

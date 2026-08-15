@@ -1,3 +1,8 @@
+
+## V38.4.13 · ICS · Conhecimento do Subsolo
+
+O ICP foi materializado nas malhas de 250, 500 e 1000 km² a partir da camada oficial de Petrografia do SGB e do mapa geológico estadual. A fórmula congelada é `ICP_h = 100 × (P × U × Q)^(1/3)`. P combina densidade e ocupação espacial de unidades petrográficas independentes. U mede representatividade litoestratigráfica local por suporte areal determinístico 9 × 9. Q mede completude documental dos metadados publicados e não qualidade laboratorial. Hexágonos sem caracterização petrográfica permanecem transparentes e com valor nulo.
+
 ## V38.4.8 · IOD · Observação Direta
 
 Materialização reproduzível do IOD em 250, 500 e 1000 km² a partir de Afloramentos geológicos do SGB. O instalador captura a fonte oficial, deduplica as observações, calcula D*, O e E de forma independente em cada escala, executa análise de sensibilidade e só conclui a atualização se a auditoria runtime passar.

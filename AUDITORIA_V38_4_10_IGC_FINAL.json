@@ -1,0 +1,252 @@
+{
+  "audit": "V38.4.10 IGC final",
+  "status": "PASS",
+  "checks_total": 61,
+  "checks_passed": 61,
+  "checks": [
+    {
+      "check": "VERSION V38.4.10 correta",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/indices/igc_v38410_snapshot.json",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/indices/igc-v38410.js",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/camadas/arquivos/geocronologia_geosgb_ms.geojson",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/documentos/metodologia-igc.html",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · AUDITORIA_V38_4_10_IGC_RUNTIME.json",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/indices/iod-v3848.js",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/indices/iod_v3848_snapshot.json",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/indices/icp-v3849.js",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/indices/icp_v3849_snapshot.json",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/camadas/arquivos/afloramentos_geosgb_ms.geojson",
+      "pass": true
+    },
+    {
+      "check": "arquivo presente · docs/camadas/arquivos/petrografia_geosgb_ms.geojson",
+      "pass": true
+    },
+    {
+      "check": "snapshot identifica IGC",
+      "pass": true
+    },
+    {
+      "check": "fórmula IGC congelada",
+      "pass": true
+    },
+    {
+      "check": "fórmula G congelada",
+      "pass": true
+    },
+    {
+      "check": "micromalha G basal 5 km",
+      "pass": true
+    },
+    {
+      "check": "normalização D* por P95",
+      "pass": true
+    },
+    {
+      "check": "suporte U_age basal 9 × 9 documentado",
+      "pass": true
+    },
+    {
+      "check": "Q_age explicitamente não é qualidade analítica",
+      "pass": true
+    },
+    {
+      "check": "regra mínima de datação direta por método + idade documentada",
+      "pass": true
+    },
+    {
+      "check": "material analisado preservado como bloco de Q_age",
+      "pass": true
+    },
+    {
+      "check": "snapshot Geocronologia contém registros diretos utilizáveis",
+      "pass": true
+    },
+    {
+      "check": "todos os registros locais têm chave independente",
+      "pass": true
+    },
+    {
+      "check": "todos os registros locais têm Q_age",
+      "pass": true
+    },
+    {
+      "check": "todos os registros locais têm idade direta selecionada",
+      "pass": true
+    },
+    {
+      "check": "IGC 250 · 1554 células",
+      "pass": true
+    },
+    {
+      "check": "IGC 250 · estrutura e faixa 0–100 válidas",
+      "pass": true
+    },
+    {
+      "check": "IGC 250 · ausência de datação direta permanece null",
+      "pass": true
+    },
+    {
+      "check": "IGC 250 · componentes G U_age Q_age D O em 0–1",
+      "pass": true
+    },
+    {
+      "check": "IGC 250 · Q_age mínimo compatível com método + idade sem imputar material",
+      "pass": true
+    },
+    {
+      "check": "IGC 500 · 793 células",
+      "pass": true
+    },
+    {
+      "check": "IGC 500 · estrutura e faixa 0–100 válidas",
+      "pass": true
+    },
+    {
+      "check": "IGC 500 · ausência de datação direta permanece null",
+      "pass": true
+    },
+    {
+      "check": "IGC 500 · componentes G U_age Q_age D O em 0–1",
+      "pass": true
+    },
+    {
+      "check": "IGC 500 · Q_age mínimo compatível com método + idade sem imputar material",
+      "pass": true
+    },
+    {
+      "check": "IGC 1000 · 412 células",
+      "pass": true
+    },
+    {
+      "check": "IGC 1000 · estrutura e faixa 0–100 válidas",
+      "pass": true
+    },
+    {
+      "check": "IGC 1000 · ausência de datação direta permanece null",
+      "pass": true
+    },
+    {
+      "check": "IGC 1000 · componentes G U_age Q_age D O em 0–1",
+      "pass": true
+    },
+    {
+      "check": "IGC 1000 · Q_age mínimo compatível com método + idade sem imputar material",
+      "pass": true
+    },
+    {
+      "check": "renderer IGC ativo",
+      "pass": true
+    },
+    {
+      "check": "builder IGC ativo",
+      "pass": true
+    },
+    {
+      "check": "exclusividade entre escalas IGC",
+      "pass": true
+    },
+    {
+      "check": "derive IGC ativo",
+      "pass": true
+    },
+    {
+      "check": "snapshot IGC carregado pelo index",
+      "pass": true
+    },
+    {
+      "check": "PWA inclui snapshot IGC",
+      "pass": true
+    },
+    {
+      "check": "PWA inclui snapshot geocronológico",
+      "pass": true
+    },
+    {
+      "check": "metodologia IGC integrada",
+      "pass": true
+    },
+    {
+      "check": "Geocronologia registrada como camada local",
+      "pass": true
+    },
+    {
+      "check": "referência IGC disponível e citada · REF-002",
+      "pass": true
+    },
+    {
+      "check": "referência IGC disponível e citada · REF-082",
+      "pass": true
+    },
+    {
+      "check": "referência IGC disponível e citada · REF-085",
+      "pass": true
+    },
+    {
+      "check": "referência IGC disponível e citada · REF-105",
+      "pass": true
+    },
+    {
+      "check": "referência IGC disponível e citada · REF-108",
+      "pass": true
+    },
+    {
+      "check": "referência IGC disponível e citada · REF-115",
+      "pass": true
+    },
+    {
+      "check": "auditoria runtime PASS",
+      "pass": true
+    },
+    {
+      "check": "runtime confirma cálculo independente por escala",
+      "pass": true
+    },
+    {
+      "check": "runtime confirma critério de datação direta por método + idade",
+      "pass": true
+    },
+    {
+      "check": "runtime confirma ausência de material como penalização documental sem imputação",
+      "pass": true
+    },
+    {
+      "check": "runtime confirma significado de Q_age",
+      "pass": true
+    },
+    {
+      "check": "runtime declara preservação de IOD e ICP",
+      "pass": true
+    }
+  ]
+}

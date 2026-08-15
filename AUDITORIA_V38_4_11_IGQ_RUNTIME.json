@@ -1,0 +1,119 @@
+{
+  "audit": "V38.4.11 IGQ runtime",
+  "status": "PASS",
+  "calculated_at": "2026-08-15T11:46:26Z",
+  "source_sha256": "6e34212f70d8921831848684d288c1eb648fc05ab720a2d6003943f482e20c0e",
+  "independent_samples_ms": {
+    "SC": 319,
+    "CB": 57,
+    "solo": 588,
+    "rocha": 153,
+    "agua": 0
+  },
+  "source_stats": {
+    "SC": {
+      "features_source": 1325,
+      "independent_analytical_samples": 508,
+      "duplicates_excluded": 39,
+      "without_related_results_excluded": 775,
+      "invalid_geometry_excluded": 0,
+      "outside_ms_removed": 189,
+      "independent_analytical_samples_ms": 319
+    },
+    "CB": {
+      "features_source": 58,
+      "independent_analytical_samples": 57,
+      "duplicates_excluded": 1,
+      "without_related_results_excluded": 0,
+      "invalid_geometry_excluded": 0,
+      "outside_ms_removed": 0,
+      "independent_analytical_samples_ms": 57
+    },
+    "solo": {
+      "features_source": 2345,
+      "independent_analytical_samples": 588,
+      "duplicates_excluded": 138,
+      "without_related_results_excluded": 1612,
+      "invalid_geometry_excluded": 0,
+      "outside_ms_removed": 0,
+      "independent_analytical_samples_ms": 588
+    },
+    "rocha": {
+      "features_source": 1562,
+      "independent_analytical_samples": 153,
+      "duplicates_excluded": 905,
+      "without_related_results_excluded": 243,
+      "invalid_geometry_excluded": 0,
+      "outside_ms_removed": 0,
+      "independent_analytical_samples_ms": 153
+    },
+    "agua": {
+      "features_source": 0,
+      "independent_analytical_samples": 0,
+      "duplicates_excluded": 0,
+      "without_related_results_excluded": 0,
+      "invalid_geometry_excluded": 0,
+      "outside_ms_removed": 0,
+      "independent_analytical_samples_ms": 0
+    }
+  },
+  "summaries": {
+    "250": {
+      "cells": 1554,
+      "cells_with_igq": 84,
+      "cells_without_igq": 1470,
+      "igq_min": 18.85,
+      "igq_median": 61.86,
+      "igq_mean": 62.73,
+      "igq_max": 95.84,
+      "cells_by_medium": {
+        "SC": 60,
+        "CB": 5,
+        "solo": 29,
+        "rocha": 37,
+        "agua": 0
+      }
+    },
+    "500": {
+      "cells": 793,
+      "cells_with_igq": 58,
+      "cells_without_igq": 735,
+      "igq_min": 32.43,
+      "igq_median": 54.52,
+      "igq_mean": 58.35,
+      "igq_max": 96.91,
+      "cells_by_medium": {
+        "SC": 43,
+        "CB": 5,
+        "solo": 20,
+        "rocha": 28,
+        "agua": 0
+      }
+    },
+    "1000": {
+      "cells": 412,
+      "cells_with_igq": 35,
+      "cells_without_igq": 377,
+      "igq_min": 27.53,
+      "igq_median": 53.42,
+      "igq_mean": 55.64,
+      "igq_max": 90.37,
+      "cells_by_medium": {
+        "SC": 25,
+        "CB": 3,
+        "solo": 15,
+        "rocha": 23,
+        "agua": 0
+      }
+    }
+  },
+  "checks": {
+    "media_not_mixed_before_aggregation": true,
+    "duplicates_not_independent": true,
+    "censored_values_not_imputed": true,
+    "concentrations_not_used_for_anomaly": true,
+    "independent_scale_calculation": true,
+    "null_is_not_zero": true,
+    "previous_indices_not_recomputed": true
+  }
+}

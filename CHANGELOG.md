@@ -1,3 +1,15 @@
+# V38.4.9 · 2026-08-14 · ICP Caracterização Petrográfica
+
+- materializa o snapshot local da camada Petrografia do Serviço Geológico do Brasil para Mato Grosso do Sul
+- calcula ICP de forma independente em 250, 500 e 1000 km²
+- congela `ICP_h = 100 × (P × U × Q)^(1/3)` e `P = sqrt(D* × O)`
+- impede que lâminas repetidas do mesmo afloramento e rocha inflem a presença espacial
+- usa o mapa geológico estadual para estimar a representatividade litoestratigráfica U
+- define Q como completude documental de oito blocos de metadados, sem tratá-la como qualidade laboratorial
+- mantém ausência de caracterização como `null` e preenchimento transparente
+- incorpora análise de sensibilidade de P e mantém a sensibilidade do suporte U para revisão antes dos índices integradores
+- preserva integralmente o IOD V38.4.8 e os índices anteriores
+
 ## V38.4.8 · 2026-08-14 · IOD Observação Direta
 
 - materializa AFLO SGB para Mato Grosso do Sul
@@ -301,3 +313,35 @@
 - fichas IMC passam a informar percentuais por escala e folhas de suporte
 - projetos detalhados conhecidos sem geometria exata materializada permanecem marcados como pendentes e não são imputados
 - IPG da V31 preservado
+## V38.4.10 · IGC · Controle Geocronológico · 2026-08-14
+
+- materializa Datações geocronológicas do GeoSGB e tabelas analíticas relacionadas
+- calcula IGC em 250, 500 e 1000 km² diretamente a partir das amostras geocronológicas independentes
+- congela IGC_h = 100 × (G × U_age × Q_age)^(1/3) e G = sqrt(D* × O)
+- preserva ausência de controle direto como null e hexágono transparente
+- registra análise de sensibilidade e auditoria de rastreabilidade
+## V38.4.11 · IGQ · Conhecimento Geoquímico · 2026-08-14
+
+- materializa cinco meios geoquímicos analisados do GeoSGB com seus resultados relacionados
+- calcula separadamente sedimento de corrente, concentrado de bateia, solo, rocha e água
+- congela IGQ_h = max(IGQ_SC, IGQ_CB, IGQ_solo, IGQ_rocha, IGQ_agua)
+- congela por meio IGQ_m = 100 × (G_m × A_m × Q_m)^(1/3)
+- não utiliza concentrações para classificar anomalias e não imputa valores censurados
+- calcula 250, 500 e 1000 km² diretamente das amostras originais
+## V38.4.12 · IGF · Conhecimento Geofísico · 2026-08-14
+
+- materializa footprints dos levantamentos aerogeofísicos SGB e estações de gravimetria e magnetotelúrico
+- separa aeromagnetometria, gamaespectrometria, gravimetria e magnetotelúrico em módulos auditáveis
+- congela IGF_h = max(IGF_AM,h, IGF_GA,h, IGF_GR,h, IGF_MT,h)
+- pondera aerogeofísica por cobertura e resolução relativa do espaçamento de linhas
+- não interpola anomalias nem interpreta valores geofísicos como favorabilidade mineral
+- calcula 250, 500 e 1000 km² diretamente das evidências originais
+## V38.4.13 · ICS · Conhecimento do Subsolo · 2026-08-14
+
+- materializa poços SIAGAS e consulta complementar RIMAS
+- congela ICS_h = 100 × (M* × B × Q_log)^(1/3)
+- normaliza metros perfurados por área com P95 e limita profundidades individuais pelo P99
+- mede balanceamento espacial por micromalha e equitabilidade de Shannon ponderada por metros perfurados
+- reserva a pontuação máxima de Q_log para suporte explícito de perfil relacionado ao RIMAS
+- calcula 250, 500 e 1000 km² diretamente dos poços originais, sem agregação entre escalas
+

@@ -1,0 +1,63 @@
+{
+  "audit": "V38.4.10 IGC runtime",
+  "status": "PASS",
+  "calculated_at": "2026-08-15T11:42:41Z",
+  "source_records_ms": 5,
+  "direct_independent_samples": 5,
+  "excluded_without_direct_result": 0,
+  "missing_geology_assignment": 0,
+  "tables_related_counts": {
+    "concordia": 3,
+    "frequencia": 0,
+    "isocrona": 8,
+    "pb_evap": 0,
+    "simples": 0
+  },
+  "source_sha256": "378c2516f07a98699203ddd26b2e4c3e038583a7a84bb8e891d107e787f0014f",
+  "main_records_with_methods": 5,
+  "main_records_with_materials": 0,
+  "direct_samples_without_material": 5,
+  "summaries": {
+    "250": {
+      "cells": 1554,
+      "cells_with_geochronology": 2,
+      "cells_without_geochronology": 1552,
+      "igc_min": 41.36,
+      "igc_median": 54.49,
+      "igc_mean": 54.49,
+      "igc_max": 67.62,
+      "independent_samples_sum": 5,
+      "max_samples_cell": 4
+    },
+    "500": {
+      "cells": 793,
+      "cells_with_geochronology": 3,
+      "cells_without_geochronology": 790,
+      "igc_min": 0.0,
+      "igc_median": 33.95,
+      "igc_mean": 33.45,
+      "igc_max": 66.39,
+      "independent_samples_sum": 5,
+      "max_samples_cell": 3
+    },
+    "1000": {
+      "cells": 412,
+      "cells_with_geochronology": 2,
+      "cells_without_geochronology": 410,
+      "igc_min": 29.16,
+      "igc_median": 40.62,
+      "igc_mean": 40.62,
+      "igc_max": 52.09,
+      "independent_samples_sum": 5,
+      "max_samples_cell": 4
+    }
+  },
+  "checks": {
+    "independent_scale_calculation": true,
+    "null_is_not_zero": true,
+    "direct_age_requires_method_and_age": true,
+    "missing_material_penalizes_q_age_without_being_imputed": true,
+    "q_age_is_documentary_completeness_not_accuracy": true,
+    "previous_indices_not_recomputed": true
+  }
+}

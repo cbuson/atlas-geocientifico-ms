@@ -11,6 +11,28 @@
     "bytes": 8854836
   },
   {
+    "id": "petrografia_geosgb_ms",
+    "arquivo": "./camadas/arquivos/petrografia_geosgb_ms.geojson",
+    "nome": "Registros petrográficos e lâminas descritas",
+    "grupo": "Geologia e estratigrafia",
+    "status": "incorporada",
+    "fonte": "SGB · GeoSGB · Petrografia · snapshot local V38.4.9",
+    "validacao": "recorte exato MS · registros oficiais preservados · agrupamento independente apenas para cálculo do ICP",
+    "feicoes": 339,
+    "bytes": 925905
+  },
+  {
+    "id": "geocronologia_geosgb_ms",
+    "arquivo": "./camadas/arquivos/geocronologia_geosgb_ms.geojson",
+    "nome": "Dados geocronológicos",
+    "grupo": "Geologia e estratigrafia",
+    "status": "incorporada",
+    "fonte": "SGB · GeoSGB · Datações geocronológicas · snapshot local V38.4.10",
+    "validacao": "recorte MS · amostras diretas e síntese de resultados relacionados",
+    "feicoes": 5,
+    "bytes": 6089
+  },
+  {
     "id": "cavernas_canie",
     "arquivo": "./camadas/arquivos/cavernas_canie.geojson",
     "nome": "Cavidades naturais subterrâneas · CANIE/CECAV",
@@ -383,5 +405,71 @@
     "validacao": "oficial na fonte",
     "feicoes": 1,
     "bytes": 588355
+  },
+  {
+    "id": "geoquimica_amostras_sgb_ms",
+    "arquivo": "./camadas/arquivos/geoquimica_amostras_sgb_ms.geojson",
+    "nome": "Amostras geoquímicas analisadas SGB",
+    "grupo": "Geoquímica, geofísica e geotermia",
+    "status": "incorporada",
+    "fonte": "SGB · Geoportal · Geoquímica externa · snapshot local V38.4.11",
+    "validacao": "recorte MS · cinco meios · somente amostras com resultados relacionados",
+    "feicoes": 1117,
+    "bytes": 1067305
+  },
+  {
+    "id": "levantamentos_geofisicos_cobertura_ms",
+    "arquivo": "./camadas/arquivos/aerogeofisica_projetos_sgb_ms.geojson",
+    "nome": "Cobertura integrada de levantamentos aerogeofísicos em MS",
+    "grupo": "Geoquímica, geofísica e geotermia",
+    "status": "incorporada",
+    "fonte": "SGB · Aerogeofísica · snapshot local V38.4.12",
+    "validacao": "corte 14/08/2026 · fonte oficial SGB · suporte do IGF V38.4.12",
+    "feicoes": 16,
+    "bytes": 59881
+  },
+  {
+    "id": "gravimetria_sgb_ms",
+    "arquivo": "./camadas/arquivos/gravimetria_sgb_ms.geojson",
+    "nome": "Estações gravimétricas SGB em Mato Grosso do Sul",
+    "grupo": "Geoquímica, geofísica e geotermia",
+    "status": "incorporada",
+    "fonte": "SGB · Gravimetria · snapshot local V38.4.12",
+    "validacao": "corte 14/08/2026 · fonte oficial SGB · suporte do IGF V38.4.12",
+    "feicoes": 0,
+    "bytes": 365
+  },
+  {
+    "id": "magnetotelurico_sgb_ms",
+    "arquivo": "./camadas/arquivos/magnetotelurico_sgb_ms.geojson",
+    "nome": "Estações magnetotelúricas SGB em Mato Grosso do Sul",
+    "grupo": "Geoquímica, geofísica e geotermia",
+    "status": "incorporada",
+    "fonte": "SGB · Geofísica terrestre · snapshot local V38.4.12",
+    "validacao": "corte 14/08/2026 · fonte oficial SGB · suporte do IGF V38.4.12",
+    "feicoes": 0,
+    "bytes": 369
+  },
+  {
+    "id": "siagas_pocos_ms",
+    "arquivo": "./camadas/arquivos/siagas_pocos_ms.geojson",
+    "nome": "SIAGAS · poços e pontos d’água em Mato Grosso do Sul",
+    "grupo": "Hidrologia e hidrogeologia",
+    "status": "incorporada",
+    "fonte": "SGB · SIAGAS · snapshot local V38.4.13",
+    "validacao": "corte 14/08/2026 · fonte oficial SGB · suporte do ICS V38.4.13",
+    "feicoes": 3877,
+    "bytes": 4311154
+  },
+  {
+    "id": "rimas_pocos_monitoramento_ms",
+    "arquivo": "./camadas/arquivos/rimas_pocos_monitoramento_ms.geojson",
+    "nome": "RIMAS · poços de monitoramento publicados em Mato Grosso do Sul",
+    "grupo": "Hidrologia e hidrogeologia",
+    "status": "incorporada",
+    "fonte": "SGB · RIMAS · snapshot local V38.4.13",
+    "validacao": "corte 14/08/2026 · fonte oficial SGB · suporte do ICS V38.4.13",
+    "feicoes": 0,
+    "bytes": 406
   }
 ]

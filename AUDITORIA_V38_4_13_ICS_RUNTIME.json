@@ -1,0 +1,70 @@
+{
+  "audit": "V38.4.13 ICS runtime",
+  "status": "PASS",
+  "calculated_at": "2026-08-15T12:07:53Z",
+  "source_sha256": "1353724a9767acfe9a355797bb117915dc916afbb6eb95f7da4fa717fce00d1c",
+  "source_counts": {
+    "siagas_pocos_ms": 3877,
+    "rimas_pocos_monitoramento_ms": 0
+  },
+  "source_stats": {
+    "siagas_raw": 3877,
+    "siagas_unique_inside_ms": 3877,
+    "duplicates_removed": 0,
+    "invalid_geometry_or_id": 0,
+    "outside_ms_removed": 0,
+    "wells_with_positive_depth": 3414,
+    "wells_with_aquifer": 3097,
+    "wells_with_drilling_date": 3381,
+    "wells_with_explicit_profile_support": 0,
+    "rimas_points_inside_ms": 0,
+    "rimas_ids_with_explicit_lithologic_or_stratigraphic_log": 0
+  },
+  "summaries": {
+    "250": {
+      "cells": 1554,
+      "cells_with_ics": 474,
+      "cells_without_ics": 1080,
+      "ics_min": 10.95,
+      "ics_median": 27.04,
+      "ics_mean": 33.86,
+      "ics_max": 90.07,
+      "wells_assigned_sum": 3413,
+      "max_wells_cell": 316
+    },
+    "500": {
+      "cells": 793,
+      "cells_with_ics": 335,
+      "cells_without_ics": 458,
+      "ics_min": 8.85,
+      "ics_median": 27.35,
+      "ics_mean": 32.3,
+      "ics_max": 87.15,
+      "wells_assigned_sum": 3414,
+      "max_wells_cell": 417
+    },
+    "1000": {
+      "cells": 412,
+      "cells_with_ics": 224,
+      "cells_without_ics": 188,
+      "ics_min": 4.31,
+      "ics_median": 26.3,
+      "ics_mean": 31.25,
+      "ics_max": 89.08,
+      "wells_assigned_sum": 3414,
+      "max_wells_cell": 388
+    }
+  },
+  "checks": {
+    "siagas_deduplicated": true,
+    "positive_depth_required_for_meters": true,
+    "depth_robust_truncation": true,
+    "spatial_balance_explicit": true,
+    "qlog_profile_ceiling_guardrail": true,
+    "rimas_relation_not_equal_log": true,
+    "rimas_complementary_not_required": true,
+    "independent_scale_calculation": true,
+    "null_is_not_zero": true,
+    "previous_indices_not_recomputed": true
+  }
+}
