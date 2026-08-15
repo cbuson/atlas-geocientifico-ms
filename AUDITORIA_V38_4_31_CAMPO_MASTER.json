@@ -1,0 +1,148 @@
+{
+  "audit": "V38.4.31 Campo Master 2.0",
+  "status": "PASS",
+  "passed": 28,
+  "total": 28,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": "V38.4.31-CAMPO-MASTER-2.0-20260815"
+    },
+    {
+      "name": "single_campo_modal",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "master_js_loaded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_css_loaded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "old_geofoto_not_loaded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "html_campoModoEssencial",
+      "pass": true,
+      "detail": "campoModoEssencial"
+    },
+    {
+      "name": "html_campoModoAvancado",
+      "pass": true,
+      "detail": "campoModoAvancado"
+    },
+    {
+      "name": "html_campoAddMedida",
+      "pass": true,
+      "detail": "campoAddMedida"
+    },
+    {
+      "name": "html_campoAddAmostra",
+      "pass": true,
+      "detail": "campoAddAmostra"
+    },
+    {
+      "name": "html_campoSketch",
+      "pass": true,
+      "detail": "campoSketch"
+    },
+    {
+      "name": "html_campoExportarPacote",
+      "pass": true,
+      "detail": "campoExportarPacote"
+    },
+    {
+      "name": "html_campoMineraisPicker",
+      "pass": true,
+      "detail": "campoMineraisPicker"
+    },
+    {
+      "name": "html_campoEstadoFicha",
+      "pass": true,
+      "detail": "campoEstadoFicha"
+    },
+    {
+      "name": "js_file",
+      "pass": true,
+      "detail": "C:\\Users\\cbuso\\Documents\\GitHub\\atlas-geocientifico-ms\\docs\\assets\\js\\campo-master-v38431.js"
+    },
+    {
+      "name": "js_ita_arandu_campo_master_v20",
+      "pass": true,
+      "detail": "ita_arandu_campo_master_v20"
+    },
+    {
+      "name": "js_original_gps",
+      "pass": true,
+      "detail": "original_gps"
+    },
+    {
+      "name": "js_latLonToUTM",
+      "pass": true,
+      "detail": "latLonToUTM"
+    },
+    {
+      "name": "js_municipios_limites_base.geojson",
+      "pass": true,
+      "detail": "municipios_limites_base.geojson"
+    },
+    {
+      "name": "js_embedded_exif_original",
+      "pass": true,
+      "detail": "embedded_exif_original"
+    },
+    {
+      "name": "js_attributed_later",
+      "pass": true,
+      "detail": "attributed_later"
+    },
+    {
+      "name": "js_makeZip",
+      "pass": true,
+      "detail": "makeZip"
+    },
+    {
+      "name": "js_measurements",
+      "pass": true,
+      "detail": "measurements"
+    },
+    {
+      "name": "js_mineralization",
+      "pass": true,
+      "detail": "mineralization"
+    },
+    {
+      "name": "js_geotechnics",
+      "pass": true,
+      "detail": "geotechnics"
+    },
+    {
+      "name": "js_sensitivity",
+      "pass": true,
+      "detail": "sensitivity"
+    },
+    {
+      "name": "node_syntax",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog_unchanged",
+      "pass": true,
+      "detail": "8ccb9bae74159fbe1b14874dc187423411db1af68e9527386893f855c4413f95"
+    },
+    {
+      "name": "manifest_unchanged",
+      "pass": true,
+      "detail": "bbed2243e156271ce68354d4a0072ce8a339ce78d1710b6ca7e75f21f3bf1d35"
+    }
+  ]
+}

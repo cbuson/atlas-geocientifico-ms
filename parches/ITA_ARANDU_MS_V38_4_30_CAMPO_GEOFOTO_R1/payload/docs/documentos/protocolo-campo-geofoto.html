@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ITA ARANDU MS · Protocolo Campo GeoFoto 1.0</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:920px;margin:auto;padding:24px;line-height:1.55;color:#17394d}
+h1,h2{color:#073b63}.box{padding:14px;border:1px solid #cad9e1;border-radius:12px;background:#f7fafc;margin:14px 0}
+code{background:#eef3f6;padding:2px 5px;border-radius:5px}
+a{color:#075b8d}
+</style>
+</head>
+<body>
+<h1>ITA ARANDU MS · Protocolo Campo GeoFoto 1.0</h1>
+<p><b>Versão documental</b> 15 de agosto de 2026</p>
+
+<div class="box">
+<b>Princípio</b>
+<p>A fotografia não constitui sozinha o registro científico. A unidade principal é a estação ou Spot de campo. A fotografia é um anexo vinculado à estação, à posição, às observações, às amostras e aos metadados de qualidade.</p>
+</div>
+
+<h2>1 · Três objetos preservados</h2>
+<p>O módulo distingue a captura original sem placa, a cópia cartográfica gerada para visualização e relatório, e o registro estruturado da estação armazenado localmente em IndexedDB. A cópia com placa nunca substitui a imagem original.</p>
+
+<h2>2 · Localização</h2>
+<p>A posição da estação utiliza WGS84 em latitude e longitude e calcula automaticamente a coordenada UTM correspondente à zona. São registrados, quando o navegador fornece, precisão horizontal, altitude, precisão vertical, rumo GPS, velocidade e instante da medição.</p>
+<p>A precisão do navegador é registrada em metros e deve ser interpretada como informação de qualidade da posição, não como garantia de precisão geodésica.</p>
+
+<h2>3 · Orientação</h2>
+<p>O rumo do dispositivo é armazenado apenas como informação auxiliar da fotografia. Quando o navegador indica orientação absoluta ela é identificada como tal. Orientação relativa não deve ser tratada como norte verdadeiro. Esses valores não substituem bússola geológica, clinômetro ou medida estrutural acompanhada de método.</p>
+
+<h2>4 · Fotografias capturadas pela PWA</h2>
+<p>A câmera web utiliza o fluxo disponibilizado pelo navegador. O módulo produz uma captura sem placa e, opcionalmente, uma segunda imagem com placa cartográfica contendo estação, UTM, altitude, precisão, rumo, data e código de amostra. Cada arquivo recebe SHA256.</p>
+<p>O aplicativo não declara que escreveu GPS EXIF dentro do JPEG capturado. Os metadados científicos estruturados da estação constituem a fonte primária de rastreabilidade.</p>
+
+<h2>5 · Fotografias importadas</h2>
+<p>Em JPEG importado, o módulo tenta ler GPS EXIF original. Se essa posição existir, ela é preservada como <code>embedded_exif_original</code>. Se não existir, a posição da estação só é associada quando o usuário habilita explicitamente a opção correspondente. Nesse caso o estado é <code>attributed_later</code>, deixando claro que a posição não é necessariamente a posição original da fotografia.</p>
+
+<h2>6 · Amostras</h2>
+<p>O código local pode ser gerado a partir do código da estação. O IGSN permanece opcional e não deve ser marcado como registrado sem identificador persistente real.</p>
+
+<h2>7 · Exportação</h2>
+<p>O módulo exporta JSON estruturado, GeoJSON e KML. Os binários das fotografias permanecem no armazenamento local nesta versão. O JSON exporta nomes, proveniência, posição, orientação e hashes, mas não incorpora os blobs das imagens.</p>
+
+<h2>8 · Privacidade e segurança</h2>
+<p>Câmera, geolocalização e orientação dependem de permissão do usuário e de contexto seguro. O módulo não inicia câmera nem sensores em segundo plano. Fotografias e registros permanecem locais por padrão e não entram automaticamente na base científica do Atlas.</p>
+
+<h2>Referências técnicas verificadas</h2>
+<ul>
+<li>W3C. <i>Geolocation</i>. Consulta em 15/08/2026. <a href="https://www.w3.org/TR/geolocation/" target="_blank" rel="noopener">https://www.w3.org/TR/geolocation/</a></li>
+<li>W3C. <i>Media Capture and Streams</i>. Consulta em 15/08/2026. <a href="https://www.w3.org/TR/mediacapture-streams/" target="_blank" rel="noopener">https://www.w3.org/TR/mediacapture-streams/</a></li>
+<li>W3C. <i>MediaStream Image Capture</i>. Consulta em 15/08/2026. <a href="https://www.w3.org/TR/image-capture/" target="_blank" rel="noopener">https://www.w3.org/TR/image-capture/</a></li>
+<li>MDN Web Docs. <i>DeviceOrientationEvent.requestPermission()</i>. Consulta em 15/08/2026. <a href="https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/requestPermission_static" target="_blank" rel="noopener">documentação</a></li>
+</ul>
+</body>
+</html>

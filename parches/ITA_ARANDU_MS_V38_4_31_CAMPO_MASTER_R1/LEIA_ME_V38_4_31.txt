@@ -1,0 +1,73 @@
+﻿ITA ARANDU MS
+
+V38.4.31 CAMPO MASTER 2.0
+
+Esta versão aproveita o fato de ainda não existirem registros reais de produção no Caderno de Campo.
+
+Por isso usa uma nova base IndexedDB
+
+ita_arandu_campo_master_v20
+
+e não tenta manter o esquema experimental anterior.
+
+Inclui de uma vez
+
+modo Essencial
+modo Avançado
+código automático de estação
+campanhas e observadores
+função e disciplina
+local e estação separados
+estado da ficha
+completude e checklist
+Spot pai
+Tags
+perfil e ordem
+GPS original preservado
+edição manual separada
+UTM
+município automático por interseção
+acesso estruturado
+exposição
+litologia hierárquica
+facies
+confiança
+mineralogia múltipla
+alteração
+estruturas múltiplas
+medidas estruturais múltiplas
+observação
+interpretação
+hidrogeologia
+mineralização
+geotecnia
+amostras múltiplas
+IGSN opcional
+GeoFoto
+EXIF de importação
+SHA256
+classificação e descrição de fotografias
+croquis
+sensibilidade
+revisão
+JSON
+GeoJSON
+KML
+pacote ZIP completo
+
+Não altera
+
+camadas
+snapshots
+catálogo científico
+índices
+
+Executar
+
+Set-ExecutionPolicy -Scope Process Bypass
+
+.\APLICAR_V38_4_31_CAMPO_MASTER.ps1
+
+Arquivo de auditoria
+
+AUDITORIA_V38_4_31_CAMPO_MASTER.json

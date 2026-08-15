@@ -472,3 +472,17 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Mantem os mesmos paineis e eventos sem alterar dados, camadas, snapshots ou indices.
 - Reposiciona os paineis moveis sob a barra unica.
 
+## V38.4.31 · Campo Master 2.0 · 2026-08-15
+
+- Substitui o protótipo de Campo por um Caderno de Campo Geocientífico Digital completo.
+- Cria modos Essencial e Avançado sobre um único esquema 2.0.
+- Estrutura litologia, mineralogia, alteração, estruturas, medidas, hidrogeologia, mineralização, geotecnia e amostras.
+- Preserva GPS original separado de edições manuais.
+- Identifica município pela malha municipal local quando disponível.
+- Integra GeoFoto, GPS EXIF de importação, orientação auxiliar e SHA256.
+- Adiciona croquis, relações pai-filho e sequência de perfil.
+- Adiciona revisão, sensibilidade, completude e checklist.
+- Exporta JSON, GeoJSON, KML e pacote ZIP completo.
+- Usa uma nova base IndexedDB de Campo porque ainda não existem registros de produção a migrar.
+- Não altera camadas, snapshots, catálogo científico ou índices.
+

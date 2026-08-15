@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ITA ARANDU MS · Protocolo do Caderno de Campo 2.0</title>
+<style>body{font-family:system-ui,sans-serif;max-width:980px;margin:auto;padding:24px;line-height:1.55;color:#173b4f}h1,h2{color:#073d62}.box{padding:13px;border:1px solid #c9d9e2;border-radius:11px;background:#f7fafc;margin:12px 0}code{background:#edf3f6;padding:2px 5px;border-radius:5px}</style></head>
+<body>
+<h1>ITA ARANDU MS · Caderno de Campo Geocientífico Digital 2.0</h1>
+<p><b>Corte documental</b> 15 de agosto de 2026</p>
+<div class="box"><b>Princípio geral</b><p>A unidade científica principal é a estação de campo. Observações, interpretações, medidas, amostras, fotografias, sensores e croquis são objetos vinculados à estação. Dados observados e inferências permanecem separados.</p></div>
+
+<h2>Modo essencial e avançado</h2>
+<p>Os dois modos usam o mesmo esquema. O modo essencial reduz a carga visual para atividades docentes e campanhas rápidas. O modo avançado expõe mineralogia, alteração, estruturas, medidas, hidrogeologia, mineralização, geotecnia, relações e croquis.</p>
+
+<h2>Coordenadas</h2>
+<p>A posição original obtida pelo dispositivo é preservada separadamente. Edição manual não sobrescreve silenciosamente o GPS original. A ficha guarda fonte da posição, precisão horizontal, altitude GNSS, precisão vertical quando disponível, horário e UTM WGS84 calculada dinamicamente.</p>
+
+<h2>Município e malhas</h2>
+<p>O município é obtido por interseção espacial com a camada municipal local do Atlas quando disponível. Hexágonos de 250, 500 e 1000 km² permanecem identificadores territoriais automáticos.</p>
+
+<h2>Litologia, mineralogia e alteração</h2>
+<p>A litologia usa grupo, termo controlado, facies, descrição e confiança. Minerais podem ser marcados como principais, secundários, traço ou possíveis. Alteração registra presença, intensidade, tipos e descrição.</p>
+
+<h2>Estruturas e medidas</h2>
+<p>Estruturas e medidas são listas independentes. Uma medida pode registrar tipo, direção, mergulho, sentido, rumo, método, instrumento, precisão estimada e hora. Sensores do telefone nunca são promovidos automaticamente a medida estrutural.</p>
+
+<h2>Mineralização</h2>
+<p>O campo registra evidência observada, indício possível, estilo, continuidade, largura, hospedeira, alteração associada e descrição. Uma observação não é rotulada automaticamente como jazida ou ocorrência econômica.</p>
+
+<h2>Amostras</h2>
+<p>Cada amostra é objeto próprio, com código local A01, A02 e seguintes, tipo, profundidade, peso, descrição, destino, análise, responsável e IGSN opcional. IGSN registrado exige identificador real.</p>
+
+<h2>Fotografias</h2>
+<p>O original permanece separado de qualquer cópia cartográfica. O módulo registra classificação e descrição da foto, tenta ler GPS EXIF original de JPEG importado, distingue <code>embedded_exif_original</code> de <code>attributed_later</code> e calcula SHA256. A PWA não declara escrita universal de GPS EXIF no JPEG capturado.</p>
+
+<h2>Croquis</h2>
+<p>O croquis é um anexo gráfico da estação. Serve para contatos, relações, setas e notas. Não recebe escala geológica inventada.</p>
+
+<h2>Sensibilidade</h2>
+<p>Registros restritos mantêm a coordenada exata no armazenamento local, mas exportações destinadas a uso público devem usar degradação espacial ou remoção de coordenadas. O esquema registra o motivo da restrição.</p>
+
+<h2>Revisão e completude</h2>
+<p>Estados possíveis incluem rascunho, completa, revisada, validada e rejeitada. A interface calcula completude como ajuda operacional. Não é nota acadêmica. Uma ficha validada exige o checklist essencial completo.</p>
+
+<h2>Exportações</h2>
+<p>São gerados JSON, GeoJSON, KML e um pacote ZIP local com manifesto, dados espaciais, fotografias originais, cópias com placa e croquis. O pacote é produzido no navegador e não envia os dados a um servidor.</p>
+</body></html>

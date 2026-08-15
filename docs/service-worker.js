@@ -1,5 +1,8 @@
-const ITA_CACHE = 'ita-arandu-v38-4-29-mobile-map-toolbar';
+const ITA_CACHE = 'ita-arandu-v38-4-31-campo-master';
 const ITA_CORE = [
+  "./documentos/protocolo-campo-master.html",
+  "./assets/js/campo-master-v38431.js?v=38.4.31",
+  "./assets/css/campo-master-v38431.css?v=38.4.31",
   "./assets/css/mobile-map-toolbar-v38429.css?v=38.4.29",
   "./documentos/protocolo-proveniencia-snapshots.html",
   "./camadas/snapshots-manifest.json",

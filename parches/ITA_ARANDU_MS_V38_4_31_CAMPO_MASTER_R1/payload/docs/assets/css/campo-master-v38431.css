@@ -1,0 +1,59 @@
+/* ITA ARANDU MS · Campo Master 2.0 · V38.4.31 */
+.ita-campo-master-modal{width:min(1220px,96vw)!important;max-width:1220px!important}
+.ita-campo-master{display:grid;gap:12px}
+.ita-campo-topbar{position:sticky;top:-1px;z-index:20;display:grid;grid-template-columns:auto minmax(180px,1fr) auto;gap:10px;align-items:center;padding:9px;border:1px solid #cfdce4;border-radius:12px;background:rgba(255,255,255,.97);box-shadow:0 3px 12px rgba(12,43,59,.08)}
+.ita-campo-mode{display:flex;gap:4px}
+.ita-campo-mode button{border:1px solid #bfcfd8;background:#f5f8fa;color:#16435d;border-radius:8px;padding:7px 10px;font-weight:800;cursor:pointer}
+.ita-campo-mode button.active{background:#0d567b;color:#fff;border-color:#0d567b}
+.ita-campo-progress{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:8px;font-size:11px;color:#4b6878}
+.ita-progress-track{height:8px;border-radius:999px;background:#e4edf2;overflow:hidden}
+.ita-progress-track>div{height:100%;width:0;background:#1d789d;transition:width .2s ease}
+.ita-status-select{min-width:130px}
+.ita-campo-master .advanced{display:none}
+.ita-campo-master.advanced-mode .advanced{display:block}
+.ita-location-banner{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.ita-location-banner span{padding:6px 9px;border-radius:999px;background:#eef5f8;border:1px solid #cfdee6;font-size:11px;color:#264e64}
+.ita-inline-actions,.ita-array-head,.ita-sketch-tools,.ita-photo-options{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.ita-array-head{justify-content:space-between;font-weight:800;color:#173f55}
+.ita-spaced{margin-top:10px}
+.ita-chip-picker{display:flex;flex-wrap:wrap;gap:5px}
+.ita-chip-picker label,.ita-mineral-item{display:inline-flex;gap:5px;align-items:center;border:1px solid #cad8e0;border-radius:999px;background:#f7fafb;padding:5px 8px;font-size:11px;color:#234b61}
+.ita-mineral-picker{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.ita-mineral-item{border-radius:9px;display:grid;grid-template-columns:auto 1fr auto}
+.ita-mineral-item select{min-width:78px;border:0;background:#fff;color:#21485d;font-size:10px}
+.ita-array-list{display:grid;gap:8px;margin-top:8px}
+.ita-array-card{padding:9px;border:1px solid #cddae2;border-radius:11px;background:#fbfdfe}
+.ita-array-card-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px}
+.ita-array-card-head b{color:#153f56}
+.ita-array-card .field-grid{gap:7px}
+.ita-mini-danger{border:1px solid #e0b8b8;background:#fff6f6;color:#8a3131;border-radius:7px;padding:5px 8px;font-size:10px;font-weight:800;cursor:pointer}
+.ita-textarea-tall{min-height:120px}
+.ita-camera-stage{position:relative;overflow:hidden;min-height:180px;border-radius:12px;background:#061a25;border:1px solid #173c50;margin-bottom:8px}
+.ita-camera-video{display:block;width:100%;min-height:180px;max-height:52vh;object-fit:cover;background:#061a25}
+.ita-camera-liveplate{position:absolute;left:0;right:0;bottom:0;display:grid;gap:2px;padding:9px 11px;background:linear-gradient(180deg,transparent,rgba(3,18,28,.9) 30%);color:#fff;font-size:11px;pointer-events:none}
+.ita-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:9px}
+.ita-photo-card{display:grid;gap:6px;padding:7px;border:1px solid #d0dce3;border-radius:10px;background:#fff}
+.ita-photo-card img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:7px;background:#edf2f4}
+.ita-photo-card small{font-size:10px;color:#617986;line-height:1.3}
+.ita-photo-card-actions{display:flex;flex-wrap:wrap;gap:4px}
+.ita-photo-card input,.ita-photo-card select{font-size:10px}
+#campoSketch{display:block;width:100%;height:auto;aspect-ratio:12/7;border:1px solid #bfcfd8;border-radius:10px;background:#fff;touch-action:none}
+.ita-final-check{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.ita-check-item{padding:7px 8px;border-radius:8px;border:1px solid #d0dde4;background:#f8fafb;font-size:10px;color:#526c7b}
+.ita-check-item.ok{background:#eef8f1;border-color:#b7ddc3;color:#28623b}
+.ita-check-item.warn{background:#fff8ec;border-color:#ead2a1;color:#765722}
+.ita-record-filters{display:grid;grid-template-columns:1fr auto;gap:8px}
+.ita-record-master{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;padding:9px;border:1px solid #d0dce3;border-radius:10px;margin-bottom:7px;background:#fff}
+.ita-record-master small{display:block;color:#5f7785;font-size:10px;line-height:1.35;margin-top:2px}
+.ita-record-actions{display:flex;flex-wrap:wrap;gap:5px}
+.ita-public-warning{padding:8px;border:1px solid #e2c890;background:#fff8e8;color:#795c27;border-radius:9px;font-size:10px}
+@media(max-width:900px){.ita-mineral-picker{grid-template-columns:repeat(2,minmax(0,1fr))}.ita-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ita-final-check{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+ .ita-campo-master-modal{width:100vw!important;max-width:100vw!important;height:100dvh!important;max-height:100dvh!important;border-radius:0!important}
+ .ita-campo-topbar{grid-template-columns:1fr auto;top:0}.ita-campo-progress{grid-column:1/-1}.ita-status-select{min-width:110px}
+ .ita-mineral-picker,.ita-photo-grid,.ita-final-check{grid-template-columns:1fr}
+ .ita-record-filters{grid-template-columns:1fr}
+ .ita-record-master{grid-template-columns:1fr}
+ .ita-campo-master .field-grid.three{grid-template-columns:1fr!important}
+ .ita-campo-master .field-grid{grid-template-columns:1fr!important}
+}

@@ -1,0 +1,317 @@
+<div class="modal" id="campoModal">
+  <div class="modal-box ita-campo-master-modal">
+    <div class="modal-head">
+      <div>
+        <div class="kicker">ITA ARANDU Campo · Caderno de Campo Geocientífico Digital</div>
+        <h2>Estação geológica de campo</h2>
+      </div>
+      <button type="button" class="close-modal" data-close="campoModal">×</button>
+    </div>
+
+    <div class="modal-body ita-campo-master">
+      <div class="ita-campo-topbar">
+        <div class="ita-campo-mode" role="group" aria-label="Modo do formulário">
+          <button type="button" id="campoModoEssencial" class="active">Essencial</button>
+          <button type="button" id="campoModoAvancado">Avançado</button>
+        </div>
+        <div class="ita-campo-progress">
+          <span id="campoCompletudeText">0% completa</span>
+          <div class="ita-progress-track"><div id="campoCompletudeBar"></div></div>
+        </div>
+        <select id="campoEstadoFicha" class="field-select ita-status-select" aria-label="Estado da ficha">
+          <option value="rascunho">Rascunho</option>
+          <option value="completa">Completa</option>
+          <option value="revisada">Revisada</option>
+          <option value="validada">Validada</option>
+          <option value="rejeitada">Rejeitada</option>
+        </select>
+      </div>
+
+      <div class="field-status" id="campoChecklist" aria-live="polite">Complete a identificação, a posição, a litologia e a observação.</div>
+
+      <form id="campoForm" autocomplete="off">
+        <fieldset class="field-box essential">
+          <legend>1 · Identificação da estação</legend>
+          <div class="field-grid three">
+            <label><span class="field-label">Código da estação</span><input class="field-input" id="campoStationCode" readonly></label>
+            <label><span class="field-label">Spot ID</span><input class="field-input" id="campoSpotId" readonly></label>
+            <label><span class="field-label">Estado</span><input class="field-input" id="campoEstadoResumo" value="rascunho" readonly></label>
+
+            <label><span class="field-label">Campanha</span><input class="field-input" id="campoCampanha" list="campoCampanhasLista" placeholder="Ex. CAMPO_BODOQUENA_2026"></label>
+            <label><span class="field-label">Observador</span><input class="field-input" id="campoObservador" list="campoObservadoresLista"></label>
+            <label><span class="field-label">Função</span>
+              <select class="field-select" id="campoFuncao">
+                <option value="">Selecionar</option>
+                <option>Docente</option><option>Estudante</option><option>Geólogo</option><option>Técnico</option><option>Investigador</option><option>Outro</option>
+              </select>
+            </label>
+
+            <label><span class="field-label">Disciplina ou finalidade</span>
+              <select class="field-select" id="campoDisciplina">
+                <option value="">Selecionar</option>
+                <option>Geologia geral</option><option>Petrologia</option><option>Sedimentologia</option><option>Geomorfologia</option>
+                <option>Geologia estrutural</option><option>Mineralogia</option><option>Hidrogeologia</option><option>Recursos minerais</option>
+                <option>Geotecnia</option><option>Paleontologia</option><option>Prospecção</option><option>Pesquisa científica</option><option>Outra</option>
+              </select>
+            </label>
+            <label><span class="field-label">Nome do local</span><input class="field-input" id="campoLocalNome" placeholder="Ex. Pedreira, fazenda, rio, estrada"></label>
+            <label><span class="field-label">Nome da estação</span><input class="field-input" id="campoNome" placeholder="Ex. afloramento sul"></label>
+
+            <label><span class="field-label">Data</span><input class="field-input" type="date" id="campoData"></label>
+            <label><span class="field-label">Hora local</span><input class="field-input" type="time" id="campoHora"></label>
+            <label><span class="field-label">UTC registrado</span><input class="field-input" id="campoUtc" readonly></label>
+          </div>
+
+          <datalist id="campoCampanhasLista"></datalist>
+          <datalist id="campoObservadoresLista"></datalist>
+
+          <div class="ita-inline-actions">
+            <button class="action-btn" type="button" id="campoNovaEstacao">Novo código</button>
+            <button class="action-btn" type="button" id="campoSalvarPerfil">Guardar campanha e observador</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-box advanced">
+          <legend>2 · Relações, Tags e sequência</legend>
+          <div class="field-grid three">
+            <label><span class="field-label">Estação pai</span><select class="field-select" id="campoParentSpot"><option value="">Sem estação pai</option></select></label>
+            <label><span class="field-label">Perfil ou seção</span><input class="field-input" id="campoPerfil" placeholder="Ex. PERFIL_SERRA_01"></label>
+            <label><span class="field-label">Ordem no perfil</span><input class="field-input" type="number" min="1" step="1" id="campoPerfilOrdem"></label>
+            <label class="field-full"><span class="field-label">Tags</span><div id="campoTagsChips" class="ita-chip-picker"></div><input class="field-input" id="campoTagsOutras" placeholder="Outras Tags separadas por vírgula"></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-box essential">
+          <legend>3 · Localização e acesso</legend>
+          <div class="ita-location-banner">
+            <span><b id="campoGpsQualidade">GPS ainda não medido</b></span>
+            <span id="campoUtmResumo">UTM —</span>
+            <span id="campoMunicipioAuto">Município —</span>
+          </div>
+
+          <div class="field-grid three">
+            <label><span class="field-label">Latitude</span><input class="field-input" type="number" step="any" id="campoLat" readonly></label>
+            <label><span class="field-label">Longitude</span><input class="field-input" type="number" step="any" id="campoLon" readonly></label>
+            <label><span class="field-label">Precisão horizontal m</span><input class="field-input" type="number" step="any" id="campoPrecisao" readonly></label>
+            <label><span class="field-label">Altitude GNSS m</span><input class="field-input" type="number" step="any" id="campoAltitude" readonly></label>
+            <label><span class="field-label">Precisão vertical m</span><input class="field-input" type="number" step="any" id="campoPrecisaoVertical" readonly></label>
+            <label><span class="field-label">UTM WGS84</span><input class="field-input" id="campoUtm" readonly></label>
+            <label><span class="field-label">Fonte da posição</span><input class="field-input" id="campoGpsFonte" readonly></label>
+            <label><span class="field-label">Hora da medição GPS</span><input class="field-input" id="campoGpsHora" readonly></label>
+            <label><span class="field-label">Município</span><input class="field-input" id="campoMunicipio" readonly></label>
+          </div>
+
+          <div class="ita-inline-actions">
+            <button class="action-btn primary" type="button" id="campoGps">Capturar GPS</button>
+            <button class="action-btn" type="button" id="campoCentroMapa">Usar centro do mapa</button>
+            <button class="action-btn" type="button" id="campoEditarPosicao">Editar coordenadas</button>
+            <button class="action-btn" type="button" id="campoRestaurarGps">Restaurar GPS original</button>
+          </div>
+
+          <div class="field-grid three">
+            <label><span class="field-label">Hex 250 km²</span><input class="field-input" id="campoHex250" readonly></label>
+            <label><span class="field-label">Hex 500 km²</span><input class="field-input" id="campoHex500" readonly></label>
+            <label><span class="field-label">Hex 1000 km²</span><input class="field-input" id="campoHex1000" readonly></label>
+          </div>
+
+          <div class="field-grid three ita-spaced">
+            <label><span class="field-label">Tipo de acesso</span>
+              <select class="field-select" id="campoAcessoTipo">
+                <option value="">Selecionar</option><option>Rodovia pavimentada</option><option>Estrada não pavimentada</option><option>Trilha</option><option>Rio</option><option>Propriedade privada</option><option>Outro</option>
+              </select>
+            </label>
+            <label><span class="field-label">Condição de acesso</span>
+              <select class="field-select" id="campoAcessoCondicao">
+                <option value="">Selecionar</option><option>Fácil</option><option>Moderada</option><option>Difícil</option><option>Restrita</option>
+              </select>
+            </label>
+            <label><span class="field-label">Referência de acesso</span><input class="field-input" id="campoAcesso" placeholder="Ponte, km, portão, trilha"></label>
+          </div>
+          <div class="field-help" id="campoGpsStatus">A posição original, qualquer edição manual e a fonte de cada coordenada ficam separadas no registro.</div>
+        </fieldset>
+
+        <fieldset class="field-box essential">
+          <legend>4 · Exposição e litologia</legend>
+          <div class="field-grid three">
+            <label><span class="field-label">Tipo de exposição</span>
+              <select class="field-select" id="campoExposicao">
+                <option value="">Selecionar</option><option>Afloramento natural</option><option>Corte de estrada</option><option>Pedreira</option><option>Mina</option>
+                <option>Margem ou leito de rio</option><option>Talude</option><option>Escavação</option><option>Caverna</option><option>Solo ou regolito</option><option>Bloco solto</option><option>Outro</option>
+              </select>
+            </label>
+            <label><span class="field-label">Qualidade da exposição</span>
+              <select class="field-select" id="campoExposicaoQualidade">
+                <option value="">Selecionar</option><option>Excelente</option><option>Boa</option><option>Moderada</option><option>Ruim</option>
+              </select>
+            </label>
+            <label><span class="field-label">Confiança da identificação</span>
+              <select class="field-select" id="campoLitologiaConfianca">
+                <option value="">Selecionar</option><option>Alta</option><option>Média</option><option>Baixa</option>
+              </select>
+            </label>
+
+            <label><span class="field-label">Grupo litológico</span>
+              <select class="field-select" id="campoLitologiaGrupo">
+                <option value="">Selecionar</option><option>Ígnea</option><option>Sedimentar</option><option>Metamórfica</option><option>Sedimento inconsolidado</option><option>Solo</option><option>Não determinada</option>
+              </select>
+            </label>
+            <label><span class="field-label">Litologia</span><select class="field-select" id="campoLitologia"><option value="">Selecionar grupo primeiro</option></select></label>
+            <label><span class="field-label">Facies ou variedade</span><input class="field-input" id="campoFacies"></label>
+            <label class="field-full"><span class="field-label">Descrição litológica</span><textarea class="field-textarea" id="campoLitologiaDescricao" placeholder="Textura, granulometria, cor, composição, relações observadas"></textarea></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-box advanced">
+          <legend>5 · Mineralogia e alteração</legend>
+          <div class="field-grid">
+            <label class="field-full"><span class="field-label">Minerais observados</span><div id="campoMineraisPicker" class="ita-mineral-picker"></div><input class="field-input" id="campoMineraisOutros" placeholder="Outros minerais"></label>
+            <label><span class="field-label">Alteração presente</span><select class="field-select" id="campoAlteracaoPresenca"><option value="nao_avaliada">Não avaliada</option><option>Ausente</option><option>Presente</option></select></label>
+            <label><span class="field-label">Intensidade</span><select class="field-select" id="campoAlteracaoIntensidade"><option value="">—</option><option>Leve</option><option>Moderada</option><option>Intensa</option></select></label>
+            <label class="field-full"><span class="field-label">Tipos de alteração</span><div id="campoAlteracaoTipos" class="ita-chip-picker"></div></label>
+            <label class="field-full"><span class="field-label">Descrição da alteração</span><textarea class="field-textarea" id="campoAlteracao"></textarea></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-box advanced">
+          <legend>6 · Estruturas e medidas estruturais</legend>
+          <div class="ita-array-head"><span>Estruturas observadas</span><button class="action-btn" type="button" id="campoAddEstrutura">Adicionar estrutura</button></div>
+          <div id="campoEstruturasLista" class="ita-array-list"></div>
+
+          <div class="ita-array-head ita-spaced"><span>Medidas</span><button class="action-btn primary" type="button" id="campoAddMedida">Adicionar medida</button></div>
+          <div id="campoMedidasLista" class="ita-array-list"></div>
+
+          <div class="field-help">Rumo e inclinação do telefone são metadados auxiliares. Uma medida geológica só entra nesta lista quando o usuário a registra com tipo, método e instrumento.</div>
+        </fieldset>
+
+        <fieldset class="field-box essential">
+          <legend>7 · Observação e interpretação</legend>
+          <div class="field-grid">
+            <label class="field-full"><span class="field-label">Observação · descreva somente o que está efetivamente visível</span><textarea class="field-textarea ita-textarea-tall" id="campoObservacao"></textarea></label>
+            <label class="field-full"><span class="field-label">Interpretação · hipótese separada da observação</span><textarea class="field-textarea ita-textarea-tall" id="campoInterpretacao"></textarea></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-box advanced">
+          <legend>8 · Hidrogeologia</legend>
+          <div class="field-grid three">
+            <label><span class="field-label">Evidência hidrogeológica</span><select class="field-select" id="campoHidroPresenca"><option value="nao_avaliada">Não avaliada</option><option>Não</option><option>Sim</option></select></label>
+            <label><span class="field-label">Tipo</span><select class="field-select" id="campoHidroTipo"><option value="">—</option><option>Nascente</option><option>Poço</option><option>Surgência</option><option>Nível freático</option><option>Fratura úmida</option><option>Fluxo superficial</option><option>Outro</option></select></label>
+            <label><span class="field-label">Temperatura °C</span><input class="field-input" type="number" step="any" id="campoHidroTemperatura"></label>
+            <label><span class="field-label">pH</span><input class="field-input" type="number" step="any" id="campoHidroPh"></label>
+            <label><span class="field-label">Condutividade</span><input class="field-input" type="number" step="any" id="campoHidroCond"></label>
+            <label><span class="field-label">Instrumento</span><input class="field-input" id="campoHidroInstrumento"></label>
+            <label class="field-full"><span class="field-label">Observação hidrogeológica</span><textarea class="field-textarea" id="campoHidro"></textarea></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-box advanced">
+          <legend>9 · Mineralização</legend>
+          <div class="field-grid three">
+            <label><span class="field-label">Evidência observada</span><select class="field-select" id="campoMineralizacaoPresenca"><option value="nao_avaliada">Não avaliada</option><option>Não</option><option>Indício possível</option><option>Sim</option></select></label>
+            <label><span class="field-label">Estilo</span><select class="field-select" id="campoMineralizacaoTipo"><option value="">—</option><option>Disseminada</option><option>Veio</option><option>Stockwork</option><option>Maciça</option><option>Estratiforme</option><option>Nodular</option><option>Supergênica</option><option>Plácer</option><option>Outro</option></select></label>
+            <label><span class="field-label">Largura aproximada m</span><input class="field-input" type="number" step="any" id="campoMineralizacaoLargura"></label>
+            <label><span class="field-label">Continuidade observada</span><select class="field-select" id="campoMineralizacaoContinuidade"><option value="">—</option><option>Pontual</option><option>Descontínua</option><option>Contínua no afloramento</option><option>Não determinada</option></select></label>
+            <label><span class="field-label">Rocha hospedeira</span><input class="field-input" id="campoMineralizacaoHospedeira"></label>
+            <label><span class="field-label">Alteração associada</span><input class="field-input" id="campoMineralizacaoAlteracao"></label>
+            <label class="field-full"><span class="field-label">Descrição da mineralização ou indício</span><textarea class="field-textarea" id="campoMineralizacao"></textarea></label>
+          </div>
+          <div class="field-help">O formulário registra evidência observada ou indício. Não transforma uma observação de campo em ocorrência econômica ou jazida.</div>
+        </fieldset>
+
+        <fieldset class="field-box advanced">
+          <legend>10 · Geotecnia</legend>
+          <div class="field-grid three">
+            <label><span class="field-label">Avaliação realizada</span><select class="field-select" id="campoGeotecniaAvaliada"><option value="nao">Não</option><option>Sim</option></select></label>
+            <label><span class="field-label">Intemperismo</span><select class="field-select" id="campoGeotecniaIntemperismo"><option value="">—</option><option>Fresco</option><option>Leve</option><option>Moderado</option><option>Intenso</option></select></label>
+            <label><span class="field-label">Estabilidade</span><select class="field-select" id="campoGeotecniaEstabilidade"><option value="">—</option><option>Estável</option><option>Atenção</option><option>Instável</option><option>Não determinada</option></select></label>
+            <label class="field-full"><span class="field-label">Processos observados</span><div id="campoGeotecniaProcessos" class="ita-chip-picker"></div></label>
+            <label class="field-full"><span class="field-label">Observação geotécnica</span><textarea class="field-textarea" id="campoGeotecnia"></textarea></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-box essential">
+          <legend>11 · Amostras</legend>
+          <div class="ita-array-head"><span>Amostras vinculadas à estação</span><button class="action-btn primary" type="button" id="campoAddAmostra">Adicionar amostra</button></div>
+          <div id="campoAmostrasLista" class="ita-array-list"></div>
+          <div class="field-help">A01, A02 e seguintes são códigos locais da campanha. IGSN permanece opcional e só pode ser marcado como registrado quando existir um identificador persistente real.</div>
+        </fieldset>
+
+        <fieldset class="field-box essential">
+          <legend>12 · Fotografias e GeoFoto</legend>
+          <div class="ita-camera-stage" id="campoCameraStage">
+            <video id="campoCameraVideo" class="ita-camera-video" playsinline autoplay muted></video>
+            <div class="ita-camera-liveplate" id="campoCameraPlate"><strong>ITA ARANDU MS</strong><span>Ative GPS e câmera.</span></div>
+          </div>
+
+          <div class="ita-inline-actions">
+            <button class="action-btn primary" type="button" id="campoCameraStart">Ativar câmera</button>
+            <button class="action-btn primary" type="button" id="campoCameraCapture">Fotografar</button>
+            <button class="action-btn" type="button" id="campoCameraStop">Parar câmera</button>
+            <button class="action-btn" type="button" id="campoSensorStart">Ativar bússola</button>
+          </div>
+
+          <div class="field-grid three">
+            <label><span class="field-label">Rumo auxiliar</span><input class="field-input" id="campoHeading" readonly></label>
+            <label><span class="field-label">Inclinação do dispositivo</span><input class="field-input" id="campoPitch" readonly></label>
+            <label><span class="field-label">Rolagem</span><input class="field-input" id="campoRoll" readonly></label>
+          </div>
+
+          <div class="ita-photo-options">
+            <label><input type="checkbox" id="campoOverlay" checked> gerar cópia cartográfica com placa</label>
+            <label><input type="checkbox" id="campoAssociateGallery"> atribuir posição da estação a foto importada sem GPS EXIF</label>
+          </div>
+
+          <label><span class="field-label">Importar fotografias</span><input class="field-input" type="file" id="campoFotos" accept="image/*" multiple></label>
+          <div class="field-help">Original sem placa preservado. JPEG importado é verificado para GPS EXIF. Posição atribuída posteriormente fica explicitamente marcada como tal.</div>
+          <div id="campoFotoPreview" class="ita-photo-grid"></div>
+        </fieldset>
+
+        <fieldset class="field-box advanced">
+          <legend>13 · Croquis de campo</legend>
+          <div class="ita-sketch-tools">
+            <button type="button" class="action-btn" data-sketch-tool="pen">Traço</button>
+            <button type="button" class="action-btn" data-sketch-tool="arrow">Seta</button>
+            <button type="button" class="action-btn" data-sketch-tool="text">Texto</button>
+            <button type="button" class="action-btn" id="campoSketchUndo">Desfazer</button>
+            <button type="button" class="action-btn" id="campoSketchClear">Limpar</button>
+          </div>
+          <canvas id="campoSketch" width="1200" height="700"></canvas>
+          <div class="field-help">O croquis é salvo como anexo da estação. Serve para relações espaciais, contatos e notas gráficas. Não substitui uma seção levantada com escala.</div>
+        </fieldset>
+
+        <fieldset class="field-box essential">
+          <legend>14 · Qualidade, sensibilidade e revisão</legend>
+          <div class="field-grid three">
+            <label><span class="field-label">Confiança geral</span><select class="field-select" id="campoConfianca"><option>Preliminar</option><option>Boa</option><option>Alta</option></select></label>
+            <label><span class="field-label">Sensibilidade</span><select class="field-select" id="campoSensibilidade"><option value="local">Local</option><option value="restrita">Restrita</option><option value="publicavel">Potencialmente publicável após revisão</option></select></label>
+            <label><span class="field-label">Motivo da restrição</span><select class="field-select" id="campoSensibilidadeMotivo"><option value="">—</option><option>Propriedade privada</option><option>Povo indígena</option><option>Sítio arqueológico</option><option>Espécie protegida</option><option>Recurso mineral sensível</option><option>Segurança</option><option>Outro</option></select></label>
+            <label><span class="field-label">Revisor</span><input class="field-input" id="campoRevisor"></label>
+            <label class="field-full"><span class="field-label">Comentário de revisão</span><textarea class="field-textarea" id="campoRevisaoComentario"></textarea></label>
+          </div>
+          <div class="field-help">Exportação pública de uma estação restrita nunca usa automaticamente a coordenada exata.</div>
+        </fieldset>
+
+        <div class="ita-final-check" id="campoFinalCheck"></div>
+
+        <div class="field-actions">
+          <button class="action-btn primary" type="button" id="campoSalvar">Salvar estação</button>
+          <button class="action-btn" type="button" id="campoNovo">Nova estação</button>
+          <button class="action-btn" type="button" id="campoExportar">JSON</button>
+          <button class="action-btn" type="button" id="campoExportarGeoJSON">GeoJSON</button>
+          <button class="action-btn" type="button" id="campoExportarKML">KML</button>
+          <button class="action-btn" type="button" id="campoExportarPacote">Pacote completo ZIP</button>
+          <a class="action-btn" href="./documentos/protocolo-campo-master.html" target="_blank" rel="noopener">Protocolo</a>
+        </div>
+
+        <div class="field-status" id="campoStatus" aria-live="polite">Nenhuma estação salva nesta sessão.</div>
+      </form>
+
+      <h3>Estações locais</h3>
+      <div class="ita-record-filters">
+        <input class="field-input" id="campoBuscaRegistros" placeholder="Buscar estação, local, litologia ou amostra">
+        <select class="field-select" id="campoFiltroEstado"><option value="">Todos os estados</option><option>rascunho</option><option>completa</option><option>revisada</option><option>validada</option><option>rejeitada</option></select>
+      </div>
+      <div id="campoRegistros"><div class="empty">Ainda não há estações locais.</div></div>
+    </div>
+  </div>
+</div>
