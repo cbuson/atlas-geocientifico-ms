@@ -1,0 +1,80 @@
+{
+  "audit": "V38.4.20 gate PIG runtime",
+  "status": "PASS",
+  "version": "V38.4.20-GATE-PIG-20260815",
+  "generated_at": "2026-08-15T14:14:11Z",
+  "diagnostic": {
+    "250": {
+      "cells": 1554,
+      "vcg_numeric_cells": 1554,
+      "vcg_complete_for_grid": true
+    },
+    "500": {
+      "cells": 793,
+      "vcg_numeric_cells": 793,
+      "vcg_complete_for_grid": true
+    },
+    "1000": {
+      "cells": 412,
+      "vcg_numeric_cells": 412,
+      "vcg_complete_for_grid": true
+    }
+  },
+  "geology_source": {
+    "features": 870,
+    "unique_units": 67,
+    "field_counts": {
+      "ID_UNIDADE_ESTRATIGRAFICA": 870,
+      "SIGLA": 870,
+      "NOME": 870
+    }
+  },
+  "sensitivity": {
+    "250": {
+      "status": "OBRIGATORIA_NA_V38.4.21",
+      "microgrids_km": [
+        1.25,
+        2.5,
+        5.0
+      ],
+      "normalization_percentiles": [
+        90,
+        95,
+        99
+      ]
+    },
+    "500": {
+      "status": "OBRIGATORIA_NA_V38.4.21",
+      "microgrids_km": [
+        1.25,
+        2.5,
+        5.0
+      ],
+      "normalization_percentiles": [
+        90,
+        95,
+        99
+      ]
+    },
+    "1000": {
+      "status": "OBRIGATORIA_NA_V38.4.21",
+      "microgrids_km": [
+        1.25,
+        2.5,
+        5.0
+      ],
+      "normalization_percentiles": [
+        90,
+        95,
+        99
+      ]
+    }
+  },
+  "source_sha256": {
+    "docs/camadas/arquivos/mapa_geologico_ms.geojson": "be794219c966ef7fd0f6e4ff3f701a81a23bff65e1c702bddcb5eec5ed5cc936",
+    "docs/indices/vcg_v38419_snapshot.json": "5b4af800c7aa31f6809ae87320d614ca4a094e30bd8d1893068692ade537bd65",
+    "docs/camadas/arquivos/malha_r5_250km2.geojson": "484df0f0bdccd2210da5dbef3d5d769867099bfdef062c2f751ceed4c29f9af0",
+    "docs/camadas/arquivos/malha_500km2.geojson": "b2c9f8f85ab74be1580279ec436ad841f225e8f077202ae2aeff5be5e64e566a",
+    "docs/camadas/arquivos/malha_1000km2.geojson": "3f3745d33287eac0ee1c10fb6c1784c7a269f070d93df4c66abc6f42a89d9482"
+  }
+}

@@ -1,4 +1,12 @@
 
+## V38.4.20 · Gate metodológico PIG · 2026-08-15
+
+- Congelada complexidade litoestratigráfica cartográfica independente a partir do mapa geológico SGB 1:1.000.000.
+- Congelada ordenação por fronts de dominância de Pareto entre VCG e C_geo, sem soma ponderada.
+- Empates preservados. PIG_100 será transformação ordinal de front apenas para simbologia.
+- Sensibilidade obrigatória de micromalha 1,25/2,5/5 km e normalização P90/P95/P99.
+- PIG ainda não materializado nesta versão.
+
 ## V38.4.14.1 · correção de renderização dos índices
 
 Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IGF e ICS foram retirados de `featureStyle` e movidos para `layerLegendHtml`. Nenhum snapshot, fórmula, valor, malha ou resultado da auditoria V38.4.14 foi recalculado. Cache PWA versionado para forçar a atualização do navegador.
@@ -399,4 +407,32 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Indisponibilidade do modulo MT nao cria uma oitava lacuna quando IGF possui valor numerico.
 - Definido plano de sensibilidade para o peso da lacuna documental antes da certificacao do VCG.
 - Nenhum indice cientifico ou malha e recalculado nesta etapa.
+
+## V38.4.19 · VCG · Vazios de Conhecimento Geocientífico
+
+- materializa VCG em 250, 500 e 1000 km² conforme gate V38.4.18
+- separa déficit medido de lacuna documental sem converter null em zero
+- publica lacunas dominantes e secundárias com empates preservados
+- mantém IDE e ICG como indicadores companheiros fora da fórmula
+- propaga a indisponibilidade MT sem criar uma oitava lacuna
+- executa sensibilidade obrigatória para lambda documental 1,00 · 0,75 · 0,50
+- mantém PIG bloqueado até gate próprio
+
+## V38.4.21 · PIG · Prioridade de Investigação Geocientífica
+
+- materializa PIG em 250, 500 e 1000 km² conforme gate V38.4.20
+- calcula C_geo independentemente a partir do mapa geológico estadual SGB 1:1.000.000
+- ordena VCG e C_geo por fronts de dominância de Pareto, sem soma ponderada
+- preserva empates e publica tamanho do front
+- publica PIG_100 somente como transformação ordinal para simbologia
+- executa sensibilidade de micromalha 1,25/2,5/5 km e P90/P95/P99
+- próxima etapa obrigatória é auditoria ZERO final da família de índices
+
+## V38.4.22 · 2026-08-15 · AUDITORIA ZERO FINAL DA FAMÍLIA DE ÍNDICES
+
+- Auditoria conjunta IMC, IOD, ICP, IGC, IGQ, IGF, ICS, IDE, ICG, VCG e PIG.
+- Nenhum índice científico é recalculado.
+- Corrige a sintaxe do precache PWA herdada entre changelog e IDE e sincroniza o versionamento técnico para V38.4.22.
+- A robustez do PIG em 250 km² permanece registrada como ressalva quando o cenário microgrid 5 km P95 altera mais de 25% das classes.
+- Front de Pareto permanece a saída científica primária do PIG.
 

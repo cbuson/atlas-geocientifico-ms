@@ -5657,12 +5657,14 @@
       "id": "pig_250",
       "name": "PIG · Prioridade de Investigação Geocientífica · 250 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
+        "REF-002",
+        "REF-004",
+        "REF-082",
         "REF-105",
-        "REF-114",
         "REF-115",
         "REF-116"
       ],
@@ -5709,12 +5711,14 @@
       "id": "pig_500",
       "name": "PIG · Prioridade de Investigação Geocientífica · 500 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
+        "REF-002",
+        "REF-004",
+        "REF-082",
         "REF-105",
-        "REF-114",
         "REF-115",
         "REF-116"
       ],
@@ -5761,12 +5765,14 @@
       "id": "pig_1000",
       "name": "PIG · Prioridade de Investigação Geocientífica · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
+        "REF-002",
+        "REF-004",
+        "REF-082",
         "REF-105",
-        "REF-114",
         "REF-115",
         "REF-116"
       ],
@@ -5981,7 +5987,7 @@
       "id": "vazios_1000",
       "name": "VCG · Vazios de Conhecimento Geocientífico · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS",
       "reference_ids": [
@@ -6023,7 +6029,7 @@
       "id": "vazios_250",
       "name": "VCG · Vazios de Conhecimento Geocientífico · 250 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS",
       "reference_ids": [
@@ -6065,7 +6071,7 @@
       "id": "vazios_500",
       "name": "VCG · Vazios de Conhecimento Geocientífico · 500 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS",
       "reference_ids": [

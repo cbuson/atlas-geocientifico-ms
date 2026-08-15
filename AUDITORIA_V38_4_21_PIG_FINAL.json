@@ -1,0 +1,529 @@
+{
+  "audit": "V38.4.21 PIG auditoria final",
+  "version": "V38.4.21-PIG-PRIORIDADE-INVESTIGACAO-GEOCIENTIFICA-20260815",
+  "generated_at": "2026-08-15T14:34:19.285203+00:00",
+  "status": "PASS",
+  "checks_total": 103,
+  "checks_passed": 103,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "snapshot_version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "gate_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "policy_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_front",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "not_cardinal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "not_favorability",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hash_docs/indices/imc_v32_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/imc_v32_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/iod_v3848_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/iod_v3848_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/icp_v3849_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/icp_v3849_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/igc_v38410_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igc_v38410_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/igq_v38411_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igq_v38411_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/igf_v38412_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igf_v38412_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/ics_v38413_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/ics_v38413_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/ide_v38415_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/ide_v38415_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/icg_v38417_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/icg_v38417_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/vcg_v38419_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/vcg_v38419_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/politica-pig-v38420.json",
+      "pass": true,
+      "detail": "docs/indices/politica-pig-v38420.json"
+    },
+    {
+      "name": "hash_docs/camadas/arquivos/mapa_geologico_ms.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/mapa_geologico_ms.geojson"
+    },
+    {
+      "name": "hash_docs/camadas/arquivos/malha_r5_250km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_r5_250km2.geojson"
+    },
+    {
+      "name": "hash_docs/camadas/arquivos/malha_500km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_500km2.geojson"
+    },
+    {
+      "name": "hash_docs/camadas/arquivos/malha_1000km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_1000km2.geojson"
+    },
+    {
+      "name": "hash_AUDITORIA_V38_4_19_VCG_FINAL.json",
+      "pass": true,
+      "detail": "AUDITORIA_V38_4_19_VCG_FINAL.json"
+    },
+    {
+      "name": "hash_AUDITORIA_V38_4_20_GATE_PIG_FINAL.json",
+      "pass": true,
+      "detail": "AUDITORIA_V38_4_20_GATE_PIG_FINAL.json"
+    },
+    {
+      "name": "250_alignment",
+      "pass": true,
+      "detail": "1554/1554"
+    },
+    {
+      "name": "250_schema",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_rows_valid",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_summary_eligible",
+      "pass": true,
+      "detail": "1497/1497"
+    },
+    {
+      "name": "250_front_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "250_front1_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "250_ties",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "250_dominance_order",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_front_predecessor",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_sens_baseline_2_5_P95",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "250_sens_microgrid_1_25_P95",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "250_sens_microgrid_5_P95",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "250_sens_normalizacao_P90",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "250_sens_normalizacao_P99",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "250_rho_microgrid_1_25_P95",
+      "pass": true,
+      "detail": "0.985382"
+    },
+    {
+      "name": "250_jaccard_microgrid_1_25_P95",
+      "pass": true,
+      "detail": "0.6"
+    },
+    {
+      "name": "250_rho_microgrid_5_P95",
+      "pass": true,
+      "detail": "0.927515"
+    },
+    {
+      "name": "250_jaccard_microgrid_5_P95",
+      "pass": true,
+      "detail": "0.142857"
+    },
+    {
+      "name": "250_rho_normalizacao_P90",
+      "pass": true,
+      "detail": "0.999923"
+    },
+    {
+      "name": "250_jaccard_normalizacao_P90",
+      "pass": true,
+      "detail": "0.4"
+    },
+    {
+      "name": "250_rho_normalizacao_P99",
+      "pass": true,
+      "detail": "0.999983"
+    },
+    {
+      "name": "250_jaccard_normalizacao_P99",
+      "pass": true,
+      "detail": "0.5"
+    },
+    {
+      "name": "500_alignment",
+      "pass": true,
+      "detail": "793/793"
+    },
+    {
+      "name": "500_schema",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_rows_valid",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_summary_eligible",
+      "pass": true,
+      "detail": "768/768"
+    },
+    {
+      "name": "500_front_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "500_front1_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "500_ties",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "500_dominance_order",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_front_predecessor",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_sens_baseline_2_5_P95",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "500_sens_microgrid_1_25_P95",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "500_sens_microgrid_5_P95",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "500_sens_normalizacao_P90",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "500_sens_normalizacao_P99",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "500_rho_microgrid_1_25_P95",
+      "pass": true,
+      "detail": "0.989325"
+    },
+    {
+      "name": "500_jaccard_microgrid_1_25_P95",
+      "pass": true,
+      "detail": "0.8"
+    },
+    {
+      "name": "500_rho_microgrid_5_P95",
+      "pass": true,
+      "detail": "0.964706"
+    },
+    {
+      "name": "500_jaccard_microgrid_5_P95",
+      "pass": true,
+      "detail": "0.1"
+    },
+    {
+      "name": "500_rho_normalizacao_P90",
+      "pass": true,
+      "detail": "0.99991"
+    },
+    {
+      "name": "500_jaccard_normalizacao_P90",
+      "pass": true,
+      "detail": "0.8"
+    },
+    {
+      "name": "500_rho_normalizacao_P99",
+      "pass": true,
+      "detail": "0.999942"
+    },
+    {
+      "name": "500_jaccard_normalizacao_P99",
+      "pass": true,
+      "detail": "0.333333"
+    },
+    {
+      "name": "1000_alignment",
+      "pass": true,
+      "detail": "412/412"
+    },
+    {
+      "name": "1000_schema",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_rows_valid",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_summary_eligible",
+      "pass": true,
+      "detail": "401/401"
+    },
+    {
+      "name": "1000_front_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1000_front1_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1000_ties",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1000_dominance_order",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_front_predecessor",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_sens_baseline_2_5_P95",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1000_sens_microgrid_1_25_P95",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1000_sens_microgrid_5_P95",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1000_sens_normalizacao_P90",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1000_sens_normalizacao_P99",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1000_rho_microgrid_1_25_P95",
+      "pass": true,
+      "detail": "0.988688"
+    },
+    {
+      "name": "1000_jaccard_microgrid_1_25_P95",
+      "pass": true,
+      "detail": "0.5"
+    },
+    {
+      "name": "1000_rho_microgrid_5_P95",
+      "pass": true,
+      "detail": "0.976359"
+    },
+    {
+      "name": "1000_jaccard_microgrid_5_P95",
+      "pass": true,
+      "detail": "0.25"
+    },
+    {
+      "name": "1000_rho_normalizacao_P90",
+      "pass": true,
+      "detail": "0.999828"
+    },
+    {
+      "name": "1000_jaccard_normalizacao_P90",
+      "pass": true,
+      "detail": "1.0"
+    },
+    {
+      "name": "1000_rho_normalizacao_P99",
+      "pass": true,
+      "detail": "0.999936"
+    },
+    {
+      "name": "1000_jaccard_normalizacao_P99",
+      "pass": true,
+      "detail": "0.25"
+    },
+    {
+      "name": "app_colors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_builder",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_derive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_scale_group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "renderer_not_legend",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "legend",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog_pig_250",
+      "pass": true,
+      "detail": "{'id': 'pig_250', 'name': 'PIG · Prioridade de Investigação Geocientífica · 250 km²', 'group': 'Conhecimento geocientífico e análises', 'status': 'incorporada', 'kind': 'derived', 'count': 1554, 'style': {'color': '#4a4a4a', 'weight': 0.7, 'fillOpacity': 0.75, 'renderer': 'index_pig', 'fill': '#5b2385'}, 'source': 'ITA ARANDU MS · PIG V38.4.21 · VCG V38.4.19 + complexidade litoestratigráfica SGB 1:1.000.000', 'validation': 'V38.4.21 · gate V38.4.20 · Pareto sem soma ponderada · sensibilidade 1,25/2,5/5 km e P90/P95/P99 auditada', 'scope_level': 'MS', 'priority': 'alta', 'expected_geometry': 'Polygon', 'note': 'PIG ordena prioridade relativa de investigação por fronts de Pareto entre VCG e C_geo. PIG_100 é transformação ordinal apenas para simbologia. Não indica favorabilidade mineral, jazida, recurso, reserva ou valor econômico.', 'reference_ids': ['REF-002', 'REF-004', 'REF-082', 'REF-105', 'REF-115', 'REF-116'], 'derive_type': 'pig_snapshot_v38421', 'grid_source_id': 'malha_r5_250km2', 'pig_scale': '250'}"
+    },
+    {
+      "name": "catalog_pig_500",
+      "pass": true,
+      "detail": "{'id': 'pig_500', 'name': 'PIG · Prioridade de Investigação Geocientífica · 500 km²', 'group': 'Conhecimento geocientífico e análises', 'status': 'incorporada', 'kind': 'derived', 'count': 793, 'style': {'color': '#4a4a4a', 'weight': 0.7, 'fillOpacity': 0.75, 'renderer': 'index_pig', 'fill': '#5b2385'}, 'source': 'ITA ARANDU MS · PIG V38.4.21 · VCG V38.4.19 + complexidade litoestratigráfica SGB 1:1.000.000', 'validation': 'V38.4.21 · gate V38.4.20 · Pareto sem soma ponderada · sensibilidade 1,25/2,5/5 km e P90/P95/P99 auditada', 'scope_level': 'MS', 'priority': 'alta', 'expected_geometry': 'Polygon', 'note': 'PIG ordena prioridade relativa de investigação por fronts de Pareto entre VCG e C_geo. PIG_100 é transformação ordinal apenas para simbologia. Não indica favorabilidade mineral, jazida, recurso, reserva ou valor econômico.', 'reference_ids': ['REF-002', 'REF-004', 'REF-082', 'REF-105', 'REF-115', 'REF-116'], 'derive_type': 'pig_snapshot_v38421', 'grid_source_id': 'malha_500km2', 'pig_scale': '500'}"
+    },
+    {
+      "name": "catalog_pig_1000",
+      "pass": true,
+      "detail": "{'id': 'pig_1000', 'name': 'PIG · Prioridade de Investigação Geocientífica · 1000 km²', 'group': 'Conhecimento geocientífico e análises', 'status': 'incorporada', 'kind': 'derived', 'count': 412, 'style': {'color': '#4a4a4a', 'weight': 0.7, 'fillOpacity': 0.75, 'renderer': 'index_pig', 'fill': '#5b2385'}, 'source': 'ITA ARANDU MS · PIG V38.4.21 · VCG V38.4.19 + complexidade litoestratigráfica SGB 1:1.000.000', 'validation': 'V38.4.21 · gate V38.4.20 · Pareto sem soma ponderada · sensibilidade 1,25/2,5/5 km e P90/P95/P99 auditada', 'scope_level': 'MS', 'priority': 'alta', 'expected_geometry': 'Polygon', 'note': 'PIG ordena prioridade relativa de investigação por fronts de Pareto entre VCG e C_geo. PIG_100 é transformação ordinal apenas para simbologia. Não indica favorabilidade mineral, jazida, recurso, reserva ou valor econômico.', 'reference_ids': ['REF-002', 'REF-004', 'REF-082', 'REF-105', 'REF-115', 'REF-116'], 'derive_type': 'pig_snapshot_v38421', 'grid_source_id': 'malha_1000km2', 'pig_scale': '1000'}"
+    },
+    {
+      "name": "index_script",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "cache",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "methodology",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "robustness_warnings": [
+    "250 microgrid_5_P95: mudanca de classe > 25%"
+  ],
+  "next_step": "AUDITORIA ZERO final da familia de indices antes do fechamento cientifico do bloco"
+}

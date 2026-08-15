@@ -1,0 +1,1152 @@
+{
+  "audit": "V38.4.22 · AUDITORIA ZERO FINAL · família de índices",
+  "version": "V38.4.22-AUDITORIA-ZERO-FINAL-INDICES-20260815",
+  "generated_at": "2026-08-15T14:54:16Z",
+  "status": "PASS_COM_RESSALVAS",
+  "checks_total": 181,
+  "checks_passed": 181,
+  "checks_failed": 0,
+  "warnings": [
+    {
+      "code": "PIG_SENSIBILIDADE",
+      "message": "250 microgrid_5_P95: mudanca de classe > 25%"
+    },
+    {
+      "code": "IGF_MT_CORTE",
+      "message": "IGF foi materializado com fonte parcial; MT permanece NAO_AVALIAVEL_NO_CORTE e nao recebe zero nem imputacao."
+    }
+  ],
+  "metrics": {
+    "250": {
+      "cells": 1554,
+      "pig_eligible": 1497,
+      "pareto_fronts": 390,
+      "front1": 5,
+      "icg_numeric": 1291,
+      "vcg_numeric": 1554
+    },
+    "500": {
+      "cells": 793,
+      "pig_eligible": 768,
+      "pareto_fronts": 181,
+      "front1": 5,
+      "icg_numeric": 667,
+      "vcg_numeric": 793
+    },
+    "1000": {
+      "cells": 412,
+      "pig_eligible": 401,
+      "pareto_fronts": 82,
+      "front1": 3,
+      "icg_numeric": 358,
+      "vcg_numeric": 412
+    }
+  },
+  "checks": [
+    {
+      "name": "version_final",
+      "pass": true,
+      "detail": "V38.4.22-AUDITORIA-ZERO-FINAL-INDICES-20260815",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_imc_v32_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/imc_v32_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_iod_v3848_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/iod_v3848_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_icp_v3849_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/icp_v3849_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_igc_v38410_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igc_v38410_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_igq_v38411_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igq_v38411_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_igf_v38412_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igf_v38412_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_ics_v38413_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/ics_v38413_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_ide_v38415_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/ide_v38415_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_icg_v38417_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/icg_v38417_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_vcg_v38419_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/vcg_v38419_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_pig_v38421_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/pig_v38421_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_politica-sintese-v384142.json",
+      "pass": true,
+      "detail": "docs/indices/politica-sintese-v384142.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_politica-icg-v38416.json",
+      "pass": true,
+      "detail": "docs/indices/politica-icg-v38416.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_politica-vcg-v38418.json",
+      "pass": true,
+      "detail": "docs/indices/politica-vcg-v38418.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_indices_politica-pig-v38420.json",
+      "pass": true,
+      "detail": "docs/indices/politica-pig-v38420.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_camadas_arquivos_malha_r5_250km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_r5_250km2.geojson",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_camadas_arquivos_malha_500km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_500km2.geojson",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_camadas_arquivos_malha_1000km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_1000km2.geojson",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_docs_camadas_arquivos_mapa_geologico_ms.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/mapa_geologico_ms.geojson",
+      "severity": "FAIL"
+    },
+    {
+      "name": "sha_AUDITORIA_V38_4_21_PIG_FINAL.json",
+      "pass": true,
+      "detail": "AUDITORIA_V38_4_21_PIG_FINAL.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_imc_v32_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/imc_v32_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_iod_v3848_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/iod_v3848_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_icp_v3849_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/icp_v3849_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_igc_v38410_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igc_v38410_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_igq_v38411_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igq_v38411_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_igf_v38412_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igf_v38412_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_ics_v38413_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/ics_v38413_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_ide_v38415_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/ide_v38415_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_icg_v38417_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/icg_v38417_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_vcg_v38419_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/vcg_v38419_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_pig_v38421_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/pig_v38421_snapshot.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_politica-sintese-v384142.json",
+      "pass": true,
+      "detail": "docs/indices/politica-sintese-v384142.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_politica-icg-v38416.json",
+      "pass": true,
+      "detail": "docs/indices/politica-icg-v38416.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_politica-vcg-v38418.json",
+      "pass": true,
+      "detail": "docs/indices/politica-vcg-v38418.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_indices_politica-pig-v38420.json",
+      "pass": true,
+      "detail": "docs/indices/politica-pig-v38420.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_camadas_arquivos_malha_r5_250km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_r5_250km2.geojson",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_camadas_arquivos_malha_500km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_500km2.geojson",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_camadas_arquivos_malha_1000km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_1000km2.geojson",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_assets_js_app.js",
+      "pass": true,
+      "detail": "docs/assets/js/app.js",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_assets_js_bootstrap.js",
+      "pass": true,
+      "detail": "docs/assets/js/bootstrap.js",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_service-worker.js",
+      "pass": true,
+      "detail": "docs/service-worker.js",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_index.html",
+      "pass": true,
+      "detail": "docs/index.html",
+      "severity": "FAIL"
+    },
+    {
+      "name": "exists_docs_referencias_bibliografia-camadas-indices.json",
+      "pass": true,
+      "detail": "docs/referencias/bibliografia-camadas-indices.json",
+      "severity": "FAIL"
+    },
+    {
+      "name": "index_title_v38422",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "index_cache_tokens_v38422",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bootstrap_cache_tokens_v38422",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "service_worker_cache_v38422",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "service_worker_missing_comma_fixed",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "service_worker_final_report_precache",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "grid_250_count",
+      "pass": true,
+      "detail": "1554/1554",
+      "severity": "FAIL"
+    },
+    {
+      "name": "grid_250_unique",
+      "pass": true,
+      "detail": "1554 unique",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IMC_250_alignment",
+      "pass": true,
+      "detail": "1554/1554",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IMC_250_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IOD_250_alignment",
+      "pass": true,
+      "detail": "1554/1554",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IOD_250_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICP_250_alignment",
+      "pass": true,
+      "detail": "1554/1554",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICP_250_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGC_250_alignment",
+      "pass": true,
+      "detail": "1554/1554",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGC_250_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGQ_250_alignment",
+      "pass": true,
+      "detail": "1554/1554",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGQ_250_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGF_250_alignment",
+      "pass": true,
+      "detail": "1554/1554",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGF_250_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICS_250_alignment",
+      "pass": true,
+      "detail": "1554/1554",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICS_250_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IDE_250_alignment",
+      "pass": true,
+      "detail": "1554/1554",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IDE_250_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICG_250_alignment",
+      "pass": true,
+      "detail": "1554/1554",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICG_250_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "VCG_250_alignment",
+      "pass": true,
+      "detail": "1554/1554",
+      "severity": "FAIL"
+    },
+    {
+      "name": "VCG_250_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_250_alignment",
+      "pass": true,
+      "detail": "1554/1554",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_250_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "grid_500_count",
+      "pass": true,
+      "detail": "793/793",
+      "severity": "FAIL"
+    },
+    {
+      "name": "grid_500_unique",
+      "pass": true,
+      "detail": "793 unique",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IMC_500_alignment",
+      "pass": true,
+      "detail": "793/793",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IMC_500_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IOD_500_alignment",
+      "pass": true,
+      "detail": "793/793",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IOD_500_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICP_500_alignment",
+      "pass": true,
+      "detail": "793/793",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICP_500_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGC_500_alignment",
+      "pass": true,
+      "detail": "793/793",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGC_500_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGQ_500_alignment",
+      "pass": true,
+      "detail": "793/793",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGQ_500_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGF_500_alignment",
+      "pass": true,
+      "detail": "793/793",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGF_500_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICS_500_alignment",
+      "pass": true,
+      "detail": "793/793",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICS_500_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IDE_500_alignment",
+      "pass": true,
+      "detail": "793/793",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IDE_500_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICG_500_alignment",
+      "pass": true,
+      "detail": "793/793",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICG_500_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "VCG_500_alignment",
+      "pass": true,
+      "detail": "793/793",
+      "severity": "FAIL"
+    },
+    {
+      "name": "VCG_500_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_500_alignment",
+      "pass": true,
+      "detail": "793/793",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_500_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "grid_1000_count",
+      "pass": true,
+      "detail": "412/412",
+      "severity": "FAIL"
+    },
+    {
+      "name": "grid_1000_unique",
+      "pass": true,
+      "detail": "412 unique",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IMC_1000_alignment",
+      "pass": true,
+      "detail": "412/412",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IMC_1000_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IOD_1000_alignment",
+      "pass": true,
+      "detail": "412/412",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IOD_1000_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICP_1000_alignment",
+      "pass": true,
+      "detail": "412/412",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICP_1000_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGC_1000_alignment",
+      "pass": true,
+      "detail": "412/412",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGC_1000_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGQ_1000_alignment",
+      "pass": true,
+      "detail": "412/412",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGQ_1000_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGF_1000_alignment",
+      "pass": true,
+      "detail": "412/412",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGF_1000_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICS_1000_alignment",
+      "pass": true,
+      "detail": "412/412",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICS_1000_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IDE_1000_alignment",
+      "pass": true,
+      "detail": "412/412",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IDE_1000_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICG_1000_alignment",
+      "pass": true,
+      "detail": "412/412",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICG_1000_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "VCG_1000_alignment",
+      "pass": true,
+      "detail": "412/412",
+      "severity": "FAIL"
+    },
+    {
+      "name": "VCG_1000_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_1000_alignment",
+      "pass": true,
+      "detail": "412/412",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_1000_range",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IDE_formula",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IDE_null_rule",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICG_formula",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICG_eligibility",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "VCG_not_100_minus_ICG",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_primary_front",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_not_cardinal",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_not_favorability",
+      "pass": true,
+      "detail": "",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IDE_250_recompute",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICG_250_recompute",
+      "pass": true,
+      "detail": "bad=0; eligible=1291",
+      "severity": "FAIL"
+    },
+    {
+      "name": "VCG_250_recompute",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IDE_500_recompute",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICG_500_recompute",
+      "pass": true,
+      "detail": "bad=0; eligible=667",
+      "severity": "FAIL"
+    },
+    {
+      "name": "VCG_500_recompute",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IDE_1000_recompute",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "ICG_1000_recompute",
+      "pass": true,
+      "detail": "bad=0; eligible=358",
+      "severity": "FAIL"
+    },
+    {
+      "name": "VCG_1000_recompute",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_250_pareto_recompute",
+      "pass": true,
+      "detail": "bad=0; fronts=390",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_250_ordinal_recompute",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_500_pareto_recompute",
+      "pass": true,
+      "detail": "bad=0; fronts=181",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_500_ordinal_recompute",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_1000_pareto_recompute",
+      "pass": true,
+      "detail": "bad=0; fronts=82",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_1000_ordinal_recompute",
+      "pass": true,
+      "detail": "bad=0",
+      "severity": "FAIL"
+    },
+    {
+      "name": "PIG_audit_103_103",
+      "pass": true,
+      "detail": "103/103",
+      "severity": "FAIL"
+    },
+    {
+      "name": "IGF_partial_documented",
+      "pass": true,
+      "detail": "source_completeness=parcial_por_indisponibilidade_remota; mt=NAO_AVALIAVEL_NO_CORTE",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bibliografia_IMC",
+      "pass": true,
+      "detail": "IMC",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bibliografia_IOD",
+      "pass": true,
+      "detail": "IOD",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bibliografia_ICP",
+      "pass": true,
+      "detail": "ICP",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bibliografia_IGC",
+      "pass": true,
+      "detail": "IGC",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bibliografia_IGQ",
+      "pass": true,
+      "detail": "IGQ",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bibliografia_IGF",
+      "pass": true,
+      "detail": "IGF",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bibliografia_ICS",
+      "pass": true,
+      "detail": "ICS",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bibliografia_IDE",
+      "pass": true,
+      "detail": "IDE",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bibliografia_ICG",
+      "pass": true,
+      "detail": "ICG",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bibliografia_VCG",
+      "pass": true,
+      "detail": "VCG",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bibliografia_PIG",
+      "pass": true,
+      "detail": "PIG",
+      "severity": "FAIL"
+    },
+    {
+      "name": "bibliografia_APA7",
+      "pass": true,
+      "detail": "APA 7",
+      "severity": "FAIL"
+    },
+    {
+      "name": "renderer_IMC",
+      "pass": true,
+      "detail": "IMC",
+      "severity": "FAIL"
+    },
+    {
+      "name": "catalog_layers_IMC",
+      "pass": true,
+      "detail": "IMC",
+      "severity": "FAIL"
+    },
+    {
+      "name": "renderer_IOD",
+      "pass": true,
+      "detail": "IOD",
+      "severity": "FAIL"
+    },
+    {
+      "name": "catalog_layers_IOD",
+      "pass": true,
+      "detail": "IOD",
+      "severity": "FAIL"
+    },
+    {
+      "name": "renderer_ICP",
+      "pass": true,
+      "detail": "ICP",
+      "severity": "FAIL"
+    },
+    {
+      "name": "catalog_layers_ICP",
+      "pass": true,
+      "detail": "ICP",
+      "severity": "FAIL"
+    },
+    {
+      "name": "renderer_IGC",
+      "pass": true,
+      "detail": "IGC",
+      "severity": "FAIL"
+    },
+    {
+      "name": "catalog_layers_IGC",
+      "pass": true,
+      "detail": "IGC",
+      "severity": "FAIL"
+    },
+    {
+      "name": "renderer_IGQ",
+      "pass": true,
+      "detail": "IGQ",
+      "severity": "FAIL"
+    },
+    {
+      "name": "catalog_layers_IGQ",
+      "pass": true,
+      "detail": "IGQ",
+      "severity": "FAIL"
+    },
+    {
+      "name": "renderer_IGF",
+      "pass": true,
+      "detail": "IGF",
+      "severity": "FAIL"
+    },
+    {
+      "name": "catalog_layers_IGF",
+      "pass": true,
+      "detail": "IGF",
+      "severity": "FAIL"
+    },
+    {
+      "name": "renderer_ICS",
+      "pass": true,
+      "detail": "ICS",
+      "severity": "FAIL"
+    },
+    {
+      "name": "catalog_layers_ICS",
+      "pass": true,
+      "detail": "ICS",
+      "severity": "FAIL"
+    },
+    {
+      "name": "renderer_IDE",
+      "pass": true,
+      "detail": "IDE",
+      "severity": "FAIL"
+    },
+    {
+      "name": "catalog_layers_IDE",
+      "pass": true,
+      "detail": "IDE",
+      "severity": "FAIL"
+    },
+    {
+      "name": "renderer_ICG",
+      "pass": true,
+      "detail": "ICG",
+      "severity": "FAIL"
+    },
+    {
+      "name": "catalog_layers_ICG",
+      "pass": true,
+      "detail": "ICG",
+      "severity": "FAIL"
+    },
+    {
+      "name": "renderer_VCG",
+      "pass": true,
+      "detail": "VCG",
+      "severity": "FAIL"
+    },
+    {
+      "name": "catalog_layers_VCG",
+      "pass": true,
+      "detail": "VCG",
+      "severity": "FAIL"
+    },
+    {
+      "name": "renderer_PIG",
+      "pass": true,
+      "detail": "PIG",
+      "severity": "FAIL"
+    },
+    {
+      "name": "catalog_layers_PIG",
+      "pass": true,
+      "detail": "PIG",
+      "severity": "FAIL"
+    }
+  ],
+  "scientific_chain": [
+    "IMC",
+    "IOD",
+    "ICP",
+    "IGC",
+    "IGQ",
+    "IGF",
+    "ICS",
+    "IDE",
+    "ICG",
+    "VCG",
+    "PIG"
+  ],
+  "interpretation": {
+    "PIG": "pareto_front é a saída científica primária; PIG_100 é ordinal e não cardinal",
+    "VCG": "lacuna documental não equivale a ausência geológica",
+    "null": "null nunca é convertido automaticamente em zero",
+    "closure": "nenhum snapshot científico foi recalculado na V38.4.22"
+  }
+}

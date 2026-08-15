@@ -1,0 +1,423 @@
+{
+  "audit": "V38.4.19 · VCG · auditoria final",
+  "version": "V38.4.19-VCG-VAZIOS-CONHECIMENTO-GEOCIENTIFICO-20260815",
+  "generated_at": "2026-08-15T13:54:35.917152+00:00",
+  "status": "PASS",
+  "checks_total": 65,
+  "checks_passed": 65,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "snapshot_version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "gate_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "policy_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "null_semantics",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "not_icg_complement",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hash_docs/indices/imc_v32_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/imc_v32_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/iod_v3848_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/iod_v3848_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/icp_v3849_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/icp_v3849_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/igc_v38410_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igc_v38410_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/igq_v38411_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igq_v38411_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/igf_v38412_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igf_v38412_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/ics_v38413_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/ics_v38413_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/ide_v38415_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/ide_v38415_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/icg_v38417_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/icg_v38417_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/politica-vcg-v38418.json",
+      "pass": true,
+      "detail": "docs/indices/politica-vcg-v38418.json"
+    },
+    {
+      "name": "hash_AUDITORIA_V38_4_17_ICG_FINAL.json",
+      "pass": true,
+      "detail": "AUDITORIA_V38_4_17_ICG_FINAL.json"
+    },
+    {
+      "name": "hash_AUDITORIA_V38_4_15_IDE_FINAL.json",
+      "pass": true,
+      "detail": "AUDITORIA_V38_4_15_IDE_FINAL.json"
+    },
+    {
+      "name": "gridhash_docs/camadas/arquivos/malha_r5_250km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_r5_250km2.geojson"
+    },
+    {
+      "name": "gridhash_docs/camadas/arquivos/malha_500km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_500km2.geojson"
+    },
+    {
+      "name": "gridhash_docs/camadas/arquivos/malha_1000km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_1000km2.geojson"
+    },
+    {
+      "name": "250_alignment",
+      "pass": true,
+      "detail": "1554/1554"
+    },
+    {
+      "name": "250_schema",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_counts",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_decomposition",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_summary_cells",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "250_numeric_all",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "250_sens_075",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "250_sens_05",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "250_rho_lambda_0_75",
+      "pass": true,
+      "detail": 0.688892
+    },
+    {
+      "name": "250_rho_lambda_0_5",
+      "pass": true,
+      "detail": -0.058573
+    },
+    {
+      "name": "500_alignment",
+      "pass": true,
+      "detail": "793/793"
+    },
+    {
+      "name": "500_schema",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_counts",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_decomposition",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_summary_cells",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "500_numeric_all",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "500_sens_075",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "500_sens_05",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "500_rho_lambda_0_75",
+      "pass": true,
+      "detail": 0.650383
+    },
+    {
+      "name": "500_rho_lambda_0_5",
+      "pass": true,
+      "detail": -0.098068
+    },
+    {
+      "name": "1000_alignment",
+      "pass": true,
+      "detail": "412/412"
+    },
+    {
+      "name": "1000_schema",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_counts",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_decomposition",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_summary_cells",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1000_numeric_all",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1000_sens_075",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1000_sens_05",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1000_rho_lambda_0_75",
+      "pass": true,
+      "detail": 0.686135
+    },
+    {
+      "name": "1000_rho_lambda_0_5",
+      "pass": true,
+      "detail": -0.077178
+    },
+    {
+      "name": "app_color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_builder",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_derive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_scale_group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "renderer_not_legend",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "legend",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog_vazios_250",
+      "pass": true,
+      "detail": {
+        "id": "vazios_250",
+        "name": "VCG · Vazios de Conhecimento Geocientífico · 250 km²",
+        "group": "Conhecimento geocientífico e análises",
+        "status": "incorporada",
+        "kind": "derived",
+        "count": 1554,
+        "scope_level": "MS",
+        "expected_geometry": "Polygon",
+        "source": "ITA ARANDU MS · VCG V38.4.19 · sete dimensões base certificadas",
+        "source_url": "",
+        "validation": "V38.4.19 · gate V38.4.18 · decomposição entre déficit medido e lacuna documental · sensibilidade lambda auditada",
+        "priority": "alta",
+        "note": "VCG mede vazios do conhecimento geocientífico documentado. null permanece null nas fontes e gera componente documental separado. VCG não é 100 menos ICG. A ficha identifica lacunas dominantes, secundárias e confiança do componente medido.",
+        "reference_ids": [
+          "REF-105",
+          "REF-115",
+          "REF-114"
+        ],
+        "style": {
+          "color": "#4a4a4a",
+          "weight": 0.7,
+          "fillOpacity": 0.75,
+          "renderer": "index_vcg",
+          "fill": "#8e244d"
+        },
+        "derive_type": "vcg_snapshot_v38419",
+        "grid_source_id": "malha_r5_250km2",
+        "vcg_scale": "250"
+      }
+    },
+    {
+      "name": "catalog_vazios_500",
+      "pass": true,
+      "detail": {
+        "id": "vazios_500",
+        "name": "VCG · Vazios de Conhecimento Geocientífico · 500 km²",
+        "group": "Conhecimento geocientífico e análises",
+        "status": "incorporada",
+        "kind": "derived",
+        "count": 793,
+        "scope_level": "MS",
+        "expected_geometry": "Polygon",
+        "source": "ITA ARANDU MS · VCG V38.4.19 · sete dimensões base certificadas",
+        "source_url": "",
+        "validation": "V38.4.19 · gate V38.4.18 · decomposição entre déficit medido e lacuna documental · sensibilidade lambda auditada",
+        "priority": "alta",
+        "note": "VCG mede vazios do conhecimento geocientífico documentado. null permanece null nas fontes e gera componente documental separado. VCG não é 100 menos ICG. A ficha identifica lacunas dominantes, secundárias e confiança do componente medido.",
+        "reference_ids": [
+          "REF-105",
+          "REF-115",
+          "REF-114"
+        ],
+        "style": {
+          "color": "#4a4a4a",
+          "weight": 0.7,
+          "fillOpacity": 0.75,
+          "renderer": "index_vcg",
+          "fill": "#8e244d"
+        },
+        "derive_type": "vcg_snapshot_v38419",
+        "grid_source_id": "malha_500km2",
+        "vcg_scale": "500"
+      }
+    },
+    {
+      "name": "catalog_vazios_1000",
+      "pass": true,
+      "detail": {
+        "id": "vazios_1000",
+        "name": "VCG · Vazios de Conhecimento Geocientífico · 1000 km²",
+        "group": "Conhecimento geocientífico e análises",
+        "status": "incorporada",
+        "kind": "derived",
+        "count": 412,
+        "scope_level": "MS",
+        "expected_geometry": "Polygon",
+        "source": "ITA ARANDU MS · VCG V38.4.19 · sete dimensões base certificadas",
+        "source_url": "",
+        "validation": "V38.4.19 · gate V38.4.18 · decomposição entre déficit medido e lacuna documental · sensibilidade lambda auditada",
+        "priority": "alta",
+        "note": "VCG mede vazios do conhecimento geocientífico documentado. null permanece null nas fontes e gera componente documental separado. VCG não é 100 menos ICG. A ficha identifica lacunas dominantes, secundárias e confiança do componente medido.",
+        "reference_ids": [
+          "REF-105",
+          "REF-115",
+          "REF-114"
+        ],
+        "style": {
+          "color": "#4a4a4a",
+          "weight": 0.7,
+          "fillOpacity": 0.75,
+          "renderer": "index_vcg",
+          "fill": "#8e244d"
+        },
+        "derive_type": "vcg_snapshot_v38419",
+        "grid_source_id": "malha_1000km2",
+        "vcg_scale": "1000"
+      }
+    },
+    {
+      "name": "index_script",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "cache",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "methodology",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "PIG_still_not_materialized",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "next_gate": "PIG permanece bloqueado até definição própria de complexidade geológica e dominância de Pareto"
+}

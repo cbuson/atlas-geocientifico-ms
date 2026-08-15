@@ -1,0 +1,398 @@
+{
+  "audit": "V38.4.21 PIG runtime",
+  "version": "V38.4.21-PIG-PRIORIDADE-INVESTIGACAO-GEOCIENTIFICA-20260815",
+  "generated_at": "2026-08-15T14:34:15Z",
+  "status": "PASS",
+  "summary": {
+    "250": {
+      "cells": 1554,
+      "eligible_cells": 1497,
+      "cells_without_pig": 57,
+      "eligible_fraction": 0.96332,
+      "pareto_fronts": 390,
+      "front_1_cells": 5,
+      "front_1_fraction": 0.00334,
+      "pig_100": {
+        "n": 1497,
+        "min": 0.0,
+        "p05": 19.2288,
+        "median": 77.635,
+        "mean": 70.4269,
+        "p95": 97.9949,
+        "max": 100.0
+      },
+      "cgeo": {
+        "n": 1497,
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 17.6963,
+        "mean": 23.9655,
+        "p95": 81.742,
+        "max": 100.0
+      },
+      "vcg_eligible": {
+        "n": 1497,
+        "min": 54.7131,
+        "p05": 75.8413,
+        "median": 91.7745,
+        "mean": 90.4189,
+        "p95": 98.6335,
+        "max": 98.6335
+      },
+      "cgeo_zero_cells": 591,
+      "classes": {
+        "muito baixa": 78,
+        "baixa": 79,
+        "média": 326,
+        "alta": 328,
+        "muito alta": 686
+      },
+      "normalization": {
+        "D_excess_P": 2.738201887814614,
+        "T_transicao_P": 0.45964487489911215,
+        "percentile": 95
+      },
+      "unit_neff_median": 1.3841,
+      "transition_fraction_median": 0.089552
+    },
+    "500": {
+      "cells": 793,
+      "eligible_cells": 768,
+      "cells_without_pig": 25,
+      "eligible_fraction": 0.968474,
+      "pareto_fronts": 181,
+      "front_1_cells": 5,
+      "front_1_fraction": 0.00651,
+      "pig_100": {
+        "n": 768,
+        "min": 0.0,
+        "p05": 21.3056,
+        "median": 78.3333,
+        "mean": 72.8118,
+        "p95": 97.2222,
+        "max": 100.0
+      },
+      "cgeo": {
+        "n": 768,
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 21.4707,
+        "mean": 25.6776,
+        "p95": 82.2469,
+        "max": 100.0
+      },
+      "vcg_eligible": {
+        "n": 768,
+        "min": 56.3089,
+        "p05": 71.7901,
+        "median": 91.1043,
+        "mean": 89.6571,
+        "p95": 98.6335,
+        "max": 98.6335
+      },
+      "cgeo_zero_cells": 241,
+      "classes": {
+        "muito baixa": 37,
+        "baixa": 35,
+        "média": 56,
+        "alta": 274,
+        "muito alta": 366
+      },
+      "normalization": {
+        "D_excess_P": 3.2148904597057775,
+        "T_transicao_P": 0.4174128658238458,
+        "percentile": 95
+      },
+      "unit_neff_median": 1.552,
+      "transition_fraction_median": 0.10239
+    },
+    "1000": {
+      "cells": 412,
+      "eligible_cells": 401,
+      "cells_without_pig": 11,
+      "eligible_fraction": 0.973301,
+      "pareto_fronts": 82,
+      "front_1_cells": 3,
+      "front_1_fraction": 0.007481,
+      "pig_100": {
+        "n": 401,
+        "min": 0.0,
+        "p05": 24.6914,
+        "median": 77.7778,
+        "mean": 74.5821,
+        "p95": 96.2963,
+        "max": 100.0
+      },
+      "cgeo": {
+        "n": 401,
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 21.3681,
+        "mean": 27.0056,
+        "p95": 82.6426,
+        "max": 100.0
+      },
+      "vcg_eligible": {
+        "n": 401,
+        "min": 54.4428,
+        "p05": 70.6484,
+        "median": 90.3467,
+        "mean": 88.9531,
+        "p95": 98.6335,
+        "max": 98.6335
+      },
+      "cgeo_zero_cells": 89,
+      "classes": {
+        "muito baixa": 17,
+        "baixa": 16,
+        "média": 17,
+        "alta": 163,
+        "muito alta": 188
+      },
+      "normalization": {
+        "D_excess_P": 3.9547452839412376,
+        "T_transicao_P": 0.37281360424028265,
+        "percentile": 95
+      },
+      "unit_neff_median": 1.6753,
+      "transition_fraction_median": 0.097166
+    }
+  },
+  "sensitivity": {
+    "250": {
+      "baseline_2_5_P95": {
+        "eligible_cells": 1497,
+        "pareto_fronts": 390,
+        "front_1_cells": 5
+      },
+      "microgrid_1_25_P95": {
+        "common_cells": 1497,
+        "eligibility_changes": 25,
+        "spearman_cgeo": 0.985382,
+        "spearman_pig100": 0.98288,
+        "median_abs_diff_cgeo": 1.406,
+        "median_abs_diff_pig100": 1.9767,
+        "front_changes": 1455,
+        "front_change_fraction": 0.971944,
+        "class_changes": 146,
+        "class_change_fraction": 0.097528,
+        "front1_jaccard": 0.6,
+        "eligible_cells": 1522,
+        "pareto_fronts": 400,
+        "front_1_cells": 3
+      },
+      "microgrid_5_P95": {
+        "common_cells": 1440,
+        "eligibility_changes": 57,
+        "spearman_cgeo": 0.927515,
+        "spearman_pig100": 0.910447,
+        "median_abs_diff_cgeo": 2.6677,
+        "median_abs_diff_pig100": 5.9401,
+        "front_changes": 1416,
+        "front_change_fraction": 0.983333,
+        "class_changes": 518,
+        "class_change_fraction": 0.359722,
+        "front1_jaccard": 0.142857,
+        "eligible_cells": 1440,
+        "pareto_fronts": 365,
+        "front_1_cells": 3
+      },
+      "normalizacao_P90": {
+        "common_cells": 1497,
+        "eligibility_changes": 0,
+        "spearman_cgeo": 0.999923,
+        "spearman_pig100": 0.998255,
+        "median_abs_diff_cgeo": 4.1938,
+        "median_abs_diff_pig100": 0.0,
+        "front_changes": 185,
+        "front_change_fraction": 0.12358,
+        "class_changes": 0,
+        "class_change_fraction": 0.0,
+        "front1_jaccard": 0.4,
+        "eligible_cells": 1497,
+        "pareto_fronts": 390,
+        "front_1_cells": 2
+      },
+      "normalizacao_P99": {
+        "common_cells": 1497,
+        "eligibility_changes": 0,
+        "spearman_cgeo": 0.999983,
+        "spearman_pig100": 0.99885,
+        "median_abs_diff_cgeo": 5.3042,
+        "median_abs_diff_pig100": 0.4387,
+        "front_changes": 1218,
+        "front_change_fraction": 0.813627,
+        "class_changes": 21,
+        "class_change_fraction": 0.014028,
+        "front1_jaccard": 0.5,
+        "eligible_cells": 1497,
+        "pareto_fronts": 393,
+        "front_1_cells": 4
+      }
+    },
+    "500": {
+      "baseline_2_5_P95": {
+        "eligible_cells": 768,
+        "pareto_fronts": 181,
+        "front_1_cells": 5
+      },
+      "microgrid_1_25_P95": {
+        "common_cells": 768,
+        "eligibility_changes": 7,
+        "spearman_cgeo": 0.989325,
+        "spearman_pig100": 0.987634,
+        "median_abs_diff_cgeo": 1.2912,
+        "median_abs_diff_pig100": 2.0478,
+        "front_changes": 668,
+        "front_change_fraction": 0.869792,
+        "class_changes": 166,
+        "class_change_fraction": 0.216146,
+        "front1_jaccard": 0.8,
+        "eligible_cells": 775,
+        "pareto_fronts": 173,
+        "front_1_cells": 4
+      },
+      "microgrid_5_P95": {
+        "common_cells": 743,
+        "eligibility_changes": 25,
+        "spearman_cgeo": 0.964706,
+        "spearman_pig100": 0.950844,
+        "median_abs_diff_cgeo": 3.0356,
+        "median_abs_diff_pig100": 3.6842,
+        "front_changes": 710,
+        "front_change_fraction": 0.955585,
+        "class_changes": 108,
+        "class_change_fraction": 0.145357,
+        "front1_jaccard": 0.1,
+        "eligible_cells": 743,
+        "pareto_fronts": 191,
+        "front_1_cells": 6
+      },
+      "normalizacao_P90": {
+        "common_cells": 768,
+        "eligibility_changes": 0,
+        "spearman_cgeo": 0.99991,
+        "spearman_pig100": 0.996175,
+        "median_abs_diff_cgeo": 5.0902,
+        "median_abs_diff_pig100": 0.0,
+        "front_changes": 116,
+        "front_change_fraction": 0.151042,
+        "class_changes": 0,
+        "class_change_fraction": 0.0,
+        "front1_jaccard": 0.8,
+        "eligible_cells": 768,
+        "pareto_fronts": 181,
+        "front_1_cells": 4
+      },
+      "normalizacao_P99": {
+        "common_cells": 768,
+        "eligibility_changes": 0,
+        "spearman_cgeo": 0.999942,
+        "spearman_pig100": 0.99891,
+        "median_abs_diff_cgeo": 7.2814,
+        "median_abs_diff_pig100": 0.0,
+        "front_changes": 61,
+        "front_change_fraction": 0.079427,
+        "class_changes": 0,
+        "class_change_fraction": 0.0,
+        "front1_jaccard": 0.333333,
+        "eligible_cells": 768,
+        "pareto_fronts": 181,
+        "front_1_cells": 7
+      }
+    },
+    "1000": {
+      "baseline_2_5_P95": {
+        "eligible_cells": 401,
+        "pareto_fronts": 82,
+        "front_1_cells": 3
+      },
+      "microgrid_1_25_P95": {
+        "common_cells": 401,
+        "eligibility_changes": 6,
+        "spearman_cgeo": 0.988688,
+        "spearman_pig100": 0.985187,
+        "median_abs_diff_cgeo": 1.0864,
+        "median_abs_diff_pig100": 2.2317,
+        "front_changes": 328,
+        "front_change_fraction": 0.817955,
+        "class_changes": 44,
+        "class_change_fraction": 0.109726,
+        "front1_jaccard": 0.5,
+        "eligible_cells": 407,
+        "pareto_fronts": 79,
+        "front_1_cells": 3
+      },
+      "microgrid_5_P95": {
+        "common_cells": 387,
+        "eligibility_changes": 14,
+        "spearman_cgeo": 0.976359,
+        "spearman_pig100": 0.959035,
+        "median_abs_diff_cgeo": 2.921,
+        "median_abs_diff_pig100": 3.8272,
+        "front_changes": 340,
+        "front_change_fraction": 0.878553,
+        "class_changes": 80,
+        "class_change_fraction": 0.206718,
+        "front1_jaccard": 0.25,
+        "eligible_cells": 387,
+        "pareto_fronts": 91,
+        "front_1_cells": 7
+      },
+      "normalizacao_P90": {
+        "common_cells": 401,
+        "eligibility_changes": 0,
+        "spearman_cgeo": 0.999828,
+        "spearman_pig100": 0.980182,
+        "median_abs_diff_cgeo": 6.0547,
+        "median_abs_diff_pig100": 0.0,
+        "front_changes": 175,
+        "front_change_fraction": 0.436409,
+        "class_changes": 14,
+        "class_change_fraction": 0.034913,
+        "front1_jaccard": 1.0,
+        "eligible_cells": 401,
+        "pareto_fronts": 82,
+        "front_1_cells": 3
+      },
+      "normalizacao_P99": {
+        "common_cells": 401,
+        "eligibility_changes": 0,
+        "spearman_cgeo": 0.999936,
+        "spearman_pig100": 0.998448,
+        "median_abs_diff_cgeo": 7.7298,
+        "median_abs_diff_pig100": 0.0,
+        "front_changes": 47,
+        "front_change_fraction": 0.117207,
+        "class_changes": 0,
+        "class_change_fraction": 0.0,
+        "front1_jaccard": 0.25,
+        "eligible_cells": 401,
+        "pareto_fronts": 82,
+        "front_1_cells": 7
+      }
+    }
+  },
+  "robustness_warnings": [
+    "250 microgrid_5_P95: mudanca de classe > 25%"
+  ],
+  "protected_input_sha256": {
+    "docs/indices/imc_v32_snapshot.json": "30c4f9765416d2ecc78284b5e35a09c6f22027b4146aea4397c9b193a3a940cc",
+    "docs/indices/iod_v3848_snapshot.json": "a83296691d1584d18de88b8c1ddd176b4932c6522ccd545fb14cc9d141bd0f97",
+    "docs/indices/icp_v3849_snapshot.json": "50a28c6113d2ef448d696b742e0685addae72ff60416b6c2426744af5ce25b38",
+    "docs/indices/igc_v38410_snapshot.json": "f6054398ae702bd8b44b34d07f80e6c241190a3ac91ae7039f9d4058fea9eb97",
+    "docs/indices/igq_v38411_snapshot.json": "d8400c420036692d3c1eaa15172ba6e3718aeb34f19021a34718c51fd408a2df",
+    "docs/indices/igf_v38412_snapshot.json": "f2b36cf8d3ea731d5e1bc091080c2c2e40fb7caf137881d0bf2e77617a7f79b6",
+    "docs/indices/ics_v38413_snapshot.json": "158064072120ddee3909567707aad1002abbb6fcab74bea75ec23bdbbd1731b3",
+    "docs/indices/ide_v38415_snapshot.json": "1a2023e81cc58562ace54402a7ddefda63aaba853363e66bfe2dd0c119b67fcb",
+    "docs/indices/icg_v38417_snapshot.json": "73d3c1615a568f0caa22888f6ac80fce0a42a941092fac914b5e458b7f9eaffd",
+    "docs/indices/vcg_v38419_snapshot.json": "5b4af800c7aa31f6809ae87320d614ca4a094e30bd8d1893068692ade537bd65",
+    "docs/indices/politica-pig-v38420.json": "35e746dcedd4d9c92edbd64287834c52723d9cbea17c5505377cb457cf860f61",
+    "docs/camadas/arquivos/mapa_geologico_ms.geojson": "be794219c966ef7fd0f6e4ff3f701a81a23bff65e1c702bddcb5eec5ed5cc936",
+    "docs/camadas/arquivos/malha_r5_250km2.geojson": "484df0f0bdccd2210da5dbef3d5d769867099bfdef062c2f751ceed4c29f9af0",
+    "docs/camadas/arquivos/malha_500km2.geojson": "b2c9f8f85ab74be1580279ec436ad841f225e8f077202ae2aeff5be5e64e566a",
+    "docs/camadas/arquivos/malha_1000km2.geojson": "3f3745d33287eac0ee1c10fb6c1784c7a269f070d93df4c66abc6f42a89d9482",
+    "AUDITORIA_V38_4_19_VCG_FINAL.json": "19cf2a1237d03c50f6292b0e2dc2ab0d46083aa71c8aaa0b194e23f812865a09",
+    "AUDITORIA_V38_4_20_GATE_PIG_FINAL.json": "f743af9b9ec769b2c1e3a9bc7addcaf39268b46a7bbc6de3dbcb182f0acf1f2b"
+  }
+}
