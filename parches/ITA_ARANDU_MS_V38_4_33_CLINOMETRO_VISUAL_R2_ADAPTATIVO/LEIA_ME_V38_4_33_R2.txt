@@ -1,0 +1,35 @@
+﻿ITA ARANDU MS
+
+V38.4.33 CLINÔMETRO VISUAL ARANDU · R2 ADAPTATIVO
+
+Correção da R1
+
+A R1 assumia números REF fixos.
+O repositório real já possui pelo menos um desses IDs ou uma estrutura bibliográfica diferente.
+A R2 não pressupõe nenhum número REF livre.
+
+Nova regra
+
+1. Procura cada referência pela DOI ou URL canônica.
+2. Se ela já existir, reutiliza a REF existente.
+3. Se não existir, cria uma nova REF acima do maior ID já utilizado.
+4. Nunca sobrescreve uma referência existente.
+5. Detecta IDs duplicados.
+6. Recalcula o total bibliográfico pelos IDs únicos reais.
+7. Cria a seção Instrumentos digitais de campo sem depender de REF-174.
+8. Gera clinometro-visual-referencias.json com os IDs reais utilizados.
+9. A auditoria verifica o conteúdo bibliográfico semanticamente e não apenas a existência de um número REF.
+
+Base exigida
+
+V38.4.32-CAMPO-UX-FECHO-20260815
+
+Executar
+
+Set-ExecutionPolicy -Scope Process Bypass
+
+.\APLICAR_V38_4_33_CLINOMETRO_VISUAL_R2.ps1
+
+Auditoria
+
+AUDITORIA_V38_4_33_CLINOMETRO_R2.json

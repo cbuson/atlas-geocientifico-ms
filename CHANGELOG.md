@@ -486,3 +486,26 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Usa uma nova base IndexedDB de Campo porque ainda não existem registros de produção a migrar.
 - Não altera camadas, snapshots, catálogo científico ou índices.
 
+## V38.4.32 · Fechamento UX do Campo · 2026-08-15
+
+- Sincroniza a versão pública com V38.4.32.
+- Atualiza Meu caderno de parcial para funcional.
+- Renomeia os modos para Estudante · Essencial e Especialista · Avançado.
+- Converte os 14 blocos do Campo em acordeões inteligentes no celular.
+- Mantém os blocos abertos em telas maiores.
+- Adiciona navegação Anterior, Próximo e seletor de seção.
+- Faz a completude indicar também o primeiro item essencial pendente.
+- Permite tocar no checklist móvel para saltar para um bloco pendente.
+- Não altera o esquema científico 2.0, IndexedDB, camadas, snapshots ou índices.
+
+## V38.4.33 · Clinômetro Visual ARANDU R2 · 2026-08-15
+
+- Integra contato assistido e estimativa visual assistida por câmera.
+- Preserva repetições, estatística, origem, referência angular e validação.
+- Inclui metodologia, fórmulas, limitações e bibliografia APA 7.
+- A bibliografia é integrada por DOI ou URL canônica, sem pressupor números REF livres.
+- Referências existentes são reutilizadas e referências novas recebem IDs acima do maior ID já utilizado.
+- O total bibliográfico é recalculado pelos IDs únicos realmente presentes.
+- Gera clinometro-visual-referencias.json com os IDs efetivamente vinculados.
+- Não altera Campo Master, camadas, snapshots ou índices.
+

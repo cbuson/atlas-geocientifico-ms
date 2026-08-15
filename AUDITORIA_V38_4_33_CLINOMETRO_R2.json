@@ -1,0 +1,233 @@
+{
+  "audit": "V38.4.33 Clinometro Visual ARANDU R2 adaptativo",
+  "status": "PASS",
+  "passed": 45,
+  "total": 45,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": "V38.4.33-CLINOMETRO-VISUAL-ARANDU-1.0-R2-20260815"
+    },
+    {
+      "name": "index_id=\"abrirClinometroArandu\"",
+      "pass": true,
+      "detail": "id=\"abrirClinometroArandu\""
+    },
+    {
+      "name": "index_id=\"clinometroAranduModal\"",
+      "pass": true,
+      "detail": "id=\"clinometroAranduModal\""
+    },
+    {
+      "name": "index_clinometro-visual-v38433.js?v=38.4.33r2",
+      "pass": true,
+      "detail": "clinometro-visual-v38433.js?v=38.4.33r2"
+    },
+    {
+      "name": "index_clinometro-visual-v38433.css?v=38.4.33r2",
+      "pass": true,
+      "detail": "clinometro-visual-v38433.css?v=38.4.33r2"
+    },
+    {
+      "name": "index_Metodologia + APA 7",
+      "pass": true,
+      "detail": "Metodologia + APA 7"
+    },
+    {
+      "name": "index_V38.4.33</title>",
+      "pass": true,
+      "detail": "V38.4.33</title>"
+    },
+    {
+      "name": "js_file",
+      "pass": true,
+      "detail": "C:\\Users\\cbuso\\Documents\\GitHub\\atlas-geocientifico-ms\\docs\\assets\\js\\clinometro-visual-v38433.js"
+    },
+    {
+      "name": "methodology_file",
+      "pass": true,
+      "detail": "C:\\Users\\cbuso\\Documents\\GitHub\\atlas-geocientifico-ms\\docs\\documentos\\metodologia-clinometro-visual-arandu.html"
+    },
+    {
+      "name": "bibliography_file",
+      "pass": true,
+      "detail": "C:\\Users\\cbuso\\Documents\\GitHub\\atlas-geocientifico-ms\\docs\\referencias\\index.html"
+    },
+    {
+      "name": "reference_sidecar",
+      "pass": true,
+      "detail": "C:\\Users\\cbuso\\Documents\\GitHub\\atlas-geocientifico-ms\\docs\\documentos\\clinometro-visual-referencias.json"
+    },
+    {
+      "name": "js_devicePlane",
+      "pass": true,
+      "detail": "devicePlane"
+    },
+    {
+      "name": "js_Rz",
+      "pass": true,
+      "detail": "Rz"
+    },
+    {
+      "name": "js_Rx",
+      "pass": true,
+      "detail": "Rx"
+    },
+    {
+      "name": "js_Ry",
+      "pass": true,
+      "detail": "Ry"
+    },
+    {
+      "name": "js_circMean",
+      "pass": true,
+      "detail": "circMean"
+    },
+    {
+      "name": "js_circSd",
+      "pass": true,
+      "detail": "circSd"
+    },
+    {
+      "name": "js_sensor_contato_dispositivo",
+      "pass": true,
+      "detail": "sensor_contato_dispositivo"
+    },
+    {
+      "name": "js_estimativa_visual_assistida",
+      "pass": true,
+      "detail": "estimativa_visual_assistida"
+    },
+    {
+      "name": "js_visual_camera_assisted_estimate",
+      "pass": true,
+      "detail": "visual_camera_assisted_estimate"
+    },
+    {
+      "name": "js_methodology_id",
+      "pass": true,
+      "detail": "methodology_id"
+    },
+    {
+      "name": "node_syntax",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "methodology_R = Rz(α) · Rx(β) · Ry(γ)",
+      "pass": true,
+      "detail": "R = Rz(α) · Rx(β) · Ry(γ)"
+    },
+    {
+      "name": "methodology_Referências · APA 7",
+      "pass": true,
+      "detail": "Referências · APA 7"
+    },
+    {
+      "name": "methodology_IDs no registro mestre",
+      "pass": true,
+      "detail": "IDs no registro mestre"
+    },
+    {
+      "name": "methodology_Lee, S.",
+      "pass": true,
+      "detail": "Lee, S."
+    },
+    {
+      "name": "methodology_Novakova, L.",
+      "pass": true,
+      "detail": "Novakova, L."
+    },
+    {
+      "name": "methodology_Allmendinger, R. W.",
+      "pass": true,
+      "detail": "Allmendinger, R. W."
+    },
+    {
+      "name": "methodology_Wang, J.",
+      "pass": true,
+      "detail": "Wang, J."
+    },
+    {
+      "name": "methodology_World Wide Web Consortium.",
+      "pass": true,
+      "detail": "World Wide Web Consortium."
+    },
+    {
+      "name": "bib_unique_ids",
+      "pass": true,
+      "detail": "181 entries / 181 unique"
+    },
+    {
+      "name": "bib_instrumentos",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bib_nav",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bib_semantic_10.1016/j.cageo.2013.07.014",
+      "pass": true,
+      "detail": "10.1016/j.cageo.2013.07.014"
+    },
+    {
+      "name": "bib_semantic_10.1016/j.jsg.2017.02.015",
+      "pass": true,
+      "detail": "10.1016/j.jsg.2017.02.015"
+    },
+    {
+      "name": "bib_semantic_10.1016/j.jsg.2017.07.011",
+      "pass": true,
+      "detail": "10.1016/j.jsg.2017.07.011"
+    },
+    {
+      "name": "bib_semantic_10.1016/j.cageo.2019.104393",
+      "pass": true,
+      "detail": "10.1016/j.cageo.2019.104393"
+    },
+    {
+      "name": "bib_semantic_https://www.w3.org/TR/orientation-event/",
+      "pass": true,
+      "detail": "https://www.w3.org/TR/orientation-event/"
+    },
+    {
+      "name": "bib_dynamic_count",
+      "pass": true,
+      "detail": "shown=181 unique=181"
+    },
+    {
+      "name": "sidecar_five_refs",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "sidecar_actual_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog_unchanged",
+      "pass": true,
+      "detail": "8ccb9bae74159fbe1b14874dc187423411db1af68e9527386893f855c4413f95"
+    },
+    {
+      "name": "manifest_unchanged",
+      "pass": true,
+      "detail": "bbed2243e156271ce68354d4a0072ce8a339ce78d1710b6ca7e75f21f3bf1d35"
+    },
+    {
+      "name": "campo_master_unchanged",
+      "pass": true,
+      "detail": "2171f6a821f3e9e1c455ef5ad4043c679e69fd4a249e3605dd7150b0d34bff9b"
+    },
+    {
+      "name": "campo_ux_unchanged",
+      "pass": true,
+      "detail": "c4e4e211554ffd1fb0f337028873736d104a817c23326f890df28115aa36fd24"
+    }
+  ]
+}

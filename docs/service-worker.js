@@ -1,5 +1,11 @@
-const ITA_CACHE = 'ita-arandu-v38-4-31-campo-master';
+const ITA_CACHE = 'ita-arandu-v38-4-33-clinometro-r2';
 const ITA_CORE = [
+  "./documentos/clinometro-visual-referencias.json",
+  "./documentos/metodologia-clinometro-visual-arandu.html",
+  "./assets/js/clinometro-visual-v38433.js?v=38.4.33r2",
+  "./assets/css/clinometro-visual-v38433.css?v=38.4.33r2",
+  "./assets/js/campo-ux-v38432.js?v=38.4.32",
+  "./assets/css/campo-ux-v38432.css?v=38.4.32",
   "./documentos/protocolo-campo-master.html",
   "./assets/js/campo-master-v38431.js?v=38.4.31",
   "./assets/css/campo-master-v38431.css?v=38.4.31",

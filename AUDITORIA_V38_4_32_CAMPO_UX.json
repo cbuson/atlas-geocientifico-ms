@@ -1,0 +1,133 @@
+{
+  "audit": "V38.4.32 fechamento UX do Campo",
+  "status": "PASS",
+  "passed": 25,
+  "total": 25,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": "V38.4.32-CAMPO-UX-FECHO-20260815"
+    },
+    {
+      "name": "title_version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "visible_version_badge",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "caderno_functional",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "caderno_partial_removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ux_css_loaded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ux_js_loaded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ux_js_file",
+      "pass": true,
+      "detail": "C:\\Users\\cbuso\\Documents\\GitHub\\atlas-geocientifico-ms\\docs\\assets\\js\\campo-ux-v38432.js"
+    },
+    {
+      "name": "ux_css_file",
+      "pass": true,
+      "detail": "C:\\Users\\cbuso\\Documents\\GitHub\\atlas-geocientifico-ms\\docs\\assets\\css\\campo-ux-v38432.css"
+    },
+    {
+      "name": "js_Estudante · Essencial",
+      "pass": true,
+      "detail": "Estudante · Essencial"
+    },
+    {
+      "name": "js_Especialista · Avançado",
+      "pass": true,
+      "detail": "Especialista · Avançado"
+    },
+    {
+      "name": "js_ita-section-body",
+      "pass": true,
+      "detail": "ita-section-body"
+    },
+    {
+      "name": "js_data-ita-section-prev",
+      "pass": true,
+      "detail": "data-ita-section-prev"
+    },
+    {
+      "name": "js_data-ita-section-next",
+      "pass": true,
+      "detail": "data-ita-section-next"
+    },
+    {
+      "name": "js_improveCompletionText",
+      "pass": true,
+      "detail": "improveCompletionText"
+    },
+    {
+      "name": "js_openRelevantSectionFromChecklist",
+      "pass": true,
+      "detail": "openRelevantSectionFromChecklist"
+    },
+    {
+      "name": "js_max-width:760px",
+      "pass": true,
+      "detail": "max-width:760px"
+    },
+    {
+      "name": "node_syntax",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "css_.ita-section-toggle",
+      "pass": true,
+      "detail": ".ita-section-toggle"
+    },
+    {
+      "name": "css_.ita-section-nav",
+      "pass": true,
+      "detail": ".ita-section-nav"
+    },
+    {
+      "name": "css_.ita-campo-section.is-open",
+      "pass": true,
+      "detail": ".ita-campo-section.is-open"
+    },
+    {
+      "name": "css_@media(max-width:760px)",
+      "pass": true,
+      "detail": "@media(max-width:760px)"
+    },
+    {
+      "name": "catalog_unchanged",
+      "pass": true,
+      "detail": "8ccb9bae74159fbe1b14874dc187423411db1af68e9527386893f855c4413f95"
+    },
+    {
+      "name": "manifest_unchanged",
+      "pass": true,
+      "detail": "bbed2243e156271ce68354d4a0072ce8a339ce78d1710b6ca7e75f21f3bf1d35"
+    },
+    {
+      "name": "campo_master_engine_unchanged",
+      "pass": true,
+      "detail": "2171f6a821f3e9e1c455ef5ad4043c679e69fd4a249e3605dd7150b0d34bff9b"
+    }
+  ]
+}
