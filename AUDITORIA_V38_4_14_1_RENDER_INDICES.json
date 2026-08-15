@@ -1,0 +1,198 @@
+{
+  "audit": "V38.4.14.1 render indices",
+  "status": "PASS",
+  "checks_pass": 38,
+  "checks_total": 38,
+  "checks": [
+    {
+      "check": "version",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "featureStyle_sem_html_icp",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "featureStyle_cor_icp",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "legenda_preservada_icp",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "featureStyle_sem_html_igc",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "featureStyle_cor_igc",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "legenda_preservada_igc",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "featureStyle_sem_html_igq",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "featureStyle_cor_igq",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "legenda_preservada_igq",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "featureStyle_sem_html_igf",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "featureStyle_cor_igf",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "legenda_preservada_igf",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "featureStyle_sem_html_ics",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "featureStyle_cor_ics",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "legenda_preservada_ics",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "featureStyle_retorna_objeto",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "cache_bootstrap",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "cache_index",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "cache_sw",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "registro_sw",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "imutavel_docs_indices_icp-v3849.js",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_camadas_arquivos_malha_r5_250km2.geojson",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_igq-v38411.js",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_iod_v3848_snapshot.json",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_ics-v38413.js",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_igq_v38411_snapshot.json",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_igc-v38410.js",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_imc_v32_snapshot.json",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_camadas_arquivos_malha_1000km2.geojson",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_icp_v3849_snapshot.json",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_igf_v38412_snapshot.json",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_igc_v38410_snapshot.json",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_igf-v38412.js",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_iod-v3848.js",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_imc-v32.js",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_indices_ics_v38413_snapshot.json",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    },
+    {
+      "check": "imutavel_docs_camadas_arquivos_malha_500km2.geojson",
+      "status": "PASS",
+      "detail": "snapshot/malha deve permanecer byte a byte"
+    }
+  ]
+}

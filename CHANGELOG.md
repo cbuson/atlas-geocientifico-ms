@@ -1,3 +1,8 @@
+
+## V38.4.14.1 · correção de renderização dos índices
+
+Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IGF e ICS foram retirados de `featureStyle` e movidos para `layerLegendHtml`. Nenhum snapshot, fórmula, valor, malha ou resultado da auditoria V38.4.14 foi recalculado. Cache PWA versionado para forçar a atualização do navegador.
+
 # V38.4.9 · 2026-08-14 · ICP Caracterização Petrográfica
 
 - materializa o snapshot local da camada Petrografia do Serviço Geológico do Brasil para Mato Grosso do Sul
@@ -345,3 +350,9 @@
 - reserva a pontuação máxima de Q_log para suporte explícito de perfil relacionado ao RIMAS
 - calcula 250, 500 e 1000 km² diretamente dos poços originais, sem agregação entre escalas
 
+## V38.4.14 · Auditoria das sete dimensões
+
+- Auditoria conjunta de IMC, IOD, ICP, IGC, IGQ, IGF e ICS nas três escalas.
+- Verificação de alinhamento espacial, faixas, nulls, distribuições, correlações, redundância, sensibilidade e bordas.
+- Gate de síntese: BLOCKED.
+- Nenhum índice base recalculado.

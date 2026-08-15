@@ -161,3 +161,7 @@ A V38.4.6 introduz invalidação explícita de cache para impedir que GitHub Pag
 ## Atualização V38.4.7
 
 A V38.4.7 fecha o bloco documental de posicionamento metodológico dos índices. Acrescenta antecedentes nacionais e internacionais com referências APA 7 verificadas, separa explicitamente comparação de transferência metodológica e registra como planejados os produtos ainda não materializados. Nenhum cálculo, geometria, sensor, GPS ou comportamento cartográfico é alterado.
+
+## V38.4.14 · Auditoria conjunta das sete dimensões base
+
+Auditoria multiescalar de IMC, IOD, ICP, IGC, IGQ, IGF e ICS. Gate de síntese: **BLOCKED**. Nenhum índice base foi recalculado. Relatório em `docs/documentos/auditoria-sete-dimensoes.html`.
