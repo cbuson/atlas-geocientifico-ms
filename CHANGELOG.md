@@ -436,3 +436,11 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - A robustez do PIG em 250 km² permanece registrada como ressalva quando o cenário microgrid 5 km P95 altera mais de 25% das classes.
 - Front de Pareto permanece a saída científica primária do PIG.
 
+## V38.4.24 · 2026-08-15 · Design System · tipografia e espaçamento
+
+- Introduz folha transversal `design-system-v38424.css`, carregada por último.
+- Aumenta legibilidade em Camadas, Ficha, Tempo, Aprender, Dados, Campo, sensores e modais.
+- Adota escala tipográfica consistente e alvos tácteis maiores em dispositivos de toque.
+- Ajusta larguras e reflow sem alterar ciência, dados, snapshots ou simbologia dos índices.
+- Próxima fase prevista: navegação Ajuda → Tempo e depois opacidade por camada.
+

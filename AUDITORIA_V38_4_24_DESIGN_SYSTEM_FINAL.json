@@ -1,0 +1,158 @@
+{
+  "audit": "V38.4.24 Design System",
+  "status": "PASS",
+  "passed": 30,
+  "total": 30,
+  "checks": [
+    {
+      "name": "version_final",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "css_link_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "css_loaded_last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "title_v38424",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "css_contract_01",
+      "pass": true,
+      "detail": ".layer-name{font-size:var(--ita-text-md)"
+    },
+    {
+      "name": "css_contract_02",
+      "pass": true,
+      "detail": ".layer-meta{"
+    },
+    {
+      "name": "css_contract_03",
+      "pass": true,
+      "detail": ".feature-title{font-size:var(--ita-text-xl)"
+    },
+    {
+      "name": "css_contract_04",
+      "pass": true,
+      "detail": ".modal-body{"
+    },
+    {
+      "name": "css_contract_05",
+      "pass": true,
+      "detail": ".time-panel-head b{font-size:var(--ita-text-lg)"
+    },
+    {
+      "name": "css_contract_06",
+      "pass": true,
+      "detail": ".ms-unit-name{font-size:var(--ita-text-md)"
+    },
+    {
+      "name": "css_contract_07",
+      "pass": true,
+      "detail": ".field-input,.field-select,.field-textarea{"
+    },
+    {
+      "name": "css_contract_08",
+      "pass": true,
+      "detail": ".sensor-card>span{font-size:var(--ita-text-xs)"
+    },
+    {
+      "name": "css_contract_09",
+      "pass": true,
+      "detail": ".dados-overview p{font-size:var(--ita-text-md)"
+    },
+    {
+      "name": "css_contract_10",
+      "pass": true,
+      "detail": ".aprender-card p{font-size:var(--ita-text-sm)"
+    },
+    {
+      "name": "css_contract_11",
+      "pass": true,
+      "detail": "@media(pointer:coarse)"
+    },
+    {
+      "name": "css_contract_12",
+      "pass": true,
+      "detail": "min-height:44px"
+    },
+    {
+      "name": "css_contract_13",
+      "pass": true,
+      "detail": ":focus-visible"
+    },
+    {
+      "name": "css_contract_14",
+      "pass": true,
+      "detail": "@media(max-width:900px)"
+    },
+    {
+      "name": "design_layer_no_micro_px",
+      "pass": true,
+      "detail": "[16.0, 10.0]"
+    },
+    {
+      "name": "mobile_body_16px",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "coarse_44px",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_cache_v38424",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_precache_css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_doc",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bootstrap_38424",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "design_doc_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "science_files_all_exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "science_sha_immutable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "tempo_navigation_not_claimed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "opacity_not_mixed",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}
