@@ -1,0 +1,512 @@
+{
+  "audit": "V38.4.17 · ICG · auditoria final",
+  "version": "V38.4.17-ICG-CONHECIMENTO-GEOCIENTIFICO-20260815",
+  "generated_at": "2026-08-15T13:27:36.514203+00:00",
+  "status": "PASS",
+  "checks_total": 72,
+  "checks_passed": 72,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "snapshot_version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "gate_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "policy_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "eligibility_policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ide_outside_formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hash_docs/indices/imc_v32_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/imc_v32_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/iod_v3848_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/iod_v3848_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/icp_v3849_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/icp_v3849_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/igc_v38410_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igc_v38410_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/igq_v38411_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igq_v38411_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/igf_v38412_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/igf_v38412_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/ics_v38413_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/ics_v38413_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/ide_v38415_snapshot.json",
+      "pass": true,
+      "detail": "docs/indices/ide_v38415_snapshot.json"
+    },
+    {
+      "name": "hash_docs/indices/politica-icg-v38416.json",
+      "pass": true,
+      "detail": "docs/indices/politica-icg-v38416.json"
+    },
+    {
+      "name": "gridhash_docs/camadas/arquivos/malha_r5_250km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_r5_250km2.geojson"
+    },
+    {
+      "name": "gridhash_docs/camadas/arquivos/malha_500km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_500km2.geojson"
+    },
+    {
+      "name": "gridhash_docs/camadas/arquivos/malha_1000km2.geojson",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_1000km2.geojson"
+    },
+    {
+      "name": "250_grid_alignment",
+      "pass": true,
+      "detail": "1554/1554"
+    },
+    {
+      "name": "250_row_schema",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_nobs_matches_base",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_null_for_nobs_lt2",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_theoretical_cap",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_eligible_matches_gate",
+      "pass": true,
+      "detail": "1291/1291"
+    },
+    {
+      "name": "250_summary_count",
+      "pass": true,
+      "detail": "1291/1291"
+    },
+    {
+      "name": "250_has_numeric_values",
+      "pass": true,
+      "detail": 1291
+    },
+    {
+      "name": "250_sensitivity_alpha_0_5",
+      "pass": true,
+      "detail": {
+        "rho_vs_baseline": 0.971536,
+        "median_abs_diff": 3.997,
+        "class_changes": 125,
+        "class_change_fraction": 0.096824,
+        "n": 1291
+      }
+    },
+    {
+      "name": "250_sensitivity_alpha_1",
+      "pass": true,
+      "detail": {
+        "rho_vs_baseline": 1.0,
+        "median_abs_diff": 0.0,
+        "class_changes": 0,
+        "class_change_fraction": 0.0,
+        "n": 1291
+      }
+    },
+    {
+      "name": "250_sensitivity_alpha_2",
+      "pass": true,
+      "detail": {
+        "rho_vs_baseline": 0.959669,
+        "median_abs_diff": 3.583,
+        "class_changes": 95,
+        "class_change_fraction": 0.073586,
+        "n": 1291
+      }
+    },
+    {
+      "name": "250_rho_alpha_0_5",
+      "pass": true,
+      "detail": 0.971536
+    },
+    {
+      "name": "250_rho_alpha_2",
+      "pass": true,
+      "detail": 0.959669
+    },
+    {
+      "name": "500_grid_alignment",
+      "pass": true,
+      "detail": "793/793"
+    },
+    {
+      "name": "500_row_schema",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_nobs_matches_base",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_null_for_nobs_lt2",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_theoretical_cap",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_eligible_matches_gate",
+      "pass": true,
+      "detail": "667/667"
+    },
+    {
+      "name": "500_summary_count",
+      "pass": true,
+      "detail": "667/667"
+    },
+    {
+      "name": "500_has_numeric_values",
+      "pass": true,
+      "detail": 667
+    },
+    {
+      "name": "500_sensitivity_alpha_0_5",
+      "pass": true,
+      "detail": {
+        "rho_vs_baseline": 0.955282,
+        "median_abs_diff": 3.997,
+        "class_changes": 64,
+        "class_change_fraction": 0.095952,
+        "n": 667
+      }
+    },
+    {
+      "name": "500_sensitivity_alpha_1",
+      "pass": true,
+      "detail": {
+        "rho_vs_baseline": 1.0,
+        "median_abs_diff": 0.0,
+        "class_changes": 0,
+        "class_change_fraction": 0.0,
+        "n": 667
+      }
+    },
+    {
+      "name": "500_sensitivity_alpha_2",
+      "pass": true,
+      "detail": {
+        "rho_vs_baseline": 0.966434,
+        "median_abs_diff": 3.7094,
+        "class_changes": 43,
+        "class_change_fraction": 0.064468,
+        "n": 667
+      }
+    },
+    {
+      "name": "500_rho_alpha_0_5",
+      "pass": true,
+      "detail": 0.955282
+    },
+    {
+      "name": "500_rho_alpha_2",
+      "pass": true,
+      "detail": 0.966434
+    },
+    {
+      "name": "1000_grid_alignment",
+      "pass": true,
+      "detail": "412/412"
+    },
+    {
+      "name": "1000_row_schema",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_nobs_matches_base",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_null_for_nobs_lt2",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_theoretical_cap",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_eligible_matches_gate",
+      "pass": true,
+      "detail": "358/358"
+    },
+    {
+      "name": "1000_summary_count",
+      "pass": true,
+      "detail": "358/358"
+    },
+    {
+      "name": "1000_has_numeric_values",
+      "pass": true,
+      "detail": 358
+    },
+    {
+      "name": "1000_sensitivity_alpha_0_5",
+      "pass": true,
+      "detail": {
+        "rho_vs_baseline": 0.964761,
+        "median_abs_diff": 3.997,
+        "class_changes": 29,
+        "class_change_fraction": 0.081006,
+        "n": 358
+      }
+    },
+    {
+      "name": "1000_sensitivity_alpha_1",
+      "pass": true,
+      "detail": {
+        "rho_vs_baseline": 1.0,
+        "median_abs_diff": 0.0,
+        "class_changes": 0,
+        "class_change_fraction": 0.0,
+        "n": 358
+      }
+    },
+    {
+      "name": "1000_sensitivity_alpha_2",
+      "pass": true,
+      "detail": {
+        "rho_vs_baseline": 0.964125,
+        "median_abs_diff": 3.8448,
+        "class_changes": 22,
+        "class_change_fraction": 0.061453,
+        "n": 358
+      }
+    },
+    {
+      "name": "1000_rho_alpha_0_5",
+      "pass": true,
+      "detail": 0.964761
+    },
+    {
+      "name": "1000_rho_alpha_2",
+      "pass": true,
+      "detail": 0.964125
+    },
+    {
+      "name": "app_color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_builder",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_derive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_scale_group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "featureStyle_icg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "featureStyle_no_legend_html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "legend_icg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog_icg_250",
+      "pass": true,
+      "detail": {
+        "id": "icg_250",
+        "name": "ICG · Índice de Conhecimento Geocientífico · 250 km²",
+        "group": "Conhecimento geocientífico e análises",
+        "status": "incorporada",
+        "kind": "derived",
+        "count": 1554,
+        "scope_level": "MS",
+        "expected_geometry": "Polygon",
+        "source": "ITA ARANDU MS · ICG V38.4.17 · sete dimensões base certificadas",
+        "source_url": "",
+        "validation": "V38.4.17 · agregação parcialmente não compensatória · gate V38.4.16 · sensibilidade α auditada",
+        "priority": "alta",
+        "note": "Índice de conhecimento geocientífico integrado. Requer pelo menos duas dimensões observadas. null permanece ausência e não recebe zero. O fator n_obs/7 penaliza suporte estreito e o componente M penaliza desequilíbrio. IDE permanece indicador complementar e não entra na fórmula.",
+        "reference_ids": [
+          "REF-104",
+          "REF-105",
+          "REF-115"
+        ],
+        "style": {
+          "color": "#4a4a4a",
+          "weight": 0.7,
+          "fillOpacity": 0.75,
+          "renderer": "index_icg",
+          "fill": "#3949ab"
+        },
+        "derive_type": "icg_snapshot_v38417",
+        "grid_source_id": "malha_r5_250km2",
+        "icg_scale": "250"
+      }
+    },
+    {
+      "name": "catalog_icg_500",
+      "pass": true,
+      "detail": {
+        "id": "icg_500",
+        "name": "ICG · Índice de Conhecimento Geocientífico · 500 km²",
+        "group": "Conhecimento geocientífico e análises",
+        "status": "incorporada",
+        "kind": "derived",
+        "count": 793,
+        "scope_level": "MS",
+        "expected_geometry": "Polygon",
+        "source": "ITA ARANDU MS · ICG V38.4.17 · sete dimensões base certificadas",
+        "source_url": "",
+        "validation": "V38.4.17 · agregação parcialmente não compensatória · gate V38.4.16 · sensibilidade α auditada",
+        "priority": "alta",
+        "note": "Índice de conhecimento geocientífico integrado. Requer pelo menos duas dimensões observadas. null permanece ausência e não recebe zero. O fator n_obs/7 penaliza suporte estreito e o componente M penaliza desequilíbrio. IDE permanece indicador complementar e não entra na fórmula.",
+        "reference_ids": [
+          "REF-104",
+          "REF-105",
+          "REF-115"
+        ],
+        "style": {
+          "color": "#4a4a4a",
+          "weight": 0.7,
+          "fillOpacity": 0.75,
+          "renderer": "index_icg",
+          "fill": "#3949ab"
+        },
+        "derive_type": "icg_snapshot_v38417",
+        "grid_source_id": "malha_500km2",
+        "icg_scale": "500"
+      }
+    },
+    {
+      "name": "catalog_icg_1000",
+      "pass": true,
+      "detail": {
+        "id": "icg_1000",
+        "name": "ICG · Índice de Conhecimento Geocientífico · 1000 km²",
+        "group": "Conhecimento geocientífico e análises",
+        "status": "incorporada",
+        "kind": "derived",
+        "count": 412,
+        "scope_level": "MS",
+        "expected_geometry": "Polygon",
+        "source": "ITA ARANDU MS · ICG V38.4.17 · sete dimensões base certificadas",
+        "source_url": "",
+        "validation": "V38.4.17 · agregação parcialmente não compensatória · gate V38.4.16 · sensibilidade α auditada",
+        "priority": "alta",
+        "note": "Índice de conhecimento geocientífico integrado. Requer pelo menos duas dimensões observadas. null permanece ausência e não recebe zero. O fator n_obs/7 penaliza suporte estreito e o componente M penaliza desequilíbrio. IDE permanece indicador complementar e não entra na fórmula.",
+        "reference_ids": [
+          "REF-104",
+          "REF-105",
+          "REF-115"
+        ],
+        "style": {
+          "color": "#4a4a4a",
+          "weight": 0.7,
+          "fillOpacity": 0.75,
+          "renderer": "index_icg",
+          "fill": "#3949ab"
+        },
+        "derive_type": "icg_snapshot_v38417",
+        "grid_source_id": "malha_1000km2",
+        "icg_scale": "1000"
+      }
+    },
+    {
+      "name": "index_loads_icg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "service_worker_cache",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "methodology_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "VCG_not_materialized",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "PIG_not_materialized",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "next_gate": "VCG permanece bloqueado até política própria de vazios de conhecimento"
+}

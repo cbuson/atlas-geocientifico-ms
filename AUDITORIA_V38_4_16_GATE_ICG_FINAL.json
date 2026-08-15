@@ -1,0 +1,349 @@
+{
+  "audit": "V38.4.16 · Auditoria do gate ICG",
+  "version": "V38.4.16-GATE-ICG-20260815",
+  "status": "PASS",
+  "checks_total": 68,
+  "checks_passed": 68,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "policy_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "policy_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "minimum_observed_dimensions_2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "null_not_zero",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "one_dimension_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "numeric_zero_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "support_factor_n_over_7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "icg_formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no_ide_double_penalty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sensitivity_mandatory",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sensitivity_baseline_alpha_1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sensitivity_alphas",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "diagnostic_250_nonempty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "diagnostic_250_eligible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "diagnostic_500_nonempty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "diagnostic_500_eligible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "diagnostic_1000_nonempty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "diagnostic_1000_eligible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "gate_report_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_doc_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "icg_snapshot_not_created",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "icg_js_not_created",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ide_final_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/imc-v32.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/imc-v32.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/imc_v32_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/imc_v32_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/iod-v3848.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/iod-v3848.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/iod_v3848_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/iod_v3848_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/icp-v3849.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/icp-v3849.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/icp_v3849_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/icp_v3849_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/igc-v38410.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/igc-v38410.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/igc_v38410_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/igc_v38410_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/igq-v38411.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/igq-v38411.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/igq_v38411_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/igq_v38411_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/igf-v38412.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/igf-v38412.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/igf_v38412_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/igf_v38412_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/ics-v38413.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/ics-v38413.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/ics_v38413_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/ics_v38413_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/ide-v38415.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/ide-v38415.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/ide_v38415_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/ide_v38415_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/camadas/arquivos/malha_r5_250km2.geojson",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/camadas/arquivos/malha_r5_250km2.geojson",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/camadas/arquivos/malha_500km2.geojson",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/camadas/arquivos/malha_500km2.geojson",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/camadas/arquivos/malha_1000km2.geojson",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/camadas/arquivos/malha_1000km2.geojson",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_AUDITORIA_V38_4_14_SETE_DIMENSOES.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_AUDITORIA_V38_4_14_SETE_DIMENSOES.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_AUDITORIA_V38_4_15_IDE_FINAL.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_AUDITORIA_V38_4_15_IDE_FINAL.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protected_exists_docs/indices/politica-sintese-v384142.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sha256_immutable_docs/indices/politica-sintese-v384142.json",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

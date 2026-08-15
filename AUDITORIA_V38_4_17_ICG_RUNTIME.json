@@ -1,0 +1,179 @@
+{
+  "audit": "V38.4.17 · ICG · materialização runtime",
+  "version": "V38.4.17-ICG-CONHECIMENTO-GEOCIENTIFICO-20260815",
+  "generated_at": "2026-08-15T13:27:35Z",
+  "status": "PASS",
+  "summary": {
+    "250": {
+      "cells": 1554,
+      "cells_with_icg": 1291,
+      "cells_without_icg": 263,
+      "icg_min": 0.0,
+      "icg_p05": 4.3268,
+      "icg_median": 6.0008,
+      "icg_mean": 9.5559,
+      "icg_p95": 32.7676,
+      "icg_max": 63.339,
+      "dimension_count_distribution": {
+        "0": 0,
+        "1": 263,
+        "2": 600,
+        "3": 454,
+        "4": 192,
+        "5": 43,
+        "6": 2,
+        "7": 0
+      },
+      "support_classes": {
+        "não elegível": 263,
+        "suporte limitado": 600,
+        "suporte parcial": 646,
+        "suporte amplo": 45,
+        "suporte completo": 0
+      }
+    },
+    "500": {
+      "cells": 793,
+      "cells_with_icg": 667,
+      "cells_without_icg": 126,
+      "icg_min": 0.0,
+      "icg_p05": 3.7993,
+      "icg_median": 6.6439,
+      "icg_mean": 9.8764,
+      "icg_p95": 32.8814,
+      "icg_max": 57.893,
+      "dimension_count_distribution": {
+        "0": 0,
+        "1": 126,
+        "2": 242,
+        "3": 239,
+        "4": 152,
+        "5": 30,
+        "6": 4,
+        "7": 0
+      },
+      "support_classes": {
+        "não elegível": 126,
+        "suporte limitado": 242,
+        "suporte parcial": 391,
+        "suporte amplo": 34,
+        "suporte completo": 0
+      }
+    },
+    "1000": {
+      "cells": 412,
+      "cells_with_icg": 358,
+      "cells_without_icg": 54,
+      "icg_min": 0.0,
+      "icg_p05": 3.1833,
+      "icg_median": 7.5391,
+      "icg_mean": 10.1277,
+      "icg_p95": 32.1537,
+      "icg_max": 57.4894,
+      "dimension_count_distribution": {
+        "0": 0,
+        "1": 54,
+        "2": 92,
+        "3": 149,
+        "4": 93,
+        "5": 18,
+        "6": 6,
+        "7": 0
+      },
+      "support_classes": {
+        "não elegível": 54,
+        "suporte limitado": 92,
+        "suporte parcial": 242,
+        "suporte amplo": 24,
+        "suporte completo": 0
+      }
+    }
+  },
+  "sensitivity": {
+    "250": {
+      "alpha_0_5": {
+        "rho_vs_baseline": 0.971536,
+        "median_abs_diff": 3.997,
+        "class_changes": 125,
+        "class_change_fraction": 0.096824,
+        "n": 1291
+      },
+      "alpha_1": {
+        "rho_vs_baseline": 1.0,
+        "median_abs_diff": 0.0,
+        "class_changes": 0,
+        "class_change_fraction": 0.0,
+        "n": 1291
+      },
+      "alpha_2": {
+        "rho_vs_baseline": 0.959669,
+        "median_abs_diff": 3.583,
+        "class_changes": 95,
+        "class_change_fraction": 0.073586,
+        "n": 1291
+      }
+    },
+    "500": {
+      "alpha_0_5": {
+        "rho_vs_baseline": 0.955282,
+        "median_abs_diff": 3.997,
+        "class_changes": 64,
+        "class_change_fraction": 0.095952,
+        "n": 667
+      },
+      "alpha_1": {
+        "rho_vs_baseline": 1.0,
+        "median_abs_diff": 0.0,
+        "class_changes": 0,
+        "class_change_fraction": 0.0,
+        "n": 667
+      },
+      "alpha_2": {
+        "rho_vs_baseline": 0.966434,
+        "median_abs_diff": 3.7094,
+        "class_changes": 43,
+        "class_change_fraction": 0.064468,
+        "n": 667
+      }
+    },
+    "1000": {
+      "alpha_0_5": {
+        "rho_vs_baseline": 0.964761,
+        "median_abs_diff": 3.997,
+        "class_changes": 29,
+        "class_change_fraction": 0.081006,
+        "n": 358
+      },
+      "alpha_1": {
+        "rho_vs_baseline": 1.0,
+        "median_abs_diff": 0.0,
+        "class_changes": 0,
+        "class_change_fraction": 0.0,
+        "n": 358
+      },
+      "alpha_2": {
+        "rho_vs_baseline": 0.964125,
+        "median_abs_diff": 3.8448,
+        "class_changes": 22,
+        "class_change_fraction": 0.061453,
+        "n": 358
+      }
+    }
+  },
+  "protected_base_sha256": {
+    "docs/indices/imc_v32_snapshot.json": "30c4f9765416d2ecc78284b5e35a09c6f22027b4146aea4397c9b193a3a940cc",
+    "docs/indices/iod_v3848_snapshot.json": "a83296691d1584d18de88b8c1ddd176b4932c6522ccd545fb14cc9d141bd0f97",
+    "docs/indices/icp_v3849_snapshot.json": "50a28c6113d2ef448d696b742e0685addae72ff60416b6c2426744af5ce25b38",
+    "docs/indices/igc_v38410_snapshot.json": "f6054398ae702bd8b44b34d07f80e6c241190a3ac91ae7039f9d4058fea9eb97",
+    "docs/indices/igq_v38411_snapshot.json": "d8400c420036692d3c1eaa15172ba6e3718aeb34f19021a34718c51fd408a2df",
+    "docs/indices/igf_v38412_snapshot.json": "f2b36cf8d3ea731d5e1bc091080c2c2e40fb7caf137881d0bf2e77617a7f79b6",
+    "docs/indices/ics_v38413_snapshot.json": "158064072120ddee3909567707aad1002abbb6fcab74bea75ec23bdbbd1731b3",
+    "docs/indices/ide_v38415_snapshot.json": "1a2023e81cc58562ace54402a7ddefda63aaba853363e66bfe2dd0c119b67fcb",
+    "docs/indices/politica-icg-v38416.json": "af820529cf8b74930a417f9a83e24dc8a01145f08512081dc7b80e44ca642ce4"
+  },
+  "protected_grid_sha256": {
+    "docs/camadas/arquivos/malha_r5_250km2.geojson": "484df0f0bdccd2210da5dbef3d5d769867099bfdef062c2f751ceed4c29f9af0",
+    "docs/camadas/arquivos/malha_500km2.geojson": "b2c9f8f85ab74be1580279ec436ad841f225e8f077202ae2aeff5be5e64e566a",
+    "docs/camadas/arquivos/malha_1000km2.geojson": "3f3745d33287eac0ee1c10fb6c1784c7a269f070d93df4c66abc6f42a89d9482"
+  }
+}

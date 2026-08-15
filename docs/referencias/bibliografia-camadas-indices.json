@@ -5471,7 +5471,7 @@
       "id": "ide_250",
       "name": "IDE · Diversidade de Evidências · 250 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
@@ -5533,7 +5533,7 @@
       "id": "ide_500",
       "name": "IDE · Diversidade de Evidências · 500 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
@@ -5595,7 +5595,7 @@
       "id": "ide_1000",
       "name": "IDE · Diversidade de Evidências · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS · protocolo metodológico multiescalar de conhecimento geocientífico",
       "reference_ids": [
@@ -6107,14 +6107,13 @@
       "id": "icg_1000",
       "name": "ICG · Índice de Conhecimento Geocientífico · 1000 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS",
       "reference_ids": [
         "REF-104",
         "REF-105",
-        "REF-115",
-        "REF-114"
+        "REF-115"
       ],
       "references": [
         {
@@ -6142,15 +6141,6 @@
           "quality_class": "documentação metodológica do projeto",
           "verification_level": "registro_mestre_revisado",
           "url": "",
-          "doi": null
-        },
-        {
-          "id": "REF-114",
-          "apa7": "Rosa-Costa, L. T., Ferreira, M. V., Almeida, M. E., Santos, P. A., & Medeiros, V. C. (Coords.). (2024). Plano decenal de mapeamento geológico básico: PlanGeo 2025–2034. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/handle/doc/24990",
-          "type": "relatório técnico institucional",
-          "quality_class": "fonte primária institucional",
-          "verification_level": "fonte_primaria_conferida",
-          "url": "https://rigeo.sgb.gov.br/handle/doc/24990",
           "doi": null
         }
       ]
@@ -6159,14 +6149,13 @@
       "id": "icg_250",
       "name": "ICG · Índice de Conhecimento Geocientífico · 250 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS",
       "reference_ids": [
         "REF-104",
         "REF-105",
-        "REF-115",
-        "REF-114"
+        "REF-115"
       ],
       "references": [
         {
@@ -6194,15 +6183,6 @@
           "quality_class": "documentação metodológica do projeto",
           "verification_level": "registro_mestre_revisado",
           "url": "",
-          "doi": null
-        },
-        {
-          "id": "REF-114",
-          "apa7": "Rosa-Costa, L. T., Ferreira, M. V., Almeida, M. E., Santos, P. A., & Medeiros, V. C. (Coords.). (2024). Plano decenal de mapeamento geológico básico: PlanGeo 2025–2034. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/handle/doc/24990",
-          "type": "relatório técnico institucional",
-          "quality_class": "fonte primária institucional",
-          "verification_level": "fonte_primaria_conferida",
-          "url": "https://rigeo.sgb.gov.br/handle/doc/24990",
           "doi": null
         }
       ]
@@ -6211,14 +6191,13 @@
       "id": "icg_500",
       "name": "ICG · Índice de Conhecimento Geocientífico · 500 km²",
       "group": "Conhecimento geocientífico e análises",
-      "status": "planejada",
+      "status": "incorporada",
       "kind": "camada",
       "source": "ITA ARANDU MS",
       "reference_ids": [
         "REF-104",
         "REF-105",
-        "REF-115",
-        "REF-114"
+        "REF-115"
       ],
       "references": [
         {
@@ -6246,15 +6225,6 @@
           "quality_class": "documentação metodológica do projeto",
           "verification_level": "registro_mestre_revisado",
           "url": "",
-          "doi": null
-        },
-        {
-          "id": "REF-114",
-          "apa7": "Rosa-Costa, L. T., Ferreira, M. V., Almeida, M. E., Santos, P. A., & Medeiros, V. C. (Coords.). (2024). Plano decenal de mapeamento geológico básico: PlanGeo 2025–2034. Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/handle/doc/24990",
-          "type": "relatório técnico institucional",
-          "quality_class": "fonte primária institucional",
-          "verification_level": "fonte_primaria_conferida",
-          "url": "https://rigeo.sgb.gov.br/handle/doc/24990",
           "doi": null
         }
       ]

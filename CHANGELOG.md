@@ -356,3 +356,38 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Verificação de alinhamento espacial, faixas, nulls, distribuições, correlações, redundância, sensibilidade e bordas.
 - Gate de síntese: BLOCKED.
 - Nenhum índice base recalculado.
+
+
+## V38.4.14.2 · Gate para IDE
+
+- Auditoria conjunta preservada.
+- Política explícita de null congelada.
+- MT congelado como não avaliável no corte, sem imputação de zero.
+- IDE liberado para materialização. ICG, VCG e PIG permanecem bloqueados.
+
+
+## V38.4.15 · IDE · Diversidade de Evidências
+
+- materializa IDE em 250, 500 e 1000 km²
+- preserva null nas sete dimensões base e não imputa zero
+- mantém denominador sete fixo e publica o suporte efetivamente observado por célula
+- registra MT como não avaliável no corte conforme gate V38.4.14.2
+- mantém ICG, VCG e PIG bloqueados até regras próprias
+## V38.4.16 · Gate metodológico para ICG · 2026-08-15
+
+- Congelada a política de incompletude do ICG sem converter null em zero.
+- Elegibilidade mínima de duas dimensões observadas na mesma escala.
+- Fórmula basal ICG = 100 × (n_obs/7) × max(0, μ − σ²/μ).
+- IDE permanece indicador complementar e não entra na fórmula do ICG.
+- Definido plano obrigatório de sensibilidade do fator de suporte antes da certificação do ICG.
+- Nenhuma dimensão base, IDE ou malha é recalculada nesta etapa.
+
+## V38.4.17 · ICG · Índice de Conhecimento Geocientífico
+
+- materializa ICG em 250, 500 e 1000 km² conforme gate V38.4.16
+- exige pelo menos duas dimensões observadas e preserva null
+- aplica fator n_obs/7 e penalização não compensatória por variância
+- mantém IDE fora da fórmula e o publica somente como indicador companheiro
+- executa sensibilidade obrigatória com α 0,5 · 1 · 2
+- mantém VCG e PIG bloqueados até regras próprias
+

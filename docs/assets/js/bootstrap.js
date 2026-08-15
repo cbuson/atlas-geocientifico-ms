@@ -20,8 +20,8 @@
       document.body.appendChild(script);
     });
   }
-  await loadScript("./assets/js/app.js?v=38.4.14.1","app.js");
-  await loadScript("./assets/js/campo-sensores.js?v=38.4.14.1","campo-sensores.js");
+  await loadScript("./assets/js/app.js?v=38.4.17","app.js");
+  await loadScript("./assets/js/campo-sensores.js?v=38.4.17","campo-sensores.js");
 })().catch(error=>{
   console.error("ITA ARANDU MS · falha no bootstrap",error);
   const host=document.getElementById("map");

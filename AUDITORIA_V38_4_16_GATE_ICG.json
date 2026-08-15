@@ -1,0 +1,80 @@
+{
+  "audit": "V38.4.16 · Fechamento metodológico do gate ICG",
+  "version": "V38.4.16-GATE-ICG-20260815",
+  "generated_at": "2026-08-15T13:17:20Z",
+  "status": "PASS",
+  "gate_icg": "PASS",
+  "formula": {
+    "standardization": "S_j = X_j / 100 para cada dimensão observada, com 0 ≤ S_j ≤ 1.",
+    "mean": "μ_h = média aritmética das S_j observadas na célula.",
+    "variance": "σ²_h = Σ(S_j − μ_h)² / n_obs. Usa variância populacional porque as dimensões observadas formam o conjunto disponível, não uma amostra aleatória de dimensões.",
+    "noncompensatory_component": "M_h = max(0, μ_h − σ²_h/μ_h), para μ_h > 0. Se μ_h = 0, M_h = 0.",
+    "support_factor": "C_h = n_obs / 7.",
+    "icg": "ICG_h = 100 × C_h × M_h.",
+    "theoretical_cap": "ICG_h ≤ 100 × n_obs/7. Assim, suporte estreito não pode produzir artificialmente um ICG alto.",
+    "no_ide_in_formula": "IDE não multiplica nem substitui C_h. Isso evita dupla penalização de diversidade/equilíbrio."
+  },
+  "eligibility": {
+    "minimum_observed_dimensions": 2,
+    "rule": "ICG é calculável somente quando pelo menos duas das sete dimensões base possuem valor numérico observado na célula e na mesma escala.",
+    "one_dimension": "n_obs = 1 produz ICG = null, porque uma única família não constitui síntese integrada.",
+    "missing": "null permanece ausência de observação e não é convertido em zero.",
+    "numeric_zero": "zero numérico explicitamente observado permanece zero e participa de μ e σ².",
+    "complete_case": "não exigido; a amplitude de suporte é penalizada separadamente pelo fator C_h = n_obs/7."
+  },
+  "diagnostic_current_cut": {
+    "250": {
+      "cells_total": 1554,
+      "cells_eligible_n_obs_ge_2": 1291,
+      "cells_ineligible_n_obs_1": 263,
+      "eligible_fraction": 0.830759,
+      "dimension_count_distribution": {
+        "0": 0,
+        "1": 263,
+        "2": 600,
+        "3": 454,
+        "4": 192,
+        "5": 43,
+        "6": 2,
+        "7": 0
+      }
+    },
+    "500": {
+      "cells_total": 793,
+      "cells_eligible_n_obs_ge_2": 667,
+      "cells_ineligible_n_obs_1": 126,
+      "eligible_fraction": 0.84111,
+      "dimension_count_distribution": {
+        "0": 0,
+        "1": 126,
+        "2": 242,
+        "3": 239,
+        "4": 152,
+        "5": 30,
+        "6": 4,
+        "7": 0
+      }
+    },
+    "1000": {
+      "cells_total": 412,
+      "cells_eligible_n_obs_ge_2": 358,
+      "cells_ineligible_n_obs_1": 54,
+      "eligible_fraction": 0.868932,
+      "dimension_count_distribution": {
+        "0": 0,
+        "1": 54,
+        "2": 92,
+        "3": 149,
+        "4": 93,
+        "5": 18,
+        "6": 6,
+        "7": 0
+      }
+    }
+  },
+  "next_allowed": "V38.4.17 · materialização e auditoria do ICG 250 · 500 · 1000 km²",
+  "still_blocked": [
+    "VCG",
+    "PIG"
+  ]
+}

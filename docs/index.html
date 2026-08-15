@@ -1,5 +1,5 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="color-scheme" content="only light"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>ITA ARANDU MS · Atlas Geocientífico de Mato Grosso do Sul · V38.4.9</title><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"><link rel="stylesheet" href="./assets/css/atlas.css?v=38.4.14.1">
-<link rel="stylesheet" href="./assets/css/ajustes-v32.css?v=38.4.14.1">
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="color-scheme" content="only light"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>ITA ARANDU MS · Atlas Geocientífico de Mato Grosso do Sul · V38.4.9</title><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"><link rel="stylesheet" href="./assets/css/atlas.css?v=38.4.17">
+<link rel="stylesheet" href="./assets/css/ajustes-v32.css?v=38.4.17">
 <link rel="manifest" href="./manifest.webmanifest">
 <meta name="theme-color" content="#073b63">
 <meta name="application-name" content="ITA ARANDU MS">
@@ -8,12 +8,12 @@
 <meta name="apple-mobile-web-app-title" content="ITA ARANDU MS">
 <link rel="apple-touch-icon" href="./icons/icon-192.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
-<link rel="stylesheet" href="./assets/css/pwa.css?v=38.4.14.1">
-<link rel="stylesheet" href="./assets/css/dados-dashboard.css?v=38.4.14.1">
+<link rel="stylesheet" href="./assets/css/pwa.css?v=38.4.17">
+<link rel="stylesheet" href="./assets/css/dados-dashboard.css?v=38.4.17">
 
-<link rel="stylesheet" href="./assets/css/aprender.css?v=38.4.14.1">
-<link rel="stylesheet" href="./assets/css/educacao-metodologia.css?v=38.4.14.1">
-<link rel="stylesheet" href="./assets/css/campo-sensores.css?v=38.4.14.1">
+<link rel="stylesheet" href="./assets/css/aprender.css?v=38.4.17">
+<link rel="stylesheet" href="./assets/css/educacao-metodologia.css?v=38.4.17">
+<link rel="stylesheet" href="./assets/css/campo-sensores.css?v=38.4.17">
 </head><body>
 <header><div class="brand"><img class="brand-icon" src="./icons/icon-192.png" alt="Ícone ITA ARANDU MS" width="48" height="48"><div class="brand-copy"><div class="brand-kicker">Infraestrutura científica e docente · versão em desenvolvimento</div><div class="brand-main-row"><div class="brand-main">ITA ARANDU MS</div><span class="brand-badge">povos originários</span></div><div class="brand-desc">Atlas geocientífico educativo e científico de Mato Grosso do Sul</div><div class="brand-subdesc">Aprender a ler o território · 250 · 500 · 1000 km² · conhecimentos científicos, locais e ancestrais</div></div></div><div class="head-actions" aria-label="Navegação principal"><button type="button" class="nav-btn active" id="navMapa" data-section="mapa">⌖ Mapa</button><button type="button" class="nav-btn learn" data-modal="aprenderModal" data-section="aprender">◎ Aprender</button><button type="button" class="nav-btn" id="navLayers" data-section="camadas">▦ Camadas</button><button type="button" class="nav-btn" data-modal="campoModal" data-section="campo">⌖ Campo</button><button type="button" class="nav-btn" data-modal="dadosModal" data-section="dados">▥ Dados</button><button type="button" class="nav-btn" id="navFicha" data-section="ficha">▤ Ficha</button><button type="button" class="nav-btn" data-modal="pesquisaModal" data-section="pesquisa">⌕ Pesquisa</button><button type="button" class="nav-btn help" data-modal="ajudaModal" data-section="ajuda">? Ajuda</button></div></header>
 <div class="science-ribbon"><b>ITA ARANDU MS</b><span>Ferramenta educativa para aprender a ler geocientificamente o território · dados, evidências, escalas, incertezas e conhecimentos locais e ancestrais.</span></div>
@@ -609,18 +609,20 @@
 <nav class="mobile-nav" aria-label="Navegação principal"><button type="button" id="mMapa" class="active" data-section="mapa"><b>⌖</b>Mapa</button><button type="button" data-modal="aprenderModal" data-section="aprender"><b>◎</b>Aprender</button><button type="button" id="mCamadas" data-section="camadas"><b>▦</b>Camadas</button><button type="button" data-modal="campoModal" data-section="campo"><b>⌖</b>Campo</button><button type="button" data-modal="dadosModal" data-section="dados"><b>▥</b>Dados</button><button type="button" id="mFicha" data-section="ficha"><b>▤</b>Ficha</button><button type="button" data-modal="pesquisaModal" data-section="pesquisa"><b>⌕</b>Pesquisa</button><button type="button" data-modal="ajudaModal" data-section="ajuda"><b>?</b>Ajuda</button></nav>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" onerror="window.__ITA_LEAFLET_PRIMARY_FAILED=true"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" onerror="window.__ITA_LEAFLET_SECONDARY_FAILED=true"></script>
-<script src="./assets/js/map-fallback.js?v=38.4.14.1"></script>
-<script src="./dados/meta.js?v=38.4.14.1"></script>
-<script src="./dados/geometria-computacional/registry.js?v=38.4.14.1"></script>
-<script src="./referencias/referencias.js?v=38.4.14.1"></script>
-<script src="./dados/registros.js?v=38.4.14.1"></script>
-<script src="./indices/imc-v32.js?v=38.4.14.1"></script>
-<script src="./indices/iod-v3848.js?v=38.4.14.1"></script>
-<script src="./indices/icp-v3849.js?v=38.4.14.1"></script>
-<script src="./indices/igc-v38410.js?v=38.4.14.1"></script>
-<script src="./indices/igq-v38411.js?v=38.4.14.1"></script>
-<script src="./indices/igf-v38412.js?v=38.4.14.1"></script>
-<script src="./indices/ics-v38413.js?v=38.4.14.1"></script>
-<script src="./camadas/catalogo-local.js?v=38.4.14.1"></script>
-<script src="./analytics/config.js?v=38.4.14.1"></script>
-<script src="./assets/js/bootstrap.js?v=38.4.14.1"></script></body></html>
+<script src="./assets/js/map-fallback.js?v=38.4.17"></script>
+<script src="./dados/meta.js?v=38.4.17"></script>
+<script src="./dados/geometria-computacional/registry.js?v=38.4.17"></script>
+<script src="./referencias/referencias.js?v=38.4.17"></script>
+<script src="./dados/registros.js?v=38.4.17"></script>
+<script src="./indices/imc-v32.js?v=38.4.17"></script>
+<script src="./indices/iod-v3848.js?v=38.4.17"></script>
+<script src="./indices/icp-v3849.js?v=38.4.17"></script>
+<script src="./indices/igc-v38410.js?v=38.4.17"></script>
+<script src="./indices/igq-v38411.js?v=38.4.17"></script>
+<script src="./indices/igf-v38412.js?v=38.4.17"></script>
+<script src="./indices/ics-v38413.js?v=38.4.17"></script>
+<script src="./indices/ide-v38415.js?v=38.4.17"></script>
+<script src="./indices/icg-v38417.js?v=38.4.17"></script>
+<script src="./camadas/catalogo-local.js?v=38.4.17"></script>
+<script src="./analytics/config.js?v=38.4.17"></script>
+<script src="./assets/js/bootstrap.js?v=38.4.17"></script></body></html>

@@ -1,0 +1,351 @@
+{
+  "audit": "V38.4.15 · IDE · auditoria final",
+  "version": "V38.4.15-IDE-DIVERSIDADE-EVIDENCIAS-20260815",
+  "generated_at": "2026-08-15T13:06:50.857982+00:00",
+  "status": "PASS",
+  "checks_total": 68,
+  "checks_passed": 68,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": "V38.4.15-IDE-DIVERSIDADE-EVIDENCIAS-20260815"
+    },
+    {
+      "name": "snapshot_IDE_exists",
+      "pass": true,
+      "detail": "docs\\indices\\ide_v38415_snapshot.json"
+    },
+    {
+      "name": "js_IDE_exists",
+      "pass": true,
+      "detail": "docs\\indices\\ide-v38415.js"
+    },
+    {
+      "name": "runtime_audit_exists",
+      "pass": true,
+      "detail": "AUDITORIA_V38_4_15_IDE_RUNTIME.json"
+    },
+    {
+      "name": "gate_policy_exists",
+      "pass": true,
+      "detail": "docs\\indices\\politica-sintese-v384142.json"
+    },
+    {
+      "name": "index_IDE",
+      "pass": true,
+      "detail": "IDE"
+    },
+    {
+      "name": "formula_fixed",
+      "pass": true,
+      "detail": "IDE_h = 100 × exp(H_h) / 7"
+    },
+    {
+      "name": "null_rule_explicit",
+      "pass": true,
+      "detail": "null permanece ausente e não é convertido em zero. Zero numérico observado permanece zero e conta como dimensão observada, mas não contribui ao somatório de Shannon."
+    },
+    {
+      "name": "denominator_7",
+      "pass": true,
+      "detail": "o denominador 7 permanece fixo. O máximo 100 exige sete famílias positivas com contribuições equilibradas."
+    },
+    {
+      "name": "dimensions_exact",
+      "pass": true,
+      "detail": "['IMC', 'IOD', 'ICP', 'IGC', 'IGQ', 'IGF', 'ICS']"
+    },
+    {
+      "name": "IGF_MT_not_imputed",
+      "pass": true,
+      "detail": "PARCIAL_DOCUMENTADO · MT NAO_AVALIAVEL_NO_CORTE · sem zero e sem imputação"
+    },
+    {
+      "name": "base_exists_imc_v32_snapshot",
+      "pass": true,
+      "detail": "docs/indices/imc_v32_snapshot.json"
+    },
+    {
+      "name": "base_sha_imc_v32_snapshot",
+      "pass": true,
+      "detail": "30c4f9765416d2ecc78284b5e35a09c6f22027b4146aea4397c9b193a3a940cc"
+    },
+    {
+      "name": "base_exists_iod_v3848_snapshot",
+      "pass": true,
+      "detail": "docs/indices/iod_v3848_snapshot.json"
+    },
+    {
+      "name": "base_sha_iod_v3848_snapshot",
+      "pass": true,
+      "detail": "a83296691d1584d18de88b8c1ddd176b4932c6522ccd545fb14cc9d141bd0f97"
+    },
+    {
+      "name": "base_exists_icp_v3849_snapshot",
+      "pass": true,
+      "detail": "docs/indices/icp_v3849_snapshot.json"
+    },
+    {
+      "name": "base_sha_icp_v3849_snapshot",
+      "pass": true,
+      "detail": "50a28c6113d2ef448d696b742e0685addae72ff60416b6c2426744af5ce25b38"
+    },
+    {
+      "name": "base_exists_igc_v38410_snapshot",
+      "pass": true,
+      "detail": "docs/indices/igc_v38410_snapshot.json"
+    },
+    {
+      "name": "base_sha_igc_v38410_snapshot",
+      "pass": true,
+      "detail": "f6054398ae702bd8b44b34d07f80e6c241190a3ac91ae7039f9d4058fea9eb97"
+    },
+    {
+      "name": "base_exists_igq_v38411_snapshot",
+      "pass": true,
+      "detail": "docs/indices/igq_v38411_snapshot.json"
+    },
+    {
+      "name": "base_sha_igq_v38411_snapshot",
+      "pass": true,
+      "detail": "d8400c420036692d3c1eaa15172ba6e3718aeb34f19021a34718c51fd408a2df"
+    },
+    {
+      "name": "base_exists_igf_v38412_snapshot",
+      "pass": true,
+      "detail": "docs/indices/igf_v38412_snapshot.json"
+    },
+    {
+      "name": "base_sha_igf_v38412_snapshot",
+      "pass": true,
+      "detail": "f2b36cf8d3ea731d5e1bc091080c2c2e40fb7caf137881d0bf2e77617a7f79b6"
+    },
+    {
+      "name": "base_exists_ics_v38413_snapshot",
+      "pass": true,
+      "detail": "docs/indices/ics_v38413_snapshot.json"
+    },
+    {
+      "name": "base_sha_ics_v38413_snapshot",
+      "pass": true,
+      "detail": "158064072120ddee3909567707aad1002abbb6fcab74bea75ec23bdbbd1731b3"
+    },
+    {
+      "name": "grid_exists_malha_r5_250km2",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_r5_250km2.geojson"
+    },
+    {
+      "name": "grid_sha_malha_r5_250km2",
+      "pass": true,
+      "detail": "484df0f0bdccd2210da5dbef3d5d769867099bfdef062c2f751ceed4c29f9af0"
+    },
+    {
+      "name": "grid_exists_malha_500km2",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_500km2.geojson"
+    },
+    {
+      "name": "grid_sha_malha_500km2",
+      "pass": true,
+      "detail": "b2c9f8f85ab74be1580279ec436ad841f225e8f077202ae2aeff5be5e64e566a"
+    },
+    {
+      "name": "grid_exists_malha_1000km2",
+      "pass": true,
+      "detail": "docs/camadas/arquivos/malha_1000km2.geojson"
+    },
+    {
+      "name": "grid_sha_malha_1000km2",
+      "pass": true,
+      "detail": "3f3745d33287eac0ee1c10fb6c1784c7a269f070d93df4c66abc6f42a89d9482"
+    },
+    {
+      "name": "250_row_count",
+      "pass": true,
+      "detail": "1554"
+    },
+    {
+      "name": "250_row_schema",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_effective_diversity_ceiling",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "250_all_cells_calculable",
+      "pass": true,
+      "detail": "1554/1554"
+    },
+    {
+      "name": "250_support_distribution_matches_v38414",
+      "pass": true,
+      "detail": "{'actual': {'0': 0, '1': 263, '2': 600, '3': 454, '4': 192, '5': 43, '6': 2, '7': 0}, 'expected': {'0': 0, '1': 263, '2': 600, '3': 454, '4': 192, '5': 43, '6': 2, '7': 0}}"
+    },
+    {
+      "name": "250_summary_cells",
+      "pass": true,
+      "detail": "1554"
+    },
+    {
+      "name": "250_min_floor",
+      "pass": true,
+      "detail": "14.2857"
+    },
+    {
+      "name": "500_row_count",
+      "pass": true,
+      "detail": "793"
+    },
+    {
+      "name": "500_row_schema",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_effective_diversity_ceiling",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "500_all_cells_calculable",
+      "pass": true,
+      "detail": "793/793"
+    },
+    {
+      "name": "500_support_distribution_matches_v38414",
+      "pass": true,
+      "detail": "{'actual': {'0': 0, '1': 126, '2': 242, '3': 239, '4': 152, '5': 30, '6': 4, '7': 0}, 'expected': {'0': 0, '1': 126, '2': 242, '3': 239, '4': 152, '5': 30, '6': 4, '7': 0}}"
+    },
+    {
+      "name": "500_summary_cells",
+      "pass": true,
+      "detail": "793"
+    },
+    {
+      "name": "500_min_floor",
+      "pass": true,
+      "detail": "14.2857"
+    },
+    {
+      "name": "1000_row_count",
+      "pass": true,
+      "detail": "412"
+    },
+    {
+      "name": "1000_row_schema",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_effective_diversity_ceiling",
+      "pass": true,
+      "detail": "bad=0"
+    },
+    {
+      "name": "1000_all_cells_calculable",
+      "pass": true,
+      "detail": "412/412"
+    },
+    {
+      "name": "1000_support_distribution_matches_v38414",
+      "pass": true,
+      "detail": "{'actual': {'0': 0, '1': 54, '2': 92, '3': 149, '4': 93, '5': 18, '6': 6, '7': 0}, 'expected': {'0': 0, '1': 54, '2': 92, '3': 149, '4': 93, '5': 18, '6': 6, '7': 0}}"
+    },
+    {
+      "name": "1000_summary_cells",
+      "pass": true,
+      "detail": "412"
+    },
+    {
+      "name": "1000_min_floor",
+      "pass": true,
+      "detail": "14.2857"
+    },
+    {
+      "name": "app_ide_color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_ide_builder",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_ide_derive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_ide_scale_group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "featureStyle_ide_object_renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "featureStyle_no_ide_legend_html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "layerLegend_ide",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog_ide_250",
+      "pass": true,
+      "detail": "{'id': 'ide_250', 'name': 'IDE · Diversidade de Evidências · 250 km²', 'group': 'Conhecimento geocientífico e análises', 'status': 'incorporada', 'kind': 'derived', 'count': 1554, 'style': {'color': '#4a4a4a', 'weight': 0.7, 'fillOpacity': 0.75, 'renderer': 'index_ide', 'fill': '#1f9d94'}, 'source': 'ITA ARANDU MS · IDE V38.4.15 · sete dimensões base certificadas', 'validation': 'V38.4.15 · cálculo de diversidade efetiva segundo gate V38.4.14.2 · null preservado', 'scope_level': 'MS', 'priority': 'alta', 'expected_geometry': 'Polygon', 'note': 'Diversidade efetiva das famílias IMC, IOD, ICP, IGC, IGQ, IGF e ICS. Dimensões ausentes permanecem null e não recebem zero. O denominador 7 permanece fixo. Cada célula publica número de dimensões observadas e ausentes.', 'reference_ids': ['REF-111', 'REF-112', 'REF-113', 'REF-115', 'REF-105'], 'derive_type': 'ide_snapshot_v38415', 'grid_source_id': 'malha_r5_250km2', 'ide_scale': '250'}"
+    },
+    {
+      "name": "catalog_ide_500",
+      "pass": true,
+      "detail": "{'id': 'ide_500', 'name': 'IDE · Diversidade de Evidências · 500 km²', 'group': 'Conhecimento geocientífico e análises', 'status': 'incorporada', 'kind': 'derived', 'count': 793, 'style': {'color': '#4a4a4a', 'weight': 0.7, 'fillOpacity': 0.75, 'renderer': 'index_ide', 'fill': '#1f9d94'}, 'source': 'ITA ARANDU MS · IDE V38.4.15 · sete dimensões base certificadas', 'validation': 'V38.4.15 · cálculo de diversidade efetiva segundo gate V38.4.14.2 · null preservado', 'scope_level': 'MS', 'priority': 'alta', 'expected_geometry': 'Polygon', 'note': 'Diversidade efetiva das famílias IMC, IOD, ICP, IGC, IGQ, IGF e ICS. Dimensões ausentes permanecem null e não recebem zero. O denominador 7 permanece fixo. Cada célula publica número de dimensões observadas e ausentes.', 'reference_ids': ['REF-111', 'REF-112', 'REF-113', 'REF-115', 'REF-105'], 'derive_type': 'ide_snapshot_v38415', 'grid_source_id': 'malha_500km2', 'ide_scale': '500'}"
+    },
+    {
+      "name": "catalog_ide_1000",
+      "pass": true,
+      "detail": "{'id': 'ide_1000', 'name': 'IDE · Diversidade de Evidências · 1000 km²', 'group': 'Conhecimento geocientífico e análises', 'status': 'incorporada', 'kind': 'derived', 'count': 412, 'style': {'color': '#4a4a4a', 'weight': 0.7, 'fillOpacity': 0.75, 'renderer': 'index_ide', 'fill': '#1f9d94'}, 'source': 'ITA ARANDU MS · IDE V38.4.15 · sete dimensões base certificadas', 'validation': 'V38.4.15 · cálculo de diversidade efetiva segundo gate V38.4.14.2 · null preservado', 'scope_level': 'MS', 'priority': 'alta', 'expected_geometry': 'Polygon', 'note': 'Diversidade efetiva das famílias IMC, IOD, ICP, IGC, IGQ, IGF e ICS. Dimensões ausentes permanecem null e não recebem zero. O denominador 7 permanece fixo. Cada célula publica número de dimensões observadas e ausentes.', 'reference_ids': ['REF-111', 'REF-112', 'REF-113', 'REF-115', 'REF-105'], 'derive_type': 'ide_snapshot_v38415', 'grid_source_id': 'malha_1000km2', 'ide_scale': '1000'}"
+    },
+    {
+      "name": "index_loads_ide_js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "service_worker_cache",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "methodology_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ICG_not_materialized",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "VCG_not_materialized",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "PIG_not_materialized",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "next_gate": "ICG permanece bloqueado até regra própria de elegibilidade e penalização por incompletude"
+}
