@@ -1,0 +1,30 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "cobertura_escalas_mapeamento_ms",
+  "title": "Escala e recência do mapeamento geológico",
+  "provenance_status": "produto_derivado_local",
+  "source_type": "derivada_local",
+  "source_declared": "ITA ARANDU MS · snapshot V32 derivado de folhas SGB/CPRM com código cartográfico e escala verificados",
+  "source_url": "https://rigeo.sgb.gov.br/handle/doc/10217",
+  "source_urls": [
+    "https://rigeo.sgb.gov.br/handle/doc/10217",
+    "https://geosgb.sgb.gov.br/",
+    "https://rigeo.sgb.gov.br/handle/doc/25935"
+  ],
+  "reference_ids": [
+    "REF-002",
+    "REF-003",
+    "REF-053",
+    "REF-055"
+  ],
+  "local_file": "camadas/arquivos/cobertura_escalas_mapeamento_ms.geojson",
+  "local_sha256": "d34165d84c0c66ccd43484bed17d924dcced2f22dfda5339e0fd729012b45d6c",
+  "local_feature_count": 13,
+  "snapshot_capture_date": null,
+  "snapshot_capture_date_status": "nao_aplicavel_produto_derivado_local",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-cobertura_escalas_mapeamento_ms",
+  "reference_page_url": "./referencias/index.html#layer-cobertura_escalas_mapeamento_ms",
+  "online_mode_available": true,
+  "scientific_cut_note": "Produto derivado local. A data de captura externa nao se aplica. A reproducibilidade depende dos insumos e da metodologia vinculada."
+}

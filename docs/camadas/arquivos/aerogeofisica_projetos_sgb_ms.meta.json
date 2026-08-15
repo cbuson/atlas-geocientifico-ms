@@ -1,0 +1,27 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "levantamentos_geofisicos_cobertura_ms",
+  "title": "Cobertura integrada de levantamentos aerogeofísicos em MS",
+  "provenance_status": "proveniencia_parcial",
+  "source_type": "institucional_externa",
+  "source_declared": "SGB · Aerogeofísica · snapshot local V38.4.12",
+  "source_url": "https://www.sgb.gov.br/sensoriamento-remoto-e-geofisica",
+  "source_urls": [
+    "https://www.sgb.gov.br/sensoriamento-remoto-e-geofisica",
+    "https://geoportal.sgb.gov.br/server/rest/services/geofisica/aerogeofisica/MapServer"
+  ],
+  "reference_ids": [
+    "REF-058",
+    "REF-100"
+  ],
+  "local_file": "camadas/arquivos/aerogeofisica_projetos_sgb_ms.geojson",
+  "local_sha256": "bbf1b4785d5f54a27ba640e74ca853e9b14c8d7b2939f2870ef490303c893b9b",
+  "local_feature_count": 16,
+  "snapshot_capture_date": "",
+  "snapshot_capture_date_status": "nao_documentada",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-levantamentos_geofisicos_cobertura_ms",
+  "reference_page_url": "./referencias/index.html#layer-levantamentos_geofisicos_cobertura_ms",
+  "online_mode_available": true,
+  "scientific_cut_note": "O arquivo local e preservado, mas nao e promovido a snapshot cientifico plenamente documentado ate que a data de captura seja comprovada ou uma nova captura controlada seja realizada."
+}

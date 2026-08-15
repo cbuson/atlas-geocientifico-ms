@@ -8,7 +8,18 @@
     "fonte": "SGB · GeoSGB · Afloramentos geológicos · snapshot local V38.4.8",
     "validacao": "recorte MS · deduplicação por identificador institucional · fonte do IOD",
     "feicoes": 7189,
-    "bytes": 8854836
+    "bytes": 8854836,
+    "source_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0",
+    "provenance_status": "local_operacional_com_snapshot_oficial_e_online",
+    "online_remote_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0/query?where=1%3D1&geometry=-58.3%2C-24.2%2C-50.8%2C-17.0&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson",
+    "online_remote_type": "arcgis_geojson",
+    "online_remote_paged": true,
+    "snapshot_mode_default": "local",
+    "official_snapshot_file": "camadas/snapshots/2026-08-15/afloramentos_geosgb_ms.geojson",
+    "official_snapshot_capture_date": "2026-08-15",
+    "official_snapshot_feature_count": 9982,
+    "official_snapshot_sha256": "5019e2f7635ea4e72568ec4ce2d8ee78cf0a479b5bb7c482ac0cef4777c5f875",
+    "validation": "local operacional preservado · snapshot oficial separado · online sob demanda"
   },
   {
     "id": "petrografia_geosgb_ms",
@@ -19,7 +30,18 @@
     "fonte": "SGB · GeoSGB · Petrografia · snapshot local V38.4.9",
     "validacao": "recorte exato MS · registros oficiais preservados · agrupamento independente apenas para cálculo do ICP",
     "feicoes": 339,
-    "bytes": 925905
+    "bytes": 925905,
+    "source_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0",
+    "provenance_status": "local_operacional_com_snapshot_oficial_e_online",
+    "online_remote_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/petrografia/MapServer/0/query?where=1%3D1&geometry=-58.3%2C-24.2%2C-50.8%2C-17.0&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson",
+    "online_remote_type": "arcgis_geojson",
+    "online_remote_paged": true,
+    "snapshot_mode_default": "local",
+    "official_snapshot_file": "camadas/snapshots/2026-08-15/petrografia_geosgb_ms.geojson",
+    "official_snapshot_capture_date": "2026-08-15",
+    "official_snapshot_feature_count": 340,
+    "official_snapshot_sha256": "6480d50e0a5c72af0f239e55a97c930a11754a8d5b9bd3cf5dbf6119ecc238fe",
+    "validation": "local operacional preservado · snapshot oficial separado · online sob demanda"
   },
   {
     "id": "geocronologia_geosgb_ms",
@@ -30,7 +52,18 @@
     "fonte": "SGB · GeoSGB · Datações geocronológicas · snapshot local V38.4.10",
     "validacao": "recorte MS · amostras diretas e síntese de resultados relacionados",
     "feicoes": 5,
-    "bytes": 6089
+    "bytes": 6089,
+    "source_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/geocronologia/MapServer/0",
+    "provenance_status": "local_operacional_com_snapshot_oficial_e_online",
+    "online_remote_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/geocronologia/MapServer/0/query?where=1%3D1&geometry=-58.3%2C-24.2%2C-50.8%2C-17.0&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson",
+    "online_remote_type": "arcgis_geojson",
+    "online_remote_paged": true,
+    "snapshot_mode_default": "local",
+    "official_snapshot_file": "camadas/snapshots/2026-08-15/geocronologia_geosgb_ms.geojson",
+    "official_snapshot_capture_date": "2026-08-15",
+    "official_snapshot_feature_count": 13,
+    "official_snapshot_sha256": "5a028da2fdf78be483f1ebc97a802fadbc0071643285f6da05ab8b6cdb727cc3",
+    "validation": "local operacional preservado · snapshot oficial separado · online sob demanda"
   },
   {
     "id": "cavernas_canie",
@@ -239,7 +272,18 @@
     "fonte": "Serviço Geológico do Brasil. Unidades litoestratigráficas do mapeamento estadual 1:1.000.000 [2006]",
     "validacao": "snapshot local SGB · 870 polígonos · renderer oficial com 67 unidades incorporado",
     "feicoes": 870,
-    "bytes": 1788091
+    "bytes": 1788091,
+    "source_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/litoestratigrafia_estados/MapServer/7",
+    "provenance_status": "local_operacional_com_snapshot_oficial_e_online",
+    "online_remote_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/litoestratigrafia_estados/MapServer/7/query?where=1%3D1&geometry=-58.3%2C-24.2%2C-50.8%2C-17.0&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson",
+    "online_remote_type": "arcgis_geojson",
+    "online_remote_paged": true,
+    "snapshot_mode_default": "local",
+    "official_snapshot_file": "camadas/snapshots/2026-08-15/mapa_geologico_ms.geojson",
+    "official_snapshot_capture_date": "2026-08-15",
+    "official_snapshot_feature_count": 870,
+    "official_snapshot_sha256": "4f70bbf72311da811a4b8ae4025caf87fa53e444b90d29dd8cfbc892e36e3c54",
+    "validation": "local operacional preservado · snapshot oficial separado · online sob demanda"
   },
   {
     "id": "mapa_hidrogeologico_ms",
@@ -261,7 +305,18 @@
     "fonte": "Serviço Geológico do Brasil · Geoportal SGB · Ocorrências minerais",
     "validacao": "snapshot local · 279 registros · simbologia oficial por CLASSES_UTILITARIAS",
     "feicoes": 279,
-    "bytes": 314238
+    "bytes": 314238,
+    "source_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/ocorrencias/MapServer/0",
+    "provenance_status": "local_operacional_com_snapshot_oficial_e_online",
+    "online_remote_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/ocorrencias/MapServer/0/query?where=1%3D1&geometry=-58.3%2C-24.2%2C-50.8%2C-17.0&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson",
+    "online_remote_type": "arcgis_geojson",
+    "online_remote_paged": true,
+    "snapshot_mode_default": "local",
+    "official_snapshot_file": "camadas/snapshots/2026-08-15/mapa_recursos_minerais_ms.geojson",
+    "official_snapshot_capture_date": "2026-08-15",
+    "official_snapshot_feature_count": 282,
+    "official_snapshot_sha256": "fa7a46f1db7abc94b536428ffa56faaa638704a9fe9d675a4893d272a513132f",
+    "validation": "local operacional preservado · snapshot oficial separado · online sob demanda"
   },
   {
     "id": "mapa_solos_ms",
@@ -272,7 +327,18 @@
     "fonte": "IMASUL / PIN MS · Solos-MS 1:250.000 · camada 42",
     "validacao": "snapshot local com 1.851 polígonos · 230 classes · renderer oficial PIN MS carregado sob demanda e armazenado no navegador",
     "feicoes": 1851,
-    "bytes": 3042498
+    "bytes": 3042498,
+    "source_url": "https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/SiriemaGeo_Sisla/MapServer/42",
+    "provenance_status": "local_operacional_com_snapshot_oficial_e_online",
+    "online_remote_url": "https://www.pinms.ms.gov.br/arcgis/rest/services/IMASUL/SiriemaGeo_Sisla/MapServer/42/query?where=1%3D1&geometry=-58.3%2C-24.2%2C-50.8%2C-17.0&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson",
+    "online_remote_type": "arcgis_geojson",
+    "online_remote_paged": true,
+    "snapshot_mode_default": "local",
+    "official_snapshot_file": "camadas/snapshots/2026-08-15/mapa_solos_ms.geojson",
+    "official_snapshot_capture_date": "2026-08-15",
+    "official_snapshot_feature_count": 1851,
+    "official_snapshot_sha256": "983e2ba705d02a948b1fd5afddda9beba1c6b5ef6d9119da23ce67825b0f6b63",
+    "validation": "local operacional preservado · snapshot oficial separado · online sob demanda"
   },
   {
     "id": "municipios_limites_base",
@@ -437,7 +503,12 @@
     "fonte": "SGB · Gravimetria · snapshot local V38.4.12",
     "validacao": "corte 14/08/2026 · fonte oficial SGB · suporte do IGF V38.4.12",
     "feicoes": 0,
-    "bytes": 365
+    "bytes": 365,
+    "source_url": null,
+    "provenance_status": "consulta_oficial_atual_zero_ms",
+    "online_status": "zero_registros_ms",
+    "online_check_date": "2026-08-15",
+    "validation": "Consulta oficial controlada em 15/08/2026 retornou zero registros para Mato Grosso do Sul. O arquivo local anterior permanece preservado."
   },
   {
     "id": "magnetotelurico_sgb_ms",
@@ -448,7 +519,12 @@
     "fonte": "SGB · Geofísica terrestre · snapshot local V38.4.12",
     "validacao": "corte 14/08/2026 · fonte oficial SGB · suporte do IGF V38.4.12",
     "feicoes": 0,
-    "bytes": 369
+    "bytes": 369,
+    "source_url": null,
+    "provenance_status": "fonte_online_instavel",
+    "online_status": "servico_timeout",
+    "online_check_date": "2026-08-15",
+    "validation": "O serviço oficial respondeu repetidamente com timeout nas consultas controladas de 15/08/2026. O arquivo local anterior permanece preservado."
   },
   {
     "id": "siagas_pocos_ms",
@@ -459,7 +535,18 @@
     "fonte": "SGB · SIAGAS · snapshot local V38.4.13",
     "validacao": "corte 14/08/2026 · fonte oficial SGB · suporte do ICS V38.4.13",
     "feicoes": 3877,
-    "bytes": 4311154
+    "bytes": 4311154,
+    "source_url": "https://geoportal.sgb.gov.br/server/rest/services/Siagas_WebMap_MIL1/MapServer/0",
+    "provenance_status": "local_operacional_com_snapshot_oficial_e_online",
+    "online_remote_url": "https://geoportal.sgb.gov.br/server/rest/services/Siagas_WebMap_MIL1/MapServer/0/query?where=str_uf+%3D+%27MS%27&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson",
+    "online_remote_type": "arcgis_geojson",
+    "online_remote_paged": true,
+    "snapshot_mode_default": "local",
+    "official_snapshot_file": "camadas/snapshots/2026-08-15/siagas_pocos_ms.geojson",
+    "official_snapshot_capture_date": "2026-08-15",
+    "official_snapshot_feature_count": 3877,
+    "official_snapshot_sha256": "531f9988f0d3ddd25c3f8cc9a2c146a3243156ae907bad3007dcfa5f43142d25",
+    "validation": "local operacional preservado · snapshot oficial separado · online sob demanda"
   },
   {
     "id": "rimas_pocos_monitoramento_ms",
@@ -470,6 +557,11 @@
     "fonte": "SGB · RIMAS · snapshot local V38.4.13",
     "validacao": "corte 14/08/2026 · fonte oficial SGB · suporte do ICS V38.4.13",
     "feicoes": 0,
-    "bytes": 406
+    "bytes": 406,
+    "source_url": null,
+    "provenance_status": "fonte_online_atual_sem_cobertura_espacial_ms",
+    "online_status": "sem_cobertura_espacial_ms",
+    "online_check_date": "2026-08-15",
+    "validation": "A extensão espacial publicada pelo serviço oficial consultado em 15/08/2026 não intersecta Mato Grosso do Sul. O arquivo local anterior permanece preservado."
   }
 ]

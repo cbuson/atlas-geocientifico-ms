@@ -1,0 +1,28 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.2",
+  "layer_id": "magnetotelurico_sgb_ms",
+  "title": null,
+  "provenance_status": "fonte_online_instavel",
+  "source_type": "institucional_externa",
+  "source_declared": "SGB · Geofísica terrestre · snapshot local V38.4.12",
+  "source_url": null,
+  "source_urls": [
+    "https://geoportal.sgb.gov.br/server/rest/services/geofisica/geofisica_terrestre/MapServer"
+  ],
+  "reference_ids": [
+    "REF-102"
+  ],
+  "local_file": "camadas/arquivos/magnetotelurico_sgb_ms.geojson",
+  "local_sha256": "9b841407361f7c6814a42ab90602be097b8a2186f61a30d1bc5c9408eeda8e4d",
+  "local_feature_count": 0,
+  "snapshot_capture_date": "",
+  "snapshot_capture_date_status": "nao_documentada",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-magnetotelurico_sgb_ms",
+  "reference_page_url": "./referencias/index.html#layer-magnetotelurico_sgb_ms",
+  "online_mode_available": true,
+  "scientific_cut_note": "O arquivo local e preservado, mas nao e promovido a snapshot cientifico plenamente documentado ate que a data de captura seja comprovada ou uma nova captura controlada seja realizada.",
+  "online_status": "servico_timeout",
+  "online_check_date": "2026-08-15",
+  "note": "O serviço oficial respondeu repetidamente com timeout nas consultas controladas de 15/08/2026. O arquivo local anterior permanece preservado."
+}

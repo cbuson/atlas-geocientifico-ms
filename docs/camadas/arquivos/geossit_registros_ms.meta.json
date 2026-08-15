@@ -1,0 +1,25 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "geossit_registros_ms",
+  "title": "Registros GEOSSIT de Mato Grosso do Sul",
+  "provenance_status": "proveniencia_parcial",
+  "source_type": "institucional_externa",
+  "source_declared": "Serviço Geológico do Brasil. GEOSSIT",
+  "source_url": "https://www.sgb.gov.br/geossit/",
+  "source_urls": [
+    "https://www.sgb.gov.br/geossit/"
+  ],
+  "reference_ids": [
+    "REF-013"
+  ],
+  "local_file": "camadas/arquivos/geossit_registros_ms.geojson",
+  "local_sha256": "36cf31143f2d3f77522a75967adf469e3ec437d3c0e529983de6d5aeb5245358",
+  "local_feature_count": 8,
+  "snapshot_capture_date": "",
+  "snapshot_capture_date_status": "nao_documentada",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-geossit_registros_ms",
+  "reference_page_url": "./referencias/index.html#layer-geossit_registros_ms",
+  "online_mode_available": true,
+  "scientific_cut_note": "O arquivo local e preservado, mas nao e promovido a snapshot cientifico plenamente documentado ate que a data de captura seja comprovada ou uma nova captura controlada seja realizada."
+}

@@ -455,3 +455,20 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Adiciona opacidade 0–100% por camada, persistente e estritamente visual.
 - Nenhum índice, snapshot, malha ou geometria científica é recalculado.
 
+## V38.4.28 · Dual Source R8 · 2026-08-15
+
+- Preserva as camadas operacionais locais.
+- Registra snapshots oficiais brutos de 15/08/2026 em pasta separada.
+- Ativa consulta online sob demanda.
+- Não substitui GeoJSON local quando o esquema de atributos difere.
+- Não recalcula índices precalculados.
+
+## V38.4.29 · Mobile map toolbar · 2026-08-15
+
+- Integra Mapa base e Legenda na barra cartografica superior esquerda em telas moveis.
+- Remove os dois botoes flutuantes isolados da direita.
+- O botao de mapa base usa a silhueta simplificada de Mato Grosso do Sul derivada do limite IBGE ja incorporado ao Atlas.
+- A legenda usa simbolo cartografico de lista de simbolos.
+- Mantem os mesmos paineis e eventos sem alterar dados, camadas, snapshots ou indices.
+- Reposiciona os paineis moveis sob a barra unica.
+

@@ -1,0 +1,25 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "municipios_sedes_base",
+  "title": "Sedes municipais",
+  "provenance_status": "proveniencia_parcial",
+  "source_type": "institucional_externa",
+  "source_declared": "IBGE e base consolidada do projeto",
+  "source_url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais.html",
+  "source_urls": [
+    "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais.html"
+  ],
+  "reference_ids": [
+    "REF-001"
+  ],
+  "local_file": "camadas/arquivos/municipios_sedes_base.geojson",
+  "local_sha256": "649a8eeaf60b9191411ad7a53df06754c131f6f429b5346fc2739265b54b0962",
+  "local_feature_count": 79,
+  "snapshot_capture_date": "",
+  "snapshot_capture_date_status": "nao_documentada",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-municipios_sedes_base",
+  "reference_page_url": "./referencias/index.html#layer-municipios_sedes_base",
+  "online_mode_available": true,
+  "scientific_cut_note": "O arquivo local e preservado, mas nao e promovido a snapshot cientifico plenamente documentado ate que a data de captura seja comprovada ou uma nova captura controlada seja realizada."
+}

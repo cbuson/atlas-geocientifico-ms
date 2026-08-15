@@ -1,0 +1,49 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.2",
+  "layer_id": "afloramentos_geosgb_ms",
+  "title": null,
+  "provenance_status": "local_operacional_com_snapshot_oficial_e_online",
+  "source_type": "institucional_externa",
+  "source_declared": null,
+  "source_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0",
+  "source_urls": [
+    "https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0"
+  ],
+  "reference_ids": [
+    "REF-083"
+  ],
+  "local_file": "camadas/arquivos/afloramentos_geosgb_ms.geojson",
+  "local_sha256": "f0f51e69b04e60e0064ede8c2316fc65bf4cf65999888f72f098f98977d80d91",
+  "local_feature_count": 7189,
+  "snapshot_capture_date": "",
+  "snapshot_capture_date_status": "nao_documentada",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-afloramentos_geosgb_ms",
+  "reference_page_url": "./referencias/index.html#layer-afloramentos_geosgb_ms",
+  "online_mode_available": true,
+  "scientific_cut_note": "A camada operacional local foi preservada. O snapshot oficial de 15/08/2026 e mantido separadamente para proveniencia, auditoria e comparacao. Nenhuma substituicao automatica foi realizada.",
+  "online_query_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/afloramentos/MapServer/0/query?where=1%3D1&geometry=-58.3%2C-24.2%2C-50.8%2C-17.0&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson",
+  "online_remote_type": "arcgis_geojson",
+  "online_remote_paged": true,
+  "local_role": "camada_operacional_do_atlas",
+  "official_snapshot_role": "captura_bruta_oficial_para_proveniencia_e_comparacao",
+  "official_snapshot_file": "camadas/snapshots/2026-08-15/afloramentos_geosgb_ms.geojson",
+  "official_snapshot_capture_date": "2026-08-15",
+  "official_snapshot_feature_count": 9982,
+  "official_snapshot_sha256": "5019e2f7635ea4e72568ec4ce2d8ee78cf0a479b5bb7c482ac0cef4777c5f875",
+  "schema_relation": "independente_nao_substituivel_automaticamente",
+  "attribute_schema_overlap": 0.0,
+  "local_geometry_types": {
+    "Point": 7189
+  },
+  "official_snapshot_geometry_types": {
+    "Point": 9982
+  },
+  "official_snapshot_bbox_sample": [
+    -57.87685248700001,
+    -23.066100000000006,
+    -50.805692658,
+    -17.06655429099999
+  ],
+  "precomputed_indices_recalculated": false
+}

@@ -1,5 +1,11 @@
-const ITA_CACHE = 'ita-arandu-v38-4-26-ux-master-metodologias-opacidade';
+const ITA_CACHE = 'ita-arandu-v38-4-29-mobile-map-toolbar';
 const ITA_CORE = [
+  "./assets/css/mobile-map-toolbar-v38429.css?v=38.4.29",
+  "./documentos/protocolo-proveniencia-snapshots.html",
+  "./camadas/snapshots-manifest.json",
+  "./camadas/proveniencia-snapshots.js?v=38.4.28",
+  "./assets/js/proveniencia-v38428.js?v=38.4.28",
+  "./assets/css/proveniencia-v38428.css?v=38.4.28",
   "./assets/css/ux-master-v38426.css?v=38.4.26",
   "./documentos/metodologias-indices.html",
   "./documentos/antecedentes-nicho-academico.html",

@@ -1,0 +1,32 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.2",
+  "layer_id": "rimas_pocos_monitoramento_ms",
+  "title": null,
+  "provenance_status": "fonte_online_atual_sem_cobertura_espacial_ms",
+  "source_type": "institucional_externa",
+  "source_declared": "SGB · RIMAS · snapshot local V38.4.13",
+  "source_url": null,
+  "source_urls": [
+    "https://rigeo.sgb.gov.br/",
+    "https://rimasweb.sgb.gov.br/",
+    "https://geoportal.sgb.gov.br/server/rest/services/hidrologia/rimas/MapServer/0"
+  ],
+  "reference_ids": [
+    "REF-009",
+    "REF-060",
+    "REF-094"
+  ],
+  "local_file": "camadas/arquivos/rimas_pocos_monitoramento_ms.geojson",
+  "local_sha256": "2e0a60de6c6ccb4d1d1ee136a938edd54a0171334ed9baf518bea13b4db544bb",
+  "local_feature_count": 0,
+  "snapshot_capture_date": "",
+  "snapshot_capture_date_status": "nao_documentada",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-rimas_pocos_monitoramento_ms",
+  "reference_page_url": "./referencias/index.html#layer-rimas_pocos_monitoramento_ms",
+  "online_mode_available": true,
+  "scientific_cut_note": "O arquivo local e preservado, mas nao e promovido a snapshot cientifico plenamente documentado ate que a data de captura seja comprovada ou uma nova captura controlada seja realizada.",
+  "online_status": "sem_cobertura_espacial_ms",
+  "online_check_date": "2026-08-15",
+  "note": "A extensão espacial publicada pelo serviço oficial consultado em 15/08/2026 não intersecta Mato Grosso do Sul. O arquivo local anterior permanece preservado."
+}

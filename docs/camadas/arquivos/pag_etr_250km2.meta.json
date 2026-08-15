@@ -1,0 +1,37 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "pag_etr_250km2",
+  "title": "ETR · Prioridade de Prospecção Geoquímica · PAG ETR · 250 km²",
+  "provenance_status": "produto_derivado_local",
+  "source_type": "derivada_local",
+  "source_declared": "ITA ARANDU MS · PAG ETR · piloto espacial V35 restaurado no PATCH 00",
+  "source_url": "https://doi.org/10.3133/sir20105070J",
+  "source_urls": [
+    "https://doi.org/10.3133/sir20105070J",
+    "https://doi.org/10.1016/j.gr.2014.10.008",
+    "https://rigeo.sgb.gov.br/handle/doc/21801",
+    "https://rigeo.sgb.gov.br/handle/doc/1567",
+    "https://rigeo.sgb.gov.br/bitstream/doc/10190/1/projeto_aquidauana.pdf",
+    "https://rigeo.sgb.gov.br/handle/doc/5658",
+    "https://rigeo.sgb.gov.br/bitstream/doc/15295/1/TD_LACERDA_FILHO.pdf"
+  ],
+  "reference_ids": [
+    "REF-146",
+    "REF-148",
+    "REF-156",
+    "REF-157",
+    "REF-158",
+    "REF-159",
+    "REF-160"
+  ],
+  "local_file": "camadas/arquivos/pag_etr_250km2.geojson",
+  "local_sha256": "bfb0363fc5d28769933034c426224908671e03bb96a289a98244b795f3f2a19b",
+  "local_feature_count": 1554,
+  "snapshot_capture_date": null,
+  "snapshot_capture_date_status": "nao_aplicavel_produto_derivado_local",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-pag_etr_250km2",
+  "reference_page_url": "./referencias/index.html#layer-pag_etr_250km2",
+  "online_mode_available": true,
+  "scientific_cut_note": "Produto derivado local. A data de captura externa nao se aplica. A reproducibilidade depende dos insumos e da metodologia vinculada."
+}

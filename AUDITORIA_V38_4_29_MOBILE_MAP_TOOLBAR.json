@@ -1,0 +1,93 @@
+{
+  "audit": "V38.4.29 mobile map toolbar",
+  "status": "PASS",
+  "passed": 17,
+  "total": 17,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": "V38.4.29-MOBILE-MAP-TOOLS-INTEGRADOS-20260815"
+    },
+    {
+      "name": "css_file",
+      "pass": true,
+      "detail": "C:\\Users\\cbuso\\Documents\\GitHub\\atlas-geocientifico-ms\\docs\\assets\\css\\mobile-map-toolbar-v38429.css"
+    },
+    {
+      "name": "css_loaded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "old_floating_group_removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "base_unique",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "legend_unique",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "base_integrated",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "legend_integrated",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ms_outline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "legend_icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reset_icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "state_sync",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile_integrated_rule",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "panels_left",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "narrow_phone_rule",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog_json_unchanged",
+      "pass": true,
+      "detail": "8ccb9bae74159fbe1b14874dc187423411db1af68e9527386893f855c4413f95"
+    },
+    {
+      "name": "snapshot_manifest_unchanged",
+      "pass": true,
+      "detail": "bbed2243e156271ce68354d4a0072ce8a339ce78d1710b6ca7e75f21f3bf1d35"
+    }
+  ]
+}

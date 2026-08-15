@@ -1,0 +1,38 @@
+﻿ITA ARANDU MS
+
+V38.4.29 MOBILE MAP TOOLBAR
+
+Integra Mapa base e Legenda na barra superior esquerda em celular.
+
+Ordem final
+
+enquadrar MS
+aproximar
+afastar
+limpar
+GPS
+tempo geologico
+mapa base
+legenda
+
+Mapa base usa a silhueta simplificada do limite de Mato Grosso do Sul derivada da camada IBGE ja incorporada ao Atlas.
+
+Legenda usa simbolo cartografico de lista de simbolos.
+
+Os paineis abrem embaixo da barra unica e alinhados a esquerda.
+
+Nao altera camadas, GeoJSON, snapshots, manifesto de proveniencia nem indices.
+
+Base exigida
+
+V38.4.28-SNAPSHOT-FIRST-DUAL-SOURCE-R8-20260815
+
+Executar
+
+Set-ExecutionPolicy -Scope Process Bypass
+
+.\APLICAR_V38_4_29_MOBILE_MAP_TOOLBAR.ps1
+
+Arquivo de auditoria
+
+AUDITORIA_V38_4_29_MOBILE_MAP_TOOLBAR.json

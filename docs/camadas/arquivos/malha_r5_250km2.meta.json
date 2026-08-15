@@ -1,0 +1,26 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "malha_r5_250km2",
+  "title": "Malha hexagonal analítica R5 · 250 km²",
+  "provenance_status": "produto_derivado_local",
+  "source_type": "derivada_local",
+  "source_declared": "IBGE — Malha Municipal Digital 2025. Recorte e grade R5 do projeto",
+  "source_url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais.html",
+  "source_urls": [
+    "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais.html"
+  ],
+  "reference_ids": [
+    "REF-001",
+    "REF-055"
+  ],
+  "local_file": "camadas/arquivos/malha_r5_250km2.geojson",
+  "local_sha256": "484df0f0bdccd2210da5dbef3d5d769867099bfdef062c2f751ceed4c29f9af0",
+  "local_feature_count": 1554,
+  "snapshot_capture_date": null,
+  "snapshot_capture_date_status": "nao_aplicavel_produto_derivado_local",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-malha_r5_250km2",
+  "reference_page_url": "./referencias/index.html#layer-malha_r5_250km2",
+  "online_mode_available": true,
+  "scientific_cut_note": "Produto derivado local. A data de captura externa nao se aplica. A reproducibilidade depende dos insumos e da metodologia vinculada."
+}

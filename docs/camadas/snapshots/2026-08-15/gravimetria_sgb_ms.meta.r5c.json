@@ -1,0 +1,12 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "gravimetria_sgb_ms",
+  "provenance_status": "consulta_oficial_atual_zero_ms",
+  "source_url": "https://geoportal.sgb.gov.br/server/rest/services/geofisica/gravimetria/MapServer/0",
+  "snapshot_capture_date": "2026-08-15",
+  "query_method": "atributos longitude latitude",
+  "query_where": "longitude >= -58.3 AND longitude <= -50.8 AND latitude >= -24.2 AND latitude <= -17.0",
+  "current_online_count_ms": 0,
+  "promotion_status": "nao_promovido",
+  "note": "A camada local ativa nao foi apagada nem substituida."
+}

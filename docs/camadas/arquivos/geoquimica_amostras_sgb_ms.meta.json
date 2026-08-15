@@ -1,0 +1,33 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "geoquimica_amostras_sgb_ms",
+  "title": "Amostras geoquímicas analisadas SGB",
+  "provenance_status": "proveniencia_parcial",
+  "source_type": "institucional_externa",
+  "source_declared": "SGB · Geoportal · Geoquímica externa · snapshot local V38.4.11",
+  "source_url": "https://geosgb.sgb.gov.br/",
+  "source_urls": [
+    "https://geosgb.sgb.gov.br/",
+    "https://www.sgb.gov.br/geoquimica-ambiental-saiba-mais",
+    "https://www.sgb.gov.br/geoquimica-ambiental",
+    "https://geoportal.sgb.gov.br/server/rest/services/geoquimica/geoquimica_integrada/MapServer",
+    "https://geoportal.sgb.gov.br/server/rest/services/geologia/geoq_externa/MapServer"
+  ],
+  "reference_ids": [
+    "REF-003",
+    "REF-054",
+    "REF-064",
+    "REF-099",
+    "REF-178"
+  ],
+  "local_file": "camadas/arquivos/geoquimica_amostras_sgb_ms.geojson",
+  "local_sha256": "eab29fdca8c60289accb800ff07eabb8ac4fc73ecbafa0d20e159fa6fb897cad",
+  "local_feature_count": 1117,
+  "snapshot_capture_date": "",
+  "snapshot_capture_date_status": "nao_documentada",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-geoquimica_amostras_sgb_ms",
+  "reference_page_url": "./referencias/index.html#layer-geoquimica_amostras_sgb_ms",
+  "online_mode_available": true,
+  "scientific_cut_note": "O arquivo local e preservado, mas nao e promovido a snapshot cientifico plenamente documentado ate que a data de captura seja comprovada ou uma nova captura controlada seja realizada."
+}

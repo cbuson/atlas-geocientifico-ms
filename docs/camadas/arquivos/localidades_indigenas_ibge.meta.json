@@ -1,0 +1,25 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "localidades_indigenas_ibge",
+  "title": "Aldeias e localidades indígenas",
+  "provenance_status": "proveniencia_parcial",
+  "source_type": "institucional_externa",
+  "source_declared": "IBGE · Censo Demográfico 2022 · Localidades Indígenas",
+  "source_url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/27385-localidades.html",
+  "source_urls": [
+    "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/27385-localidades.html"
+  ],
+  "reference_ids": [
+    "REF-129"
+  ],
+  "local_file": "camadas/arquivos/localidades_indigenas_ibge.geojson",
+  "local_sha256": "e60657da81cb104bb30a7fd8c0f6832a7b138a4d725ca83f0016a6c24822dedc",
+  "local_feature_count": 518,
+  "snapshot_capture_date": "",
+  "snapshot_capture_date_status": "nao_documentada",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-localidades_indigenas_ibge",
+  "reference_page_url": "./referencias/index.html#layer-localidades_indigenas_ibge",
+  "online_mode_available": true,
+  "scientific_cut_note": "O arquivo local e preservado, mas nao e promovido a snapshot cientifico plenamente documentado ate que a data de captura seja comprovada ou uma nova captura controlada seja realizada."
+}

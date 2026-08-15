@@ -1,0 +1,81 @@
+{
+  "produto": "ITA ARANDU MS V38.4.28 R7 · arquitetura dual source sem substituicao",
+  "executado_em": "2026-08-15T19:55:31.210288+00:00",
+  "snapshot_date": "2026-08-15",
+  "camadas_dual_source": 7,
+  "substituicoes_de_geojson_ativos": 0,
+  "indices_recalculados": false,
+  "validacoes": [
+    {
+      "id": "afloramentos_geosgb_ms",
+      "local_count": 7189,
+      "official_snapshot_count": 9982,
+      "schema_overlap": 0.0,
+      "schema_relation": "independente_nao_substituivel_automaticamente",
+      "local_sha256": "f0f51e69b04e60e0064ede8c2316fc65bf4cf65999888f72f098f98977d80d91",
+      "official_snapshot_sha256": "5019e2f7635ea4e72568ec4ce2d8ee78cf0a479b5bb7c482ac0cef4777c5f875",
+      "status": "PASS_SEM_SUBSTITUICAO"
+    },
+    {
+      "id": "petrografia_geosgb_ms",
+      "local_count": 339,
+      "official_snapshot_count": 340,
+      "schema_overlap": 0.7907,
+      "schema_relation": "compatibilidade_parcial",
+      "local_sha256": "c2e8e18a650e71e359874695fc2e4f48cccc3b4fbe079f76a2d89481f9a36240",
+      "official_snapshot_sha256": "6480d50e0a5c72af0f239e55a97c930a11754a8d5b9bd3cf5dbf6119ecc238fe",
+      "status": "PASS_SEM_SUBSTITUICAO"
+    },
+    {
+      "id": "geocronologia_geosgb_ms",
+      "local_count": 5,
+      "official_snapshot_count": 13,
+      "schema_overlap": 0.5,
+      "schema_relation": "compatibilidade_parcial",
+      "local_sha256": "e46cd02f2207256e893c055a105cfac9049d6ae81dbfec3a5869025224c0fe21",
+      "official_snapshot_sha256": "5a028da2fdf78be483f1ebc97a802fadbc0071643285f6da05ab8b6cdb727cc3",
+      "status": "PASS_SEM_SUBSTITUICAO"
+    },
+    {
+      "id": "mapa_recursos_minerais_ms",
+      "local_count": 279,
+      "official_snapshot_count": 282,
+      "schema_overlap": 0.973,
+      "schema_relation": "compatibilidade_parcial",
+      "local_sha256": "fc1ac139f0cfb2193689c66b72a89b2e30ed76e2f608208b115f869211f38f8f",
+      "official_snapshot_sha256": "fa7a46f1db7abc94b536428ffa56faaa638704a9fe9d675a4893d272a513132f",
+      "status": "PASS_SEM_SUBSTITUICAO"
+    },
+    {
+      "id": "mapa_geologico_ms",
+      "local_count": 870,
+      "official_snapshot_count": 870,
+      "schema_overlap": 0.6207,
+      "schema_relation": "compatibilidade_parcial",
+      "local_sha256": "be794219c966ef7fd0f6e4ff3f701a81a23bff65e1c702bddcb5eec5ed5cc936",
+      "official_snapshot_sha256": "4f70bbf72311da811a4b8ae4025caf87fa53e444b90d29dd8cfbc892e36e3c54",
+      "status": "PASS_SEM_SUBSTITUICAO"
+    },
+    {
+      "id": "mapa_solos_ms",
+      "local_count": 1851,
+      "official_snapshot_count": 1851,
+      "schema_overlap": 0.3333,
+      "schema_relation": "independente_nao_substituivel_automaticamente",
+      "local_sha256": "291c1747a811829706a22279b7be65bb9ba39bdf878a4b7d7be6ecca593e87c6",
+      "official_snapshot_sha256": "983e2ba705d02a948b1fd5afddda9beba1c6b5ef6d9119da23ce67825b0f6b63",
+      "status": "PASS_SEM_SUBSTITUICAO"
+    },
+    {
+      "id": "siagas_pocos_ms",
+      "local_count": 3877,
+      "official_snapshot_count": 3877,
+      "schema_overlap": 0.4167,
+      "schema_relation": "compatibilidade_parcial",
+      "local_sha256": "5db6082e7a1fc1a921618f96cbc11e1ac15d2e3ad517c2c7f1f1e73625f6cba8",
+      "official_snapshot_sha256": "531f9988f0d3ddd25c3f8cc9a2c146a3243156ae907bad3007dcfa5f43142d25",
+      "status": "PASS_SEM_SUBSTITUICAO"
+    }
+  ],
+  "principio": "A captura oficial bruta e a camada operacional normalizada sao produtos distintos e permanecem separadas quando os esquemas de atributos nao sao equivalentes."
+}
