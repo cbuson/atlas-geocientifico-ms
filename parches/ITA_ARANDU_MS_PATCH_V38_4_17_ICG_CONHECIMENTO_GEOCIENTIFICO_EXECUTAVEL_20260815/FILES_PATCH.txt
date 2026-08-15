@@ -1,6 +1,0 @@
-APLICAR_V38_4_17_ICG.ps1
-LEIA_ME.txt
-AUDITORIA_V38_4_17_ICG_PREPATCH.json
-FILES_PATCH.txt
-payload/tools/materializar_icg_v38417.py
-payload/tools/auditar_icg_v38417.py

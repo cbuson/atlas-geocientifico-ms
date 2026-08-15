@@ -390,4 +390,13 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - mantém IDE fora da fórmula e o publica somente como indicador companheiro
 - executa sensibilidade obrigatória com α 0,5 · 1 · 2
 - mantém VCG e PIG bloqueados até regras próprias
+## V38.4.18 - Gate metodologico para VCG - 2026-08-15
+
+- Congelada a distincao entre deficit medido e lacuna documental.
+- null permanece null nos snapshots fonte e nao e convertido em zero numerico.
+- Ausencia documental entra no VCG como componente explicito de lacuna da familia.
+- VCG nao e 100-ICG. IDE e ICG permanecem indicadores companheiros e fora da formula.
+- Indisponibilidade do modulo MT nao cria uma oitava lacuna quando IGF possui valor numerico.
+- Definido plano de sensibilidade para o peso da lacuna documental antes da certificacao do VCG.
+- Nenhum indice cientifico ou malha e recalculado nesta etapa.
 

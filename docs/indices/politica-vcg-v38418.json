@@ -1,0 +1,221 @@
+{
+  "policy": "V38.4.18 - Gate metodologico para VCG - Vazios de Conhecimento Geocientifico",
+  "version": "V38.4.18-GATE-VCG-20260815",
+  "generated_at": "2026-08-15T13:36:27Z",
+  "status": "PASS",
+  "input_dimensions": [
+    "IMC",
+    "IOD",
+    "ICP",
+    "IGC",
+    "IGQ",
+    "IGF",
+    "ICS"
+  ],
+  "scales_km2": [
+    "250",
+    "500",
+    "1000"
+  ],
+  "scientific_role": "VCG mede vazios do conhecimento geocientifico documentado. Nao mede ausencia geologica, favorabilidade mineral, recurso, reserva ou valor economico.",
+  "core_principle": "Ausencia de valor numa dimensao base nao e convertida em zero numerico. Ela e representada separadamente como lacuna documental maxima daquela familia no corte, mantendo o valor fonte como null.",
+  "baseline_formula": {
+    "observed_standardization": "Para j observado, S_j = X_j/100 e d_j = 1-S_j.",
+    "documentary_gap": "Para j sem valor, S_j permanece indefinido e g_j = 1 representa lacuna documental da familia no corte.",
+    "measured_term": "L_medido = sum(d_j^2 para j observado)/7.",
+    "documentary_term": "L_documental = n_sem_evidencia/7.",
+    "vcg": "VCG_h = 100 * sqrt(L_medido + L_documental).",
+    "decomposition": "VCG_medido = 100*sqrt(L_medido); VCG_documental = 100*sqrt(L_documental); VCG = sqrt(VCG_medido^2 + VCG_documental^2).",
+    "original_architecture_equivalence": "A forma preserva a metrica RMS prevista na arquitetura original, mas distingue explicitamente deficit medido de lacuna documental em vez de substituir null por zero."
+  },
+  "semantic_rules": {
+    "numeric_zero": "X_j = 0 observado gera deficit medido d_j = 1 e permanece distinguivel de uma dimensao null.",
+    "null": "null permanece null no snapshot fonte. No VCG ele gera um componente de lacuna documental, nao um valor geocientifico zero.",
+    "all_missing": "Se todas as sete familias estivessem sem evidencia, VCG = 100 por lacuna documental total, com confianca de deficit medido nula. Isso nao significaria ausencia geologica.",
+    "complete_support": "Com sete dimensoes observadas, o VCG depende apenas dos deficits medidos.",
+    "not_complement_icg": "VCG nao e 100-ICG e ICG nao entra na formula do VCG.",
+    "ide_companion": "IDE permanece indicador companheiro e nao entra na formula VCG."
+  },
+  "igf_rule": "Se IGF possui valor numerico, a indisponibilidade do submodulo MT nao cria uma oitava lacuna nem zera IGF. O status MT NAO_AVALIAVEL_NO_CORTE deve ser propagado. Se IGF for null numa celula, a familia IGF entra como lacuna documental como qualquer outra dimensao base.",
+  "dominant_gap_rule": {
+    "per_dimension_contribution": "familias sem evidencia recebem contribuicao documental 1; familias observadas recebem contribuicao medida 1-S_j.",
+    "ties": "todas as familias empatadas na maior contribuicao devem ser registradas em lacunas_dominantes. Nao escolher arbitrariamente apenas uma.",
+    "secondary": "deficits observados devem ser ordenados separadamente para distinguir ausencia documental de conhecimento medido baixo."
+  },
+  "confidence": {
+    "field": "fracao_dim_avaliadas = n_dim_avaliadas/7",
+    "classes": {
+      "0-1": "muito baixa",
+      "2": "baixa",
+      "3-4": "moderada",
+      "5-6": "alta",
+      "7": "plena"
+    },
+    "interpretation": "A confianca refere-se a quanto do VCG e sustentado por deficits medidos. Um VCG alto com baixa fracao avaliada e principalmente um mapa de lacunas documentais."
+  },
+  "required_output_fields": [
+    "vcg_100",
+    "vcg_medido_100",
+    "vcg_documental_100",
+    "n_dim_avaliadas",
+    "n_dim_sem_evidencia",
+    "fracao_dim_avaliadas",
+    "dimensoes_avaliadas",
+    "dimensoes_sem_evidencia",
+    "lacunas_dominantes",
+    "deficits_medidos_ordenados",
+    "perfil_vcg",
+    "classe_confianca_vcg",
+    "icg_100_companheiro",
+    "ide_100_companheiro",
+    "status_igf_no_corte"
+  ],
+  "sensitivity_plan": {
+    "mandatory": true,
+    "baseline_lambda_documental": 1.0,
+    "alternatives": [
+      0.5,
+      0.75
+    ],
+    "scenario_formula": "VCG(lambda) = 100 * sqrt([sum_obs(1-S_j)^2 + n_missing*lambda^2]/7).",
+    "comparisons": [
+      "Spearman rho versus baseline",
+      "mediana e P95 da diferenca absoluta",
+      "mudancas de classe"
+    ],
+    "rule": "lambda=1 permanece baseline porque falta de evidencia documentada constitui lacuna documental completa da familia. Alternativas avaliam robustez sem alterar os snapshots fonte."
+  },
+  "diagnostic_current_cut": {
+    "250": {
+      "cells": 1554,
+      "vcg_min": 54.7131,
+      "vcg_p05": 76.0803,
+      "vcg_median": 91.7768,
+      "vcg_mean": 90.5384,
+      "vcg_p95": 98.6335,
+      "vcg_max": 98.6335,
+      "dimension_count_distribution": {
+        "0": 0,
+        "1": 263,
+        "2": 600,
+        "3": 454,
+        "4": 192,
+        "5": 43,
+        "6": 2,
+        "7": 0
+      },
+      "gap_profile": {
+        "predominio_documental": 1549,
+        "predominio_deficit_medido": 5,
+        "equilibrado": 0
+      },
+      "cells_with_documentary_gaps": 1554,
+      "cells_complete_support": 0
+    },
+    "500": {
+      "cells": 793,
+      "vcg_min": 56.3089,
+      "vcg_p05": 72.2947,
+      "vcg_median": 91.2091,
+      "vcg_mean": 89.8225,
+      "vcg_p95": 98.6335,
+      "vcg_max": 98.6335,
+      "dimension_count_distribution": {
+        "0": 0,
+        "1": 126,
+        "2": 242,
+        "3": 239,
+        "4": 152,
+        "5": 30,
+        "6": 4,
+        "7": 0
+      },
+      "gap_profile": {
+        "predominio_documental": 785,
+        "predominio_deficit_medido": 8,
+        "equilibrado": 0
+      },
+      "cells_with_documentary_gaps": 793,
+      "cells_complete_support": 0
+    },
+    "1000": {
+      "cells": 412,
+      "vcg_min": 54.4428,
+      "vcg_p05": 70.6863,
+      "vcg_median": 90.6532,
+      "vcg_mean": 89.0607,
+      "vcg_p95": 98.6335,
+      "vcg_max": 98.6335,
+      "dimension_count_distribution": {
+        "0": 0,
+        "1": 54,
+        "2": 92,
+        "3": 149,
+        "4": 93,
+        "5": 18,
+        "6": 6,
+        "7": 0
+      },
+      "gap_profile": {
+        "predominio_documental": 401,
+        "predominio_deficit_medido": 11,
+        "equilibrado": 0
+      },
+      "cells_with_documentary_gaps": 412,
+      "cells_complete_support": 0
+    }
+  },
+  "sensitivity_preview": {
+    "250": {
+      "0.5": {
+        "spearman_rho": -0.058573,
+        "median_abs_diff": 35.1314,
+        "p95_abs_diff": 41.1879,
+        "max_abs_diff": 46.291
+      },
+      "0.75": {
+        "spearman_rho": 0.688892,
+        "median_abs_diff": 18.4753,
+        "p95_abs_diff": 21.3123,
+        "max_abs_diff": 23.1455
+      }
+    },
+    "500": {
+      "0.5": {
+        "spearman_rho": -0.098068,
+        "median_abs_diff": 30.1978,
+        "p95_abs_diff": 41.1879,
+        "max_abs_diff": 46.291
+      },
+      "0.75": {
+        "spearman_rho": 0.650383,
+        "median_abs_diff": 15.9196,
+        "p95_abs_diff": 21.3123,
+        "max_abs_diff": 23.1455
+      }
+    },
+    "1000": {
+      "0.5": {
+        "spearman_rho": -0.077178,
+        "median_abs_diff": 28.4961,
+        "p95_abs_diff": 41.1879,
+        "max_abs_diff": 46.0974
+      },
+      "0.75": {
+        "spearman_rho": 0.686135,
+        "median_abs_diff": 15.28,
+        "p95_abs_diff": 21.3123,
+        "max_abs_diff": 23.0808
+      }
+    }
+  },
+  "references": [
+    "REF-104",
+    "REF-105",
+    "REF-115"
+  ],
+  "next_allowed": "V38.4.19 - materializacao e auditoria VCG 250 / 500 / 1000 km2",
+  "still_blocked": [
+    "PIG"
+  ]
+}

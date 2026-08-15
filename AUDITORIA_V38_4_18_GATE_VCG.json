@@ -1,0 +1,152 @@
+{
+  "audit": "V38.4.18 - Fechamento metodologico do gate VCG",
+  "version": "V38.4.18-GATE-VCG-20260815",
+  "generated_at": "2026-08-15T13:36:27Z",
+  "status": "PASS",
+  "gate_vcg": "PASS",
+  "formula": {
+    "observed_standardization": "Para j observado, S_j = X_j/100 e d_j = 1-S_j.",
+    "documentary_gap": "Para j sem valor, S_j permanece indefinido e g_j = 1 representa lacuna documental da familia no corte.",
+    "measured_term": "L_medido = sum(d_j^2 para j observado)/7.",
+    "documentary_term": "L_documental = n_sem_evidencia/7.",
+    "vcg": "VCG_h = 100 * sqrt(L_medido + L_documental).",
+    "decomposition": "VCG_medido = 100*sqrt(L_medido); VCG_documental = 100*sqrt(L_documental); VCG = sqrt(VCG_medido^2 + VCG_documental^2).",
+    "original_architecture_equivalence": "A forma preserva a metrica RMS prevista na arquitetura original, mas distingue explicitamente deficit medido de lacuna documental em vez de substituir null por zero."
+  },
+  "semantic_rules": {
+    "numeric_zero": "X_j = 0 observado gera deficit medido d_j = 1 e permanece distinguivel de uma dimensao null.",
+    "null": "null permanece null no snapshot fonte. No VCG ele gera um componente de lacuna documental, nao um valor geocientifico zero.",
+    "all_missing": "Se todas as sete familias estivessem sem evidencia, VCG = 100 por lacuna documental total, com confianca de deficit medido nula. Isso nao significaria ausencia geologica.",
+    "complete_support": "Com sete dimensoes observadas, o VCG depende apenas dos deficits medidos.",
+    "not_complement_icg": "VCG nao e 100-ICG e ICG nao entra na formula do VCG.",
+    "ide_companion": "IDE permanece indicador companheiro e nao entra na formula VCG."
+  },
+  "diagnostic_current_cut": {
+    "250": {
+      "cells": 1554,
+      "vcg_min": 54.7131,
+      "vcg_p05": 76.0803,
+      "vcg_median": 91.7768,
+      "vcg_mean": 90.5384,
+      "vcg_p95": 98.6335,
+      "vcg_max": 98.6335,
+      "dimension_count_distribution": {
+        "0": 0,
+        "1": 263,
+        "2": 600,
+        "3": 454,
+        "4": 192,
+        "5": 43,
+        "6": 2,
+        "7": 0
+      },
+      "gap_profile": {
+        "predominio_documental": 1549,
+        "predominio_deficit_medido": 5,
+        "equilibrado": 0
+      },
+      "cells_with_documentary_gaps": 1554,
+      "cells_complete_support": 0
+    },
+    "500": {
+      "cells": 793,
+      "vcg_min": 56.3089,
+      "vcg_p05": 72.2947,
+      "vcg_median": 91.2091,
+      "vcg_mean": 89.8225,
+      "vcg_p95": 98.6335,
+      "vcg_max": 98.6335,
+      "dimension_count_distribution": {
+        "0": 0,
+        "1": 126,
+        "2": 242,
+        "3": 239,
+        "4": 152,
+        "5": 30,
+        "6": 4,
+        "7": 0
+      },
+      "gap_profile": {
+        "predominio_documental": 785,
+        "predominio_deficit_medido": 8,
+        "equilibrado": 0
+      },
+      "cells_with_documentary_gaps": 793,
+      "cells_complete_support": 0
+    },
+    "1000": {
+      "cells": 412,
+      "vcg_min": 54.4428,
+      "vcg_p05": 70.6863,
+      "vcg_median": 90.6532,
+      "vcg_mean": 89.0607,
+      "vcg_p95": 98.6335,
+      "vcg_max": 98.6335,
+      "dimension_count_distribution": {
+        "0": 0,
+        "1": 54,
+        "2": 92,
+        "3": 149,
+        "4": 93,
+        "5": 18,
+        "6": 6,
+        "7": 0
+      },
+      "gap_profile": {
+        "predominio_documental": 401,
+        "predominio_deficit_medido": 11,
+        "equilibrado": 0
+      },
+      "cells_with_documentary_gaps": 412,
+      "cells_complete_support": 0
+    }
+  },
+  "sensitivity_preview": {
+    "250": {
+      "0.5": {
+        "spearman_rho": -0.058573,
+        "median_abs_diff": 35.1314,
+        "p95_abs_diff": 41.1879,
+        "max_abs_diff": 46.291
+      },
+      "0.75": {
+        "spearman_rho": 0.688892,
+        "median_abs_diff": 18.4753,
+        "p95_abs_diff": 21.3123,
+        "max_abs_diff": 23.1455
+      }
+    },
+    "500": {
+      "0.5": {
+        "spearman_rho": -0.098068,
+        "median_abs_diff": 30.1978,
+        "p95_abs_diff": 41.1879,
+        "max_abs_diff": 46.291
+      },
+      "0.75": {
+        "spearman_rho": 0.650383,
+        "median_abs_diff": 15.9196,
+        "p95_abs_diff": 21.3123,
+        "max_abs_diff": 23.1455
+      }
+    },
+    "1000": {
+      "0.5": {
+        "spearman_rho": -0.077178,
+        "median_abs_diff": 28.4961,
+        "p95_abs_diff": 41.1879,
+        "max_abs_diff": 46.0974
+      },
+      "0.75": {
+        "spearman_rho": 0.686135,
+        "median_abs_diff": 15.28,
+        "p95_abs_diff": 21.3123,
+        "max_abs_diff": 23.0808
+      }
+    }
+  },
+  "next_allowed": "V38.4.19 - materializacao e auditoria VCG 250 / 500 / 1000 km2",
+  "still_blocked": [
+    "PIG"
+  ]
+}
