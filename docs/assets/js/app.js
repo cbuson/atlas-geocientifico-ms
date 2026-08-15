@@ -132,11 +132,75 @@ function itaCriticalReadingHtml(cfg,p){return `<div class="feature-source featur
 
 const GROUP_ORDER=['Base geográfica','Geografia e território','Geologia e estratigrafia','Tectônica e estruturas','Geomorfologia, solos e regolito','Hidrologia e hidrogeologia','Geoquímica, geofísica e geotermia','Recursos minerais e mineração','Metalogenia e prospecção mineral','Geodiversidade e geoconservação','Espeleologia e carste','Sismicidade, geodinâmica e riscos geológicos','Clima e eventos extremos','Amostras, acervos e Campo UFMS','Conhecimento geocientífico e análises','Malhas e índices'];
 const DEFAULT_OPEN_GROUPS=[];
-const state={layers:new Map(),active:new Set(),loading:new Set(),selected:null,openGroups:new Set(DEFAULT_OPEN_GROUPS)};
+const state={layers:new Map(),active:new Set(),loading:new Set(),selected:null,openGroups:new Set(DEFAULT_OPEN_GROUPS),layerOpacity:new Map()};
 const canvas=document.getElementById('mapCanvas'),ctx=canvas.getContext('2d',{alpha:true}),mapShell=document.getElementById('mapShell');
 const layerList=document.getElementById('layerList'),search=document.getElementById('layerSearch'),info=document.getElementById('featureInfo'),statusEl=document.getElementById('mapStatusText'),zoomEl=document.getElementById('zoomText'),app=document.getElementById('app');
 let DPR=Math.max(1,Math.min(2,window.devicePixelRatio||1));
 const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const ITA_LAYER_OPACITY_PREFIX='ita-layer-opacity-v1:';
+function itaGetLayerOpacity(id){
+  if(state.layerOpacity.has(id))return state.layerOpacity.get(id);
+  let v=1;
+  try{
+    const raw=localStorage.getItem(ITA_LAYER_OPACITY_PREFIX+id);
+    if(raw!==null){
+      const n=Number(raw);
+      if(Number.isFinite(n))v=Math.max(0,Math.min(1,n));
+    }
+  }catch(e){}
+  state.layerOpacity.set(id,v);
+  return v;
+}
+function itaUpdateOpacityUi(id,v){
+  const pct=Math.round(v*100);
+  document.querySelectorAll('[data-layer-opacity]').forEach(el=>{
+    if(el.dataset.layerOpacity===id && Number(el.value)!==pct)el.value=String(pct);
+  });
+  document.querySelectorAll('[data-layer-opacity-value]').forEach(el=>{
+    if(el.dataset.layerOpacityValue===id)el.textContent=pct+'%';
+  });
+}
+function itaSetLayerOpacity(id,value,redraw=true){
+  const v=Math.max(0,Math.min(1,Number(value)));
+  if(!Number.isFinite(v))return;
+  state.layerOpacity.set(id,v);
+  try{localStorage.setItem(ITA_LAYER_OPACITY_PREFIX+id,String(v))}catch(e){}
+  itaUpdateOpacityUi(id,v);
+  if(redraw)render();
+}
+function itaLayerOpacityHtml(cfg,context='catalogo'){
+  const pct=Math.round(itaGetLayerOpacity(cfg.id)*100);
+  return `<div class="layer-opacity-control" data-opacity-context="${esc(context)}">
+    <div class="layer-opacity-head"><span>Opacidade da camada</span><output data-layer-opacity-value="${esc(cfg.id)}">${pct}%</output></div>
+    <div class="layer-opacity-row"><input class="layer-opacity-range" type="range" min="0" max="100" step="5" value="${pct}" data-layer-opacity="${esc(cfg.id)}" data-opacity-context="${esc(context)}" aria-label="Opacidade de ${esc(cfg.name)}"><button type="button" class="layer-opacity-reset" data-layer-opacity-reset="${esc(cfg.id)}">100%</button></div>
+    <div class="layer-opacity-note">Apenas visual · não altera dado, índice, classe ou exportação.</div>
+  </div>`;
+}
+function itaBindLayerOpacityControls(){
+  if(document.documentElement.dataset.itaOpacityBound==='1')return;
+  document.documentElement.dataset.itaOpacityBound='1';
+  document.addEventListener('input',e=>{
+    const el=e.target.closest?.('[data-layer-opacity]');
+    if(!el)return;
+    const v=Math.max(0,Math.min(1,Number(el.value)/100));
+    if(el.dataset.opacityContext==='legenda'){
+      itaUpdateOpacityUi(el.dataset.layerOpacity,v);
+      return;
+    }
+    itaSetLayerOpacity(el.dataset.layerOpacity,v,true);
+  });
+  document.addEventListener('change',e=>{
+    const el=e.target.closest?.('[data-layer-opacity]');
+    if(!el || el.dataset.opacityContext!=='legenda')return;
+    itaSetLayerOpacity(el.dataset.layerOpacity,Number(el.value)/100,true);
+  });
+  document.addEventListener('click',e=>{
+    const b=e.target.closest?.('[data-layer-opacity-reset]');
+    if(!b)return;
+    e.preventDefault();
+    itaSetLayerOpacity(b.dataset.layerOpacityReset,1,true);
+  });
+}
 let sgbRendererStatus='pending';
 async function loadSgbOfficialRenderer(){
  const cacheKey='ita_sgb_ms_renderer_2006_v1';
@@ -372,7 +436,29 @@ function featureStyle(cfg,feat){
  return{stroke,fill,weight:st.weight??.8,fillOpacity:st.fillOpacity??.2,radius};
 }
 function pathGeometry(g){const p=new Path2D();const ring=r=>r.forEach((c,i)=>{const[x,y]=project(c[0],c[1]);i?p.lineTo(x,y):p.moveTo(x,y)});if(g.type==='Polygon')g.coordinates.forEach(r=>{ring(r);p.closePath()});else if(g.type==='MultiPolygon')g.coordinates.forEach(poly=>poly.forEach(r=>{ring(r);p.closePath()}));else if(g.type==='LineString')ring(g.coordinates);else if(g.type==='MultiLineString')g.coordinates.forEach(ring);return p}
-function drawFeature(cfg,f){const g=f.geometry;if(!g)return;const s=featureStyle(cfg,f);ctx.lineWidth=s.weight;ctx.strokeStyle=s.stroke;ctx.fillStyle=s.fill;ctx.setLineDash((cfg.style||{}).dash?[5,4]:[]);ctx.globalAlpha=1;if(g.type==='Point'||g.type==='MultiPoint'){const pts=g.type==='Point'?[g.coordinates]:g.coordinates;for(const c of pts){const[x,y]=project(c[0],c[1]);ctx.beginPath();ctx.arc(x,y,s.radius,0,Math.PI*2);ctx.fillStyle=s.fill;ctx.globalAlpha=.9;ctx.fill();ctx.globalAlpha=1;ctx.stroke()}}else{const p=pathGeometry(g);if(g.type.includes('Polygon')){ctx.globalAlpha=s.fillOpacity;ctx.fillStyle=s.fill;ctx.fill(p,'evenodd');ctx.globalAlpha=1}ctx.stroke(p)}ctx.setLineDash([])}
+function drawFeature(cfg,f){
+  const g=f.geometry;if(!g)return;
+  const s=featureStyle(cfg,f),userOpacity=itaGetLayerOpacity(cfg.id);
+  ctx.lineWidth=s.weight;ctx.strokeStyle=s.stroke;ctx.fillStyle=s.fill;
+  ctx.setLineDash((cfg.style||{}).dash?[5,4]:[]);ctx.globalAlpha=1;
+  if(userOpacity<=0){ctx.setLineDash([]);return}
+  if(g.type==='Point'||g.type==='MultiPoint'){
+    const pts=g.type==='Point'?[g.coordinates]:g.coordinates;
+    for(const c of pts){
+      const[x,y]=project(c[0],c[1]);ctx.beginPath();ctx.arc(x,y,s.radius,0,Math.PI*2);
+      ctx.fillStyle=s.fill;ctx.globalAlpha=.9*userOpacity;ctx.fill();
+      ctx.globalAlpha=userOpacity;ctx.stroke();
+    }
+  }else{
+    const p=pathGeometry(g);
+    if(g.type.includes('Polygon')){
+      const baseFill=Number.isFinite(Number(s.fillOpacity))?Number(s.fillOpacity):0.28;
+      ctx.globalAlpha=baseFill*userOpacity;ctx.fillStyle=s.fill;ctx.fill(p,'evenodd');
+    }
+    ctx.globalAlpha=userOpacity;ctx.stroke(p);
+  }
+  ctx.globalAlpha=1;ctx.setLineDash([]);
+}
 function layerLegendHtml(cfg){
  const st=cfg.style||{};
  if(st.renderer==='pag_etr')return `<div class="legend-layer-title">${esc(cfg.name)}</div><div class="legend-row"><span class="swatch" style="background:transparent;border:1px solid #4a4a4a"></span><span>N0 · Não avaliável</span></div><div class="legend-row"><span class="swatch" style="background:#f7d6d6;border:1px solid #4a4a4a"></span><span>N1 · Modelo geológico aberto</span></div><div class="legend-row"><span class="swatch" style="background:#df8f8f;border:1px solid #4a4a4a"></span><span>N2 · Justifica prospecção geoquímica</span></div><div class="legend-row"><span class="swatch" style="background:#9b2c2c;border:1px solid #4a4a4a"></span><span>N3 · Evidência local compatível</span></div><div class="legend-row"><span class="swatch" style="background:#9a9a9a;border:1px solid #4a4a4a"></span><span>N4 · Modelo contradito localmente</span></div><div class="legend-note">A cor representa maturidade lógica da evidência, não probabilidade econômica. N0 é transparente. N3 não demonstra continuidade, tonelagem, teor econômico, recurso ou reserva. As escalas 250, 500 e 1000 km² são avaliadas independentemente.</div>`;
@@ -470,7 +556,18 @@ if(['mapa_geologico_ms','litoestratigrafia_geosgb_ms'].includes(cfg.id)){
  }
  return `<div class="legend-layer-title">${esc(cfg.name)}</div><div class="legend-row"><span class="swatch" style="background:${esc(st.fill||st.color||'#8ea0ad')}"></span><span>${esc(cfg.name)}</span></div><div class="legend-note">Legenda associada à representação desta camada. Quando a fonte publicar simbologia oficial, ela deve ser preservada integralmente no snapshot.</div>`;
 }
-function renderLegend(){const host=document.getElementById('mapLegend'); if(!host)return; const active=CATALOG.layers.filter(x=>state.active.has(x.id)); if(!active.length){host.innerHTML='<div class="kicker" style="display:flex;justify-content:space-between;align-items:center"><span>Legenda</span><button id="closeLegendPanelDyn" type="button" style="border:0;background:transparent;color:#486576;font-weight:900">×</button></div><div class="empty">Ative uma camada temática para ver sua legenda.</div>';document.getElementById('closeLegendPanelDyn')?.addEventListener('click',()=>host.classList.remove('mobile-open')); return;} host.innerHTML='<div class="kicker" style="display:flex;justify-content:space-between;align-items:center"><span>Legenda</span><button id="closeLegendPanelDyn" type="button" style="border:0;background:transparent;color:#486576;font-weight:900">×</button></div>'+active.map(layerLegendHtml).join('');document.getElementById('closeLegendPanelDyn')?.addEventListener('click',()=>host.classList.remove('mobile-open'));}
+function renderLegend(){
+  const host=document.getElementById('mapLegend');if(!host)return;
+  const active=CATALOG.layers.filter(x=>state.active.has(x.id));
+  const head='<div class="kicker" style="display:flex;justify-content:space-between;align-items:center"><span>Legenda</span><button id="closeLegendPanelDyn" type="button" style="border:0;background:transparent;color:#486576;font-weight:900">×</button></div>';
+  if(!active.length){
+    host.innerHTML=head+'<div class="empty">Ative uma camada temática para ver sua legenda.</div>';
+    document.getElementById('closeLegendPanelDyn')?.addEventListener('click',()=>host.classList.remove('mobile-open'));
+    return;
+  }
+  host.innerHTML=head+active.map(cfg=>layerLegendHtml(cfg)+itaLayerOpacityHtml(cfg,'legenda')).join('');
+  document.getElementById('closeLegendPanelDyn')?.addEventListener('click',()=>host.classList.remove('mobile-open'));
+}
 function renderQuickLegend(){const host=document.getElementById('quickLegend');if(!host)return;const imc=CATALOG.layers.find(c=>state.active.has(c.id)&&['imc_250','imc_500','imc_1000'].includes(c.id));if(imc){host.classList.remove('hidden');host.innerHTML=`<div class="quick-legend-title">IMC · ${esc(imc.name.match(/(250|500|1000) km²/)?.[0]||'escala ativa')}</div><div class="quick-mag-row"><span class="swatch" style="background:transparent;border:1px solid #4a4a4a"></span>sem dados</div><div class="quick-mag-row"><span class="swatch" style="background:#fbe6c5"></span>0–&lt;20</div><div class="quick-mag-row"><span class="swatch" style="background:#f5c58a"></span>20–&lt;40</div><div class="quick-mag-row"><span class="swatch" style="background:#ee9b49"></span>40–&lt;60</div><div class="quick-mag-row"><span class="swatch" style="background:#d96b1d"></span>60–&lt;75</div><div class="quick-mag-row"><span class="swatch" style="background:#a94a00"></span>75–100</div>`;return}const ipg=CATALOG.layers.find(c=>state.active.has(c.id)&&['ipg_r5_250km2','ipg_500km2','ipg_1000km2'].includes(c.id));if(ipg){host.classList.remove('hidden');host.innerHTML=`<div class="quick-legend-title">IPG · ${esc(ipg.name.match(/(250|500|1000) km²/)?.[0]||'escala ativa')}</div><div class="quick-mag-row"><span class="swatch" style="background:transparent;border:1px solid #4a4a4a"></span>sem evidência</div><div class="quick-mag-row"><span class="swatch" style="background:#f2e5ff"></span>0–&lt;20</div><div class="quick-mag-row"><span class="swatch" style="background:#d6b8f0"></span>20–&lt;40</div><div class="quick-mag-row"><span class="swatch" style="background:#b58cde"></span>40–&lt;60</div><div class="quick-mag-row"><span class="swatch" style="background:#8a5cc9"></span>60–&lt;75</div><div class="quick-mag-row"><span class="swatch" style="background:#54278f"></span>75–100</div>`;return}const eq=CATALOG.layers.find(c=>state.active.has(c.id)&&['sismos_usp_ms_2001_2026','sisbra_sismos_ms','sisbra_sismos_regionais_ms','usgs_earthquakes_contexto'].includes(c.id));if(eq){host.classList.remove('hidden');host.innerHTML=`<div class="quick-legend-title">Magnitude sísmica</div><div class="quick-mag-row"><span class="quick-mag-dot" style="width:6px;height:6px;background:#e7b46a"></span>M &lt; 2</div><div class="quick-mag-row"><span class="quick-mag-dot" style="width:9px;height:9px;background:#e27a3f"></span>M 2–2,9</div><div class="quick-mag-row"><span class="quick-mag-dot" style="width:12px;height:12px;background:#c2412d"></span>M 3–3,9</div><div class="quick-mag-row"><span class="quick-mag-dot" style="width:15px;height:15px;background:#7f1d1d"></span>M ≥ 4</div>`;return}const risk=CATALOG.layers.find(c=>state.active.has(c.id)&&['setores_risco_geologico_sgb_ms','suscetibilidade_movimentos_massa_ms','suscetibilidade_inundacoes_ms'].includes(c.id));if(risk){host.classList.remove('hidden');host.innerHTML=`<div class="quick-legend-title">${esc(risk.name)}</div><div style="font-size:7.5px">Legenda completa em <b>Legenda</b></div>`;return}const geogf=CATALOG.layers.find(c=>state.active.has(c.id)&&c.group==='Geoquímica, geofísica e geotermia');if(geogf){host.classList.remove('hidden');host.innerHTML=`<div class="quick-legend-title">${esc(geogf.name)}</div><div style="font-size:7.5px">Legenda completa em <b>Legenda</b></div>`;return}const geoherit=CATALOG.layers.find(c=>state.active.has(c.id)&&['Geodiversidade e geoconservação','Espeleologia e carste'].includes(c.group));if(geoherit){host.classList.remove('hidden');host.innerHTML=`<div class="quick-legend-title">${esc(geoherit.name)}</div><div style="font-size:7.5px">Legenda completa em <b>Legenda</b></div>`;return}const base=CATALOG.layers.find(c=>state.active.has(c.id)&&['mapa_solos_ms','amostras_solos_pin_ms','coberturas_superficiais_sgb_ms','estradas_vicinais_ms','rodovias_estaduais_base','rodovias_federais_base','ferrovias_referencia_ms','hidrografia_referencia_ms','rios_principais_ms','upg_hidrograficas_ms','bacias_paraguai_ms','bacias_parana_ms','mapa_hidrogeologico_ms','dominios_hidrogeologicos_ms','produtividade_hidrogeologica_ms','sistema_aquifero_guarani_ana','siagas_pocos_ms','siagas_aquiferos_ms','siagas_profundidade_ms','siagas_niveis_ms','siagas_qualidade_agua_ms','rimas_pocos_monitoramento_ms','hidrografia_ms_pin'].includes(c.id));if(base){host.classList.remove('hidden');host.innerHTML=`<div class="quick-legend-title">${esc(base.name)}</div><div style="font-size:7.5px">Legenda completa em <b>Legenda</b></div>`;return}host.classList.add('hidden');host.innerHTML=''}
 function render(){const w=canvas.width/DPR,h=canvas.height/DPR;ctx.setTransform(DPR,0,0,DPR,0,0);ctx.globalAlpha=1;ctx.clearRect(0,0,w,h);const order=CATALOG.layers.filter(x=>state.active.has(x.id));for(const cfg of order){const d=state.layers.get(cfg.id);if(!d?.features)continue;for(const f of d.features)drawFeature(cfg,f)}statusEl.textContent=`${order.length} camadas ativas · ${[...state.active].reduce((n,id)=>n+(state.layers.get(id)?.features?.length||0),0).toLocaleString('pt-BR')} feições`;zoomEl.textContent=`zoom ${leafletMap.getZoom()} · ${currentBaseLabel}`;renderLegend();renderQuickLegend()}
 function pointInRing(lon,lat,ring){let inside=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const xi=ring[i][0],yi=ring[i][1],xj=ring[j][0],yj=ring[j][1];const hit=((yi>lat)!=(yj>lat))&&(lon<(xj-xi)*(lat-yi)/((yj-yi)||1e-12)+xi);if(hit)inside=!inside}return inside}
@@ -683,7 +780,7 @@ function layerStatusLabel(cfg){if(cfg.status==='incorporada')return'INCORPORADA'
 function layerStatusClass(cfg){if(cfg.status==='incorporada')return'status-inc';if(cfg.status==='conectada')return'status-con';if(cfg.status==='disponivel_para_captura')return'status-cap';if(cfg.status==='em_avaliacao')return'status-eval';return'status-plan'}
 function updateCatalogSummary(){const el=document.getElementById('catalogSummary');if(!el)return;const total=CATALOG.layers.length,inc=CATALOG.layers.filter(x=>x.status==='incorporada').length,con=CATALOG.layers.filter(x=>x.status==='conectada').length,cap=CATALOG.layers.filter(x=>x.status==='disponivel_para_captura').length,ev=CATALOG.layers.filter(x=>x.status==='em_avaliacao').length,pl=CATALOG.layers.filter(x=>x.status==='planejada').length;el.innerHTML=`<b>Catálogo objetivo</b> ${total} camadas · <span class="status-dot status-inc"></span>${inc} incorporadas · ${con} conectadas · <span class="status-dot status-cap"></span>${cap} prontas para captura · <span class="status-dot status-eval"></span>${ev} em avaliação · <span class="status-dot status-plan"></span>${pl} planejadas`}
 function toggleGroup(groupName){if(state.openGroups.has(groupName))state.openGroups.delete(groupName);else state.openGroups.add(groupName);buildLayers(search.value||'')}
-function buildLayers(filter=''){layerList.innerHTML='';const q=filter.trim().toLowerCase(),groups={};for(const cfg of CATALOG.layers){if(q&&!(`${cfg.name} ${cfg.group} ${cfg.source} ${cfg.scope_level||''}`.toLowerCase().includes(q)))continue;(groups[cfg.group]??=[]).push(cfg)}for(const g of Object.keys(groups).sort((a,b)=>{const ia=GROUP_ORDER.indexOf(a),ib=GROUP_ORDER.indexOf(b);return(ia<0?999:ia)-(ib<0?999:ib)||a.localeCompare(b)})){const arr=groups[g];const sec=document.createElement('section');const open=q?true:state.openGroups.has(g);sec.className=`group ${open?'':'collapsed'}`;sec.dataset.group=g;const availableCount=arr.filter(x=>x.status==='incorporada'||x.status==='conectada').length;const head=document.createElement('button');head.type='button';head.className='group-toggle';head.setAttribute('aria-expanded',open?'true':'false');head.setAttribute('aria-label',`${open?'Fechar':'Abrir'} grupo ${g}`);head.innerHTML=`<span>${esc(g)}</span><small>${arr.length} camadas · ${availableCount} utilizáveis</small><span class="chev">▾</span>`;head.addEventListener('click',()=>toggleGroup(g));sec.appendChild(head);const body=document.createElement('div');body.className='group-body';for(const cfg of arr){const d=document.createElement('div');d.className='layer';d.dataset.card=cfg.id;const available=cfg.status==='incorporada'||cfg.status==='conectada';const countText=available?(cfg.status==='conectada'&&!Number(cfg.count||0)?`consulta sob demanda · ${esc(cfg.validation)}`:`${Number(cfg.count||0).toLocaleString('pt-BR')} feições · ${esc(cfg.validation)}`):`${layerStatusLabel(cfg)} · ${esc(cfg.validation)}`;const scopeClass=(cfg.scope_level||'MS').toLowerCase().replace('global','global').replace('brasil','brasil').replace('ms','ms');const refIds=window.ITA_LAYER_REFERENCE_LINKS?.[cfg.id]||cfg.reference_ids||[];const sourceUrl=cfg.source_url||(refIds.map(id=>window.ITA_REFERENCE_REGISTRY.find(r=>r.id===id)?.url).find(Boolean)||'');const biblioUrl=`./referencias/index.html#layer-${encodeURIComponent(cfg.id)}`;d.innerHTML=`<div class="layer-head"><input type="checkbox" data-layer="${esc(cfg.id)}" ${state.active.has(cfg.id)?'checked':''} ${available?'':'disabled'}><div class="layer-name">${esc(cfg.name)}</div><div style="display:flex;gap:4px;align-items:center"><span class="scope-badge ${scopeClass}">${esc(cfg.scope_level||'MS')}</span><span class="badge">${esc(layerStatusLabel(cfg))}</span></div></div><div class="layer-meta">${countText}</div><div class="layer-meta"><span class="status-dot ${layerStatusClass(cfg)}"></span>${esc(cfg.source||'Fonte por definir')}</div>${cfg.expected_geometry?`<div class="layer-meta">Geometria esperada · ${esc(cfg.expected_geometry)} · prioridade ${esc(cfg.priority||'media')}</div>`:''}${!available&&cfg.note?`<div class="layer-meta" style="margin-top:6px">${esc(cfg.note)}</div>`:''}${(sourceUrl||refIds.length)?`<div class="layer-source-actions">${sourceUrl?`<a href="${esc(sourceUrl)}" target="_blank" rel="noopener">Abrir fonte</a>`:''}${refIds.length?`<a href="${esc(biblioUrl)}">Bibliografia · ${refIds.length}</a>`:''}</div>`:''}`;if(available)d.querySelector('input').addEventListener('change',async e=>{await toggle(cfg.id,e.target.checked);if(isMobile()){closeLeft();setMobileActive(document.getElementById('mMapa'));}});body.appendChild(d)}sec.appendChild(body);layerList.appendChild(sec)}updateCatalogSummary()}
+function buildLayers(filter=''){layerList.innerHTML='';const q=filter.trim().toLowerCase(),groups={};for(const cfg of CATALOG.layers){if(q&&!(`${cfg.name} ${cfg.group} ${cfg.source} ${cfg.scope_level||''}`.toLowerCase().includes(q)))continue;(groups[cfg.group]??=[]).push(cfg)}for(const g of Object.keys(groups).sort((a,b)=>{const ia=GROUP_ORDER.indexOf(a),ib=GROUP_ORDER.indexOf(b);return(ia<0?999:ia)-(ib<0?999:ib)||a.localeCompare(b)})){const arr=groups[g];const sec=document.createElement('section');const open=q?true:state.openGroups.has(g);sec.className=`group ${open?'':'collapsed'}`;sec.dataset.group=g;const availableCount=arr.filter(x=>x.status==='incorporada'||x.status==='conectada').length;const head=document.createElement('button');head.type='button';head.className='group-toggle';head.setAttribute('aria-expanded',open?'true':'false');head.setAttribute('aria-label',`${open?'Fechar':'Abrir'} grupo ${g}`);head.innerHTML=`<span>${esc(g)}</span><small>${arr.length} camadas · ${availableCount} utilizáveis</small><span class="chev">▾</span>`;head.addEventListener('click',()=>toggleGroup(g));sec.appendChild(head);const body=document.createElement('div');body.className='group-body';for(const cfg of arr){const d=document.createElement('div');d.className='layer';d.dataset.card=cfg.id;const available=cfg.status==='incorporada'||cfg.status==='conectada';const countText=available?(cfg.status==='conectada'&&!Number(cfg.count||0)?`consulta sob demanda · ${esc(cfg.validation)}`:`${Number(cfg.count||0).toLocaleString('pt-BR')} feições · ${esc(cfg.validation)}`):`${layerStatusLabel(cfg)} · ${esc(cfg.validation)}`;const scopeClass=(cfg.scope_level||'MS').toLowerCase().replace('global','global').replace('brasil','brasil').replace('ms','ms');const refIds=window.ITA_LAYER_REFERENCE_LINKS?.[cfg.id]||cfg.reference_ids||[];const sourceUrl=cfg.source_url||(refIds.map(id=>window.ITA_REFERENCE_REGISTRY.find(r=>r.id===id)?.url).find(Boolean)||'');const biblioUrl=`./referencias/index.html#layer-${encodeURIComponent(cfg.id)}`;d.innerHTML=`<div class="layer-head"><input type="checkbox" data-layer="${esc(cfg.id)}" ${state.active.has(cfg.id)?'checked':''} ${available?'':'disabled'}><div class="layer-name">${esc(cfg.name)}</div><div style="display:flex;gap:4px;align-items:center"><span class="scope-badge ${scopeClass}">${esc(cfg.scope_level||'MS')}</span><span class="badge">${esc(layerStatusLabel(cfg))}</span></div></div><div class="layer-meta">${countText}</div><div class="layer-meta"><span class="status-dot ${layerStatusClass(cfg)}"></span>${esc(cfg.source||'Fonte por definir')}</div>${cfg.expected_geometry?`<div class="layer-meta">Geometria esperada · ${esc(cfg.expected_geometry)} · prioridade ${esc(cfg.priority||'media')}</div>`:''}${!available&&cfg.note?`<div class="layer-meta" style="margin-top:6px">${esc(cfg.note)}</div>`:''}${(sourceUrl||refIds.length)?`<div class="layer-source-actions">${sourceUrl?`<a href="${esc(sourceUrl)}" target="_blank" rel="noopener">Abrir fonte</a>`:''}${refIds.length?`<a href="${esc(biblioUrl)}">Bibliografia · ${refIds.length}</a>`:''}</div>`:''}`;if(available)d.insertAdjacentHTML('beforeend',itaLayerOpacityHtml(cfg,'catalogo'));if(available)d.querySelector('input').addEventListener('change',async e=>{await toggle(cfg.id,e.target.checked);if(isMobile()){closeLeft();setMobileActive(document.getElementById('mMapa'));}});body.appendChild(d)}sec.appendChild(body);layerList.appendChild(sec)}updateCatalogSummary()}
 function geomHit(g,x,y,cfg){if(!g)return false;if(g.type==='Point'){const p=project(...g.coordinates);return Math.hypot(p[0]-x,p[1]-y)<9}if(g.type==='MultiPoint')return g.coordinates.some(c=>{const p=project(...c);return Math.hypot(p[0]-x,p[1]-y)<9});const path=pathGeometry(g);if(g.type.includes('Polygon'))return ctx.isPointInPath(path,x,y,'evenodd');return ctx.isPointInStroke(path,x,y)}
 function chooseFeature(x,y){const act=CATALOG.layers.filter(c=>state.active.has(c.id)).reverse();for(const cfg of act){const d=state.layers.get(cfg.id);if(!d)continue;for(let i=d.features.length-1;i>=0;i--){if(geomHit(d.features[i].geometry,x,y,cfg))return{cfg,feat:d.features[i]}}}return null}
 function itaGeoContextHexHtml(p){if(!p||!p.geo_context_status)return'';const rows=[];const defs=[['ti','Terras Indígenas'],['tq','Territórios quilombolas'],['ass','Assentamentos rurais'],['uc','Unidades de conservação'],['za','Zonas de amortecimento'],['ce','Corredores ecológicos'],['aur','Áreas de uso restrito'],['pant','Uso restrito do Pantanal']];for(const [pre,label] of defs){const n=Number(p['n_'+pre]||0);if(!n)continue;rows.push(`<div class="prop"><b>${esc(label)}</b><span>${n} · ${esc(p['area_'+pre+'_km2']??0)} km² · ${esc(p['pct_hex_'+pre]??0)}% do hexágono</span></div>`)}if(Number(p.n_li||0))rows.push(`<div class="prop"><b>Localidades indígenas</b><span>${esc(p.n_li)} pontos públicos no hexágono</span></div>`);if(Number(p.n_lq||0))rows.push(`<div class="prop"><b>Localidades quilombolas</b><span>${esc(p.n_lq)} pontos públicos no hexágono</span></div>`);return `<div class="geoethics-box"><b>Salvaguardas territoriais e geoéticas · hexágono</b><div class="geoethics-grid"><div><span>Estado</span><strong>${esc(p.geo_context_status)}</strong></div><div><span>Sensibilidade</span><strong>${esc(p.sensibilidade_espacial||'não classificada')}</strong></div><div><span>Fontes carregadas</span><strong>${esc(p.fontes_contexto_carregadas||'')}</strong></div></div>${rows.join('')||'<div class="empty">Nenhuma interseção foi identificada nas fontes carregadas. Verifique o estado de cobertura antes de interpretar.</div>'}<p><b>Motivos</b> ${esc(p.motivos_salvaguarda||'')}</p><p>${esc(p.salvaguarda_campo||'')}</p>${p.fontes_contexto_indisponiveis?`<p><b>Fontes indisponíveis nesta sessão</b> ${esc(p.fontes_contexto_indisponiveis)}</p>`:''}<p class="muted">Não é índice, não altera PAG ETR e não constitui autorização de campo.</p></div>`}
@@ -1045,7 +1142,7 @@ function itaRenderMotorMultiescalar(){
       <div class="motor-index-name">${esc(meta.name)}</div>
       <div class="motor-index-purpose">${esc(meta.purpose)}</div>
       <div class="motor-scale-row">${scales}</div>
-      <div class="motor-index-actions"><span>${layers.length}/3 camadas catalogadas</span><a href="./referencias/index.html#index-${code.toLowerCase()}">bibliografia</a></div>
+      <div class="motor-index-actions"><span>${layers.length}/3 camadas catalogadas</span><a href="./documentos/metodologia-${code.toLowerCase()}.html">metodologia completa</a><a href="./referencias/index.html#index-${code.toLowerCase()}">bibliografia</a></div>
     </article>`
   }).join('');
   const a=document.getElementById('motorIndexFamilies');if(a)a.textContent=fams.length;
@@ -1130,7 +1227,7 @@ document.querySelectorAll('[data-modal="dadosModal"],[data-modal="diagnosticoMod
 document.querySelectorAll('.modal').forEach(m=>{m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');if(!m.hasAttribute('aria-label')&&!m.hasAttribute('aria-labelledby')){const title=m.querySelector('h2')?.textContent?.trim();if(title)m.setAttribute('aria-label',title)}m.addEventListener('mousedown',e=>{if(e.target===m){if(m.id==='documentoModal')itaCloseDocumentViewer();else closeModal(m.id)}})});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){const opens=[...document.querySelectorAll('.modal.open')];if(opens.length){e.preventDefault();const top=opens[opens.length-1];if(top.id==='documentoModal')itaCloseDocumentViewer();else closeModal(top.id)}else if(!document.getElementById('leftPanel').classList.contains('hiddenpanel'))closeLeft();else if(!document.getElementById('rightPanel').classList.contains('hiddenpanel'))closeRight();}});
 document.querySelectorAll('.close-modal,.close-panel').forEach(b=>{if(!b.getAttribute('aria-label'))b.setAttribute('aria-label','Fechar')});
-itaStartAnalytics();itaRenderDadosCatalog();itaRenderMotorMultiescalar();itaSetPrimaryNav('mapa');
+itaBindLayerOpacityControls();itaStartAnalytics();itaRenderDadosCatalog();itaRenderMotorMultiescalar();itaSetPrimaryNav('mapa');
 
 // V28 · Tempo profundo e paleoposição · GPlates Web Service
 const ITA_PAL_MODELS={ZAHIROVIC2022:{max:410,label:'ZAHIROVIC2022'},MULLER2022:{max:1000,label:'MULLER2022'},MERDITH2021:{max:1000,label:'MERDITH2021'},CAO2024:{max:1800,label:'CAO2024'}};

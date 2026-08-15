@@ -1,30 +1,37 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IOD · metodologia · ITA ARANDU MS</title><style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:980px;margin:0 auto;padding:28px;color:#20313d;line-height:1.55}h1,h2,h3{color:#073b63}code{background:#eef3f6;padding:2px 5px;border-radius:4px}.box{background:#f5f9fb;border:1px solid #d6e2ea;border-radius:10px;padding:16px;margin:18px 0}a{color:#0c527f}</style></head><body>
-<p><a href="../index.html">← ITA ARANDU MS</a> · <a href="./index.html">Documentos</a> · <a href="../referencias/index.html#index-iod">Bibliografia do IOD</a></p>
-<h1>IOD · Índice de Observação Direta</h1>
-<p><b>Versão metodológica</b> V38.4.8 · corte 14 de agosto de 2026.</p>
-<div class="box"><b>Finalidade</b><p>O IOD mede a presença e a distribuição espacial de observações geológicas diretas documentadas dentro das malhas analíticas do Atlas. Nesta versão, a fonte materializada é a camada Afloramentos geológicos do Serviço Geológico do Brasil, GeoSGB, REF-083. O índice não mede favorabilidade mineral, recurso, reserva, valor econômico nem qualidade intrínseca da geologia.</p></div>
-<h2>Fonte e unidade observacional</h2>
-<p>São utilizadas feições pontuais da camada oficial Afloramentos geológicos do SGB. A deduplicação prioriza <code>ID_AFLORAMENTO</code>, utiliza <code>OBJECTID</code> quando o identificador principal não está disponível e somente em último caso usa coordenadas combinadas com número de campo e projeto. A lógica preserva a natureza de observação de campo da fonte e dialoga com sistemas de registro estruturado como StraboSpot, sem transformar registros do Atlas em dados SGB (Walker et al., 2019, REF-070).</p>
-<p>Registros produzidos pela caderneta de campo do ITA ARANDU MS não entram automaticamente no IOD. Uma futura incorporação exige validação explícita, procedência identificável e deduplicação contra bases institucionais.</p>
-<h2>Fórmula</h2>
-<div class="box"><code>IOD_h = 100 × (D* × O × E)^(1/3)</code></div>
-<h3>D* · densidade normalizada</h3>
-<p>Para cada hexágono h calcula-se a densidade de observações únicas por quilômetro quadrado utilizando a área efetiva do hexágono dentro de Mato Grosso do Sul. Em cada escala, D* corresponde à densidade dividida pelo percentil 95 das densidades positivas daquela própria escala, com truncamento em 1. O percentil é recalculado separadamente para 250, 500 e 1000 km². A escolha é submetida a análise de sensibilidade com P90, P95 e P99, conforme a recomendação de avaliar a robustez de indicadores compostos (Saisana et al., 2005, REF-105).</p>
-<h3>O · ocupação espacial</h3>
-<p>O território de cada hexágono é avaliado sobre uma micromalha espacial fixa de 5 km por 5 km em projeção equivalente. O é a proporção das microcélulas de suporte que contêm ao menos uma observação. A dimensão procura distinguir concentração de pontos em um setor de distribuição territorial mais ampla, em diálogo com o princípio de balanceamento espacial discutido por Stevens e Olsen (2004, REF-106).</p>
-<h3>E · equilíbrio espacial</h3>
-<p>E utiliza a entropia de Shannon normalizada entre as microcélulas ocupadas. Quando existe mais de uma microcélula ocupada, <code>E = H / ln(K)</code>, onde K é o número de microcélulas ocupadas e H é a entropia calculada a partir da proporção de observações em cada uma. Quando K é igual a 1, E recebe valor 1 porque a baixa dispersão já é penalizada por O. A formulação de diversidade e equilíbrio se apoia em Shannon (1948, REF-113), Hill (1973, REF-111) e Jost (2006, REF-112).</p>
-<h2>Regra multiescalar</h2>
-<p>As malhas de 250, 500 e 1000 km² são calculadas diretamente a partir das observações-fonte. O resultado de 500 km² não é obtido agregando valores de 250 km² e o resultado de 1000 km² não é obtido agregando valores das outras escalas. D*, O, E e o percentil de saturação são recalculados em cada escala.</p>
-<h2>Ausência de observação</h2>
-<p>Um hexágono sem observação direta materializada recebe <code>IOD = null</code>. Na cartografia permanece transparente com borda cinza escuro. A ausência de registro não é convertida em zero e não demonstra ausência de geologia, ausência de afloramentos reais ou falta de interesse científico.</p>
-<h2>Células de borda</h2>
-<p>A densidade utiliza a área efetiva do hexágono recortada ao limite estadual. A micromalha usa suporte espacial fixo e inclui as microcélulas ocupadas por observações válidas mesmo quando o centro geométrico da microcélula cai muito próximo de uma borda recortada. Casos de fronteira são registrados na auditoria.</p>
-<h2>Análise de sensibilidade</h2>
-<p>O materializador calcula cenários com microcélulas de 2,5 km, 5 km e 10 km combinadas com saturação P90, P95 e P99. A auditoria registra a correlação de postos de Spearman entre cada cenário e a configuração basal de 5 km com P95. A análise não escolhe automaticamente uma nova fórmula. Serve para mostrar o quanto a ordenação espacial depende das decisões operacionais.</p>
-<h2>Rastreabilidade</h2>
-<p>O patch armazena a resposta original do SGB em arquivo compactado, registra SHA-256, data de materialização, contagem de observações, duplicatas removidas e estatísticas por escala. O snapshot utilizado pelo navegador é local e reproduzível a partir da fonte registrada.</p>
-<h2>Referências</h2>
-<p>As referências completas em APA 7 estão no <a href="../referencias/index.html#index-iod">registro bibliográfico do IOD</a>. Referências centrais REF-083, REF-105, REF-106, REF-111, REF-112, REF-113, REF-070, REF-055 e REF-115.</p>
-</body></html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IOD · Observação Direta · metodologia</title><style>
+:root{--ink:#173b50;--muted:#5c7481;--line:#d4e1e8;--blue:#073b63;--bg:#f5f8fa;--warn:#fff4d6}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:#273b46;font-size:16px;line-height:1.65}
+main{max-width:980px;margin:auto;padding:24px}
+.hero{background:linear-gradient(135deg,#073b63,#176b91);color:#fff;border-radius:20px;padding:24px}
+.hero .k{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;opacity:.88}
+.hero h1{font-size:clamp(26px,4vw,40px);line-height:1.12;margin:5px 0 9px}
+.hero p{margin:0;max-width:78ch}
+section{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;margin:15px 0}
+h2{font-size:21px;color:var(--blue);margin:0 0 10px}h3{font-size:17px;color:var(--ink)}
+.formula{font-family:Cambria,"Times New Roman",serif;font-size:18px;background:#eef5f8;border-left:5px solid #23739b;border-radius:10px;padding:14px;overflow-wrap:anywhere}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.item{border:1px solid #e0e9ee;border-radius:11px;padding:11px}.item b{display:block;color:#174e6a;margin-bottom:3px}.item span{color:#536c78}
+.rule{background:var(--warn);border:1px solid #e8c76e;border-radius:12px;padding:12px}
+.ref{padding-left:2em;text-indent:-2em;margin:10px 0;overflow-wrap:anywhere}
+a{color:#075f94}.nav{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.nav a{background:#fff;color:#174e6a;border:1px solid #c7d8e1;border-radius:8px;padding:6px 9px;text-decoration:none;font-weight:800;font-size:13px}
+code{font-size:.92em;background:#eef2f4;padding:2px 5px;border-radius:5px}
+@media(max-width:680px){main{padding:10px}.hero{border-radius:14px;padding:17px}section{padding:14px}.grid{grid-template-columns:1fr}.formula{font-size:16px}}
+</style></head>
+<body><main>
+<header class="hero"><div class="k">ITA ARANDU MS · metodologia auditável · APA 7</div>
+<h1>IOD · Observação Direta</h1><p>Quantifica o suporte territorial de observações geológicas diretas combinando densidade, ocupação espacial e equilíbrio da distribuição.</p>
+<div class="nav"><a href="./metodologias-indices.html">Todos os índices</a><a href="../referencias/index.html#index-iod">Bibliografia central</a></div></header>
+<section><h2>1. Objeto e unidade de análise</h2><p>Quantifica o suporte territorial de observações geológicas diretas combinando densidade, ocupação espacial e equilíbrio da distribuição.</p>
+<p>As unidades espaciais permanentes são as malhas de <b>250, 500 e 1000 km²</b>. Cada escala é calculada diretamente a partir das fontes elegíveis. Resultados de uma escala não são obtidos por soma nem por agregação dos resultados de outra.</p></section>
+<section><h2>2. Formulação</h2><div class="formula">IOD<sub>h</sub> = 100 × (D* × O × E)<sup>1/3</sup></div><h3>Variáveis</h3><div class="grid"><div class="item"><b>D*</b><span>densidade por área efetiva normalizada com saturação no P95 das densidades positivas de cada escala</span></div><div class="item"><b>O</b><span>ocupação de micromalha fixa de 5 km</span></div><div class="item"><b>E</b><span>equilíbrio de Shannon entre microcélulas ocupadas</span></div></div></section>
+<section><h2>3. Evidências e sequência de cálculo</h2><p><b>Entradas.</b> Registros georreferenciados elegíveis de observação direta.</p><p><b>Processamento.</b> Densidade, ocupação e equilíbrio são recomputados diretamente dos registros originais em cada escala. A média geométrica reduz compensação entre componentes.</p></section>
+<section><h2>4. Regra epistemológica de <code>null</code> e zero</h2><div class="rule">Ausência de observação não é observação de valor zero. O estado sem evidência permanece distinto de um zero numérico medido.</div>
+<p>A regra transversal do ITA ARANDU MS determina que <b>ausência de evidência não equivale automaticamente a valor geocientífico zero</b>. Valor numérico medido e ausência documental são estados semanticamente distintos.</p></section>
+<section><h2>5. Interpretação e limites</h2><p>Grande quantidade de observações concentradas em uma única parte do hexágono não equivale a cobertura territorial equilibrada.</p></section>
+<section><h2>6. Sensibilidade, robustez e atualização</h2><p>O P95 e a micromalha são parâmetros auditáveis. As três escalas permanecem independentes.</p>
+<p>Alterações de fonte, elegibilidade, normalização ou resolução exigem nova materialização e auditoria antes de substituir o corte certificado.</p></section>
+<section><h2>7. Referências · APA 7</h2><p><b>Fundamentação e adaptação.</b> A formulação específica do ITA ARANDU MS é documentada pelo protocolo do projeto e dialoga com os antecedentes metodológicos indicados (Busón Buesa & Gabas, 2026; Shannon, 1948; Stevens & Olsen, 2004). As referências de antecedentes fundamentam conceitos ou procedimentos e não implicam que seus autores tenham proposto a fórmula específica adotada pelo Atlas.</p><p class="ref">Stevens, D. L., Jr., & Olsen, A. R. (2004). Spatially balanced sampling of natural resources. <i>Journal of the American Statistical Association, 99</i>(465), 262–278. https://doi.org/10.1198/016214504000000250</p><p class="ref">Shannon, C. E. (1948). A mathematical theory of communication. <i>Bell System Technical Journal, 27</i>(3), 379–423. https://doi.org/10.1002/j.1538-7305.1948.tb01338.x</p><p class="ref">Busón Buesa, C., & Gabas, S. G. (2026). <i>Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS</i> [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.</p></section>
+</main></body></html>

@@ -1,61 +1,37 @@
 <!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ITA ARANDU MS · IGF · metodologia V38.4.12</title>
-<style>
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:980px;margin:0 auto;padding:24px;color:#17222b;line-height:1.58}h1,h2,h3{color:#123f61}.box{border:1px solid #ccd6dc;border-radius:12px;padding:16px;margin:18px 0;background:#f8fafb}code{background:#eef2f4;padding:2px 5px;border-radius:4px}.formula{font-size:1.06rem;font-weight:700}.ref{padding-left:1.5em;text-indent:-1.5em;margin:.7em 0}.warn{border-left:4px solid #a50f15;padding-left:14px}.small{font-size:.94rem;color:#455560}</style>
-</head>
-<body>
-<h1>IGF · Índice de Conhecimento Geofísico</h1>
-<p><b>Versão metodológica V38.4.12 · corte de 14 de agosto de 2026.</b></p>
-<p>O IGF mede a disponibilidade espacial de conhecimento geofísico documentado nas malhas analíticas do ITA ARANDU MS. Não mede intensidade de anomalia, favorabilidade mineral, presença de depósito, recurso, reserva ou viabilidade econômica. A distinção entre cobertura de observação e interpretação geológica é essencial porque os métodos geofísicos respondem a propriedades físicas distintas e possuem geometrias de aquisição diferentes (Minsley et al., 2021).</p>
-
-<div class="box">
-<div class="formula">IGF<sub>h</sub> = max(IGF<sub>AM,h</sub>, IGF<sub>GA,h</sub>, IGF<sub>GR,h</sub>, IGF<sub>MT,h</sub>)</div>
-<p>AM representa aeromagnetometria. GA representa gamaespectrometria. GR representa gravimetria. MT representa magnetotelúrico.</p>
-</div>
-
-<h2>1. Razão para manter quatro módulos independentes</h2>
-<p>Os quatro métodos não são intercambiáveis. Aeromagnetometria e gamaespectrometria são avaliadas a partir dos levantamentos aerogeofísicos oficiais e de seus metadados de aquisição. Gravimetria e magnetotelúrico são avaliados como redes de estações pontuais. O SGB publica os projetos aerogeofísicos em quatro séries, além de serviços próprios para gravimetria e geofísica terrestre (Serviço Geológico do Brasil, s.d.-a, s.d.-b, s.d.-c).</p>
-<p>A agregação por máximo foi adotada porque o objetivo do IGF é registrar a existência de conhecimento geofísico espacialmente utilizável e não criar uma nota de superioridade entre técnicas. Uma média ponderada exigiria pesos entre métodos fisicamente distintos e poderia penalizar artificialmente áreas em que um método é tecnicamente adequado e outro não foi empregado. Os quatro subíndices permanecem visíveis na ficha para que a lacuna de cada método não seja ocultada.</p>
-
-<h2>2. Aeromagnetometria e gamaespectrometria</h2>
-<div class="box"><div class="formula">IGF<sub>AM,h</sub> ou IGF<sub>GA,h</sub> = 100 × √(C<sub>m</sub> × R*<sub>m</sub>)</div></div>
-<p><b>C<sub>m</sub></b> é a fração do suporte espacial determinístico de 5 × 5 km do hexágono coberta por pelo menos um levantamento que declare o método correspondente.</p>
-<p><b>R*<sub>m</sub></b> é a resolução relativa do levantamento no suporte coberto. A resolução utiliza o inverso do espaçamento entre linhas de voo e é normalizada pelo percentil 95 dos valores positivos observados no próprio módulo e na própria escala. Em sobreposições, utiliza-se o menor espaçamento válido disponível naquele ponto, representando a aquisição espacialmente mais detalhada. Quando um único campo informa mais de um espaçamento, utiliza-se conservadoramente o maior valor positivo reportado.</p>
-<p>Levantamentos sem método classificável ou sem espaçamento de linhas válido permanecem preservados no snapshot de origem, mas não recebem pontuação automática. Esta decisão evita transformar metadados incompletos em evidência quantitativa.</p>
-
-<h2>3. Gravimetria e magnetotelúrico</h2>
-<div class="box"><div class="formula">IGF<sub>GR,h</sub> ou IGF<sub>MT,h</sub> = 100 × √(D*<sub>m</sub> × O<sub>m</sub>)</div></div>
-<p><b>D*<sub>m</sub></b> representa a densidade de estações independentes por área efetiva do hexágono, normalizada pelo percentil 95 dos hexágonos com observações na mesma escala.</p>
-<p><b>O<sub>m</sub></b> representa a ocupação espacial na mesma micromalha fixa de 5 × 5 km. A combinação geométrica reduz a possibilidade de que grande quantidade de estações concentradas num setor pequeno seja interpretada como cobertura territorial homogênea.</p>
-<p>Para magnetotelúrico entram no escore apenas estações que a fonte identifica como disponíveis. Registros em andamento permanecem na fonte bruta auditável, mas não são tratados como conhecimento já disponível para uso. Para gravimetria, o IGF utiliza a distribuição das estações e não interpola valores de gravidade ou anomalia Bouguer.</p>
-
-<h2>4. Escalas</h2>
-<p>IGF 250 km², IGF 500 km² e IGF 1000 km² são calculados diretamente a partir dos projetos e estações originais. A versão de 500 km² não é média ou agregação da malha de 250 km² e a versão de 1000 km² não é agregação da malha de 500 km².</p>
-
-<h2>5. Ausência de dados</h2>
-<p>Quando nenhum dos quatro módulos possui evidência calculável, <code>IGF = null</code>. O hexágono permanece transparente e conserva apenas a borda cinza escuro. Ausência de evidência geofísica materializada não é convertida em zero.</p>
-
-<h2>6. Sensibilidade</h2>
-<p>A parametrização oficial utiliza micromalha de 5 km e normalização P95. A auditoria calcula cenários alternativos com micromalhas de 2,5 km e 10 km e normalizações P90 e P99. A estabilidade do ordenamento é registrada por correlação de Spearman, em consonância com a necessidade de analisar a sensibilidade de índices compostos às decisões metodológicas (Saisana et al., 2005).</p>
-
-<h2>7. Limites interpretativos</h2>
-<div class="warn"><p>IGF alto significa maior disponibilidade espacial de informação geofísica segundo os módulos materializados. Não significa anomalia forte, mineralização, recurso, reserva, alvo de sondagem ou prioridade automática de prospecção. Qualquer interpretação de anomalias exige os dados geofísicos propriamente ditos, seu processamento, metadados de aquisição e análise geológica especializada.</p></div>
-
-<h2>8. Fontes e rastreabilidade</h2>
-<p>A fonte primária para os footprints e metadados aerogeofísicos é o serviço de Aerogeofísica do SGB. As estações gravimétricas são obtidas do serviço de Gravimetria. As estações magnetotelúricas são obtidas da camada correspondente de Geofísica terrestre. O materializador preserva um snapshot bruto comprimido e registra SHA256 da captura utilizada no cálculo.</p><div class="warn"><p>Disponibilidade remota. A indisponibilidade temporária de um serviço do SGB é registrada como módulo não avaliável na captura e nunca convertida em ausência de conhecimento ou valor zero. O materializador tenta uma consulta alternativa paginada antes de declarar indisponibilidade. A completude das fontes fica registrada no snapshot do IGF e deve ser considerada na auditoria conjunta das sete dimensões antes dos índices de síntese.</p></div>
-
-<h2>Referências em APA 7</h2>
-<p class="ref">Minsley, B. J., Rigby, J. R., James, S. R., Burton, B. L., Knierim, K. J., Pace, M. D. M., Bedrosian, P. A., &amp; Kress, W. H. (2021). Airborne geophysical surveys of the lower Mississippi Valley demonstrate system-scale mapping of subsurface architecture. <i>Communications Earth &amp; Environment, 2</i>, 131. https://doi.org/10.1038/s43247-021-00200-z</p>
-<p class="ref">Saisana, M., Saltelli, A., &amp; Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. <i>Journal of the Royal Statistical Society: Series A (Statistics in Society), 168</i>(2), 307–323. https://doi.org/10.1111/j.1467-985X.2005.00350.x</p>
-<p class="ref">Serviço Geológico do Brasil. (s.d.-a). <i>Projetos aerogeofísicos e dados aerogeofísicos</i> [Serviço geoespacial e banco de dados]. SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geofisica/aerogeofisica/MapServer</p>
-<p class="ref">Serviço Geológico do Brasil. (s.d.-b). <i>Dados gravimétricos</i> [Serviço geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geofisica/gravimetria/MapServer/0</p>
-<p class="ref">Serviço Geológico do Brasil. (s.d.-c). <i>Levantamentos geofísicos terrestres</i> [Serviço geoespacial]. Geoportal SGB. Recuperado em 12 de agosto de 2026. https://geoportal.sgb.gov.br/server/rest/services/geofisica/geofisica_terrestre/MapServer</p>
-<p class="ref">Busón Buesa, C., &amp; Gabas, S. G. (2026). <i>Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS</i> [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.</p>
-
-<p class="small">Documento metodológico operacional do ITA ARANDU MS. V38.4.12.</p>
-</body>
-</html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IGF · Conhecimento Geofísico · metodologia</title><style>
+:root{--ink:#173b50;--muted:#5c7481;--line:#d4e1e8;--blue:#073b63;--bg:#f5f8fa;--warn:#fff4d6}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:#273b46;font-size:16px;line-height:1.65}
+main{max-width:980px;margin:auto;padding:24px}
+.hero{background:linear-gradient(135deg,#073b63,#176b91);color:#fff;border-radius:20px;padding:24px}
+.hero .k{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;opacity:.88}
+.hero h1{font-size:clamp(26px,4vw,40px);line-height:1.12;margin:5px 0 9px}
+.hero p{margin:0;max-width:78ch}
+section{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;margin:15px 0}
+h2{font-size:21px;color:var(--blue);margin:0 0 10px}h3{font-size:17px;color:var(--ink)}
+.formula{font-family:Cambria,"Times New Roman",serif;font-size:18px;background:#eef5f8;border-left:5px solid #23739b;border-radius:10px;padding:14px;overflow-wrap:anywhere}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.item{border:1px solid #e0e9ee;border-radius:11px;padding:11px}.item b{display:block;color:#174e6a;margin-bottom:3px}.item span{color:#536c78}
+.rule{background:var(--warn);border:1px solid #e8c76e;border-radius:12px;padding:12px}
+.ref{padding-left:2em;text-indent:-2em;margin:10px 0;overflow-wrap:anywhere}
+a{color:#075f94}.nav{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.nav a{background:#fff;color:#174e6a;border:1px solid #c7d8e1;border-radius:8px;padding:6px 9px;text-decoration:none;font-weight:800;font-size:13px}
+code{font-size:.92em;background:#eef2f4;padding:2px 5px;border-radius:5px}
+@media(max-width:680px){main{padding:10px}.hero{border-radius:14px;padding:17px}section{padding:14px}.grid{grid-template-columns:1fr}.formula{font-size:16px}}
+</style></head>
+<body><main>
+<header class="hero"><div class="k">ITA ARANDU MS · metodologia auditável · APA 7</div>
+<h1>IGF · Conhecimento Geofísico</h1><p>Mede cobertura e resolução do conhecimento geofísico usando módulos próprios para métodos aéreos e pontuais.</p>
+<div class="nav"><a href="./metodologias-indices.html">Todos os índices</a><a href="../referencias/index.html#index-igf">Bibliografia central</a></div></header>
+<section><h2>1. Objeto e unidade de análise</h2><p>Mede cobertura e resolução do conhecimento geofísico usando módulos próprios para métodos aéreos e pontuais.</p>
+<p>As unidades espaciais permanentes são as malhas de <b>250, 500 e 1000 km²</b>. Cada escala é calculada diretamente a partir das fontes elegíveis. Resultados de uma escala não são obtidos por soma nem por agregação dos resultados de outra.</p></section>
+<section><h2>2. Formulação</h2><div class="formula">IGF<sub>h</sub> = max(IGF<sub>AM,h</sub>, IGF<sub>GA,h</sub>, IGF<sub>GR,h</sub>, IGF<sub>MT,h</sub>)</div><h3>Variáveis</h3><div class="grid"><div class="item"><b>IGF_AM</b><span>100 × √(C_AM × R*_AM), aeromagnetometria</span></div><div class="item"><b>IGF_GA</b><span>100 × √(C_GA × R*_GA), aerogamaespectrometria</span></div><div class="item"><b>IGF_GR</b><span>100 × √(D*_GR × O_GR), gravimetria</span></div><div class="item"><b>IGF_MT</b><span>100 × √(D*_MT × O_MT), magnetotelúrica quando avaliável</span></div></div></section>
+<section><h2>3. Evidências e sequência de cálculo</h2><p><b>Entradas.</b> Projetos aerogeofísicos, gravimetria e magnetotelúrica elegíveis no corte.</p><p><b>Processamento.</b> Cobertura e resolução são preservadas nos módulos aéreos, enquanto densidade e ocupação são usadas nos módulos pontuais. O máximo evita somar métodos de natureza distinta.</p></section>
+<section><h2>4. Regra epistemológica de <code>null</code> e zero</h2><div class="rule">Magnetotelúrica permanece NAO_AVALIAVEL_NO_CORTE quando a fonte não permite materialização completa. Isso não é zero e não é imputado.</div>
+<p>A regra transversal do ITA ARANDU MS determina que <b>ausência de evidência não equivale automaticamente a valor geocientífico zero</b>. Valor numérico medido e ausência documental são estados semanticamente distintos.</p></section>
+<section><h2>5. Interpretação e limites</h2><p>Cobertura geofísica não equivale à intensidade de anomalia e não autoriza inferência automática de recurso mineral.</p></section>
+<section><h2>6. Sensibilidade, robustez e atualização</h2><p>A indisponibilidade parcial de MT permanece ressalva explícita da auditoria final.</p>
+<p>Alterações de fonte, elegibilidade, normalização ou resolução exigem nova materialização e auditoria antes de substituir o corte certificado.</p></section>
+<section><h2>7. Referências · APA 7</h2><p><b>Fundamentação e adaptação.</b> A formulação específica do ITA ARANDU MS é documentada pelo protocolo do projeto e dialoga com os antecedentes metodológicos indicados (Busón Buesa & Gabas, 2026; Minsley et al., 2021). As referências de antecedentes fundamentam conceitos ou procedimentos e não implicam que seus autores tenham proposto a fórmula específica adotada pelo Atlas.</p><p class="ref">Minsley, B. J., Rigby, J. R., James, S. R., Burton, B. L., Knierim, K. J., Pace, M. D. M., Bedrosian, P. A., & Kress, W. H. (2021). Airborne geophysical surveys of the lower Mississippi Valley demonstrate system-scale mapping of subsurface architecture. <i>Communications Earth & Environment, 2</i>, 131. https://doi.org/10.1038/s43247-021-00200-z</p><p class="ref">Busón Buesa, C., & Gabas, S. G. (2026). <i>Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS</i> [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.</p></section>
+</main></body></html>

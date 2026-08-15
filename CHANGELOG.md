@@ -444,3 +444,14 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Ajusta larguras e reflow sem alterar ciência, dados, snapshots ou simbologia dos índices.
 - Próxima fase prevista: navegação Ajuda → Tempo e depois opacidade por camada.
 
+## V38.4.26 · 2026-08-15 · UX Master, metodologias e opacidade
+
+- Consolida as correções móveis de Pesquisa, Ajuda, Tempo e Campo.
+- Elimina palavras coladas e cartões de índices em duas colunas estreitas no telefone.
+- Atualiza os resumos visíveis de ICG, VCG e PIG para as formulações congeladas após as auditorias.
+- Adiciona metodologia individual para IMC, IOD, ICP, IGC, IGQ, IGF, ICS, IDE, ICG, VCG, PIG e IPG, com referências APA 7.
+- Adiciona documento de antecedentes, nicho acadêmico e finalidade com formulação cautelosa de originalidade.
+- Consolida Ajuda → Tempo, Tempo em tela integral e a navegação móvel de oito destinos.
+- Adiciona opacidade 0–100% por camada, persistente e estritamente visual.
+- Nenhum índice, snapshot, malha ou geometria científica é recalculado.
+

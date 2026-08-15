@@ -1,0 +1,264 @@
+/*
+ITA ARANDU MS · V38.4.26
+UX MASTER · Pesquisa + Ajuda + Campo + Tempo + metodologias + opacidade
+Carregado por ultimo. Nao recalcula ciencia.
+*/
+
+:root{
+  --ux26-line:#d4e1e8;
+  --ux26-soft:#f7fbfd;
+  --ux26-ink:#123f59;
+}
+
+/* Corrige palavras coladas sem depender de espacos textuais no HTML */
+.education-use-grid>div,
+.aprender-six>div,
+.help-steps>div,
+.edu-concept-grid>div,
+.motor-logic-step{
+  display:grid!important;
+  grid-template-columns:max-content minmax(0,1fr)!important;
+  align-items:start!important;
+  column-gap:.65rem!important;
+  row-gap:.2rem!important;
+}
+.education-use-grid b,.education-use-grid span,
+.aprender-six b,.aprender-six span,
+.help-steps b,.help-steps span,
+.edu-concept-grid b,.edu-concept-grid span,
+.motor-logic-step b,.motor-logic-step span{
+  display:block!important;
+  min-width:0!important;
+}
+
+.motor-summary-card{
+  display:grid!important;
+  grid-template-columns:max-content minmax(0,1fr)!important;
+  gap:.48rem!important;
+  align-items:baseline!important;
+}
+.motor-summary-card b,.motor-summary-card span{display:block!important}
+
+/* Motor analitico */
+.motor-index-grid,.motor-formula-grid{gap:12px!important}
+.motor-index-card,.motor-formula-grid .scale-card{min-width:0!important;padding:15px!important}
+.motor-index-name{font-size:clamp(1rem,.96rem + .2vw,1.12rem)!important;line-height:1.32!important}
+.motor-index-purpose{font-size:.90rem!important;line-height:1.58!important}
+.motor-index-purpose,.motor-formula-grid .scale-card span{
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+}
+.motor-index-actions{display:flex!important;flex-wrap:wrap!important;gap:8px!important;align-items:center!important}
+.method-link,.motor-index-actions a,.motor-method-directory a{
+  display:inline-flex!important;
+  align-items:center!important;
+  min-height:38px!important;
+  padding:6px 10px!important;
+  border:1px solid #bdd1dc!important;
+  border-radius:9px!important;
+  background:#f5fafc!important;
+  font-size:.80rem!important;
+  font-weight:850!important;
+  line-height:1.25!important;
+  text-decoration:none!important;
+}
+.motor-method-directory{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  align-items:center!important;
+  gap:8px!important;
+  margin:10px 0 14px!important;
+  padding:11px 12px!important;
+  border:1px solid var(--ux26-line)!important;
+  border-radius:12px!important;
+  background:var(--ux26-soft)!important;
+}
+.motor-method-directory span{font-size:.84rem!important;line-height:1.45!important;color:#536d7b!important}
+.motor-formula-grid .scale-card>b{display:block!important;margin-bottom:7px!important;font-size:.98rem!important;line-height:1.35!important}
+.motor-formula-grid .scale-card>span{display:block!important;font-size:.88rem!important;line-height:1.56!important}
+.motor-formula-grid .method-link{margin-top:10px!important}
+
+/* Opacidade individual por camada */
+.layer-opacity-control{
+  margin:10px 0 2px 25px;
+  padding:9px 10px;
+  border:1px solid var(--ux26-line);
+  border-radius:10px;
+  background:#f8fbfc;
+}
+.map-legend-panel .layer-opacity-control{margin:9px 0 13px}
+.layer-opacity-head{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  margin-bottom:7px;font-size:.78rem;line-height:1.3;font-weight:850;color:#31566c
+}
+.layer-opacity-head output{min-width:3.2rem;text-align:right;color:#0b527a}
+.layer-opacity-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center}
+.layer-opacity-range{width:100%;min-width:0;accent-color:#0b668f}
+.layer-opacity-reset{
+  min-height:36px;border:1px solid #bfd0d9;border-radius:8px;background:#fff;
+  padding:5px 9px;color:#31566c;font-size:.72rem;font-weight:850
+}
+.layer-opacity-note{margin-top:6px;font-size:.70rem;line-height:1.4;color:#6a7f8b}
+
+/* Tempo nunca fica estrangulado */
+@media(max-width:900px){
+  .time-grid{grid-template-columns:1fr!important}
+  .time-scroll{max-height:none!important}
+}
+
+@media(max-width:760px){
+  /* Pesquisa como tela de leitura real */
+  #pesquisaModal{padding:0!important;align-items:stretch!important}
+  #pesquisaModal .modal-box{
+    width:100vw!important;height:100dvh!important;max-height:100dvh!important;
+    border-radius:0!important;display:flex!important;flex-direction:column!important;overflow:hidden!important
+  }
+  #pesquisaModal .modal-head{flex:0 0 auto!important;padding:11px 12px!important}
+  #pesquisaModal .modal-head h2{font-size:1.10rem!important;line-height:1.2!important}
+  #pesquisaModal .modal-body{
+    flex:1 1 auto!important;min-height:0!important;overflow-y:auto!important;overflow-x:hidden!important;
+    padding:12px!important;-webkit-overflow-scrolling:touch
+  }
+  #pesquisaModal .motor-index-grid,
+  #pesquisaModal .metrics,
+  #pesquisaModal .motor-formula-grid{
+    display:grid!important;grid-template-columns:1fr!important;gap:11px!important
+  }
+  #pesquisaModal .motor-summary{
+    display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important
+  }
+  #pesquisaModal .motor-summary-card{padding:10px!important}
+  #pesquisaModal .motor-summary-card b{font-size:1.22rem!important}
+  #pesquisaModal .motor-summary-card span{font-size:.79rem!important;line-height:1.35!important}
+  #pesquisaModal .motor-logic{display:grid!important;grid-template-columns:1fr!important;gap:8px!important}
+  #pesquisaModal .motor-logic-step{
+    grid-template-columns:1fr!important;gap:4px!important;padding:10px 11px!important;
+    font-size:.90rem!important;line-height:1.52!important
+  }
+  #pesquisaModal .motor-index-card{padding:14px!important}
+  #pesquisaModal .motor-index-name{font-size:1.02rem!important;line-height:1.32!important}
+  #pesquisaModal .motor-index-purpose{font-size:.90rem!important;line-height:1.55!important}
+  #pesquisaModal .scale-card{padding:13px!important}
+  #pesquisaModal .scale-card>b{font-size:1rem!important}
+  #pesquisaModal .scale-card>span{font-size:.90rem!important;line-height:1.58!important}
+
+  /* Ajuda */
+  #ajudaModal .education-use-grid{display:grid!important;grid-template-columns:1fr!important;gap:8px!important}
+  #ajudaModal .education-use-grid>div{
+    grid-template-columns:1fr!important;gap:4px!important;padding:9px 0!important
+  }
+  #ajudaModal .education-use-grid b{font-size:1rem!important;line-height:1.3!important}
+  #ajudaModal .education-use-grid span{font-size:.94rem!important;line-height:1.58!important}
+  #ajudaModal .docs-grid{grid-template-columns:1fr!important}
+  #ajudaModal .doc-card b{font-size:.98rem!important}
+  #ajudaModal .doc-card span{font-size:.88rem!important;line-height:1.52!important}
+
+  /* Campo */
+  #campoModal{padding:0!important;align-items:stretch!important}
+  #campoModal .campo-modal-box{
+    width:100vw!important;height:100dvh!important;max-height:100dvh!important;
+    border-radius:0!important;display:flex!important;flex-direction:column!important;overflow:hidden!important
+  }
+  #campoModal .campo-modal-head{
+    display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;
+    align-items:start!important;gap:8px 10px!important;padding:10px 12px 8px!important
+  }
+  #campoModal .campo-modal-head>div:first-child{min-width:0!important}
+  #campoModal .campo-modal-head .kicker{font-size:.66rem!important;line-height:1.35!important}
+  #campoModal .campo-modal-head h2{font-size:1.08rem!important;line-height:1.18!important;margin-top:3px!important}
+  #campoModal .campo-head-actions{display:flex!important;align-items:center!important;gap:5px!important}
+  #campoModal .campo-head-actions .help-link{min-height:42px!important;padding:7px 9px!important;font-size:.76rem!important}
+  #campoModal .modal-body{
+    flex:1 1 auto!important;min-height:0!important;overflow-y:auto!important;overflow-x:hidden!important;
+    padding:10px 12px 78px!important
+  }
+  #campoModal .campo-stepper{
+    display:flex!important;gap:7px!important;overflow-x:auto!important;overflow-y:hidden!important;
+    scroll-snap-type:x proximity;padding:7px 2px 10px!important;margin:0 0 10px!important;
+    -webkit-overflow-scrolling:touch
+  }
+  #campoModal .campo-stepper button{
+    flex:0 0 auto!important;min-width:118px!important;min-height:48px!important;
+    scroll-snap-align:start;padding:7px 10px!important;font-size:.78rem!important
+  }
+  #campoModal .field-grid,#campoModal .field-grid.three{grid-template-columns:1fr!important}
+  #campoModal .field-actions{display:grid!important;grid-template-columns:1fr!important}
+  #campoModal .field-actions .action-btn{width:100%!important}
+
+  /* Tempo consolidado */
+  #tempoModal{padding:0!important;align-items:stretch!important;justify-content:stretch!important}
+  #tempoModal .modal-box{
+    width:100vw!important;height:100dvh!important;max-height:100dvh!important;border-radius:0!important;
+    display:flex!important;flex-direction:column!important;overflow:hidden!important
+  }
+  #tempoModal .modal-head{flex:0 0 auto!important;padding:10px 12px!important}
+  #tempoModal .modal-head .kicker{font-size:.66rem!important}
+  #tempoModal .modal-head h2{font-size:1.04rem!important;line-height:1.18!important}
+  #tempoModal .modal-body{
+    flex:1 1 auto!important;min-height:0!important;overflow-y:auto!important;overflow-x:hidden!important;
+    padding:12px!important;font-size:1rem!important;line-height:1.58!important;-webkit-overflow-scrolling:touch
+  }
+  #tempoModal .time-grid{grid-template-columns:1fr!important;gap:12px!important}
+  #tempoModal .time-scroll{max-height:none!important;overflow:visible!important}
+  #tempoModal .deep-time-card{grid-template-columns:1fr!important}
+  #tempoModal .deep-time-card button{width:100%!important;min-height:44px!important}
+  #tempoModal .ms-time-tools{position:sticky;top:0;z-index:2;background:#fff;padding:2px 0 8px}
+
+  /* Shell mobile consolidado */
+  header{height:62px!important;min-height:62px!important;padding:6px 8px!important}
+  .brand-icon{width:40px!important;height:40px!important;flex-basis:40px!important}
+  .brand-main{font-size:1.06rem!important}
+  .brand-desc{
+    max-width:calc(100vw - 78px)!important;white-space:nowrap!important;
+    overflow:hidden!important;text-overflow:ellipsis!important
+  }
+  .science-ribbon{height:30px!important;min-height:30px!important;padding:3px 8px!important;font-size:.70rem!important}
+  .science-ribbon span{white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+  .app{height:calc(100% - 92px)!important}
+  .mobile-nav{
+    display:grid!important;grid-template-columns:repeat(8,minmax(0,1fr))!important;
+    height:62px!important;left:6px!important;right:6px!important;bottom:6px!important;
+    border-radius:18px!important;overflow:hidden!important
+  }
+  .mobile-nav button{
+    min-width:0!important;min-height:50px!important;margin:4px 1px!important;
+    padding:5px 0 4px!important;font-size:.57rem!important;line-height:1.08!important
+  }
+  .mobile-nav button b{font-size:1rem!important;margin-bottom:3px!important}
+  .panel.left,.panel.right{bottom:76px!important;max-height:calc(100dvh - 174px)!important}
+  .map-toolbar{top:8px!important;left:8px!important;padding:4px!important;gap:3px!important}
+  .map-toolbar button{
+    width:40px!important;min-width:40px!important;height:40px!important;min-height:40px!important;
+    padding:0!important;font-size:.84rem!important
+  }
+  .mobile-map-tools{top:58px!important;right:8px!important;gap:4px!important}
+  .mobile-map-tools button{
+    min-height:40px!important;height:40px!important;padding:0 11px!important;font-size:.75rem!important
+  }
+  .basemap-panel,.map-legend-panel{top:104px!important}
+  .map-status{left:8px!important;right:8px!important;bottom:76px!important}
+  .quick-legend{bottom:78px!important;right:8px!important}
+
+  /* Opacidade touch */
+  .layer-opacity-range{min-height:44px!important}
+  .layer-opacity-reset{min-height:40px!important}
+
+  /* microtexto inline herdado */
+  .quick-legend [style*="font-size:7.5px"]{font-size:.75rem!important;line-height:1.4!important}
+}
+
+@media(max-width:380px){
+  .mobile-nav button{font-size:.53rem!important}
+  .mobile-nav button b{font-size:.94rem!important}
+  #pesquisaModal .motor-summary{grid-template-columns:1fr!important}
+  #campoModal .campo-stepper button{min-width:108px!important}
+}
+
+@supports(padding:max(0px)){
+  @media(max-width:760px){
+    #tempoModal .modal-head,#campoModal .campo-modal-head,#pesquisaModal .modal-head{
+      padding-top:max(10px,env(safe-area-inset-top))!important
+    }
+    .mobile-nav{bottom:max(6px,env(safe-area-inset-bottom))!important}
+  }
+}

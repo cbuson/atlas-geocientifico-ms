@@ -1,0 +1,503 @@
+{
+  "audit": "V38.4.26 UX Master",
+  "status": "PASS",
+  "passed": 99,
+  "total": 99,
+  "checks": [
+    {
+      "name": "version_final",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "css_loaded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "css_loaded_last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "help_tempo_explicit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "help_tempo_generic_removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "help_methodologies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "help_academic_niche",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "motor_logic_wrapped",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "icg_frozen_summary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "vcg_documentary_summary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "pig_ordinal_summary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "igf_mt_caveat",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "old_icg_removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "old_vcg_removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "old_pig_future_removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_imc_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_imc_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_imc_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_imc_scales",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_iod_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_iod_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_iod_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_iod_scales",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_icp_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_icp_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_icp_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_icp_scales",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_igc_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_igc_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_igc_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_igc_scales",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_igq_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_igq_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_igq_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_igq_scales",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_igf_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_igf_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_igf_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_igf_scales",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ics_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ics_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ics_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ics_scales",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ide_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ide_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ide_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ide_scales",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_icg_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_icg_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_icg_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_icg_scales",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_vcg_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_vcg_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_vcg_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_vcg_scales",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_pig_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_pig_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_pig_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_pig_scales",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ipg_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ipg_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ipg_null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_ipg_scales",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "method_directory",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "academic_doc",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile_research_one_column",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile_help_spacing",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile_campo_stepper",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile_tempo_fullscreen",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile_nav_eight",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "map_tools_second_row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "opacity_state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "opacity_getter",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "opacity_setter",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "opacity_catalog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "opacity_legend",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "opacity_fill",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "opacity_point",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "opacity_localstorage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "opacity_visual_note",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dynamic_method_link",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_cache",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method_imc",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method_iod",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method_icp",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method_igc",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method_igq",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method_igf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method_ics",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method_ide",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method_icg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method_vcg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method_pig",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_method_ipg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "science_files_exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "science_sha_immutable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_js_node_check",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_node_check",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}
