@@ -1,0 +1,18 @@
+ITA ARANDU MS · V38.4.39
+CÂMERA MÓVEL + MACROGEO
+
+STATUS PASS · 13/13
+
+PASS search_removed
+PASS macro_operational
+PASS macro_modal
+PASS camera_core_loaded
+PASS macro_js_loaded
+PASS macro_css_loaded
+PASS methodology
+PASS refs_apa7
+PASS campo_core
+PASS hub_macro
+PASS all_js_syntax · []
+PASS all_json_valid · []
+PASS scientific_data_unchanged · []

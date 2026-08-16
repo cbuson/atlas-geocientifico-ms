@@ -311,11 +311,21 @@ async function startSensors(){
 }
 async function startCamera(){
   try{
-    if(!window.isSecureContext)throw new Error('A câmera requer HTTPS');
     stopCamera();
-    S.stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'},width:{ideal:1920},height:{ideal:1080}},audio:false});
-    $('campoCameraVideo').srcObject=S.stream;await $('campoCameraVideo').play();updateCameraPlate();
-  }catch(e){$('campoStatus').textContent='Câmera indisponível · '+e.message}
+    if(window.ITA_CAMERA_CORE){
+      S.stream=await window.ITA_CAMERA_CORE.open({facingMode:'environment'});
+    }else{
+      if(!window.isSecureContext)throw new Error('A câmera requer HTTPS');
+      S.stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'}},audio:false});
+    }
+    $('campoCameraVideo').srcObject=S.stream;
+    await $('campoCameraVideo').play();
+    updateCameraPlate();
+    $('campoStatus').textContent='Câmera ativa.';
+  }catch(e){
+    const msg=window.ITA_CAMERA_CORE?.describeError?.(e)||e.message;
+    $('campoStatus').textContent='Câmera indisponível · '+msg;
+  }
 }
 function stopCamera(){if(S.stream){S.stream.getTracks().forEach(t=>t.stop());S.stream=null}if($('campoCameraVideo'))$('campoCameraVideo').srcObject=null}
 function updateCameraPlate(){

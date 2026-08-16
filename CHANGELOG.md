@@ -593,3 +593,34 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Avisos de geolocalização deixam de interromper a navegação com caixas modais do navegador.
 - Dependências externas permanecem opcionais e não bloqueiam Camadas, Dados ou ferramentas locais.
 - Nenhum GeoJSON científico, snapshot ou cálculo de índice foi modificado ou recalculado.
+
+
+## V38.4.39 · câmera móvel e MacroGeo · 2026-08-16
+
+- Remove o buscador do hub Ferramentas em telas desktop e móveis.
+- Ativa MacroGeo como ferramenta operacional.
+- Introduz motor de câmera com preferência traseira e fallback progressivo.
+- Enumera câmeras após permissão e usa zoom/foco apenas quando a capacidade é exposta pelo navegador.
+- Campo passa a usar o mesmo fallback robusto de câmera.
+- MacroGeo registra escala apenas como declaração do usuário, sem inferência metrológica automática.
+- Metodologia e referências APA 7 integradas.
+- Não altera camadas, snapshots ou índices.
+
+
+## V38.4.40 · Saída de Campo ARANDU · 2026-08-16
+
+- Percurso por pontos de observação.
+- Não grava track GPS contínuo na PWA.
+- Cada ponto registra coordenadas, precisão, hora, categoria, confiança e descrição.
+- Linha tracejada representa apenas sequência entre pontos.
+- Exporta JSON, GeoJSON e KML.
+- Não altera camadas, snapshots ou índices.
+
+
+## V38.4.40A · Saída de Campo em Ferramentas · 2026-08-16
+
+- Saída de Campo ARANDU integrada ao hub Ferramentas como ferramenta operacional.
+- Mantido o acesso já existente dentro de Campo.
+- Ambos os acessos usam a mesma saída persistida localmente.
+- Nenhuma duplicação de registros.
+- Não altera camadas, snapshots ou índices.

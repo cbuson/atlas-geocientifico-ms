@@ -1,0 +1,73 @@
+{
+  "version": "V38.4.39",
+  "status": "PASS",
+  "passed": 13,
+  "total": 13,
+  "checks": [
+    {
+      "name": "search_removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "macro_operational",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "macro_modal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "camera_core_loaded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "macro_js_loaded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "macro_css_loaded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "methodology",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "refs_apa7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "campo_core",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hub_macro",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all_js_syntax",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "all_json_valid",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "scientific_data_unchanged",
+      "pass": true,
+      "detail": "[]"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "version": "V38.4.40",
+  "status": "PASS",
+  "passed": 10,
+  "total": 10,
+  "checks": [
+    {
+      "name": "launch_button",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "saida_modal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ponto_modal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no_continuous_tracking",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "point_gps",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "non_track_declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exports",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "methodology",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all_js_syntax",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "science_unchanged",
+      "pass": true,
+      "detail": "[]"
+    }
+  ]
+}

@@ -1,7 +1,14 @@
-const ITA_CACHE = 'ita-arandu-v38-4-38-saneamento';
+const ITA_CACHE = 'ita-arandu-v38-4-40a-saida-ferramentas';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
+  "./documentos/metodologia-saida-campo.html",
+  "./assets/css/saida-campo-v38440.css?v=38.4.40",
+  "./assets/js/saida-campo-v38440.js?v=38.4.40a",
+  "./documentos/metodologia-macrogeo.html",
+  "./assets/css/macrogeo-v38439.css?v=38.4.39",
+  "./assets/js/macrogeo-v38439.js?v=38.4.39",
+  "./assets/js/camera-core-v38439.js?v=38.4.39",
   './',
   './index.html',
   './manifest.webmanifest',
