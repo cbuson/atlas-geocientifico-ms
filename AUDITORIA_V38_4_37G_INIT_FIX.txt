@@ -1,0 +1,26 @@
+ITA ARANDU MS · V38.4.37G
+CORREÇÃO FATAL DE INICIALIZAÇÃO
+
+STATUS PASS · 18/18
+
+CAUSA RAIZ
+app.js executava .onclick sobre #openTempoMap inexistente antes de init(), interrompendo toda a inicialização posterior.
+
+PASS fatal_binding_removed
+PASS safe_binding_preserved
+PASS openTempoMap_absent_confirmed
+PASS init_present
+PASS buildLayers_present
+PASS all_mandatory_dom_ids_exist · []
+PASS critical_id_navLayers · navLayers
+PASS critical_id_navFicha · navFicha
+PASS critical_id_closeLeft · closeLeft
+PASS critical_id_closeRight · closeRight
+PASS critical_id_clearLayers · clearLayers
+PASS critical_id_layerList · layerList
+PASS critical_id_layerSearch · layerSearch
+PASS all_js_syntax · []
+PASS all_json_valid · []
+PASS local_layer_files_exist · []
+PASS dados_renderer_present
+PASS catalog_builder_present

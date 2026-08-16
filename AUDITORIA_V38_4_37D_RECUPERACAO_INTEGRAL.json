@@ -1,0 +1,149 @@
+{
+  "produto": "ITA ARANDU MS V38.4.37D recuperação integral",
+  "status": "PASS",
+  "passed": 27,
+  "total": 27,
+  "checks": [
+    {
+      "name": "version_37d",
+      "pass": true,
+      "detail": "V38.4.37D-RECUPERACAO-CARGA-INTEGRAL-20260815"
+    },
+    {
+      "name": "javascript_syntax_all",
+      "pass": true,
+      "detail": "33 JS | falhas 0"
+    },
+    {
+      "name": "json_valid_all",
+      "pass": true,
+      "detail": "87 JSON | falhas 0"
+    },
+    {
+      "name": "html_ids_unique",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "index_local_resources_exist",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "catalog_parse",
+      "pass": true,
+      "detail": "190 camadas"
+    },
+    {
+      "name": "catalog_ids_unique",
+      "pass": true,
+      "detail": "190 / 190"
+    },
+    {
+      "name": "catalog_nonempty",
+      "pass": true,
+      "detail": "190"
+    },
+    {
+      "name": "local_registry_parse",
+      "pass": true,
+      "detail": "43 arquivos, 5 preload"
+    },
+    {
+      "name": "local_layer_files_exist",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "local_geojson_valid",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "preload_registry_complete",
+      "pass": true,
+      "detail": "['limite_ms_ibge_2025', 'malha_r5_250km2', 'malha_500km2', 'malha_1000km2', 'mapa_geologico_ms']"
+    },
+    {
+      "name": "bootstrap_app_before_preload",
+      "pass": true,
+      "detail": "app primeiro, preload posterior"
+    },
+    {
+      "name": "bootstrap_preload_nonblocking",
+      "pass": true,
+      "detail": "allSettled"
+    },
+    {
+      "name": "bootstrap_no_blocking_promiseall",
+      "pass": true,
+      "detail": "sem await de GeoJSON"
+    },
+    {
+      "name": "dados_usage_section_removed",
+      "pass": true,
+      "detail": "bloco removido de Dados"
+    },
+    {
+      "name": "visitas_link_present",
+      "pass": true,
+      "detail": "link separado"
+    },
+    {
+      "name": "visitas_page_present",
+      "pass": true,
+      "detail": "docs/visitas/index.html"
+    },
+    {
+      "name": "usage_stats_not_called_from_dados",
+      "pass": true,
+      "detail": "ocorrências 1"
+    },
+    {
+      "name": "analytics_not_started_in_main_startup",
+      "pass": true,
+      "detail": "startup científico sem analytics"
+    },
+    {
+      "name": "goatcounter_tracker_present",
+      "pass": true,
+      "detail": "tracker independente"
+    },
+    {
+      "name": "sw_new_cache",
+      "pass": true,
+      "detail": "cache novo"
+    },
+    {
+      "name": "sw_tolerant_install",
+      "pass": true,
+      "detail": "instalação tolerante"
+    },
+    {
+      "name": "sw_core_exists",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "sw_no_geojson_core",
+      "pass": true,
+      "detail": "12 itens core"
+    },
+    {
+      "name": "utf8_no_common_mojibake",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "scientific_hash_inventory",
+      "pass": true,
+      "detail": "54 arquivos"
+    }
+  ],
+  "diagnostico": [
+    "bootstrap anterior bloqueava app.js aguardando cinco GeoJSON locais",
+    "sem app.js, Camadas e Dados permaneciam vazios simultaneamente",
+    "service worker anterior fazia precache obrigatório de muitos recursos, inclusive GeoJSON pesados",
+    "contador de visitas foi mantido separado de Dados estatísticos"
+  ]
+}

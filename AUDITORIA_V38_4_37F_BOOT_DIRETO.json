@@ -1,0 +1,119 @@
+{
+  "version": "V38.4.37F",
+  "status": "PASS",
+  "passed": 22,
+  "total": 22,
+  "diagnosis": "Condição de corrida causada pelo bootstrap dinâmico de app.js antes dos módulos posteriores.",
+  "checks": [
+    {
+      "name": "bootstrap_removed_from_index",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "app_direct",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sensors_direct",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order_app_before_master",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order_sensors_before_master",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bootstrap_removed_from_sw_core",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_app_current",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_sensors_current",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw_registration_current",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "buildLayers_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dados_renderer_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "init_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all_js_syntax",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "all_json_valid",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "exists_docs/assets/js/app.js",
+      "pass": true,
+      "detail": "docs/assets/js/app.js"
+    },
+    {
+      "name": "exists_docs/assets/js/campo-sensores.js",
+      "pass": true,
+      "detail": "docs/assets/js/campo-sensores.js"
+    },
+    {
+      "name": "exists_docs/camadas/catalogo-local.js",
+      "pass": true,
+      "detail": "docs/camadas/catalogo-local.js"
+    },
+    {
+      "name": "exists_docs/referencias/referencias.js",
+      "pass": true,
+      "detail": "docs/referencias/referencias.js"
+    },
+    {
+      "name": "exists_docs/dados/meta.js",
+      "pass": true,
+      "detail": "docs/dados/meta.js"
+    },
+    {
+      "name": "exists_docs/service-worker.js",
+      "pass": true,
+      "detail": "docs/service-worker.js"
+    },
+    {
+      "name": "catalog_geojson_paths_exist",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "scope_of_fix",
+      "pass": true,
+      "detail": "Somente index, service worker, app registration, VERSION e CHANGELOG"
+    }
+  ]
+}

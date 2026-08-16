@@ -1,0 +1,38 @@
+ITA ARANDU MS · V38.4.37F
+RECUPERAÇÃO DO ARRANQUE
+
+STATUS PASS · 22/22
+
+DIAGNÓSTICO
+app.js era carregado dinamicamente por bootstrap.js.
+Os módulos posteriores eram executados sem esperar app.js terminar.
+Isso criava uma condição de corrida capaz de deixar Camadas e Dados vazios.
+
+CORREÇÃO
+app.js agora é script direto e síncrono.
+campo-sensores.js carrega imediatamente depois.
+Campo Master, UX, Clinômetro, Geoética e Ferramentas entram somente depois.
+O service worker não precacheia mais bootstrap.js.
+
+PASS bootstrap_removed_from_index
+PASS app_direct
+PASS sensors_direct
+PASS order_app_before_master
+PASS order_sensors_before_master
+PASS bootstrap_removed_from_sw_core
+PASS sw_app_current
+PASS sw_sensors_current
+PASS sw_registration_current
+PASS buildLayers_present
+PASS dados_renderer_present
+PASS init_present
+PASS all_js_syntax · []
+PASS all_json_valid · []
+PASS exists_docs/assets/js/app.js · docs/assets/js/app.js
+PASS exists_docs/assets/js/campo-sensores.js · docs/assets/js/campo-sensores.js
+PASS exists_docs/camadas/catalogo-local.js · docs/camadas/catalogo-local.js
+PASS exists_docs/referencias/referencias.js · docs/referencias/referencias.js
+PASS exists_docs/dados/meta.js · docs/dados/meta.js
+PASS exists_docs/service-worker.js · docs/service-worker.js
+PASS catalog_geojson_paths_exist · []
+PASS scope_of_fix · Somente index, service worker, app registration, VERSION e CHANGELOG

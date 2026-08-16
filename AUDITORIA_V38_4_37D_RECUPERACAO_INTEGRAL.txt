@@ -1,0 +1,30 @@
+ITA ARANDU MS V38.4.37D · AUDITORIA DE RECUPERAÇÃO INTEGRAL
+STATUS PASS · 27/27
+
+PASS · version_37d · V38.4.37D-RECUPERACAO-CARGA-INTEGRAL-20260815
+PASS · javascript_syntax_all · 33 JS | falhas 0
+PASS · json_valid_all · 87 JSON | falhas 0
+PASS · html_ids_unique · []
+PASS · index_local_resources_exist · []
+PASS · catalog_parse · 190 camadas
+PASS · catalog_ids_unique · 190 / 190
+PASS · catalog_nonempty · 190
+PASS · local_registry_parse · 43 arquivos, 5 preload
+PASS · local_layer_files_exist · []
+PASS · local_geojson_valid · []
+PASS · preload_registry_complete · ['limite_ms_ibge_2025', 'malha_r5_250km2', 'malha_500km2', 'malha_1000km2', 'mapa_geologico_ms']
+PASS · bootstrap_app_before_preload · app primeiro, preload posterior
+PASS · bootstrap_preload_nonblocking · allSettled
+PASS · bootstrap_no_blocking_promiseall · sem await de GeoJSON
+PASS · dados_usage_section_removed · bloco removido de Dados
+PASS · visitas_link_present · link separado
+PASS · visitas_page_present · docs/visitas/index.html
+PASS · usage_stats_not_called_from_dados · ocorrências 1
+PASS · analytics_not_started_in_main_startup · startup científico sem analytics
+PASS · goatcounter_tracker_present · tracker independente
+PASS · sw_new_cache · cache novo
+PASS · sw_tolerant_install · instalação tolerante
+PASS · sw_core_exists · []
+PASS · sw_no_geojson_core · 12 itens core
+PASS · utf8_no_common_mojibake · []
+PASS · scientific_hash_inventory · 54 arquivos

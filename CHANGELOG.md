@@ -567,14 +567,19 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 
 
 
-## V38.4.37C · Reparo de arquitetura · 2026-08-15
+## V38.4.37F · recuperação do arranque · 2026-08-15
 
-- Corrige bloqueio de inicialização causado pela pré-carga síncrona de cinco GeoJSON antes de app.js.
-- app.js e campo-sensores.js passam a carregar antes da pré-carga opcional.
-- A pré-carga local passa a ser assíncrona, tolerante a falhas e não bloqueante.
-- Remove o contador de visitas de Dados estatísticos.
-- Mantém GoatCounter apenas no rastreamento público e na página independente Visitas.
-- Remove analytics/config.js da cadeia científica principal.
-- Torna a instalação do service worker tolerante a falhas em recursos opcionais e retira GeoJSON pesados do precache obrigatório.
-- Atualiza versão do service worker, título, badge e metadados de build.
-- Preserva catálogo, referências, camadas, snapshots e índices.
+- Remove o carregamento dinâmico de app.js por bootstrap.js.
+- app.js passa a carregar de forma síncrona antes dos módulos Campo, Ferramentas e instrumentos.
+- campo-sensores.js carrega imediatamente depois do motor principal.
+- Corrige a condição de corrida que podia deixar Camadas e Dados sem renderização.
+- Service worker atualizado para não reutilizar o bootstrap antigo.
+- Nenhum GeoJSON científico e nenhum índice foi recalculado.
+
+
+## V38.4.37G · correção fatal de inicialização · 2026-08-15
+
+- Remove ligação obsoleta e não protegida ao elemento inexistente openTempoMap.
+- O erro ocorria antes de init(), impedindo buildLayers() e a renderização completa de Dados.
+- Mantém a ligação protegida já existente para openTempoMap, caso o elemento volte a existir.
+- Não altera GeoJSON, snapshots, catálogo científico nem cálculos de índices.

@@ -1,0 +1,28 @@
+ITA ARANDU MS · V38.4.37D · RECUPERAÇÃO INTEGRAL
+
+Base
+Cópia limpa baixada do GitHub em 15/08/2026.
+
+Correções principais
+
+1. Camadas e Dados deixam de depender da pré-carga inicial de cinco GeoJSON.
+2. app.js inicia primeiro e monta a interface imediatamente.
+3. GeoJSON de pré-carga passam a segundo plano e falhas individuais não bloqueiam o Atlas.
+4. Service worker usa núcleo pequeno e instalação tolerante a falhas.
+5. Dados estatísticos fica separado do contador de visitas.
+6. GoatCounter continua registrando visitas por script independente.
+7. Página Visitas permanece independente.
+8. Nenhum GeoJSON científico ou script de cálculo de índices foi alterado.
+
+Publicação
+
+Substitua a cópia local pelo conteúdo deste pacote e publique pelo GitHub Desktop.
+Depois da publicação, faça uma única limpeza do service worker antigo no navegador ou use recarga forçada.
+A nova versão usa cache ita-arandu-v38-4-37d-recuperacao-integral e elimina caches ITA antigos ao ativar.
+
+Verificações incluídas
+
+AUDITORIA_V38_4_37D_RECUPERACAO_INTEGRAL.json
+AUDITORIA_V38_4_37D_RECUPERACAO_INTEGRAL.txt
+AUDITORIA_V38_4_37D_PRESERVACAO_CIENTIFICA.json
+AUDITORIA_V38_4_37D_HASHES_CIENTIFICOS.json

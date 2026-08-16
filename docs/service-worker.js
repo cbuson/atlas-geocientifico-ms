@@ -1,152 +1,31 @@
-const ITA_CACHE = 'ita-arandu-v38-4-37c-reparo-arquitetura';
-const ITA_REQUIRED = [
-  "./",
-  "./index.html",
-  "./manifest.webmanifest",
-  "./assets/css/atlas.css?v=38.4.26",
-  "./assets/js/app.js?v=38.4.37c",
-  "./assets/js/bootstrap.js?v=38.4.37c",
-  "./camadas/catalogo-local.js?v=38.4.26",
-  "./referencias/referencias.js?v=38.4.26",
-  "./dados/meta.js?v=38.4.26"
-];
+const ITA_CACHE = 'ita-arandu-v38-4-37g-init-fix';
+
+/* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
-  "./visitas/",
-  "./documentos/contador-visitas-referencias.json",
-  "./documentos/metodologia-contador-visitas.html",
-  "./documentos/estereograma-calculadora-referencias.json",
-  "./documentos/metodologia-calculadora-estrutural.html",
-  "./documentos/metodologia-estereograma-arandu.html",
-  "./assets/js/estereograma-calculadora-v38437.js?v=38.4.37",
-  "./assets/css/estereograma-calculadora-v38437.css?v=38.4.37",
-  "./documentos/bussola-nivel-referencias.json",
-  "./documentos/metodologia-nivel-digital.html",
-  "./documentos/metodologia-bussola-geologica.html",
-  "./assets/js/bussola-nivel-v38436.js?v=38.4.36",
-  "./assets/css/bussola-nivel-v38436.css?v=38.4.36",
-  "./documentos/metodologia-ferramentas-geocientificas.html",
-  "./assets/js/ferramentas-hub-v38435.js?v=38.4.35",
-  "./assets/css/ferramentas-hub-v38435.css?v=38.4.35",
-  "./documentos/geoetica-care-referencias.json",
-  "./documentos/politica-geoetica-care.json",
-  "./documentos/protocolo-care-camada-ancestral.html",
-  "./documentos/protocolo-geoetica.html",
-  "./assets/js/geoetica-care-v38434.js?v=38.4.34",
-  "./assets/css/geoetica-care-v38434.css?v=38.4.34",
-  "./documentos/clinometro-visual-referencias.json",
-  "./documentos/metodologia-clinometro-visual-arandu.html",
-  "./assets/js/clinometro-visual-v38433.js?v=38.4.33r2",
-  "./assets/css/clinometro-visual-v38433.css?v=38.4.33r2",
-  "./assets/js/campo-ux-v38432.js?v=38.4.32",
-  "./assets/css/campo-ux-v38432.css?v=38.4.32",
-  "./documentos/protocolo-campo-master.html",
-  "./assets/js/campo-master-v38431.js?v=38.4.31",
-  "./assets/css/campo-master-v38431.css?v=38.4.31",
-  "./assets/css/mobile-map-toolbar-v38429.css?v=38.4.29",
-  "./documentos/protocolo-proveniencia-snapshots.html",
-  "./camadas/snapshots-manifest.json",
-  "./camadas/proveniencia-snapshots.js?v=38.4.28",
-  "./assets/js/proveniencia-v38428.js?v=38.4.28",
-  "./assets/css/proveniencia-v38428.css?v=38.4.28",
-  "./assets/css/ux-master-v38426.css?v=38.4.26",
-  "./documentos/metodologias-indices.html",
-  "./documentos/antecedentes-nicho-academico.html",
-  "./documentos/ux-master-v38426.html",
-  "./documentos/metodologia-imc.html",
-  "./documentos/metodologia-ipg.html",
-  "./",
-  "./index.html",
-  "./manifest.webmanifest",
-  "./assets/css/atlas.css?v=38.4.26",
-  "./assets/css/ajustes-v32.css?v=38.4.26",
-  "./assets/css/pwa.css?v=38.4.26",
-  "./assets/css/aprender.css?v=38.4.26",
-  "./assets/css/educacao-metodologia.css?v=38.4.26",
-  "./assets/css/campo-sensores.css?v=38.4.26",
-  "./assets/css/design-system-v38424.css?v=38.4.26",
-  "./assets/css/dados-dashboard.css?v=38.4.26",
-  "./assets/js/map-fallback.js?v=38.4.26",
-  "./dados/meta.js?v=38.4.26",
-  "./dados/geometria-computacional/registry.js?v=38.4.26",
-  "./referencias/referencias.js?v=38.4.26",
-  "./dados/registros.js?v=38.4.26",
-  "./indices/imc-v32.js?v=38.4.26",
-  "./indices/iod-v3848.js?v=38.4.26",
-  "./indices/icp-v3849.js?v=38.4.26",
-  "./indices/igc-v38410.js?v=38.4.26",
-  "./indices/igq-v38411.js?v=38.4.26",
-  "./documentos/metodologia-igf.html",
-  "./indices/igf-v38412.js?v=38.4.26",
-  "./documentos/metodologia-ics.html",
-  "./indices/ics-v38413.js?v=38.4.26",
-  "./camadas/catalogo-local.js?v=38.4.26",
-  "./camadas/catalogo-local.json",
-  "./camadas/index.html",
-  "./documentos/index.html",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png",
-  "./icons/icon-maskable-512.png",
-  "./icons/favicon-32.png",
-  "./referencias/index.html",
-  "./referencias/bibliografia-camadas-indices.json",
-  "./referencias/README.md",
-  "./documentos/metodologia-educativa.html",
-  "./documentos/fundamentos-evidencias-rastreabilidade.html",
-  "./documentos/fundamentos-incerteza-inferencia.html",
-  "./documentos/fundamentos-indices-produtos-derivados.html",
-  "./documentos/metodologia-iod.html",
-  "./documentos/metodologia-icp.html",
-  "./documentos/metodologia-igc.html",
-  "./documentos/metodologia-igq.html",
-  "./documentos/metodologia-pag-etr.html",
-  "./documentos/geoetica-governanca-dados.html",
-  "./documentos/metodologia-geografia-territorio.html",
-  "./documentos/metodologia-cartografia-geologica.html",
-  "./documentos/metodologia-caderneta-campo.html",
-  "./documentos/fontes.html",
-  "./documentos/auditoria.html",
-  "./documentos/changelog.html",
-  "./documentos/design-system-v38424.html",
-  "./indices/ide-v38415.js?v=38.4.26",
-  "./documentos/metodologia-ide.html",
-  "./indices/politica-sintese-v384142.json",
-  "./indices/icg-v38417.js?v=38.4.26",
-  "./documentos/metodologia-icg.html",
-  "./indices/politica-icg-v38416.json",
-  "./indices/vcg-v38419.js?v=38.4.26",
-  "./documentos/metodologia-vcg.html",
-  "./indices/politica-vcg-v38418.json",
-  "./indices/pig-v38421.js?v=38.4.26",
-  "./documentos/metodologia-pig.html",
-  "./documentos/auditoria-zero-final-indices.html",
-  "./indices/politica-pig-v38420.json",
-  "./assets/js/app.js?v=38.4.37c",
-  "./assets/js/campo-sensores.js?v=38.4.37c",
-  "./assets/js/bootstrap.js?v=38.4.37c"
+  './',
+  './index.html',
+  './manifest.webmanifest',
+  './assets/css/atlas.css?v=38.4.26',
+  './assets/css/design-system-v38424.css?v=38.4.26',
+  './assets/js/map-fallback.js?v=38.4.26',
+  './assets/js/app.js?v=38.4.37g',
+  './assets/js/campo-sensores.js?v=38.4.37f',
+  './dados/meta.js?v=38.4.26',
+  './referencias/referencias.js?v=38.4.26',
+  './camadas/catalogo-local.js?v=38.4.26'
 ];
 
 self.addEventListener('install', event => {
   event.waitUntil((async()=>{
     const cache=await caches.open(ITA_CACHE);
-
-    for(const url of ITA_REQUIRED){
+    const results=await Promise.allSettled(ITA_CORE.map(async url=>{
       const req=new Request(url,{cache:'reload'});
       const res=await fetch(req);
-      if(!res.ok)throw new Error(`Falha no precache crítico ${url} · HTTP ${res.status}`);
+      if(!res.ok)throw new Error(`HTTP ${res.status} · ${url}`);
       await cache.put(req,res.clone());
-    }
-
-    const optional=ITA_CORE.filter(url=>!ITA_REQUIRED.includes(url));
-    await Promise.allSettled(optional.map(async url=>{
-      try{
-        const req=new Request(url,{cache:'reload'});
-        const res=await fetch(req);
-        if(res.ok)await cache.put(req,res.clone());
-      }catch(error){
-        console.warn('ITA ARANDU MS · precache opcional ignorado',url,error);
-      }
     }));
-
+    const failed=results.filter(r=>r.status==='rejected');
+    if(failed.length)console.warn('ITA ARANDU MS · precache parcial',failed);
     await self.skipWaiting();
   })());
 });
@@ -154,7 +33,7 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   event.waitUntil((async()=>{
     const keys=await caches.keys();
-    await Promise.all(keys.filter(key=>key.startsWith('ita-arandu-')&&key!==ITA_CACHE).map(key=>caches.delete(key)));
+    await Promise.all(keys.filter(k=>k.startsWith('ita-arandu-')&&k!==ITA_CACHE).map(k=>caches.delete(k)));
     await self.clients.claim();
   })());
 });
@@ -169,7 +48,8 @@ function isCritical(url){
     url.pathname.includes('/dados/geometria-computacional/') ||
     url.pathname.includes('/referencias/referencias.js') ||
     url.pathname.includes('/indices/') ||
-    url.pathname.endsWith('/camadas/catalogo-local.js');
+    url.pathname.endsWith('/camadas/catalogo-local.js') ||
+    url.pathname.endsWith('/analytics/config.js');
 }
 
 async function networkFirst(req){
@@ -218,7 +98,8 @@ self.addEventListener('fetch', event => {
     if(hit)return hit;
     const res=await fetch(req);
     if(res.ok&&(req.destination==='image'||req.destination==='font'||url.pathname.includes('/camadas/arquivos/'))){
-      const cache=await caches.open(ITA_CACHE);await cache.put(req,res.clone());
+      const cache=await caches.open(ITA_CACHE);
+      await cache.put(req,res.clone());
     }
     return res;
   })());
