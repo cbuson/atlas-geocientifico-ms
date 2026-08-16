@@ -1,0 +1,15 @@
+ITA ARANDU MS · V38.4.40B
+CAMADAS UX CLEAN
+
+STATUS PASS · 10/10
+
+PASS card_provenance_injection_removed
+PASS internal_cardHtml_preserved
+PASS details_provenance_preserved
+PASS source_mode_preserved
+PASS reference_provenance_preserved
+PASS main_source_button_preserved · botão principal permanece no renderer de Camadas
+PASS bibliography_button_preserved · botão de bibliografia permanece no renderer de Camadas
+PASS opacity_preserved · controle de opacidade permanece no renderer de Camadas
+PASS all_js_syntax · []
+PASS scientific_files_unchanged · []

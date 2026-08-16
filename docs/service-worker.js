@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-v38-4-40a-saida-ferramentas';
+const ITA_CACHE = 'ita-arandu-v38-4-40b-camadas-ux-clean';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [

@@ -64,20 +64,11 @@ function referenceEnhance(){document.querySelectorAll('.layer-entry[id^="layer-"
 let decorateQueued=false;
 function decorateCards(){
  decorateQueued=false;
- document.querySelectorAll('[data-card]').forEach(card=>{
-  const id=card.getAttribute('data-card');
-  const m=map()[id];
-  if(!m)return;
-  const cfg={id,name:m.name,source:m.source,source_url:m.source_url};
-  const cap=capability(cfg),mode=modeFor(cfg);
-  const sig=[cap.label,mode,m.capture_date,m.local_feature_count,m.online_status,m.provenance_status].join('|');
-  const old=[...card.querySelectorAll('.ita-prov')].find(x=>x.dataset.provLayer===id);
-  if(old?.dataset.provSig===sig)return;
-  if(old)old.remove();
-  card.insertAdjacentHTML('beforeend',cardHtml(cfg));
-  const box=[...card.querySelectorAll('.ita-prov')].find(x=>x.dataset.provLayer===id);
-  if(box){box.dataset.provSig=sig;bindCard(box,cfg)}
- });
+ /* V38.4.40B · Camadas UX Clean
+    A proveniência completa permanece no registro interno, nas fichas,
+    em Dados e na documentação. O bloco redundante não é mais inserido
+    visualmente dentro de cada cartão de camada. */
+ document.querySelectorAll('[data-card] .ita-prov[data-prov-layer]').forEach(el=>el.remove());
 }
 function queueDecorate(){
  if(decorateQueued)return;

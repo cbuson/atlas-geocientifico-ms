@@ -1,0 +1,58 @@
+{
+  "version": "V38.4.40B",
+  "status": "PASS",
+  "passed": 10,
+  "total": 10,
+  "checks": [
+    {
+      "name": "card_provenance_injection_removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal_cardHtml_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "details_provenance_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source_mode_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reference_provenance_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main_source_button_preserved",
+      "pass": true,
+      "detail": "botão principal permanece no renderer de Camadas"
+    },
+    {
+      "name": "bibliography_button_preserved",
+      "pass": true,
+      "detail": "botão de bibliografia permanece no renderer de Camadas"
+    },
+    {
+      "name": "opacity_preserved",
+      "pass": true,
+      "detail": "controle de opacidade permanece no renderer de Camadas"
+    },
+    {
+      "name": "all_js_syntax",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "scientific_files_unchanged",
+      "pass": true,
+      "detail": "[]"
+    }
+  ]
+}

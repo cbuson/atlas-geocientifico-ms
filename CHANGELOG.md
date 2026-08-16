@@ -624,3 +624,12 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Ambos os acessos usam a mesma saída persistida localmente.
 - Nenhuma duplicação de registros.
 - Não altera camadas, snapshots ou índices.
+
+
+## V38.4.40B · Camadas UX Clean · 2026-08-16
+
+- Remove somente da apresentação das tarjetas o bloco redundante de proveniência.
+- Deixa de mostrar LOCAL · PROVENIÊNCIA PARCIAL, snapshot em uso, registros locais e Abrir fonte oficial dentro de cada tarjeta.
+- Mantém o botão principal de fonte, bibliografia, estado e opacidade já existentes na tarjeta.
+- Mantém intactos os metadados de proveniência, modos de fonte, fichas, Dados, referências e documentação.
+- Não altera camadas, snapshots, índices ou cálculos.
