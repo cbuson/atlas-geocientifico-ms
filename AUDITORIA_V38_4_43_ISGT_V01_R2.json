@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "version": "V38.4.43-ISGT-V01-EXPERIMENTAL-R2-1.0-20260816",
+  "isgt_version": "V0.1",
+  "syntax_fix": "for-of corrigido",
+  "weighted_formula": false,
+  "numeric_score": false,
+  "grid_km2": 250,
+  "classification": "rule_based_experimental",
+  "external_validation": false
+}

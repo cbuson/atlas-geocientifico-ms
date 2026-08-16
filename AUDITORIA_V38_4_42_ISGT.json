@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "version": "V38.4.42-ISGT-BASE-METODOLOGICA-1.0-20260816",
+  "derived": {
+    "localidades_indigenas_sem_vinculo_ti_ibge": {
+      "count": 102,
+      "sha256": "a0ef21bc4967f865bfa9137980495e4d6dfe69f068e878fe5e69873ec69edc2c",
+      "file": "./camadas/arquivos/localidades_indigenas_sem_vinculo_ti_ibge.geojson"
+    },
+    "localidades_quilombolas_sem_vinculo_tq_ibge": {
+      "count": 16,
+      "sha256": "878f806d65d890017c8c2d56c4406a4978ae9f9bd5ded94cd9a1522c8a192dbb",
+      "file": "./camadas/arquivos/localidades_quilombolas_sem_vinculo_tq_ibge.geojson"
+    },
+    "localidades_quilombolas_processo_fcp_ibge": {
+      "count": 24,
+      "sha256": "fc405ef30b5af83ef4c63e905470c438639e9198727bf9fe681c2cb89aab5522",
+      "file": "./camadas/arquivos/localidades_quilombolas_processo_fcp_ibge.geojson"
+    }
+  },
+  "weighted_formula_final": false
+}

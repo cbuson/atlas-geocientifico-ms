@@ -103,6 +103,35 @@ window.ITA_LAYER_REFERENCE_LINKS["aur_pantanal_ms"]=["REF-136"];
 window.ITA_LAYER_REFERENCE_LINKS["conflitos_disputas_territoriais_ms"]=["REF-138","REF-143"];
 /* V36 GEOGRAFIA E TERRITORIO END */
 
+/* V38.4.42 ISGT BASE METODOLOGICA START */
+CATALOG.layers.push({"id":"localidades_indigenas_sem_vinculo_ti_ibge","name":"Presenças indígenas sem vínculo a Terra Indígena informado na camada IBGE","group":"Geografia e território","status":"incorporada","kind":"derived","count":102,"scope_level":"MS","expected_geometry":"Point","source":"Derivação local de IBGE · CD_TI sem valor informado","source_url":"https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/27385-localidades.html","validation":"presença pontual não delimita território","priority":"alta","note":"Ausência de vínculo no atributo não demonstra ausência de direitos ou territorialidade.","reference_ids":["REF-129","REF-199","REF-201","REF-202","REF-140"],"style":{"color":"#b55449","fill":"#d78379","radius":4.2}},{"id":"localidades_quilombolas_sem_vinculo_tq_ibge","name":"Presenças quilombolas sem território quilombola informado na camada IBGE","group":"Geografia e território","status":"incorporada","kind":"derived","count":16,"scope_level":"MS","expected_geometry":"Point","source":"Derivação local de IBGE · CD_TQ sem valor informado","source_url":"https://www.ibge.gov.br/brasil-quilombola/","validation":"presença pontual não delimita território","priority":"alta","note":"Ausência de território associado no atributo não demonstra ausência de direitos, certificação ou processo.","reference_ids":["REF-129","REF-200","REF-201","REF-203","REF-204"],"style":{"color":"#745092","fill":"#9d7bbb","radius":4.5}},{"id":"localidades_quilombolas_processo_fcp_ibge","name":"Localidades quilombolas com processo FCP informado no snapshot IBGE","group":"Geografia e território","status":"incorporada","kind":"derived","count":24,"scope_level":"MS","expected_geometry":"Point","source":"Derivação local de IBGE · P_FCP informado","source_url":"https://www.gov.br/palmares/pt-br/departamentos/protecao-preservacao-e-articulacao/certificacao-quilombola","validation":"contexto documental · não equivale automaticamente a certificação vigente","priority":"media","note":"Status vigente deve ser conferido na Fundação Cultural Palmares.","reference_ids":["REF-129","REF-203","REF-200"],"style":{"color":"#5c3d89","fill":"#a48ac0","radius":4.8}},{"id":"isgt_metodologia_documento","name":"ISGT · Metodologia, princípios e protocolo de respeito territorial","group":"Geografia e território","status":"em_avaliacao","kind":"document","count":0,"scope_level":"MS","expected_geometry":"Documento","is_document":true,"source":"ITA ARANDU MS · Metodologia ISGT V1","source_url":"./documentos/metodologia-isgt.html","validation":"documento metodológico interno · sem fórmula ponderada final","priority":"alta","note":"Documento educativo e metodológico. Não é camada espacial.","reference_ids":["REF-138","REF-139","REF-140","REF-141","REF-142","REF-199","REF-200","REF-201","REF-202","REF-203","REF-204","REF-205"],"style":{"color":"#385d72","fill":"#d9eaf1","fillOpacity":0}});
+for(const id of ["localidades_indigenas_ibge","localidades_quilombolas_ibge","terras_indigenas_poligonos","territorios_quilombolas_poligonos","unidades_conservacao_cnuc_ms"]){const c=CATALOG.layers.find(x=>x.id===id);if(c)c.note=(c.note||"")+" · Ver metodologia ISGT em Geografia e território.";}
+{const c=CATALOG.layers.find(x=>x.id==="contexto_geoetico_250km2");if(c){c.name="ISGT V0.1 · Triagem de Sensibilidade Geoética Territorial · 250 km²";c.validation="proposta metodológica experimental V0.1 · classificação por regras · não validada externamente · sem fórmula numérica final";c.note="Triagem geoética territorial. Mede diligência da atuação geocientífica, não risco ou valor de comunidades. Não constitui autorização de acesso, coleta, imagem, prospecção ou publicação.";c.reference_ids=[...new Set([...(c.reference_ids||[]),"REF-199","REF-200","REF-201","REF-202","REF-203","REF-204","REF-205"])]}}
+/* V38.4.42 ISGT BASE METODOLOGICA END */
+/* V38.4.45 ISGT SNAPSHOT MATERIALIZADO */
+{
+ const c=CATALOG.layers.find(x=>x.id==='contexto_geoetico_250km2');
+ if(c){
+   c.name='ISGT V0.1 · Triagem de Sensibilidade Geoética Territorial · 250 km²';
+   c.status='incorporada';
+   c.kind='derived';
+   c.count=1554;
+   c.source='ITA ARANDU MS · snapshot local materializado a partir de FUNAI, INCRA, IBGE, CNUC/MMA e IMASUL/PIN MS';
+   c.validation='snapshot local · 1.554 hexágonos · proposta metodológica experimental V0.1 · regras transparentes · sem score numérico final';
+   c.note='O ISGT V0.1 classifica contextos de atuação geocientífica segundo evidências territoriais e comunitárias documentadas. Não classifica povos ou comunidades, não mede risco ou vulnerabilidade e não constitui autorização de acesso, coleta, fotografia, prospecção ou publicação.';
+   delete c.derive_type;
+   c.style={color:'#444b50',weight:0.82,fillOpacity:0.76,renderer:'isgt_v01_snapshot'};
+ }
+}
+{const c=CATALOG.layers.find(x=>x.id==='terras_indigenas_poligonos');if(c){c.status='incorporada';c.count=48;c.validation='snapshot local materializado para ISGT V0.1 · corte 2026-08-16 · SHA256 32578532d4b0…';}}
+{const c=CATALOG.layers.find(x=>x.id==='territorios_quilombolas_poligonos');if(c){c.status='incorporada';c.count=9;c.validation='snapshot local materializado para ISGT V0.1 · corte 2026-08-16 · SHA256 f2c03b4dce32…';}}
+{const c=CATALOG.layers.find(x=>x.id==='unidades_conservacao_cnuc_ms');if(c){c.status='incorporada';c.count=113;c.validation='snapshot local materializado para ISGT V0.1 · corte 2026-08-16 · SHA256 72d54afbf885…';}}
+{const c=CATALOG.layers.find(x=>x.id==='zonas_amortecimento_ms');if(c){c.status='incorporada';c.count=17;c.validation='snapshot local materializado para ISGT V0.1 · corte 2026-08-16 · SHA256 eb11f7a0ccb8…';}}
+{const c=CATALOG.layers.find(x=>x.id==='corredores_ecologicos_ms');if(c){c.status='incorporada';c.count=4;c.validation='snapshot local materializado para ISGT V0.1 · corte 2026-08-16 · SHA256 3693acd89e2e…';}}
+{const c=CATALOG.layers.find(x=>x.id==='areas_uso_restrito_ms');if(c){c.status='incorporada';c.count=4;c.validation='snapshot local materializado para ISGT V0.1 · corte 2026-08-16 · SHA256 4fc19be1a1ac…';}}
+{const c=CATALOG.layers.find(x=>x.id==='aur_pantanal_ms');if(c){c.status='incorporada';c.count=1;c.validation='snapshot local materializado para ISGT V0.1 · corte 2026-08-16 · SHA256 9cd77d65b6be…';}}
+/* FIM V38.4.45 ISGT SNAPSHOT MATERIALIZADO */
+
 
 /* V38 SALVAGUARDAS TERRITORIAIS POR HEXAGONO */
 window.ITA_LAYER_REFERENCE_LINKS=window.ITA_LAYER_REFERENCE_LINKS||{};
@@ -112,7 +141,244 @@ let ITA_TURF_PROMISE=null;
 function itaEnsureTurf(){if(window.turf)return Promise.resolve(window.turf);if(ITA_TURF_PROMISE)return ITA_TURF_PROMISE;ITA_TURF_PROMISE=new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/@turf/turf@7.2.0/turf.min.js';s.onload=()=>window.turf?resolve(window.turf):reject(new Error('Biblioteca espacial não inicializada'));s.onerror=()=>reject(new Error('Biblioteca espacial indisponível nesta conexão'));document.head.appendChild(s)});return ITA_TURF_PROMISE}
 function itaBBoxOverlap(a,b){return a[0]<=b[2]&&a[2]>=b[0]&&a[1]<=b[3]&&a[3]>=b[1]}
 function itaContextName(id,p){const keys=id==='terras_indigenas_poligonos'?['terrai_nom','ti','nome']:id==='territorios_quilombolas_poligonos'?['nm_comunid','comunidade','nome']:id==='assentamentos_rurais_incra'?['nome_proje','assentamento','nome']:id==='unidades_conservacao_cnuc_ms'?['nome_uc','nome','NOME']:['nome','NOME','nm_uc','UC','categoria'];for(const k of keys){if(String(p?.[k]??'').trim())return String(p[k]).trim()}return''}
-async function buildGeoethicsContext(cfg){const T=await itaEnsureTurf();const gridCfg=CATALOG.layers.find(x=>x.id==='malha_r5_250km2');if(!gridCfg)throw new Error('Malha 250 km² não encontrada');const grid=await ensure(gridCfg);const loaded={},failed=[];for(const id of ITA_GEO_CONTEXT_SOURCE_IDS){const c=CATALOG.layers.find(x=>x.id===id);if(!c)continue;try{loaded[id]=await ensure(c)}catch(e){failed.push(id)}}const prepared={};for(const [id,d] of Object.entries(loaded)){prepared[id]=(d.features||[]).map(f=>({f,b:T.bbox(f)}))}const polyMap={terras_indigenas_poligonos:['ti','Terra Indígena'],territorios_quilombolas_poligonos:['tq','Território quilombola'],assentamentos_rurais_incra:['ass','Assentamento'],unidades_conservacao_cnuc_ms:['uc','Unidade de conservação'],zonas_amortecimento_ms:['za','Zona de amortecimento'],corredores_ecologicos_ms:['ce','Corredor ecológico'],areas_uso_restrito_ms:['aur','Área de uso restrito'],aur_pantanal_ms:['pant','Área de uso restrito do Pantanal']};const pointMap={localidades_indigenas_ibge:['li','Localidade indígena'],localidades_quilombolas_ibge:['lq','Localidade quilombola']};const out=[];for(const hf of grid.features||[]){const hb=T.bbox(hf),areaH=Math.max(.000001,T.area(hf)/1e6),p={...(hf.properties||{})},motivos=[];for(const [id,[pre,label]] of Object.entries(polyMap)){let n=0,area=0;const names=[],inters=[];for(const rec of(prepared[id]||[])){if(!itaBBoxOverlap(hb,rec.b))continue;let hit=false;try{hit=T.booleanIntersects(hf,rec.f)}catch(_){hit=false}if(!hit)continue;n++;const nm=itaContextName(id,rec.f.properties||{});if(nm&&!names.includes(nm))names.push(nm);try{const inter=T.intersect(T.featureCollection([hf,rec.f]));if(inter)inters.push(inter)}catch(_){}}if(inters.length===1)area=T.area(inters[0])/1e6;else if(inters.length>1){try{const u=T.union(T.featureCollection(inters));area=u?T.area(u)/1e6:0}catch(_){area=inters.reduce((s,g)=>s+T.area(g)/1e6,0);p[pre+'_area_metodo']='SOMA_FALLBACK_POSSIVEL_SOBREPOSICAO'}}p[pre+'_intersecta']=n>0?'SIM':'NAO';p['n_'+pre]=n;p['area_'+pre+'_km2']=Number(area.toFixed(3));p['pct_hex_'+pre]=Number((100*area/areaH).toFixed(2));p[pre+'_nomes']=names.slice(0,12).join(' · ');if(n)motivos.push(label)}for(const [id,[pre,label]] of Object.entries(pointMap)){let n=0;for(const rec of(prepared[id]||[])){if(!itaBBoxOverlap(hb,rec.b))continue;try{if(T.booleanPointInPolygon(rec.f,hf))n++}catch(_){}}p['n_'+pre]=n;p[pre+'_presente']=n>0?'SIM':'NAO';if(n)motivos.push(label)}const totalSources=ITA_GEO_CONTEXT_SOURCE_IDS.length,loadedN=Object.keys(loaded).length;p.geo_context_status=failed.length?(motivos.length?'CONTEXTO_IDENTIFICADO_COM_COBERTURA_PARCIAL':'COBERTURA_INCOMPLETA'):(motivos.length?'CONTEXTO_TERRITORIAL_IDENTIFICADO':'SEM_INTERSECAO_IDENTIFICADA');p.sensibilidade_espacial=motivos.some(x=>/Indígena|quilombola/.test(x))?'ALTA':motivos.length?'MEDIA':'BAIXA';p.motivos_salvaguarda=[...new Set(motivos)].join(' · ')||'nenhum contexto sensível identificado nas fontes carregadas';p.fontes_contexto_carregadas=loadedN+'/'+totalSources;p.fontes_contexto_indisponiveis=failed.join(' · ');p.salvaguarda_campo=motivos.length?'A presença territorial não altera o resultado geocientífico e não constitui autorização de acesso, coleta, prospecção ou intervenção. Verificar direitos, autorizações e procedimentos aplicáveis.':'Nenhuma salvaguarda territorial foi identificada nas fontes carregadas. Isso não dispensa verificação prévia antes de trabalho de campo.';p.metodo_geoetico='V38 · interseção geométrica com polígonos oficiais carregados em sessão; localidades pontuais são apenas ocorrências pontuais e nunca inferem limites territoriais';p.data_revisao_geoetica='2026-08-14';out.push({...hf,properties:p})}return{type:'FeatureCollection',features:out,atlas_metadata:{produto:'Contexto territorial e geoético por hexágono',versao:'V38',grid:'250 km² · 1.554 células',fontes_carregadas:Object.keys(loaded),fontes_indisponiveis:failed,regra:'não é índice; ausência em fonte indisponível não equivale a ausência territorial',calculado_em:new Date().toISOString()}}}
+async function buildGeoethicsContext(cfg){
+ const T=await itaEnsureTurf();
+ const gridCfg=CATALOG.layers.find(x=>x.id==='malha_r5_250km2');
+ if(!gridCfg)throw new Error('Malha 250 km² não encontrada');
+ const grid=await ensure(gridCfg);
+
+ const loaded={},failed=[];
+ for(const id of ITA_GEO_CONTEXT_SOURCE_IDS){
+   const c=CATALOG.layers.find(x=>x.id===id);
+   if(!c)continue;
+   try{loaded[id]=await ensure(c)}catch(e){failed.push(id)}
+ }
+
+ const prepared={};
+ for(const [id,d] of Object.entries(loaded)){
+   prepared[id]=(d.features||[]).map(f=>({f,b:T.bbox(f)}));
+ }
+
+ const polyMap={
+   terras_indigenas_poligonos:['ti','Terra Indígena'],
+   territorios_quilombolas_poligonos:['tq','Território quilombola'],
+   assentamentos_rurais_incra:['ass','Assentamento'],
+   unidades_conservacao_cnuc_ms:['uc','Unidade de conservação'],
+   zonas_amortecimento_ms:['za','Zona de amortecimento'],
+   corredores_ecologicos_ms:['ce','Corredor ecológico'],
+   areas_uso_restrito_ms:['aur','Área de uso restrito'],
+   aur_pantanal_ms:['pant','Área de uso restrito do Pantanal']
+ };
+
+ const pointMap={
+   localidades_indigenas_ibge:['li','Localidade indígena'],
+   localidades_quilombolas_ibge:['lq','Localidade quilombola']
+ };
+
+ const primaryIds=[
+   'terras_indigenas_poligonos',
+   'territorios_quilombolas_poligonos',
+   'localidades_indigenas_ibge',
+   'localidades_quilombolas_ibge'
+ ];
+
+ const out=[];
+
+ for(const hf of grid.features||[]){
+   const hb=T.bbox(hf);
+   const areaH=Math.max(.000001,T.area(hf)/1e6);
+   const p={...(hf.properties||{})};
+   const motivos=[];
+   const communityTerritoryIntersections=[];
+
+   for(const [id,[pre,label]] of Object.entries(polyMap)){
+     let n=0,area=0;
+     const names=[],inters=[];
+
+     for(const rec of (prepared[id]||[])){
+       if(!itaBBoxOverlap(hb,rec.b))continue;
+       let hit=false;
+       try{hit=T.booleanIntersects(hf,rec.f)}catch(_){hit=false}
+       if(!hit)continue;
+
+       n++;
+       const nm=itaContextName(id,rec.f.properties||{});
+       if(nm&&!names.includes(nm))names.push(nm);
+
+       try{
+         const inter=T.intersect(T.featureCollection([hf,rec.f]));
+         if(inter){
+           inters.push(inter);
+           if(id==='terras_indigenas_poligonos'||id==='territorios_quilombolas_poligonos'){
+             communityTerritoryIntersections.push(inter);
+           }
+         }
+       }catch(_){}
+     }
+
+     if(inters.length===1){
+       area=T.area(inters[0])/1e6;
+     }else if(inters.length>1){
+       try{
+         const u=T.union(T.featureCollection(inters));
+         area=u?T.area(u)/1e6:0;
+         p[pre+'_area_metodo']='UNIAO_GEOMETRICA';
+       }catch(_){
+         area=0;
+         p[pre+'_area_metodo']='NAO_CALCULADO_FALHA_UNIAO';
+       }
+     }
+
+     p[pre+'_intersecta']=n>0?'SIM':'NAO';
+     p['n_'+pre]=n;
+     p['area_'+pre+'_km2']=Number(area.toFixed(3));
+     p['pct_hex_'+pre]=Number((100*area/areaH).toFixed(2));
+     p[pre+'_nomes']=names.slice(0,12).join(' · ');
+     if(n)motivos.push(label);
+   }
+
+   for(const [id,[pre,label]] of Object.entries(pointMap)){
+     let n=0;
+     for(const rec of (prepared[id]||[])){
+       if(!itaBBoxOverlap(hb,rec.b))continue;
+       try{if(T.booleanPointInPolygon(rec.f,hf))n++}catch(_){}
+     }
+     p['n_'+pre]=n;
+     p[pre+'_presente']=n>0?'SIM':'NAO';
+     if(n)motivos.push(label);
+   }
+
+   let areaCommunityTerritory=null;
+   if(communityTerritoryIntersections.length===0){
+     areaCommunityTerritory=0;
+     p.isgt_v01_cobertura_metodo='SEM_INTERSECAO';
+   }else if(communityTerritoryIntersections.length===1){
+     areaCommunityTerritory=T.area(communityTerritoryIntersections[0])/1e6;
+     p.isgt_v01_cobertura_metodo='INTERSECAO_UNICA';
+   }else{
+     try{
+       const u=T.union(T.featureCollection(communityTerritoryIntersections));
+       areaCommunityTerritory=u?T.area(u)/1e6:null;
+       p.isgt_v01_cobertura_metodo=areaCommunityTerritory===null?'FALHA_UNIAO':'UNIAO_GEOMETRICA_TI_TQ';
+     }catch(_){
+       areaCommunityTerritory=null;
+       p.isgt_v01_cobertura_metodo='FALHA_UNIAO';
+     }
+   }
+
+   const nAldeias=Number(p.n_li||0);
+   const nQuilombolas=Number(p.n_lq||0);
+   const presencas=nAldeias+nQuilombolas;
+
+   const temTI=Number(p.n_ti||0)>0;
+   const temTQ=Number(p.n_tq||0)>0;
+   const temTerritorio=temTI||temTQ;
+   const temPresenca=presencas>0;
+
+   const salvaguardasConcorrentes=[
+     Number(p.n_uc||0)>0,
+     Number(p.n_za||0)>0,
+     Number(p.n_ce||0)>0,
+     Number(p.n_aur||0)>0,
+     Number(p.n_pant||0)>0
+   ].filter(Boolean).length;
+
+   const regimesComunitarios=(temTI?1:0)+(temTQ?1:0);
+   const primaryFailed=primaryIds.filter(id=>failed.includes(id));
+   const coberturaPrimariaCompleta=primaryFailed.length===0;
+
+   let classe='SEM_EVIDENCIA_DOCUMENTADA';
+
+   if(!coberturaPrimariaCompleta&&!temTerritorio&&!temPresenca){
+     classe='COBERTURA_INCOMPLETA';
+   }else if(!temTerritorio&&temPresenca){
+     classe='PRESENCA_COMUNITARIA';
+   }else if(temTerritorio&&!temPresenca){
+     classe='CONTEXTO_TERRITORIAL';
+   }else if(temTerritorio&&temPresenca){
+     classe='CONTEXTO_TERRITORIAL_E_COMUNITARIO';
+   }
+
+   if(temTerritorio&&(regimesComunitarios>1||salvaguardasConcorrentes>0)){
+     classe='COMPLEXIDADE_TERRITORIAL';
+   }
+
+   p.isgt_v01_status='PROPOSTA_METODOLOGICA_EXPERIMENTAL_NAO_VALIDADA';
+   p.isgt_v01_classe=classe;
+   p.isgt_v01_presencas_total=presencas;
+   p.isgt_v01_aldeias_indigenas=nAldeias;
+   p.isgt_v01_localidades_quilombolas=nQuilombolas;
+   p.isgt_v01_presencas_peso='EQUIVALENTE_1_POR_OCORRENCIA';
+   p.isgt_v01_tem_ti=temTI?'SIM':'NAO';
+   p.isgt_v01_tem_tq=temTQ?'SIM':'NAO';
+   p.isgt_v01_regimes_comunitarios_n=regimesComunitarios;
+   p.isgt_v01_salvaguardas_concorrentes_n=salvaguardasConcorrentes;
+   p.isgt_v01_fontes_primarias_completas=coberturaPrimariaCompleta?'SIM':'NAO';
+   p.isgt_v01_fontes_primarias_indisponiveis=primaryFailed.join(' · ');
+
+   if(areaCommunityTerritory===null){
+     p.isgt_v01_area_ti_tq_km2=null;
+     p.isgt_v01_pct_cobertura_ti_tq=null;
+   }else{
+     p.isgt_v01_area_ti_tq_km2=Number(areaCommunityTerritory.toFixed(3));
+     p.isgt_v01_pct_cobertura_ti_tq=Number((100*areaCommunityTerritory/areaH).toFixed(2));
+   }
+
+   p.isgt_v01_formula_numerica='NAO_DEFINIDA';
+   p.isgt_v01_pesos='NAO_APLICADOS';
+   p.isgt_v01_objeto_avaliado='DILIGENCIA_DA_ATUACAO_GEOCIENTIFICA';
+   p.isgt_v01_nao_avalia='RISCO_VULNERABILIDADE_VALOR_OU_IMPORTANCIA_DAS_COMUNIDADES';
+
+   const totalSources=ITA_GEO_CONTEXT_SOURCE_IDS.length;
+   const loadedN=Object.keys(loaded).length;
+
+   p.geo_context_status=failed.length
+     ?(motivos.length?'CONTEXTO_IDENTIFICADO_COM_COBERTURA_PARCIAL':'COBERTURA_INCOMPLETA')
+     :(motivos.length?'CONTEXTO_TERRITORIAL_IDENTIFICADO':'SEM_INTERSECAO_IDENTIFICADA');
+
+   p.motivos_salvaguarda=[...new Set(motivos)].join(' · ')||'nenhum contexto identificado nas fontes carregadas';
+   p.fontes_contexto_carregadas=loadedN+'/'+totalSources;
+   p.fontes_contexto_indisponiveis=failed.join(' · ');
+
+   p.salvaguarda_campo=temTerritorio||temPresenca
+     ?'Contexto territorial ou comunitário documentado. Antes de qualquer atividade de campo, verificar condições de acesso, autorizações aplicáveis, protocolos comunitários, consentimento quando pertinente e sensibilidade dos dados. Dado público não significa autorização.'
+     :'Nenhuma evidência territorial ou comunitária foi identificada nas fontes carregadas. Isso não demonstra ausência de direitos ou comunidades e não dispensa verificação prévia antes de trabalho de campo.';
+
+   p.isgt_v01_interpretacao=
+     classe==='PRESENCA_COMUNITARIA'
+       ?'Há presença comunitária pontual documentada. O ponto não delimita território e recomenda diligência prévia.'
+     :classe==='CONTEXTO_TERRITORIAL'
+       ?'Há interseção com territorialidade comunitária documentada. A interseção não constitui autorização de acesso ou coleta.'
+     :classe==='CONTEXTO_TERRITORIAL_E_COMUNITARIO'
+       ?'Há simultaneamente territorialidade e presença comunitária documentadas. Recomenda-se diligência reforçada antes do trabalho de campo.'
+     :classe==='COMPLEXIDADE_TERRITORIAL'
+       ?'Há territorialidade comunitária associada a mais de um regime territorial ou ambiental documentado. A classe descreve complexidade de contexto, não risco da comunidade.'
+     :classe==='COBERTURA_INCOMPLETA'
+       ?'Uma ou mais fontes primárias não puderam ser carregadas. Não interpretar ausência de evidência como ausência territorial.'
+     :'Nenhuma evidência foi identificada nas fontes carregadas. O resultado não prova ausência de comunidade, território ou direito.';
+
+   p.metodo_geoetico='ISGT V0.1 · proposta experimental por regras transparentes · interseção geométrica de TI/TQ + contagem equivalente de localidades indígenas e quilombolas + salvaguardas concorrentes · sem pesos e sem fórmula numérica final';
+   p.data_revisao_geoetica='2026-08-16';
+
+   out.push({...hf,properties:p});
+ }
+
+ return{
+   type:'FeatureCollection',
+   features:out,
+   atlas_metadata:{
+     produto:'ISGT · triagem experimental por hexágono',
+     versao:'V0.1',
+     estado:'PROPOSTA_METODOLOGICA_NAO_VALIDADA',
+     grid:'250 km² · 1.554 células',
+     fontes_carregadas:Object.keys(loaded),
+     fontes_indisponiveis:failed,
+     regra:'classificação por regras transparentes · sem fórmula numérica final · ausência em fonte indisponível não equivale a ausência territorial',
+     principio:'o ISGT avalia diligência da atuação geocientífica, não comunidades',
+     calculado_em:new Date().toISOString()
+   }
+ };
+}
 function itaScaleHelpHtml(cfg,p){const raw=String(p?.ESCALA||p?.escala||p?.scale||cfg?.name||'');if(!/1\s*:\s*[0-9.]+/.test(raw))return'';return `<div class="feature-source"><b>Escala cartográfica</b><br>${esc(raw)}<br><span>O zoom atual do visor não altera a escala científica da fonte.</span><br><a href="./documentos/metodologia-cartografia-geologica.html">Como interpretar esta escala</a></div>`}
 
 /* V37 GEOETICA TRANSVERSAL */
@@ -344,7 +610,16 @@ function featureStyle(cfg,feat){
  const st=cfg.style||{},p=feat.properties||{};
  let fill=st.fill||st.color||'#888',radius=st.radius??3.5,stroke=st.color||'#60717c';
  if(st.renderer==='pag_etr'){fill=pagEtrColor(p.pag_etr_estado_geral);stroke='#4a4a4a';}
- if(st.renderer==='geoethics_context'){stroke='#444b50';const gs=String(p.geo_context_status||'');fill=gs==='CONTEXTO_TERRITORIAL_IDENTIFICADO'?'#d9eef3':gs==='CONTEXTO_IDENTIFICADO_COM_COBERTURA_PARCIAL'?'#eef4d8':'rgba(0,0,0,0)';} if(st.renderer==='geoethics_context'){stroke='#444b50';const gs=String(p.geo_context_status||'');fill=gs==='CONTEXTO_TERRITORIAL_IDENTIFICADO'?'#d9eef3':gs==='CONTEXTO_IDENTIFICADO_COM_COBERTURA_PARCIAL'?'#eef4d8':'rgba(0,0,0,0)';} if(st.renderer==='ipg'){fill=ipgColor(p.ipg_100);stroke='#4a4a4a';}  if(st.renderer==='index_imc'){fill=imcColor(p.imc_100);stroke='#4a4a4a';} if(st.renderer==='index_iod'){fill=iodColor(p.iod_100);stroke='#4a4a4a';} if(st.renderer==='index_icp'){fill=icpColor(p.icp_100);stroke='#4a4a4a';} if(st.renderer==='index_igc'){fill=igcColor(p.igc_100);stroke='#4a4a4a';} if(st.renderer==='index_igq'){fill=igqColor(p.igq_100);stroke='#4a4a4a';} if(st.renderer==='index_igf'){fill=igfColor(p.igf_100);stroke='#4a4a4a';} if(st.renderer==='index_ics'){fill=icsColor(p.ics_100);stroke='#4a4a4a';} if(st.renderer==='index_ide'){fill=ideColor(p.ide_100);stroke='#4a4a4a';} if(st.renderer==='index_icg'){fill=icgColor(p.icg_100);stroke='#4a4a4a';} if(st.renderer==='index_vcg'){fill=vcgColor(p.vcg_100);stroke='#4a4a4a';} if(st.renderer==='index_pig'){fill=pigColor(p.pig_100);stroke='#4a4a4a';}
+ if(st.renderer==='isgt_v01_snapshot'){
+   stroke='#444b50';
+   const c=String(p.isgt_v01_classe||'SEM_EVIDENCIA_DOCUMENTADA');
+   fill=c==='PRESENCA_COMUNITARIA'?'#f5edcf':
+        c==='CONTEXTO_TERRITORIAL'?'#deebf7':
+        c==='CONTEXTO_TERRITORIAL_E_COMUNITARIO'?'#9ecae1':
+        c==='COMPLEXIDADE_TERRITORIAL'?'#4f81bd':
+        c==='COBERTURA_INCOMPLETA'?'#e2e2e2':
+        'rgba(0,0,0,0)';
+ } if(st.renderer==='ipg'){fill=ipgColor(p.ipg_100);stroke='#4a4a4a';}  if(st.renderer==='index_imc'){fill=imcColor(p.imc_100);stroke='#4a4a4a';} if(st.renderer==='index_iod'){fill=iodColor(p.iod_100);stroke='#4a4a4a';} if(st.renderer==='index_icp'){fill=icpColor(p.icp_100);stroke='#4a4a4a';} if(st.renderer==='index_igc'){fill=igcColor(p.igc_100);stroke='#4a4a4a';} if(st.renderer==='index_igq'){fill=igqColor(p.igq_100);stroke='#4a4a4a';} if(st.renderer==='index_igf'){fill=igfColor(p.igf_100);stroke='#4a4a4a';} if(st.renderer==='index_ics'){fill=icsColor(p.ics_100);stroke='#4a4a4a';} if(st.renderer==='index_ide'){fill=ideColor(p.ide_100);stroke='#4a4a4a';} if(st.renderer==='index_icg'){fill=icgColor(p.icg_100);stroke='#4a4a4a';} if(st.renderer==='index_vcg'){fill=vcgColor(p.vcg_100);stroke='#4a4a4a';} if(st.renderer==='index_pig'){fill=pigColor(p.pig_100);stroke='#4a4a4a';}
  if(st.renderer==='mapping_scale_v32'){const sc=Number(p.scale);fill=sc<=100000?'#315f8c':'#9bb7cf';stroke='#4a4a4a';}
  if(st.renderer==='sgb'){
   const key=p.ID_UNIDADE_ESTRATIGRAFICA;
@@ -469,7 +744,14 @@ function drawFeature(cfg,f){
 function layerLegendHtml(cfg){
  const st=cfg.style||{};
  if(st.renderer==='pag_etr')return `<div class="legend-layer-title">${esc(cfg.name)}</div><div class="legend-row"><span class="swatch" style="background:transparent;border:1px solid #4a4a4a"></span><span>N0 · Não avaliável</span></div><div class="legend-row"><span class="swatch" style="background:#f7d6d6;border:1px solid #4a4a4a"></span><span>N1 · Modelo geológico aberto</span></div><div class="legend-row"><span class="swatch" style="background:#df8f8f;border:1px solid #4a4a4a"></span><span>N2 · Justifica prospecção geoquímica</span></div><div class="legend-row"><span class="swatch" style="background:#9b2c2c;border:1px solid #4a4a4a"></span><span>N3 · Evidência local compatível</span></div><div class="legend-row"><span class="swatch" style="background:#9a9a9a;border:1px solid #4a4a4a"></span><span>N4 · Modelo contradito localmente</span></div><div class="legend-note">A cor representa maturidade lógica da evidência, não probabilidade econômica. N0 é transparente. N3 não demonstra continuidade, tonelagem, teor econômico, recurso ou reserva. As escalas 250, 500 e 1000 km² são avaliadas independentemente.</div>`;
- if(st.renderer==='geoethics_context')return `<div class="legend-layer-title">${esc(cfg.name)}</div><div class="legend-row"><span class="swatch" style="background:#d9eef3;border:1px solid #444b50"></span><span>contexto territorial identificado</span></div><div class="legend-row"><span class="swatch" style="background:#eef4d8;border:1px solid #444b50"></span><span>contexto identificado com cobertura parcial</span></div><div class="legend-row"><span class="swatch" style="background:transparent;border:1px solid #444b50"></span><span>sem interseção identificada ou cobertura incompleta · consultar ficha</span></div><div class="legend-note">As cores descrevem contexto e cobertura. Não representam risco nem pontuação. Ausência de fonte na sessão nunca é convertida em ausência territorial.</div>`;
+ if(st.renderer==='isgt_v01_snapshot')return `<div class="legend-layer-title">${esc(cfg.name)}</div>
+<div class="legend-row"><span class="swatch" style="background:transparent;border:1px solid #444b50"></span><span>sem evidência documentada nas fontes do corte</span></div>
+<div class="legend-row"><span class="swatch" style="background:#f5edcf;border:1px solid #444b50"></span><span>presença comunitária</span></div>
+<div class="legend-row"><span class="swatch" style="background:#deebf7;border:1px solid #444b50"></span><span>contexto territorial</span></div>
+<div class="legend-row"><span class="swatch" style="background:#9ecae1;border:1px solid #444b50"></span><span>contexto territorial e comunitário</span></div>
+<div class="legend-row"><span class="swatch" style="background:#4f81bd;border:1px solid #444b50"></span><span>complexidade territorial documentada</span></div>
+<div class="legend-row"><span class="swatch" style="background:#e2e2e2;border:1px solid #444b50"></span><span>cobertura incompleta</span></div>
+<div class="legend-note">ISGT V0.1 é uma proposta experimental por regras transparentes. As classes descrevem diligência da atuação geocientífica e não risco, vulnerabilidade ou valor de povos e comunidades. Dado público não significa autorização.</div>`;
  if(st.renderer==='ipg')return `<div class="legend-layer-title">${esc(cfg.name)}</div><div class="legend-row"><span class="swatch" style="background:transparent;border:1px solid #4a4a4a"></span><span>sem evidência suficiente · transparente</span></div><div class="legend-row"><span class="swatch" style="background:#f2e5ff"></span><span>0–&lt;20 · muito baixo</span></div><div class="legend-row"><span class="swatch" style="background:#d6b8f0"></span><span>20–&lt;40 · baixo</span></div><div class="legend-row"><span class="swatch" style="background:#b58cde"></span><span>40–&lt;60 · médio</span></div><div class="legend-row"><span class="swatch" style="background:#8a5cc9"></span><span>60–&lt;75 · alto</span></div><div class="legend-row"><span class="swatch" style="background:#54278f"></span><span>75–100 · muito alto</span></div><div class="legend-note">O transparente indica ausência de evidência espacial suficiente nesta fase e não potencial baixo. Todos os hexágonos mantêm borda cinza escuro. A escala selecionada é calculada de forma independente.</div>`;
    if(st.renderer==='index_imc')return `<div class="legend-layer-title">${esc(cfg.name)}</div><div class="legend-row"><span class="swatch" style="background:transparent;border:1px solid #4a4a4a"></span><span>sem dados calculáveis · transparente</span></div><div class="legend-row"><span class="swatch" style="background:#fbe6c5;border:1px solid #4a4a4a"></span><span>0–&lt;20 · muito baixo</span></div><div class="legend-row"><span class="swatch" style="background:#f5c58a;border:1px solid #4a4a4a"></span><span>20–&lt;40 · baixo</span></div><div class="legend-row"><span class="swatch" style="background:#ee9b49;border:1px solid #4a4a4a"></span><span>40–&lt;60 · médio</span></div><div class="legend-row"><span class="swatch" style="background:#d96b1d;border:1px solid #4a4a4a"></span><span>60–&lt;75 · alto</span></div><div class="legend-row"><span class="swatch" style="background:#a94a00;border:1px solid #4a4a4a"></span><span>75–100 · muito alto</span></div><div class="legend-note">Borda fixa #4a4a4a. V32 materializada. A base estadual SGB/CPRM 1:1.000.000 vale 10. As folhas verificadas 1:250.000 e 1:100.000 substituem a base somente na área efetivamente coberta. O cálculo usa interseção areal exata em projeção equivalente.</div>`;
    if(st.renderer==='index_iod')return `<div class="legend-layer-title">${esc(cfg.name)}</div><div class="legend-row"><span class="swatch" style="background:transparent;border:1px solid #4a4a4a"></span><span>sem observação direta materializada · transparente</span></div><div class="legend-row"><span class="swatch" style="background:#deebf7;border:1px solid #4a4a4a"></span><span>0–&lt;20 · muito baixo</span></div><div class="legend-row"><span class="swatch" style="background:#c6dbef;border:1px solid #4a4a4a"></span><span>20–&lt;40 · baixo</span></div><div class="legend-row"><span class="swatch" style="background:#9ecae1;border:1px solid #4a4a4a"></span><span>40–&lt;60 · médio</span></div><div class="legend-row"><span class="swatch" style="background:#6baed6;border:1px solid #4a4a4a"></span><span>60–&lt;75 · alto</span></div><div class="legend-row"><span class="swatch" style="background:#2171b5;border:1px solid #4a4a4a"></span><span>75–100 · muito alto</span></div><div class="legend-note">IOD_h = 100 × (D* × O × E)^(1/3). D* usa densidade por área efetiva com saturação P95. O mede ocupação da micromalha fixa de 5 km. E mede equilíbrio de Shannon entre microcélulas ocupadas. Cada escala é recalculada diretamente das observações SGB.</div>`;

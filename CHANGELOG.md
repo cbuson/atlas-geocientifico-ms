@@ -642,3 +642,15 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Download paginado em blocos de 250 feições com reintentos automáticos.
 - Snapshot local validado e registrado com SHA256.
 - Nenhum índice foi recalculado.
+
+
+## V38.4.45 · ISGT V0.1 · snapshot materializado · 2026-08-16
+
+- Materializa fisicamente o ISGT V0.1 em 1.554 hexágonos de 250 km².
+- Materializa localmente as fontes territoriais usadas no corte: Terras Indígenas FUNAI, Territórios Quilombolas INCRA, CNUC/MMA e salvaguardas IMASUL/PIN MS.
+- Mantém as 518 localidades indígenas e 27 localidades quilombolas IBGE como ocorrências pontuais, sem inferir limites territoriais.
+- Uma ocorrência indígena e uma quilombola recebem tratamento equivalente como presença contextual.
+- Calcula área de TI e TQ por interseção em projeção LAEA local e cobertura conjunta por união geométrica.
+- Usa classificação experimental por regras, sem score numérico e sem pesos.
+- O resultado continua explicitamente identificado como proposta metodológica não validada externamente.
+- O navegador passa a carregar snapshot local em vez de recalcular o ISGT em sessão.

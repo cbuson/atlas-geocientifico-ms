@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-v38-4-40b-camadas-ux-clean';
+const ITA_CACHE = 'ita-arandu-v38-4-45-isgt-snapshot';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
@@ -15,11 +15,11 @@ const ITA_CORE = [
   './assets/css/atlas.css?v=38.4.26',
   './assets/css/design-system-v38424.css?v=38.4.26',
   './assets/js/map-fallback.js?v=38.4.26',
-  './assets/js/app.js?v=38.4.38',
+  './assets/js/app.js?v=38.4.45',
   './assets/js/campo-sensores.js?v=38.4.37f',
   './dados/meta.js?v=38.4.26',
   './referencias/referencias.js?v=38.4.26',
-  './camadas/catalogo-local.js?v=38.4.26'
+  './camadas/catalogo-local.js?v=38.4.45'
 ];
 
 self.addEventListener('install', event => {

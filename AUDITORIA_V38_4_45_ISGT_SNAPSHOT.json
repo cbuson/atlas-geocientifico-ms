@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "version": "V38.4.45-ISGT-V01-SNAPSHOT-MATERIALIZADO-1.0-20260816",
+  "grid_features": 1554,
+  "class_counts": {
+    "SEM_EVIDENCIA_DOCUMENTADA": 1388,
+    "COMPLEXIDADE_TERRITORIAL": 99,
+    "CONTEXTO_TERRITORIAL": 18,
+    "CONTEXTO_TERRITORIAL_E_COMUNITARIO": 20,
+    "PRESENCA_COMUNITARIA": 29
+  },
+  "source_counts": {
+    "terras_indigenas_poligonos": 48,
+    "territorios_quilombolas_poligonos": 9,
+    "unidades_conservacao_cnuc_ms": 113,
+    "zonas_amortecimento_ms": 17,
+    "corredores_ecologicos_ms": 4,
+    "areas_uso_restrito_ms": 4,
+    "aur_pantanal_ms": 1
+  },
+  "point_counts": {
+    "indigenas": 518,
+    "quilombolas": 27
+  },
+  "isgt_sha256": "a25cb3f35b94ca16c47b069e34e70b7d2be50e3085dba9fc40fa0eaa039ad578",
+  "weighted_formula": false,
+  "numeric_score": false,
+  "external_validation": false,
+  "method_state": "PROPOSTA_METODOLOGICA_EXPERIMENTAL_V0.1"
+}
