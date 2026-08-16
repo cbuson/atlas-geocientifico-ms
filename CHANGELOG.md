@@ -633,3 +633,12 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Mantém o botão principal de fonte, bibliografia, estado e opacidade já existentes na tarjeta.
 - Mantém intactos os metadados de proveniência, modos de fonte, fichas, Dados, referências e documentação.
 - Não altera camadas, snapshots, índices ou cálculos.
+
+
+## V38.4.41A · Estradas Vicinais Offline · 2026-08-16
+
+- Reconstrução integral de Estradas Vicinais MS a partir do serviço oficial PIN MS / AGRAER.
+- Snapshot herdado com falha CRC descartado.
+- Download paginado em blocos de 250 feições com reintentos automáticos.
+- Snapshot local validado e registrado com SHA256.
+- Nenhum índice foi recalculado.

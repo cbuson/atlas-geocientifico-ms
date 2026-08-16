@@ -1,0 +1,49 @@
+﻿ITA ARANDU MS
+V38.4.41 · MATERIALIZAÇÃO OFFLINE I
+
+BASE OBRIGATÓRIA
+V38.4.40B-CAMADAS-UX-CLEAN-1.0-20260816
+
+OBJETIVO
+
+Converter quatro camadas pendentes em snapshots locais auditados para uso offline.
+
+1. Estradas vicinais e acessos rurais
+   Fonte oficial PIN MS / AGRAER
+   Reconstrução integral. O blob legado com CRC inválido não é reutilizado.
+
+2. Hidrografia de referência
+   Fonte oficial PIN MS / AGRAER
+   Download paginado em GeoJSON e saída EPSG 4326.
+
+3. Rios nomeados
+   Não realiza segunda descarga.
+   É derivada do snapshot mestre da hidrografia pelo campo NOME informado.
+
+4. Aeroportos e aeródromos
+   Fonte oficial ANAC Dados Abertos
+   Descobre os arquivos públicos e privados CSV ou JSON e filtra Mato Grosso do Sul.
+
+INSTALAÇÃO
+
+Descompacte este pacote dentro de uma pasta de parches.
+
+No PowerShell
+
+Set-ExecutionPolicy -Scope Process Bypass
+.\APLICAR_V38_4_41_MATERIALIZACAO_OFFLINE_I.ps1
+
+CONTROLE DE SEGURANÇA
+
+O instalador cria backup antes de alterar o repositório.
+Se qualquer fonte, geometria, contagem ou transformação falhar, a instalação é revertida.
+Nenhum índice é recalculado.
+
+ARQUIVOS ESPERADOS APÓS PASS
+
+docs/camadas/arquivos/estradas_vicinais_ms.geojson
+docs/camadas/arquivos/hidrografia_referencia_ms.geojson
+docs/camadas/arquivos/rios_principais_ms.geojson
+docs/camadas/arquivos/aeroportos_aerodromos_ms.geojson
+docs/dados/snapshots/materializacao_offline_20260816.json
+AUDITORIA_V38_4_41_MATERIALIZACAO_OFFLINE_I.json
