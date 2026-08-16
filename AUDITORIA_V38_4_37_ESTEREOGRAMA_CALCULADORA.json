@@ -1,0 +1,153 @@
+{
+  "audit": "V38.4.37 Estereograma + Calculadora",
+  "status": "PASS",
+  "passed": 29,
+  "total": 29,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": "V38.4.37-ESTEREOGRAMA-CALCULADORA-1.0-20260815"
+    },
+    {
+      "name": "index_id=\"estereogramaAranduModal\"",
+      "pass": true,
+      "detail": "id=\"estereogramaAranduModal\""
+    },
+    {
+      "name": "index_id=\"calculadoraEstruturalModal\"",
+      "pass": true,
+      "detail": "id=\"calculadoraEstruturalModal\""
+    },
+    {
+      "name": "index_id=\"campoAbrirEstereograma\"",
+      "pass": true,
+      "detail": "id=\"campoAbrirEstereograma\""
+    },
+    {
+      "name": "index_id=\"campoAbrirCalculadora\"",
+      "pass": true,
+      "detail": "id=\"campoAbrirCalculadora\""
+    },
+    {
+      "name": "index_metodologia-estereograma-arandu.html",
+      "pass": true,
+      "detail": "metodologia-estereograma-arandu.html"
+    },
+    {
+      "name": "index_metodologia-calculadora-estrutural.html",
+      "pass": true,
+      "detail": "metodologia-calculadora-estrutural.html"
+    },
+    {
+      "name": "index_estereograma-calculadora-v38437.js?v=38.4.37",
+      "pass": true,
+      "detail": "estereograma-calculadora-v38437.js?v=38.4.37"
+    },
+    {
+      "name": "index_V38.4.37</title>",
+      "pass": true,
+      "detail": "V38.4.37</title>"
+    },
+    {
+      "name": "js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "js_poleFromPlane",
+      "pass": true,
+      "detail": "poleFromPlane"
+    },
+    {
+      "name": "js_equalAreaPoint",
+      "pass": true,
+      "detail": "equalAreaPoint"
+    },
+    {
+      "name": "js_lowerGreatCircle",
+      "pass": true,
+      "detail": "lowerGreatCircle"
+    },
+    {
+      "name": "js_meanPole",
+      "pass": true,
+      "detail": "meanPole"
+    },
+    {
+      "name": "js_apparentDip",
+      "pass": true,
+      "detail": "apparentDip"
+    },
+    {
+      "name": "js_trueDip",
+      "pass": true,
+      "detail": "trueDip"
+    },
+    {
+      "name": "js_intersectionPlanes",
+      "pass": true,
+      "detail": "intersectionPlanes"
+    },
+    {
+      "name": "node",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hub_estereo",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hub_calc",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bib_unique",
+      "pass": true,
+      "detail": "190/190"
+    },
+    {
+      "name": "bib_rickallmendinger.net/stereonet",
+      "pass": true,
+      "detail": "rickallmendinger.net/stereonet"
+    },
+    {
+      "name": "bib_help.seequent.com/Geo/2024.1/en-GB/Content/structural-data/stereonets.htm",
+      "pass": true,
+      "detail": "help.seequent.com/Geo/2024.1/en-GB/Content/structural-data/stereonets.htm"
+    },
+    {
+      "name": "bib_Cross-sections_and_Three-point_Problems",
+      "pass": true,
+      "detail": "Cross-sections_and_Three-point_Problems"
+    },
+    {
+      "name": "catalog_unchanged",
+      "pass": true,
+      "detail": "8ccb9bae74159fbe1b14874dc187423411db1af68e9527386893f855c4413f95"
+    },
+    {
+      "name": "manifest_unchanged",
+      "pass": true,
+      "detail": "bbed2243e156271ce68354d4a0072ce8a339ce78d1710b6ca7e75f21f3bf1d35"
+    },
+    {
+      "name": "master_unchanged",
+      "pass": true,
+      "detail": "437bda103dbb02a191b8923e8a546bde4cbcf9ede519f09f9675e7691d5de7db"
+    },
+    {
+      "name": "clinometro_unchanged",
+      "pass": true,
+      "detail": "d37c2cbd99cea97b522f6a619446805057f949c94f5d8c9b137d456e22c85ee2"
+    },
+    {
+      "name": "bussola_nivel_unchanged",
+      "pass": true,
+      "detail": "110fdf291e68f7235b3959ab8d1237a4c3618878bad00168c8e77eed28b7067d"
+    }
+  ]
+}

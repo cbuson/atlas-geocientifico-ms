@@ -509,3 +509,41 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Gera clinometro-visual-referencias.json com os IDs efetivamente vinculados.
 - Não altera Campo Master, camadas, snapshots ou índices.
 
+## V38.4.34 · Geoética e Governança CARE · 2026-08-15
+
+- Adota Geoética como princípio transversal do ITA ARANDU MS.
+- Cria Protocolo Geoético e Protocolo CARE para Curadoria da Camada Ancestral.
+- Reforça o Caderno de Campo com origem, nível de acesso, autorização, autoridade, finalidade, reutilização e canal de revisão ou retirada.
+- CARE não é convertido em índice ou pontuação.
+- Cria política legível por máquina ITA-GEOETHICS-CARE-1.0.
+- Integra referências por DOI ou URL canônica sem presumir números REF livres.
+- Não altera camadas, snapshots nem índices.
+
+## V38.4.35 · Ferramentas Geocientíficas · Hub 1.0 · 2026-08-15
+
+- Cria entrada superior Ferramentas com ícone martelo geológico + bússola.
+- Integra Clinômetro, GeoCâmera via Campo, GPS via Campo, Amostras, Colunas Estratigráficas e Tempo Profundo.
+- Ferramentas ainda não implementadas permanecem marcadas como próxima etapa.
+- Não altera camadas, snapshots nem índices.
+
+## V38.4.36 · Bússola geológica + Nível digital · 2026-08-15
+
+- Ativa Bússola e Nível no Hub Ferramentas.
+- Integra ambos ao Caderno de Campo como medidas auxiliares.
+- Distingue orientação absoluta e relativa.
+- Bússola aceita declinação manual, sem afirmar cálculo WMM automático.
+- Nível mede a inclinação do plano da tela em relação à horizontal.
+- Inclui estabilidade, metodologia, limitações e referências APA 7 centralizadas.
+- Não altera camadas, snapshots nem índices.
+
+## V38.4.37 · Estereograma ARANDU + Calculadora estrutural · 2026-08-15
+
+- Ativa Estereograma e Calculadora no Hub Ferramentas.
+- Estereograma usa projeção de área igual no hemisfério inferior, com planos e polos.
+- Importa medidas estruturais válidas do Caderno de Campo.
+- Calcula média vetorial dos polos e força vetorial R como síntese descritiva.
+- Calculadora inclui strike RHR ↔ dip direction, mergulho aparente/verdadeiro e interseção entre dois planos.
+- Exporta estereograma em SVG.
+- Inclui metodologias e referências APA 7 centralizadas.
+- Não altera camadas, snapshots nem índices.
+

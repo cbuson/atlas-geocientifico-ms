@@ -1,0 +1,153 @@
+{
+  "audit": "V38.4.34 Geoetica e Governanca CARE",
+  "status": "PASS",
+  "passed": 29,
+  "total": 29,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": "V38.4.34-GEOETICA-CARE-1.0-20260815"
+    },
+    {
+      "name": "index_14 · Qualidade, geoética, sensibilidade e revisão",
+      "pass": true,
+      "detail": "14 · Qualidade, geoética, sensibilidade e revisão"
+    },
+    {
+      "name": "index_id=\"campoGeoOrigem\"",
+      "pass": true,
+      "detail": "id=\"campoGeoOrigem\""
+    },
+    {
+      "name": "index_id=\"campoGeoNivelAcesso\"",
+      "pass": true,
+      "detail": "id=\"campoGeoNivelAcesso\""
+    },
+    {
+      "name": "index_id=\"campoGeoConsentimento\"",
+      "pass": true,
+      "detail": "id=\"campoGeoConsentimento\""
+    },
+    {
+      "name": "index_protocolo-geoetica.html",
+      "pass": true,
+      "detail": "protocolo-geoetica.html"
+    },
+    {
+      "name": "index_protocolo-care-camada-ancestral.html",
+      "pass": true,
+      "detail": "protocolo-care-camada-ancestral.html"
+    },
+    {
+      "name": "index_geoetica-care-v38434.js?v=38.4.34",
+      "pass": true,
+      "detail": "geoetica-care-v38434.js?v=38.4.34"
+    },
+    {
+      "name": "index_V38.4.34</title>",
+      "pass": true,
+      "detail": "V38.4.34</title>"
+    },
+    {
+      "name": "file_docs/documentos/protocolo-geoetica.html",
+      "pass": true,
+      "detail": "docs/documentos/protocolo-geoetica.html"
+    },
+    {
+      "name": "file_docs/documentos/protocolo-care-camada-ancestral.html",
+      "pass": true,
+      "detail": "docs/documentos/protocolo-care-camada-ancestral.html"
+    },
+    {
+      "name": "file_docs/documentos/politica-geoetica-care.json",
+      "pass": true,
+      "detail": "docs/documentos/politica-geoetica-care.json"
+    },
+    {
+      "name": "file_docs/documentos/geoetica-care-referencias.json",
+      "pass": true,
+      "detail": "docs/documentos/geoetica-care-referencias.json"
+    },
+    {
+      "name": "master_geoethics:{origin:",
+      "pass": true,
+      "detail": "geoethics:{origin:"
+    },
+    {
+      "name": "master_authorization_status",
+      "pass": true,
+      "detail": "authorization_status"
+    },
+    {
+      "name": "master_authorized_purpose",
+      "pass": true,
+      "detail": "authorized_purpose"
+    },
+    {
+      "name": "master_review_withdrawal_channel",
+      "pass": true,
+      "detail": "review_withdrawal_channel"
+    },
+    {
+      "name": "master_frameworks:['ITA-GEOETHICS-1.0','CARE']",
+      "pass": true,
+      "detail": "frameworks:['ITA-GEOETHICS-1.0','CARE']"
+    },
+    {
+      "name": "node_campo-master-v38431.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "node_geoetica-care-v38434.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bib_unique",
+      "pass": true,
+      "detail": "185/185"
+    },
+    {
+      "name": "bib_geo_section",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bib_10.5334/dsj-2020-043",
+      "pass": true,
+      "detail": "10.5334/dsj-2020-043"
+    },
+    {
+      "name": "bib_gida-global.org/careprinciples",
+      "pass": true,
+      "detail": "gida-global.org/careprinciples"
+    },
+    {
+      "name": "bib_geoethics.org/definition",
+      "pass": true,
+      "detail": "geoethics.org/definition"
+    },
+    {
+      "name": "bib_geoethics.org/ctsg",
+      "pass": true,
+      "detail": "geoethics.org/ctsg"
+    },
+    {
+      "name": "bib_count_dynamic",
+      "pass": true,
+      "detail": "185/185"
+    },
+    {
+      "name": "catalog_unchanged",
+      "pass": true,
+      "detail": "8ccb9bae74159fbe1b14874dc187423411db1af68e9527386893f855c4413f95"
+    },
+    {
+      "name": "manifest_unchanged",
+      "pass": true,
+      "detail": "bbed2243e156271ce68354d4a0072ce8a339ce78d1710b6ca7e75f21f3bf1d35"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "audit": "V38.4.35 Ferramentas Hub",
+  "status": "PASS",
+  "passed": 27,
+  "total": 27,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": "V38.4.35-FERRAMENTAS-HUB-1.0-20260815"
+    },
+    {
+      "name": "index_id=\"abrirFerramentas\"",
+      "pass": true,
+      "detail": "id=\"abrirFerramentas\""
+    },
+    {
+      "name": "index_id=\"ferramentasModal\"",
+      "pass": true,
+      "detail": "id=\"ferramentasModal\""
+    },
+    {
+      "name": "index_Ferramentas geocientíficas",
+      "pass": true,
+      "detail": "Ferramentas geocientíficas"
+    },
+    {
+      "name": "index_Clinômetro Visual ARANDU",
+      "pass": true,
+      "detail": "Clinômetro Visual ARANDU"
+    },
+    {
+      "name": "index_GeoCâmera ARANDU",
+      "pass": true,
+      "detail": "GeoCâmera ARANDU"
+    },
+    {
+      "name": "index_Colunas estratigráficas",
+      "pass": true,
+      "detail": "Colunas estratigráficas"
+    },
+    {
+      "name": "index_Tempo Profundo",
+      "pass": true,
+      "detail": "Tempo Profundo"
+    },
+    {
+      "name": "index_PRÓXIMA ETAPA",
+      "pass": true,
+      "detail": "PRÓXIMA ETAPA"
+    },
+    {
+      "name": "index_metodologia-ferramentas-geocientificas.html",
+      "pass": true,
+      "detail": "metodologia-ferramentas-geocientificas.html"
+    },
+    {
+      "name": "index_ferramentas-hub-v38435.js?v=38.4.35",
+      "pass": true,
+      "detail": "ferramentas-hub-v38435.js?v=38.4.35"
+    },
+    {
+      "name": "index_V38.4.35</title>",
+      "pass": true,
+      "detail": "V38.4.35</title>"
+    },
+    {
+      "name": "single_trigger",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "single_modal",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "js_file",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "doc_file",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "js_clino()",
+      "pass": true,
+      "detail": "clino()"
+    },
+    {
+      "name": "js_geocamera()",
+      "pass": true,
+      "detail": "geocamera()"
+    },
+    {
+      "name": "js_columns()",
+      "pass": true,
+      "detail": "columns()"
+    },
+    {
+      "name": "js_deep()",
+      "pass": true,
+      "detail": "deep()"
+    },
+    {
+      "name": "js_openSection(words)",
+      "pass": true,
+      "detail": "openSection(words)"
+    },
+    {
+      "name": "js_planned(name)",
+      "pass": true,
+      "detail": "planned(name)"
+    },
+    {
+      "name": "node_syntax",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog_unchanged",
+      "pass": true,
+      "detail": "8ccb9bae74159fbe1b14874dc187423411db1af68e9527386893f855c4413f95"
+    },
+    {
+      "name": "manifest_unchanged",
+      "pass": true,
+      "detail": "bbed2243e156271ce68354d4a0072ce8a339ce78d1710b6ca7e75f21f3bf1d35"
+    },
+    {
+      "name": "clinometro_unchanged",
+      "pass": true,
+      "detail": "d37c2cbd99cea97b522f6a619446805057f949c94f5d8c9b137d456e22c85ee2"
+    },
+    {
+      "name": "master_unchanged",
+      "pass": true,
+      "detail": "437bda103dbb02a191b8923e8a546bde4cbcf9ede519f09f9675e7691d5de7db"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "audit": "V38.4.36 Bussola + Nivel",
+  "status": "PASS",
+  "passed": 28,
+  "total": 28,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": "V38.4.36-BUSSOLA-NIVEL-1.0-20260815"
+    },
+    {
+      "name": "index_id=\"bussolaAranduModal\"",
+      "pass": true,
+      "detail": "id=\"bussolaAranduModal\""
+    },
+    {
+      "name": "index_id=\"nivelAranduModal\"",
+      "pass": true,
+      "detail": "id=\"nivelAranduModal\""
+    },
+    {
+      "name": "index_id=\"campoAbrirBussola\"",
+      "pass": true,
+      "detail": "id=\"campoAbrirBussola\""
+    },
+    {
+      "name": "index_id=\"campoAbrirNivel\"",
+      "pass": true,
+      "detail": "id=\"campoAbrirNivel\""
+    },
+    {
+      "name": "index_EM VALIDAÇÃO",
+      "pass": true,
+      "detail": "EM VALIDAÇÃO"
+    },
+    {
+      "name": "index_metodologia-bussola-geologica.html",
+      "pass": true,
+      "detail": "metodologia-bussola-geologica.html"
+    },
+    {
+      "name": "index_metodologia-nivel-digital.html",
+      "pass": true,
+      "detail": "metodologia-nivel-digital.html"
+    },
+    {
+      "name": "index_bussola-nivel-v38436.js?v=38.4.36",
+      "pass": true,
+      "detail": "bussola-nivel-v38436.js?v=38.4.36"
+    },
+    {
+      "name": "index_V38.4.36</title>",
+      "pass": true,
+      "detail": "V38.4.36</title>"
+    },
+    {
+      "name": "js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "js_flatHeading",
+      "pass": true,
+      "detail": "flatHeading"
+    },
+    {
+      "name": "js_compassHeading",
+      "pass": true,
+      "detail": "compassHeading"
+    },
+    {
+      "name": "js_planeTilt",
+      "pass": true,
+      "detail": "planeTilt"
+    },
+    {
+      "name": "js_requestSensors",
+      "pass": true,
+      "detail": "requestSensors"
+    },
+    {
+      "name": "js_addCompass",
+      "pass": true,
+      "detail": "addCompass"
+    },
+    {
+      "name": "js_addLevel",
+      "pass": true,
+      "detail": "addLevel"
+    },
+    {
+      "name": "node",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hub_bussola",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hub_nivel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bib_unique",
+      "pass": true,
+      "detail": "187/187"
+    },
+    {
+      "name": "bib_https://www.w3.org/TR/orientation-event/",
+      "pass": true,
+      "detail": "https://www.w3.org/TR/orientation-event/"
+    },
+    {
+      "name": "bib_ncei.noaa.gov/products/world-magnetic-model",
+      "pass": true,
+      "detail": "ncei.noaa.gov/products/world-magnetic-model"
+    },
+    {
+      "name": "bib_world-magnetic-model/accuracy-limitations-error-model",
+      "pass": true,
+      "detail": "world-magnetic-model/accuracy-limitations-error-model"
+    },
+    {
+      "name": "catalog_unchanged",
+      "pass": true,
+      "detail": "8ccb9bae74159fbe1b14874dc187423411db1af68e9527386893f855c4413f95"
+    },
+    {
+      "name": "manifest_unchanged",
+      "pass": true,
+      "detail": "bbed2243e156271ce68354d4a0072ce8a339ce78d1710b6ca7e75f21f3bf1d35"
+    },
+    {
+      "name": "master_unchanged",
+      "pass": true,
+      "detail": "437bda103dbb02a191b8923e8a546bde4cbcf9ede519f09f9675e7691d5de7db"
+    },
+    {
+      "name": "clinometro_unchanged",
+      "pass": true,
+      "detail": "d37c2cbd99cea97b522f6a619446805057f949c94f5d8c9b137d456e22c85ee2"
+    }
+  ]
+}
