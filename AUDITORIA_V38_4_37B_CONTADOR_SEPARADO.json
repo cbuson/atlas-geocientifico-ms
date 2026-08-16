@@ -1,0 +1,68 @@
+{
+  "audit": "V38.4.37B contador separado",
+  "status": "PASS",
+  "passed": 12,
+  "total": 12,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "tracker_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reader_removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "visitas_link",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "visitas_page",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "page_Visitas do Atlas",
+      "pass": true,
+      "detail": "Visitas do Atlas"
+    },
+    {
+      "name": "page_visitas acumuladas",
+      "pass": true,
+      "detail": "visitas acumuladas"
+    },
+    {
+      "name": "page_visitas hoje",
+      "pass": true,
+      "detail": "visitas hoje"
+    },
+    {
+      "name": "page_últimos 7 dias",
+      "pass": true,
+      "detail": "últimos 7 dias"
+    },
+    {
+      "name": "page_mês atual",
+      "pass": true,
+      "detail": "mês atual"
+    },
+    {
+      "name": "catalog_unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest_unchanged",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

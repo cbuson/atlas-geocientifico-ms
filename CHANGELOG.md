@@ -557,3 +557,11 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Integra metodologia e referências APA 7.
 - Não altera camadas, snapshots ou índices.
 
+## V38.4.37B · Contador de visitas separado · 2026-08-15
+
+- Retira o leitor GoatCounter de Dados estatísticos.
+- Mantém o tracker GoatCounter responsável por registrar visitas.
+- Cria página independente Visitas do Atlas.
+- Falhas do provedor deixam de afetar a interface principal.
+- Não altera camadas, snapshots ou índices.
+
