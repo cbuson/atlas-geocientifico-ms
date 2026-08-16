@@ -547,3 +547,13 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Inclui metodologias e referências APA 7 centralizadas.
 - Não altera camadas, snapshots nem índices.
 
+## V38.4.37A · Contador agregado de visitas · 2026-08-15
+
+- Ativa contagem pública por GoatCounter.
+- Exibe visitas acumuladas, hoje, últimos sete dias e mês atual.
+- Usa somente o contador público JSON para leitura dos indicadores.
+- Não inclui token de API no navegador ou no repositório.
+- Não simula valores quando o provedor está indisponível.
+- Integra metodologia e referências APA 7.
+- Não altera camadas, snapshots ou índices.
+

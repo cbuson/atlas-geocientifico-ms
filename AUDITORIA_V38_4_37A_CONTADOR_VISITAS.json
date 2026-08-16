@@ -1,0 +1,118 @@
+{
+  "audit": "V38.4.37A Contador de visitas",
+  "status": "PASS",
+  "passed": 22,
+  "total": 22,
+  "checks": [
+    {
+      "name": "version",
+      "pass": true,
+      "detail": "V38.4.37A-CONTADOR-VISITAS-1.0-20260815"
+    },
+    {
+      "name": "index_data-goatcounter=",
+      "pass": true,
+      "detail": "data-goatcounter="
+    },
+    {
+      "name": "index_count.v5.js",
+      "pass": true,
+      "detail": "count.v5.js"
+    },
+    {
+      "name": "index_contador-visitas-v38437a.js?v=38.4.37a",
+      "pass": true,
+      "detail": "contador-visitas-v38437a.js?v=38.4.37a"
+    },
+    {
+      "name": "index_V38.4.37A",
+      "pass": true,
+      "detail": "V38.4.37A"
+    },
+    {
+      "name": "js_exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "js_counter/TOTAL.json",
+      "pass": true,
+      "detail": "counter/TOTAL.json"
+    },
+    {
+      "name": "js_visitas acumuladas",
+      "pass": true,
+      "detail": "visitas acumuladas"
+    },
+    {
+      "name": "js_visitas hoje",
+      "pass": true,
+      "detail": "visitas hoje"
+    },
+    {
+      "name": "js_últimos 7 dias",
+      "pass": true,
+      "detail": "últimos 7 dias"
+    },
+    {
+      "name": "js_mês atual",
+      "pass": true,
+      "detail": "mês atual"
+    },
+    {
+      "name": "js_credentials:'omit'",
+      "pass": true,
+      "detail": "credentials:'omit'"
+    },
+    {
+      "name": "no_token",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "node",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "file_docs/documentos/metodologia-contador-visitas.html",
+      "pass": true,
+      "detail": "docs/documentos/metodologia-contador-visitas.html"
+    },
+    {
+      "name": "file_docs/documentos/contador-visitas-referencias.json",
+      "pass": true,
+      "detail": "docs/documentos/contador-visitas-referencias.json"
+    },
+    {
+      "name": "bib_goatcounter",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bib_unique",
+      "pass": true,
+      "detail": "193/193"
+    },
+    {
+      "name": "catalog_unchanged",
+      "pass": true,
+      "detail": "8ccb9bae74159fbe1b14874dc187423411db1af68e9527386893f855c4413f95"
+    },
+    {
+      "name": "manifest_unchanged",
+      "pass": true,
+      "detail": "bbed2243e156271ce68354d4a0072ce8a339ce78d1710b6ca7e75f21f3bf1d35"
+    },
+    {
+      "name": "master_unchanged",
+      "pass": true,
+      "detail": "437bda103dbb02a191b8923e8a546bde4cbcf9ede519f09f9675e7691d5de7db"
+    },
+    {
+      "name": "struct_unchanged",
+      "pass": true,
+      "detail": "cd11348f9c74c0ff6d44e2c644e5fce69e595fc507a553c0ab04ddeb3055e436"
+    }
+  ]
+}

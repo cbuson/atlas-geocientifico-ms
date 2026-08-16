@@ -1,0 +1,27 @@
+{
+  "module": "Contador agregado de visitas",
+  "version": "1.0",
+  "date": "2026-08-15",
+  "provider": "GoatCounter",
+  "site_code": "ita-arandu",
+  "references": [
+    {
+      "key": "goatcounter_main",
+      "ref_id": "REF-193",
+      "status": "added",
+      "url": "https://www.goatcounter.com/"
+    },
+    {
+      "key": "goatcounter_visitor",
+      "ref_id": "REF-194",
+      "status": "added",
+      "url": "https://www.goatcounter.com/help/visitor-counter"
+    },
+    {
+      "key": "goatcounter_js",
+      "ref_id": "REF-195",
+      "status": "added",
+      "url": "https://www.goatcounter.com/help/js"
+    }
+  ]
+}

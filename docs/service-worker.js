@@ -1,5 +1,8 @@
-const ITA_CACHE = 'ita-arandu-v38-4-37-estereograma-calculadora';
+const ITA_CACHE = 'ita-arandu-v38-4-37a-contador-visitas';
 const ITA_CORE = [
+  "./documentos/contador-visitas-referencias.json",
+  "./documentos/metodologia-contador-visitas.html",
+  "./assets/js/contador-visitas-v38437a.js?v=38.4.37a",
   "./documentos/estereograma-calculadora-referencias.json",
   "./documentos/metodologia-calculadora-estrutural.html",
   "./documentos/metodologia-estereograma-arandu.html",
