@@ -1,0 +1,79 @@
+{
+  "version": "V38.4.38",
+  "status": "PASS",
+  "passed": 14,
+  "total": 14,
+  "confirmed_ms_units": 67,
+  "checks": [
+    {
+      "name": "version_38438",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ms_geojson_features",
+      "pass": true,
+      "detail": "870"
+    },
+    {
+      "name": "ms_unique_units",
+      "pass": true,
+      "detail": "67"
+    },
+    {
+      "name": "ms_async_loader",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ms_local_source",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ms_does_not_activate_layer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "blocking_layer_alert_removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "geolocation_alert_removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ui_notice_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all_js_syntax",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "all_json_valid",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "index_local_resources_exist",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "scientific_payload_unchanged",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "mandatory_dom_targets_exist",
+      "pass": true,
+      "detail": "[]"
+    }
+  ]
+}

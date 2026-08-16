@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-v38-4-37g-init-fix';
+const ITA_CACHE = 'ita-arandu-v38-4-38-saneamento';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
@@ -8,7 +8,7 @@ const ITA_CORE = [
   './assets/css/atlas.css?v=38.4.26',
   './assets/css/design-system-v38424.css?v=38.4.26',
   './assets/js/map-fallback.js?v=38.4.26',
-  './assets/js/app.js?v=38.4.37g',
+  './assets/js/app.js?v=38.4.38',
   './assets/js/campo-sensores.js?v=38.4.37f',
   './dados/meta.js?v=38.4.26',
   './referencias/referencias.js?v=38.4.26',

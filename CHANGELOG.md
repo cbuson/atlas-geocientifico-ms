@@ -583,3 +583,13 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - O erro ocorria antes de init(), impedindo buildLayers() e a renderização completa de Dados.
 - Mantém a ligação protegida já existente para openTempoMap, caso o elemento volte a existir.
 - Não altera GeoJSON, snapshots, catálogo científico nem cálculos de índices.
+
+
+## V38.4.38 · saneamento funcional · 2026-08-16
+
+- Coluna temporal de Mato Grosso do Sul passa a carregar automaticamente o GeoJSON geológico local quando a ferramenta é aberta.
+- A abertura da coluna temporal não ativa a camada geológica no mapa e não altera o estado cartográfico do usuário.
+- Falhas de carregamento de camadas deixam de abrir alertas bloqueantes e passam a ser registradas na interface e no console.
+- Avisos de geolocalização deixam de interromper a navegação com caixas modais do navegador.
+- Dependências externas permanecem opcionais e não bloqueiam Camadas, Dados ou ferramentas locais.
+- Nenhum GeoJSON científico, snapshot ou cálculo de índice foi modificado ou recalculado.

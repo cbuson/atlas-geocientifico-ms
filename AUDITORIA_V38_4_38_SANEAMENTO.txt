@@ -1,0 +1,28 @@
+ITA ARANDU MS · V38.4.38 · SANEAMENTO FUNCIONAL
+
+STATUS PASS · 14/14
+
+CORREÇÃO PRINCIPAL
+O mapa geológico local possui 870 feições e 67 unidades estratigráficas únicas.
+A ferramenta Tempo geológico agora carrega essa fonte local sob demanda, sem ativar a camada no mapa.
+
+SANEAMENTO UX
+Falhas de camada e geolocalização não usam mais alertas bloqueantes no motor principal.
+
+PRESERVAÇÃO CIENTÍFICA
+GeoJSON científicos, snapshots e scripts de índices foram preservados sem recalculo.
+
+PASS version_38438
+PASS ms_geojson_features · 870
+PASS ms_unique_units · 67
+PASS ms_async_loader
+PASS ms_local_source
+PASS ms_does_not_activate_layer
+PASS blocking_layer_alert_removed
+PASS geolocation_alert_removed
+PASS ui_notice_present
+PASS all_js_syntax · []
+PASS all_json_valid · []
+PASS index_local_resources_exist · []
+PASS scientific_payload_unchanged · []
+PASS mandatory_dom_targets_exist · []
