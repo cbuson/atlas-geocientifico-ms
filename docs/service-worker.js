@@ -1,4 +1,15 @@
-const ITA_CACHE = 'ita-arandu-v38-4-37b-visitas-separado';
+const ITA_CACHE = 'ita-arandu-v38-4-37c-reparo-arquitetura';
+const ITA_REQUIRED = [
+  "./",
+  "./index.html",
+  "./manifest.webmanifest",
+  "./assets/css/atlas.css?v=38.4.26",
+  "./assets/js/app.js?v=38.4.37c",
+  "./assets/js/bootstrap.js?v=38.4.37c",
+  "./camadas/catalogo-local.js?v=38.4.26",
+  "./referencias/referencias.js?v=38.4.26",
+  "./dados/meta.js?v=38.4.26"
+];
 const ITA_CORE = [
   "./visitas/",
   "./documentos/contador-visitas-referencias.json",
@@ -55,9 +66,6 @@ const ITA_CORE = [
   "./assets/css/design-system-v38424.css?v=38.4.26",
   "./assets/css/dados-dashboard.css?v=38.4.26",
   "./assets/js/map-fallback.js?v=38.4.26",
-  "./assets/js/bootstrap.js?v=38.4.26",
-  "./assets/js/app.js?v=38.4.26",
-  "./assets/js/campo-sensores.js?v=38.4.26",
   "./dados/meta.js?v=38.4.26",
   "./dados/geometria-computacional/registry.js?v=38.4.26",
   "./referencias/referencias.js?v=38.4.26",
@@ -68,16 +76,10 @@ const ITA_CORE = [
   "./indices/igc-v38410.js?v=38.4.26",
   "./indices/igq-v38411.js?v=38.4.26",
   "./documentos/metodologia-igf.html",
-  "./camadas/arquivos/magnetotelurico_sgb_ms.geojson",
-  "./camadas/arquivos/gravimetria_sgb_ms.geojson",
-  "./camadas/arquivos/aerogeofisica_projetos_sgb_ms.geojson",
   "./indices/igf-v38412.js?v=38.4.26",
   "./documentos/metodologia-ics.html",
-  "./camadas/arquivos/rimas_pocos_monitoramento_ms.geojson",
-  "./camadas/arquivos/siagas_pocos_ms.geojson",
   "./indices/ics-v38413.js?v=38.4.26",
   "./camadas/catalogo-local.js?v=38.4.26",
-  "./analytics/config.js?v=38.4.26",
   "./camadas/catalogo-local.json",
   "./camadas/index.html",
   "./documentos/index.html",
@@ -85,15 +87,6 @@ const ITA_CORE = [
   "./icons/icon-512.png",
   "./icons/icon-maskable-512.png",
   "./icons/favicon-32.png",
-  "./camadas/arquivos/limite_ms_ibge_2025.geojson",
-  "./camadas/arquivos/malha_r5_250km2.geojson",
-  "./camadas/arquivos/malha_500km2.geojson",
-  "./camadas/arquivos/malha_1000km2.geojson",
-  "./camadas/arquivos/mapa_geologico_ms.geojson",
-  "./camadas/arquivos/afloramentos_geosgb_ms.geojson",
-  "./camadas/arquivos/petrografia_geosgb_ms.geojson",
-  "./camadas/arquivos/geocronologia_geosgb_ms.geojson",
-  "./camadas/arquivos/geoquimica_amostras_sgb_ms.geojson",
   "./referencias/index.html",
   "./referencias/bibliografia-camadas-indices.json",
   "./referencias/README.md",
@@ -107,14 +100,6 @@ const ITA_CORE = [
   "./documentos/metodologia-igq.html",
   "./documentos/metodologia-pag-etr.html",
   "./documentos/geoetica-governanca-dados.html",
-  "./camadas/arquivos/localidades_indigenas_ibge.geojson",
-  "./camadas/arquivos/localidades_quilombolas_ibge.geojson",
-  "./camadas/arquivos/pag_etr_250km2.geojson",
-  "./camadas/arquivos/pag_etr_500km2.geojson",
-  "./camadas/arquivos/pag_etr_1000km2.geojson",
-  "./camadas/arquivos/pag_etr_evidencia_m2_feixe_morros.geojson",
-  "./camadas/arquivos/pag_etr_evidencia_m4_fosforitos.geojson",
-  "./camadas/arquivos/pag_etr_pontos_fosforo.geojson",
   "./documentos/metodologia-geografia-territorio.html",
   "./documentos/metodologia-cartografia-geologica.html",
   "./documentos/metodologia-caderneta-campo.html",
@@ -135,17 +120,33 @@ const ITA_CORE = [
   "./documentos/metodologia-pig.html",
   "./documentos/auditoria-zero-final-indices.html",
   "./indices/politica-pig-v38420.json",
+  "./assets/js/app.js?v=38.4.37c",
+  "./assets/js/campo-sensores.js?v=38.4.37c",
+  "./assets/js/bootstrap.js?v=38.4.37c"
 ];
 
 self.addEventListener('install', event => {
   event.waitUntil((async()=>{
     const cache=await caches.open(ITA_CACHE);
-    await Promise.all(ITA_CORE.map(async url=>{
+
+    for(const url of ITA_REQUIRED){
       const req=new Request(url,{cache:'reload'});
       const res=await fetch(req);
-      if(!res.ok)throw new Error(`Falha no precache ${url} · HTTP ${res.status}`);
+      if(!res.ok)throw new Error(`Falha no precache crítico ${url} · HTTP ${res.status}`);
       await cache.put(req,res.clone());
+    }
+
+    const optional=ITA_CORE.filter(url=>!ITA_REQUIRED.includes(url));
+    await Promise.allSettled(optional.map(async url=>{
+      try{
+        const req=new Request(url,{cache:'reload'});
+        const res=await fetch(req);
+        if(res.ok)await cache.put(req,res.clone());
+      }catch(error){
+        console.warn('ITA ARANDU MS · precache opcional ignorado',url,error);
+      }
     }));
+
     await self.skipWaiting();
   })());
 });
@@ -168,8 +169,7 @@ function isCritical(url){
     url.pathname.includes('/dados/geometria-computacional/') ||
     url.pathname.includes('/referencias/referencias.js') ||
     url.pathname.includes('/indices/') ||
-    url.pathname.endsWith('/camadas/catalogo-local.js') ||
-    url.pathname.endsWith('/analytics/config.js');
+    url.pathname.endsWith('/camadas/catalogo-local.js');
 }
 
 async function networkFirst(req){

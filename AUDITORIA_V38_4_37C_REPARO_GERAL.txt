@@ -1,0 +1,40 @@
+ITA ARANDU MS · AUDITORIA V38.4.37C
+STATUS PASS · 27/27
+
+PASS · Sintaxe de todos os JavaScript · 33/33 válidos; falhas=[]
+PASS · JSON válidos · falhas=[]
+PASS · Versão coerente
+PASS · Camadas não bloqueadas por pré-carga
+PASS · app.js carregado diretamente
+PASS · Campo sensores carregado diretamente
+PASS · Dados sem contador
+PASS · Tracker GoatCounter preservado
+PASS · Página Visitas separada
+PASS · analytics/config fora da cadeia principal
+PASS · 214 camadas runtime únicas · 214
+PASS · 16 grupos completos · []
+PASS · Camadas conectadas com endereço · 52
+PASS · 190 referências runtime únicas · 190
+PASS · Vínculos camada→referência válidos · []
+PASS · 43 arquivos locais válidos · (43, [])
+PASS · Metadados file sem rotas legadas
+PASS · Recursos locais do index existentes · []
+PASS · IDs HTML únicos · []
+PASS · Página Referências coerente · (190, 214)
+PASS · Âncoras da bibliografia válidas · []
+PASS · Service worker sem recursos ausentes · []
+PASS · Service worker sem GeoJSON obrigatório
+PASS · Service worker tolerante a opcionais
+PASS · Registro service worker atualizado
+PASS · Dados científicos e índices preservados · []
+PASS · UTF-8 sem mojibake detectado · []
+
+CAUSAS CORRIGIDAS
+bootstrap.js aguardava cinco GeoJSON, cerca de 6,3 MB, antes de carregar app.js. Uma demora ou falha impedia Camadas e Dados de inicializar.
+Dados estatísticos ainda possuía chamadas internas ao analytics apesar de o contador já ter sido separado visualmente.
+service worker exigia precache simultâneo de grande conjunto de recursos, incluindo GeoJSON pesados, tornando atualização vulnerável a uma única falha.
+app.js reinseria REF-104 a REF-111 já existentes. O registro mestre também tinha referências metodológicas recentes apenas na página HTML. O registro foi reconciliado para 190 IDs únicos.
+12 entradas antigas ainda apontavam para dados/*.js inexistentes apesar de possuírem GeoJSON local atual. As rotas foram normalizadas.
+
+PRESERVAÇÃO
+GeoJSON de camadas, snapshots e scripts dos índices não foram alterados.

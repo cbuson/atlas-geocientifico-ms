@@ -565,3 +565,16 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Falhas do provedor deixam de afetar a interface principal.
 - Não altera camadas, snapshots ou índices.
 
+
+
+## V38.4.37C · Reparo de arquitetura · 2026-08-15
+
+- Corrige bloqueio de inicialização causado pela pré-carga síncrona de cinco GeoJSON antes de app.js.
+- app.js e campo-sensores.js passam a carregar antes da pré-carga opcional.
+- A pré-carga local passa a ser assíncrona, tolerante a falhas e não bloqueante.
+- Remove o contador de visitas de Dados estatísticos.
+- Mantém GoatCounter apenas no rastreamento público e na página independente Visitas.
+- Remove analytics/config.js da cadeia científica principal.
+- Torna a instalação do service worker tolerante a falhas em recursos opcionais e retira GeoJSON pesados do precache obrigatório.
+- Atualiza versão do service worker, título, badge e metadados de build.
+- Preserva catálogo, referências, camadas, snapshots e índices.

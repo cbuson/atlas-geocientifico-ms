@@ -5,14 +5,14 @@
   "references": [
     {
       "key": "carroll2020",
-      "ref_id": "REF-184",
-      "status": "added",
+      "ref_id": "REF-140",
+      "status": "reused",
       "url": "https://doi.org/10.5334/dsj-2020-043"
     },
     {
       "key": "gida",
-      "ref_id": "REF-185",
-      "status": "added",
+      "ref_id": "REF-141",
+      "status": "reused",
       "url": "https://www.gida-global.org/careprinciples"
     },
     {
@@ -23,8 +23,8 @@
     },
     {
       "key": "cape_town",
-      "ref_id": "REF-187",
-      "status": "added",
+      "ref_id": "REF-138",
+      "status": "reused",
       "url": "https://www.geoethics.org/ctsg"
     }
   ]
