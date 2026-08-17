@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-17",
+  "base": "docs(4).zip · cópia limpa baixada do GitHub",
+  "registry_before": 214,
+  "references_recovered": [
+    "REF-179",
+    "REF-180",
+    "REF-181",
+    "REF-182",
+    "REF-183",
+    "REF-184",
+    "REF-185",
+    "REF-186",
+    "REF-187",
+    "REF-188",
+    "REF-189",
+    "REF-190",
+    "REF-191",
+    "REF-192",
+    "REF-193",
+    "REF-194",
+    "REF-195",
+    "REF-196",
+    "REF-197",
+    "REF-198"
+  ],
+  "official_license_references_added": [
+    "REF-237",
+    "REF-238",
+    "REF-239",
+    "REF-240"
+  ],
+  "registry_after": 238,
+  "dangling_reference_ids_after": [],
+  "duplicate_ids": [],
+  "duplicate_apa_entries": [
+    "Carroll, S. R., Garba, I., Figueroa-Rodríguez, O. L., Holbrook, J., Lovett, R., Materechera, S., Parsons, M., Raseroka, K., Rodriguez-Lonebear, D., Rowe, R., Sara, R., Walker, J. D., Anderson, J., & Hudson, M. (2020). The CARE Principles for Indigenous Data Governance. Data Science Journal, 19, 43. https://doi.org/10.5334/dsj-2020-043"
+  ],
+  "invalid_url_syntax": [],
+  "missing_required_fields": {
+    "id": [],
+    "group": [],
+    "status": [],
+    "type": [],
+    "apa": [],
+    "use": [],
+    "citation_standard": [],
+    "apa_full": []
+  },
+  "notes": [
+    "REF-179 a REF-198 estavam citadas no Atlas e presentes na página bibliográfica histórica, mas ausentes do registro mestre referencias.js. Foram recuperadas sem renumerar as referências existentes.",
+    "As lacunas numéricas REF-137 e REF-145 não são referências pendentes na base atual porque não são citadas por nenhum componente. A numeração não foi artificialmente preenchida.",
+    "URLs repetidas podem ser legítimas quando a mesma fonte sustenta mais de um uso, camada ou entrada bibliográfica.",
+    "A auditoria estrutural garante integridade interna dos IDs, campos e vínculos. Ela não afirma que os 238 endereços externos foram todos reabertos e revalidados individualmente nesta execução."
+  ]
+}

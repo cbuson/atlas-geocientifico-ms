@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-v38-4-57-fgdc-section37-completa';
+const ITA_CACHE = 'ita-arandu-v38-4-58-governanca-bibliografia';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
@@ -155,6 +155,16 @@ const ITA_CORE = [
   './assets/padroes/fgdc/730.svg',
   './assets/padroes/fgdc/731.svg',
   './assets/padroes/fgdc/732.svg',
+  './assets/css/bancada-governanca-v38458.css',
+  './assets/js/licencas-citacao-v38458.js',
+  './documentos/politica-licencas-citacao.html',
+  './documentos/auditoria-bibliografica-zero-20260817.html',
+  './documentos/citacoes-ferramentas-indices.json',
+  './referencias/referencias.js',
+  './referencias/index.html',
+  './LICENSE-CONTENT.txt',
+  './LICENSE-SOFTWARE.txt',
+  './THIRD-PARTY-NOTICES.txt',
 ];
 
 self.addEventListener('install', event => {

@@ -16,3 +16,13 @@
 .ce-badge-local{display:inline-flex;align-items:center;border:1px solid #b9d9c5;background:#f2fbf5;color:#286342;border-radius:999px;padding:8px 11px;font-size:12px;font-weight:850;white-space:nowrap}
 
 .ce-pattern-unavailable{opacity:.86}.ce-pattern-unavailable .ce-pattern-preview{display:flex;align-items:center;justify-content:center;background:#f6f8f9!important;border-style:dashed}.ce-no-svg{font-size:11px;line-height:1.3;text-align:center;color:#6d7f8b;padding:8px}.ce-source-note{color:#8a6415!important;font-weight:650}
+
+
+/* R5 · GPS e compatibilidade visual dos padrões FGDC */
+.ce-gps-panel{margin:12px 0;padding:12px;border:1px solid #cbdde6;border-radius:12px;background:#f7fbfd}
+.ce-gps-header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.ce-gps-header>div{display:flex;flex-direction:column;gap:2px}.ce-gps-header b{color:#174c6b}.ce-gps-header small{color:#657c89;font-size:10px;line-height:1.4}
+.ce-gps-status{margin-top:5px;padding:8px 9px;border-radius:8px;border:1px solid #dce7ec;background:#fff;color:#5a7381;font-size:10px;line-height:1.4}
+.ce-pattern-preview,.ce-pattern-swatch,.ce-layer{background-repeat:repeat!important;background-size:58px 58px!important;background-position:center!important;background-color:#fff!important}
+.ce-pattern-preview{min-height:78px}
+@media(max-width:720px){.ce-gps-header{align-items:stretch;flex-direction:column}.ce-gps-header .ce-btn{width:100%}}

@@ -1,0 +1,57 @@
+
+/* ITA ARANDU MS · Bancada Digital · contêiner visual unificado
+   Somente apresentação do contêiner, navegação e controles. Não altera fórmulas nem conteúdo científico. */
+#ferramentasModal .ita-tools-modal,
+.ita-bancada-standard-modal .modal-box{
+  width:min(1040px,96vw)!important;max-width:1040px!important;max-height:92vh!important;
+  background:#fff!important;border:1px solid #d8e3e9!important;border-radius:16px!important;
+  box-shadow:0 22px 60px rgba(25,55,72,.18)!important;overflow:hidden;
+}
+.ita-bancada-standard-modal .modal-head,
+.ita-bancada-standard-modal .ce-head,
+.ita-bancada-standard-modal .mag-head,
+.ita-bancada-standard-modal .ondas-head{
+  background:#fff!important;border-bottom:1px solid #dfe8ed!important;
+  padding:14px 16px!important;min-height:64px;box-sizing:border-box;
+}
+.ita-bancada-standard-modal .modal-body,
+.ita-bancada-standard-modal .ce-body{background:#fff!important}
+.ita-bancada-standard-modal h2{font-size:20px!important;line-height:1.2!important;margin:2px 0!important;color:#173f59!important}
+.ita-bancada-standard-modal .kicker,
+.ita-bancada-standard-modal [class*="kicker"]{font-size:9px!important;letter-spacing:.1em!important;text-transform:uppercase!important;font-weight:900!important;color:#607d8d!important}
+.ita-bancada-standard-modal button,
+.ita-bancada-standard-modal .action-btn,
+#ferramentasModal button,#ferramentasModal .action-btn{
+  min-height:38px;border-radius:9px;font-family:inherit;font-weight:800;
+}
+.ita-bancada-standard-modal button.primary,
+.ita-bancada-standard-modal .action-btn.primary,
+#ferramentasModal .action-btn.primary{background:#0b5686!important;color:#fff!important;border-color:#0b5686!important}
+.ita-bancada-standard-modal input,
+.ita-bancada-standard-modal select,
+.ita-bancada-standard-modal textarea{
+  font-family:inherit;border-radius:9px!important;border:1px solid #c9d8e0!important;background:#fff!important;color:#213f51!important;
+}
+.ita-bancada-standard-modal [class*="tabs"]{background:#fff!important;border-bottom-color:#dfe8ed!important}
+.ita-bancada-standard-modal [class*="tabs"] button.active,
+.ita-bancada-standard-modal [class*="tabs"] button.is-active{background:#0b5686!important;color:#fff!important;border-color:#0b5686!important}
+.ita-citation-strip{
+  margin:14px 0 2px;padding:10px 12px;border:1px solid #d4e2e9;border-radius:11px;background:#f8fbfd;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.ita-citation-strip>div{display:flex;flex-direction:column;gap:2px}.ita-citation-strip b{color:#174866;font-size:12px}.ita-citation-strip span{font-size:10px;color:#677f8d}
+.ita-citation-strip button{border:1px solid #b9ced9;background:#fff;color:#0b5686;padding:7px 10px}
+.ita-governance-box{width:min(900px,95vw)!important;max-height:90vh;background:#fff!important}
+.ita-license-hero{padding:12px;border:1px solid #d5e2e8;border-radius:12px;background:#f8fbfd}.ita-license-hero b{color:#154a68}.ita-license-hero p{margin:5px 0 0;color:#58717f}
+.ita-license-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0}
+.ita-license-grid article{border:1px solid #d8e4ea;border-radius:12px;padding:12px;background:#fff}.ita-license-grid article>span,.ita-citation-box span,.ita-component-citation>span{font-size:8px;letter-spacing:.1em;font-weight:950;color:#677e8b}
+.ita-license-grid h3{margin:4px 0;color:#174866}.ita-license-grid p{font-size:12px;color:#58717f;line-height:1.5}.ita-license-grid a{color:#0b5686;font-weight:850}
+.ita-citation-box,.ita-component-citation{border-left:3px solid #0b5686;background:#f5f9fb;border-radius:9px;padding:12px;margin-top:12px}
+.ita-citation-box b,.ita-component-citation b{display:block;margin-top:4px;color:#2e5063;line-height:1.5;font-size:12px}
+.ita-component-citation p{font-size:11px;color:#607886;margin:5px 0 0}
+.ita-license-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.ita-license-actions a{padding:7px 10px;border:1px solid #b8ced9;border-radius:8px;color:#0b5686;text-decoration:none;font-weight:850;background:#fff}
+.ita-license-refline{margin-top:11px;font-size:10px;color:#6a7f8b}
+@media(max-width:760px){
+ #ferramentasModal .ita-tools-modal,.ita-bancada-standard-modal .modal-box{width:100vw!important;max-width:100vw!important;max-height:100dvh!important;border-radius:0!important}
+ .ita-license-grid{grid-template-columns:1fr}.ita-citation-strip{align-items:stretch;flex-direction:column}.ita-citation-strip button{width:100%}
+}

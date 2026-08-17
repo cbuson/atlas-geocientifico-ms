@@ -1,8 +1,8 @@
 {
-  "generated_on": "2026-08-14",
+  "generated_on": "2026-08-17",
   "citation_standard": "APA 7",
   "project": "ITA ARANDU MS · Atlas Geocientífico de Mato Grosso do Sul",
-  "total_references": 176,
+  "total_references": 238,
   "total_catalog_layers": 214,
   "total_index_layers": 36,
   "entries": [
@@ -8399,5 +8399,12 @@
     "REF-176",
     "REF-177"
   ],
-  "methodological_positioning_note": "Antecedentes comparativos para integração de evidências, disponibilidade de dados, planejamento do conhecimento geológico e índices compostos. São referências de posicionamento e não fórmulas ou pesos transferidos automaticamente aos índices do Atlas."
+  "methodological_positioning_note": "Antecedentes comparativos para integração de evidências, disponibilidade de dados, planejamento do conhecimento geológico e índices compostos. São referências de posicionamento e não fórmulas ou pesos transferidos automaticamente aos índices do Atlas.",
+  "licensing_reference_ids": [
+    "REF-237",
+    "REF-238",
+    "REF-239",
+    "REF-240"
+  ],
+  "licensing_note": "Política transversal de licença, atribuição, separação entre conteúdo e software e exclusão explícita de materiais de terceiros."
 }

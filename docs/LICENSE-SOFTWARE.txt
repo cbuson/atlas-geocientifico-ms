@@ -1,0 +1,15 @@
+ITA ARANDU MS · LICENÇA DO CÓDIGO ORIGINAL
+
+O código original desenvolvido especificamente para o ITA ARANDU MS é disponibilizado
+sob PolyForm Noncommercial License 1.0.0.
+
+Texto oficial
+https://polyformproject.org/licenses/noncommercial/1.0.0/
+
+Esta licença permite usos nos termos nela definidos para finalidades não comerciais.
+Ela não deve ser descrita como licença open source aprovada pela OSI.
+
+IMPORTANTE
+
+Componentes, bibliotecas e dependências de terceiros mantêm suas próprias licenças.
+Este aviso não substitui nem altera as licenças de código ou recursos de terceiros.

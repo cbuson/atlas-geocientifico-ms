@@ -1,0 +1,25 @@
+ITA ARANDU MS · LICENÇA DE CONTEÚDO ORIGINAL
+
+Salvo indicação específica em contrário, textos, metodologias, índices, documentação,
+materiais educativos e demais conteúdos autorais originais do ITA ARANDU MS são
+licenciados sob Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+(CC BY-NC-SA 4.0).
+
+Licença oficial
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Você pode compartilhar e adaptar o material para fins não comerciais, desde que atribua
+a autoria, indique alterações e compartilhe adaptações sob a mesma licença.
+
+EXCLUSÕES
+
+Esta licença não se aplica ao código de software, que possui licença própria.
+Esta licença também não se aplica a mapas, dados, imagens, padrões, bibliotecas,
+serviços ou outros conteúdos de terceiros. Esses materiais permanecem sujeitos às
+licenças, termos de uso e atribuições de suas fontes originais.
+
+Citação recomendada do projeto
+
+Busón Buesa, C., & Gabas, S. G. (2026). ITA ARANDU MS · Atlas geocientífico educativo
+e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo.
+https://doi.org/10.5281/zenodo.21923101

@@ -1,0 +1,162 @@
+{
+  "version": "2026-08-17",
+  "project_doi": "10.5281/zenodo.21923101",
+  "project_citation": "Busón Buesa, C., & Gabas, S. G. (2026). ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+  "indices": {
+    "IMC": {
+      "status": "componente metodológico próprio do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). IMC · método e implementação no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "A citação identifica a formulação e a implementação adotadas no ITA ARANDU MS. Antecedentes científicos, fontes e limitações permanecem citados na metodologia específica do índice."
+    },
+    "IOD": {
+      "status": "componente metodológico próprio do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). IOD · método e implementação no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "A citação identifica a formulação e a implementação adotadas no ITA ARANDU MS. Antecedentes científicos, fontes e limitações permanecem citados na metodologia específica do índice."
+    },
+    "ICP": {
+      "status": "componente metodológico próprio do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). ICP · método e implementação no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "A citação identifica a formulação e a implementação adotadas no ITA ARANDU MS. Antecedentes científicos, fontes e limitações permanecem citados na metodologia específica do índice."
+    },
+    "IGC": {
+      "status": "componente metodológico próprio do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). IGC · método e implementação no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "A citação identifica a formulação e a implementação adotadas no ITA ARANDU MS. Antecedentes científicos, fontes e limitações permanecem citados na metodologia específica do índice."
+    },
+    "IGQ": {
+      "status": "componente metodológico próprio do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). IGQ · método e implementação no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "A citação identifica a formulação e a implementação adotadas no ITA ARANDU MS. Antecedentes científicos, fontes e limitações permanecem citados na metodologia específica do índice."
+    },
+    "IGF": {
+      "status": "componente metodológico próprio do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). IGF · método e implementação no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "A citação identifica a formulação e a implementação adotadas no ITA ARANDU MS. Antecedentes científicos, fontes e limitações permanecem citados na metodologia específica do índice."
+    },
+    "ICS": {
+      "status": "componente metodológico próprio do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). ICS · método e implementação no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "A citação identifica a formulação e a implementação adotadas no ITA ARANDU MS. Antecedentes científicos, fontes e limitações permanecem citados na metodologia específica do índice."
+    },
+    "IDE": {
+      "status": "componente metodológico próprio do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). IDE · método e implementação no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "A citação identifica a formulação e a implementação adotadas no ITA ARANDU MS. Antecedentes científicos, fontes e limitações permanecem citados na metodologia específica do índice."
+    },
+    "ICG": {
+      "status": "componente metodológico próprio do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). ICG · método e implementação no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "A citação identifica a formulação e a implementação adotadas no ITA ARANDU MS. Antecedentes científicos, fontes e limitações permanecem citados na metodologia específica do índice."
+    },
+    "VCG": {
+      "status": "componente metodológico próprio do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). VCG · método e implementação no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "A citação identifica a formulação e a implementação adotadas no ITA ARANDU MS. Antecedentes científicos, fontes e limitações permanecem citados na metodologia específica do índice."
+    },
+    "PIG": {
+      "status": "componente metodológico próprio do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). PIG · método e implementação no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "A citação identifica a formulação e a implementação adotadas no ITA ARANDU MS. Antecedentes científicos, fontes e limitações permanecem citados na metodologia específica do índice."
+    },
+    "IPG": {
+      "status": "componente metodológico próprio do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). IPG · método e implementação no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "A citação identifica a formulação e a implementação adotadas no ITA ARANDU MS. Antecedentes científicos, fontes e limitações permanecem citados na metodologia específica do índice."
+    }
+  },
+  "tools": {
+    "clinometroAranduModal": {
+      "name": "Clinômetro Visual ARANDU",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). Clinômetro Visual ARANDU · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "bussolaAranduModal": {
+      "name": "Bússola geológica",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). Bússola geológica · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "nivelAranduModal": {
+      "name": "Nível digital",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). Nível digital · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "estereogramaAranduModal": {
+      "name": "Rede/Estereograma estrutural",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). Rede/Estereograma estrutural · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "calculadoraEstruturalModal": {
+      "name": "Calculadora estrutural",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). Calculadora estrutural · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "roseModal": {
+      "name": "Diagrama de Rosas · Direções",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). Diagrama de Rosas · Direções · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "ternarioModal": {
+      "name": "Diagrama Ternário · USDA",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). Diagrama Ternário · USDA · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "macroGeoModal": {
+      "name": "MacroGeo",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). MacroGeo · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "saidaCampoModal": {
+      "name": "Saída de campo",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). Saída de campo · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "gpsEducativoModal": {
+      "name": "GPS educativo",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). GPS educativo · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "geocameraModal": {
+      "name": "GeoCâmera",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). GeoCâmera · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "magAmostrasModal": {
+      "name": "Magnetômetro · Amostras",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). Magnetômetro · Amostras · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "magMapaModal": {
+      "name": "Magnetômetro · Mapa",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). Magnetômetro · Mapa · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "ondasSismicasModal": {
+      "name": "Ondas sísmicas · Acelerômetro",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). Ondas sísmicas · Acelerômetro · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    },
+    "colunaEstratigraficaModal": {
+      "name": "Coluna Estratigráfica",
+      "status": "implementação educacional e integração digital do ITA ARANDU MS",
+      "citation": "Busón Buesa, C., & Gabas, S. G. (2026). Coluna Estratigráfica · implementação educacional no ITA ARANDU MS. In ITA ARANDU MS · Atlas geocientífico educativo e científico de Mato Grosso do Sul [Software e atlas geocientífico]. Zenodo. https://doi.org/10.5281/zenodo.21923101",
+      "note": "Esta citação refere-se à implementação, integração, interface, documentação e desenho educativo do ITA ARANDU MS. Não implica que o método geocientífico subjacente seja uma criação original dos autores. Os antecedentes e normas do método devem ser citados conforme a Ajuda e Ciência da ferramenta."
+    }
+  },
+  "license_content": "CC BY-NC-SA 4.0",
+  "license_software": "PolyForm Noncommercial 1.0.0",
+  "third_party_rule": "Dados, mapas, imagens, padrões, serviços e conteúdos de terceiros permanecem sob autoria, licença e condições de suas fontes originais e não são relicenciados pelo ITA ARANDU MS."
+}
