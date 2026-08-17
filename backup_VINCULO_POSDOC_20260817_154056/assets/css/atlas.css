@@ -179,7 +179,3 @@ header{min-height:78px;padding:8px 12px}
 .autoria-note b{color:#174664}
 .autoria-note span{color:#607684;line-height:1.45}
 @media(max-width:760px){.autoria-meta-grid{grid-template-columns:1fr}.autoria-project-id{align-items:stretch;flex-direction:column}.autoria-actions{justify-content:flex-start}.autoria-link{flex:1 1 auto}}
-/* ITA ARANDU MS · vínculo pós-doutorado voluntário */
-.autoria-vinculo-pesquisa{margin-top:10px;padding:10px 12px;border:1px solid #d5e2e9;border-radius:10px;background:#f8fbfd;display:flex;flex-direction:column;gap:3px}
-.autoria-vinculo-pesquisa b{color:#234b64}
-.autoria-vinculo-pesquisa span{color:#536e7d;line-height:1.45}

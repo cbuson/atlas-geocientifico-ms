@@ -1,23 +1,9 @@
-ITA ARANDU MS · AUTORIA CIENTÍFICA COMPLETA · R3
+ITA ARANDU MS · micro patch vínculo pós-doutorado voluntário
 
-Restaura e amplia a ficha de autoria histórica do projeto.
+Corrige a ficha de Carlos Busón Buesa para deixar claro que o vínculo é de pesquisador de pós-doutorado voluntário na UFMS e que o ITA ARANDU MS integra essa pesquisa.
 
-Inclui
-Carlos Busón Buesa
-Sandra Garcia Gabas
-vínculos UFMS, PPGTA e FAENG
-e-mails institucionais
-ORCID
-Currículo Lattes
-contribuições científicas
-DOI 10.5281/zenodo.21923101
-registro Zenodo 21923101
-citação atualizada
-ícone de autoria junto a Ajuda
-janela flutuante
+Também esclarece que esse vínculo não corresponde a cargo docente nem a posição permanente no quadro institucional.
 
 Instalação
 Set-ExecutionPolicy -Scope Process Bypass
-.\APLICAR_AUTORIA_COMPLETA_R3.ps1
-
-O script cria backup e trabalha com bytes para evitar recodificação global do site.
+.\APLICAR_VINCULO_POSDOC_R1.ps1
