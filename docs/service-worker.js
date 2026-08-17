@@ -1,9 +1,9 @@
-const ITA_CACHE = 'ita-arandu-v38-4-51-magnetometro-mapa';
+﻿const ITA_CACHE = 'ita-arandu-v38-4-52-android-native-sensors';
 
-/* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
+/* NÃºcleo pequeno. A instalaÃ§Ã£o da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
   "./assets/css/magnetometro-amostras-v38450.css?v=38.4.50",
-  "./assets/js/magnetometro-amostras-v38450.js?v=38.4.50",
+  "./assets/js/magnetometro-amostras-v38450.js?v=38.4.52",
   "./documentos/metodologia-magnetometro-amostras.html",
   "./assets/css/bancada-educativa-v38449.css?v=38.4.49",
   "./assets/js/bancada-educativa-v38449.js?v=38.4.49",
@@ -40,11 +40,11 @@ self.addEventListener('install', event => {
     const results=await Promise.allSettled(ITA_CORE.map(async url=>{
       const req=new Request(url,{cache:'reload'});
       const res=await fetch(req);
-      if(!res.ok)throw new Error(`HTTP ${res.status} · ${url}`);
+      if(!res.ok)throw new Error(`HTTP ${res.status} Â· ${url}`);
       await cache.put(req,res.clone());
     }));
     const failed=results.filter(r=>r.status==='rejected');
-    if(failed.length)console.warn('ITA ARANDU MS · precache parcial',failed);
+    if(failed.length)console.warn('ITA ARANDU MS Â· precache parcial',failed);
     await self.skipWaiting();
   })());
 });
@@ -101,7 +101,7 @@ self.addEventListener('fetch', event => {
         if(hit)return hit;
         const shell=await caches.match('./index.html');
         if(shell)return shell;
-        return new Response('Documento indisponível offline.',{status:503,headers:{'Content-Type':'text/plain; charset=utf-8'}});
+        return new Response('Documento indisponÃ­vel offline.',{status:503,headers:{'Content-Type':'text/plain; charset=utf-8'}});
       }
     })());
     return;
@@ -123,3 +123,4 @@ self.addEventListener('fetch', event => {
     return res;
   })());
 });
+
