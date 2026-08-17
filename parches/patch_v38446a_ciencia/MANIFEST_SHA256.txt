@@ -1,0 +1,4 @@
+4532bc65a52c888f7757be2e31ddc78804c128618a55da6d816841c40367fec7  payload/VERSION
+3136e97affcff61a6c8d1212f099ad90a2ac80ed8fd2fd07f53122adb7f919b5  payload/docs/assets/js/ternario-usda-v38446.js
+974499bdc8f3457c8ba02dcc762758367a1ea1c6dbf080b948f0d68a845a6aa7  payload/docs/documentos/metodologia-ternario-usda.html
+303c4a8861d85ce0caed06ce7c4fe8cd7615a1649dd7780e2594f26e807eb0dd  payload/docs/index.html

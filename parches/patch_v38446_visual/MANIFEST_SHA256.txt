@@ -1,0 +1,13 @@
+1171e0bad917381e48813921bc3f6991c2429352a2d56a3ce7dea5046e4b9cfb  ./APLICAR_V38_4_46_BANCADA_TERNARIO_VISUAL.ps1
+4fb7ecd5664e408c37c73ad53b3920e3172c419bedc5cbd4b92d0fd205ab1edd  ./LEIA_ME_V38_4_46.txt
+c19e38bd705ebb3394997e8c70034896d5be7a0dac7b164d42fb1af4a4400083  ./payload/AUDITORIA_V38_4_46_BANCADA_TERNARIO_USDA.json
+82bb1a29346b9354ad8eee08f76be7152358f859975122612fb7a2cc2cf6efc1  ./payload/VERSION
+f34c5bcabb4e08001a0a47b05917c120fe7c6a17dcf70c90f41fa0c769e7cdb2  ./payload/docs/assets/css/ferramentas-hub-v38435.css
+78530d5c6401325b7bf33de56199b207d21d47b49e947fa5a19dc208631f2a02  ./payload/docs/assets/css/ternario-usda-v38446.css
+aae3b6bfa31c063f7aed60390bfb7b9e3653672a1bfed33665fb849195c9408e  ./payload/docs/assets/js/ferramentas-hub-v38435.js
+c4943d84224629e497ba98225964523fbaddfedc86a80f75a881977187d42e6c  ./payload/docs/assets/js/ternario-usda-v38446.js
+974499bdc8f3457c8ba02dcc762758367a1ea1c6dbf080b948f0d68a845a6aa7  ./payload/docs/documentos/metodologia-ternario-usda.html
+a2c228f02e478535f7b3d5195e0d7fdc600356bfe4d9cd73b142e80f5f59810d  ./payload/docs/index.html
+898dfe50041c9c7775ebf1a8bb31e84ab9d50e361dd8d38c6cca192a91b84d87  ./payload/docs/referencias/index.html
+b1b0421484a56c66cd855bf438558750ff498dea57f19ddeed156f9b593a91e0  ./payload/docs/referencias/referencias.js
+cd15defad27e07205c307820412ea3cbda6d2fe8baec926a7f5c3ce7c5b18024  ./payload/docs/service-worker.js

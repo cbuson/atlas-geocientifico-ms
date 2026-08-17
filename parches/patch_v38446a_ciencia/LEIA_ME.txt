@@ -1,0 +1,18 @@
+ITA ARANDU MS · HOTFIX V38.4.46A
+
+Corrige exclusivamente o botão Ciência do Diagrama Ternário.
+
+Comportamento após o hotfix
+- Ajuda abre a ajuda rápida dentro do aplicativo
+- Ciência abre a metodologia completa do ternário USDA
+- Se o navegador bloquear uma nova aba, Ciência abre a metodologia na aba atual
+- A página metodológica mantém o acesso à Biblioteca bibliográfica
+
+Aplicação
+1. Abra PowerShell na raiz do repositório atlas-geocientifico-ms
+2. Execute
+   Set-ExecutionPolicy -Scope Process Bypass
+3. Execute
+   .\parches\patch_v38446a_ciencia\APLICAR_V38_4_46A_CIENCIA.ps1
+
+O instalador cria backup antes de alterar os arquivos.

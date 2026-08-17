@@ -1,9 +1,7 @@
-const ITA_CACHE = 'ita-arandu-v38-4-48-bancada-system';
+const ITA_CACHE = 'ita-arandu-v38-4-46-bancada-ternario';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
-  "./assets/css/bancada-system-v38448.css?v=38.4.48",
-  "./assets/js/bancada-system-v38448.js?v=38.4.48",
   "./documentos/metodologia-saida-campo.html",
   "./assets/css/saida-campo-v38440.css?v=38.4.40",
   "./assets/js/saida-campo-v38440.js?v=38.4.40a",
@@ -11,13 +9,11 @@ const ITA_CORE = [
   "./assets/css/macrogeo-v38439.css?v=38.4.39",
   "./assets/js/macrogeo-v38439.js?v=38.4.39",
   "./assets/js/camera-core-v38439.js?v=38.4.39",
-  "./assets/css/bancada-harmonizada-v38447.css?v=38.4.47",
-  "./assets/js/bancada-harmonizada-v38447.js?v=38.4.47",
   './',
   './index.html',
   './manifest.webmanifest',
-  './assets/css/ternario-usda-v38446.css?v=38.4.46e',
-  './assets/js/ternario-usda-v38446f.js?v=38.4.46e',
+  './assets/css/ternario-usda-v38446.css?v=38.4.46',
+  './assets/js/ternario-usda-v38446.js?v=38.4.46',
   './documentos/metodologia-ternario-usda.html',
   './assets/css/atlas.css?v=38.4.26',
   './assets/css/design-system-v38424.css?v=38.4.26',
