@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-v38-4-51-magnetometro-mapa';
+const ITA_CACHE = 'ita-arandu-v38-4-50-magnetometro-amostras';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [

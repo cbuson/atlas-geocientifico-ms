@@ -1,4 +1,0 @@
-6db6d9790ba8a46602ef93641766562058f0a1939357e5cf32ca7e7408966f11  payload/VERSION
-d38c75fe0052b3c0825b9a30275910dcaec6ddb2d0e0b0985a011b8835eb0f8d  payload/docs/assets/css/ternario-usda-v38446.css
-e95d8a9722206ebfbb634dcb6de17d9a533eebb76b819744d4dfe2686028f48e  payload/docs/assets/js/ternario-usda-v38446.js
-18efd275e435691bddf1b69bdf775d3d933fde000a620f8b76a9fbfad903ceb1  payload/docs/index.html
