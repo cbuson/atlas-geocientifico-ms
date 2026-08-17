@@ -1,0 +1,16 @@
+{
+  "base": {
+    "index.html": "b6a5df2a9b973aea29db1d431ba17fdc86e844e37b14fb07a9c83f648e2a44ec",
+    "referencias/referencias.js": "cae246fe3d074eccd6c5f8e84c38e731385c9618a1f5e53502fb7db4d5d132eb",
+    "service-worker.js": "5f27e25ced7dbe9b65f2a734ae3af85b1f79abe121a7d1d1b1fe6a804c93a3bf"
+  },
+  "payload": {
+    "index.html": "c05d400a061a904252f48720c6318b9d072ef98e5947bc9bbdfd95686580293d",
+    "referencias/referencias.js": "d99b77ca6cd0b268ef565b6bc9cfe8c552ef91d5179d57775d057d0d08c04d76",
+    "service-worker.js": "5ca7993a9feb4bb0b0b7f795daf90d7b4450d2e73984de4f5450ab0334384963",
+    "assets/css/diagrama-rosas-v38454.css": "df59649d860946326a8969f5b8b158b8c1b297f256cefa392004214350694d0c",
+    "assets/js/diagrama-rosas-v38454.js": "7332c3c79429ccd983e16dc53c481e957a0f0038d13176939985188683fa0b56",
+    "documentos/metodologia-diagrama-rosas.html": "53f2aec944a691da89fd5eaacea7328283d6086d481e679ebd202860df5bd480",
+    "documentos/CHANGELOG_V38_4_54.md": "167b727cdcbde1ebc16bf8c653219120296e447867515915f6b08703c85ee301"
+  }
+}
