@@ -1,0 +1,946 @@
+{
+  "title": "ITA ARANDU MS · Biblioteca litológica FGDC Section 37",
+  "version": "38.4.57",
+  "standard": "FGDC-STD-013-2006",
+  "section": "37",
+  "count": 117,
+  "license_note": "Padrões vetoriais web obtidos da extração aberta de Daven Quinn. Consultar referência e licença do repositório de origem.",
+  "patterns": [
+    {
+      "code": "601",
+      "name_pt": "Cascalho ou conglomerado · opção 1",
+      "name_official_en": "Gravel or conglomerate (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/601.svg"
+    },
+    {
+      "code": "602",
+      "name_pt": "Cascalho ou conglomerado · opção 2",
+      "name_official_en": "Gravel or conglomerate (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/602.svg"
+    },
+    {
+      "code": "603",
+      "name_pt": "Cascalho ou conglomerado com estratificação cruzada",
+      "name_official_en": "Crossbedded gravel or conglomerate",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/603.svg"
+    },
+    {
+      "code": "605",
+      "name_pt": "Brecha · opção 1",
+      "name_official_en": "Breccia (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/605.svg"
+    },
+    {
+      "code": "606",
+      "name_pt": "Brecha · opção 2",
+      "name_official_en": "Breccia (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/606.svg"
+    },
+    {
+      "code": "607",
+      "name_pt": "Areia ou arenito maciço",
+      "name_official_en": "Massive sand or sandstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/607.svg"
+    },
+    {
+      "code": "608",
+      "name_pt": "Areia ou arenito estratificado",
+      "name_official_en": "Bedded sand or sandstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/608.svg"
+    },
+    {
+      "code": "609",
+      "name_pt": "Areia ou arenito com estratificação cruzada · opção 1",
+      "name_official_en": "Crossbedded sand or sandstone (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/609.svg"
+    },
+    {
+      "code": "610",
+      "name_pt": "Areia ou arenito com estratificação cruzada · opção 2",
+      "name_official_en": "Crossbedded sand or sandstone (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/610.svg"
+    },
+    {
+      "code": "611",
+      "name_pt": "Areia ou arenito com marcas de ondulação",
+      "name_official_en": "Ripple-bedded sand or sandstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/611.svg"
+    },
+    {
+      "code": "612",
+      "name_pt": "Arenito argiloso ou folhelhoso",
+      "name_official_en": "Argillaceous or shaly sandstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/612.svg"
+    },
+    {
+      "code": "613",
+      "name_pt": "Arenito calcário",
+      "name_official_en": "Calcareous sandstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/613.svg"
+    },
+    {
+      "code": "614",
+      "name_pt": "Arenito dolomítico",
+      "name_official_en": "Dolomitic sandstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/614.svg"
+    },
+    {
+      "code": "616",
+      "name_pt": "Silte, siltito ou silte folhelhoso",
+      "name_official_en": "Silt, siltstone, or shaly silt",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/616.svg"
+    },
+    {
+      "code": "617",
+      "name_pt": "Siltito calcário",
+      "name_official_en": "Calcareous siltstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/617.svg"
+    },
+    {
+      "code": "618",
+      "name_pt": "Siltito dolomítico",
+      "name_official_en": "Dolomitic siltstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/618.svg"
+    },
+    {
+      "code": "619",
+      "name_pt": "Folhelho arenoso ou siltoso",
+      "name_official_en": "Sandy or silty shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/619.svg"
+    },
+    {
+      "code": "620",
+      "name_pt": "Argila ou folhelho argiloso",
+      "name_official_en": "Clay or clay shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/620.svg"
+    },
+    {
+      "code": "621",
+      "name_pt": "Folhelho chertoso",
+      "name_official_en": "Cherty shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/621.svg"
+    },
+    {
+      "code": "622",
+      "name_pt": "Folhelho dolomítico",
+      "name_official_en": "Dolomitic shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/622.svg"
+    },
+    {
+      "code": "623",
+      "name_pt": "Folhelho calcário ou marga",
+      "name_official_en": "Calcareous shale or marl",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/623.svg"
+    },
+    {
+      "code": "624",
+      "name_pt": "Folhelho carbonoso",
+      "name_official_en": "Carbonaceous shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/624.svg"
+    },
+    {
+      "code": "625",
+      "name_pt": "Folhelho betuminoso",
+      "name_official_en": "Oil shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/625.svg"
+    },
+    {
+      "code": "626",
+      "name_pt": "Giz",
+      "name_official_en": "Chalk",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/626.svg"
+    },
+    {
+      "code": "627",
+      "name_pt": "Calcário",
+      "name_official_en": "Limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/627.svg"
+    },
+    {
+      "code": "628",
+      "name_pt": "Calcário clástico",
+      "name_official_en": "Clastic limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/628.svg"
+    },
+    {
+      "code": "629",
+      "name_pt": "Calcário clástico fossilífero",
+      "name_official_en": "Fossiliferous clastic limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/629.svg"
+    },
+    {
+      "code": "630",
+      "name_pt": "Calcário nodular ou irregularmente estratificado",
+      "name_official_en": "Nodular or irregularly bedded limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/630.svg"
+    },
+    {
+      "code": "631",
+      "name_pt": "Calcário com preenchimentos irregulares de dolomito sacaróide",
+      "name_official_en": "Limestone, irregular (burrow?) fillings of saccharoidal dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/631.svg"
+    },
+    {
+      "code": "632",
+      "name_pt": "Calcário com estratificação cruzada",
+      "name_official_en": "Crossbedded limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/632.svg"
+    },
+    {
+      "code": "633",
+      "name_pt": "Calcário chertoso com estratificação cruzada",
+      "name_official_en": "Cherty crossbedded limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/633.svg"
+    },
+    {
+      "code": "634",
+      "name_pt": "Calcário clástico chertoso e arenoso com estratificação cruzada",
+      "name_official_en": "Cherty and sandy crossbedded clastic limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/634.svg"
+    },
+    {
+      "code": "635",
+      "name_pt": "Calcário oolítico",
+      "name_official_en": "Oolitic limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/635.svg"
+    },
+    {
+      "code": "636",
+      "name_pt": "Calcário arenoso",
+      "name_official_en": "Sandy limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/636.svg"
+    },
+    {
+      "code": "637",
+      "name_pt": "Calcário siltoso",
+      "name_official_en": "Silty limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/637.svg"
+    },
+    {
+      "code": "638",
+      "name_pt": "Calcário argiloso ou folhelhoso",
+      "name_official_en": "Argillaceous or shaly limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/638.svg"
+    },
+    {
+      "code": "639",
+      "name_pt": "Calcário chertoso · opção 1",
+      "name_official_en": "Cherty limestone (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/639.svg"
+    },
+    {
+      "code": "640",
+      "name_pt": "Calcário chertoso · opção 2",
+      "name_official_en": "Cherty limestone (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/640.svg"
+    },
+    {
+      "code": "641",
+      "name_pt": "Calcário dolomítico, dolostone calcário ou dolomito calcário",
+      "name_official_en": "Dolomitic limestone, limy dolostone, or limy dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/641.svg"
+    },
+    {
+      "code": "642",
+      "name_pt": "Dolostone ou dolomito",
+      "name_official_en": "Dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/642.svg"
+    },
+    {
+      "code": "643",
+      "name_pt": "Dolostone ou dolomito com estratificação cruzada",
+      "name_official_en": "Cross-bedded dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/643.svg"
+    },
+    {
+      "code": "644",
+      "name_pt": "Dolostone ou dolomito oolítico",
+      "name_official_en": "Oolitic dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/644.svg"
+    },
+    {
+      "code": "645",
+      "name_pt": "Dolostone ou dolomito arenoso",
+      "name_official_en": "Sandy dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/645.svg"
+    },
+    {
+      "code": "646",
+      "name_pt": "Dolostone ou dolomito siltoso",
+      "name_official_en": "Silty dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/646.svg"
+    },
+    {
+      "code": "647",
+      "name_pt": "Dolostone ou dolomito argiloso ou folhelhoso",
+      "name_official_en": "Argillaceous or shaly dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/647.svg"
+    },
+    {
+      "code": "648",
+      "name_pt": "Dolostone ou dolomito chertoso",
+      "name_official_en": "Cherty dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/648.svg"
+    },
+    {
+      "code": "649",
+      "name_pt": "Chert estratificado · opção 1",
+      "name_official_en": "Bedded chert (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/649.svg"
+    },
+    {
+      "code": "650",
+      "name_pt": "Chert estratificado · opção 2",
+      "name_official_en": "Bedded chert (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/650.svg"
+    },
+    {
+      "code": "651",
+      "name_pt": "Chert estratificado fossilífero",
+      "name_official_en": "Fossiliferous bedded chert",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/651.svg"
+    },
+    {
+      "code": "652",
+      "name_pt": "Rocha fossilífera",
+      "name_official_en": "Fossiliferous rock",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/652.svg"
+    },
+    {
+      "code": "653",
+      "name_pt": "Rocha diatomácea",
+      "name_official_en": "Diatomaceous rock",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/653.svg"
+    },
+    {
+      "code": "654",
+      "name_pt": "Subgrauvaca",
+      "name_official_en": "Subgraywacke",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/654.svg"
+    },
+    {
+      "code": "655",
+      "name_pt": "Subgrauvaca com estratificação cruzada",
+      "name_official_en": "Cross-bedded subgraywacke",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/655.svg"
+    },
+    {
+      "code": "656",
+      "name_pt": "Subgrauvaca com marcas de ondulação",
+      "name_official_en": "Ripple-bedded subgraywacke",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/656.svg"
+    },
+    {
+      "code": "657",
+      "name_pt": "Turfa",
+      "name_official_en": "Peat",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/657.svg"
+    },
+    {
+      "code": "658",
+      "name_pt": "Carvão",
+      "name_official_en": "Coal",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/658.svg"
+    },
+    {
+      "code": "659",
+      "name_pt": "Carvão impuro",
+      "name_official_en": "Bony coal or impure coal",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/659.svg"
+    },
+    {
+      "code": "660",
+      "name_pt": "Argila de base de camada de carvão",
+      "name_official_en": "Underclay",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/660.svg"
+    },
+    {
+      "code": "661",
+      "name_pt": "Argila flint",
+      "name_official_en": "Flint clay",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/661.svg"
+    },
+    {
+      "code": "662",
+      "name_pt": "Bentonita",
+      "name_official_en": "Bentonite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/662.svg"
+    },
+    {
+      "code": "663",
+      "name_pt": "Glauconita",
+      "name_official_en": "Glauconite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/663.svg"
+    },
+    {
+      "code": "664",
+      "name_pt": "Limonita",
+      "name_official_en": "Limonite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/664.svg"
+    },
+    {
+      "code": "665",
+      "name_pt": "Siderita",
+      "name_official_en": "Siderite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/665.svg"
+    },
+    {
+      "code": "666",
+      "name_pt": "Rocha nodular fosfática",
+      "name_official_en": "Phosphatic-nodular rock",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/666.svg"
+    },
+    {
+      "code": "667",
+      "name_pt": "Gipsita",
+      "name_official_en": "Gypsum",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/667.svg"
+    },
+    {
+      "code": "668",
+      "name_pt": "Sal",
+      "name_official_en": "Salt",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/668.svg"
+    },
+    {
+      "code": "669",
+      "name_pt": "Arenito e siltito intercalados",
+      "name_official_en": "Interbedded sandstone and siltstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/669.svg"
+    },
+    {
+      "code": "670",
+      "name_pt": "Arenito e folhelho intercalados",
+      "name_official_en": "Interbedded sandstone and shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/670.svg"
+    },
+    {
+      "code": "671",
+      "name_pt": "Arenito com ripples e folhelho intercalados",
+      "name_official_en": "Interbedded ripple-bedded sandstone and shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/671.svg"
+    },
+    {
+      "code": "672",
+      "name_pt": "Folhelho e calcário siltoso intercalados · folhelho dominante",
+      "name_official_en": "Interbedded shale and silty limestone (shale dominant)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/672.svg"
+    },
+    {
+      "code": "673",
+      "name_pt": "Folhelho e calcário intercalados · folhelho dominante · opção 1",
+      "name_official_en": "Interbedded shale and limestone (shale dominant) (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/673.svg"
+    },
+    {
+      "code": "674",
+      "name_pt": "Folhelho e calcário intercalados · folhelho dominante · opção 2",
+      "name_official_en": "Interbedded shale and limestone (shale dominant) (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/674.svg"
+    },
+    {
+      "code": "675",
+      "name_pt": "Folhelho calcário e calcário intercalados · folhelho dominante",
+      "name_official_en": "Interbedded calcareous shale and limestone (shale dominant)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/675.svg"
+    },
+    {
+      "code": "676",
+      "name_pt": "Calcário siltoso e folhelho intercalados",
+      "name_official_en": "Interbedded silty limestone and shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/676.svg"
+    },
+    {
+      "code": "677",
+      "name_pt": "Calcário e folhelho intercalados · opção 1",
+      "name_official_en": "Interbedded limestone and shale (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/677.svg"
+    },
+    {
+      "code": "678",
+      "name_pt": "Calcário e folhelho intercalados · opção 2",
+      "name_official_en": "Interbedded limestone and shale (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/678.svg"
+    },
+    {
+      "code": "679",
+      "name_pt": "Calcário e folhelho intercalados · calcário dominante",
+      "name_official_en": "Interbedded limestone and shale (limestone dominant)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/679.svg"
+    },
+    {
+      "code": "680",
+      "name_pt": "Calcário e folhelho calcário intercalados",
+      "name_official_en": "Interbedded limestone and calcareous shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/680.svg"
+    },
+    {
+      "code": "681",
+      "name_pt": "Till ou diamicton · opção 1",
+      "name_official_en": "Till or diamicton (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/681.svg"
+    },
+    {
+      "code": "682",
+      "name_pt": "Till ou diamicton · opção 2",
+      "name_official_en": "Till or diamicton (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/682.svg"
+    },
+    {
+      "code": "683",
+      "name_pt": "Till ou diamicton · opção 3",
+      "name_official_en": "Till or diamicton (3rd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/683.svg"
+    },
+    {
+      "code": "684",
+      "name_pt": "Loess · opção 1",
+      "name_official_en": "Loess (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/684.svg"
+    },
+    {
+      "code": "685",
+      "name_pt": "Loess · opção 2",
+      "name_official_en": "Loess (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/685.svg"
+    },
+    {
+      "code": "686",
+      "name_pt": "Loess · opção 3",
+      "name_official_en": "Loess (3rd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/686.svg"
+    },
+    {
+      "code": "701",
+      "name_pt": "Metamorfismo",
+      "name_official_en": "Metamorphism",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/701.svg"
+    },
+    {
+      "code": "702",
+      "name_pt": "Quartzito",
+      "name_official_en": "Quartzite",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/702.svg"
+    },
+    {
+      "code": "703",
+      "name_pt": "Ardósia",
+      "name_official_en": "Slate",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/703.svg"
+    },
+    {
+      "code": "704",
+      "name_pt": "Granito xistoso ou gnaissóide",
+      "name_official_en": "Schistose or gneissoid granite",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/704.svg"
+    },
+    {
+      "code": "705",
+      "name_pt": "Xisto",
+      "name_official_en": "Schist",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/705.svg"
+    },
+    {
+      "code": "706",
+      "name_pt": "Xisto contorcido",
+      "name_official_en": "Contorted schist",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/706.svg"
+    },
+    {
+      "code": "707",
+      "name_pt": "Xisto e gnaisse",
+      "name_official_en": "Schist and gneiss",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/707.svg"
+    },
+    {
+      "code": "708",
+      "name_pt": "Gnaisse",
+      "name_official_en": "Gneiss",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/708.svg"
+    },
+    {
+      "code": "709",
+      "name_pt": "Gnaisse contorcido",
+      "name_official_en": "Contorted gneiss",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/709.svg"
+    },
+    {
+      "code": "710",
+      "name_pt": "Esteatito, talco ou serpentinito",
+      "name_official_en": "Soapstone, talc, or serpentinite",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/710.svg"
+    },
+    {
+      "code": "711",
+      "name_pt": "Rocha tufácea",
+      "name_official_en": "Tuffaceous rock",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/711.svg"
+    },
+    {
+      "code": "712",
+      "name_pt": "Tufo cristalino",
+      "name_official_en": "Crystal tuff",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/712.svg"
+    },
+    {
+      "code": "713",
+      "name_pt": "Tufo desvitrificado",
+      "name_official_en": "Devitrified tuff",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/713.svg"
+    },
+    {
+      "code": "714",
+      "name_pt": "Brecha vulcânica e tufo",
+      "name_official_en": "Volcanic breccia and tuff",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/714.svg"
+    },
+    {
+      "code": "715",
+      "name_pt": "Brecha vulcânica ou aglomerado",
+      "name_official_en": "Volcanic breccia or agglomerate",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/715.svg"
+    },
+    {
+      "code": "716",
+      "name_pt": "Rocha zeolítica",
+      "name_official_en": "Zeolitic rock",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/716.svg"
+    },
+    {
+      "code": "717",
+      "name_pt": "Derrames basálticos",
+      "name_official_en": "Basaltic flows",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/717.svg"
+    },
+    {
+      "code": "718",
+      "name_pt": "Granito · opção 1",
+      "name_official_en": "Granite (1st option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/718.svg"
+    },
+    {
+      "code": "719",
+      "name_pt": "Granito · opção 2",
+      "name_official_en": "Granite (2nd option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/719.svg"
+    },
+    {
+      "code": "720",
+      "name_pt": "Rocha ígnea bandada",
+      "name_official_en": "Banded igneous rock",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/720.svg"
+    },
+    {
+      "code": "721",
+      "name_pt": "Rocha ígnea · opção 1",
+      "name_official_en": "Igneous rock (1st option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/721.svg"
+    },
+    {
+      "code": "722",
+      "name_pt": "Rocha ígnea · opção 2",
+      "name_official_en": "Igneous rock (2nd option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/722.svg"
+    },
+    {
+      "code": "723",
+      "name_pt": "Rocha ígnea · opção 3",
+      "name_official_en": "Igneous rock (3rd option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/723.svg"
+    },
+    {
+      "code": "724",
+      "name_pt": "Rocha ígnea · opção 4",
+      "name_official_en": "Igneous rock (4th option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/724.svg"
+    },
+    {
+      "code": "725",
+      "name_pt": "Rocha ígnea · opção 5",
+      "name_official_en": "Igneous rock (5th option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/725.svg"
+    },
+    {
+      "code": "726",
+      "name_pt": "Rocha ígnea · opção 6",
+      "name_official_en": "Igneous rock (6th option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/726.svg"
+    },
+    {
+      "code": "727",
+      "name_pt": "Rocha ígnea · opção 7",
+      "name_official_en": "Igneous rock (7th option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/727.svg"
+    },
+    {
+      "code": "728",
+      "name_pt": "Rocha ígnea · opção 8",
+      "name_official_en": "Igneous rock (8th option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/728.svg"
+    },
+    {
+      "code": "729",
+      "name_pt": "Rocha porfirítica · opção 1",
+      "name_official_en": "Porphyritic rock (1st option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/729.svg"
+    },
+    {
+      "code": "730",
+      "name_pt": "Rocha porfirítica · opção 2",
+      "name_official_en": "Porphyritic rock (2nd option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/730.svg"
+    },
+    {
+      "code": "731",
+      "name_pt": "Vitrofiro",
+      "name_official_en": "Vitrophyre",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/731.svg"
+    },
+    {
+      "code": "732",
+      "name_pt": "Quartzo",
+      "name_official_en": "Quartz",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/732.svg"
+    },
+    {
+      "code": "733",
+      "name_pt": "Minério",
+      "name_official_en": "Ore",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_svg": "https://raw.githubusercontent.com/davenquinn/geologic-patterns/master/assets/svg/733.svg"
+    }
+  ]
+}

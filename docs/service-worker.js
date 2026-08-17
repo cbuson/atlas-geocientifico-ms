@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-v38-4-54-diagrama-rosas';
+const ITA_CACHE = 'ita-arandu-v38-4-56-coluna-estratigrafica';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
@@ -37,7 +37,25 @@ const ITA_CORE = [
   './assets/js/campo-sensores.js?v=38.4.37f',
   './dados/meta.js?v=38.4.26',
   './referencias/referencias.js?v=38.4.26',
-  './camadas/catalogo-local.js?v=38.4.45'
+  './camadas/catalogo-local.js?v=38.4.45',
+  './assets/css/coluna-estratigrafica-v38456.css?v=38.4.56',
+  './assets/js/coluna-estratigrafica-v38456.js?v=38.4.56',
+  './documentos/metodologia-coluna-estratigrafica.html',
+  './assets/padroes/fgdc/601.svg',
+  './assets/padroes/fgdc/603.svg',
+  './assets/padroes/fgdc/607.svg',
+  './assets/padroes/fgdc/609.svg',
+  './assets/padroes/fgdc/616.svg',
+  './assets/padroes/fgdc/620.svg',
+  './assets/padroes/fgdc/627.svg',
+  './assets/padroes/fgdc/642.svg',
+  './assets/padroes/fgdc/658.svg',
+  './assets/padroes/fgdc/667.svg',
+  './assets/padroes/fgdc/702.svg',
+  './assets/padroes/fgdc/705.svg',
+  './assets/padroes/fgdc/708.svg',
+  './assets/padroes/fgdc/711.svg',
+  './assets/padroes/fgdc/717.svg'
 ];
 
 self.addEventListener('install', event => {
