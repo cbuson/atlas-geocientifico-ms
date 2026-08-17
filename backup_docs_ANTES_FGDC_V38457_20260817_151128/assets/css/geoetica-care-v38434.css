@@ -1,6 +1,0 @@
-.ita-geoethics-box{padding:10px;border:1px solid #c9d9df;border-radius:10px;background:#f7fafb;margin:10px 0}
-.ita-geoethics-box strong{color:#163f55}.ita-geoethics-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
-.ita-care-badge{display:inline-flex;align-items:center;gap:5px;padding:4px 7px;border-radius:999px;border:1px solid #c5d7df;background:#eef6f8;color:#28596f;font-size:9px;font-weight:900;letter-spacing:.04em}
-.ita-geoethics-warning{padding:9px;border:1px solid #dec78d;border-radius:9px;background:#fff9e9;color:#705624;font-size:10px;line-height:1.4}
-.ita-geoethics-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-@media(max-width:760px){.ita-geoethics-grid{grid-template-columns:1fr}.ita-geoethics-actions{display:grid;grid-template-columns:1fr}}

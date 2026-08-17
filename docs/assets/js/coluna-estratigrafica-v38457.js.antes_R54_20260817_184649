@@ -125,7 +125,7 @@ const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelect
 function patternSvg(code){return new URL(`assets/padroes/fgdc/${code}.svg`,document.baseURI).href}
 function patternPng(code){const u=new URL(`assets/padroes/fgdc/${code}.png`,document.baseURI);u.searchParams.set('v','fgdc-r53');return u.href}
 function patternUrl(code){return patternPng(code)}
-function pat(code){return "url(" + patternPng(code) + ")"}
+function pat(code){return `url('')`}
 function load(){try{const x=JSON.parse(localStorage.getItem(KEY)||'null');if(x&&Array.isArray(x.levels)){state=x;if(!state.gps)state.gps={lat:null,lon:null,accuracy:null,altitude:null,timestamp:null}}}catch(e){}}
 function save(){localStorage.setItem(KEY,JSON.stringify(state));}
 function modal(){if($('#colunaEstratigraficaModal'))return;const el=document.createElement('div');el.className='modal';el.id='colunaEstratigraficaModal';el.setAttribute('aria-hidden','true');el.innerHTML=`<div class="modal-box"><div class="ce-head"><div><div class="ce-kicker">Bancada Digital · Estratigrafia</div><h2>Coluna Estratigráfica</h2><div class="ce-note">Construção interativa nível por nível com simbologia litológica FGDC.</div></div><div class="ce-head-actions"><button class="ce-btn" data-ce-tab="help">Ajuda e Ciência</button><button class="ce-btn primary" data-ce-close>×</button></div></div><div class="ce-tabs"><button class="active" data-ce-tab="build">Construir</button><button data-ce-tab="patterns">Padrões FGDC</button><button data-ce-tab="data">Dados</button><button data-ce-tab="help">Ajuda e Ciência</button></div><div class="ce-body">

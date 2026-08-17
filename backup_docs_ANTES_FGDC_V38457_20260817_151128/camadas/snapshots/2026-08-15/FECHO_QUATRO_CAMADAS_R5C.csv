@@ -1,5 +1,0 @@
-﻿"id","estado","count_atual_ms","acao","erro"
-"siagas_pocos_ms","snapshot_candidato_validado_r5b","3877","candidato a LOCAL + ONLINE",""
-"gravimetria_sgb_ms","consulta_oficial_atual_zero_ms","0","preservar local anterior; online sob demanda",""
-"captureMagnetotelluric","erro_r5c","","manter estado anterior","ArcGIS {""code"":500,""message"":""Error handling service request :Wait timeout for the request exceeded."",""details"":[]}"
-"rimas_pocos_monitoramento_ms","fonte_online_atual_sem_cobertura_espacial_ms","","preservar local anterior; nao recapturar automaticamente",""

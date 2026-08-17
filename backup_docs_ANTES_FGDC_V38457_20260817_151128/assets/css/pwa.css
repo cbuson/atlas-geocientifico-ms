@@ -1,9 +1,0 @@
-.pwa-install-card{border-color:#9fc0d5!important;background:linear-gradient(135deg,#f2f8fc,#ffffff)!important}
-.pwa-panel{border:1px solid #d3e2eb;background:#fff;border-radius:12px;padding:12px;margin:9px 0}
-.pwa-panel b{color:#123f5e}
-.pwa-actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
-.pwa-action{border:0;border-radius:10px;padding:10px 13px;font-weight:900;cursor:pointer;background:#073b63;color:#fff}
-.pwa-action.secondary{background:#edf4f8;color:#174866;border:1px solid #cbdde7}
-.pwa-action[disabled]{opacity:.55;cursor:default}
-.pwa-status{border-left:3px solid #2d6f9f;background:#eef6fb;border-radius:8px;padding:9px 10px;font-size:9.5px;line-height:1.5;color:#405e70}
-.pwa-badge{display:inline-block;border-radius:999px;background:#e7f2f8;color:#174866;padding:3px 7px;font-size:8px;font-weight:900;margin-left:5px}

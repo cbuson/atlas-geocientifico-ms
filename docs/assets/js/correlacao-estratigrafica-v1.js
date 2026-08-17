@@ -254,7 +254,7 @@ function renderMini(){
 function renderMobileColumns(){
   $('#corrMobileColumns').innerHTML=state.sections.map((s,i)=>sectionLabel(s,i)).join('');
 }
-function layerBg(lith){return `url("./assets/padroes/fgdc/${lith}.png"),url("./assets/padroes/fgdc/${lith}.svg")`}
+function layerBg(lith){return `url('./assets/padroes/fgdc/.png'),url('./assets/padroes/fgdc/.svg')`}
 function alignOffsets(){
   const n=state.sections.length, offsets=Array(n).fill(0);
   if(state.alignment.mode==='top'){
