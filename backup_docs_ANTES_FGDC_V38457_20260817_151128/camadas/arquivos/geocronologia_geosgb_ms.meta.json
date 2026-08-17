@@ -1,0 +1,49 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.2",
+  "layer_id": "geocronologia_geosgb_ms",
+  "title": null,
+  "provenance_status": "local_operacional_com_snapshot_oficial_e_online",
+  "source_type": "institucional_externa",
+  "source_declared": null,
+  "source_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/geocronologia/MapServer/0",
+  "source_urls": [
+    "https://geoportal.sgb.gov.br/server/rest/services/geologia/geocronologia/MapServer/0"
+  ],
+  "reference_ids": [
+    "REF-085"
+  ],
+  "local_file": "camadas/arquivos/geocronologia_geosgb_ms.geojson",
+  "local_sha256": "e46cd02f2207256e893c055a105cfac9049d6ae81dbfec3a5869025224c0fe21",
+  "local_feature_count": 5,
+  "snapshot_capture_date": "",
+  "snapshot_capture_date_status": "nao_documentada",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-geocronologia_geosgb_ms",
+  "reference_page_url": "./referencias/index.html#layer-geocronologia_geosgb_ms",
+  "online_mode_available": true,
+  "scientific_cut_note": "A camada operacional local foi preservada. O snapshot oficial de 15/08/2026 e mantido separadamente para proveniencia, auditoria e comparacao. Nenhuma substituicao automatica foi realizada.",
+  "online_query_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/geocronologia/MapServer/0/query?where=1%3D1&geometry=-58.3%2C-24.2%2C-50.8%2C-17.0&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson",
+  "online_remote_type": "arcgis_geojson",
+  "online_remote_paged": true,
+  "local_role": "camada_operacional_do_atlas",
+  "official_snapshot_role": "captura_bruta_oficial_para_proveniencia_e_comparacao",
+  "official_snapshot_file": "camadas/snapshots/2026-08-15/geocronologia_geosgb_ms.geojson",
+  "official_snapshot_capture_date": "2026-08-15",
+  "official_snapshot_feature_count": 13,
+  "official_snapshot_sha256": "5a028da2fdf78be483f1ebc97a802fadbc0071643285f6da05ab8b6cdb727cc3",
+  "schema_relation": "compatibilidade_parcial",
+  "attribute_schema_overlap": 0.5,
+  "local_geometry_types": {
+    "Point": 5
+  },
+  "official_snapshot_geometry_types": {
+    "Point": 13
+  },
+  "official_snapshot_bbox_sample": [
+    -57.91309444400002,
+    -23.404999999999973,
+    -51.50999999999999,
+    -17.781000000000006
+  ],
+  "precomputed_indices_recalculated": false
+}

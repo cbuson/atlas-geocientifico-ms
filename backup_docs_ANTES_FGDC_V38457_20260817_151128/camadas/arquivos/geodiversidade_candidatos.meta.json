@@ -1,0 +1,23 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "geodiversidade_candidatos",
+  "title": "Candidatos geocientíficos do levantamento",
+  "provenance_status": "produto_derivado_local",
+  "source_type": "derivada_local",
+  "source_declared": "Levantamento do projeto",
+  "source_url": null,
+  "source_urls": [],
+  "reference_ids": [
+    "REF-055"
+  ],
+  "local_file": "camadas/arquivos/geodiversidade_candidatos.geojson",
+  "local_sha256": "3d9ad57109d2cc35e652acb633822ec68cd0c8228e914e865f77177c56369f39",
+  "local_feature_count": 1,
+  "snapshot_capture_date": null,
+  "snapshot_capture_date_status": "nao_aplicavel_produto_derivado_local",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-geodiversidade_candidatos",
+  "reference_page_url": "./referencias/index.html#layer-geodiversidade_candidatos",
+  "online_mode_available": false,
+  "scientific_cut_note": "Produto derivado local. A data de captura externa nao se aplica. A reproducibilidade depende dos insumos e da metodologia vinculada."
+}

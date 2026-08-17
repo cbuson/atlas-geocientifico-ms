@@ -1,0 +1,145 @@
+/* ITA ARANDU MS · V38.4.47 · Bancada Digital harmonizada */
+:root{
+  --ita-tool-blue:#073b63;
+  --ita-tool-blue-2:#0f5b7d;
+  --ita-tool-ink:#173f55;
+  --ita-tool-muted:#647985;
+  --ita-tool-line:#cbdbe2;
+  --ita-tool-soft:#f4f8fa;
+  --ita-tool-soft-2:#eef4f7;
+  --ita-tool-warn:#fff8e7;
+  --ita-tool-warn-line:#dfc781;
+  --ita-tool-radius:14px;
+  --ita-tool-shadow:0 12px 35px rgba(20,55,75,.12);
+}
+
+/* Hub */
+.ita-tools-modal{width:min(1180px,97vw)!important;max-width:1180px!important}
+.ita-tools-modal .modal-head{border-bottom:1px solid var(--ita-tool-line)}
+.ita-tools-headline p{font-size:var(--ita-text-base);color:var(--ita-tool-ink);margin:.1rem 0 .7rem}
+.ita-tools-principle{border:1px solid var(--ita-tool-line)!important;border-radius:var(--ita-tool-radius)!important;background:var(--ita-tool-soft)!important;padding:12px 14px!important;display:grid!important;grid-template-columns:auto 1fr auto!important;gap:8px 12px!important;align-items:center}
+.ita-tools-principle b{color:var(--ita-tool-blue)}
+.ita-tools-principle span{font-size:var(--ita-text-sm);line-height:1.5;color:var(--ita-tool-muted)}
+.ita-tools-search{margin:16px 0 10px}
+.ita-tools-search label{font-size:var(--ita-text-xs);font-weight:850;text-transform:uppercase;letter-spacing:.055em;color:var(--ita-tool-muted)}
+.ita-tools-searchbox{margin-top:6px;border:1px solid var(--ita-tool-line)!important;border-radius:12px!important;background:#fff!important}
+.ita-tools-section{border:1px solid var(--ita-tool-line)!important;border-radius:14px!important;background:#fff!important;overflow:hidden;margin:9px 0!important}
+.ita-tools-section>summary{padding:13px 14px!important;background:#f9fbfc!important;min-height:54px;align-items:center}
+.ita-tools-section[open]>summary{background:var(--ita-tool-soft)!important;border-bottom:1px solid var(--ita-tool-line)}
+.ita-tools-section>summary b{font-size:var(--ita-text-md);color:var(--ita-tool-ink)}
+.ita-tools-section>summary small{font-size:var(--ita-text-xs);line-height:1.4;color:var(--ita-tool-muted)}
+.ita-tools-grid{gap:10px!important;padding:12px!important}
+.ita-tool-card{border:1px solid #d3e0e6!important;border-radius:13px!important;box-shadow:none!important;padding:13px!important;background:#fff!important;min-height:160px}
+.ita-tool-card h4{font-size:var(--ita-text-md)!important;color:var(--ita-tool-ink)!important;margin:9px 0 5px!important}
+.ita-tool-card p{font-size:var(--ita-text-sm)!important;line-height:1.48!important;color:var(--ita-tool-muted)!important}
+.ita-tool-status{font-size:10px!important;letter-spacing:.04em!important;border-radius:999px!important;padding:3px 7px!important}
+.ita-tool-status.operacional{background:#e8f5ee!important;color:#176443!important}
+.ita-tool-status.validacao{background:#fff5db!important;color:#7b5b16!important}
+.ita-tool-status.integrada{background:#eaf2f8!important;color:#245c7a!important}
+.ita-tool-status.planejada,.ita-tool-status.desenvolvimento{background:#f0f2f4!important;color:#68737a!important}
+
+/* Common tool shell */
+.ita-tool-modal{width:min(1120px,97vw)!important;max-width:1120px!important;border-radius:18px!important;overflow:hidden!important;box-shadow:var(--ita-tool-shadow)!important}
+.ita-tool-modal .modal-head{padding:14px 16px!important;background:#fff!important;border-bottom:1px solid var(--ita-tool-line)!important;align-items:center!important;gap:10px}
+.ita-tool-modal .modal-head>div:first-child{min-width:0;flex:1}
+.ita-tool-modal .modal-head .kicker{color:#58707d!important;font-weight:800!important;letter-spacing:.06em!important;text-transform:uppercase!important}
+.ita-tool-modal .modal-head h2{font-size:clamp(1.12rem,1rem + .45vw,1.42rem)!important;color:var(--ita-tool-ink)!important;margin:2px 0 0!important}
+.ita-tool-subtitle{display:block;margin-top:4px;font-size:var(--ita-text-sm);line-height:1.4;color:var(--ita-tool-muted)}
+.ita-tool-head-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.ita-tool-back,.ita-tool-knowledge-btn{min-height:40px;border:1px solid var(--ita-tool-line);border-radius:10px;background:#fff;color:var(--ita-tool-blue);font-weight:800;font-size:var(--ita-text-sm);padding:8px 11px;cursor:pointer}
+.ita-tool-knowledge-btn{background:var(--ita-tool-blue);border-color:var(--ita-tool-blue);color:#fff}
+.ita-tool-back:hover,.ita-tool-knowledge-btn:hover{filter:brightness(.97)}
+.ita-tool-modal>.modal-head>.close-modal{display:none!important}
+.ita-tool-modal .modal-body{padding:16px 18px 20px!important;background:#fff!important}
+.ita-tool-modal .action-btn{min-height:40px!important;border-radius:10px!important;font-size:var(--ita-text-sm)!important;font-weight:800!important;padding:8px 12px!important;box-shadow:none!important}
+.ita-tool-modal .action-btn.primary{background:var(--ita-tool-blue)!important;border-color:var(--ita-tool-blue)!important;color:#fff!important}
+.ita-tool-modal .field-label{font-size:var(--ita-text-xs)!important;color:#5b717d!important;font-weight:850!important;letter-spacing:.035em}
+.ita-tool-modal .field-input,.ita-tool-modal .field-select,.ita-tool-modal .field-textarea{min-height:42px!important;border:1px solid #c9d9e1!important;border-radius:10px!important;font-size:var(--ita-text-md)!important;background:#fff!important;color:var(--ita-tool-ink)!important}
+.ita-tool-modal .field-help,.ita-tool-modal .field-status{font-size:var(--ita-text-sm)!important;line-height:1.5!important;color:var(--ita-tool-muted)!important}
+.ita-tool-modal .ita-tools-principle{display:none!important}
+
+/* Scientific knowledge panel */
+.ita-tool-knowledge{display:none;padding:0!important;background:#fff}
+.ita-tool-modal.ita-knowledge-open>.modal-body{display:none!important}
+.ita-tool-modal.ita-knowledge-open>.ita-tool-knowledge{display:block!important}
+.ita-tool-knowledge-inner{padding:18px;max-width:900px;margin:0 auto}
+.ita-tool-knowledge-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.ita-tool-knowledge-top h3{margin:0!important;font-size:var(--ita-text-xl)!important;color:var(--ita-tool-ink)}
+.ita-tool-knowledge-grid{display:grid;gap:10px}
+.ita-tool-knowledge-section{border:1px solid var(--ita-tool-line);border-radius:12px;padding:13px 14px;background:#fff}
+.ita-tool-knowledge-section h4{margin:0 0 6px;font-size:var(--ita-text-md);color:var(--ita-tool-blue)}
+.ita-tool-knowledge-section p,.ita-tool-knowledge-section li{font-size:var(--ita-text-sm);line-height:1.62;color:#405966}
+.ita-tool-knowledge-section ul,.ita-tool-knowledge-section ol{margin:6px 0 0;padding-left:20px}
+.ita-tool-knowledge-section.warning{background:var(--ita-tool-warn);border-color:var(--ita-tool-warn-line)}
+.ita-tool-knowledge-refs a{display:inline-block;margin:3px 6px 3px 0;font-size:var(--ita-text-xs);font-weight:850;color:var(--ita-tool-blue)}
+.ita-tool-library-link{display:inline-flex;align-items:center;min-height:40px;border-radius:10px;background:var(--ita-tool-blue);color:#fff!important;text-decoration:none;padding:8px 12px;font-weight:850;font-size:var(--ita-text-sm)}
+
+/* Existing tools visual harmonisation */
+.ita-clino-modal,.ita-macro-modal,.ita-saida-modal,.ita-sensor-modal,.ita-struct-modal{width:min(1120px,97vw)!important;max-width:1120px!important}
+.ita-clino-note,.ita-sensor-note,.ita-struct-note,.ita-saida-rule{font-size:var(--ita-text-sm)!important;line-height:1.5!important;border-radius:11px!important}
+.ita-clino-modes{gap:7px!important;margin-bottom:10px!important}
+.ita-clino-modes>a{display:none!important}
+.ita-clino-modes button{min-height:40px!important;border-radius:10px!important;font-size:var(--ita-text-sm)!important}
+.ita-clino-stage{border-radius:14px!important;overflow:hidden!important}
+.ita-clino-live span b{font-size:clamp(1.35rem,1.1rem + 1vw,2rem)!important}
+.ita-clino-card,.ita-sensor-card,.ita-struct-card{border-radius:11px!important;padding:10px!important}
+.ita-clino-card b,.ita-sensor-card b,.ita-struct-card b{font-size:11px!important}
+.ita-clino-card span,.ita-sensor-card span,.ita-struct-card span{font-size:var(--ita-text-sm)!important}
+.ita-macro-view{border-radius:14px!important;overflow:hidden!important}
+.ita-macro-plate{font-size:var(--ita-text-xs)!important}
+.ita-saida-metrics{gap:8px!important}
+.ita-saida-metrics>div{border:1px solid var(--ita-tool-line)!important;border-radius:11px!important;background:#fff!important;padding:10px!important}
+.ita-saida-metrics span{font-size:var(--ita-text-xs)!important;color:var(--ita-tool-muted)!important}
+.ita-saida-metrics b{font-size:var(--ita-text-md)!important;color:var(--ita-tool-ink)!important}
+.ita-saida-mapwrap{border-radius:14px!important;overflow:hidden!important;border:1px solid var(--ita-tool-line)!important}
+.ita-saida-map-tools{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 10px}
+.ita-saida-location-status{font-size:var(--ita-text-xs);color:var(--ita-tool-muted);align-self:center}
+
+/* Standalone GeoCamera */
+.ita-geocamera-layout{display:grid;grid-template-columns:minmax(240px,.62fr) minmax(0,1.38fr);gap:14px}
+.ita-geocamera-controls{border:1px solid var(--ita-tool-line);border-radius:13px;background:var(--ita-tool-soft);padding:13px;display:grid;gap:10px;align-content:start}
+.ita-geocamera-controls h3{font-size:var(--ita-text-md)!important;margin:0!important;color:var(--ita-tool-ink)}
+.ita-geocamera-view{position:relative;min-height:420px;border-radius:14px;overflow:hidden;background:#061a25;display:grid;place-items:center}
+.ita-geocamera-view video,.ita-geocamera-view canvas{width:100%;height:100%;object-fit:cover;display:block}
+.ita-geocamera-reticle{position:absolute;inset:0;pointer-events:none;background:linear-gradient(transparent 49.8%,rgba(255,255,255,.45) 50%,transparent 50.2%),linear-gradient(90deg,transparent 49.8%,rgba(255,255,255,.45) 50%,transparent 50.2%)}
+.ita-geocamera-hud{position:absolute;left:10px;right:10px;bottom:10px;display:flex;flex-wrap:wrap;gap:6px}
+.ita-geocamera-hud span{background:rgba(3,24,36,.78);color:#fff;border-radius:999px;padding:5px 8px;font-size:11px}
+.ita-geocamera-result{margin-top:12px;border:1px solid var(--ita-tool-line);border-radius:12px;padding:12px;background:#fff}
+
+/* Missing structural tool shells created in JS */
+.ita-generated-tool .ita-sensor-panel,.ita-generated-tool .ita-struct-layout{margin-top:2px}
+.ita-generated-tool .ita-big-reading b{font-size:clamp(2rem,1.5rem + 2vw,3rem)!important}
+.ita-generated-tool .ita-compass-dial,.ita-generated-tool .ita-level-stage{max-width:360px!important}
+.ita-generated-tool .ita-stereonet-svg{max-width:470px!important}
+
+@media(max-width:760px){
+  .modal{padding:0!important}
+  .ita-tool-modal,.ita-clino-modal,.ita-macro-modal,.ita-saida-modal,.ita-sensor-modal,.ita-struct-modal{width:100vw!important;max-width:100vw!important;height:100dvh!important;max-height:100dvh!important;border-radius:0!important}
+  .ita-tool-modal .modal-head{position:sticky;top:0;z-index:20;padding:10px 12px!important;background:rgba(255,255,255,.98)!important}
+  .ita-tool-modal .modal-head h2{font-size:1.05rem!important}
+  .ita-tool-subtitle{display:none}
+  .ita-tool-head-actions{gap:5px}
+  .ita-tool-back,.ita-tool-knowledge-btn{min-height:38px;padding:7px 9px;font-size:.76rem}
+  .ita-tool-modal .modal-body{padding:12px!important;overflow:auto!important}
+  .ita-tool-knowledge-inner{padding:12px}
+  .ita-tools-modal .modal-body{padding:10px!important}
+  .ita-tools-principle{grid-template-columns:1fr!important}
+  .ita-tools-grid{grid-template-columns:1fr!important;padding:8px!important}
+  .ita-tool-card{min-height:auto!important;padding:11px!important;display:grid!important;grid-template-columns:auto 1fr auto!important;grid-template-areas:'top title action' 'top text action'!important;gap:2px 9px!important;align-items:center}
+  .ita-tool-card .ita-tool-top{grid-area:top!important;align-self:start!important}
+  .ita-tool-card h4{grid-area:title!important;margin:0!important}
+  .ita-tool-card p{grid-area:text!important;margin:2px 0 0!important}
+  .ita-tool-card .ita-tool-actions{grid-area:action!important;align-self:center!important}
+  .ita-tool-card .ita-tool-actions .action-btn:not(.primary){display:none!important}
+  .ita-tool-icon{font-size:1.15rem!important}
+  .ita-tool-status{display:none!important}
+  .ita-geocamera-layout{grid-template-columns:1fr}
+  .ita-geocamera-view{min-height:46vh;order:-1}
+  .ita-geocamera-controls{background:#fff;padding:0;border:0}
+  .ita-clino-stage{min-height:44vh}
+  .ita-clino-grid,.ita-clino-stats,.ita-sensor-cards,.ita-struct-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .ita-saida-mapwrap{height:min(44vh,420px)!important}
+  #saidaCampoMap{height:100%!important}
+  .ita-saida-main-actions,.ita-saida-map-tools{display:grid!important;grid-template-columns:1fr 1fr!important}
+  .ita-saida-main-actions button:first-child{grid-column:1/-1}
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "mapa_hidrogeologico_ms",
+  "title": "Hidrogeologia Atlas do Brasil · recorte Mato Grosso do Sul",
+  "provenance_status": "proveniencia_parcial",
+  "source_type": "institucional_externa",
+  "source_declared": "Serviço Geológico do Brasil · Hidrogeologia Atlas do Brasil · recorte local de Mato Grosso do Sul",
+  "source_url": "https://geosgb.sgb.gov.br/geosgb/downloads.html",
+  "source_urls": [
+    "https://geosgb.sgb.gov.br/geosgb/downloads.html",
+    "https://rigeo.sgb.gov.br/handle/doc/25365"
+  ],
+  "reference_ids": [
+    "REF-007",
+    "REF-092"
+  ],
+  "local_file": "camadas/arquivos/mapa_hidrogeologico_ms.geojson",
+  "local_sha256": "e86650ee33dfe5b7d0b7f4ec078bfa8239008eb42bdb71794244fbd0b01e2a73",
+  "local_feature_count": 391,
+  "snapshot_capture_date": "",
+  "snapshot_capture_date_status": "nao_documentada",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-mapa_hidrogeologico_ms",
+  "reference_page_url": "./referencias/index.html#layer-mapa_hidrogeologico_ms",
+  "online_mode_available": true,
+  "scientific_cut_note": "O arquivo local e preservado, mas nao e promovido a snapshot cientifico plenamente documentado ate que a data de captura seja comprovada ou uma nova captura controlada seja realizada."
+}

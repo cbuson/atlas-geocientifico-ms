@@ -1,0 +1,25 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "ferrovias_referencia_ms",
+  "title": "Ferrovias e infraestrutura ferroviária de referência",
+  "provenance_status": "snapshot_documentado",
+  "source_type": "institucional_externa",
+  "source_declared": "Infra S.A. / ANTT · Ferrovias concedidas em operação · snapshot 2026-08-10",
+  "source_url": "https://geo.infrasa.gov.br/server/rest/services/Ferrovias_Concedidas_em_opera%C3%A7%C3%A3o/FeatureServer/0",
+  "source_urls": [
+    "https://geo.infrasa.gov.br/server/rest/services/Ferrovias_Concedidas_em_opera%C3%A7%C3%A3o/FeatureServer/0"
+  ],
+  "reference_ids": [
+    "REF-077"
+  ],
+  "local_file": "camadas/arquivos/ferrovias_referencia_ms.geojson",
+  "local_sha256": "6035ab8b36920938e0abf8b12a4a541e3b44414ff88984550747fa621a145465",
+  "local_feature_count": 39,
+  "snapshot_capture_date": "2026-08-10",
+  "snapshot_capture_date_status": "documentada",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-ferrovias_referencia_ms",
+  "reference_page_url": "./referencias/index.html#layer-ferrovias_referencia_ms",
+  "online_mode_available": true,
+  "scientific_cut_note": "Snapshot local com data de captura explicitamente documentada no Atlas."
+}

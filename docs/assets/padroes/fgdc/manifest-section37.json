@@ -1,0 +1,1072 @@
+{
+  "title": "ITA ARANDU MS · Biblioteca litológica FGDC Section 37",
+  "version": "38.4.57",
+  "standard": "FGDC-STD-013-2006",
+  "section": "37",
+  "count": 117,
+  "license_note": "Padrões vetoriais web obtidos da extração aberta de Daven Quinn. Consultar referência e licença do repositório de origem.",
+  "patterns": [
+    {
+      "code": "601",
+      "name_pt": "Cascalho ou conglomerado · opção 1",
+      "name_official_en": "Gravel or conglomerate (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "601-K.svg | 601-DO.svg | 601.svg | 601-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "602",
+      "name_pt": "Cascalho ou conglomerado · opção 2",
+      "name_official_en": "Gravel or conglomerate (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "602-K.svg | 602-DO.svg | 602.svg | 602-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "603",
+      "name_pt": "Cascalho ou conglomerado com estratificação cruzada",
+      "name_official_en": "Crossbedded gravel or conglomerate",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "603-K.svg | 603-DO.svg | 603.svg | 603-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "605",
+      "name_pt": "Brecha · opção 1",
+      "name_official_en": "Breccia (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "605-K.svg | 605-DO.svg | 605.svg | 605-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "606",
+      "name_pt": "Brecha · opção 2",
+      "name_official_en": "Breccia (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "606-K.svg | 606-DO.svg | 606.svg | 606-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "607",
+      "name_pt": "Areia ou arenito maciço",
+      "name_official_en": "Massive sand or sandstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "607-K.svg | 607-DO.svg | 607.svg | 607-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "608",
+      "name_pt": "Areia ou arenito estratificado",
+      "name_official_en": "Bedded sand or sandstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "608-K.svg | 608-DO.svg | 608.svg | 608-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "609",
+      "name_pt": "Areia ou arenito com estratificação cruzada · opção 1",
+      "name_official_en": "Crossbedded sand or sandstone (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "609-K.svg | 609-DO.svg | 609.svg | 609-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "610",
+      "name_pt": "Areia ou arenito com estratificação cruzada · opção 2",
+      "name_official_en": "Crossbedded sand or sandstone (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "610-K.svg | 610-DO.svg | 610.svg | 610-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "611",
+      "name_pt": "Areia ou arenito com marcas de ondulação",
+      "name_official_en": "Ripple-bedded sand or sandstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "611-K.svg | 611-DO.svg | 611.svg | 611-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "612",
+      "name_pt": "Arenito argiloso ou folhelhoso",
+      "name_official_en": "Argillaceous or shaly sandstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "612-K.svg | 612-DO.svg | 612.svg | 612-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "613",
+      "name_pt": "Arenito calcário",
+      "name_official_en": "Calcareous sandstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "613-K.svg | 613-DO.svg | 613.svg | 613-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "614",
+      "name_pt": "Arenito dolomítico",
+      "name_official_en": "Dolomitic sandstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "614-K.svg | 614-DO.svg | 614.svg | 614-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "616",
+      "name_pt": "Silte, siltito ou silte folhelhoso",
+      "name_official_en": "Silt, siltstone, or shaly silt",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "616-K.svg | 616-DO.svg | 616.svg | 616-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "617",
+      "name_pt": "Siltito calcário",
+      "name_official_en": "Calcareous siltstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "617-K.svg | 617-DO.svg | 617.svg | 617-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "618",
+      "name_pt": "Siltito dolomítico",
+      "name_official_en": "Dolomitic siltstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "618-K.svg | 618-DO.svg | 618.svg | 618-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "619",
+      "name_pt": "Folhelho arenoso ou siltoso",
+      "name_official_en": "Sandy or silty shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "619-K.svg | 619-DO.svg | 619.svg | 619-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "620",
+      "name_pt": "Argila ou folhelho argiloso",
+      "name_official_en": "Clay or clay shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "620-K.svg | 620-DO.svg | 620.svg | 620-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "621",
+      "name_pt": "Folhelho chertoso",
+      "name_official_en": "Cherty shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "621-K.svg | 621-DO.svg | 621.svg | 621-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "622",
+      "name_pt": "Folhelho dolomítico",
+      "name_official_en": "Dolomitic shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "622-K.svg | 622-DO.svg | 622.svg | 622-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "623",
+      "name_pt": "Folhelho calcário ou marga",
+      "name_official_en": "Calcareous shale or marl",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "623-K.svg | 623-DO.svg | 623.svg | 623-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "624",
+      "name_pt": "Folhelho carbonoso",
+      "name_official_en": "Carbonaceous shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "624-K.svg | 624-DO.svg | 624.svg | 624-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "625",
+      "name_pt": "Folhelho betuminoso",
+      "name_official_en": "Oil shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "625-K.svg | 625-DO.svg | 625.svg | 625-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "626",
+      "name_pt": "Giz",
+      "name_official_en": "Chalk",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "626-K.svg | 626-DO.svg | 626.svg | 626-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "627",
+      "name_pt": "Calcário",
+      "name_official_en": "Limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "627-K.svg | 627-DO.svg | 627.svg | 627-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "628",
+      "name_pt": "Calcário clástico",
+      "name_official_en": "Clastic limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "628-K.svg | 628-DO.svg | 628.svg | 628-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "629",
+      "name_pt": "Calcário clástico fossilífero",
+      "name_official_en": "Fossiliferous clastic limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "629-K.svg | 629-DO.svg | 629.svg | 629-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "630",
+      "name_pt": "Calcário nodular ou irregularmente estratificado",
+      "name_official_en": "Nodular or irregularly bedded limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "630-K.svg | 630-DO.svg | 630.svg | 630-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "631",
+      "name_pt": "Calcário com preenchimentos irregulares de dolomito sacaróide",
+      "name_official_en": "Limestone, irregular (burrow?) fillings of saccharoidal dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "631-K.svg | 631-DO.svg | 631.svg | 631-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "632",
+      "name_pt": "Calcário com estratificação cruzada",
+      "name_official_en": "Crossbedded limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "632-K.svg | 632-DO.svg | 632.svg | 632-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "633",
+      "name_pt": "Calcário chertoso com estratificação cruzada",
+      "name_official_en": "Cherty crossbedded limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "633-K.svg | 633-DO.svg | 633.svg | 633-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "634",
+      "name_pt": "Calcário clástico chertoso e arenoso com estratificação cruzada",
+      "name_official_en": "Cherty and sandy crossbedded clastic limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "634-K.svg | 634-DO.svg | 634.svg | 634-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "635",
+      "name_pt": "Calcário oolítico",
+      "name_official_en": "Oolitic limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "635-K.svg | 635-DO.svg | 635.svg | 635-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "636",
+      "name_pt": "Calcário arenoso",
+      "name_official_en": "Sandy limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "636-K.svg | 636-DO.svg | 636.svg | 636-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "637",
+      "name_pt": "Calcário siltoso",
+      "name_official_en": "Silty limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "637-K.svg | 637-DO.svg | 637.svg | 637-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "638",
+      "name_pt": "Calcário argiloso ou folhelhoso",
+      "name_official_en": "Argillaceous or shaly limestone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "638-K.svg | 638-DO.svg | 638.svg | 638-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "639",
+      "name_pt": "Calcário chertoso · opção 1",
+      "name_official_en": "Cherty limestone (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "639-K.svg | 639-DO.svg | 639.svg | 639-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "640",
+      "name_pt": "Calcário chertoso · opção 2",
+      "name_official_en": "Cherty limestone (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "640-K.svg | 640-DO.svg | 640.svg | 640-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "641",
+      "name_pt": "Calcário dolomítico, dolostone calcário ou dolomito calcário",
+      "name_official_en": "Dolomitic limestone, limy dolostone, or limy dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "641-K.svg | 641-DO.svg | 641.svg | 641-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "642",
+      "name_pt": "Dolostone ou dolomito",
+      "name_official_en": "Dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "642-K.svg | 642-DO.svg | 642.svg | 642-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "643",
+      "name_pt": "Dolostone ou dolomito com estratificação cruzada",
+      "name_official_en": "Cross-bedded dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "643-K.svg | 643-DO.svg | 643.svg | 643-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "644",
+      "name_pt": "Dolostone ou dolomito oolítico",
+      "name_official_en": "Oolitic dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "644-K.svg | 644-DO.svg | 644.svg | 644-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "645",
+      "name_pt": "Dolostone ou dolomito arenoso",
+      "name_official_en": "Sandy dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "645-K.svg | 645-DO.svg | 645.svg | 645-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "646",
+      "name_pt": "Dolostone ou dolomito siltoso",
+      "name_official_en": "Silty dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "646-K.svg | 646-DO.svg | 646.svg | 646-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "647",
+      "name_pt": "Dolostone ou dolomito argiloso ou folhelhoso",
+      "name_official_en": "Argillaceous or shaly dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "647-K.svg | 647-DO.svg | 647.svg | 647-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "648",
+      "name_pt": "Dolostone ou dolomito chertoso",
+      "name_official_en": "Cherty dolostone or dolomite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "648-K.svg | 648-DO.svg | 648.svg | 648-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "649",
+      "name_pt": "Chert estratificado · opção 1",
+      "name_official_en": "Bedded chert (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "649-K.svg | 649-DO.svg | 649.svg | 649-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "650",
+      "name_pt": "Chert estratificado · opção 2",
+      "name_official_en": "Bedded chert (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "650-K.svg | 650-DO.svg | 650.svg | 650-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "651",
+      "name_pt": "Chert estratificado fossilífero",
+      "name_official_en": "Fossiliferous bedded chert",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "651-K.svg | 651-DO.svg | 651.svg | 651-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "652",
+      "name_pt": "Rocha fossilífera",
+      "name_official_en": "Fossiliferous rock",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "652-K.svg | 652-DO.svg | 652.svg | 652-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "653",
+      "name_pt": "Rocha diatomácea",
+      "name_official_en": "Diatomaceous rock",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "653-K.svg | 653-DO.svg | 653.svg | 653-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "654",
+      "name_pt": "Subgrauvaca",
+      "name_official_en": "Subgraywacke",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "654-K.svg | 654-DO.svg | 654.svg | 654-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "655",
+      "name_pt": "Subgrauvaca com estratificação cruzada",
+      "name_official_en": "Cross-bedded subgraywacke",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "655-K.svg | 655-DO.svg | 655.svg | 655-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "656",
+      "name_pt": "Subgrauvaca com marcas de ondulação",
+      "name_official_en": "Ripple-bedded subgraywacke",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "656-K.svg | 656-DO.svg | 656.svg | 656-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "657",
+      "name_pt": "Turfa",
+      "name_official_en": "Peat",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "657-K.svg | 657-DO.svg | 657.svg | 657-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "658",
+      "name_pt": "Carvão",
+      "name_official_en": "Coal",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "658-K.svg | 658-DO.svg | 658.svg | 658-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "659",
+      "name_pt": "Carvão impuro",
+      "name_official_en": "Bony coal or impure coal",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "659-K.svg | 659-DO.svg | 659.svg | 659-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "660",
+      "name_pt": "Argila de base de camada de carvão",
+      "name_official_en": "Underclay",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "660-K.svg | 660-DO.svg | 660.svg | 660-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "661",
+      "name_pt": "Argila flint",
+      "name_official_en": "Flint clay",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "661-K.svg | 661-DO.svg | 661.svg | 661-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "662",
+      "name_pt": "Bentonita",
+      "name_official_en": "Bentonite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "662-K.svg | 662-DO.svg | 662.svg | 662-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "663",
+      "name_pt": "Glauconita",
+      "name_official_en": "Glauconite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "663-K.svg | 663-DO.svg | 663.svg | 663-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "664",
+      "name_pt": "Limonita",
+      "name_official_en": "Limonite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "664-K.svg | 664-DO.svg | 664.svg | 664-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "665",
+      "name_pt": "Siderita",
+      "name_official_en": "Siderite",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "665-K.svg | 665-DO.svg | 665.svg | 665-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "666",
+      "name_pt": "Rocha nodular fosfática",
+      "name_official_en": "Phosphatic-nodular rock",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "666-K.svg | 666-DO.svg | 666.svg | 666-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "667",
+      "name_pt": "Gipsita",
+      "name_official_en": "Gypsum",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "667-K.svg | 667-DO.svg | 667.svg | 667-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "668",
+      "name_pt": "Sal",
+      "name_official_en": "Salt",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "668-K.svg | 668-DO.svg | 668.svg | 668-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "669",
+      "name_pt": "Arenito e siltito intercalados",
+      "name_official_en": "Interbedded sandstone and siltstone",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "669-K.svg | 669-DO.svg | 669.svg | 669-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "670",
+      "name_pt": "Arenito e folhelho intercalados",
+      "name_official_en": "Interbedded sandstone and shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "670-K.svg | 670-DO.svg | 670.svg | 670-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "671",
+      "name_pt": "Arenito com ripples e folhelho intercalados",
+      "name_official_en": "Interbedded ripple-bedded sandstone and shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "671-K.svg | 671-DO.svg | 671.svg | 671-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "672",
+      "name_pt": "Folhelho e calcário siltoso intercalados · folhelho dominante",
+      "name_official_en": "Interbedded shale and silty limestone (shale dominant)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "672-K.svg | 672-DO.svg | 672.svg | 672-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "673",
+      "name_pt": "Folhelho e calcário intercalados · folhelho dominante · opção 1",
+      "name_official_en": "Interbedded shale and limestone (shale dominant) (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "673-K.svg | 673-DO.svg | 673.svg | 673-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "674",
+      "name_pt": "Folhelho e calcário intercalados · folhelho dominante · opção 2",
+      "name_official_en": "Interbedded shale and limestone (shale dominant) (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "674-K.svg | 674-DO.svg | 674.svg | 674-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "675",
+      "name_pt": "Folhelho calcário e calcário intercalados · folhelho dominante",
+      "name_official_en": "Interbedded calcareous shale and limestone (shale dominant)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "675-K.svg | 675-DO.svg | 675.svg | 675-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "676",
+      "name_pt": "Calcário siltoso e folhelho intercalados",
+      "name_official_en": "Interbedded silty limestone and shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "676-K.svg | 676-DO.svg | 676.svg | 676-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "677",
+      "name_pt": "Calcário e folhelho intercalados · opção 1",
+      "name_official_en": "Interbedded limestone and shale (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "677-K.svg | 677-DO.svg | 677.svg | 677-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "678",
+      "name_pt": "Calcário e folhelho intercalados · opção 2",
+      "name_official_en": "Interbedded limestone and shale (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "678-K.svg | 678-DO.svg | 678.svg | 678-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "679",
+      "name_pt": "Calcário e folhelho intercalados · calcário dominante",
+      "name_official_en": "Interbedded limestone and shale (limestone dominant)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "679-K.svg | 679-DO.svg | 679.svg | 679-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "680",
+      "name_pt": "Calcário e folhelho calcário intercalados",
+      "name_official_en": "Interbedded limestone and calcareous shale",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "680-K.svg | 680-DO.svg | 680.svg | 680-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "681",
+      "name_pt": "Till ou diamicton · opção 1",
+      "name_official_en": "Till or diamicton (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "681-K.svg | 681-DO.svg | 681.svg | 681-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "682",
+      "name_pt": "Till ou diamicton · opção 2",
+      "name_official_en": "Till or diamicton (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "682-K.svg | 682-DO.svg | 682.svg | 682-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "683",
+      "name_pt": "Till ou diamicton · opção 3",
+      "name_official_en": "Till or diamicton (3rd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "683-K.svg | 683-DO.svg | 683.svg | 683-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "684",
+      "name_pt": "Loess · opção 1",
+      "name_official_en": "Loess (1st option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "684-K.svg | 684-DO.svg | 684.svg | 684-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "685",
+      "name_pt": "Loess · opção 2",
+      "name_official_en": "Loess (2nd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "685-K.svg | 685-DO.svg | 685.svg | 685-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "686",
+      "name_pt": "Loess · opção 3",
+      "name_official_en": "Loess (3rd option)",
+      "group": "Sedimentar",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "686-K.svg | 686-DO.svg | 686.svg | 686-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "701",
+      "name_pt": "Metamorfismo",
+      "name_official_en": "Metamorphism",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "701-K.svg | 701-DO.svg | 701.svg | 701-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "702",
+      "name_pt": "Quartzito",
+      "name_official_en": "Quartzite",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "702-K.svg | 702-DO.svg | 702.svg | 702-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "703",
+      "name_pt": "Ardósia",
+      "name_official_en": "Slate",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "703-K.svg | 703-DO.svg | 703.svg | 703-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "704",
+      "name_pt": "Granito xistoso ou gnaissóide",
+      "name_official_en": "Schistose or gneissoid granite",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "704-K.svg | 704-DO.svg | 704.svg | 704-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "705",
+      "name_pt": "Xisto",
+      "name_official_en": "Schist",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "705-K.svg | 705-DO.svg | 705.svg | 705-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "706",
+      "name_pt": "Xisto contorcido",
+      "name_official_en": "Contorted schist",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "706-K.svg | 706-DO.svg | 706.svg | 706-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "707",
+      "name_pt": "Xisto e gnaisse",
+      "name_official_en": "Schist and gneiss",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "707-K.svg | 707-DO.svg | 707.svg | 707-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "708",
+      "name_pt": "Gnaisse",
+      "name_official_en": "Gneiss",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "708-K.svg | 708-DO.svg | 708.svg | 708-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "709",
+      "name_pt": "Gnaisse contorcido",
+      "name_official_en": "Contorted gneiss",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "709-K.svg | 709-DO.svg | 709.svg | 709-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "710",
+      "name_pt": "Esteatito, talco ou serpentinito",
+      "name_official_en": "Soapstone, talc, or serpentinite",
+      "group": "Metamórfica",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": null,
+      "svg_available": false
+    },
+    {
+      "code": "711",
+      "name_pt": "Rocha tufácea",
+      "name_official_en": "Tuffaceous rock",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "711-K.svg | 711-DO.svg | 711.svg | 711-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "712",
+      "name_pt": "Tufo cristalino",
+      "name_official_en": "Crystal tuff",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "712-K.svg | 712-DO.svg | 712.svg | 712-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "713",
+      "name_pt": "Tufo desvitrificado",
+      "name_official_en": "Devitrified tuff",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "713-K.svg | 713-DO.svg | 713.svg | 713-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "714",
+      "name_pt": "Brecha vulcânica e tufo",
+      "name_official_en": "Volcanic breccia and tuff",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "714-K.svg | 714-DO.svg | 714.svg | 714-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "715",
+      "name_pt": "Brecha vulcânica ou aglomerado",
+      "name_official_en": "Volcanic breccia or agglomerate",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "715-K.svg | 715-DO.svg | 715.svg | 715-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "716",
+      "name_pt": "Rocha zeolítica",
+      "name_official_en": "Zeolitic rock",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "716-K.svg | 716-DO.svg | 716.svg | 716-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "717",
+      "name_pt": "Derrames basálticos",
+      "name_official_en": "Basaltic flows",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "717-K.svg | 717-DO.svg | 717.svg | 717-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "718",
+      "name_pt": "Granito · opção 1",
+      "name_official_en": "Granite (1st option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": null,
+      "svg_available": false
+    },
+    {
+      "code": "719",
+      "name_pt": "Granito · opção 2",
+      "name_official_en": "Granite (2nd option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "719-K.svg | 719-DO.svg | 719.svg | 719-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "720",
+      "name_pt": "Rocha ígnea bandada",
+      "name_official_en": "Banded igneous rock",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "720-K.svg | 720-DO.svg | 720.svg | 720-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "721",
+      "name_pt": "Rocha ígnea · opção 1",
+      "name_official_en": "Igneous rock (1st option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "721-K.svg | 721-DO.svg | 721.svg | 721-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "722",
+      "name_pt": "Rocha ígnea · opção 2",
+      "name_official_en": "Igneous rock (2nd option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "722-K.svg | 722-DO.svg | 722.svg | 722-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "723",
+      "name_pt": "Rocha ígnea · opção 3",
+      "name_official_en": "Igneous rock (3rd option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "723-K.svg | 723-DO.svg | 723.svg | 723-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "724",
+      "name_pt": "Rocha ígnea · opção 4",
+      "name_official_en": "Igneous rock (4th option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "724-K.svg | 724-DO.svg | 724.svg | 724-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "725",
+      "name_pt": "Rocha ígnea · opção 5",
+      "name_official_en": "Igneous rock (5th option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "725-K.svg | 725-DO.svg | 725.svg | 725-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "726",
+      "name_pt": "Rocha ígnea · opção 6",
+      "name_official_en": "Igneous rock (6th option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "726-K.svg | 726-DO.svg | 726.svg | 726-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "727",
+      "name_pt": "Rocha ígnea · opção 7",
+      "name_official_en": "Igneous rock (7th option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "727-K.svg | 727-DO.svg | 727.svg | 727-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "728",
+      "name_pt": "Rocha ígnea · opção 8",
+      "name_official_en": "Igneous rock (8th option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "728-K.svg | 728-DO.svg | 728.svg | 728-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "729",
+      "name_pt": "Rocha porfirítica · opção 1",
+      "name_official_en": "Porphyritic rock (1st option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "729-K.svg | 729-DO.svg | 729.svg | 729-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "730",
+      "name_pt": "Rocha porfirítica · opção 2",
+      "name_official_en": "Porphyritic rock (2nd option)",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "730-K.svg | 730-DO.svg | 730.svg | 730-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "731",
+      "name_pt": "Vitrofiro",
+      "name_official_en": "Vitrophyre",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "731-K.svg | 731-DO.svg | 731.svg | 731-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "732",
+      "name_pt": "Quartzo",
+      "name_official_en": "Quartz",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": "732-K.svg | 732-DO.svg | 732.svg | 732-*.svg",
+      "svg_available": true
+    },
+    {
+      "code": "733",
+      "name_pt": "Minério",
+      "name_official_en": "Ore",
+      "group": "Ígnea / veio",
+      "standard": "FGDC-STD-013-2006 · Section 37",
+      "source_selector": null,
+      "svg_available": false
+    }
+  ],
+  "source_repository": "https://github.com/davenquinn/geologic-patterns",
+  "source_note": "Os SVG locais são selecionados do arquivo oficial do repositório de Daven Quinn. O instalador prioriza a variante preta (-K), depois dropout (-DO), arquivo sem sufixo e, por fim, a primeira variante disponível para o código. Cada arquivo é renomeado localmente para <codigo>.svg sem alterar seu conteúdo vetorial.",
+  "svg_available_count": 114,
+  "svg_unavailable_codes": [
+    "710",
+    "718",
+    "733"
+  ],
+  "note": "Catálogo oficial FGDC com 117 códigos. Conversão web verificada disponibiliza 114 SVG. Códigos 710, 718 e 733 mantidos sem substituição gráfica."
+}

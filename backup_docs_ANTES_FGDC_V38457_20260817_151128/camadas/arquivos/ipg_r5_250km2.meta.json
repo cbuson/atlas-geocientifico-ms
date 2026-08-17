@@ -1,0 +1,38 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "ipg_r5_250km2",
+  "title": "IPG · Potencial Geocientífico Territorial Documentado · 250 km²",
+  "provenance_status": "produto_derivado_local",
+  "source_type": "derivada_local",
+  "source_declared": "ITA ARANDU MS · inventário geocientífico Fase 3.2 · cálculo direto na malha R5",
+  "source_url": "https://rigeo.sgb.gov.br/handle/doc/10217",
+  "source_urls": [
+    "https://rigeo.sgb.gov.br/handle/doc/10217",
+    "https://www.sgb.gov.br/geossit/",
+    "https://aacpdappls.net.ms.gov.br/appls/legislacao/secoge/govato.nsf/fd8600de8a55c7fc04256b210079ce25/9d2a7d2cb9c27f170425769a005c3d44?OpenDocument",
+    "https://doi.org/10.1038/163688a0",
+    "https://doi.org/10.1007/s12371-014-0139-3",
+    "https://doi.org/10.1111/j.1467-985X.2005.00350.x"
+  ],
+  "reference_ids": [
+    "REF-002",
+    "REF-013",
+    "REF-014",
+    "REF-055",
+    "REF-067",
+    "REF-068",
+    "REF-069",
+    "REF-105",
+    "REF-115"
+  ],
+  "local_file": "camadas/arquivos/ipg_r5_250km2.geojson",
+  "local_sha256": "0b9bf05f5682f371f17dbcc848387b234964ca0ee61cc31c1c96fe7881a92a89",
+  "local_feature_count": 1554,
+  "snapshot_capture_date": null,
+  "snapshot_capture_date_status": "nao_aplicavel_produto_derivado_local",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-ipg_r5_250km2",
+  "reference_page_url": "./referencias/index.html#layer-ipg_r5_250km2",
+  "online_mode_available": true,
+  "scientific_cut_note": "Produto derivado local. A data de captura externa nao se aplica. A reproducibilidade depende dos insumos e da metodologia vinculada."
+}

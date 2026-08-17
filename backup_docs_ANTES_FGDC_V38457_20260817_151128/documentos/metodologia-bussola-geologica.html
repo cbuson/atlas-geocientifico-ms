@@ -1,0 +1,12 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ITA ARANDU · Metodologia · Bússola geológica</title></head><body>
+<h1>Bússola geológica assistida · metodologia 1.0</h1>
+<p><b>ITA ARANDU MS · 15 de agosto de 2026</b></p>
+<h2>Objetivo</h2><p>Apoiar aprendizagem de azimute e orientação com sensores do dispositivo, preservando referência, estabilidade e limitações.</p>
+<h2>Princípio</h2><p>Quando o aparelho está aproximadamente horizontal e fornece orientação absoluta, o rumo é obtido por <code>heading = (360° − α) mod 360°</code>. Para inclinações maiores, a implementação usa a transformação de heading descrita no exemplo do W3C para os ângulos α, β e γ.</p>
+<h2>Referência absoluta e relativa</h2><p>Orientação absoluta envolve acelerômetro, giroscópio e magnetômetro. Orientação relativa possui referencial arbitrário e não deve ser tratada como norte geográfico ou magnético confiável.</p>
+<h2>Declinação</h2><p>A correção automática WMM não é calculada nesta versão. Opcionalmente o usuário pode informar uma declinação obtida de fonte confiável. O Atlas usa a convenção leste positivo e oeste negativo, com <code>azimute verdadeiro = azimute do sensor + declinação</code>.</p>
+<h2>Qualidade</h2><p>O semáforo usa dispersão circular recente como indicador operacional. Verde significa estabilidade com referência absoluta. Não significa precisão metrológica certificada.</p>
+<h2>Problemas</h2><p>Rochas magnéticas, estruturas metálicas, veículos, cercas, ímãs, cabos e equipamentos eletrônicos podem produzir desvios locais. O WMM descreve o campo principal da Terra e não elimina anomalias locais.</p>
+<h2>Como validar</h2><p>Comparar repetidamente a leitura do dispositivo com bússola geológica ou instrumento de referência no mesmo local e nas mesmas condições.</p>
+<h2>Referências utilizadas</h2><p>As referências completas em APA 7 são mantidas na página Referências do Atlas.</p>
+</body></html>

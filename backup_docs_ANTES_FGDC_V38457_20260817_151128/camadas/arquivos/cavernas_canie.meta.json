@@ -1,0 +1,25 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "cavernas_canie",
+  "title": "Cavidades naturais subterrâneas · CANIE/CECAV",
+  "provenance_status": "proveniencia_parcial",
+  "source_type": "institucional_externa",
+  "source_declared": "CANIE/CECAV/ICMBio",
+  "source_url": "https://www.gov.br/icmbio/pt-br/assuntos/centros-de-pesquisa/cavernas/cadastro-nacional-de-informacoes-espeleologicas/canie",
+  "source_urls": [
+    "https://www.gov.br/icmbio/pt-br/assuntos/centros-de-pesquisa/cavernas/cadastro-nacional-de-informacoes-espeleologicas/canie"
+  ],
+  "reference_ids": [
+    "REF-015"
+  ],
+  "local_file": "camadas/arquivos/cavernas_canie.geojson",
+  "local_sha256": "9ae761aec99e03018eccfa064dbc7fd9b511a94c8c77326f43a18ca4af8576fd",
+  "local_feature_count": 341,
+  "snapshot_capture_date": "",
+  "snapshot_capture_date_status": "nao_documentada",
+  "dataset_version": null,
+  "methodology_url": "./metodologia.html#layer-cavernas_canie",
+  "reference_page_url": "./referencias/index.html#layer-cavernas_canie",
+  "online_mode_available": true,
+  "scientific_cut_note": "O arquivo local e preservado, mas nao e promovido a snapshot cientifico plenamente documentado ate que a data de captura seja comprovada ou uma nova captura controlada seja realizada."
+}

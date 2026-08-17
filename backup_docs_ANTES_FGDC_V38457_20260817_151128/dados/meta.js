@@ -1,0 +1,1 @@
+window.ITA_ARANDU_META={project:"ITA ARANDU MS",subtitle:"Atlas Geocientífico de Mato Grosso do Sul",architecture_version:"1.0",build_date:"2026-08-14",build_version:"V38.4.7-METODOLOGIA-ANTECEDENTES-APA7-20260814",scientific_cut_planned:"2026-09",cut_status:"em_preparacao",field_schema_version:"0.4",index_architecture_version:"0.1",principle:"snapshot_first"};

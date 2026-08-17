@@ -1,0 +1,25 @@
+{
+  "module": "Estereograma ARANDU + Calculadora estrutural",
+  "version": "1.0",
+  "date": "2026-08-15",
+  "references": [
+    {
+      "key": "allmendinger_stereonet",
+      "ref_id": "REF-190",
+      "status": "added",
+      "url": "https://www.rickallmendinger.net/stereonet"
+    },
+    {
+      "key": "seequent_stereonet",
+      "ref_id": "REF-191",
+      "status": "added",
+      "url": "https://help.seequent.com/Geo/2024.1/en-GB/Content/structural-data/stereonets.htm"
+    },
+    {
+      "key": "waldron_snyder",
+      "ref_id": "REF-192",
+      "status": "added",
+      "url": "https://geo.libretexts.org/Bookshelves/Geology/Geological_Structures_-_A_Practical_Introduction_(Waldron_and_Snyder)/02%3A_Labs/2.02%3A_Lab_2_-_Cross-sections_and_Three-point_Problems"
+    }
+  ]
+}

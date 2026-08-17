@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IGQ · Conhecimento Geoquímico · metodologia</title><style>
+:root{--ink:#173b50;--muted:#5c7481;--line:#d4e1e8;--blue:#073b63;--bg:#f5f8fa;--warn:#fff4d6}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:#273b46;font-size:16px;line-height:1.65}
+main{max-width:980px;margin:auto;padding:24px}
+.hero{background:linear-gradient(135deg,#073b63,#176b91);color:#fff;border-radius:20px;padding:24px}
+.hero .k{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;opacity:.88}
+.hero h1{font-size:clamp(26px,4vw,40px);line-height:1.12;margin:5px 0 9px}
+.hero p{margin:0;max-width:78ch}
+section{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;margin:15px 0}
+h2{font-size:21px;color:var(--blue);margin:0 0 10px}h3{font-size:17px;color:var(--ink)}
+.formula{font-family:Cambria,"Times New Roman",serif;font-size:18px;background:#eef5f8;border-left:5px solid #23739b;border-radius:10px;padding:14px;overflow-wrap:anywhere}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.item{border:1px solid #e0e9ee;border-radius:11px;padding:11px}.item b{display:block;color:#174e6a;margin-bottom:3px}.item span{color:#536c78}
+.rule{background:var(--warn);border:1px solid #e8c76e;border-radius:12px;padding:12px}
+.ref{padding-left:2em;text-indent:-2em;margin:10px 0;overflow-wrap:anywhere}
+a{color:#075f94}.nav{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.nav a{background:#fff;color:#174e6a;border:1px solid #c7d8e1;border-radius:8px;padding:6px 9px;text-decoration:none;font-weight:800;font-size:13px}
+code{font-size:.92em;background:#eef2f4;padding:2px 5px;border-radius:5px}
+@media(max-width:680px){main{padding:10px}.hero{border-radius:14px;padding:17px}section{padding:14px}.grid{grid-template-columns:1fr}.formula{font-size:16px}}
+</style></head>
+<body><main>
+<header class="hero"><div class="k">ITA ARANDU MS · metodologia auditável · APA 7</div>
+<h1>IGQ · Conhecimento Geoquímico</h1><p>Sintetiza cobertura de conhecimento geoquímico mantendo meios amostrais distintos e evitando combinar populações incompatíveis.</p>
+<div class="nav"><a href="./metodologias-indices.html">Todos os índices</a><a href="../referencias/index.html#index-igq">Bibliografia central</a></div></header>
+<section><h2>1. Objeto e unidade de análise</h2><p>Sintetiza cobertura de conhecimento geoquímico mantendo meios amostrais distintos e evitando combinar populações incompatíveis.</p>
+<p>As unidades espaciais permanentes são as malhas de <b>250, 500 e 1000 km²</b>. Cada escala é calculada diretamente a partir das fontes elegíveis. Resultados de uma escala não são obtidos por soma nem por agregação dos resultados de outra.</p></section>
+<section><h2>2. Formulação</h2><div class="formula">IGQ<sub>h</sub> = max(IGQ<sub>SC</sub>, IGQ<sub>CB</sub>, IGQ<sub>solo</sub>, IGQ<sub>rocha</sub>, IGQ<sub>água</sub>)</div><h3>Variáveis</h3><div class="grid"><div class="item"><b>IGQ_m</b><span>índice do meio amostral m, calculado separadamente</span></div><div class="item"><b>G_m</b><span>√(D*_m × O_m), componente espacial</span></div><div class="item"><b>A_m</b><span>disponibilidade analítica compatível</span></div><div class="item"><b>Q_m</b><span>completude documental do meio</span></div></div></section>
+<section><h2>3. Evidências e sequência de cálculo</h2><p><b>Entradas.</b> Amostras e resultados analíticos elegíveis separados por sedimento de corrente, concentrado de bateia, solo, rocha e água.</p><p><b>Processamento.</b> Para cada meio, IGQ_m = 100 × (G_m × A_m × Q_m)^(1/3). O índice final usa o máximo entre módulos elegíveis.</p></section>
+<section><h2>4. Regra epistemológica de <code>null</code> e zero</h2><div class="rule">Ausência de amostra não significa concentração zero. Meio não avaliável permanece não avaliável.</div>
+<p>A regra transversal do ITA ARANDU MS determina que <b>ausência de evidência não equivale automaticamente a valor geocientífico zero</b>. Valor numérico medido e ausência documental são estados semanticamente distintos.</p></section>
+<section><h2>5. Interpretação e limites</h2><p>IGQ mede conhecimento documentado e cobertura. Não é anomalia geoquímica, teor econômico ou favorabilidade mineral.</p></section>
+<section><h2>6. Sensibilidade, robustez e atualização</h2><p>Normalização e disponibilidade analítica são avaliadas por meio e por escala.</p>
+<p>Alterações de fonte, elegibilidade, normalização ou resolução exigem nova materialização e auditoria antes de substituir o corte certificado.</p></section>
+<section><h2>7. Referências · APA 7</h2><p><b>Fundamentação e adaptação.</b> A formulação específica do ITA ARANDU MS é documentada pelo protocolo do projeto e dialoga com os antecedentes metodológicos indicados (Busón Buesa & Gabas, 2026; Lins, 2003; Stevens & Olsen, 2004). As referências de antecedentes fundamentam conceitos ou procedimentos e não implicam que seus autores tenham proposto a fórmula específica adotada pelo Atlas.</p><p class="ref">Lins, C. A. C. (2003). <i>Manual técnico da área de geoquímica</i> (Versão 5.0). CPRM–Serviço Geológico do Brasil. https://rigeo.sgb.gov.br/bitstream/doc/14647/1/rli_1151.pdf</p><p class="ref">Stevens, D. L., Jr., & Olsen, A. R. (2004). Spatially balanced sampling of natural resources. <i>Journal of the American Statistical Association, 99</i>(465), 262–278. https://doi.org/10.1198/016214504000000250</p><p class="ref">Busón Buesa, C., & Gabas, S. G. (2026). <i>Protocolo dos índices multiescalares de conhecimento geocientífico de ITA ARANDU MS</i> [Documento de trabalho]. Universidade Federal de Mato Grosso do Sul.</p></section>
+</main></body></html>

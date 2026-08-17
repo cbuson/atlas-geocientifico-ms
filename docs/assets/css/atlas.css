@@ -121,3 +121,61 @@ header{min-height:78px;padding:8px 12px}
   .campo-footer{grid-template-columns:auto minmax(0,1fr) auto;gap:6px}
   .campo-footer .action-btn{min-height:42px;font-size:9px}
 }
+
+/* ITA ARANDU MS · autoria do projeto · janela flutuante */
+.nav-btn.autoria-short{width:34px;height:34px;min-width:34px;padding:0!important;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0}
+.nav-btn.autoria-short span{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border:1.5px solid currentColor;border-radius:50%;font:900 12px/1 Georgia,serif}
+.autoria-project-box{width:min(760px,94vw)}
+.autoria-project-modal .modal-body{background:#fff}
+.autoria-intro{display:flex;flex-direction:column;gap:3px;padding:4px 1px 12px}
+.autoria-intro b{font-size:18px;color:#123f5d}
+.autoria-intro span{color:#607684}
+.autoria-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.autoria-grid .author-card{display:flex;align-items:center;gap:11px;margin:0}
+.autoria-person-mark{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#e9f3f9;border:1px solid #c6dae6;color:#0b5686;font-weight:950}
+.autoria-doi-card{margin:14px 0 6px;padding:13px;border:1px solid #c9dce7;background:#f7fbfd;border-radius:12px;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.autoria-doi-card>div:first-child{display:flex;flex-direction:column;gap:3px}
+.autoria-doi-card strong{font-size:17px;color:#073b63;word-break:break-all}
+.autoria-doi-card small{color:#617986}
+.autoria-label{font-size:8px;letter-spacing:.1em;text-transform:uppercase;font-weight:900;color:#637d8c}
+.autoria-actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.autoria-link{display:inline-flex;align-items:center;justify-content:center;border:1px solid #b8ceda;background:#fff;color:#0b5686;border-radius:9px;padding:8px 10px;font-weight:850;text-decoration:none;white-space:nowrap}
+.autoria-link.primary{background:#0b5686;color:#fff;border-color:#0b5686}
+.autoria-citation{border-left:3px solid #0b5686;background:#f5f9fb;border-radius:8px;padding:10px 12px;line-height:1.55;color:#385466}
+.autoria-note{margin-top:12px;border:1px solid #d8e4ea;border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:3px;background:#fff}
+.autoria-note b{color:#174664}
+.autoria-note span{color:#607684}
+@media(max-width:760px){.autoria-grid{grid-template-columns:1fr}.autoria-doi-card{align-items:stretch;flex-direction:column}.autoria-actions{justify-content:flex-start}.autoria-link{flex:1 1 auto}}
+/* ITA ARANDU MS · autoria científica completa */
+.nav-btn.autoria-short{width:34px;height:34px;min-width:34px;padding:0!important;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0}
+.nav-btn.autoria-short span{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border:1.5px solid currentColor;border-radius:50%;font:900 12px/1 Georgia,serif}
+.autoria-project-box{width:min(900px,95vw);max-height:min(88vh,920px)}
+.autoria-project-modal .modal-body{background:#fff}
+.autoria-intro{display:flex;flex-direction:column;gap:3px;padding:2px 0 12px}
+.autoria-intro b{font-size:19px;color:#123f5d}
+.autoria-intro span{color:#607684}
+.autoria-full-card{border:1px solid #d5e2e9;border-radius:14px;padding:14px;margin:0 0 12px;background:#fff}
+.autoria-person-head{display:flex;align-items:flex-start;gap:12px}
+.autoria-person-head h3{margin:0 0 4px;color:#143f5b}
+.autoria-person-mark{width:46px;height:46px;min-width:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#e9f3f9;border:1px solid #c6dae6;color:#0b5686;font-weight:950}
+.autoria-meta-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 14px;margin-top:12px}
+.autoria-meta-grid>div{display:flex;flex-direction:column;gap:2px;padding:8px 9px;border-radius:9px;background:#f8fbfd;border:1px solid #e1ebf0}
+.autoria-meta-grid strong,.autoria-meta-grid a{font-size:12px;line-height:1.35}
+.autoria-meta-grid a{color:#0b5686;font-weight:800;text-decoration:none;word-break:break-word}
+.autoria-label{font-size:8px;letter-spacing:.09em;text-transform:uppercase;font-weight:950;color:#647e8c}
+.autoria-contrib{margin-top:10px;display:flex;flex-direction:column;gap:3px;color:#536e7d;line-height:1.45}
+.autoria-contrib b{color:#234b64}
+.autoria-person-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+.autoria-person-actions a{display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border:1px solid #bcd0dc;border-radius:9px;text-decoration:none;color:#0b5686;background:#fff;font-weight:850}
+.autoria-project-id{margin:14px 0;padding:13px;border:1px solid #c9dce7;background:#f7fbfd;border-radius:12px;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.autoria-project-id>div:first-child{display:flex;flex-direction:column;gap:3px}
+.autoria-project-id strong{font-size:17px;color:#073b63;word-break:break-all}
+.autoria-project-id small{color:#617986}
+.autoria-actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.autoria-link{display:inline-flex;align-items:center;justify-content:center;border:1px solid #b8ceda;background:#fff;color:#0b5686;border-radius:9px;padding:8px 10px;font-weight:850;text-decoration:none;white-space:nowrap}
+.autoria-link.primary{background:#0b5686;color:#fff;border-color:#0b5686}
+.autoria-citation{border-left:3px solid #0b5686;background:#f5f9fb;border-radius:8px;padding:11px 13px;line-height:1.55;color:#385466}
+.autoria-note{margin-top:12px;border:1px solid #d8e4ea;border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:3px;background:#fff}
+.autoria-note b{color:#174664}
+.autoria-note span{color:#607684;line-height:1.45}
+@media(max-width:760px){.autoria-meta-grid{grid-template-columns:1fr}.autoria-project-id{align-items:stretch;flex-direction:column}.autoria-actions{justify-content:flex-start}.autoria-link{flex:1 1 auto}}

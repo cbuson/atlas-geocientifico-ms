@@ -1,0 +1,21 @@
+{
+  "schema_version": "ITA_ARANDU_PROVENIENCIA_1.0",
+  "layer_id": "mapa_geologico_ms",
+  "title": "Mapa geológico de Mato Grosso do Sul 1:1.000.000",
+  "provenance_status": "snapshot_candidato_captura_controlada",
+  "source_type": "institucional_externa",
+  "source_url": "https://geoportal.sgb.gov.br/server/rest/services/geologia/litoestratigrafia_estados/MapServer/7",
+  "source_query_endpoint": "https://geoportal.sgb.gov.br/server/rest/services/geologia/litoestratigrafia_estados/MapServer/7/query",
+  "spatial_filter": {
+    "type": "envelope",
+    "bbox_4326": "-58.3,-24.2,-50.8,-17.0",
+    "relationship": "intersects"
+  },
+  "snapshot_capture_date": "2026-08-15",
+  "snapshot_capture_datetime_utc": "2026-08-15T18:04:27.162Z",
+  "feature_count": 870,
+  "sha256": "4f70bbf72311da811a4b8ae4025caf87fa53e444b90d29dd8cfbc892e36e3c54",
+  "local_candidate_file": "camadas/snapshots/2026-08-15/mapa_geologico_ms.geojson",
+  "promotion_status": "nao_promovido",
+  "note": "Snapshot candidato. O arquivo ativo em docs/camadas/arquivos nao foi alterado."
+}

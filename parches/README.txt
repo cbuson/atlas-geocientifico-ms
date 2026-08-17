@@ -1,12 +1,23 @@
-ITA ARANDU MS · PATCH V38.4.56 → V38.4.57
-Biblioteca completa FGDC Section 37 para Coluna Estratigráfica
+ITA ARANDU MS · AUTORIA CIENTÍFICA COMPLETA · R3
 
-Este instalador valida a base V38.4.56, prepara os 117 padrões litológicos das séries 600 e 700 e só altera docs depois de completar a biblioteca em área de staging.
+Restaura e amplia a ficha de autoria histórica do projeto.
 
-Os 15 padrões já presentes na V38.4.56 são reutilizados. Os demais SVG são obtidos do repositório aberto davenquinn/geologic-patterns, que documenta a extração da biblioteca FGDC para web.
+Inclui
+Carlos Busón Buesa
+Sandra Garcia Gabas
+vínculos UFMS, PPGTA e FAENG
+e-mails institucionais
+ORCID
+Currículo Lattes
+contribuições científicas
+DOI 10.5281/zenodo.21923101
+registro Zenodo 21923101
+citação atualizada
+ícone de autoria junto a Ajuda
+janela flutuante
 
-Executar no PowerShell 5.1 ou superior
+Instalação
 Set-ExecutionPolicy -Scope Process Bypass
-.\APLICAR_BIBLIOTECA_FGDC_COMPLETA.ps1
+.\APLICAR_AUTORIA_COMPLETA_R3.ps1
 
-O script detecta automaticamente a pasta docs quando está dentro de atlas-geocientifico-ms\parches.
+O script cria backup e trabalha com bytes para evitar recodificação global do site.
