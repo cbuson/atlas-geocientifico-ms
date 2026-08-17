@@ -1,7 +1,10 @@
-const ITA_CACHE = 'ita-arandu-v38-4-52-android-native-sensors';
+const ITA_CACHE = 'ita-arandu-v38-4-53-ondas-sismicas';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
+  "./assets/css/ondas-sismicas-v38453.css?v=38.4.53",
+  "./assets/js/ondas-sismicas-v38453.js?v=38.4.53",
+  "./documentos/metodologia-ondas-sismicas-acelerometro.html",
   "./assets/css/magnetometro-amostras-v38450.css?v=38.4.50",
   "./assets/js/magnetometro-amostras-v38450.js?v=38.4.52",
   "./documentos/metodologia-magnetometro-amostras.html",
