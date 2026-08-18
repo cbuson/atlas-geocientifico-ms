@@ -194,8 +194,9 @@ async function makeAnnotatedBlob(){
   try{await captureGps()}catch(_){}
   await enableOrientation();
 
-  const max=2400,sc=Math.min(1,max/Math.max(video.videoWidth,video.videoHeight));
-  const w=Math.round(video.videoWidth*sc),h=Math.round(video.videoHeight*sc);
+  // R2 · preserva a resolução integral entregue pelo stream da câmera.
+  // Não reduz mais a imagem a 2400 px.
+  const w=video.videoWidth,h=video.videoHeight;
   const c=document.createElement('canvas');c.width=w;c.height=h;
   const ctx=c.getContext('2d',{alpha:false});
   ctx.drawImage(video,0,0,w,h);
@@ -203,9 +204,10 @@ async function makeAnnotatedBlob(){
   await drawBrand(ctx,w,h);
 
   const S=Math.max(1,w/1200);
-  const stripH=Math.max(88*S,Math.min(h*.13,132*S));
+  // Faixa mais fina, legível e muito transparente.
+  const stripH=Math.max(78*S,Math.min(h*.105,116*S));
   const x=18*S,y=h-stripH-18*S,boxW=w-36*S;
-  ctx.fillStyle='rgba(5,21,29,.76)';
+  ctx.fillStyle='rgba(5,21,29,.34)';
   roundRect(ctx,x,y,boxW,stripH,13*S);ctx.fill();
 
   const g=STATE.gps||{};
@@ -221,16 +223,16 @@ async function makeAnnotatedBlob(){
   const colW=boxW/values.length;
   values.forEach(([v,l],i)=>{
     const cx=x+i*colW;
-    if(i){ctx.strokeStyle='rgba(255,255,255,.32)';ctx.lineWidth=1*S;ctx.beginPath();ctx.moveTo(cx,y+15*S);ctx.lineTo(cx,y+stripH-15*S);ctx.stroke()}
+    if(i){ctx.strokeStyle='rgba(255,255,255,.42)';ctx.lineWidth=1*S;ctx.beginPath();ctx.moveTo(cx,y+15*S);ctx.lineTo(cx,y+stripH-15*S);ctx.stroke()}
     ctx.fillStyle='#fff';ctx.textAlign='center';ctx.textBaseline='middle';
-    ctx.font=`600 ${15*S}px Arial,sans-serif`;
-    fitText(ctx,String(v),colW-10*S,15*S);
+    ctx.font=`700 ${19*S}px Arial,sans-serif`;
+    fitText(ctx,String(v),colW-12*S,19*S);
     ctx.fillText(String(v),cx+colW/2,y+stripH*.42);
-    ctx.fillStyle='rgba(255,255,255,.82)';ctx.font=`400 ${10*S}px Arial,sans-serif`;
+    ctx.fillStyle='rgba(255,255,255,.96)';ctx.font=`600 ${13*S}px Arial,sans-serif`;
     ctx.fillText(l,cx+colW/2,y+stripH*.70);
   });
 
-  const blob=await new Promise((res,rej)=>c.toBlob(b=>b?res(b):rej(new Error('Falha ao gerar JPEG.')),'image/jpeg',.94));
+  const blob=await new Promise((res,rej)=>c.toBlob(b=>b?res(b):rej(new Error('Falha ao gerar JPEG.')),'image/jpeg',.98));
   STATE.lastBlob=blob;
   STATE.lastMeta={
     captured_at_utc:new Date().toISOString(),

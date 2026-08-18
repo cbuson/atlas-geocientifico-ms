@@ -18,7 +18,8 @@ async function open(opts={}){
  if(!navigator.mediaDevices?.getUserMedia)throw new Error('MediaDevices/getUserMedia indisponível');
  const attempts=[];
  if(opts.deviceId)attempts.push({video:{deviceId:{exact:opts.deviceId}},audio:false});
- attempts.push({video:{facingMode:{ideal:opts.facingMode||'environment'},width:{ideal:1920},height:{ideal:1080}},audio:false});
+ attempts.push({video:{facingMode:{ideal:opts.facingMode||'environment'},width:{ideal:7680},height:{ideal:4320}},audio:false});
+ attempts.push({video:{facingMode:{ideal:opts.facingMode||'environment'},width:{ideal:4096},height:{ideal:2160}},audio:false});
  attempts.push({video:{facingMode:{ideal:opts.facingMode||'environment'}},audio:false});
  attempts.push({video:true,audio:false});
  let last;
