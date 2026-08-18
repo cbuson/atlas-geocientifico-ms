@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="./assets/css/magnetometro-mapa-v38451.css?v=38.4.51">
 <link rel="stylesheet" href="./assets/css/ondas-sismicas-v38453.css?v=38.4.53">
 <link rel="stylesheet" href="./assets/css/diagrama-rosas-v38454.css?v=38.4.54">
-<link rel="stylesheet" href="./assets/css/bancada-governanca-v38458.css?v=38.4.58"><link rel="stylesheet" href="./assets/css/correlacao-estratigrafica-v1.css?v=1.0.0"><link rel="stylesheet" href="./assets/css/mobile-polish-bancada-r1.css?v=1.0.0"><link rel="stylesheet" href="./assets/css/geocamera-field-data-r1.css?v=1.0.0"><link rel="stylesheet" href="./assets/css/bussola-norte-r5.css?v=1.0.0"><link rel="stylesheet" href="./assets/css/bussola-mobile-r6.css?v=6.13">
+<link rel="stylesheet" href="./assets/css/bancada-governanca-v38458.css?v=38.4.58"><link rel="stylesheet" href="./assets/css/correlacao-estratigrafica-v1.css?v=1.0.0"><link rel="stylesheet" href="./assets/css/mobile-polish-bancada-r1.css?v=1.0.0"><link rel="stylesheet" href="./assets/css/geocamera-field-data-r1.css?v=1.0.0"><link rel="stylesheet" href="./assets/css/bussola-norte-r5.css?v=1.0.0"><link rel="stylesheet" href="./assets/css/bussola-mobile-r6.css?v=6.0">
 <link rel="stylesheet" href="./assets/css/bancada-normalizacao-r9.css?v=9.0">
 </head><body>
 <header><div class="brand"><img class="brand-icon" src="./icons/icon-192.png" alt="Ícone ITA ARANDU MS" width="48" height="48"><div class="brand-copy"><div class="brand-kicker">Infraestrutura científica e docente · versão em desenvolvimento</div><div class="brand-main-row"><div class="brand-main">ITA ARANDU MS</div><span class="ita-version-badge">V38.4.48</span><span class="brand-badge">povos originários</span></div><div class="brand-desc">Atlas geocientífico educativo e científico de Mato Grosso do Sul</div><div class="brand-subdesc">Aprender a ler o território · 250 · 500 · 1000 km² · conhecimentos científicos, locais e ancestrais</div></div></div><div class="head-actions" aria-label="Navegação principal"><button type="button" class="nav-btn active" id="navMapa" data-section="mapa">⌖ Mapa</button><button type="button" class="nav-btn learn" data-modal="aprenderModal" data-section="aprender">◎ Aprender</button><button type="button" class="nav-btn" id="navLayers" data-section="camadas">▦ Camadas</button><button type="button" class="nav-btn" data-modal="campoModal" data-section="campo">⌖ Campo</button><button type="button" class="nav-btn" data-modal="dadosModal" data-section="dados">▥ Dados</button><button type="button" class="nav-btn" id="navFicha" data-section="ficha">▤ Ficha</button><button type="button" class="nav-btn" data-modal="pesquisaModal" data-section="pesquisa">⌕ Pesquisa</button><button type="button" class="nav-btn help" data-modal="ajudaModal" data-section="ajuda">? Ajuda</button><button type="button" class="nav-btn autoria-short" data-modal="autoriaModal" aria-label="Autoria do projeto" title="Autoria do projeto"><span aria-hidden="true">i</span></button></div></header>
@@ -976,60 +976,60 @@
 <section class="ita-lab-panel" data-panel="ajuda"><div class="ita-lab-card prose"><h3>Princípio</h3><p>A ferramenta separa a interpolação linear didática da pré-visualização computacional. O aluno pode verificar primeiro onde uma isolinha cruza o segmento entre dois pontos conhecidos.</p><h3>Limitações</h3><p>Isopiezas dependem da qualidade, densidade, distribuição espacial e simultaneidade dos dados. Uma superfície interpolada não demonstra por si só a geometria real do aquífero.</p><a class="action-btn primary" href="./documentos/metodologia-interpolacao-isopiezas.html" target="_blank" rel="noopener">Abrir metodologia e referências</a></div></section></div></div></div>
 
 <nav class="mobile-nav" aria-label="Navegação principal"><button type="button" id="mMapa" class="active" data-section="mapa"><b>⌖</b>Mapa</button><button type="button" data-modal="aprenderModal" data-section="aprender"><b>◎</b>Aprender</button><button type="button" id="mCamadas" data-section="camadas"><b>▦</b>Camadas</button><button type="button" data-modal="campoModal" data-section="campo"><b>⌖</b>Campo</button><button type="button" data-modal="dadosModal" data-section="dados"><b>▥</b>Dados</button><button type="button" id="mFicha" data-section="ficha"><b>▤</b>Ficha</button><button type="button" data-modal="pesquisaModal" data-section="pesquisa"><b>⌕</b>Pesquisa</button><button type="button" data-modal="ajudaModal" data-section="ajuda"><b>?</b>Ajuda</button></nav>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" onerror="window.__ITA_LEAFLET_PRIMARY_FAILED=true"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" onerror="window.__ITA_LEAFLET_SECONDARY_FAILED=true"></script>
-<script src="./assets/js/map-fallback.js?v=38.4.26"></script>
-<script src="./dados/meta.js?v=38.4.26"></script>
-<script src="./dados/geometria-computacional/registry.js?v=38.4.26"></script>
-<script src="./referencias/referencias.js?v=38.4.26"></script>
-<script src="./dados/registros.js?v=38.4.26"></script>
-<script src="./indices/imc-v32.js?v=38.4.26"></script>
-<script src="./indices/iod-v3848.js?v=38.4.26"></script>
-<script src="./indices/icp-v3849.js?v=38.4.26"></script>
-<script src="./indices/igc-v38410.js?v=38.4.26"></script>
-<script src="./indices/igq-v38411.js?v=38.4.26"></script>
-<script src="./indices/igf-v38412.js?v=38.4.26"></script>
-<script src="./indices/ics-v38413.js?v=38.4.26"></script>
-<script src="./indices/ide-v38415.js?v=38.4.26"></script>
-<script src="./indices/icg-v38417.js?v=38.4.26"></script>
-<script src="./indices/vcg-v38419.js?v=38.4.26"></script>
-<script src="./indices/pig-v38421.js?v=38.4.26"></script>
-<script src="./camadas/catalogo-local.js?v=38.4.45"></script>
 
-<script src="./camadas/proveniencia-snapshots.js?v=38.4.28"></script>
-<script src="./assets/js/proveniencia-v38428.js?v=38.4.40b"></script>
-<script src="./assets/js/app.js?v=38.4.45"></script>
-<script src="./assets/js/campo-sensores.js?v=38.4.37f"></script>
-<script src="./assets/js/camera-core-v38439.js?v=38.4.39"></script>
-<script src="./assets/js/bancada-harmonizada-v38447.js?v=38.4.47"></script>
-<script src="./assets/js/campo-master-v38431.js?v=38.4.31"></script>
-<script src="./assets/js/campo-ux-v38432.js?v=38.4.32"></script>
-<script src="./assets/js/clinometro-visual-v38433.js?v=38.4.33r2"></script>
-<script src="./assets/js/geoetica-care-v38434.js?v=38.4.34"></script>
-<script src="./assets/js/ferramentas-hub-v38435.js?v=38.4.40a"></script>
-<script src="./assets/js/ternario-usda-v38446f.js?v=38.4.46e"></script>
-<script src="./assets/js/macrogeo-v38439.js?v=38.4.39"></script>
-<script src="./assets/js/bussola-nivel-v38436.js?v=38.4.36"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <link rel="stylesheet" href="./assets/css/bussola-arandu-r4.css?v=1.0.0">
-<script src="./assets/js/bussola-arandu-r4.js?v=1.0.0"></script>
-<script>document.addEventListener("DOMContentLoaded",()=>{document.getElementById("campoAbrirBussola")?.addEventListener("click",()=>document.getElementById("abrirBussolaArandu")?.click());document.getElementById("campoAbrirNivel")?.addEventListener("click",()=>document.getElementById("abrirNivelArandu")?.click());});</script>
-<script src="./assets/js/estereograma-calculadora-v38437.js?v=38.4.37"></script>
 
-<script src="./assets/js/saida-campo-v38440.js?v=38.4.40a"></script>
-<script src="./assets/js/bancada-system-v38448.js?v=38.4.48"></script>
-<script src="./assets/js/bancada-educativa-v38449.js?v=38.4.49"></script>
-<script src="./assets/js/magnetometro-amostras-v38450.js?v=38.4.52"></script>
-<script src="./assets/js/magnetometro-mapa-v38451.js?v=38.4.52"></script>
-<script src="./assets/js/ondas-sismicas-v38453.js?v=38.4.53"></script>
-<script src="./assets/js/diagrama-rosas-v38454.js?v=38.4.54"></script>
+
+
+
+
+
+
+
+
+
+
 <link rel="stylesheet" href="./assets/css/rede-estereografica-v38455.css?v=38.4.55">
-<script src="./assets/js/rede-estereografica-v38455.js?v=38.4.55"></script>
+
 <link rel="stylesheet" href="./assets/css/coluna-estratigrafica-v38457.css?v=38.4.57">
-<script src="./assets/js/coluna-estratigrafica-v38457.js?v=38.4.57"></script>
-<script src="./assets/js/licencas-citacao-v38458.js?v=38.4.58"></script><script src="./assets/js/correlacao-estratigrafica-v1.js?v=1.0.0"></script><script src="./assets/js/geocamera-field-data-r1.js?v=1.0.0"></script><script src="./assets/js/bussola-norte-r5.js?v=1.0.0"></script><script src="./assets/js/bussola-mobile-r6.js?v=6.13"></script>
+
+
 <link rel="stylesheet" href="./assets/css/laboratorio-sed-hidro-r8.css?v=1.0.0">
-<script src="./assets/js/laboratorio-sed-hidro-r8.js?v=1.0.0"></script>
-<script src="./assets/js/bancada-normalizacao-r9.js?v=9.0" defer></script>
+
+
 </body></html>
 
 
