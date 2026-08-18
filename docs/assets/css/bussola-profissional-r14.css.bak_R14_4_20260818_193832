@@ -9,8 +9,7 @@
 #bussolaAranduModal .bp14-tab{border:1px solid #c8d8e1;background:#fff;color:#0b4d6a;border-radius:999px;padding:11px 18px;font-weight:800;white-space:nowrap;cursor:pointer;min-height:46px}
 #bussolaAranduModal .bp14-tab.active{background:#0f628f;color:#fff;border-color:#0f628f}
 #bussolaAranduModal .bp14-scroll{overflow-y:auto;overscroll-behavior:contain;padding:16px 18px 22px;flex:1 1 auto;-webkit-overflow-scrolling:touch}
-#bussolaAranduModal .bp14-panel{display:none}
-#bussolaAranduModal .bp14-panel.active{display:block}
+#bussolaAranduModal .bp14-panel{display:none}.bp14-panel.active{display:block}
 #bussolaAranduModal .bp14-status{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
 #bussolaAranduModal .bp14-status .cell,.bp14-card{border:1px solid #d5e1e7;border-radius:16px;background:#fff;padding:12px 14px}
 #bussolaAranduModal .bp14-status small,.bp14-label{display:block;color:#68808c;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
@@ -51,9 +50,3 @@
     display: none !important;
 }
 /* PATCH_BUSSOLA_SEM_X_R14_1_END */
-
-/* R14.4 stable navigation */
-#bussolaAranduModal .bp14-back{border:1px solid #bfd1db;background:#fff;color:#0b4d6a;border-radius:14px;min-height:48px;padding:10px 18px;font-weight:850;font-size:16px;white-space:nowrap;cursor:pointer}
-#bussolaAranduModal .bp14-close{display:none!important}
-#bussolaAranduModal .bp14-scroll{display:block!important;min-height:0!important;flex:1 1 auto!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch}
-@media(max-width:720px){#bussolaAranduModal .bp14-back{min-height:46px;padding:9px 14px}#bussolaAranduModal .bp14-tabs{overflow-x:auto;scrollbar-width:none}#bussolaAranduModal .bp14-tab{white-space:nowrap}}
