@@ -1,7 +1,9 @@
-﻿const ITA_CACHE = 'ita-arandu-bussola-mobile-r6';
+﻿const ITA_CACHE = 'ita-arandu-bancada-responsive-r7';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
+  './assets/css/bancada-responsive-r7.css?v=7.0',
+  './assets/js/bancada-responsive-r7.js?v=7.0',
   './assets/css/bussola-mobile-r6.css?v=6.0',
   './assets/js/bussola-mobile-r6.js?v=6.0',
   "./assets/css/diagrama-rosas-v38454.css?v=38.4.54",
@@ -258,4 +260,5 @@ self.addEventListener('fetch', event => {
     return res;
   })());
 });
+
 

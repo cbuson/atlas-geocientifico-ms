@@ -1,0 +1,348 @@
+/* ITA ARANDU MS · R7 · Harmonização responsiva da Bancada Digital
+   Escopo deliberado: hub, Bússola, Nível, Clinômetro Visual, Rede Estereográfica,
+   Diagrama de Rosas, Calculadora Estrutural e GPS/UTM.
+   NÃO altera Coluna Estratigráfica nem Correlação Estratigráfica. */
+
+:root{
+  --r7-blue:#0b5f8a;
+  --r7-blue-deep:#123f59;
+  --r7-line:#cbdbe3;
+  --r7-soft:#f4f9fb;
+  --r7-text:#163f55;
+  --r7-muted:#667f8d;
+}
+
+/* Navegações estruturais nunca devem quebrar palavras. */
+#estereogramaAranduModal .re-tabs,
+#roseModal .ita-rose-tabs{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  align-items:center!important;
+  gap:8px!important;
+  overflow:visible!important;
+  padding:10px 0 14px!important;
+}
+#estereogramaAranduModal .re-tabs button,
+#roseModal .ita-rose-tabs button{
+  flex:0 0 auto!important;
+  min-width:0!important;
+  width:auto!important;
+  max-width:100%!important;
+  white-space:nowrap!important;
+  word-break:keep-all!important;
+  overflow-wrap:normal!important;
+  hyphens:none!important;
+  line-height:1.15!important;
+  padding:10px 14px!important;
+  border-radius:999px!important;
+}
+
+/* Hub. Todos os instrumentos operacionais devem apresentar uma ação visível. */
+#ferramentasModal .ita-tool-card .ita-tool-actions{
+  display:flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+#ferramentasModal .ita-tool-card .ita-tool-actions .action-btn,
+#ferramentasModal .ita-tool-card .ita-tool-actions .action-btn:not(.primary),
+#ferramentasModal .ita-tool-card [data-tool-action="bussola"],
+#ferramentasModal .ita-tool-card [data-tool-action="nivel"],
+#ferramentasModal .ita-tool-card [data-tool-action="estereograma"],
+#ferramentasModal .ita-tool-card [data-tool-action="calculadora"],
+#ferramentasModal .ita-tool-card [data-tool-action="rosas"],
+#ferramentasModal .ita-tool-card [data-tool-action="clinometro"]{
+  display:inline-flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+
+/* Bússola realista. A escala fica somente na coroa externa. */
+#bussolaAranduModal .ar6-dial{
+  overflow:hidden!important;
+  background:#fff!important;
+}
+#bussolaAranduModal .ar6-ticks{
+  inset:5px!important;
+  opacity:.82!important;
+  -webkit-mask:radial-gradient(circle,transparent 0 89%,#000 89.5% 100%)!important;
+  mask:radial-gradient(circle,transparent 0 89%,#000 89.5% 100%)!important;
+}
+#bussolaAranduModal .ar6-degree{
+  font-size:.72rem!important;
+  font-weight:800!important;
+  color:#173e57!important;
+}
+#bussolaAranduModal .ar6-star{opacity:.10!important;width:36%!important;height:36%!important}
+#bussolaAranduModal .ar6-cardinal{z-index:7!important}
+#bussolaAranduModal .ar6-subcard{z-index:7!important}
+
+/* Melhor leitura do nível sem aumentar ruído gráfico. */
+#nivelAranduModal .ar6-level-stage{
+  background:
+    radial-gradient(circle,#fff 0 17%,#eaf4f7 17.5% 18.5%,#fff 19% 48%,#dce9ef 48.5% 49.5%,#fff 50%)!important;
+  box-shadow:0 8px 22px rgba(18,63,89,.07)!important;
+}
+
+@media(max-width:760px){
+  /* Modais em tela inteira apenas para as ferramentas auditadas. */
+  #ferramentasModal .modal-box,
+  #bussolaAranduModal .modal-box,
+  #nivelAranduModal .modal-box,
+  #clinometroAranduModal .modal-box,
+  #estereogramaAranduModal .modal-box,
+  #calculadoraEstruturalModal .modal-box,
+  #roseModal .modal-box,
+  #gpsEducativoModal .modal-box{
+    width:100vw!important;
+    max-width:100vw!important;
+    height:100dvh!important;
+    max-height:100dvh!important;
+    margin:0!important;
+    border-radius:0!important;
+  }
+
+  /* Cabeçalhos compactos e coerentes. */
+  #ferramentasModal .modal-head,
+  #clinometroAranduModal .modal-head,
+  #estereogramaAranduModal .modal-head,
+  #calculadoraEstruturalModal .modal-head,
+  #roseModal .modal-head,
+  #gpsEducativoModal .modal-head{
+    padding:14px 16px!important;
+    gap:10px!important;
+    min-height:auto!important;
+    align-items:flex-start!important;
+    background:#fff!important;
+  }
+  #ferramentasModal .modal-head h2,
+  #clinometroAranduModal .modal-head h2,
+  #estereogramaAranduModal .modal-head h2,
+  #calculadoraEstruturalModal .modal-head h2,
+  #roseModal .modal-head h2,
+  #gpsEducativoModal .modal-head h2{
+    font-size:1.45rem!important;
+    line-height:1.12!important;
+    margin:4px 0 2px!important;
+    letter-spacing:-.02em!important;
+  }
+  #ferramentasModal .kicker,
+  #clinometroAranduModal .kicker,
+  #estereogramaAranduModal .kicker,
+  #calculadoraEstruturalModal .kicker,
+  #roseModal .kicker,
+  #gpsEducativoModal .kicker{
+    font-size:.72rem!important;
+    line-height:1.25!important;
+    letter-spacing:.12em!important;
+  }
+  #ferramentasModal .close-modal,
+  #clinometroAranduModal .close-modal,
+  #estereogramaAranduModal .close-modal,
+  #calculadoraEstruturalModal .close-modal,
+  #roseModal .close-modal,
+  #gpsEducativoModal .close-modal{
+    flex:0 0 48px!important;
+    width:48px!important;
+    min-width:48px!important;
+    height:48px!important;
+    min-height:48px!important;
+    padding:0!important;
+    border-radius:14px!important;
+    font-size:1.35rem!important;
+  }
+
+  /* HUB mobile. Ícone, texto e botão sempre cabem na mesma ficha. */
+  #ferramentasModal .modal-body{padding:12px!important}
+  #ferramentasModal .ita-tools-headline,
+  #ferramentasModal .ita-tools-principle,
+  #ferramentasModal .ita-tools-context{font-size:.9rem!important;line-height:1.45!important}
+  #ferramentasModal .ita-tools-search{padding:9px 0 11px!important}
+  #ferramentasModal .ita-tools-search>label{font-size:.82rem!important}
+  #ferramentasModal .ita-tools-searchbox{min-height:50px!important;border-radius:14px!important}
+  #ferramentasModal .ita-tools-searchbox input{font-size:1rem!important;min-width:0!important}
+  #ferramentasModal .ita-tools-section>summary{padding:12px!important;min-height:66px!important}
+  #ferramentasModal .ita-tools-section>summary b{font-size:1rem!important}
+  #ferramentasModal .ita-tools-section>summary small{font-size:.84rem!important;line-height:1.35!important}
+  #ferramentasModal .ita-tools-grid{grid-template-columns:1fr!important;padding:10px!important;gap:10px!important}
+  #ferramentasModal .ita-tool-card{
+    display:grid!important;
+    grid-template-columns:62px minmax(0,1fr) 78px!important;
+    grid-template-rows:auto auto!important;
+    grid-template-areas:"icon title action" "icon desc action"!important;
+    column-gap:10px!important;
+    row-gap:3px!important;
+    min-height:126px!important;
+    padding:14px!important;
+    align-items:center!important;
+  }
+  #ferramentasModal .ita-tool-top{grid-area:icon!important;display:block!important;align-self:start!important}
+  #ferramentasModal .ita-tool-icon{width:52px!important;height:52px!important;font-size:1.5rem!important;border-radius:14px!important}
+  #ferramentasModal .ita-tool-status{display:none!important}
+  #ferramentasModal .ita-tool-card h4{grid-area:title!important;margin:0!important;font-size:1.03rem!important;line-height:1.18!important;overflow-wrap:normal!important;word-break:normal!important}
+  #ferramentasModal .ita-tool-card p{grid-area:desc!important;margin:4px 0 0!important;font-size:.91rem!important;line-height:1.4!important;color:#647c88!important}
+  #ferramentasModal .ita-tool-actions{grid-area:action!important;align-self:center!important;justify-self:end!important}
+  #ferramentasModal .ita-tool-actions .action-btn,
+  #ferramentasModal .ita-tool-actions .action-btn:not(.primary){
+    min-width:74px!important;
+    width:74px!important;
+    min-height:48px!important;
+    padding:10px 8px!important;
+    border-radius:13px!important;
+    font-size:.93rem!important;
+    font-weight:850!important;
+    background:var(--r7-blue)!important;
+    border-color:var(--r7-blue)!important;
+    color:#fff!important;
+  }
+
+  /* Rede Estereográfica e Rosas. 2 ou 3 botões por linha, nunca letras verticais. */
+  #estereogramaAranduModal .re-tabs,
+  #roseModal .ita-rose-tabs{
+    position:static!important;
+    display:flex!important;
+    flex-wrap:wrap!important;
+    overflow:visible!important;
+    gap:8px!important;
+    padding:10px 12px 12px!important;
+    margin:0!important;
+    background:#fff!important;
+  }
+  #estereogramaAranduModal .re-tabs button,
+  #roseModal .ita-rose-tabs button{
+    flex:1 1 auto!important;
+    width:auto!important;
+    min-width:92px!important;
+    max-width:100%!important;
+    min-height:44px!important;
+    padding:9px 12px!important;
+    font-size:.88rem!important;
+    line-height:1.15!important;
+    white-space:nowrap!important;
+    word-break:keep-all!important;
+    overflow-wrap:normal!important;
+    hyphens:none!important;
+  }
+  #estereogramaAranduModal .modal-body,
+  #roseModal .modal-body{padding:0 12px 16px!important}
+  #estereogramaAranduModal .re-grid{grid-template-columns:1fr!important;gap:12px!important;padding-top:10px!important}
+  #estereogramaAranduModal .re-card{padding:14px!important;border-radius:15px!important}
+  #estereogramaAranduModal .re-card h3{font-size:1.08rem!important}
+  #estereogramaAranduModal .re-fields label{font-size:.9rem!important}
+  #estereogramaAranduModal .re-fields input,
+  #estereogramaAranduModal .re-fields select,
+  #estereogramaAranduModal .re-fields textarea{font-size:1rem!important;min-height:48px!important}
+  #roseModal .ita-rose-card{border-radius:15px!important}
+  #roseModal .ita-rose-chart-wrap{min-height:330px!important}
+
+  /* Calculadora. Tabs legíveis e campos em uma coluna. */
+  #calculadoraEstruturalModal .ita-calc-tabs{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:8px!important;
+  }
+  #calculadoraEstruturalModal .ita-calc-tabs button{
+    flex:1 1 145px!important;
+    min-height:44px!important;
+    white-space:normal!important;
+    word-break:normal!important;
+    line-height:1.2!important;
+  }
+  #calculadoraEstruturalModal .field-grid.two{grid-template-columns:1fr!important}
+  #calculadoraEstruturalModal .ita-struct-body{padding:12px!important}
+
+  /* Clinômetro. Mantém instrumento, reduz excesso no topo e melhora ações. */
+  #clinometroAranduModal .ita-clino-root{padding:12px!important}
+  #clinometroAranduModal .ita-clino-note{font-size:.88rem!important;line-height:1.45!important}
+  #clinometroAranduModal .ita-clino-modes{display:flex!important;flex-wrap:wrap!important;gap:8px!important}
+  #clinometroAranduModal .ita-clino-modes button,
+  #clinometroAranduModal .ita-clino-modes .action-btn{white-space:nowrap!important;min-height:44px!important;font-size:.86rem!important}
+  #clinometroAranduModal .ita-clino-controls{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important}
+  #clinometroAranduModal .ita-clino-controls .action-btn{min-height:46px!important;font-size:.9rem!important}
+  #clinometroAranduModal .ita-clino-live{grid-template-columns:1fr 1fr!important}
+
+  /* GPS. Cabeçalho deixa de ocupar quase meia tela. */
+  #gpsEducativoModal .modal-head{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    align-items:start!important;
+  }
+  #gpsEducativoModal .ita49-head-actions{
+    display:grid!important;
+    grid-template-columns:auto auto!important;
+    gap:7px!important;
+    justify-content:end!important;
+    align-items:start!important;
+  }
+  #gpsEducativoModal .ita49-head-actions .ita49-btn{
+    min-height:42px!important;
+    padding:8px 10px!important;
+    font-size:.82rem!important;
+    white-space:nowrap!important;
+  }
+  #gpsEducativoModal .ita49-head-actions .close-modal,
+  #gpsEducativoModal #gps49Close{
+    grid-column:2!important;
+    grid-row:1 / span 2!important;
+    width:44px!important;
+    min-width:44px!important;
+    height:44px!important;
+    min-height:44px!important;
+  }
+  #gpsEducativoModal .modal-body{padding:12px!important}
+  #gpsEducativoModal .ita49-gps-intro{padding:12px 14px!important;font-size:.91rem!important;line-height:1.5!important}
+  #gpsEducativoModal .ita49-gps-map{height:33vh!important;min-height:245px!important}
+  #gpsEducativoModal .ita49-gps-grid{grid-template-columns:1fr 1fr!important;gap:9px!important}
+  #gpsEducativoModal .ita49-gps-value{min-width:0!important;padding:11px!important}
+  #gpsEducativoModal .ita49-gps-value span{font-size:.72rem!important}
+  #gpsEducativoModal .ita49-gps-value b{font-size:.95rem!important;overflow-wrap:anywhere!important}
+  #gpsEducativoModal .ita49-gps-actions{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important}
+  #gpsEducativoModal .ita49-gps-actions .ita49-btn{min-height:46px!important;font-size:.86rem!important}
+  #gpsEducativoModal .ita49-gps-actions .ita49-btn:first-child{grid-column:1/-1!important}
+
+  /* Bússola. Instrumento domina a primeira dobra e mantém valores legíveis. */
+  #bussolaAranduModal .ar6-head,
+  #nivelAranduModal .ar6-head{padding:13px 15px!important}
+  #bussolaAranduModal .ar6-head h2,
+  #nivelAranduModal .ar6-head h2{font-size:1.42rem!important}
+  #bussolaAranduModal .ar6-body,
+  #nivelAranduModal .ar6-body{padding:10px!important;gap:10px!important}
+  #bussolaAranduModal .ar6-tabs,
+  #nivelAranduModal .ar6-tabs{gap:4px!important;padding:7px 8px!important;overflow-x:auto!important}
+  #bussolaAranduModal .ar6-tabs button,
+  #nivelAranduModal .ar6-tabs button{font-size:.84rem!important;padding:10px 11px!important;white-space:nowrap!important}
+  #bussolaAranduModal .ar6-reference{padding:2px 4px!important}
+  #bussolaAranduModal .ar6-dial{width:min(92vw,390px)!important}
+  #bussolaAranduModal .ar6-degree{
+    font-size:.66rem!important;
+    transform:rotate(var(--a)) translateY(calc(-1 * min(41.5vw,176px))) rotate(calc(-1 * var(--a)))!important;
+  }
+  #bussolaAranduModal .ar6-readings{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+  #bussolaAranduModal .ar6-reading{min-width:0!important;padding:5px 5px!important}
+  #bussolaAranduModal .ar6-reading small{font-size:.66rem!important}
+  #bussolaAranduModal .ar6-reading strong{font-size:1.8rem!important}
+  #bussolaAranduModal .ar6-reading em{font-size:.78rem!important}
+  #bussolaAranduModal .ar6-quality{font-size:.88rem!important;text-align:center!important}
+  #bussolaAranduModal .ar6-actions{grid-template-columns:repeat(3,1fr)!important;gap:7px!important}
+  #bussolaAranduModal .ar6-btn{font-size:.82rem!important;min-height:44px!important}
+  #bussolaAranduModal .ar6-save{font-size:1rem!important;min-height:50px!important}
+  #nivelAranduModal .ar6-level-stage{width:min(84vw,360px)!important}
+}
+
+@media(max-width:420px){
+  #ferramentasModal .ita-tool-card{grid-template-columns:54px minmax(0,1fr) 72px!important;padding:12px!important}
+  #ferramentasModal .ita-tool-icon{width:46px!important;height:46px!important}
+  #ferramentasModal .ita-tool-actions .action-btn,
+  #ferramentasModal .ita-tool-actions .action-btn:not(.primary){width:70px!important;min-width:70px!important;font-size:.88rem!important}
+  #estereogramaAranduModal .re-tabs button,
+  #roseModal .ita-rose-tabs button{min-width:84px!important;font-size:.84rem!important;padding:9px 10px!important}
+  #gpsEducativoModal .modal-head{grid-template-columns:1fr!important}
+  #gpsEducativoModal .ita49-head-actions{grid-template-columns:1fr 1fr auto!important;width:100%!important;justify-content:stretch!important}
+  #gpsEducativoModal .ita49-head-actions .ita49-btn{width:100%!important}
+  #gpsEducativoModal .ita49-head-actions .close-modal,
+  #gpsEducativoModal #gps49Close{grid-column:3!important;grid-row:1!important}
+  #bussolaAranduModal .ar6-ref small{font-size:.68rem!important}
+  #bussolaAranduModal .ar6-delta{font-size:.82rem!important}
+  #bussolaAranduModal .ar6-reading strong{font-size:1.58rem!important}
+}
