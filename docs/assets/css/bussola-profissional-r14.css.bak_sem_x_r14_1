@@ -44,9 +44,3 @@
  #bussolaAranduModal .bp14-info-grid{grid-template-columns:1fr 1fr}.bp14-north-grid{grid-template-columns:1fr}
  #bussolaAranduModal .bp14-actions .bp14-btn{flex:1 1 42%}
 }
-
-/* PATCH_BUSSOLA_SEM_X_R14_1_START */
-#bussolaAranduModal .bp14-close {
-    display: none !important;
-}
-/* PATCH_BUSSOLA_SEM_X_R14_1_END */
