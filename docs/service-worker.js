@@ -1,9 +1,11 @@
-﻿const ITA_CACHE = 'ita-arandu-bancada-responsive-r7';
+﻿const ITA_CACHE = 'ita-arandu-bancada-r9';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
-const ITA_CORE = [
-  './assets/css/bancada-responsive-r7.css?v=7.0',
-  './assets/js/bancada-responsive-r7.js?v=7.0',
+const ITA_CORE = [`r`n  "./assets/css/bancada-normalizacao-r9.css?v=9.0",`r`n  "./assets/js/bancada-normalizacao-r9.js?v=9.0",
+  './assets/css/laboratorio-sed-hidro-r8.css?v=1.0.0',
+  './assets/js/laboratorio-sed-hidro-r8.js?v=1.0.0',
+  './documentos/metodologia-analise-granulometrica.html',
+  './documentos/metodologia-interpolacao-isopiezas.html',
   './assets/css/bussola-mobile-r6.css?v=6.0',
   './assets/js/bussola-mobile-r6.js?v=6.0',
   "./assets/css/diagrama-rosas-v38454.css?v=38.4.54",
