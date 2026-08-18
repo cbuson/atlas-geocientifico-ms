@@ -1,0 +1,82 @@
+/* ITA ARANDU MS · GeoCâmera · dados de campo R1 */
+#geocameraModal .ita-geocamera-view{
+  position:relative!important;
+  background:#eef3f5!important;
+}
+#geocameraModal .geo-field-brand{
+  position:absolute;z-index:8;left:10px;top:10px;
+  display:grid;grid-template-columns:40px auto 42px;align-items:center;gap:8px;
+  color:#fff;background:rgba(3,24,36,.54);backdrop-filter:blur(4px);
+  border:1px solid rgba(255,255,255,.22);border-radius:10px;padding:7px 9px;
+  pointer-events:none;
+}
+#geocameraModal .geo-field-hex{
+  width:38px;height:38px;background:#073b63;color:#fff;clip-path:polygon(25% 6.7%,75% 6.7%,100% 50%,75% 93.3%,25% 93.3%,0 50%);
+  display:grid;place-items:center;position:relative;
+}
+#geocameraModal .geo-field-hex:after{
+  content:"";position:absolute;inset:4px;clip-path:inherit;border:1px solid #fff;
+}
+#geocameraModal .geo-field-hex span{font:700 29px Georgia,serif;line-height:1;z-index:1}
+#geocameraModal .geo-field-brand-copy{display:flex;flex-direction:column;min-width:0}
+#geocameraModal .geo-field-brand-copy b{font-size:11px;line-height:1.15;white-space:nowrap}
+#geocameraModal .geo-field-brand-copy small{font-size:8px;line-height:1.25;max-width:160px}
+#geocameraModal .geo-field-ms{width:39px;height:39px;filter:brightness(0) invert(1);opacity:.92}
+#geocameraModal .geo-field-gps{
+  position:absolute;z-index:8;right:10px;top:10px;color:#fff;background:rgba(3,24,36,.67);
+  border-radius:999px;padding:7px 10px;font-size:10px;font-weight:800;display:flex;align-items:center;gap:6px;
+  pointer-events:none;
+}
+#geocameraModal .geo-field-gps span{width:8px;height:8px;border-radius:50%;background:#8b9499}
+#geocameraModal .geo-field-gps.active span{background:#20b95a}
+#geocameraModal .geo-field-strip{
+  position:absolute;z-index:9;left:10px;right:10px;bottom:10px;
+  display:grid;grid-template-columns:repeat(7,minmax(0,1fr));
+  color:#fff;background:rgba(3,18,27,.74);backdrop-filter:blur(5px);
+  border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:7px 4px;
+  pointer-events:none;
+}
+#geocameraModal .geo-field-strip>div{
+  min-width:0;text-align:center;padding:0 5px;border-left:1px solid rgba(255,255,255,.28);
+  display:flex;flex-direction:column;justify-content:center;
+}
+#geocameraModal .geo-field-strip>div:first-child{border-left:0}
+#geocameraModal .geo-field-strip b{font-size:10px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#geocameraModal .geo-field-strip small{font-size:7.5px;line-height:1.15;opacity:.83;margin-top:2px}
+#geocameraModal .ita-geocamera-hud[hidden]{display:none!important}
+
+@media(max-width:720px){
+  #geocameraModal .ita-geocamera-view{
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    aspect-ratio:var(--geo-camera-ratio,4 / 3)!important;
+    border-radius:12px!important;
+    overflow:hidden!important;
+  }
+  #geocameraModal .ita-geocamera-view video,
+  #geocameraModal .ita-geocamera-view canvas{
+    position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+    object-fit:cover!important;object-position:center!important;background:transparent!important;
+  }
+  #geocameraModal .geo-field-brand{
+    left:7px;top:7px;padding:5px 6px;grid-template-columns:31px auto 31px;gap:5px;border-radius:8px;
+  }
+  #geocameraModal .geo-field-hex{width:30px;height:30px}
+  #geocameraModal .geo-field-hex span{font-size:22px}
+  #geocameraModal .geo-field-brand-copy b{font-size:9px}
+  #geocameraModal .geo-field-brand-copy small{font-size:6.5px;max-width:105px}
+  #geocameraModal .geo-field-ms{width:29px;height:29px}
+  #geocameraModal .geo-field-gps{right:7px;top:7px;padding:5px 7px;font-size:8px}
+  #geocameraModal .geo-field-strip{left:6px;right:6px;bottom:6px;padding:5px 2px;border-radius:9px}
+  #geocameraModal .geo-field-strip>div{padding:0 2px}
+  #geocameraModal .geo-field-strip b{font-size:8px}
+  #geocameraModal .geo-field-strip small{font-size:6.5px}
+}
+@media(max-width:430px){
+  #geocameraModal .geo-field-brand-copy small{display:none}
+  #geocameraModal .geo-field-strip{grid-template-columns:repeat(7,minmax(0,1fr))}
+  #geocameraModal .geo-field-strip b{font-size:7.5px}
+  #geocameraModal .geo-field-strip small{font-size:6px}
+}
