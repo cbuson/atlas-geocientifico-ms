@@ -4,7 +4,6 @@ const $=id=>document.getElementById(id);
 const qa=(s,r=document)=>[...r.querySelectorAll(s)];
 const S={sensor:null,window:[],kind:null};
 const rad=d=>d*Math.PI/180,deg=r=>r*180/Math.PI,norm=a=>((a%360)+360)%360;
-const declinationValue=()=>{const el=$('bussolaDeclinacao');if(!el)return null;const raw=String(el.value??'').trim();if(raw==='')return null;const n=Number(raw);return Number.isFinite(n)?n:null};
 const mean=a=>{const v=a.filter(Number.isFinite);return v.length?v.reduce((x,y)=>x+y,0)/v.length:null};
 const sd=a=>{const v=a.filter(Number.isFinite),m=mean(v);return v.length>1?Math.sqrt(v.reduce((s,x)=>s+(x-m)**2,0)/(v.length-1)):null};
 const circMean=a=>{const v=a.filter(Number.isFinite);if(!v.length)return null;return norm(deg(Math.atan2(mean(v.map(x=>Math.sin(rad(x)))),mean(v.map(x=>Math.cos(rad(x)))))))};
@@ -77,7 +76,7 @@ function quality(kind){
 }
 function renderCompass(){
  if(!$('bussolaHeading'))return;
- const q=quality('compass'),h=S.sensor?.heading,decl=declinationValue(),trueH=Number.isFinite(h)&&Number.isFinite(decl)?norm(h+decl):null;
+ const q=quality('compass'),h=S.sensor?.heading,decl=Number($('bussolaDeclinacao')?.value),trueH=Number.isFinite(h)&&Number.isFinite(decl)?norm(h+decl):null;
  $('bussolaHeading').textContent=Number.isFinite(h)?h.toFixed(1)+'°':'—';
  $('bussolaReferencia').textContent=S.sensor?.absolute?'absoluta / magnética':'relativa / não confiável para norte';
  $('bussolaFonte').textContent=S.sensor?.source||'—';
@@ -110,10 +109,8 @@ function fillMeasure(data){
 }
 function addCompass(){
  const h=S.sensor?.heading;if(!Number.isFinite(h)){alert('Ative os sensores antes de registrar.');return}
- const decl=declinationValue(),dir=Number.isFinite(decl)?norm(h+decl):h,q=quality('compass'),disp=circSd(S.window.map(x=>x.heading));
- const trueHeading=Number.isFinite(decl)?norm(h+decl):null;
- const precision=[`referencia=${S.sensor.absolute?'absoluta':'relativa'}`,`azimute_magnetico=${h.toFixed(2)}°`,`declinacao=${Number.isFinite(decl)?decl.toFixed(2)+'°':'NA'}`,`azimute_geografico=${Number.isFinite(trueHeading)?trueHeading.toFixed(2)+'°':'NA'}`,`dispersao=${Number.isFinite(disp)?disp.toFixed(2):'NA'}°`,`qualidade=${q.label}`].join('; ');
- const ok=fillMeasure({direction:dir,dip:'',method:Number.isFinite(decl)?'bussola_sensor_com_declinação_manual':'bussola_sensor_dispositivo',instrument:'ITA ARANDU · DeviceOrientationEvent',precision});
+ const decl=Number($('bussolaDeclinacao')?.value),dir=Number.isFinite(decl)?norm(h+decl):h,q=quality('compass'),disp=circSd(S.window.map(x=>x.heading));
+ const ok=fillMeasure({direction:dir,dip:'',method:Number.isFinite(decl)?'bussola_sensor_com_declinação_manual':'bussola_sensor_dispositivo',instrument:'ITA ARANDU · DeviceOrientationEvent',precision:`referencia=${S.sensor.absolute?'absoluta':'relativa'}; dispersao=${Number.isFinite(disp)?disp.toFixed(2):'NA'}°; qualidade=${q.label}`});
  $('bussolaStatus').textContent=ok?'Azimute adicionado como medida auxiliar no Caderno.':'Abra uma estação do Campo para adicionar a medida.';
 }
 function addLevel(){
@@ -136,5 +133,5 @@ function wire(){
  $('nivelAdicionarCampo')?.addEventListener('click',addLevel);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',wire,{once:true});else wire();
-window.ITA_BUSSOLA_NIVEL={version:'1.1',flatHeading,compassHeading,planeTilt,quality,declinationValue};
+window.ITA_BUSSOLA_NIVEL={version:'1.0',flatHeading,compassHeading,planeTilt,quality};
 })();

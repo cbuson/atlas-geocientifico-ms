@@ -1,0 +1,23 @@
+/* ITA ARANDU MS · Bancada Mobile R3 */
+@media(max-width:780px){
+  .re-tabs,.ita-rose-tabs{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;gap:8px!important;padding:10px 2px 12px!important;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .re-tabs::-webkit-scrollbar,.ita-rose-tabs::-webkit-scrollbar{display:none}
+  .re-tabs button,.ita-rose-tabs button{flex:0 0 auto!important;width:auto!important;min-width:max-content!important;white-space:nowrap!important;word-break:normal!important;overflow-wrap:normal!important;line-height:1.15!important;padding:10px 14px!important;border-radius:999px!important;font-size:14px!important;scroll-snap-align:start}
+  .ita-tools-grid .ita-tool-card{grid-template-columns:72px minmax(0,1fr) auto!important;grid-template-areas:'top title action' 'top text action'!important;overflow:visible!important}
+  .ita-tools-grid .ita-tool-card .ita-tool-actions{display:flex!important;grid-area:action!important;min-width:76px!important;justify-content:flex-end!important}
+  .ita-tools-grid .ita-tool-card .ita-tool-actions .action-btn.primary,.ita-tools-grid .ita-tool-card .ita-tool-actions button:first-child{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-width:76px!important;white-space:nowrap!important}
+  .ita-tools-grid .ita-tool-card h4,.ita-tools-grid .ita-tool-card p{word-break:normal!important;overflow-wrap:normal!important}
+  .ita-sensor-modal .ita-sensor-panel{grid-template-columns:1fr!important;gap:14px!important}
+  .ita-generated-tool .ita-compass-dial,.ita-generated-tool .ita-level-stage{width:min(78vw,340px)!important;max-width:340px!important;margin:4px auto!important}
+  .ita-sensor-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .ita-sensor-controls{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important}
+  .ita-sensor-controls .action-btn{min-height:48px!important;font-size:14px!important}
+  .ita-big-reading{text-align:center!important;margin:4px 0 10px!important}
+  .ita-big-reading b{font-size:clamp(2.6rem,14vw,4.5rem)!important;line-height:1!important}
+  .ita-big-reading small{display:block!important;margin-top:5px!important;font-size:12px!important}
+}
+/* instrumento limpo e legível */
+.ita-compass-dial{box-shadow:inset 0 0 0 10px #f4f8fa,0 8px 26px rgba(15,61,84,.10)!important;background:repeating-conic-gradient(from -1deg,#d5e1e7 0 1deg,transparent 1deg 10deg),radial-gradient(circle,#fff 0 62%,#f2f7f9 63% 100%)!important}
+.ita-compass-needle{width:6px!important;background:linear-gradient(to bottom,#b92323 0 50%,#244f66 50% 100%)!important;box-shadow:0 1px 4px rgba(0,0,0,.22)}
+.ita-compass-center{width:18px!important;height:18px!important;background:#fff!important;border:5px solid #174c69!important;box-shadow:0 2px 6px rgba(0,0,0,.18)!important}
+.ita-level-stage{box-shadow:inset 0 0 0 10px #f4f8fa,0 8px 26px rgba(15,61,84,.10)!important}
