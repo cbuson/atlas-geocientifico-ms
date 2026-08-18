@@ -1,9 +1,7 @@
-﻿const ITA_CACHE = 'ita-arandu-bussola-mobile-r6';
+const ITA_CACHE = 'ita-arandu-v38-4-58-governanca-bibliografia';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
-  './assets/css/bussola-mobile-r6.css?v=6.0',
-  './assets/js/bussola-mobile-r6.js?v=6.0',
   "./assets/css/diagrama-rosas-v38454.css?v=38.4.54",
   "./assets/js/diagrama-rosas-v38454.js?v=38.4.54",
   "./documentos/metodologia-diagrama-rosas.html",
@@ -258,4 +256,3 @@ self.addEventListener('fetch', event => {
     return res;
   })());
 });
-
