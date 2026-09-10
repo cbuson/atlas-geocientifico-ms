@@ -1,9 +1,9 @@
 {
   "audit": "V38.4.12 IGF final",
-  "status": "PASS",
+  "status": "FAIL",
   "checks_total": 71,
-  "checks_pass": 71,
-  "checks_fail": 0,
+  "checks_pass": 57,
+  "checks_fail": 14,
   "checks": [
     {
       "name": "version_file",
@@ -12,8 +12,8 @@
     },
     {
       "name": "version_exact",
-      "pass": true,
-      "detail": "V38.4.12-IGF-CONHECIMENTO-GEOFISICO-20260814"
+      "pass": false,
+      "detail": "V38.4.46C-BANCADA-TERNARIO-NAVEGACAO-ROBUSTA-1.0-20260816"
     },
     {
       "name": "exists_docs/indices/igf_v38412_snapshot.json",
@@ -202,37 +202,37 @@
     },
     {
       "name": "index_script",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_cache_version",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_igf_script",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_aero_source",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_grav_source",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_mt_source",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_method",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
@@ -283,7 +283,7 @@
     {
       "name": "bibliography_reference_count_preserved",
       "pass": true,
-      "detail": "176"
+      "detail": "238"
     },
     {
       "name": "bibliography_igf_250",
@@ -317,32 +317,32 @@
     },
     {
       "name": "method_apa7",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "method_ref100",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "method_ref101",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "method_ref102",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "method_sensitivity",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "method_limit",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {

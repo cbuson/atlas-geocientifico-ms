@@ -1,0 +1,776 @@
+/*
+ITA ARANDU MS · V39.1.0
+Sistema comum da Bancada Digital
+Camada final de contrato visual. Não altera cálculos nem dados científicos.
+*/
+
+:root{
+  --ita-bd-bg:#f4f8fb;
+  --ita-bd-surface:#ffffff;
+  --ita-bd-ink:#17384d;
+  --ita-bd-muted:#587183;
+  --ita-bd-primary:#075985;
+  --ita-bd-primary-strong:#06466a;
+  --ita-bd-border:#c8d8e3;
+  --ita-bd-focus:#f59e0b;
+  --ita-bd-success:#19733d;
+  --ita-bd-warning:#985d00;
+  --ita-bd-danger:#a12c2c;
+  --ita-bd-radius-sm:10px;
+  --ita-bd-radius:14px;
+  --ita-bd-radius-lg:20px;
+  --ita-bd-shadow:0 18px 48px rgba(7,59,99,.18);
+  --ita-bd-touch:44px;
+  --ita-bd-content:1180px;
+}
+
+.ita-bancada-tool{
+  color:var(--ita-bd-ink);
+}
+
+.ita-bancada-tool > .modal-box,
+.ita-bancada-tool .ita48-tool-modal{
+  width:min(var(--ita-bd-content),calc(100vw - 24px));
+  max-height:min(94dvh,980px);
+  overflow:hidden;
+  border:1px solid var(--ita-bd-border);
+  border-radius:var(--ita-bd-radius-lg);
+  background:var(--ita-bd-surface);
+  box-shadow:var(--ita-bd-shadow);
+}
+
+.ita-bancada-tool .modal-head{
+  min-height:76px;
+  padding:14px clamp(14px,2.2vw,24px);
+  gap:14px;
+  border-bottom:1px solid var(--ita-bd-border);
+  background:linear-gradient(135deg,#f8fbfd,#edf5fa);
+}
+
+.ita-bancada-tool .modal-head h2{
+  margin:2px 0 0;
+  color:var(--ita-bd-ink);
+  font-size:clamp(1.22rem,1.05rem + .7vw,1.65rem);
+  line-height:1.18;
+}
+
+.ita-bancada-tool .kicker{
+  color:var(--ita-bd-primary);
+  font-size:.76rem;
+  font-weight:850;
+  letter-spacing:.055em;
+  text-transform:uppercase;
+}
+
+.ita-bancada-tool .modal-body{
+  min-height:0;
+  overflow:auto;
+  overscroll-behavior:contain;
+  padding:clamp(14px,2.4vw,26px);
+  background:var(--ita-bd-bg);
+  scrollbar-gutter:stable;
+}
+
+.ita-bancada-tool button,
+.ita-bancada-tool .action-btn,
+.ita-bancada-tool input,
+.ita-bancada-tool select,
+.ita-bancada-tool textarea{
+  min-height:var(--ita-bd-touch);
+  font-size:max(1rem,16px);
+}
+
+.ita-bancada-tool button,
+.ita-bancada-tool .action-btn{
+  border-radius:var(--ita-bd-radius-sm);
+}
+
+.ita-bancada-tool .action-btn.primary,
+.ita-bancada-tool button.primary{
+  border-color:var(--ita-bd-primary);
+  background:var(--ita-bd-primary);
+  color:#fff;
+}
+
+.ita-bancada-tool .close-modal,
+.ita-bancada-tool .ita-tool-back,
+.ita-bancada-tool .ita49-btn,
+.ita-bancada-tool [class*="Back"],
+.ita-bancada-tool [id$="Back"]{
+  min-width:var(--ita-bd-touch);
+  min-height:var(--ita-bd-touch);
+}
+
+.ita-bancada-tool :focus-visible{
+  outline:3px solid var(--ita-bd-focus);
+  outline-offset:3px;
+}
+
+.ita-tool-card{
+  min-width:0;
+  border:1px solid var(--ita-bd-border);
+  border-radius:var(--ita-bd-radius);
+  background:var(--ita-bd-surface);
+}
+
+.ita-tool-card h4{
+  color:var(--ita-bd-ink);
+  font-size:1.05rem;
+  line-height:1.3;
+}
+
+.ita-tool-card p{
+  color:var(--ita-bd-muted);
+  font-size:.94rem;
+  line-height:1.55;
+}
+
+.ita-tool-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:auto;
+}
+
+.ita-tool-actions > *{
+  min-height:var(--ita-bd-touch);
+}
+
+.ita-tool-status{
+  line-height:1.25;
+  white-space:normal;
+}
+
+.ita-bd-sr-status{
+  position:fixed;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+}
+
+body.ita-bd-modal-open{
+  overflow:hidden;
+}
+
+@media(max-width:720px){
+  .ita-bancada-tool{
+    padding:0;
+    align-items:stretch;
+  }
+
+  .ita-bancada-tool > .modal-box,
+  .ita-bancada-tool .ita48-tool-modal{
+    width:100vw;
+    height:100dvh;
+    max-height:100dvh;
+    border:0;
+    border-radius:0;
+  }
+
+  .ita-bancada-tool .modal-head{
+    position:sticky;
+    top:0;
+    z-index:20;
+    min-height:68px;
+    padding:10px 12px;
+    padding-top:max(10px,env(safe-area-inset-top));
+  }
+
+  .ita-bancada-tool .modal-head h2{
+    font-size:1.2rem;
+  }
+
+  .ita-bancada-tool .modal-body{
+    padding:14px 12px max(20px,env(safe-area-inset-bottom));
+  }
+
+  .ita-tool-actions > *{
+    flex:1 1 132px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .ita-bancada-tool *,
+  .ita-bancada-tool *::before,
+  .ita-bancada-tool *::after{
+    scroll-behavior:auto;
+    animation-duration:.01ms;
+    animation-iteration-count:1;
+    transition-duration:.01ms;
+  }
+}
+
+/* V39.1 · migração visual real da Bancada Digital */
+:root{
+  --ita-bd-navy:#073b63;
+  --ita-bd-blue:#0b5f91;
+  --ita-bd-blue-soft:#eaf4fa;
+  --ita-bd-cyan:#80d4ed;
+  --ita-bd-canvas:#edf4f8;
+  --ita-bd-panel:#ffffff;
+  --ita-bd-line:#bfd2de;
+  --ita-bd-text:#15394e;
+  --ita-bd-subtle:#526f7f;
+}
+
+/* Hub comum */
+#ferramentasModal.ita-bancada-hub{
+  padding:20px!important;
+  background:rgba(2,24,39,.72)!important;
+  backdrop-filter:blur(7px);
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-hub-box{
+  width:min(1220px,calc(100vw - 40px))!important;
+  max-width:1220px!important;
+  height:min(94dvh,960px)!important;
+  max-height:94dvh!important;
+  overflow:hidden!important;
+  display:flex!important;
+  flex-direction:column!important;
+  border:1px solid rgba(255,255,255,.32)!important;
+  border-radius:24px!important;
+  background:var(--ita-bd-panel)!important;
+  box-shadow:0 28px 90px rgba(0,21,36,.38)!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-hub-head{
+  flex:0 0 auto!important;
+  min-height:104px!important;
+  padding:20px 24px!important;
+  color:#fff!important;
+  background:linear-gradient(120deg,var(--ita-bd-navy),#0a5683 72%,#08749b)!important;
+  border:0!important;
+  box-shadow:inset 0 -1px rgba(255,255,255,.14)!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-hub-head .kicker{
+  color:#bfeeff!important;
+  font-size:12px!important;
+  letter-spacing:.12em!important;
+  font-weight:800!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-hub-head h2{
+  margin:5px 0 0!important;
+  color:#fff!important;
+  font-size:clamp(25px,3vw,34px)!important;
+  line-height:1.12!important;
+  font-weight:800!important;
+}
+
+.ita-bd-hub-badge{
+  display:inline-flex;
+  align-items:center;
+  min-height:24px;
+  margin-top:9px;
+  padding:3px 9px;
+  border:1px solid rgba(255,255,255,.34);
+  border-radius:999px;
+  color:#fff;
+  background:rgba(255,255,255,.12);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.06em;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-close,
+body .modal.ita-bancada-tool .ita-bd-close{
+  width:46px!important;
+  min-width:46px!important;
+  height:46px!important;
+  min-height:46px!important;
+  padding:0!important;
+  border:1px solid rgba(255,255,255,.42)!important;
+  border-radius:13px!important;
+  color:#fff!important;
+  background:rgba(255,255,255,.12)!important;
+  font-size:27px!important;
+  line-height:1!important;
+  box-shadow:none!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-close:hover,
+body .modal.ita-bancada-tool .ita-bd-close:hover{
+  background:rgba(255,255,255,.22)!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-hub-body{
+  flex:1 1 auto!important;
+  min-height:0!important;
+  overflow:auto!important;
+  padding:22px 24px 30px!important;
+  background:var(--ita-bd-canvas)!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-tools-headline p{
+  margin:0 0 14px!important;
+  color:var(--ita-bd-text)!important;
+  font-size:16px!important;
+  line-height:1.5!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-tools-principle{
+  padding:14px 16px!important;
+  gap:12px!important;
+  border:1px solid #a9cbdc!important;
+  border-left:5px solid var(--ita-bd-blue)!important;
+  border-radius:14px!important;
+  color:#284e63!important;
+  background:#f8fcfe!important;
+  font-size:14px!important;
+  line-height:1.5!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-tools-principle b{
+  color:var(--ita-bd-navy)!important;
+  font-size:14px!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-tools-search{
+  top:0!important;
+  margin:14px -4px 12px!important;
+  padding:10px 4px 12px!important;
+  background:rgba(237,244,248,.97)!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-tools-search>label{
+  margin-bottom:7px!important;
+  color:var(--ita-bd-text)!important;
+  font-size:14px!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-tools-searchbox{
+  min-height:52px!important;
+  padding:0 14px!important;
+  border:2px solid #a9c3d2!important;
+  border-radius:14px!important;
+  box-shadow:0 4px 14px rgba(16,70,99,.07)!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-tools-searchbox input{
+  min-height:50px!important;
+  color:var(--ita-bd-text)!important;
+  font-size:16px!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-tools-sections{
+  gap:13px!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-section{
+  overflow:hidden!important;
+  border:1px solid var(--ita-bd-line)!important;
+  border-radius:16px!important;
+  background:var(--ita-bd-panel)!important;
+  box-shadow:0 5px 18px rgba(18,67,93,.07)!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-section>summary{
+  min-height:66px!important;
+  padding:12px 16px!important;
+  border-bottom:0!important;
+  color:var(--ita-bd-text)!important;
+  background:linear-gradient(90deg,#fff,#f2f8fb)!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-section[open]>summary{
+  border-bottom:1px solid var(--ita-bd-line)!important;
+  background:var(--ita-bd-blue-soft)!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-section>summary b{
+  font-size:16px!important;
+  line-height:1.25!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-section>summary small{
+  color:var(--ita-bd-subtle)!important;
+  font-size:13px!important;
+  line-height:1.35!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-tools-count{
+  min-width:28px!important;
+  padding:5px 9px!important;
+  color:var(--ita-bd-navy)!important;
+  background:#fff!important;
+  border:1px solid #9dbdce!important;
+  font-size:11px!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-tools-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:14px!important;
+  padding:16px!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-card{
+  min-height:232px!important;
+  padding:16px!important;
+  border:1px solid #b8cdd9!important;
+  border-top:4px solid var(--ita-bd-blue)!important;
+  border-radius:15px!important;
+  background:#fff!important;
+  box-shadow:0 5px 16px rgba(15,63,88,.07)!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 24px rgba(15,63,88,.13)!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-tool-icon{
+  width:46px!important;
+  height:46px!important;
+  border:1px solid #a8c7d7!important;
+  border-radius:13px!important;
+  color:var(--ita-bd-navy)!important;
+  background:var(--ita-bd-blue-soft)!important;
+  font-size:23px!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-tool-status{
+  min-height:25px!important;
+  padding:4px 8px!important;
+  font-size:10px!important;
+  line-height:1.2!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-card h4{
+  margin:13px 0 7px!important;
+  color:var(--ita-bd-text)!important;
+  font-size:17px!important;
+  line-height:1.3!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-card p{
+  margin:0 0 14px!important;
+  color:var(--ita-bd-subtle)!important;
+  font-size:14px!important;
+  line-height:1.52!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-card .ita-tool-actions{
+  gap:8px!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-card .ita-tool-actions>*{
+  min-height:44px!important;
+  padding:9px 12px!important;
+  border-radius:10px!important;
+  font-size:14px!important;
+  font-weight:800!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-primary{
+  color:#fff!important;
+  border-color:var(--ita-bd-navy)!important;
+  background:var(--ita-bd-navy)!important;
+}
+
+#ferramentasModal.ita-bancada-hub .ita-bd-secondary{
+  color:var(--ita-bd-navy)!important;
+  border-color:#a9c1cf!important;
+  background:#fff!important;
+}
+
+/* Anatomia comum das ferramentas */
+body .modal.ita-bancada-tool{
+  padding:20px!important;
+  background:rgba(2,24,39,.72)!important;
+  backdrop-filter:blur(7px);
+}
+
+body .modal.ita-bancada-tool .ita-bd-box{
+  width:min(1220px,calc(100vw - 40px))!important;
+  max-width:1220px!important;
+  height:min(94dvh,960px)!important;
+  max-height:94dvh!important;
+  display:flex!important;
+  flex-direction:column!important;
+  overflow:hidden!important;
+  border:1px solid rgba(255,255,255,.30)!important;
+  border-radius:24px!important;
+  background:#fff!important;
+  box-shadow:0 28px 90px rgba(0,21,36,.38)!important;
+}
+
+body .modal.ita-bancada-tool .ita-bd-head{
+  position:relative!important;
+  top:auto!important;
+  flex:0 0 auto!important;
+  min-height:92px!important;
+  padding:16px 20px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:16px!important;
+  color:#fff!important;
+  border:0!important;
+  border-bottom:1px solid rgba(255,255,255,.14)!important;
+  background:linear-gradient(120deg,var(--ita-bd-navy),#0a5683 72%,#08749b)!important;
+  z-index:20!important;
+}
+
+body .modal.ita-bancada-tool .ita-bd-head>div:first-child{
+  min-width:0!important;
+  flex:1 1 auto!important;
+}
+
+body .modal.ita-bancada-tool .ita-bd-head .kicker,
+body .modal.ita-bancada-tool .ita-bd-head .corr-kicker,
+body .modal.ita-bancada-tool .ita-bd-head .ce-kicker{
+  margin:0!important;
+  color:#bfeeff!important;
+  font-size:11px!important;
+  line-height:1.25!important;
+  letter-spacing:.11em!important;
+  font-weight:800!important;
+  text-transform:uppercase!important;
+}
+
+body .modal.ita-bancada-tool .ita-bd-head h1,
+body .modal.ita-bancada-tool .ita-bd-head h2,
+body .modal.ita-bancada-tool .ita-bd-head h3{
+  margin:5px 0 0!important;
+  color:#fff!important;
+  font-size:clamp(22px,2.4vw,30px)!important;
+  line-height:1.16!important;
+  font-weight:800!important;
+}
+
+body .modal.ita-bancada-tool .ita-bd-head p,
+body .modal.ita-bancada-tool .ita-bd-head small,
+body .modal.ita-bancada-tool .ita-bd-head .ita-tool-subtitle,
+body .modal.ita-bancada-tool .ita-bd-head .ce-note,
+body .modal.ita-bancada-tool .ita-bd-head .corr-note{
+  margin:5px 0 0!important;
+  color:#d8f2fb!important;
+  font-size:13px!important;
+  line-height:1.35!important;
+}
+
+body .modal.ita-bancada-tool .ita-bd-head-actions{
+  display:flex!important;
+  flex:0 0 auto!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:8px!important;
+}
+
+body .modal.ita-bancada-tool .ita-bd-head-actions .ita-tool-back{
+  min-height:46px!important;
+  padding:9px 14px!important;
+  border:1px solid rgba(255,255,255,.44)!important;
+  border-radius:12px!important;
+  color:#fff!important;
+  background:rgba(255,255,255,.12)!important;
+  font-size:14px!important;
+  line-height:1.2!important;
+  font-weight:800!important;
+  white-space:nowrap!important;
+  box-shadow:none!important;
+}
+
+body .modal.ita-bancada-tool .ita-bd-body{
+  flex:1 1 auto!important;
+  min-height:0!important;
+  overflow:auto!important;
+  overscroll-behavior:contain!important;
+  padding:20px!important;
+  color:var(--ita-bd-text)!important;
+  background:var(--ita-bd-canvas)!important;
+  scrollbar-gutter:stable!important;
+}
+
+body .modal.ita-bancada-tool .ita-bd-tabs{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  gap:6px!important;
+  margin:0 0 16px!important;
+  padding:6px!important;
+  border:1px solid var(--ita-bd-line)!important;
+  border-radius:13px!important;
+  background:#fff!important;
+  box-shadow:0 3px 10px rgba(17,64,89,.05)!important;
+}
+
+body .modal.ita-bancada-tool .ita-bd-tabs button{
+  min-height:42px!important;
+  padding:8px 13px!important;
+  border:0!important;
+  border-radius:9px!important;
+  color:#385b6d!important;
+  background:transparent!important;
+  font-size:14px!important;
+  font-weight:800!important;
+}
+
+body .modal.ita-bancada-tool .ita-bd-tabs button.active,
+body .modal.ita-bancada-tool .ita-bd-tabs button[aria-selected="true"]{
+  color:#fff!important;
+  background:var(--ita-bd-navy)!important;
+}
+
+body .modal.ita-bancada-tool .field-input,
+body .modal.ita-bancada-tool .field-select,
+body .modal.ita-bancada-tool .field-textarea,
+body .modal.ita-bancada-tool input[type="number"],
+body .modal.ita-bancada-tool input[type="text"],
+body .modal.ita-bancada-tool select,
+body .modal.ita-bancada-tool textarea{
+  min-height:46px!important;
+  border:1px solid #a9c1cf!important;
+  border-radius:10px!important;
+  color:var(--ita-bd-text)!important;
+  background:#fff!important;
+  font-size:16px!important;
+}
+
+body .modal.ita-bancada-tool .field-label,
+body .modal.ita-bancada-tool label>span:first-child{
+  color:#36596c!important;
+  font-size:13px!important;
+  font-weight:800!important;
+}
+
+body .modal.ita-bancada-tool .action-btn{
+  min-height:44px!important;
+  padding:9px 14px!important;
+  border:1px solid #9eb9c8!important;
+  border-radius:10px!important;
+  color:var(--ita-bd-navy)!important;
+  background:#fff!important;
+  font-size:14px!important;
+  font-weight:800!important;
+  box-shadow:none!important;
+}
+
+body .modal.ita-bancada-tool .action-btn.primary{
+  color:#fff!important;
+  border-color:var(--ita-bd-navy)!important;
+  background:var(--ita-bd-navy)!important;
+}
+
+body .modal.ita-bancada-tool .field-status,
+body .modal.ita-bancada-tool [class*="status"]{
+  font-size:14px!important;
+  line-height:1.45!important;
+}
+
+@media(max-width:900px){
+  #ferramentasModal.ita-bancada-hub .ita-tools-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+
+@media(max-width:720px){
+  #ferramentasModal.ita-bancada-hub,
+  body .modal.ita-bancada-tool{
+    padding:0!important;
+    align-items:stretch!important;
+  }
+
+  #ferramentasModal.ita-bancada-hub .ita-bd-hub-box,
+  body .modal.ita-bancada-tool .ita-bd-box{
+    width:100vw!important;
+    max-width:100vw!important;
+    height:100dvh!important;
+    max-height:100dvh!important;
+    border:0!important;
+    border-radius:0!important;
+  }
+
+  #ferramentasModal.ita-bancada-hub .ita-bd-hub-head{
+    min-height:88px!important;
+    padding:12px 14px!important;
+    padding-top:max(12px,env(safe-area-inset-top))!important;
+  }
+
+  #ferramentasModal.ita-bancada-hub .ita-bd-hub-head h2{
+    font-size:23px!important;
+  }
+
+  #ferramentasModal.ita-bancada-hub .ita-bd-hub-body{
+    padding:14px 12px max(22px,env(safe-area-inset-bottom))!important;
+  }
+
+  #ferramentasModal.ita-bancada-hub .ita-tools-grid{
+    grid-template-columns:1fr!important;
+    padding:10px!important;
+  }
+
+  #ferramentasModal.ita-bancada-hub .ita-bd-card{
+    min-height:0!important;
+    grid-template-columns:54px 1fr!important;
+    grid-template-rows:auto auto auto!important;
+    column-gap:12px!important;
+    padding:13px!important;
+  }
+
+  #ferramentasModal.ita-bancada-hub .ita-bd-card .ita-tool-top{
+    grid-row:1 / 4!important;
+  }
+
+  #ferramentasModal.ita-bancada-hub .ita-bd-card h4,
+  #ferramentasModal.ita-bancada-hub .ita-bd-card p,
+  #ferramentasModal.ita-bancada-hub .ita-bd-card .ita-tool-actions{
+    grid-column:2!important;
+  }
+
+  body .modal.ita-bancada-tool .ita-bd-head{
+    min-height:82px!important;
+    padding:11px 12px!important;
+    padding-top:max(11px,env(safe-area-inset-top))!important;
+    align-items:flex-start!important;
+  }
+
+  body .modal.ita-bancada-tool .ita-bd-head h1,
+  body .modal.ita-bancada-tool .ita-bd-head h2,
+  body .modal.ita-bancada-tool .ita-bd-head h3{
+    font-size:20px!important;
+  }
+
+  body .modal.ita-bancada-tool .ita-bd-head p,
+  body .modal.ita-bancada-tool .ita-bd-head small,
+  body .modal.ita-bancada-tool .ita-bd-head .ita-tool-subtitle{
+    display:none!important;
+  }
+
+  body .modal.ita-bancada-tool .ita-bd-head-actions{
+    gap:6px!important;
+  }
+
+  body .modal.ita-bancada-tool .ita-bd-head-actions .ita-tool-back{
+    width:46px!important;
+    min-width:46px!important;
+    padding:0!important;
+    overflow:hidden!important;
+    color:transparent!important;
+    font-size:0!important;
+  }
+
+  body .modal.ita-bancada-tool .ita-bd-head-actions .ita-tool-back::before{
+    content:'←'!important;
+    color:#fff!important;
+    font-size:24px!important;
+  }
+
+  body .modal.ita-bancada-tool .ita-bd-body{
+    padding:13px 12px max(22px,env(safe-area-inset-bottom))!important;
+  }
+
+  body .modal.ita-bancada-tool .ita-bd-tabs{
+    flex-wrap:nowrap!important;
+    overflow-x:auto!important;
+    justify-content:flex-start!important;
+  }
+
+  body .modal.ita-bancada-tool .ita-bd-tabs button{
+    flex:0 0 auto!important;
+    white-space:nowrap!important;
+  }
+}

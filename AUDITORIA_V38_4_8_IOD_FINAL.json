@@ -1,12 +1,12 @@
 {
   "audit": "V38.4.8 IOD final",
-  "status": "PASS",
+  "status": "FAIL",
   "checks_total": 35,
-  "checks_passed": 35,
+  "checks_passed": 32,
   "checks": [
     {
       "check": "VERSION V38.4.8 correta",
-      "pass": true
+      "pass": false
     },
     {
       "check": "arquivo presente · docs/indices/iod_v3848_snapshot.json",
@@ -102,7 +102,7 @@
     },
     {
       "check": "snapshot IOD carregado pelo index",
-      "pass": true
+      "pass": false
     },
     {
       "check": "metodologia IOD vinculada na interface",
@@ -110,7 +110,7 @@
     },
     {
       "check": "PWA inclui snapshot IOD",
-      "pass": true
+      "pass": false
     },
     {
       "check": "AFLO registrado como camada local",

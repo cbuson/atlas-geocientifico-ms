@@ -2,11 +2,12 @@
   "audit": "V38.4.14 · Auditoria conjunta das sete dimensões base",
   "version": "V38.4.14-AUDITORIA-SETE-DIMENSOES-20260815",
   "origin_version": "V38.4.13-ICS-CONHECIMENTO-SUBSOLO-20260814",
-  "generated_at": "2026-08-15T12:18:44Z",
-  "status": "PASS",
+  "generated_at": "2026-09-10T12:09:28Z",
+  "status": "FAIL",
   "synthesis_gate": {
     "status": "BLOCKED",
     "blockers": [
+      "Falha técnica ou de integridade em uma ou mais dimensões base.",
       "IGF foi materializado com fonte geofísica parcial (parcial_por_indisponibilidade_remota). Antes dos índices de síntese é necessário completar ou congelar documentalmente a indisponibilidade do módulo remoto."
     ],
     "conditions": [
@@ -38,8 +39,8 @@
     },
     {
       "name": "version_origin",
-      "pass": true,
-      "detail": "V38.4.13-ICS-CONHECIMENTO-SUBSOLO-20260814"
+      "pass": false,
+      "detail": "V38.4.46C-BANCADA-TERNARIO-NAVEGACAO-ROBUSTA-1.0-20260816"
     },
     {
       "name": "snapshot_IMC_exists",
@@ -478,8 +479,8 @@
     },
     {
       "name": "final_audit_IOD_pass",
-      "pass": true,
-      "detail": "PASS"
+      "pass": false,
+      "detail": "FAIL"
     },
     {
       "name": "final_audit_ICP_exists",
@@ -488,8 +489,8 @@
     },
     {
       "name": "final_audit_ICP_pass",
-      "pass": true,
-      "detail": "PASS"
+      "pass": false,
+      "detail": "FAIL"
     },
     {
       "name": "final_audit_IGC_exists",
@@ -498,8 +499,8 @@
     },
     {
       "name": "final_audit_IGC_pass",
-      "pass": true,
-      "detail": "PASS"
+      "pass": false,
+      "detail": "FAIL"
     },
     {
       "name": "final_audit_IGQ_exists",
@@ -508,8 +509,8 @@
     },
     {
       "name": "final_audit_IGQ_pass",
-      "pass": true,
-      "detail": "PASS"
+      "pass": false,
+      "detail": "FAIL"
     },
     {
       "name": "final_audit_IGF_exists",
@@ -518,8 +519,8 @@
     },
     {
       "name": "final_audit_IGF_pass",
-      "pass": true,
-      "detail": "PASS"
+      "pass": false,
+      "detail": "FAIL"
     },
     {
       "name": "final_audit_ICS_exists",
@@ -528,38 +529,38 @@
     },
     {
       "name": "final_audit_ICS_pass",
-      "pass": true,
-      "detail": "PASS"
+      "pass": false,
+      "detail": "FAIL"
     }
   ],
   "base_final_audits": {
     "IOD": {
-      "status": "PASS",
+      "status": "FAIL",
       "checks_total": 35,
-      "checks_passed": 35
+      "checks_passed": 32
     },
     "ICP": {
-      "status": "PASS",
+      "status": "FAIL",
       "checks_total": 51,
-      "checks_passed": 51
+      "checks_passed": 39
     },
     "IGC": {
-      "status": "PASS",
+      "status": "FAIL",
       "checks_total": 61,
-      "checks_passed": 61
+      "checks_passed": 50
     },
     "IGQ": {
-      "status": "PASS",
+      "status": "FAIL",
       "checks_total": 63,
       "checks_passed": null
     },
     "IGF": {
-      "status": "PASS",
+      "status": "FAIL",
       "checks_total": 71,
       "checks_passed": null
     },
     "ICS": {
-      "status": "PASS",
+      "status": "FAIL",
       "checks_total": 59,
       "checks_passed": null
     }

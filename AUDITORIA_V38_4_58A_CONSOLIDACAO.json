@@ -1,0 +1,49 @@
+{
+  "audit": "ITA ARANDU MS V38.4.58A consolidation audit",
+  "date": "2026-09-10",
+  "scope": "technical corrections only; no new layers, tools, grids, scientific indices or recalculation",
+  "version": "V38.4.58A-CONSOLIDACAO-CORRECOES-20260910",
+  "status": "PASS_WITH_RUNTIME_DEVICE_CHECK_PENDING",
+  "checks": {
+    "javascript_files_syntax_checked": 62,
+    "javascript_syntax_failures": 0,
+    "json_files_parsed": 92,
+    "json_parse_failures": 0,
+    "geojson_files_parsed": 67,
+    "geojson_parse_failures": 0,
+    "geojson_features_total": 66074,
+    "catalog_layers": 43,
+    "catalog_unique_ids": 43,
+    "duplicate_html_ids": 0,
+    "unlabelled_form_controls": 0,
+    "service_worker_precache_entries": 230,
+    "service_worker_precache_unique": 230,
+    "service_worker_missing_local_resources": 0,
+    "scientific_files_hash_compared": 169,
+    "scientific_files_changed": 0,
+    "scientific_changed_paths": []
+  },
+  "corrections": [
+    "fatal Service Worker syntax artifact removed",
+    "Service Worker cache identifier and registration cache-buster aligned",
+    "current local application shell resources added to precache without adding geoscientific data",
+    "global version display, VERSION and build metadata aligned",
+    "two broken bibliography links in stereographic-net documentation/tool corrected",
+    "duplicate unconditional Leaflet loading replaced by primary CDN with fallback",
+    "eight existing form controls received accessible labels"
+  ],
+  "scientific_content_changes": false,
+  "new_layers": 0,
+  "new_bancada_tools": 0,
+  "modified_file_sha256": {
+    "VERSION": "17345dcdb25197e99957989172d6d2144c12dfe2f405fd030b07b37591f49c5c",
+    "CHANGELOG.md": "2a61ed04421949c199c84ee4467c6ecc3faede0d436f78014c0cbe6ee1b7f0ed",
+    "docs/index.html": "0f415880e089342662fbcb5569afb37113011134dcec6ec94e1d2cc71e2be7d1",
+    "docs/dados/meta.js": "24c35e6f338b40912573185e4ed4cbe15cc56e362b794f2d841d2c0311b40956",
+    "docs/service-worker.js": "c5d8160b50c5047b9fd090d65ba27713da7187e2d1c2222a265a237ad2119976",
+    "docs/assets/js/app.js": "a2b5340f9b5570112466fb068643b8ad0fbd80637688382cb71209de12dd22bc",
+    "docs/assets/js/rede-estereografica-v38455.js": "6a5dec24e5ffb18f7454fffa4e4f7c9e81106a4310f443ee175ff058fed81177",
+    "docs/documentos/metodologia-rede-estereografica.html": "e40990124df3f3d3330407d6acea2731a4cbb39beb9c52998b1f14ffab92ad99",
+    "AUDITORIA_V38_4_58A_CONSOLIDACAO.md": "d9a23767d59ff07f8edd3bafe588a38f5d931a651e40b29934047a1977eb0d7c"
+  }
+}

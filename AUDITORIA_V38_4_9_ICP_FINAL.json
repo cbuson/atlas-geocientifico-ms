@@ -1,12 +1,12 @@
 {
   "audit": "V38.4.9 ICP final",
-  "status": "PASS",
+  "status": "FAIL",
   "checks_total": 51,
-  "checks_passed": 51,
+  "checks_passed": 39,
   "checks": [
     {
       "check": "VERSION V38.4.9 correta",
-      "pass": true
+      "pass": false
     },
     {
       "check": "arquivo presente · docs/indices/icp_v3849_snapshot.json",
@@ -146,7 +146,7 @@
     },
     {
       "check": "snapshot ICP carregado pelo index",
-      "pass": true
+      "pass": false
     },
     {
       "check": "metodologia ICP vinculada na interface",
@@ -154,11 +154,11 @@
     },
     {
       "check": "PWA inclui snapshot ICP",
-      "pass": true
+      "pass": false
     },
     {
       "check": "PWA inclui snapshot petrográfico",
-      "pass": true
+      "pass": false
     },
     {
       "check": "Petrografia registrada como camada local",
@@ -166,35 +166,35 @@
     },
     {
       "check": "referência ICP disponível e citada · REF-002",
-      "pass": true
+      "pass": false
     },
     {
       "check": "referência ICP disponível e citada · REF-059",
-      "pass": true
+      "pass": false
     },
     {
       "check": "referência ICP disponível e citada · REF-082",
-      "pass": true
+      "pass": false
     },
     {
       "check": "referência ICP disponível e citada · REF-084",
-      "pass": true
+      "pass": false
     },
     {
       "check": "referência ICP disponível e citada · REF-105",
-      "pass": true
+      "pass": false
     },
     {
       "check": "referência ICP disponível e citada · REF-106",
-      "pass": true
+      "pass": false
     },
     {
       "check": "referência ICP disponível e citada · REF-115",
-      "pass": true
+      "pass": false
     },
     {
       "check": "referência ICP disponível e citada · REF-174",
-      "pass": true
+      "pass": false
     },
     {
       "check": "auditoria runtime PASS",

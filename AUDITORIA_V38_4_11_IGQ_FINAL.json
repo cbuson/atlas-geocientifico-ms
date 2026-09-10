@@ -1,9 +1,9 @@
 {
   "audit": "V38.4.11 IGQ final",
-  "status": "PASS",
+  "status": "FAIL",
   "checks_total": 63,
-  "checks_pass": 63,
-  "checks_fail": 0,
+  "checks_pass": 53,
+  "checks_fail": 10,
   "checks": [
     {
       "name": "version_file",
@@ -12,8 +12,8 @@
     },
     {
       "name": "version_exact",
-      "pass": true,
-      "detail": "V38.4.11-IGQ-CONHECIMENTO-GEOQUIMICO-20260814"
+      "pass": false,
+      "detail": "V38.4.46C-BANCADA-TERNARIO-NAVEGACAO-ROBUSTA-1.0-20260816"
     },
     {
       "name": "exists_docs/indices/igq_v38411_snapshot.json",
@@ -182,27 +182,27 @@
     },
     {
       "name": "index_script",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_cache_version",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_igq_script",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_source",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_method",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
@@ -227,8 +227,8 @@
     },
     {
       "name": "bibliography_total_refs_176",
-      "pass": true,
-      "detail": "176"
+      "pass": false,
+      "detail": "238"
     },
     {
       "name": "bibliography_igq_250",
@@ -302,17 +302,17 @@
     },
     {
       "name": "bibliography_html_176",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "method_ref178",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "method_apa7",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {

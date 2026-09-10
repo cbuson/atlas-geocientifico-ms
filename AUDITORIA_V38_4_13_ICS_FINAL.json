@@ -1,9 +1,9 @@
 {
   "audit": "V38.4.13 ICS final",
-  "status": "PASS",
+  "status": "FAIL",
   "checks_total": 59,
-  "checks_pass": 59,
-  "checks_fail": 0,
+  "checks_pass": 46,
+  "checks_fail": 13,
   "checks": [
     {
       "name": "version_file",
@@ -12,8 +12,8 @@
     },
     {
       "name": "version_exact",
-      "pass": true,
-      "detail": "V38.4.13-ICS-CONHECIMENTO-SUBSOLO-20260814"
+      "pass": false,
+      "detail": "V38.4.46C-BANCADA-TERNARIO-NAVEGACAO-ROBUSTA-1.0-20260816"
     },
     {
       "name": "exists_docs/indices/ics_v38413_snapshot.json",
@@ -187,32 +187,32 @@
     },
     {
       "name": "index_script",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_cache",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_script",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_siagas",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_rimas",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "sw_method",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
@@ -247,17 +247,17 @@
     },
     {
       "name": "method_apa7",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "method_siagas",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "method_rimas",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
@@ -267,17 +267,17 @@
     },
     {
       "name": "method_guardrail",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "method_rimas_not_log",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {
       "name": "method_litoteca_guardrail",
-      "pass": true,
+      "pass": false,
       "detail": ""
     },
     {

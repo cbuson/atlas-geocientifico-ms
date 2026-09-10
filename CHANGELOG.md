@@ -654,3 +654,15 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Usa classificação experimental por regras, sem score numérico e sem pesos.
 - O resultado continua explicitamente identificado como proposta metodológica não validada externamente.
 - O navegador passa a carregar snapshot local em vez de recalcular o ISGT em sessão.
+
+## V38.4.58A · consolidação técnica sem novas camadas ou ferramentas · 2026-09-10
+
+- Corrige erro de sintaxe fatal no Service Worker.
+- Atualiza o identificador de cache e o registro do Service Worker para forçar atualização segura da PWA.
+- Garante pré-cache dos recursos locais necessários ao shell atual da aplicação, sem adicionar GeoJSON, camadas ou ferramentas.
+- Alinha a versão global exibida, o arquivo VERSION e os metadados de build.
+- Corrige dois enlaces quebrados da Rede Estereográfica para a Biblioteca APA 7.
+- Evita carregamento duplicado do Leaflet, mantendo CDN secundário como fallback e o motor cartográfico local como contingência.
+- Adiciona rótulos acessíveis a oito controles existentes.
+- Nenhuma camada, índice científico, malla, snapshot ou resultado foi recalculado.
+- Nenhuma ferramenta nova foi adicionada à Bancada Digital.

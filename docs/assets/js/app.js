@@ -1635,7 +1635,7 @@ document.getElementById('pwaReloadBtn')?.addEventListener('click',async()=>{
 });
 document.querySelectorAll('[data-modal="pwaModal"]').forEach(b=>b.addEventListener('click',()=>setTimeout(itaPwaRefreshState,0)));
 if('serviceWorker' in navigator && location.protocol!=='file:'){
-  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=38.4.38',{scope:'./',updateViaCache:'none'}).then(()=>itaPwaRefreshState()).catch(err=>itaPwaStatus('A instalação PWA não pôde ser ativada neste acesso. '+err.message)));
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=38.4.58a',{scope:'./',updateViaCache:'none'}).then(()=>itaPwaRefreshState()).catch(err=>itaPwaStatus('A instalação PWA não pôde ser ativada neste acesso. '+err.message)));
 }else{
   itaPwaRefreshState();
 }

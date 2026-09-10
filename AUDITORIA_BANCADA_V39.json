@@ -1,0 +1,44 @@
+{
+  "audit": "Bancada Digital ARANDU V39.0.0",
+  "date": "2026-08-24",
+  "scope": "Ronda estrutural 1",
+  "status": "PASS_STATIC",
+  "version": "V39.0.0-BANCADA-DIGITAL-SYSTEM-1.0-20260824",
+  "changes": [
+    "service worker reparado e reescrito",
+    "cache offline versionado",
+    "registro central com 20 ferramentas",
+    "API pública para registrar ferramentas futuras",
+    "contrato visual comum carregado por último",
+    "normalização de diálogos da Bancada",
+    "retorno de foco e contenção de foco",
+    "fechamento por Escape",
+    "área tátil mínima de 44 pixels",
+    "suporte a safe areas e movimento reduzido",
+    "contrato técnico para novas ferramentas"
+  ],
+  "validation": {
+    "javascript_syntax": "PASS",
+    "service_worker_syntax": "PASS",
+    "service_worker_invalid_tokens": 0,
+    "missing_local_index_assets": 0,
+    "new_core_important_rules": 0,
+    "registered_tools": 20,
+    "core_css_links": 1,
+    "core_js_links": 1
+  },
+  "preserved": [
+    "dados científicos",
+    "cálculos e fórmulas",
+    "camadas cartográficas",
+    "referências existentes",
+    "ferramentas e exportações atuais",
+    "cópias históricas de segurança"
+  ],
+  "next_round": [
+    "migração visual individual das ferramentas",
+    "teste funcional em navegador real e dispositivos móveis",
+    "verificação de sensores e permissões",
+    "redução progressiva das folhas CSS históricas"
+  ]
+}

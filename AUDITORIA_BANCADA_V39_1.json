@@ -1,0 +1,42 @@
+{
+  "audit": "Bancada Digital ARANDU V39.1.0",
+  "date": "2026-08-24",
+  "scope": "Ronda visual 2",
+  "status": "PASS_STATIC",
+  "version": "V39.1.0-BANCADA-DIGITAL-VISUAL-20260824",
+  "cause_of_previous_no_visible_change": [
+    "o catálogo principal não recebia a classe do sistema comum",
+    "a normalização V39.0 atuava principalmente em acessibilidade e registro",
+    "estilos históricos com alta prioridade mantinham tipografia e anatomias anteriores"
+  ],
+  "visible_changes": [
+    "cabeçalho azul comum no catálogo e nas ferramentas",
+    "tipografia ampliada no catálogo",
+    "cartões maiores com hierarquia e ações comuns",
+    "busca e grupos temáticos redesenhados",
+    "botão Voltar à Bancada incorporado a todas as ferramentas registradas",
+    "abas, campos e botões normalizados",
+    "janela móvel em tela completa com safe areas"
+  ],
+  "validation": {
+    "bancada_core_javascript_syntax": "PASS",
+    "service_worker_javascript_syntax": "PASS",
+    "css_brace_balance": "PASS",
+    "cache_version_updated": "PASS",
+    "registered_tools": 20,
+    "scientific_calculations_changed": 0
+  },
+  "preserved": [
+    "dados científicos",
+    "fórmulas e cálculos",
+    "camadas cartográficas",
+    "exportações existentes",
+    "referências e metodologias"
+  ],
+  "pending_real_device_checks": [
+    "inspeção visual em navegador real",
+    "sensores e permissões no celular",
+    "larguras de 320 a 768 pixels",
+    "funcionamento offline depois da atualização do service worker"
+  ]
+}

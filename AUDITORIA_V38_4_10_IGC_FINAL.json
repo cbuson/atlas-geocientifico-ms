@@ -1,12 +1,12 @@
 {
   "audit": "V38.4.10 IGC final",
-  "status": "PASS",
+  "status": "FAIL",
   "checks_total": 61,
-  "checks_passed": 61,
+  "checks_passed": 50,
   "checks": [
     {
       "check": "VERSION V38.4.10 correta",
-      "pass": true
+      "pass": false
     },
     {
       "check": "arquivo presente · docs/indices/igc_v38410_snapshot.json",
@@ -182,19 +182,19 @@
     },
     {
       "check": "snapshot IGC carregado pelo index",
-      "pass": true
+      "pass": false
     },
     {
       "check": "PWA inclui snapshot IGC",
-      "pass": true
+      "pass": false
     },
     {
       "check": "PWA inclui snapshot geocronológico",
-      "pass": true
+      "pass": false
     },
     {
       "check": "metodologia IGC integrada",
-      "pass": true
+      "pass": false
     },
     {
       "check": "Geocronologia registrada como camada local",
@@ -202,27 +202,27 @@
     },
     {
       "check": "referência IGC disponível e citada · REF-002",
-      "pass": true
+      "pass": false
     },
     {
       "check": "referência IGC disponível e citada · REF-082",
-      "pass": true
+      "pass": false
     },
     {
       "check": "referência IGC disponível e citada · REF-085",
-      "pass": true
+      "pass": false
     },
     {
       "check": "referência IGC disponível e citada · REF-105",
-      "pass": true
+      "pass": false
     },
     {
       "check": "referência IGC disponível e citada · REF-108",
-      "pass": true
+      "pass": false
     },
     {
       "check": "referência IGC disponível e citada · REF-115",
-      "pass": true
+      "pass": false
     },
     {
       "check": "auditoria runtime PASS",
