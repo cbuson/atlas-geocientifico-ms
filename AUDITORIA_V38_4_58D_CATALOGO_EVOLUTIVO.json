@@ -1,0 +1,142 @@
+{
+  "version": "V38.4.58D-CATALOGO-EVOLUTIVO-20260910",
+  "date": "2026-09-10",
+  "scope": "UX/semantics only. No new layers, no new Bancada tools, no index recalculation.",
+  "catalog": {
+    "items": 190,
+    "available_this_version": 126,
+    "future_expansion": 64,
+    "status_counts": {
+      "incorporada": 85,
+      "em_avaliacao": 3,
+      "conectada": 40,
+      "disponivel_para_captura": 52,
+      "planejada": 9,
+      "derivada": 1
+    },
+    "groups": [
+      {
+        "group": "Amostras, acervos e Campo UFMS",
+        "total": 5,
+        "available": 0,
+        "future": 5
+      },
+      {
+        "group": "Base geográfica",
+        "total": 11,
+        "available": 10,
+        "future": 1
+      },
+      {
+        "group": "Clima e eventos extremos",
+        "total": 7,
+        "available": 0,
+        "future": 7
+      },
+      {
+        "group": "Conhecimento geocientífico e análises",
+        "total": 42,
+        "available": 37,
+        "future": 5
+      },
+      {
+        "group": "Espeleologia e carste",
+        "total": 3,
+        "available": 1,
+        "future": 2
+      },
+      {
+        "group": "Geodiversidade e geoconservação",
+        "total": 6,
+        "available": 5,
+        "future": 1
+      },
+      {
+        "group": "Geografia e território",
+        "total": 1,
+        "available": 1,
+        "future": 0
+      },
+      {
+        "group": "Geologia e estratigrafia",
+        "total": 14,
+        "available": 9,
+        "future": 5
+      },
+      {
+        "group": "Geomorfologia, solos e regolito",
+        "total": 13,
+        "available": 3,
+        "future": 10
+      },
+      {
+        "group": "Geoquímica, geofísica e geotermia",
+        "total": 30,
+        "available": 18,
+        "future": 12
+      },
+      {
+        "group": "Hidrologia e hidrogeologia",
+        "total": 20,
+        "available": 14,
+        "future": 6
+      },
+      {
+        "group": "Malhas e índices",
+        "total": 3,
+        "available": 3,
+        "future": 0
+      },
+      {
+        "group": "Metalogenia e prospecção mineral",
+        "total": 6,
+        "available": 6,
+        "future": 0
+      },
+      {
+        "group": "Recursos minerais e mineração",
+        "total": 11,
+        "available": 3,
+        "future": 8
+      },
+      {
+        "group": "Sismicidade, geodinâmica e riscos geológicos",
+        "total": 9,
+        "available": 9,
+        "future": 0
+      },
+      {
+        "group": "Tectônica e estruturas",
+        "total": 9,
+        "available": 7,
+        "future": 2
+      }
+    ]
+  },
+  "preservation": {
+    "catalog_object_equal_to_58C": true,
+    "scientific_files_compared": 120,
+    "scientific_files_changed": []
+  },
+  "checks": {
+    "javascript_files_checked": 44,
+    "javascript_errors": [],
+    "service_worker_syntax_ok": true,
+    "json_files_checked": 176,
+    "json_errors": [],
+    "duplicate_html_ids": [],
+    "missing_local_static_refs": [],
+    "assertions": {
+      "catalog_unchanged": true,
+      "future_cards_have_no_checkbox_code": true,
+      "future_block_present": true,
+      "available_block_present": true,
+      "capture_relabelled": true,
+      "derived_operational": true,
+      "version_index": true,
+      "version_meta": true,
+      "version_sw": true
+    }
+  },
+  "runtime_note": "Headless browser navigation to localhost is blocked by the execution environment administrator. Final visual/runtime verification must be performed after deployment in the user browser."
+}

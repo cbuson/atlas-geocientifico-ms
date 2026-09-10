@@ -682,3 +682,17 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Corrige a camada “Resultados geoquímicos multielementares SGB” para representar as localizações das amostras materializadas com resultados analíticos relacionados, em vez de tentar carregar uma camada inexistente.
 - Atualiza cache e identificador da PWA para impedir reutilização do JavaScript anterior.
 - Nenhuma camada, ferramenta, índice, malha, GeoJSON científico ou resultado foi adicionado ou recalculado.
+
+
+## V38.4.58D · catálogo evolutivo e separação operacional · 2026-09-10
+
+- Separa, em cada grupo de Camadas, os recursos `Disponível nesta versão` da `Expansão futura`.
+- Recursos operacionais mantêm ativação cartográfica. Fontes futuras deixam de exibir checkbox de camada.
+- `disponivel_para_captura` passa a ser apresentado ao usuário como `FONTE IDENTIFICADA`, evitando sugerir que o dado já esteja incorporado.
+- Fontes futuras são preservadas com origem, bibliografia, geometria esperada, prioridade e notas, em bloco próprio e recolhível.
+- Grupos passam a informar `X disponíveis · Y em desenvolvimento`, incluindo corretamente grupos com zero camadas operacionais.
+- O catálogo global passa a distinguir núcleo operacional de expansão documentada.
+- A camada `derivada` em sessão é reconhecida como recurso operacional quando calculável pelo motor do Atlas.
+- O painel Dados adota a mesma semântica e explicita produtos derivados em sessão.
+- A identificação visual passa a `versão operacional em evolução`, preservando o caráter dinâmico e versionado da infraestrutura.
+- Nenhuma camada, ferramenta da Bancada, índice ou resultado científico foi adicionado ou recalculado nesta versão.

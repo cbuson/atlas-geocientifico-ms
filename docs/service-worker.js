@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-v38458c-geoquimica';
+const ITA_CACHE = 'ita-arandu-v38458d-catalogo-evolutivo';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
@@ -37,12 +37,12 @@ const ITA_CORE = [
   "./assets/css/ternario-usda-v38446.css?v=38.4.46e",
   "./assets/js/ternario-usda-v38446f.js?v=38.4.46e",
   "./documentos/metodologia-ternario-usda.html",
-  "./assets/css/atlas.css?v=38.4.26",
+  "./assets/css/atlas.css?v=38.4.58D",
   "./assets/css/design-system-v38424.css?v=38.4.26",
   "./assets/js/map-fallback.js?v=38.4.26",
-  "./assets/js/app.js?v=38.4.58C",
+  "./assets/js/app.js?v=38.4.58D",
   "./assets/js/campo-sensores.js?v=38.4.37f",
-  "./dados/meta.js?v=38.4.58C",
+  "./dados/meta.js?v=38.4.58D",
   "./referencias/referencias.js?v=38.4.26",
   "./camadas/catalogo-local.js?v=38.4.45",
   "./assets/css/coluna-estratigrafica-v38457.css?v=38.4.57",
