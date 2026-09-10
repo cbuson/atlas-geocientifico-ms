@@ -666,3 +666,19 @@ Correção estritamente visual. Os retornos HTML de legenda de ICP, IGC, IGQ, IG
 - Adiciona rótulos acessíveis a oito controles existentes.
 - Nenhuma camada, índice científico, malla, snapshot ou resultado foi recalculado.
 - Nenhuma ferramenta nova foi adicionada à Bancada Digital.
+
+## V38.4.58B · hotfix de identificação visual · 2026-09-10
+
+- Corrige módulo legado de ondas sísmicas que sobrescrevia o selo global da versão para `V38.4.53` após o carregamento.
+- Mantém o módulo funcional sem alterar cálculos, dados, camadas, índices ou ferramentas.
+- Atualiza o identificador global para `V38.4.58B` e força a renovação do recurso no cache da PWA.
+- Nenhuma camada ou ferramenta nova foi adicionada.
+
+## V38.4.58C · hotfix de carregamento geoquímico · 2026-09-10
+
+- Corrige o filtro das vistas temáticas geoquímicas para reconhecer o campo `classe` efetivamente preservado no snapshot local do SGB.
+- As vistas Solo, Rocha, Sedimento de Corrente e Concentrado de Bateia passam a derivar corretamente das 1.117 amostras materializadas, sem consulta remota e sem recalcular o IGQ.
+- Mantém zero legítimo para classes ausentes do snapshot local, como Água e Vegetação.
+- Corrige a camada “Resultados geoquímicos multielementares SGB” para representar as localizações das amostras materializadas com resultados analíticos relacionados, em vez de tentar carregar uma camada inexistente.
+- Atualiza cache e identificador da PWA para impedir reutilização do JavaScript anterior.
+- Nenhuma camada, ferramenta, índice, malha, GeoJSON científico ou resultado foi adicionado ou recalculado.

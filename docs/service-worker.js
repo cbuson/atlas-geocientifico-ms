@@ -1,4 +1,4 @@
-const ITA_CACHE = 'ita-arandu-v38458a-consolidado';
+const ITA_CACHE = 'ita-arandu-v38458c-geoquimica';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
@@ -13,8 +13,8 @@ const ITA_CORE = [
   "./assets/css/diagrama-rosas-v38454.css?v=38.4.54",
   "./assets/js/diagrama-rosas-v38454.js?v=38.4.54",
   "./documentos/metodologia-diagrama-rosas.html",
-  "./assets/css/ondas-sismicas-v38453.css?v=38.4.53",
-  "./assets/js/ondas-sismicas-v38453.js?v=38.4.53",
+  "./assets/css/ondas-sismicas-v38453.css?v=38.4.58B",
+  "./assets/js/ondas-sismicas-v38453.js?v=38.4.58B",
   "./documentos/metodologia-ondas-sismicas-acelerometro.html",
   "./assets/css/magnetometro-amostras-v38450.css?v=38.4.50",
   "./assets/js/magnetometro-amostras-v38450.js?v=38.4.52",
@@ -40,9 +40,9 @@ const ITA_CORE = [
   "./assets/css/atlas.css?v=38.4.26",
   "./assets/css/design-system-v38424.css?v=38.4.26",
   "./assets/js/map-fallback.js?v=38.4.26",
-  "./assets/js/app.js?v=38.4.45",
+  "./assets/js/app.js?v=38.4.58C",
   "./assets/js/campo-sensores.js?v=38.4.37f",
-  "./dados/meta.js?v=38.4.26",
+  "./dados/meta.js?v=38.4.58C",
   "./referencias/referencias.js?v=38.4.26",
   "./camadas/catalogo-local.js?v=38.4.45",
   "./assets/css/coluna-estratigrafica-v38457.css?v=38.4.57",
