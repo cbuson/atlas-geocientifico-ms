@@ -1,4 +1,5 @@
-const ITA_CACHE = 'ita-arandu-v38458d-catalogo-evolutivo';
+const ITA_CACHE = 'ita-arandu-v38459-field-robustness';
+const ITA_EXPEDITION_CACHE = 'ita-arandu-expedition-v38459';
 
 /* Núcleo pequeno. A instalação da PWA nunca deve depender de GeoJSON pesados. */
 const ITA_CORE = [
@@ -40,7 +41,7 @@ const ITA_CORE = [
   "./assets/css/atlas.css?v=38.4.58D",
   "./assets/css/design-system-v38424.css?v=38.4.26",
   "./assets/js/map-fallback.js?v=38.4.26",
-  "./assets/js/app.js?v=38.4.58D",
+  "./assets/js/app.js?v=38.4.59",
   "./assets/js/campo-sensores.js?v=38.4.37f",
   "./dados/meta.js?v=38.4.58D",
   "./referencias/referencias.js?v=38.4.26",
@@ -187,7 +188,9 @@ const ITA_CORE = [
   "./indices/pig-v38421.js?v=38.4.26",
   "./camadas/proveniencia-snapshots.js?v=38.4.28",
   "./assets/js/proveniencia-v38428.js?v=38.4.40b",
-  "./assets/js/campo-master-v38431.js?v=38.4.31",
+  "./assets/js/campo-master-v38459.js?v=38.4.59",
+  "./assets/js/field-robustness-v38459.js?v=38.4.59",
+  "./assets/css/field-robustness-v38459.css?v=38.4.59",
   "./assets/js/campo-ux-v38432.js?v=38.4.32",
   "./assets/js/clinometro-visual-v38433.js?v=38.4.33r2",
   "./assets/js/geoetica-care-v38434.js?v=38.4.34",
@@ -253,7 +256,7 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   event.waitUntil((async()=>{
     const keys=await caches.keys();
-    await Promise.all(keys.filter(k=>k.startsWith('ita-arandu-')&&k!==ITA_CACHE).map(k=>caches.delete(k)));
+    await Promise.all(keys.filter(k=>k.startsWith('ita-arandu-')&&k!==ITA_CACHE&&k!==ITA_EXPEDITION_CACHE).map(k=>caches.delete(k)));
     await self.clients.claim();
   })());
 });
@@ -289,7 +292,15 @@ self.addEventListener('fetch', event => {
   const req=event.request;
   if(req.method!=='GET')return;
   const url=new URL(req.url);
-  if(url.origin!==self.location.origin)return;
+  const leafletOrigins=new Set(['https://unpkg.com','https://cdnjs.cloudflare.com']);
+  if(url.origin!==self.location.origin){
+    if(!leafletOrigins.has(url.origin))return;
+    event.respondWith((async()=>{
+      const hit=await caches.match(req);if(hit)return hit;
+      try{const res=await fetch(req);if(res.ok||res.type==='opaque'){const cache=await caches.open(ITA_EXPEDITION_CACHE);await cache.put(req,res.clone())}return res}catch(e){throw e}
+    })());
+    return;
+  }
 
   if(req.mode==='navigate'){
     event.respondWith((async()=>{

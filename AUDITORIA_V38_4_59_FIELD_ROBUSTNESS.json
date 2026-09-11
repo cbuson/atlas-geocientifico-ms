@@ -1,0 +1,64 @@
+{
+  "release": "V38.4.59-FIELD-ROBUSTNESS-20260910",
+  "scope": "field robustness only; no scientific layer/index/result changes",
+  "source_zip": "atlas-geocientifico-ms-main (3).zip",
+  "scientific_files_compared": 132,
+  "scientific_files_changed": [],
+  "html_ids": 437,
+  "duplicate_html_ids": [],
+  "missing_main_index_local_refs": [],
+  "json_files_checked": 179,
+  "json_parse_failures": [],
+  "active_js_checked": 52,
+  "active_js_syntax_failures": [],
+  "service_worker_core_entries": 233,
+  "service_worker_core_missing": [],
+  "service_worker_core_bytes": 10008070,
+  "expedition_required_entries": 10,
+  "expedition_missing": [],
+  "expedition_required_bytes": 6797408,
+  "expedition_optional_remote_entries": [
+    "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+    "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
+    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png"
+  ],
+  "modified_files": [
+    "CHANGELOG.md",
+    "VERSION",
+    "docs/assets/js/app.js",
+    "docs/dados/meta.js",
+    "docs/index.html",
+    "docs/index_noscripts.html",
+    "docs/service-worker.js"
+  ],
+  "added_files": [
+    "AUDITORIA_V38_4_59_FIELD_ROBUSTNESS.md",
+    "docs/assets/css/field-robustness-v38459.css",
+    "docs/assets/js/campo-master-v38459.js",
+    "docs/assets/js/field-robustness-v38459.js"
+  ],
+  "assertions": {
+    "version_file": "V38.4.59-FIELD-ROBUSTNESS-20260910",
+    "meta_build_version": "V38.4.59-FIELD-ROBUSTNESS-20260910",
+    "field_schema_version": "2.1",
+    "legacy_runtime_message_removed": true,
+    "legacy_db_only_migration": true,
+    "canonical_field_script": true,
+    "robustness_script": true,
+    "storage_estimate": true,
+    "storage_persist": true,
+    "expedition_cache_preserved": true
+  },
+  "browser_runtime_test": {
+    "status": "NOT_EXECUTED_IN_CONTAINER",
+    "reason": "Headless Chromium navigation to localhost is blocked by the execution environment policy (chrome-error://chromewebdata/). Static/runtime syntax checks completed; final interaction test must be executed in a normal browser after deployment."
+  },
+  "known_boundaries": [
+    "Connected services remain network-dependent unless they have a local snapshot.",
+    "External basemap tiles are not included in the required expedition package; local scientific layers remain available through the application mapping engine/fallback.",
+    "Storage quotas and persistence decisions are controlled by the browser/OS; the interface now reports them but cannot guarantee a fixed quota.",
+    "Background synchronization to a central server is intentionally not implemented because ITA ARANDU remains local-first and has no mandatory remote data store."
+  ]
+}

@@ -1,4 +1,4 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="color-scheme" content="only light"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>ITA ARANDU MS · Atlas Geocientífico de Mato Grosso do Sul · V38.4.58D</title><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" onerror="this.onerror=null;this.href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css'"><link rel="stylesheet" href="./assets/css/atlas.css?v=38.4.58D">
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="color-scheme" content="only light"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>ITA ARANDU MS · Atlas Geocientífico de Mato Grosso do Sul · V38.4.59</title><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" onerror="this.onerror=null;this.href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css'"><link rel="stylesheet" href="./assets/css/atlas.css?v=38.4.58D">
 <link rel="stylesheet" href="./assets/css/ajustes-v32.css?v=38.4.26">
 <link rel="manifest" href="./manifest.webmanifest">
 <meta name="theme-color" content="#073b63">
@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="./assets/css/proveniencia-v38428.css?v=38.4.28">
 <link rel="stylesheet" href="./assets/css/mobile-map-toolbar-v38429.css?v=38.4.29">
 <link rel="stylesheet" href="./assets/css/campo-master-v38431.css?v=38.4.31">
+<link rel="stylesheet" href="./assets/css/field-robustness-v38459.css?v=38.4.59">
 <link rel="stylesheet" href="./assets/css/campo-ux-v38432.css?v=38.4.32">
 <link rel="stylesheet" href="./assets/css/clinometro-visual-v38433.css?v=38.4.33r2">
 <link rel="stylesheet" href="./assets/css/geoetica-care-v38434.css?v=38.4.34">
@@ -355,7 +356,7 @@
 </div></div></div><div class="modal" id="pwaModal" role="dialog" aria-modal="true" aria-labelledby="pwaTitle"><div class="modal-box"><div class="modal-head"><div><div class="kicker">Aplicativo</div><h2 id="pwaTitle">Instalar ITA ARANDU MS</h2></div><button type="button" class="close-modal" data-close="pwaModal" aria-label="Fechar instalação">×</button></div><div class="modal-body">
 <div class="pwa-panel"><b>PWA instalável</b><p>Esta versão pode ser instalada como aplicativo quando aberta por HTTPS em um navegador compatível. A instalação mantém o mesmo Atlas e o mesmo conjunto científico da versão publicada.</p><div class="pwa-actions"><button type="button" class="pwa-action" id="pwaInstallBtn">Instalar ITA ARANDU MS</button><button type="button" class="pwa-action secondary" id="pwaReloadBtn">Atualizar aplicativo</button></div><div class="pwa-status" id="pwaInstallStatus" aria-live="polite">Verificando se a instalação está disponível neste dispositivo.</div></div>
 <div class="pwa-panel"><b>Android APK com Trusted Web Activity</b><p>A mesma PWA está preparada para ser empacotada como APK Android usando Trusted Web Activity. O APK deve ser gerado depois que a URL pública estiver ativa porque a validação exige associação entre o domínio publicado e a assinatura do aplicativo.</p><p>O pacote GitHub inclui um guia TWA com Bubblewrap. A associação Android deve ser validada por Digital Asset Links antes de considerar o APK como TWA verificada.</p></div>
-<div class="docs-note">O modo instalado não transforma serviços externos em dados offline. Mapas base, serviços conectados e consultas científicas remotas continuam dependendo de internet quando a fonte não está incorporada localmente.</div>
+<div class="docs-note">O modo instalado não transforma serviços externos em dados offline. Para trabalho sem sinal, use <b>Campo → Preparar saída offline</b>, que baixa e verifica o pacote Essencial de Campo. Serviços conectados e consultas remotas continuam dependendo de internet quando a fonte não está incorporada localmente.</div>
 </div></div></div>
 <div class="modal document-viewer-modal" id="documentoModal" role="dialog" aria-modal="true" aria-labelledby="documentoTitle"><div class="modal-box document-viewer-box"><div class="modal-head document-viewer-head"><div><div class="kicker">Documentação interna</div><h2 id="documentoTitle">Documento</h2></div><div class="document-viewer-actions"><button type="button" class="doc-nav-btn" id="documentoBack" title="Voltar ao documento anterior; se não houver, fechar" aria-label="Voltar ao documento anterior ou fechar">←</button><button type="button" class="close-modal" data-close="documentoModal" aria-label="Fechar documento">×</button></div></div><div class="document-viewer-body"><iframe id="documentoFrame" title="Documento interno do ITA ARANDU MS" loading="eager"></iframe></div></div></div>
 <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projectTitle"><div class="modal-box"><div class="modal-head"><div><div class="kicker">Projeto</div><h2 id="projectTitle">ITA ARANDU MS</h2></div><button type="button" class="close-modal" data-close="projectModal" aria-label="Fechar projeto">×</button></div><div class="modal-body">
@@ -781,6 +782,28 @@
           <a class="action-btn" href="./documentos/protocolo-campo-master.html" target="_blank" rel="noopener">Protocolo</a>
         </div>
 
+        <section class="ita-field-robustness" aria-labelledby="campoRobustezTitle">
+          <h3 id="campoRobustezTitle">Robustez de campo</h3>
+          <div class="ita-autosave-status" id="campoAutosaveStatus" aria-live="polite">Salvamento automático em IndexedDB ativo.</div>
+          <div class="ita-field-robustness-grid">
+            <div class="ita-robust-card">
+              <b>Armazenamento local protegido</b>
+              <small id="campoStorageStatus">Calculando uso e quota do navegador…</small>
+              <div class="ita-storage-track" aria-hidden="true"><span id="campoStorageBar"></span></div>
+              <div class="ita-robust-warning" id="campoStorageWarning"></div>
+              <div class="ita-robust-actions"><button class="action-btn" type="button" id="campoStoragePersist">Solicitar persistência</button></div>
+            </div>
+            <div class="ita-robust-card">
+              <b>Modo Expedição · Essencial de Campo</b>
+              <small>Baixa previamente geologia regional, limites, municípios, estradas básicas e as três malhas. Não inclui serviços conectados.</small>
+              <progress class="ita-expedition-progress" id="campoExpeditionProgress" value="0" max="10"></progress>
+              <div class="ita-robust-status" id="campoExpeditionStatus" aria-live="polite">Pacote offline ainda não verificado.</div>
+              <div class="ita-robust-actions"><button class="action-btn primary" type="button" id="campoExpeditionPrepare">Preparar saída offline</button><button class="action-btn" type="button" id="campoExpeditionVerify">Verificar pacote</button><button class="action-btn" type="button" id="campoExpeditionRemove">Remover pacote</button></div>
+              <small id="campoNetworkStatus">Estado da rede —</small>
+            </div>
+          </div>
+        </section>
+
         <div class="field-status" id="campoStatus" aria-live="polite">Nenhuma estação salva nesta sessão.</div>
       </form>
 
@@ -999,11 +1022,12 @@
 
 <script src="./camadas/proveniencia-snapshots.js?v=38.4.28"></script>
 <script src="./assets/js/proveniencia-v38428.js?v=38.4.40b"></script>
-<script src="./assets/js/app.js?v=38.4.58D"></script>
+<script src="./assets/js/app.js?v=38.4.59"></script>
 <script src="./assets/js/campo-sensores.js?v=38.4.37f"></script>
 <script src="./assets/js/camera-core-v38439.js?v=38.4.39"></script>
 <script src="./assets/js/bancada-harmonizada-v38447.js?v=38.4.47"></script>
-<script src="./assets/js/campo-master-v38431.js?v=38.4.31"></script>
+<script src="./assets/js/campo-master-v38459.js?v=38.4.59"></script>
+<script src="./assets/js/field-robustness-v38459.js?v=38.4.59"></script>
 <script src="./assets/js/campo-ux-v38432.js?v=38.4.32"></script>
 <script src="./assets/js/clinometro-visual-v38433.js?v=38.4.33r2"></script>
 <script src="./assets/js/geoetica-care-v38434.js?v=38.4.34"></script>

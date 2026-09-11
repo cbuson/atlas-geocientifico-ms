@@ -1,3 +1,14 @@
+# V38.4.59 · FIELD ROBUSTNESS · 2026-09-10
+
+- Campo Master 2.1 passa a ser a única implementação ativa da caderneta; UX-CAMPO-02 permanece apenas como código legado para migração e compatibilidade, sem listeners ativos.
+- Rascunho completo persistido em IndexedDB, incluindo fotografias como Blob, medidas, amostras, estruturas, orientação e croquis.
+- Recuperação de estação não finalizada após recarga/fechamento do navegador.
+- Migração conservadora de registros do banco legado para o Campo Master, sem apagar a base anterior.
+- Monitor de uso/quota com `navigator.storage.estimate()` e solicitação opcional de persistência com `navigator.storage.persist()`.
+- Modo Expedição com pacote Essencial de Campo baixado explicitamente antes da saída e verificação de prontidão offline.
+- O cache de expedição é preservado durante a ativação de novas versões do service worker.
+- Nenhuma camada científica, regra analítica, índice ou resultado territorial foi recalculado ou alterado.
+
 
 ## V38.4.20 · Gate metodológico PIG · 2026-08-15
 
